@@ -1,12 +1,11 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "0.0.9",
+  "version": "0.0.16",
   "main": "lib/commonjs/index.js",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Jonathan <jonathan@waarneming.nl>",
   "license": "MIT",
   "devDependencies": {
-    "@react-native-firebase/crashlytics": "^17.0.0",
     "@testing-library/react-native": "^12.1.2",
     "@types/color": "^3.0.3",
     "@types/jest": "^29.5.2",
@@ -45,6 +44,7 @@
     "@fortawesome/pro-light-svg-icons": "^6.3.0",
     "@fortawesome/pro-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-native-fontawesome": "^0.3.0",
+    "@react-native-firebase/crashlytics": "^17.0.0",
     "accordion-collapse-react-native": "^1.0.0",
     "color": "^4.2.3",
     "react-native-logs": "^5.0.1"
