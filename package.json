@@ -1,11 +1,12 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "0.0.5",
+  "version": "0.0.8",
   "main": "lib/commonjs/index.js",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Jonathan <jonathan@waarneming.nl>",
   "license": "MIT",
   "devDependencies": {
+    "@react-native-firebase/crashlytics": "^17.0.0",
     "@testing-library/react-native": "^12.1.2",
     "@types/color": "^3.0.3",
     "@types/jest": "^29.5.2",
@@ -38,9 +39,12 @@
     "lib/"
   ],
   "peerDependencies": {
-    "react": "^18.2.0"
+    "react": "18.2.0",
+    "react-native": "^0.71.0"
   },
   "dependencies": {
-    "color": "^4.2.3"
+    "accordion-collapse-react-native": "^1.0.0",
+    "color": "^4.2.3",
+    "react-native-logs": "^5.0.1"
   }
 }
