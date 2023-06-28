@@ -2,7 +2,7 @@ import React from 'react'
 
 import { render, fireEvent } from '@testing-library/react-native'
 
-import TextLink from '../TextLink'
+import TextLink from '../src/components/TextLink'
 
 const onPress = jest.fn()
 describe('TextLink', () => {

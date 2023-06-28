@@ -3,7 +3,7 @@ import { Text } from 'react-native'
 
 import { fireEvent, render } from '@testing-library/react-native'
 
-import Accordion from '../Accordion'
+import Accordion from '../src/components/Accordion'
 
 type AccordionItem = {
   title: string

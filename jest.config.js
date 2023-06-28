@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   preset: 'react-native',
   modulePathIgnorePatterns: ['lib'],
   moduleFileExtensions: ['tsx', 'ts', 'js'],
