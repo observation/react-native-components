@@ -2,9 +2,8 @@ import React from 'react'
 import { TouchableOpacity, ViewStyle, StyleProp } from 'react-native'
 
 import Icon from './Icon'
-
-import theme from '../styles/theme'
 import { IconName } from '../lib/Icons'
+import theme from '../styles/theme'
 
 type Props = {
   containerStyle?: StyleProp<ViewStyle>
