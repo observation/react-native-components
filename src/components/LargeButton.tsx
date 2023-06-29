@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, TouchableOpacity, StyleSheet, View, ViewStyle, StyleProp } from 'react-native'
 
-import Icon from './Icon'
+import { Icon } from './Icon'
 import { IconName } from '../lib/Icons'
 import * as LargeButtonStyles from '../lib/LargeButtonStyles'
 import { LargeButtonStyle } from '../lib/LargeButtonStyles'

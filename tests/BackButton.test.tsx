@@ -3,7 +3,6 @@ import React from 'react'
 import { fireEvent, render } from '@testing-library/react-native'
 
 import { mockNavigation } from './lib/TestUtils'
-
 import BackButton from '../src/components/BackButton'
 
 describe('BackButton', () => {

@@ -58,61 +58,62 @@ const defaultProps: { [key in IconName]?: IconAppearanceProps } = {
   warning: { color: warning },
 }
 
-const Achievement = (props: IconAppearanceProps) => <Icon name="achievement" {...props} />
-const Add = (props: IconAppearanceProps) => <Icon name="add" {...props} />
-const AddUser = (props: IconAppearanceProps) => <Icon name="add-user" {...props} />
-const Advance = (props: IconAppearanceProps) => <Icon name="advance" {...props} />
-const Analytics = (props: IconAppearanceProps) => <Icon name="analytics" {...props} />
-const Badge = (props: IconAppearanceProps) => <Icon name="badge" {...props} />
-const Check = (props: IconAppearanceProps) => <Icon name="check" {...props} />
-const Close = (props: IconAppearanceProps) => <Icon name="close" {...props} />
-const Collapse = (props: IconAppearanceProps) => <Icon name="collapse" {...props} />
-const Completed = (props: IconAppearanceProps) => <Icon name="completed" {...props} />
-const Configuration = (props: IconAppearanceProps) => <Icon name="configuration" {...props} />
-const Copy = (props: IconAppearanceProps) => <Icon name="copy" {...props} />
-const Count = (props: IconAppearanceProps) => <Icon name="count" {...props} />
-const Crop = (props: IconAppearanceProps) => <Icon name="crop" {...props} />
-const Date = (props: IconAppearanceProps) => <Icon name="date" {...props} />
-const DateRange = (props: IconAppearanceProps) => <Icon name="date-range" {...props} />
-const Delete = (props: IconAppearanceProps) => <Icon name="delete" {...props} />
-const Disclose = (props: IconAppearanceProps) => <Icon name="disclose" {...props} />
-const Enumeration = (props: IconAppearanceProps) => <Icon name="enumeration" {...props} />
-const Error = (props: IconAppearanceProps) => <Icon name="error" {...props} />
-const ErrorMessage = (props: IconAppearanceProps) => <Icon name="error-message" {...props} />
-const Expand = (props: IconAppearanceProps) => <Icon name="expand" {...props} />
-const ExternalLink = (props: IconAppearanceProps) => <Icon name="external-link" {...props} />
-const Group = (props: IconAppearanceProps) => <Icon name="group" {...props} />
-const ImageGallery = (props: IconAppearanceProps) => <Icon name="image-gallery" {...props} />
-const Info = (props: IconAppearanceProps) => <Icon name="info" {...props} />
-const List = (props: IconAppearanceProps) => <Icon name="list" {...props} />
-const Location = (props: IconAppearanceProps) => <Icon name="location" {...props} />
-const Next = (props: IconAppearanceProps) => <Icon name="next" {...props} />
-const Photography = (props: IconAppearanceProps) => <Icon name="photography" {...props} />
-const Playback = (props: IconAppearanceProps) => <Icon name="playback" {...props} />
-const Previous = (props: IconAppearanceProps) => <Icon name="previous" {...props} />
-const QrCode = (props: IconAppearanceProps) => <Icon name="qr-code" {...props} />
-const RarityCommon = (props: IconAppearanceProps) => <Icon name="rarity-common" {...props} />
-const RarityRare = (props: IconAppearanceProps) => <Icon name="rarity-rare" {...props} />
-const RarityUnknown = (props: IconAppearanceProps) => <Icon name="rarity-unknown" {...props} />
-const RarityVeryRare = (props: IconAppearanceProps) => <Icon name="rarity-very-rare" {...props} />
-const RarityRelativelyCommon = (props: IconAppearanceProps) => <Icon name="rarity-relatively-common" {...props} />
-const Selection = (props: IconAppearanceProps) => <Icon name="selection" {...props} />
-const Settings = (props: IconAppearanceProps) => <Icon name="settings" {...props} />
-const Statistics = (props: IconAppearanceProps) => <Icon name="statistics" {...props} />
-const Success = (props: IconAppearanceProps) => <Icon name="success" {...props} />
-const Upload = (props: IconAppearanceProps) => <Icon name="upload" {...props} />
-const User = (props: IconAppearanceProps) => <Icon name="user" {...props} />
-const UserInactive = (props: IconAppearanceProps) => <Icon name="user-inactive" {...props} />
-const UserProfile = (props: IconAppearanceProps) => <Icon name="user-profile" {...props} />
-const UserVerified = (props: IconAppearanceProps) => <Icon name="user-verified" {...props} />
-const ValidationAcceptedByAdmin = (props: IconAppearanceProps) => (
+export const IconAchievement = (props: IconAppearanceProps) => <Icon name="achievement" {...props} />
+export const IconAdd = (props: IconAppearanceProps) => <Icon name="add" {...props} />
+export const IconAddUser = (props: IconAppearanceProps) => <Icon name="add-user" {...props} />
+export const IconAdvance = (props: IconAppearanceProps) => <Icon name="advance" {...props} />
+export const IconAnalytics = (props: IconAppearanceProps) => <Icon name="analytics" {...props} />
+export const IconBadge = (props: IconAppearanceProps) => <Icon name="badge" {...props} />
+export const IconCheck = (props: IconAppearanceProps) => <Icon name="check" {...props} />
+export const IconClose = (props: IconAppearanceProps) => <Icon name="close" {...props} />
+export const IconCollapse = (props: IconAppearanceProps) => <Icon name="collapse" {...props} />
+export const IconCompleted = (props: IconAppearanceProps) => <Icon name="completed" {...props} />
+export const IconConfiguration = (props: IconAppearanceProps) => <Icon name="configuration" {...props} />
+export const IconCopy = (props: IconAppearanceProps) => <Icon name="copy" {...props} />
+export const IconCount = (props: IconAppearanceProps) => <Icon name="count" {...props} />
+export const IconCrop = (props: IconAppearanceProps) => <Icon name="crop" {...props} />
+export const IconDate = (props: IconAppearanceProps) => <Icon name="date" {...props} />
+export const IconDateRange = (props: IconAppearanceProps) => <Icon name="date-range" {...props} />
+export const IconDelete = (props: IconAppearanceProps) => <Icon name="delete" {...props} />
+export const IconDisclose = (props: IconAppearanceProps) => <Icon name="disclose" {...props} />
+export const IconEnumeration = (props: IconAppearanceProps) => <Icon name="enumeration" {...props} />
+export const IconError = (props: IconAppearanceProps) => <Icon name="error" {...props} />
+export const IconErrorMessage = (props: IconAppearanceProps) => <Icon name="error-message" {...props} />
+export const IconExpand = (props: IconAppearanceProps) => <Icon name="expand" {...props} />
+export const IconExternalLink = (props: IconAppearanceProps) => <Icon name="external-link" {...props} />
+export const IconGroup = (props: IconAppearanceProps) => <Icon name="group" {...props} />
+export const IconImageGallery = (props: IconAppearanceProps) => <Icon name="image-gallery" {...props} />
+export const IconInfo = (props: IconAppearanceProps) => <Icon name="info" {...props} />
+export const IconList = (props: IconAppearanceProps) => <Icon name="list" {...props} />
+export const IconLocation = (props: IconAppearanceProps) => <Icon name="location" {...props} />
+export const IconNext = (props: IconAppearanceProps) => <Icon name="next" {...props} />
+export const IconPhotography = (props: IconAppearanceProps) => <Icon name="photography" {...props} />
+export const IconPlayback = (props: IconAppearanceProps) => <Icon name="playback" {...props} />
+export const IconPrevious = (props: IconAppearanceProps) => <Icon name="previous" {...props} />
+export const IconQrCode = (props: IconAppearanceProps) => <Icon name="qr-code" {...props} />
+export const IconRarityCommon = (props: IconAppearanceProps) => <Icon name="rarity-common" {...props} />
+export const IconRarityRare = (props: IconAppearanceProps) => <Icon name="rarity-rare" {...props} />
+export const IconRarityUnknown = (props: IconAppearanceProps) => <Icon name="rarity-unknown" {...props} />
+export const IconRarityVeryRare = (props: IconAppearanceProps) => <Icon name="rarity-very-rare" {...props} />
+export const IconRarityRelativelyCommon = (props: IconAppearanceProps) => (
+  <Icon name="rarity-relatively-common" {...props} />
+)
+export const IconSelection = (props: IconAppearanceProps) => <Icon name="selection" {...props} />
+export const IconSettings = (props: IconAppearanceProps) => <Icon name="settings" {...props} />
+export const IconStatistics = (props: IconAppearanceProps) => <Icon name="statistics" {...props} />
+export const IconSuccess = (props: IconAppearanceProps) => <Icon name="success" {...props} />
+export const IconUpload = (props: IconAppearanceProps) => <Icon name="upload" {...props} />
+export const IconUser = (props: IconAppearanceProps) => <Icon name="user" {...props} />
+export const IconUserInactive = (props: IconAppearanceProps) => <Icon name="user-inactive" {...props} />
+export const IconUserProfile = (props: IconAppearanceProps) => <Icon name="user-profile" {...props} />
+export const IconUserVerified = (props: IconAppearanceProps) => <Icon name="user-verified" {...props} />
+export const IconValidationAcceptedByAdmin = (props: IconAppearanceProps) => (
   <Icon name="validation-accepted-by-admin" {...props} />
 )
-const ValidationAcceptedWithEvidence = (props: IconAppearanceProps) => (
+export const IconValidationAcceptedWithEvidence = (props: IconAppearanceProps) => (
   <Icon name="validation-accepted-with-evidence" {...props} />
 )
-
-const Icon = ({ name, color, size, testID, style }: IconProps): JSX.Element => {
+export const Icon = ({ name, color, size, testID, style }: IconProps): JSX.Element => {
   const props = defaultProps[name]
   const iconStyle = style ?? props?.style ?? 'light'
   const icon = iconStyle === 'light' ? Icons[name].light : Icons[name].solid
@@ -120,57 +121,4 @@ const Icon = ({ name, color, size, testID, style }: IconProps): JSX.Element => {
   const iconSize = size ?? props?.size ?? large
 
   return <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} testID={testID} />
-}
-
-export default Icon
-export {
-  Achievement,
-  Add,
-  AddUser,
-  Advance,
-  Analytics,
-  Badge,
-  Check,
-  Close,
-  Collapse,
-  Completed,
-  Configuration,
-  Copy,
-  Count,
-  Crop,
-  Date,
-  DateRange,
-  Delete,
-  Disclose,
-  Enumeration,
-  Error,
-  ErrorMessage,
-  Expand,
-  ExternalLink,
-  Group,
-  ImageGallery,
-  Info,
-  List,
-  Location,
-  Next,
-  Photography,
-  Playback,
-  Previous,
-  QrCode,
-  RarityCommon,
-  RarityRare,
-  RarityUnknown,
-  RarityVeryRare,
-  RarityRelativelyCommon,
-  Selection,
-  Settings,
-  Statistics,
-  Success,
-  Upload,
-  User,
-  UserInactive,
-  UserProfile,
-  UserVerified,
-  ValidationAcceptedByAdmin,
-  ValidationAcceptedWithEvidence,
 }
