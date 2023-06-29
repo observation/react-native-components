@@ -4,5 +4,6 @@ import * as styles from './styles'
 import { IconName } from './lib/Icons'
 import Icon from './components/Icon'
 import * as Icons from './components/Icon'
+import IconButton from './components/IconButton'
 
-export { IconName, Icon, Icons, Accordion, TextLink, styles }
+export { IconButton, IconName, Icon, Icons, Accordion, TextLink, styles }
