@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "0.0.26",
+  "version": "0.0.27",
   "main": "lib/commonjs/index.js",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Jonathan <jonathan@waarneming.nl>",
