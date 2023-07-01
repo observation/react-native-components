@@ -17,6 +17,7 @@ import Lightbox from './components/Lightbox'
 import Location from './components/Location'
 import Message from './components/Message'
 import MoreInfo from './components/MoreInfo'
+import Notification from './components/Notification'
 import PageIndicator from './components/PageIndicator'
 import TextLink from './components/TextLink'
 import I18n from './lib/I18n'
@@ -44,6 +45,7 @@ export {
   Location,
   Message,
   MoreInfo,
+  Notification,
   I18n,
   PageIndicator,
   TextLink,
