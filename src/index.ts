@@ -18,6 +18,7 @@ import Location from './components/Location'
 import Message from './components/Message'
 import MoreInfo from './components/MoreInfo'
 import Notification from './components/Notification'
+import NotificationPopup from './components/NotificationPopup'
 import PageIndicator from './components/PageIndicator'
 import Popup from './components/Popup'
 import TextLink from './components/TextLink'
@@ -50,6 +51,7 @@ export {
   Notification,
   I18n,
   PageIndicator,
+  NotificationPopup,
   Popup,
   useShowBlurView,
   TextLink,
