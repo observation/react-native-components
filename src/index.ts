@@ -11,6 +11,7 @@ import FilterButton from './components/FilterButton'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
 import IconView from './components/IconView'
+import InputField from './components/InputField'
 import LargeButton from './components/LargeButton'
 import Lightbox from './components/Lightbox'
 import PageIndicator from './components/PageIndicator'
@@ -33,6 +34,7 @@ export {
   IconText,
   IconView,
   Icons,
+  InputField,
   LargeButton,
   Lightbox,
   PageIndicator,

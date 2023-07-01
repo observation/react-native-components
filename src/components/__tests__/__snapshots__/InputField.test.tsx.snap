@@ -1,0 +1,544 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputField Rendering Normal 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#939393"
+      style={
+        [
+          {
+            "borderColor": "#E6E6E6",
+          },
+          {
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "color": "#212121",
+            "flex": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 26,
+            "minHeight": 40,
+            "overflow": "hidden",
+            "paddingLeft": 8,
+            "paddingRight": 32,
+          },
+          undefined,
+          {
+            "lineHeight": 0,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
+
+exports[`InputField Rendering With a description 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#939393"
+      style={
+        [
+          {
+            "borderColor": "#E6E6E6",
+          },
+          {
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "color": "#212121",
+            "flex": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 26,
+            "minHeight": 40,
+            "overflow": "hidden",
+            "paddingLeft": 8,
+            "paddingRight": 32,
+          },
+          undefined,
+          {
+            "lineHeight": 0,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <Text
+    style={
+      {
+        "color": "#666666",
+        "fontFamily": "Ubuntu",
+        "fontSize": 12,
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "lineHeight": 17,
+        "marginTop": 8,
+      }
+    }
+  >
+    The description
+  </Text>
+</View>
+`;
+
+exports[`InputField Rendering With a label 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View>
+    <Text
+      style={
+        {
+          "color": "#666666",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 17,
+          "marginBottom": 8,
+        }
+      }
+    >
+      The label
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#939393"
+      style={
+        [
+          {
+            "borderColor": "#E6E6E6",
+          },
+          {
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "color": "#212121",
+            "flex": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 26,
+            "minHeight": 40,
+            "overflow": "hidden",
+            "paddingLeft": 8,
+            "paddingRight": 32,
+          },
+          undefined,
+          {
+            "lineHeight": 0,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
+
+exports[`InputField Rendering With a right icon 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#939393"
+      style={
+        [
+          {
+            "borderColor": "#E6E6E6",
+          },
+          {
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "color": "#212121",
+            "flex": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 26,
+            "minHeight": 40,
+            "overflow": "hidden",
+            "paddingLeft": 8,
+            "paddingRight": 32,
+          },
+          undefined,
+          {
+            "lineHeight": 0,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+    <View
+      style={
+        {
+          "bottom": 0,
+          "justifyContent": "center",
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+    >
+      <Icon
+        color="#0066B1"
+        name="circle-info"
+        size={16}
+        type="light"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`InputField Rendering With an error message 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#939393"
+      style={
+        [
+          {
+            "borderColor": "#EA554B",
+          },
+          {
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "color": "#212121",
+            "flex": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 26,
+            "minHeight": 40,
+            "overflow": "hidden",
+            "paddingLeft": 8,
+            "paddingRight": 32,
+          },
+          undefined,
+          {
+            "lineHeight": 0,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "marginTop": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "justifyContent": "center",
+            "marginRight": 8,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Icon
+        color="#EA554B"
+        name="triangle-exclamation"
+        size={12}
+        type="light"
+      />
+    </View>
+    <Text
+      style={
+        [
+          {
+            "flexShrink": 1,
+          },
+          {
+            "color": "#EA554B",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 17,
+          },
+        ]
+      }
+    >
+      The error message
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`InputField Rendering With focus 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#939393"
+      style={
+        [
+          {
+            "borderColor": "#66A3D0",
+          },
+          {
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "color": "#212121",
+            "flex": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 26,
+            "minHeight": 40,
+            "overflow": "hidden",
+            "paddingLeft": 8,
+            "paddingRight": 32,
+          },
+          undefined,
+          {
+            "lineHeight": 0,
+          },
+        ]
+      }
+      testID="test-id"
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
+
+exports[`InputField Rendering With focus and an error message 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#939393"
+      style={
+        [
+          {
+            "borderColor": "#66A3D0",
+          },
+          {
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "color": "#212121",
+            "flex": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 26,
+            "minHeight": 40,
+            "overflow": "hidden",
+            "paddingLeft": 8,
+            "paddingRight": 32,
+          },
+          undefined,
+          {
+            "lineHeight": 0,
+          },
+        ]
+      }
+      testID="test-id"
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
+
+exports[`InputField Rendering Without focus 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#939393"
+      style={
+        [
+          {
+            "borderColor": "#E6E6E6",
+          },
+          {
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "color": "#212121",
+            "flex": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 26,
+            "minHeight": 40,
+            "overflow": "hidden",
+            "paddingLeft": 8,
+            "paddingRight": 32,
+          },
+          undefined,
+          {
+            "lineHeight": 0,
+          },
+        ]
+      }
+      testID="test-id"
+      underlineColorAndroid="transparent"
+    />
+  </View>
+</View>
+`;
