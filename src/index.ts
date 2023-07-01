@@ -10,6 +10,7 @@ import Disclose from './components/Disclose'
 import FilterButton from './components/FilterButton'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
+import IconView from './components/IconView'
 import LargeButton from './components/LargeButton'
 import Lightbox from './components/Lightbox'
 import PageIndicator from './components/PageIndicator'
@@ -30,11 +31,12 @@ export {
   IconButton,
   IconName,
   IconText,
+  IconView,
   Icons,
   LargeButton,
   Lightbox,
-  TextLink,
   PageIndicator,
+  TextLink,
 }
 
 export * from './components/Icon'

@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`IconView Rendering With default parameters 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexShrink": 1,
+      }
+    }
+  >
+    <Text>
+      Text to show
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`IconView Rendering With specified parameters 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      {
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignItems": "flex-start",
+        },
+        {
+          "width": 14,
+        },
+        {
+          "flex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "justifyContent": "center",
+          },
+          {
+            "height": 14,
+          },
+        ]
+      }
+    >
+      <Icon
+        color="#0066B1"
+        name="circle-info"
+        size={16}
+        type="light"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "flexShrink": 1,
+      }
+    }
+  >
+    <Text>
+      Text to show
+    </Text>
+  </View>
+</View>
+`;
