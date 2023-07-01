@@ -7,6 +7,7 @@ import Chip from './components/Chip'
 import ContentImage from './components/ContentImage'
 import Date from './components/Date'
 import Disclose from './components/Disclose'
+import FilterButton from './components/FilterButton'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
 import LargeButton from './components/LargeButton'
@@ -25,6 +26,7 @@ export {
   ContentImage,
   Date,
   Disclose,
+  FilterButton,
   IconButton,
   IconName,
   IconText,
