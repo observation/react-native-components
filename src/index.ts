@@ -6,6 +6,7 @@ import Checkbox from './components/Checkbox'
 import Chip from './components/Chip'
 import ContentImage from './components/ContentImage'
 import IconButton from './components/IconButton'
+import IconText from './components/IconText'
 import LargeButton from './components/LargeButton'
 import Lightbox from './components/Lightbox'
 import PageIndicator from './components/PageIndicator'
@@ -22,6 +23,7 @@ export {
   ContentImage,
   IconButton,
   IconName,
+  IconText,
   Icons,
   LargeButton,
   Lightbox,
