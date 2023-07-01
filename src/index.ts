@@ -21,6 +21,7 @@ import Notification from './components/Notification'
 import NotificationPopup from './components/NotificationPopup'
 import PageIndicator from './components/PageIndicator'
 import Panel from './components/Panel'
+import PhotoStrip from './components/PhotoStrip'
 import Popup from './components/Popup'
 import TextLink from './components/TextLink'
 import useShowBlurView from './hooks/useShowBlurView'
@@ -55,6 +56,7 @@ export {
   NotificationPopup,
   Popup,
   Panel,
+  PhotoStrip,
   useShowBlurView,
   TextLink,
 }
