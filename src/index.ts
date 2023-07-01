@@ -16,8 +16,10 @@ import LargeButton from './components/LargeButton'
 import Lightbox from './components/Lightbox'
 import Location from './components/Location'
 import Message from './components/Message'
+import MoreInfo from './components/MoreInfo'
 import PageIndicator from './components/PageIndicator'
 import TextLink from './components/TextLink'
+import I18n from './lib/I18n'
 import Icons, { IconName } from './lib/Icons'
 
 export {
@@ -41,6 +43,8 @@ export {
   Lightbox,
   Location,
   Message,
+  MoreInfo,
+  I18n,
   PageIndicator,
   TextLink,
 }
