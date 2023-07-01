@@ -4,6 +4,7 @@ import BackgroundImage from './components/BackgroundImage'
 import BottomSheet from './components/BottomSheet'
 import Checkbox from './components/Checkbox'
 import Chip from './components/Chip'
+import ContentImage from './components/ContentImage'
 import IconButton from './components/IconButton'
 import LargeButton from './components/LargeButton'
 import Lightbox from './components/Lightbox'
@@ -18,6 +19,7 @@ export {
   BottomSheet,
   Checkbox,
   Chip,
+  ContentImage,
   IconButton,
   IconName,
   Icons,

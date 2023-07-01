@@ -61,6 +61,7 @@
     "accordion-collapse-react-native": "^1.0.0",
     "color": "^4.2.3",
     "react-native-image-viewing": "^0.2.2",
-    "react-native-logs": "^5.0.1"
+    "react-native-logs": "^5.0.1",
+    "react-native-scalable-image": "^1.1.0"
   }
 }
