@@ -6,6 +6,7 @@ import Checkbox from './components/Checkbox'
 import Chip from './components/Chip'
 import ContentImage from './components/ContentImage'
 import Date from './components/Date'
+import Disclose from './components/Disclose'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
 import LargeButton from './components/LargeButton'
@@ -23,6 +24,7 @@ export {
   Chip,
   ContentImage,
   Date,
+  Disclose,
   IconButton,
   IconName,
   IconText,
