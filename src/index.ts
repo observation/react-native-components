@@ -20,6 +20,7 @@ import MoreInfo from './components/MoreInfo'
 import Notification from './components/Notification'
 import NotificationPopup from './components/NotificationPopup'
 import PageIndicator from './components/PageIndicator'
+import Panel from './components/Panel'
 import Popup from './components/Popup'
 import TextLink from './components/TextLink'
 import useShowBlurView from './hooks/useShowBlurView'
@@ -53,6 +54,7 @@ export {
   PageIndicator,
   NotificationPopup,
   Popup,
+  Panel,
   useShowBlurView,
   TextLink,
 }
