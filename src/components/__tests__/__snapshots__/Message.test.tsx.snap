@@ -1,0 +1,237 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message Rendering With button 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+        "marginBottom": 0,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "marginBottom": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#212121",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Title
+    </Text>
+  </View>
+  <View>
+    <Text
+      style={
+        {
+          "color": "#666666",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Text
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "flex-start",
+        "flexDirection": "row",
+        "marginTop": 16,
+      }
+    }
+  >
+    <mock-large-button
+      disabled={false}
+      onPress={[Function]}
+      secondary={false}
+      style={
+        {
+          "margin": 0,
+          "marginRight": 8,
+        }
+      }
+      title="button title"
+    />
+  </View>
+</View>
+`;
+
+exports[`Message Rendering With style 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+        "marginBottom": 0,
+      },
+      {
+        "margin": 16,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "marginBottom": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#212121",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Title
+    </Text>
+  </View>
+  <View>
+    <Text
+      style={
+        {
+          "color": "#666666",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Text
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Message Rendering Without button 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+        "marginBottom": 0,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "marginBottom": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#212121",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Title
+    </Text>
+  </View>
+  <View>
+    <Text
+      style={
+        {
+          "color": "#666666",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Text
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Message Rendering Without title 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+        "marginBottom": 0,
+      },
+      undefined,
+    ]
+  }
+>
+  <View>
+    <Text
+      style={
+        {
+          "color": "#666666",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Text
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "alignItems": "flex-start",
+        "flexDirection": "row",
+        "marginTop": 16,
+      }
+    }
+  >
+    <mock-large-button
+      disabled={false}
+      onPress={[Function]}
+      secondary={false}
+      style={
+        {
+          "margin": 0,
+          "marginRight": 8,
+        }
+      }
+      title="button title"
+    />
+  </View>
+</View>
+`;

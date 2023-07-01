@@ -15,6 +15,7 @@ import InputField from './components/InputField'
 import LargeButton from './components/LargeButton'
 import Lightbox from './components/Lightbox'
 import Location from './components/Location'
+import Message from './components/Message'
 import PageIndicator from './components/PageIndicator'
 import TextLink from './components/TextLink'
 import Icons, { IconName } from './lib/Icons'
@@ -39,6 +40,7 @@ export {
   LargeButton,
   Lightbox,
   Location,
+  Message,
   PageIndicator,
   TextLink,
 }
