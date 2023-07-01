@@ -5,6 +5,7 @@ import BottomSheet from './components/BottomSheet'
 import Checkbox from './components/Checkbox'
 import Chip from './components/Chip'
 import ContentImage from './components/ContentImage'
+import Date from './components/Date'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
 import LargeButton from './components/LargeButton'
@@ -21,6 +22,7 @@ export {
   Checkbox,
   Chip,
   ContentImage,
+  Date,
   IconButton,
   IconName,
   IconText,
