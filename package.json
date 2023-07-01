@@ -56,6 +56,7 @@
     "@fortawesome/pro-light-svg-icons": "^6.3.0",
     "@fortawesome/pro-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-native-fontawesome": "^0.3.0",
+    "@react-native-community/blur": "^4.2.0",
     "@react-native-firebase/crashlytics": "^17.0.0",
     "@react-navigation/native": "^6.0.8",
     "accordion-collapse-react-native": "^1.0.0",

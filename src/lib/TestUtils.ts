@@ -9,4 +9,10 @@ const mockNavigation: any = {
   getState: jest.fn(() => ({ index: 0 })),
 }
 
-export { mockNavigation }
+const mockNavigationContext: any = {
+  isFocused: jest.fn(() => true),
+  addListener: jest.fn(() => jest.fn()),
+  navigate: jest.fn(),
+}
+
+export { mockNavigation, mockNavigationContext }

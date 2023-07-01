@@ -19,7 +19,9 @@ import Message from './components/Message'
 import MoreInfo from './components/MoreInfo'
 import Notification from './components/Notification'
 import PageIndicator from './components/PageIndicator'
+import Popup from './components/Popup'
 import TextLink from './components/TextLink'
+import useShowBlurView from './hooks/useShowBlurView'
 import I18n from './lib/I18n'
 import Icons, { IconName } from './lib/Icons'
 
@@ -48,6 +50,8 @@ export {
   Notification,
   I18n,
   PageIndicator,
+  Popup,
+  useShowBlurView,
   TextLink,
 }
 
