@@ -2,7 +2,7 @@ import React from 'react'
 
 import { render } from '@testing-library/react-native'
 
-import PageIndicator from '../src/components/PageIndicator'
+import PageIndicator from '../PageIndicator'
 
 describe('PageIndicator', () => {
   describe('Rendering', () => {

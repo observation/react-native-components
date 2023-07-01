@@ -3,7 +3,7 @@ import { Text } from 'react-native'
 
 import { render, fireEvent } from '@testing-library/react-native'
 
-import BottomSheet from '../src/components/BottomSheet'
+import BottomSheet from '../BottomSheet'
 
 describe('BottomSheet', () => {
   describe('Rendering', () => {

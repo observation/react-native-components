@@ -2,7 +2,7 @@ import React from 'react'
 
 import { render, fireEvent } from '@testing-library/react-native'
 
-import IconButton from '../src/components/IconButton'
+import IconButton from '../IconButton'
 
 describe('IconButton', () => {
   test('Rendering', () => {

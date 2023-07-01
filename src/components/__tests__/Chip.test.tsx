@@ -2,7 +2,7 @@ import React from 'react'
 
 import { fireEvent, render } from '@testing-library/react-native'
 
-import Chip from '../src/components/Chip'
+import Chip from '../Chip'
 
 describe('Chip', () => {
   describe('Rendering', () => {

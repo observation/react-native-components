@@ -2,7 +2,7 @@ import React from 'react'
 
 import { render } from '@testing-library/react-native'
 
-import BackgroundImage from '../src/components/BackgroundImage'
+import BackgroundImage from '../BackgroundImage'
 
 const pets = require('./assets/pets.svg')
 

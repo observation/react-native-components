@@ -3,7 +3,7 @@ import { Text } from 'react-native'
 
 import { render, fireEvent } from '@testing-library/react-native'
 
-import Checkbox from '../src/components/Checkbox'
+import Checkbox from '../Checkbox'
 
 const mockOnPress = jest.fn()
 

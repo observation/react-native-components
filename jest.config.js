@@ -1,7 +1,7 @@
 module.exports = {
   preset: 'react-native',
-  modulePathIgnorePatterns: ['lib'],
-  moduleFileExtensions: ['tsx', 'ts', 'js'],
+  transformIgnorePatterns: ['node_modules/(?!((jest-)?react-native|@react-native(-community)?|react-native-image-viewing)/)'],
+  setupFiles: ['./jest.mocks.js'],
   collectCoverageFrom: ['**/src/**/*.{js,ts,tsx}'],
   transform: {
     '^.+\\.tsx?$': 'ts-jest',

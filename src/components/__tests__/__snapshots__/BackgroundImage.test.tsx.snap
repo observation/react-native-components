@@ -23,7 +23,7 @@ exports[`BackgroundImage Rendering All props 1`] = `
     resizeMode="contain"
     source={
       {
-        "testUri": "../../../tests/assets/pets.svg",
+        "testUri": "../../../src/components/__tests__/assets/pets.svg",
       }
     }
     style={
@@ -58,7 +58,7 @@ exports[`BackgroundImage Rendering Required props 1`] = `
     resizeMode="contain"
     source={
       {
-        "testUri": "../../../tests/assets/pets.svg",
+        "testUri": "../../../src/components/__tests__/assets/pets.svg",
       }
     }
     style={
