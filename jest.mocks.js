@@ -1,16 +1,18 @@
+/* eslint-disable observation/no-function-without-logging */
+import React from 'react'
 import { Image } from 'react-native'
 
 jest.mock('@react-native-firebase/crashlytics', () => {
-    const crash = jest.fn()  
-    const setUserId = jest.fn(() => Promise.resolve())
-    return { 
-      __esModule: true,
-      default: () => ({
-        crash,
-        setUserId
-      }),
-     }
-  })
+  const crash = jest.fn()
+  const setUserId = jest.fn(() => Promise.resolve())
+  return {
+    __esModule: true,
+    default: () => ({
+      crash,
+      setUserId,
+    }),
+  }
+})
 
 // Mock font awesome
 const Icon = 'Icon'
