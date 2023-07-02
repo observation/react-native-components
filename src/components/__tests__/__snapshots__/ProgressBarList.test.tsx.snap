@@ -1,0 +1,955 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBarList Show bars 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "maxWidth": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "red",
+          "borderBottomLeftRadius": 8,
+          "borderTopLeftRadius": 8,
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          {
+            "color": "#FFFFFFB4",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "justifyContent": "center",
+            "lineHeight": 16,
+          }
+        }
+      >
+        Label
+        <View
+          style={
+            {
+              "backgroundColor": "red",
+              "width": 5,
+            }
+          }
+        />
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "orange",
+          "borderBottomLeftRadius": 8,
+          "borderTopLeftRadius": 8,
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          {
+            "color": "#FFFFFFB4",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "justifyContent": "center",
+            "lineHeight": 16,
+          }
+        }
+      >
+        Label
+        <View
+          style={
+            {
+              "backgroundColor": "orange",
+              "width": 5,
+            }
+          }
+        />
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "yellow",
+          "borderBottomLeftRadius": 8,
+          "borderTopLeftRadius": 8,
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          {
+            "color": "#FFFFFFB4",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "justifyContent": "center",
+            "lineHeight": 16,
+          }
+        }
+      >
+        Label
+        <View
+          style={
+            {
+              "backgroundColor": "yellow",
+              "width": 5,
+            }
+          }
+        />
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "green",
+          "borderBottomLeftRadius": 8,
+          "borderTopLeftRadius": 8,
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          {
+            "color": "#FFFFFFB4",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "justifyContent": "center",
+            "lineHeight": 16,
+          }
+        }
+      >
+        Label
+        <View
+          style={
+            {
+              "backgroundColor": "green",
+              "width": 5,
+            }
+          }
+        />
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "blue",
+          "borderBottomLeftRadius": 8,
+          "borderTopLeftRadius": 8,
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          {
+            "color": "#FFFFFFB4",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "justifyContent": "center",
+            "lineHeight": 16,
+          }
+        }
+      >
+        Label
+        <View
+          style={
+            {
+              "backgroundColor": "blue",
+              "width": 5,
+            }
+          }
+        />
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "indigo",
+          "borderBottomLeftRadius": 8,
+          "borderTopLeftRadius": 8,
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          {
+            "color": "#FFFFFFB4",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "justifyContent": "center",
+            "lineHeight": 16,
+          }
+        }
+      >
+        Label
+        <View
+          style={
+            {
+              "backgroundColor": "indigo",
+              "width": 5,
+            }
+          }
+        />
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "violet",
+          "borderBottomLeftRadius": 8,
+          "borderTopLeftRadius": 8,
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 0,
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          {
+            "color": "#FFFFFFB4",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "justifyContent": "center",
+            "lineHeight": 16,
+          }
+        }
+      >
+        Label
+        <View
+          style={
+            {
+              "backgroundColor": "violet",
+              "width": 5,
+            }
+          }
+        />
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#E6E6E6",
+          "borderBottomRightRadius": 8,
+          "borderTopRightRadius": 8,
+          "flexDirection": "row",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "red",
+            "borderBottomRightRadius": 0,
+            "borderTopRightRadius": 0,
+            "width": "0%",
+          }
+        }
+        testID="growing-bar"
+      />
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "red",
+              "borderBottomRightRadius": 8,
+              "borderTopRightRadius": 8,
+              "height": 16,
+              "justifyContent": "center",
+              "left": "-0%",
+              "paddingRight": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                }
+              }
+            >
+              0
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFFB4",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 16,
+                }
+              }
+            >
+               of 6
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#E6E6E6",
+          "borderBottomRightRadius": 8,
+          "borderTopRightRadius": 8,
+          "flexDirection": "row",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "orange",
+            "borderBottomRightRadius": 0,
+            "borderTopRightRadius": 0,
+            "width": "16.666666666666664%",
+          }
+        }
+        testID="growing-bar"
+      />
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "orange",
+              "borderBottomRightRadius": 8,
+              "borderTopRightRadius": 8,
+              "height": 16,
+              "justifyContent": "center",
+              "left": "-16.666666666666664%",
+              "paddingRight": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                }
+              }
+            >
+              1
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFFB4",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 16,
+                }
+              }
+            >
+               of 6
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#E6E6E6",
+          "borderBottomRightRadius": 8,
+          "borderTopRightRadius": 8,
+          "flexDirection": "row",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "yellow",
+            "borderBottomRightRadius": 0,
+            "borderTopRightRadius": 0,
+            "width": "33.33333333333333%",
+          }
+        }
+        testID="growing-bar"
+      />
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "yellow",
+              "borderBottomRightRadius": 8,
+              "borderTopRightRadius": 8,
+              "height": 16,
+              "justifyContent": "center",
+              "left": "-33.33333333333333%",
+              "paddingRight": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                }
+              }
+            >
+              2
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFFB4",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 16,
+                }
+              }
+            >
+               of 6
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#E6E6E6",
+          "borderBottomRightRadius": 8,
+          "borderTopRightRadius": 8,
+          "flexDirection": "row",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "green",
+            "borderBottomRightRadius": 8,
+            "borderTopRightRadius": 8,
+            "width": "50%",
+          }
+        }
+        testID="growing-bar"
+      />
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "green",
+              "borderBottomRightRadius": 8,
+              "borderTopRightRadius": 8,
+              "height": 16,
+              "justifyContent": "center",
+              "left": "-50%",
+              "paddingRight": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                }
+              }
+            >
+              3
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFFB4",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 16,
+                }
+              }
+            >
+               of 6
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#E6E6E6",
+          "borderBottomRightRadius": 8,
+          "borderTopRightRadius": 8,
+          "flexDirection": "row",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "blue",
+            "borderBottomRightRadius": 8,
+            "borderTopRightRadius": 8,
+            "width": "66.66666666666666%",
+          }
+        }
+        testID="growing-bar"
+      />
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "blue",
+              "borderBottomRightRadius": 8,
+              "borderTopRightRadius": 8,
+              "height": 16,
+              "justifyContent": "center",
+              "left": "-66.66666666666666%",
+              "paddingRight": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                }
+              }
+            >
+              4
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFFB4",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 16,
+                }
+              }
+            >
+               of 6
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#E6E6E6",
+          "borderBottomRightRadius": 8,
+          "borderTopRightRadius": 8,
+          "flexDirection": "row",
+          "marginBottom": 8,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "indigo",
+            "borderBottomRightRadius": 8,
+            "borderTopRightRadius": 8,
+            "width": "83.33333333333334%",
+          }
+        }
+        testID="growing-bar"
+      />
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "indigo",
+              "borderBottomRightRadius": 8,
+              "borderTopRightRadius": 8,
+              "height": 16,
+              "justifyContent": "center",
+              "left": "-83.33333333333334%",
+              "paddingRight": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                }
+              }
+            >
+              5
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFFB4",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 16,
+                }
+              }
+            >
+               of 6
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "backgroundColor": "#E6E6E6",
+          "borderBottomRightRadius": 8,
+          "borderTopRightRadius": 8,
+          "flexDirection": "row",
+          "marginBottom": 0,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "violet",
+            "borderBottomRightRadius": 8,
+            "borderTopRightRadius": 8,
+            "width": "100%",
+          }
+        }
+        testID="growing-bar"
+      />
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "violet",
+              "borderBottomRightRadius": 8,
+              "borderTopRightRadius": 8,
+              "height": 16,
+              "justifyContent": "center",
+              "left": "-100%",
+              "paddingRight": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                }
+              }
+            >
+              6
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFFB4",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 16,
+                }
+              }
+            >
+               of 6
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View>
+    <View
+      style={
+        {
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "marginLeft": 8,
+        }
+      }
+    >
+      <Icon
+        color="#E6E6E6"
+        name="circle-check"
+        size={12}
+        type="light"
+      />
+    </View>
+    <View
+      style={
+        {
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "marginLeft": 8,
+        }
+      }
+    >
+      <Icon
+        color="#E6E6E6"
+        name="circle-check"
+        size={12}
+        type="light"
+      />
+    </View>
+    <View
+      style={
+        {
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "marginLeft": 8,
+        }
+      }
+    >
+      <Icon
+        color="#E6E6E6"
+        name="circle-check"
+        size={12}
+        type="light"
+      />
+    </View>
+    <View
+      style={
+        {
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "marginLeft": 8,
+        }
+      }
+    >
+      <Icon
+        color="#E6E6E6"
+        name="circle-check"
+        size={12}
+        type="light"
+      />
+    </View>
+    <View
+      style={
+        {
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "marginLeft": 8,
+        }
+      }
+    >
+      <Icon
+        color="#E6E6E6"
+        name="circle-check"
+        size={12}
+        type="light"
+      />
+    </View>
+    <View
+      style={
+        {
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 8,
+          "marginLeft": 8,
+        }
+      }
+    >
+      <Icon
+        color="#E6E6E6"
+        name="circle-check"
+        size={12}
+        type="light"
+      />
+    </View>
+    <View
+      style={
+        {
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 0,
+          "marginLeft": 8,
+        }
+      }
+    >
+      <Icon
+        color="violet"
+        name="circle-check"
+        size={12}
+        type="solid"
+      />
+    </View>
+  </View>
+</View>
+`;
