@@ -67,6 +67,7 @@
     "react-native-image-viewing": "^0.2.2",
     "react-native-localize": "^2.1.9",
     "react-native-logs": "^5.0.1",
+    "react-native-render-html": "^6.3.4",
     "react-native-scalable-image": "^1.1.0"
   }
 }
