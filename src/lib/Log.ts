@@ -17,6 +17,14 @@ const config = {
   severity: 'debug',
 }
 
-const Log = logger.createLogger(config)
+interface Logger {
+  debug: (...args: unknown[]) => void
+  trace: (...args: unknown[]) => void
+  info: (...args: unknown[]) => void
+  warn: (...args: unknown[]) => void
+  error: (...args: unknown[]) => void
+}
+
+const Log: Logger = logger.createLogger(config)
 
 export default Log
