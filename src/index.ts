@@ -33,6 +33,7 @@ import ProgressBar from './data/ProgressBar'
 import useShowBlurView from './hooks/useShowBlurView'
 import I18n from './lib/I18n'
 import Icons, { IconName } from './lib/Icons'
+import Log from './lib/Log'
 import { openUrl } from './lib/Url'
 
 export {
@@ -57,6 +58,7 @@ export {
   LargeButtonProps,
   Lightbox,
   Location,
+  Log,
   Message,
   MoreInfo,
   Notification,

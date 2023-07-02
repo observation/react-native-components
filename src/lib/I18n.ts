@@ -15,7 +15,7 @@ Countries.registerLocale(require('i18n-iso-countries/langs/de.json'))
 Countries.registerLocale(require('i18n-iso-countries/langs/es.json'))
 Countries.registerLocale(require('i18n-iso-countries/langs/fr.json'))
 
-interface SupportedLanguages {
+interface Translations {
   en: Object
   nl: Object
   de: Object
@@ -31,7 +31,7 @@ interface Api {
 class I18n {
   i18nJs = new I18nJs()
 
-  constructor(private translations: SupportedLanguages, private api: Api) {
+  constructor(private translations: Translations, private api: Api) {
     this.i18nJs.translations = translations
     this.i18nJs.enableFallback = false
     this.configure()
