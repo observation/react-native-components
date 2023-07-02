@@ -3,10 +3,7 @@ import React from 'react'
 import { render } from '@testing-library/react-native'
 
 import ProgressBar from '../../data/ProgressBar'
-import { getTestI18n } from '../../lib/TestUtils'
 import ProgressBarList from '../ProgressBarList'
-
-const testI18n = getTestI18n()
 
 describe('ProgressBarList', () => {
   test('Show bars', () => {
@@ -22,7 +19,7 @@ describe('ProgressBarList', () => {
     ]
 
     // THEN
-    const { toJSON } = render(<ProgressBarList progressBars={bars} i18n={testI18n} />)
+    const { toJSON } = render(<ProgressBarList progressBars={bars} />)
     expect(toJSON()).toMatchSnapshot()
   })
 
@@ -31,7 +28,7 @@ describe('ProgressBarList', () => {
     const bars = [new ProgressBar('Label', 0, 6, 'red')]
 
     // THEN
-    const { getByTestId } = render(<ProgressBarList progressBars={bars} i18n={testI18n} />)
+    const { getByTestId } = render(<ProgressBarList progressBars={bars} />)
 
     const growingBar = getByTestId('growing-bar')
     expect(growingBar.props.style.borderTopRightRadius).toBe(0)
@@ -43,7 +40,7 @@ describe('ProgressBarList', () => {
     const bars = [new ProgressBar('Label', 60, 6, 'red')]
 
     // THEN
-    const { getByTestId } = render(<ProgressBarList progressBars={bars} i18n={testI18n} />)
+    const { getByTestId } = render(<ProgressBarList progressBars={bars} />)
 
     const growingBar = getByTestId('growing-bar')
     expect(growingBar.props.style.borderTopRightRadius).toBe(8)

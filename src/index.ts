@@ -12,13 +12,13 @@ import IconButton from './components/IconButton'
 import IconText from './components/IconText'
 import IconView from './components/IconView'
 import InputField from './components/InputField'
-import LargeButton from './components/LargeButton'
+import LargeButton, { LargeButtonProps } from './components/LargeButton'
 import Lightbox from './components/Lightbox'
 import Location from './components/Location'
 import Message from './components/Message'
 import MoreInfo from './components/MoreInfo'
 import Notification from './components/Notification'
-import NotificationPopup from './components/NotificationPopup'
+import NotificationPopup, { NotificationPopupStaticProps } from './components/NotificationPopup'
 import PageIndicator from './components/PageIndicator'
 import Panel from './components/Panel'
 import PhotoStrip from './components/PhotoStrip'
@@ -27,11 +27,13 @@ import Popup from './components/Popup'
 import ProgressBarList from './components/ProgressBarList'
 import RenderHtmlWrapper from './components/RenderHtmlWrapper'
 import TextLink from './components/TextLink'
-import Tooltip from './components/Tooltip'
+import Tooltip, { TooltipProps } from './components/Tooltip'
 import WebLink from './components/WebLink'
+import ProgressBar from './data/ProgressBar'
 import useShowBlurView from './hooks/useShowBlurView'
 import I18n from './lib/I18n'
 import Icons, { IconName } from './lib/Icons'
+import { openUrl } from './lib/Url'
 
 export {
   Accordion,
@@ -52,22 +54,27 @@ export {
   Icons,
   InputField,
   LargeButton,
+  LargeButtonProps,
   Lightbox,
   Location,
   Message,
   MoreInfo,
   Notification,
   NotificationPopup,
+  NotificationPopupStaticProps,
   PageIndicator,
   Panel,
   PhotoStrip,
   Pictogram,
   Popup,
+  ProgressBar,
   ProgressBarList,
   RenderHtmlWrapper,
   TextLink,
   Tooltip,
+  TooltipProps,
   WebLink,
+  openUrl,
   useShowBlurView,
 }
 
