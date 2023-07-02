@@ -25,7 +25,9 @@ import PhotoStrip from './components/PhotoStrip'
 import Pictogram from './components/Pictogram'
 import Popup from './components/Popup'
 import ProgressBarList from './components/ProgressBarList'
+import RenderHtmlWrapper from './components/RenderHtmlWrapper'
 import TextLink from './components/TextLink'
+import Tooltip from './components/Tooltip'
 import useShowBlurView from './hooks/useShowBlurView'
 import I18n from './lib/I18n'
 import Icons, { IconName } from './lib/Icons'
@@ -58,10 +60,12 @@ export {
   PageIndicator,
   Panel,
   PhotoStrip,
-  Popup,
   Pictogram,
+  Popup,
   ProgressBarList,
+  RenderHtmlWrapper,
   TextLink,
+  Tooltip,
   useShowBlurView,
 }
 

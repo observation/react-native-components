@@ -1,0 +1,587 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tooltip Rendering With button 1`] = `
+<View
+  style={
+    [
+      {
+        "shadowColor": "#E6E6E6",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 4,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
+        "elevation": 6,
+        "overflow": "hidden",
+        "shadowColor": "#939393",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "margin": 16,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#212121",
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "marginTop": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            }
+          }
+        >
+          Text
+        </Text>
+      </View>
+      <View
+        style={
+          {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "marginHorizontal": -8,
+            "marginTop": 16,
+          }
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "alignItems": "center",
+              "backgroundColor": "#0066B1",
+              "borderRadius": 4,
+              "height": 32,
+              "justifyContent": "center",
+              "margin": 0,
+              "marginHorizontal": 8,
+              "opacity": 1,
+              "overflow": "hidden",
+            }
+          }
+          testID="touchable-opacity"
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+                "marginHorizontal": 16,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#212121",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "bold",
+                    "lineHeight": 20,
+                    "textAlignVertical": "center",
+                  },
+                  {
+                    "color": "#FFFFFF",
+                  },
+                ]
+              }
+            >
+              button title
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Tooltip Rendering With icon 1`] = `
+<View
+  style={
+    [
+      {
+        "shadowColor": "#E6E6E6",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 4,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
+        "elevation": 6,
+        "overflow": "hidden",
+        "shadowColor": "#939393",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "margin": 16,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "height": 20,
+              "justifyContent": "center",
+              "marginRight": 16,
+            }
+          }
+        >
+          <Icon
+            color="#0066B1"
+            name="circle-info"
+            size={18}
+            type="light"
+          />
+        </View>
+        <View
+          style={
+            {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#212121",
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 20,
+              "justifyContent": "center",
+              "marginLeft": 16,
+            }
+          }
+        >
+          <View
+            accessibilityLabel="close"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="close"
+          >
+            <Icon
+              color="#939393"
+              name="xmark"
+              size={18}
+              type="light"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "marginTop": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            }
+          }
+        >
+          Text
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Tooltip Rendering Without icon 1`] = `
+<View
+  style={
+    [
+      {
+        "shadowColor": "#E6E6E6",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 4,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
+        "elevation": 6,
+        "overflow": "hidden",
+        "shadowColor": "#939393",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "margin": 16,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#212121",
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 20,
+              "justifyContent": "center",
+              "marginLeft": 16,
+            }
+          }
+        >
+          <View
+            accessibilityLabel="close"
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "opacity": 1,
+              }
+            }
+            testID="close"
+          >
+            <Icon
+              color="#939393"
+              name="xmark"
+              size={18}
+              type="light"
+            />
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "marginTop": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            }
+          }
+        >
+          Text
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Tooltip Rendering Without icon or close button 1`] = `
+<View
+  style={
+    [
+      {
+        "shadowColor": "#E6E6E6",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 4,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "backgroundColor": "white",
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
+        "elevation": 6,
+        "overflow": "hidden",
+        "shadowColor": "#939393",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "column",
+          "margin": 16,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flex": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#212121",
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "marginTop": 8,
+          }
+        }
+      >
+        <Text
+          style={
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            }
+          }
+        >
+          Text
+        </Text>
+      </View>
+    </View>
+  </View>
+</View>
+`;
