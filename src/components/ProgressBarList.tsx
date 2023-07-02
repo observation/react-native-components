@@ -3,15 +3,16 @@ import { StyleSheet, Text, View } from 'react-native'
 
 import { IconSuccess } from './Icon'
 import ProgressBar from '../data/ProgressBar'
+import I18n from '../lib/I18n'
 import font from '../styles/font'
 import theme from '../styles/theme'
-import i18n from '../translations/i18n'
 
 type Props = {
   progressBars: ProgressBar[]
+  i18n: I18n
 }
 
-const ProgressBarList = ({ progressBars }: Props) => {
+const ProgressBarList = ({ progressBars, i18n }: Props) => {
   const getMarginBottom = (i: number) => (i === progressBars.length - 1 ? 0 : borderRadius)
 
   // With small percentages (<10%) the gray bar is visible because of the border radius:
