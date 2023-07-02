@@ -21,11 +21,7 @@ exports[`BackgroundImage Rendering All props 1`] = `
 >
   <Image
     resizeMode="contain"
-    source={
-      {
-        "testUri": "../../../src/components/__tests__/assets/pets.svg",
-      }
-    }
+    source="pets.svg"
     style={
       {
         "flex": 1,
@@ -56,11 +52,7 @@ exports[`BackgroundImage Rendering Required props 1`] = `
 >
   <Image
     resizeMode="contain"
-    source={
-      {
-        "testUri": "../../../src/components/__tests__/assets/pets.svg",
-      }
-    }
+    source="pets.svg"
     style={
       {
         "flex": 1,

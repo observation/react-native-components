@@ -1,0 +1,59 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Popup Rendering 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  style={
+    {
+      "flex": 1,
+    }
+  }
+  transparent={true}
+  visible={true}
+>
+  <BlurView
+    blurAmount={2}
+    blurType="light"
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+        },
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": "stretch",
+        "backgroundColor": "hsla(0, 0%, 18.1%, 0.6)",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "transparent",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <Text>
+        Popup
+      </Text>
+    </View>
+  </View>
+</Modal>
+`;

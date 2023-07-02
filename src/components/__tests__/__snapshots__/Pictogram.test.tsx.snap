@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pictogram Rendering no pets 1`] = `
+<View>
+  <pets.svg
+    height={48}
+    width={60}
+  />
+  <slash.svg
+    height={48}
+    style={
+      {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    width={60}
+  />
+</View>
+`;
+
+exports[`Pictogram Rendering no potplants 1`] = `
+<View>
+  <potplants.svg
+    height={48}
+    width={60}
+  />
+  <slash.svg
+    height={48}
+    style={
+      {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    width={60}
+  />
+</View>
+`;
+
+exports[`Pictogram Rendering no selfies 1`] = `
+<View>
+  <selfies.svg
+    height={48}
+    width={60}
+  />
+  <slash.svg
+    height={48}
+    style={
+      {
+        "bottom": 0,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+    width={60}
+  />
+</View>
+`;
