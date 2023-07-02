@@ -56,7 +56,7 @@ const PhotoStrip = ({ width, photos, title, description, content }: Props) => {
             />
           </TouchableOpacity>
         )}
-        keyExtractor={(_, index) => `${index}`}
+        keyExtractor={(item, index) => `${index}`}
         style={{ height: photoSize }}
         contentContainerStyle={{ flexGrow: 1, alignItems: 'stretch' }}
       />

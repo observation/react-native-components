@@ -113,6 +113,7 @@ export const IconValidationAcceptedByAdmin = (props: IconAppearanceProps) => (
 export const IconValidationAcceptedWithEvidence = (props: IconAppearanceProps) => (
   <Icon name="validation-accepted-with-evidence" {...props} />
 )
+
 export const Icon = ({ name, color, size, testID, style }: IconProps): JSX.Element => {
   const props = defaultProps[name]
   const iconStyle = style ?? props?.style ?? 'light'
