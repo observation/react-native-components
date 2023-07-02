@@ -28,6 +28,7 @@ import ProgressBarList from './components/ProgressBarList'
 import RenderHtmlWrapper from './components/RenderHtmlWrapper'
 import TextLink from './components/TextLink'
 import Tooltip from './components/Tooltip'
+import WebLink from './components/WebLink'
 import useShowBlurView from './hooks/useShowBlurView'
 import I18n from './lib/I18n'
 import Icons, { IconName } from './lib/Icons'
@@ -66,6 +67,7 @@ export {
   RenderHtmlWrapper,
   TextLink,
   Tooltip,
+  WebLink,
   useShowBlurView,
 }
 
