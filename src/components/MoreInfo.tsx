@@ -5,18 +5,18 @@ import { IconInfo } from './Icon'
 import IconText from './IconText'
 import textStyle from '../styles/text'
 import theme from '../styles/theme'
-import i18n from '../translations/i18n'
 
 type Props = {
   onPress?: () => void
   containerStyle?: StyleProp<ViewStyle>
   testID?: string
+  label: string
 }
 
-const MoreInfo = ({ onPress, containerStyle }: Props) => (
+const MoreInfo = ({ onPress, containerStyle, label }: Props) => (
   <IconText
     icon={<IconInfo size={theme.icon.size.medium} />}
-    text={i18n.t('About the species')}
+    text={label}
     style={{
       containerStyle,
       textStyle: textStyle.link,

@@ -19,7 +19,16 @@ describe('ProgressBarList', () => {
     ]
 
     // THEN
-    const { toJSON } = render(<ProgressBarList progressBars={bars} />)
+    const { toJSON } = render(<ProgressBarList progressBars={bars} separator="of" />)
+    expect(toJSON()).toMatchSnapshot()
+  })
+
+  test('Use different translation', () => {
+    // GIVEN
+    const bars = [new ProgressBar('Label', 0, 6, 'red')]
+
+    // THEN
+    const { toJSON } = render(<ProgressBarList progressBars={bars} separator="van" />)
     expect(toJSON()).toMatchSnapshot()
   })
 
@@ -28,7 +37,7 @@ describe('ProgressBarList', () => {
     const bars = [new ProgressBar('Label', 0, 6, 'red')]
 
     // THEN
-    const { getByTestId } = render(<ProgressBarList progressBars={bars} />)
+    const { getByTestId } = render(<ProgressBarList progressBars={bars} separator="of" />)
 
     const growingBar = getByTestId('growing-bar')
     expect(growingBar.props.style.borderTopRightRadius).toBe(0)
@@ -40,7 +49,7 @@ describe('ProgressBarList', () => {
     const bars = [new ProgressBar('Label', 60, 6, 'red')]
 
     // THEN
-    const { getByTestId } = render(<ProgressBarList progressBars={bars} />)
+    const { getByTestId } = render(<ProgressBarList progressBars={bars} separator="of" />)
 
     const growingBar = getByTestId('growing-bar')
     expect(growingBar.props.style.borderTopRightRadius).toBe(8)

@@ -5,13 +5,13 @@ import { IconSuccess } from './Icon'
 import ProgressBar from '../data/ProgressBar'
 import font from '../styles/font'
 import theme from '../styles/theme'
-import i18n from '../translations/i18n'
 
 type Props = {
   progressBars: ProgressBar[]
+  separator: string
 }
 
-const ProgressBarList = ({ progressBars }: Props) => {
+const ProgressBarList = ({ progressBars, separator }: Props) => {
   const getMarginBottom = (i: number) => (i === progressBars.length - 1 ? 0 : borderRadius)
 
   // With small percentages (<10%) the gray bar is visible because of the border radius:
@@ -77,7 +77,7 @@ const ProgressBarList = ({ progressBars }: Props) => {
               >
                 <View style={{ flexDirection: 'row' }}>
                   <Text style={{ ...styles.numerator }}>{progressBar.currentAmount}</Text>
-                  <Text style={{ ...styles.denominator }}>{` ${i18n.t('of')} ${progressBar.maximumAmount}`}</Text>
+                  <Text style={{ ...styles.denominator }}>{` ${separator} ${progressBar.maximumAmount}`}</Text>
                 </View>
               </View>
             </View>

@@ -4,13 +4,11 @@ import { render } from '@testing-library/react-native'
 
 import BackgroundImage from '../BackgroundImage'
 
-const pets = require('../../assets/pets.svg')
-
 describe('BackgroundImage', () => {
   describe('Rendering', () => {
     test('Required props', () => {
       // WHEN
-      const { toJSON } = render(<BackgroundImage source={pets} />)
+      const { toJSON } = render(<BackgroundImage source={{ uri: 'uri' }} />)
 
       // THEN
       expect(toJSON()).toMatchSnapshot()
@@ -20,7 +18,7 @@ describe('BackgroundImage', () => {
       // WHEN
       const { toJSON } = render(
         <BackgroundImage
-          source={pets}
+          source={{ uri: 'uri' }}
           style={{ flex: 1 }}
           top={1}
           bottom={2}

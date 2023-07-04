@@ -1,10 +1,7 @@
-import crashlytics from '@react-native-firebase/crashlytics'
-import { logger, consoleTransport } from 'react-native-logs'
+import { logger, consoleTransport, configLoggerType } from 'react-native-logs'
 
-const crashlyticsTransport = ({ msg }: { msg: string }) => crashlytics().log(msg)
-
-const config = {
-  transport: __DEV__ ? consoleTransport : crashlyticsTransport,
+const baseConfig = {
+  transport: consoleTransport,
   levels: {
     trace: 0,
     debug: 1,
@@ -17,14 +14,24 @@ const config = {
   severity: 'debug',
 }
 
-interface Logger {
-  debug: (...args: unknown[]) => void
-  trace: (...args: unknown[]) => void
-  info: (...args: unknown[]) => void
-  warn: (...args: unknown[]) => void
-  error: (...args: unknown[]) => void
+let loggerInstance = logger.createLogger(baseConfig)
+
+const Log = {
+  debug: (...args: unknown[]) => loggerInstance.debug(...args),
+  trace: (...args: unknown[]) => loggerInstance.trace(...args),
+  info: (...args: unknown[]) => loggerInstance.info(...args),
+  warn: (...args: unknown[]) => loggerInstance.warn(...args),
+  error: (...args: unknown[]) => loggerInstance.error(...args),
 }
 
-const Log: Logger = logger.createLogger(config)
+const setLogConfiguration = (config: Omit<configLoggerType, 'levels'>) => {
+  const newConfig = {
+    ...baseConfig,
+    ...config,
+  }
+  loggerInstance = logger.createLogger(newConfig)
+}
 
 export default Log
+
+export { setLogConfiguration }

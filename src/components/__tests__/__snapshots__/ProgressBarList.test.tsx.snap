@@ -953,3 +953,165 @@ exports[`ProgressBarList Show bars 1`] = `
   </View>
 </View>
 `;
+
+exports[`ProgressBarList Use different translation 1`] = `
+<View
+  style={
+    {
+      "flexDirection": "row",
+      "width": "100%",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "maxWidth": "50%",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "red",
+          "borderBottomLeftRadius": 8,
+          "borderTopLeftRadius": 8,
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 0,
+          "paddingLeft": 8,
+        }
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          {
+            "color": "#FFFFFFB4",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "justifyContent": "center",
+            "lineHeight": 16,
+          }
+        }
+      >
+        Label
+        <View
+          style={
+            {
+              "backgroundColor": "red",
+              "width": 5,
+            }
+          }
+        />
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#E6E6E6",
+          "borderBottomRightRadius": 8,
+          "borderTopRightRadius": 8,
+          "flexDirection": "row",
+          "marginBottom": 0,
+          "width": "100%",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "red",
+            "borderBottomRightRadius": 0,
+            "borderTopRightRadius": 0,
+            "width": "0%",
+          }
+        }
+        testID="growing-bar"
+      />
+      <View>
+        <View
+          style={
+            {
+              "backgroundColor": "red",
+              "borderBottomRightRadius": 8,
+              "borderTopRightRadius": 8,
+              "height": 16,
+              "justifyContent": "center",
+              "left": "-0%",
+              "paddingRight": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#FFFFFF",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                }
+              }
+            >
+              0
+            </Text>
+            <Text
+              style={
+                {
+                  "color": "#FFFFFFB4",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 16,
+                }
+              }
+            >
+               van 6
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+  <View>
+    <View
+      style={
+        {
+          "height": 16,
+          "justifyContent": "center",
+          "marginBottom": 0,
+          "marginLeft": 8,
+        }
+      }
+    >
+      <Icon
+        color="#E6E6E6"
+        name="circle-check"
+        size={12}
+        type="light"
+      />
+    </View>
+  </View>
+</View>
+`;

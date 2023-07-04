@@ -87,3 +87,91 @@ exports[`MoreInfo Rendering 1`] = `
   </View>
 </View>
 `;
+
+exports[`MoreInfo Rendering, different translation 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "flexDirection": "row",
+        },
+        {
+          "flex": 1,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "justifyContent": "center",
+            "marginRight": 8,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Icon
+        color="#0066B1"
+        name="circle-info"
+        size={14}
+        type="light"
+      />
+    </View>
+    <Text
+      style={
+        [
+          {
+            "flexShrink": 1,
+          },
+          {
+            "color": "#0066B1",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          },
+        ]
+      }
+    >
+      Over de soort
+    </Text>
+  </View>
+</View>
+`;

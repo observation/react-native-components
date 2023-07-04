@@ -22,7 +22,6 @@ import NotificationPopup, { NotificationPopupStaticProps } from './components/No
 import PageIndicator from './components/PageIndicator'
 import Panel from './components/Panel'
 import PhotoStrip from './components/PhotoStrip'
-import Pictogram from './components/Pictogram'
 import Popup from './components/Popup'
 import ProgressBarList from './components/ProgressBarList'
 import RenderHtmlWrapper from './components/RenderHtmlWrapper'
@@ -33,7 +32,7 @@ import ProgressBar from './data/ProgressBar'
 import useShowBlurView from './hooks/useShowBlurView'
 import I18n from './lib/I18n'
 import Icons, { IconName } from './lib/Icons'
-import Log from './lib/Log'
+import Log, { setLogConfiguration } from './lib/Log'
 import { openUrl } from './lib/Url'
 
 export {
@@ -67,7 +66,6 @@ export {
   PageIndicator,
   Panel,
   PhotoStrip,
-  Pictogram,
   Popup,
   ProgressBar,
   ProgressBarList,
@@ -77,6 +75,7 @@ export {
   TooltipProps,
   WebLink,
   openUrl,
+  setLogConfiguration,
   useShowBlurView,
 }
 
