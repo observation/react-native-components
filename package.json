@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "0.0.37",
+  "version": "0.0.38",
   "main": "lib/commonjs/index.js",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
@@ -36,7 +36,7 @@
   "types": "lib/typescript/index.d.ts",
   "scripts": {
     "lint": "tsc --noEmit && eslint src",
-    "prepack": "bob build && rm -rf lib/typescript/components/__tests__",
+    "prepack": "bob build",
     "test": "jest"
   },
   "files": [
@@ -56,6 +56,7 @@
     "@fortawesome/pro-light-svg-icons": "^6.3.0",
     "@fortawesome/pro-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-native-fontawesome": "^0.3.0",
+    "@observation.org/react-native-image-viewing": "^1.0.0",
     "@react-native-community/blur": "^4.2.0",
     "@react-navigation/native": "^6.0.8",
     "accordion-collapse-react-native": "^1.0.0",
@@ -63,7 +64,6 @@
     "i18n-iso-countries": "^7.2.0",
     "i18n-js": "^4.0.2",
     "moment": "2.29.4",
-    "react-native-image-viewing": "^0.2.2",
     "react-native-localize": "^2.1.9",
     "react-native-logs": "^5.0.1",
     "react-native-render-html": "^6.3.4",
