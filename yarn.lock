@@ -1644,6 +1644,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@observation.org/react-native-image-viewing@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@observation.org/react-native-image-viewing/-/react-native-image-viewing-1.0.0.tgz#612367bdd1ea0da792b847fb9b06009c894c3c6e"
+  integrity sha512-uKXo0aoObEXy/JAw93Epo68V+YVDXFYsrD1UUACPpEKnIaeUF/AuU4e1Xp8nHOcydWlrQxSKJnhJIo24SZzxsA==
+
 "@react-native-community/blur@^4.2.0":
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/@react-native-community/blur/-/blur-4.3.2.tgz#185a2c7dd03ba168cc95069bc4742e9505fd6c6c"
@@ -6645,11 +6650,6 @@ react-native-gradle-plugin@^0.71.19:
   version "0.71.19"
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.71.19.tgz#3379e28341fcd189bc1f4691cefc84c1a4d7d232"
   integrity sha512-1dVk9NwhoyKHCSxcrM6vY6cxmojeATsBobDicX0ZKr7DgUF2cBQRTKsimQFvzH8XhOVXyH8p4HyDSZNIFI8OlQ==
-
-react-native-image-viewing@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/react-native-image-viewing/-/react-native-image-viewing-0.2.2.tgz#fb26e57d7d3d9ce4559a3af3d244387c0367242b"
-  integrity sha512-osWieG+p/d2NPbAyonOMubttajtYEYiRGQaJA54slFxZ69j1V4/dCmcrVQry47ktVKy8/qpFwCpW1eT6MH5T2Q==
 
 react-native-localize@^2.1.9:
   version "2.2.6"

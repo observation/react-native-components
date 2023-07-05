@@ -1,8 +1,8 @@
 import React from 'react'
 import { SafeAreaView, StyleSheet, Text, TextStyle, TouchableOpacity, View } from 'react-native'
 
+import ImageView from '@observation.org/react-native-image-viewing'
 import Color from 'color'
-import ImageView from 'react-native-image-viewing'
 
 import { IconClose } from './Icon'
 import PageIndicator from './PageIndicator'
