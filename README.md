@@ -1,2 +1,50 @@
 # react-native-components
-React Native component library
+React Native component library for components used by React Native applications of Observation.org.
+There are 2 kindse of components:
+UI components: 
+- `Accordion`
+- `BackButton`
+- `BackgroundImage`
+- `BottomSheet`
+- `Checkbox`
+- `Chip`
+- `ContentImage`
+- `Date`
+- `Disclose`
+- `FilterButton`
+- `IconButton`
+- `IconName`
+- `IconText`
+- `IconView`
+- `Icons`
+- `InputField`
+- `LargeButton (+ LargeButtonProps)`
+- `Icon/Icons`
+- `Lightbox`
+- `Location`
+- `Message`
+- `MoreInfo`
+- `Notification`
+- `NotificationPopup (+ NotificationPopupStaticProps)`
+- `PageIndicator`
+- `Panel`
+- `PhotoStrip`
+- `Popup`
+- `ProgressBar`
+- `ProgressBarList`
+- `RenderHtmlWrapper`
+- `TextLink`
+- `Tooltip`
+- `TooltipProps`
+- `WebLink`
+
+non-UI components:
+- `I18n`: takes care of translations
+- `Log` (+ setLogConfiguration): A logger class
+- `openUrl`: Opens URLs
+- `useShowBlurView`: A safe way to set a blur on the background
+
+Styling:
+- `theme`: A default theme with color and margins
+- `font`: A set of font styles
+- `text`: A set of text styles
