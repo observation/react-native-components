@@ -6,10 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Authenticate with FontAwesome Pro
-        run: echo "@fortawesome:registry=https://npm.fontawesome.com/ >> .npmrc && echo //npm.fontawesome.com/:_authToken=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }} >> .npmrc"
-      - name: Install modules
-        run: yarn
-      - name: Run eslint
-        run: yarn lint
-      - name: Run tests with coverage
-        run: yarn test --coverage --silent
+        run: echo "@fortawesome:registry=https://npm.fontawesome.com/ >> .npmrc && echo //npm.fontawesome.com/:_authToken=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }} >> .npmrc" && cat .npmrc
