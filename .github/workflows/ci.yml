@@ -6,4 +6,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Authenticate with FontAwesome Pro
-        run: echo "@fortawesome:registry=https://npm.fontawesome.com/ >> .npmrc && echo //npm.fontawesome.com/:_authToken=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }} >> .npmrc" && cat .npmrc
+        run: echo "//npm.fontawesome.com/:_authToken=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" >> .npmrc && cat .npmrc
