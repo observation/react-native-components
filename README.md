@@ -1,6 +1,6 @@
 # react-native-components
 React Native component library for components used by React Native applications of Observation.org.
-There are 2 kindse of components:
+There are 2 kinds of components:
 UI components: 
 - `Accordion`
 - `BackButton`
@@ -43,8 +43,6 @@ non-UI components:
 - `Log` (+ setLogConfiguration): A logger class
 - `openUrl`: Opens URLs
 - `useShowBlurView`: A safe way to set a blur on the background
-
-Styling:
 - `theme`: A default theme with color and margins
 - `font`: A set of font styles
 - `text`: A set of text styles
