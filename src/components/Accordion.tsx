@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { View } from 'react-native'
 
+// @ts-ignore
 import { Collapse, CollapseHeader, CollapseBody } from 'accordion-collapse-react-native'
 
 import Log from '../lib/Log'

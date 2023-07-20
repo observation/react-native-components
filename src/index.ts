@@ -48,13 +48,11 @@ export {
   FilterButton,
   I18n,
   IconButton,
-  IconName,
   IconText,
   IconView,
   Icons,
   InputField,
   LargeButton,
-  LargeButtonProps,
   Lightbox,
   Location,
   Log,
@@ -62,7 +60,6 @@ export {
   MoreInfo,
   Notification,
   NotificationPopup,
-  NotificationPopupStaticProps,
   PageIndicator,
   Panel,
   PhotoStrip,
@@ -72,12 +69,13 @@ export {
   RenderHtmlWrapper,
   TextLink,
   Tooltip,
-  TooltipProps,
   WebLink,
   openUrl,
   setLogConfiguration,
   useShowBlurView,
 }
+
+export type { IconName, LargeButtonProps, NotificationPopupStaticProps, TooltipProps }
 
 export * from './components/Icon'
 export * from './styles'
