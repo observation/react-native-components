@@ -1,7 +1,7 @@
 {
   "name": "@observation.org/react-native-components",
   "version": "0.0.39",
-  "main": "lib/commonjs/index.js",
+  "main": "src/index.ts",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
   "license": "MIT",
@@ -32,8 +32,6 @@
     "typescript": "^4.8.4"
   },
   "react-native": "src/index.ts",
-  "module": "lib/module/index.js",
-  "types": "lib/typescript/index.d.ts",
   "scripts": {
     "lint": "tsc --noEmit && eslint src",
     "prepack": "bob build",
