@@ -56,7 +56,7 @@
     "@fortawesome/pro-light-svg-icons": "^6.3.0",
     "@fortawesome/pro-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-native-fontawesome": "^0.3.0",
-    "@observation.org/react-native-image-viewing": "^1.0.0",
+    "@observation.org/react-native-image-viewing": "observation/react-native-image-viewing#feature/apply-patch",
     "@react-native-community/blur": "^4.2.0",
     "@react-navigation/native": "^6.0.8",
     "accordion-collapse-react-native": "^1.0.0",
