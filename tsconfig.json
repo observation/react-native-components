@@ -16,6 +16,5 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext"
-  },
-  "exclude": ["**/__tests__"]
+  }
 }
