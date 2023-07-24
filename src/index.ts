@@ -30,7 +30,6 @@ import Tooltip, { TooltipProps } from './components/Tooltip'
 import WebLink from './components/WebLink'
 import ProgressBar from './data/ProgressBar'
 import useShowBlurView from './hooks/useShowBlurView'
-import I18n from './lib/I18n'
 import Icons, { IconName } from './lib/Icons'
 import { setLogConfiguration } from './lib/Log'
 import { openUrl } from './lib/Url'
@@ -46,7 +45,6 @@ export {
   Date,
   Disclose,
   FilterButton,
-  I18n,
   IconButton,
   IconText,
   IconView,

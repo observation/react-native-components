@@ -39,7 +39,6 @@ UI components:
 - `WebLink`
 
 non-UI components:
-- `I18n`: takes care of translations
 - `Log.setLogConfiguration`: A function to change the logging of the component library
 - `openUrl`: Opens URLs
 - `useShowBlurView`: A safe way to set a blur on the background
