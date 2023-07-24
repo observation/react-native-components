@@ -10,6 +10,9 @@ import theme from './theme'
  * The component @native-html (used by react-native-render-html) is missing the overflow: 'scroll' property.
  * In order to use the React Native's TextStyle together with the RenderHtml component (and type checking)
  * we override the overflow property with our own overflow type
+ *
+ * Since React Native has introduced DimensionValue for some types, the MixedSizeCSSPropertiesKeys is forced
+ * to be number | string | undefined
  */
 type FontStyle = TextStyle & { overflow?: 'visible' | 'hidden' | undefined } & {
   [k in MixedSizeCSSPropertiesKeys]?: number | string
