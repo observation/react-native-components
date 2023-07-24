@@ -329,7 +329,7 @@ exports[`ProgressBarList Show bars 1`] = `
               "borderTopRightRadius": 8,
               "height": 16,
               "justifyContent": "center",
-              "left": "-0%",
+              "left": "0%",
               "paddingRight": 8,
             }
           }
@@ -1049,7 +1049,7 @@ exports[`ProgressBarList Use different translation 1`] = `
               "borderTopRightRadius": 8,
               "height": 16,
               "justifyContent": "center",
-              "left": "-0%",
+              "left": "0%",
               "paddingRight": 8,
             }
           }

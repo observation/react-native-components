@@ -1,3 +1,4 @@
+/* eslint-disable observation/no-function-without-logging */
 import I18n, { Api } from './I18n'
 
 const mockNavigation: any = {

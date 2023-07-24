@@ -30,12 +30,12 @@ const Message = ({ title, text, buttons, style }: Props) => (
           alignItems: 'flex-start',
         }}
       >
-        {buttons.map((button) => (
+        {buttons.map((button, i) => (
           <LargeButton
             disabled={button!.disabled || false}
             secondary={button!.secondary || false}
             title={button!.title}
-            key={title}
+            key={i}
             style={{ margin: 0, marginRight: theme.margin.half }}
             onPress={button!.onPress!}
           />

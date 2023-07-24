@@ -25,6 +25,8 @@ const Log = {
 }
 
 const setLogConfiguration = (config: Omit<configLoggerType, 'levels'>) => {
+  Log.debug('Log:setLogConfiguration')
+
   const newConfig = {
     ...baseConfig,
     ...config,

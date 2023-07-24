@@ -38,7 +38,7 @@ class I18n {
   }
 
   setLocale = (locale: string) => {
-    Log.debug('i18n:setLocale', locale)
+    Log.debug('I18n:setLocale', locale)
     this.i18nJs.locale = locale
     moment.locale(locale)
     this.api.setLanguage(locale)
@@ -53,13 +53,13 @@ class I18n {
     const fallback = { languageTag: 'en', isRTL: false }
     const languages = Object.keys(this.translations)
     const { languageTag, isRTL } = RNLocalize.findBestAvailableLanguage(languages) || fallback
-    Log.debug('i18n:configure', languageTag)
+    Log.debug('I18n:configure', languageTag)
     I18nManager.forceRTL(isRTL) // optional, you might not want to handle RTL
     this.setLocale(languageTag)
   }
 
   getCountryFromLocale = () => {
-    Log.debug('i18n:getCountryFromLocale')
+    Log.debug('I18n:getCountryFromLocale')
 
     const fallback = 'NL'
     const locales = RNLocalize.getLocales()
@@ -67,7 +67,7 @@ class I18n {
   }
 
   getLanguageFromLocale = () => {
-    Log.debug('i18n:getLanguageFromLocale')
+    Log.debug('I18n:getLanguageFromLocale')
 
     const locales = RNLocalize.getLocales()
     return locales.length > 0 ? locales[0].languageCode : null
