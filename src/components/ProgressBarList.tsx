@@ -71,7 +71,7 @@ const ProgressBarList = ({ progressBars, separator }: Props) => {
               <View
                 style={{
                   ...styles.numbersContainer,
-                  left: `${progressBar.percentage * -1}%`,
+                  left: `${-progressBar.percentage}%`,
                   backgroundColor: progressBar.backgroundColor,
                 }}
               >
