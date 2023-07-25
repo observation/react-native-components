@@ -1,0 +1,90 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel Rendering 1`] = `
+<View
+  style={
+    [
+      {
+        "marginTop": 4,
+        "shadowColor": "#E6E6E6",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 2,
+      },
+      {},
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#F8F9FA",
+          "borderTopWidth": 1,
+          "elevation": 4,
+          "paddingVertical": 16,
+          "shadowColor": "#939393",
+        },
+        {},
+        undefined,
+      ]
+    }
+  >
+    <Text>
+      Some text
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`Panel Rendering without top shadow 1`] = `
+<View
+  style={
+    [
+      {
+        "marginTop": 4,
+        "shadowColor": "#E6E6E6",
+        "shadowOffset": {
+          "height": 2,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 2,
+      },
+      {
+        "marginTop": 0,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#F8F9FA",
+          "borderTopWidth": 1,
+          "elevation": 4,
+          "paddingVertical": 16,
+          "shadowColor": "#939393",
+        },
+        {
+          "borderTopWidth": 0,
+          "paddingTop": 0,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text>
+      Some text
+    </Text>
+  </View>
+</View>
+`;

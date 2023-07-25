@@ -1,0 +1,921 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageIndicator Rendering Page 1/1 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+/>
+`;
+
+exports[`PageIndicator Rendering Page 1/4 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`PageIndicator Rendering Page 1/12 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "margin": 6,
+          "width": 4,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`PageIndicator Rendering Page 2/4 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`PageIndicator Rendering Page 2/12 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "margin": 6,
+          "width": 4,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`PageIndicator Rendering Page 4/4 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`PageIndicator Rendering Page 5/12 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "margin": 6,
+          "width": 4,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "margin": 6,
+          "width": 4,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`PageIndicator Rendering Page 6/12 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "margin": 6,
+          "width": 4,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "margin": 6,
+          "width": 4,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`PageIndicator Rendering Page 7/12 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "margin": 6,
+          "width": 4,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "margin": 6,
+          "width": 4,
+        },
+      ]
+    }
+  />
+</View>
+`;
+
+exports[`PageIndicator Rendering Page 12/12 1`] = `
+<View
+  style={
+    {
+      "alignSelf": "center",
+      "flexDirection": "row",
+    }
+  }
+>
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "margin": 6,
+          "width": 4,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      {
+        "alignSelf": "center",
+        "aspectRatio": 1,
+        "backgroundColor": "#939393",
+        "borderRadius": 4,
+        "margin": 4,
+        "overflow": "hidden",
+        "width": 8,
+      }
+    }
+  />
+  <View
+    style={
+      [
+        {
+          "alignSelf": "center",
+          "aspectRatio": 1,
+          "backgroundColor": "#939393",
+          "borderRadius": 4,
+          "margin": 4,
+          "overflow": "hidden",
+          "width": 8,
+        },
+        {
+          "backgroundColor": "#FFFFFF",
+        },
+      ]
+    }
+  />
+</View>
+`;

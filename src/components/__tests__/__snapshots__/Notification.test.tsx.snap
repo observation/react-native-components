@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Notification Rendering 1`] = `
+<View
+  style={
+    [
+      {
+        "flex": 1,
+      },
+      {
+        "alignItems": "center",
+        "backgroundColor": "#EA554B",
+        "borderRadius": 9,
+        "height": 18,
+        "justifyContent": "center",
+        "width": 18,
+      },
+    ]
+  }
+>
+  <Text
+    allowFontScaling={false}
+    style={
+      {
+        "color": "white",
+        "fontFamily": "Ubuntu",
+        "fontSize": 10,
+        "fontStyle": "normal",
+        "fontWeight": "normal",
+        "lineHeight": 16,
+        "textAlign": "center",
+      }
+    }
+  >
+    10
+  </Text>
+</View>
+`;

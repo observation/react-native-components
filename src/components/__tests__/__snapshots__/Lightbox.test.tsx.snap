@@ -1,0 +1,1600 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Lightbox Rendering First photo 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={true}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    [
+      "portrait",
+    ]
+  }
+  transparent={false}
+  visible={true}
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#000",
+          "flex": 1,
+        },
+        {
+          "backgroundColor": "#000",
+          "opacity": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "position": "absolute",
+          "top": 0,
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          {
+            "backgroundColor": "#00000077",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignContent": "space-between",
+              "flex": 1,
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "alignSelf": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignSelf": "center",
+                      "aspectRatio": 1,
+                      "backgroundColor": "#939393",
+                      "borderRadius": 4,
+                      "margin": 4,
+                      "overflow": "hidden",
+                      "width": 8,
+                    },
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+              />
+              <View
+                style={
+                  {
+                    "alignSelf": "center",
+                    "aspectRatio": 1,
+                    "backgroundColor": "#939393",
+                    "borderRadius": 4,
+                    "margin": 4,
+                    "overflow": "hidden",
+                    "width": 8,
+                  }
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              hitSlop={
+                {
+                  "bottom": 16,
+                  "left": 16,
+                  "right": 16,
+                  "top": 16,
+                }
+              }
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "alignSelf": "flex-end",
+                  "justifyContent": "center",
+                  "opacity": 1,
+                }
+              }
+            >
+              <Icon
+                color="rgba(255, 255, 255, 0.5)"
+                name="xmark"
+                size={24}
+                testID="close-lightbox"
+                type="light"
+              />
+            </View>
+          </View>
+        </View>
+      </RCTSafeAreaView>
+    </View>
+    <RCTScrollView
+      data={
+        [
+          {
+            "uri": "https://waarneming-test.nl/media/photo/031/772/31772398.jpg",
+          },
+          {
+            "uri": "https://waarneming-test.nl/media/photo/031/772/31772399.jpg",
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      getItemLayout={[Function]}
+      horizontal={true}
+      initialNumToRender={1}
+      initialScrollIndex={0}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={1}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+      stickyHeaderIndices={[]}
+      windowSize={2}
+    >
+      <View>
+        <View
+          onFocusCapture={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View>
+            <RCTScrollView
+              contentContainerStyle={
+                {
+                  "height": 1334,
+                }
+              }
+              maximumZoomScale={1}
+              onScrollEndDrag={[Function]}
+              pinchGestureEnabled={true}
+              scrollEnabled={false}
+              scrollEventThrottle={1}
+              showsHorizontalScrollIndicator={false}
+              showsVerticalScrollIndicator={false}
+              style={
+                {
+                  "height": 1334,
+                  "width": 750,
+                }
+              }
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "height": 1334,
+                      "justifyContent": "center",
+                      "width": 750,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#FFF"
+                    size="small"
+                  />
+                </View>
+                <Image
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onLoad={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  source={
+                    {
+                      "uri": "https://waarneming-test.nl/media/photo/031/772/31772398.jpg",
+                    }
+                  }
+                  style={
+                    {
+                      "height": 0,
+                      "opacity": 1,
+                      "width": 0,
+                    }
+                  }
+                />
+              </View>
+            </RCTScrollView>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "width": 750,
+            }
+          }
+        />
+      </View>
+    </RCTScrollView>
+    <View
+      collapsable={false}
+      style={
+        {
+          "bottom": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          {
+            "backgroundColor": "#00000077",
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "marginVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "white",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Grey Wagtail
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "marginVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              11/26/2020 2:37 PM
+            </Text>
+          </View>
+        </View>
+      </RCTSafeAreaView>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`Lightbox Rendering Only a photo 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={true}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    [
+      "portrait",
+    ]
+  }
+  transparent={false}
+  visible={true}
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#000",
+          "flex": 1,
+        },
+        {
+          "backgroundColor": "#000",
+          "opacity": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "position": "absolute",
+          "top": 0,
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          {
+            "backgroundColor": "#00000077",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignContent": "space-between",
+              "flex": 1,
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "alignSelf": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignSelf": "center",
+                      "aspectRatio": 1,
+                      "backgroundColor": "#939393",
+                      "borderRadius": 4,
+                      "margin": 4,
+                      "overflow": "hidden",
+                      "width": 8,
+                    },
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+              />
+              <View
+                style={
+                  {
+                    "alignSelf": "center",
+                    "aspectRatio": 1,
+                    "backgroundColor": "#939393",
+                    "borderRadius": 4,
+                    "margin": 4,
+                    "overflow": "hidden",
+                    "width": 8,
+                  }
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              hitSlop={
+                {
+                  "bottom": 16,
+                  "left": 16,
+                  "right": 16,
+                  "top": 16,
+                }
+              }
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "alignSelf": "flex-end",
+                  "justifyContent": "center",
+                  "opacity": 1,
+                }
+              }
+            >
+              <Icon
+                color="rgba(255, 255, 255, 0.5)"
+                name="xmark"
+                size={24}
+                testID="close-lightbox"
+                type="light"
+              />
+            </View>
+          </View>
+        </View>
+      </RCTSafeAreaView>
+    </View>
+    <RCTScrollView
+      data={
+        [
+          {
+            "uri": "https://waarneming-test.nl/media/photo/031/772/31772398.jpg",
+          },
+          {
+            "uri": "https://waarneming-test.nl/media/photo/031/772/31772399.jpg",
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      getItemLayout={[Function]}
+      horizontal={true}
+      initialNumToRender={1}
+      initialScrollIndex={0}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={1}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+      stickyHeaderIndices={[]}
+      windowSize={2}
+    >
+      <View>
+        <View
+          onFocusCapture={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View>
+            <RCTScrollView
+              contentContainerStyle={
+                {
+                  "height": 1334,
+                }
+              }
+              maximumZoomScale={1}
+              onScrollEndDrag={[Function]}
+              pinchGestureEnabled={true}
+              scrollEnabled={false}
+              scrollEventThrottle={1}
+              showsHorizontalScrollIndicator={false}
+              showsVerticalScrollIndicator={false}
+              style={
+                {
+                  "height": 1334,
+                  "width": 750,
+                }
+              }
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "height": 1334,
+                      "justifyContent": "center",
+                      "width": 750,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#FFF"
+                    size="small"
+                  />
+                </View>
+                <Image
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onLoad={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  source={
+                    {
+                      "uri": "https://waarneming-test.nl/media/photo/031/772/31772398.jpg",
+                    }
+                  }
+                  style={
+                    {
+                      "height": 0,
+                      "opacity": 1,
+                      "width": 0,
+                    }
+                  }
+                />
+              </View>
+            </RCTScrollView>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "width": 750,
+            }
+          }
+        />
+      </View>
+    </RCTScrollView>
+    <View
+      collapsable={false}
+      style={
+        {
+          "bottom": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          {
+            "backgroundColor": "#00000077",
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            }
+          }
+        />
+      </RCTSafeAreaView>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={true}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    [
+      "portrait",
+    ]
+  }
+  transparent={false}
+  visible={true}
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#000",
+          "flex": 1,
+        },
+        {
+          "backgroundColor": "#000",
+          "opacity": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "position": "absolute",
+          "top": 0,
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          {
+            "backgroundColor": "#00000077",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignContent": "space-between",
+              "flex": 1,
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "alignSelf": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  [
+                    {
+                      "alignSelf": "center",
+                      "aspectRatio": 1,
+                      "backgroundColor": "#939393",
+                      "borderRadius": 4,
+                      "margin": 4,
+                      "overflow": "hidden",
+                      "width": 8,
+                    },
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+              />
+              <View
+                style={
+                  {
+                    "alignSelf": "center",
+                    "aspectRatio": 1,
+                    "backgroundColor": "#939393",
+                    "borderRadius": 4,
+                    "margin": 4,
+                    "overflow": "hidden",
+                    "width": 8,
+                  }
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              hitSlop={
+                {
+                  "bottom": 16,
+                  "left": 16,
+                  "right": 16,
+                  "top": 16,
+                }
+              }
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "alignSelf": "flex-end",
+                  "justifyContent": "center",
+                  "opacity": 1,
+                }
+              }
+            >
+              <Icon
+                color="rgba(255, 255, 255, 0.5)"
+                name="xmark"
+                size={24}
+                testID="close-lightbox"
+                type="light"
+              />
+            </View>
+          </View>
+        </View>
+      </RCTSafeAreaView>
+    </View>
+    <RCTScrollView
+      data={
+        [
+          {
+            "uri": "https://waarneming-test.nl/media/photo/031/772/31772398.jpg",
+          },
+          {
+            "uri": "https://waarneming-test.nl/media/photo/031/772/31772399.jpg",
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      getItemLayout={[Function]}
+      horizontal={true}
+      initialNumToRender={1}
+      initialScrollIndex={0}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={1}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+      stickyHeaderIndices={[]}
+      windowSize={2}
+    >
+      <View>
+        <View
+          onFocusCapture={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View>
+            <RCTScrollView
+              contentContainerStyle={
+                {
+                  "height": 1334,
+                }
+              }
+              maximumZoomScale={1}
+              onScrollEndDrag={[Function]}
+              pinchGestureEnabled={true}
+              scrollEnabled={false}
+              scrollEventThrottle={1}
+              showsHorizontalScrollIndicator={false}
+              showsVerticalScrollIndicator={false}
+              style={
+                {
+                  "height": 1334,
+                  "width": 750,
+                }
+              }
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "height": 1334,
+                      "justifyContent": "center",
+                      "width": 750,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#FFF"
+                    size="small"
+                  />
+                </View>
+                <Image
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onLoad={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  source={
+                    {
+                      "uri": "https://waarneming-test.nl/media/photo/031/772/31772398.jpg",
+                    }
+                  }
+                  style={
+                    {
+                      "height": 0,
+                      "opacity": 1,
+                      "width": 0,
+                    }
+                  }
+                />
+              </View>
+            </RCTScrollView>
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "width": 750,
+            }
+          }
+        />
+      </View>
+    </RCTScrollView>
+    <View
+      collapsable={false}
+      style={
+        {
+          "bottom": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          {
+            "backgroundColor": "#00000077",
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "marginVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "white",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Grey Wagtail
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "marginVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              11/26/2020 2:37 PM
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "marginVertical": 4,
+              }
+            }
+          >
+            <Text>
+              Jan de Vogelaar
+            </Text>
+          </View>
+        </View>
+      </RCTSafeAreaView>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`Lightbox Rendering Second photo 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={true}
+  onRequestClose={[Function]}
+  supportedOrientations={
+    [
+      "portrait",
+    ]
+  }
+  transparent={false}
+  visible={true}
+>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#000",
+          "flex": 1,
+        },
+        {
+          "backgroundColor": "#000",
+          "opacity": 1,
+        },
+      ]
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        {
+          "position": "absolute",
+          "top": 0,
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          {
+            "backgroundColor": "#00000077",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignContent": "space-between",
+              "flex": 1,
+              "flexDirection": "row",
+              "padding": 16,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          />
+          <View
+            style={
+              {
+                "alignItems": "center",
+                "justifyContent": "center",
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "alignSelf": "center",
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "alignSelf": "center",
+                    "aspectRatio": 1,
+                    "backgroundColor": "#939393",
+                    "borderRadius": 4,
+                    "margin": 4,
+                    "overflow": "hidden",
+                    "width": 8,
+                  }
+                }
+              />
+              <View
+                style={
+                  [
+                    {
+                      "alignSelf": "center",
+                      "aspectRatio": 1,
+                      "backgroundColor": "#939393",
+                      "borderRadius": 4,
+                      "margin": 4,
+                      "overflow": "hidden",
+                      "width": 8,
+                    },
+                    {
+                      "backgroundColor": "#FFFFFF",
+                    },
+                  ]
+                }
+              />
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              hitSlop={
+                {
+                  "bottom": 16,
+                  "left": 16,
+                  "right": 16,
+                  "top": 16,
+                }
+              }
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "alignSelf": "flex-end",
+                  "justifyContent": "center",
+                  "opacity": 1,
+                }
+              }
+            >
+              <Icon
+                color="rgba(255, 255, 255, 0.5)"
+                name="xmark"
+                size={24}
+                testID="close-lightbox"
+                type="light"
+              />
+            </View>
+          </View>
+        </View>
+      </RCTSafeAreaView>
+    </View>
+    <RCTScrollView
+      data={
+        [
+          {
+            "uri": "https://waarneming-test.nl/media/photo/031/772/31772398.jpg",
+          },
+          {
+            "uri": "https://waarneming-test.nl/media/photo/031/772/31772399.jpg",
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      getItemLayout={[Function]}
+      horizontal={true}
+      initialNumToRender={1}
+      initialScrollIndex={1}
+      keyExtractor={[Function]}
+      maxToRenderPerBatch={1}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      pagingEnabled={true}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+      stickyHeaderIndices={[]}
+      windowSize={2}
+    >
+      <View>
+        <View
+          style={
+            {
+              "width": 750,
+            }
+          }
+        />
+        <View
+          onFocusCapture={[Function]}
+          style={
+            [
+              {
+                "flexDirection": "row",
+              },
+              null,
+            ]
+          }
+        >
+          <View>
+            <RCTScrollView
+              contentContainerStyle={
+                {
+                  "height": 1334,
+                }
+              }
+              maximumZoomScale={1}
+              onScrollEndDrag={[Function]}
+              pinchGestureEnabled={true}
+              scrollEnabled={false}
+              scrollEventThrottle={1}
+              showsHorizontalScrollIndicator={false}
+              showsVerticalScrollIndicator={false}
+              style={
+                {
+                  "height": 1334,
+                  "width": 750,
+                }
+              }
+            >
+              <View>
+                <View
+                  style={
+                    {
+                      "alignItems": "center",
+                      "height": 1334,
+                      "justifyContent": "center",
+                      "width": 750,
+                    }
+                  }
+                >
+                  <ActivityIndicator
+                    color="#FFF"
+                    size="small"
+                  />
+                </View>
+                <Image
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onLoad={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  source={
+                    {
+                      "uri": "https://waarneming-test.nl/media/photo/031/772/31772399.jpg",
+                    }
+                  }
+                  style={
+                    {
+                      "height": 0,
+                      "opacity": 1,
+                      "width": 0,
+                    }
+                  }
+                />
+              </View>
+            </RCTScrollView>
+          </View>
+        </View>
+      </View>
+    </RCTScrollView>
+    <View
+      collapsable={false}
+      style={
+        {
+          "bottom": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+          ],
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <RCTSafeAreaView
+        style={
+          {
+            "backgroundColor": "#00000077",
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "marginVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "white",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 16,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 24,
+                }
+              }
+            >
+              Grey Wagtail
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "marginVertical": 4,
+              }
+            }
+          >
+            <Text
+              style={
+                [
+                  {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                ]
+              }
+            >
+              11/26/2020 2:37 PM
+            </Text>
+          </View>
+        </View>
+      </RCTSafeAreaView>
+    </View>
+  </View>
+</Modal>
+`;

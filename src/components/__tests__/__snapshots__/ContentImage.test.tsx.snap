@@ -1,0 +1,986 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
+<View
+  style={
+    {
+      "margin": -16,
+      "marginBottom": -8,
+      "shadowColor": "#E6E6E6",
+      "shadowOffset": {
+        "height": 4,
+        "width": 0,
+      },
+      "shadowOpacity": 0.8,
+      "shadowRadius": 4,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="photo"
+  >
+    <Modal
+      animationType="fade"
+      hardwareAccelerated={true}
+      onRequestClose={[Function]}
+      supportedOrientations={
+        [
+          "portrait",
+        ]
+      }
+      transparent={false}
+      visible={true}
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#000",
+              "flex": 1,
+            },
+            {
+              "backgroundColor": "#000",
+              "opacity": 1,
+            },
+          ]
+        }
+      >
+        <View
+          collapsable={false}
+          style={
+            {
+              "position": "absolute",
+              "top": 0,
+              "transform": [
+                {
+                  "translateX": 0,
+                },
+                {
+                  "translateY": 0,
+                },
+              ],
+              "width": "100%",
+              "zIndex": 1,
+            }
+          }
+        >
+          <RCTSafeAreaView
+            style={
+              {
+                "backgroundColor": "#00000077",
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "alignContent": "space-between",
+                  "flex": 1,
+                  "flexDirection": "row",
+                  "padding": 16,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "flex": 1,
+                  }
+                }
+              />
+              <View
+                style={
+                  {
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "alignSelf": "center",
+                      "flexDirection": "row",
+                    }
+                  }
+                />
+              </View>
+              <View
+                style={
+                  {
+                    "flex": 1,
+                  }
+                }
+              >
+                <View
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessibilityValue={
+                    {
+                      "max": undefined,
+                      "min": undefined,
+                      "now": undefined,
+                      "text": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  hitSlop={
+                    {
+                      "bottom": 16,
+                      "left": 16,
+                      "right": 16,
+                      "top": 16,
+                    }
+                  }
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "alignItems": "center",
+                      "alignSelf": "flex-end",
+                      "justifyContent": "center",
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <Icon
+                    color="rgba(255, 255, 255, 0.5)"
+                    name="xmark"
+                    size={24}
+                    testID="close-lightbox"
+                    type="light"
+                  />
+                </View>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+        <RCTScrollView
+          data={
+            [
+              {
+                "uri": "https://path.to/image.jpg",
+              },
+            ]
+          }
+          getItem={[Function]}
+          getItemCount={[Function]}
+          getItemLayout={[Function]}
+          horizontal={true}
+          initialNumToRender={1}
+          initialScrollIndex={0}
+          keyExtractor={[Function]}
+          maxToRenderPerBatch={1}
+          onContentSizeChange={[Function]}
+          onLayout={[Function]}
+          onMomentumScrollBegin={[Function]}
+          onMomentumScrollEnd={[Function]}
+          onScroll={[Function]}
+          onScrollBeginDrag={[Function]}
+          onScrollEndDrag={[Function]}
+          pagingEnabled={true}
+          renderItem={[Function]}
+          scrollEventThrottle={50}
+          showsHorizontalScrollIndicator={false}
+          showsVerticalScrollIndicator={false}
+          stickyHeaderIndices={[]}
+          windowSize={2}
+        >
+          <View>
+            <View
+              onFocusCapture={[Function]}
+              style={
+                [
+                  {
+                    "flexDirection": "row",
+                  },
+                  null,
+                ]
+              }
+            >
+              <View>
+                <RCTScrollView
+                  contentContainerStyle={
+                    {
+                      "height": 1334,
+                    }
+                  }
+                  maximumZoomScale={1}
+                  onScrollEndDrag={[Function]}
+                  pinchGestureEnabled={true}
+                  scrollEnabled={false}
+                  scrollEventThrottle={1}
+                  showsHorizontalScrollIndicator={false}
+                  showsVerticalScrollIndicator={false}
+                  style={
+                    {
+                      "height": 1334,
+                      "width": 750,
+                    }
+                  }
+                >
+                  <View>
+                    <View
+                      style={
+                        {
+                          "alignItems": "center",
+                          "height": 1334,
+                          "justifyContent": "center",
+                          "width": 750,
+                        }
+                      }
+                    >
+                      <ActivityIndicator
+                        color="#FFF"
+                        size="small"
+                      />
+                    </View>
+                    <Image
+                      accessibilityState={
+                        {
+                          "busy": undefined,
+                          "checked": undefined,
+                          "disabled": undefined,
+                          "expanded": undefined,
+                          "selected": undefined,
+                        }
+                      }
+                      accessible={true}
+                      collapsable={false}
+                      focusable={true}
+                      onClick={[Function]}
+                      onLoad={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      source={
+                        {
+                          "uri": "https://path.to/image.jpg",
+                        }
+                      }
+                      style={
+                        {
+                          "height": 0,
+                          "opacity": 1,
+                          "width": 0,
+                        }
+                      }
+                    />
+                  </View>
+                </RCTScrollView>
+              </View>
+            </View>
+          </View>
+        </RCTScrollView>
+        <View
+          collapsable={false}
+          style={
+            {
+              "bottom": 0,
+              "position": "absolute",
+              "transform": [
+                {
+                  "translateX": 0,
+                },
+                {
+                  "translateY": 0,
+                },
+              ],
+              "width": "100%",
+              "zIndex": 1,
+            }
+          }
+        >
+          <RCTSafeAreaView
+            style={
+              {
+                "backgroundColor": "#00000077",
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+              }
+            }
+          >
+            <View
+              style={
+                {
+                  "paddingHorizontal": 16,
+                  "paddingVertical": 8,
+                }
+              }
+            >
+              <View
+                style={
+                  {
+                    "marginVertical": 4,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "white",
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 16,
+                      "fontStyle": "normal",
+                      "fontWeight": "bold",
+                      "lineHeight": 24,
+                    }
+                  }
+                >
+                  Title
+                </Text>
+              </View>
+            </View>
+          </RCTSafeAreaView>
+        </View>
+      </View>
+    </Modal>
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#F8F9FA",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "elevation": 6,
+          "flexDirection": "row",
+          "margin": 16,
+          "overflow": "hidden",
+          "shadowColor": "#939393",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "borderRadius": 8,
+            "margin": 16,
+            "marginRight": 8,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Image
+          source={
+            {
+              "uri": "https://path.to/image.jpg",
+            }
+          }
+          style={
+            {
+              "height": 80,
+              "width": 80,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          {
+            "flex": 1,
+            "justifyContent": "center",
+            "marginLeft": 8,
+            "marginRight": 16,
+          }
+        }
+      >
+        <View>
+          <Text
+            numberOfLines={2}
+            style={
+              {
+                "color": "#212121",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 17,
+                "marginBottom": 4,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ContentImage Interaction Close the lightbox 1`] = `
+<View
+  style={
+    {
+      "margin": -16,
+      "marginBottom": -8,
+      "shadowColor": "#E6E6E6",
+      "shadowOffset": {
+        "height": 4,
+        "width": 0,
+      },
+      "shadowOpacity": 0.8,
+      "shadowRadius": 4,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="photo"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#F8F9FA",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "elevation": 6,
+          "flexDirection": "row",
+          "margin": 16,
+          "overflow": "hidden",
+          "shadowColor": "#939393",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "borderRadius": 8,
+            "margin": 16,
+            "marginRight": 8,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Image
+          source={
+            {
+              "uri": "https://path.to/image.jpg",
+            }
+          }
+          style={
+            {
+              "height": 80,
+              "width": 80,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          {
+            "flex": 1,
+            "justifyContent": "center",
+            "marginLeft": 8,
+            "marginRight": 16,
+          }
+        }
+      >
+        <View>
+          <Text
+            numberOfLines={2}
+            style={
+              {
+                "color": "#212121",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 17,
+                "marginBottom": 4,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ContentImage Rendering With alt title 1`] = `
+<View
+  style={
+    {
+      "margin": -16,
+      "marginBottom": -8,
+      "shadowColor": "#E6E6E6",
+      "shadowOffset": {
+        "height": 4,
+        "width": 0,
+      },
+      "shadowOpacity": 0.8,
+      "shadowRadius": 4,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="photo"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#F8F9FA",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "elevation": 6,
+          "flexDirection": "row",
+          "margin": 16,
+          "overflow": "hidden",
+          "shadowColor": "#939393",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "borderRadius": 8,
+            "margin": 16,
+            "marginRight": 8,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Image
+          source={
+            {
+              "uri": "https://path.to/image.jpg",
+            }
+          }
+          style={
+            {
+              "height": 80,
+              "width": 80,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          {
+            "flex": 1,
+            "justifyContent": "center",
+            "marginLeft": 8,
+            "marginRight": 16,
+          }
+        }
+      >
+        <View>
+          <Text
+            numberOfLines={2}
+            style={
+              {
+                "color": "#212121",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 17,
+                "marginBottom": 4,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ContentImage Rendering With alt title and text 1`] = `
+<View
+  style={
+    {
+      "margin": -16,
+      "marginBottom": -8,
+      "shadowColor": "#E6E6E6",
+      "shadowOffset": {
+        "height": 4,
+        "width": 0,
+      },
+      "shadowOpacity": 0.8,
+      "shadowRadius": 4,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="photo"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#F8F9FA",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "elevation": 6,
+          "flexDirection": "row",
+          "margin": 16,
+          "overflow": "hidden",
+          "shadowColor": "#939393",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "borderRadius": 8,
+            "margin": 16,
+            "marginRight": 8,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Image
+          source={
+            {
+              "uri": "https://path.to/image.jpg",
+            }
+          }
+          style={
+            {
+              "height": 80,
+              "width": 80,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          {
+            "flex": 1,
+            "justifyContent": "center",
+            "marginLeft": 8,
+            "marginRight": 16,
+          }
+        }
+      >
+        <View>
+          <Text
+            numberOfLines={2}
+            style={
+              {
+                "color": "#212121",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 17,
+                "marginBottom": 4,
+              }
+            }
+          >
+            Title
+          </Text>
+          <Text
+            numberOfLines={3}
+            style={
+              {
+                "color": "#939393",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 17,
+              }
+            }
+          >
+            Text
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ContentImage Rendering With alt title ending in delimiter 1`] = `
+<View
+  style={
+    {
+      "margin": -16,
+      "marginBottom": -8,
+      "shadowColor": "#E6E6E6",
+      "shadowOffset": {
+        "height": 4,
+        "width": 0,
+      },
+      "shadowOpacity": 0.8,
+      "shadowRadius": 4,
+    }
+  }
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="photo"
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "#FFFFFF",
+          "borderColor": "#F8F9FA",
+          "borderRadius": 8,
+          "borderWidth": 1,
+          "elevation": 6,
+          "flexDirection": "row",
+          "margin": 16,
+          "overflow": "hidden",
+          "shadowColor": "#939393",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "borderRadius": 8,
+            "margin": 16,
+            "marginRight": 8,
+            "overflow": "hidden",
+          }
+        }
+      >
+        <Image
+          source={
+            {
+              "uri": "https://path.to/image.jpg",
+            }
+          }
+          style={
+            {
+              "height": 80,
+              "width": 80,
+            }
+          }
+        />
+      </View>
+      <View
+        style={
+          {
+            "flex": 1,
+            "justifyContent": "center",
+            "marginLeft": 8,
+            "marginRight": 16,
+          }
+        }
+      >
+        <View>
+          <Text
+            numberOfLines={2}
+            style={
+              {
+                "color": "#212121",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 17,
+                "marginBottom": 4,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`ContentImage Rendering Without alt title 1`] = `
+<mock-scalable-image
+  source={
+    {
+      "uri": "https://path.to/image.jpg",
+    }
+  }
+  width={718}
+/>
+`;

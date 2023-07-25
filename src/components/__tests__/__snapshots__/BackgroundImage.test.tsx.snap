@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundImage Rendering All props 1`] = `
+<View
+  style={
+    [
+      {
+        "bottom": 2,
+        "height": 750,
+        "left": 3,
+        "position": "absolute",
+        "right": 4,
+        "top": 1,
+        "width": 1000,
+      },
+      {
+        "flex": 1,
+      },
+    ]
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={
+      {
+        "uri": "uri",
+      }
+    }
+    style={
+      {
+        "flex": 1,
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`BackgroundImage Rendering Required props 1`] = `
+<View
+  style={
+    [
+      {
+        "bottom": undefined,
+        "height": undefined,
+        "left": undefined,
+        "position": "absolute",
+        "right": undefined,
+        "top": undefined,
+        "width": undefined,
+      },
+      undefined,
+    ]
+  }
+>
+  <Image
+    resizeMode="contain"
+    source={
+      {
+        "uri": "uri",
+      }
+    }
+    style={
+      {
+        "flex": 1,
+        "height": undefined,
+        "width": undefined,
+      }
+    }
+  />
+</View>
+`;

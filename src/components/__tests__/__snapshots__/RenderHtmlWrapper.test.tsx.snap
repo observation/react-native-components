@@ -1,0 +1,1458 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RenderHtmlWrapper Rendering Custom image renderer Normal render 1`] = `
+<View
+  style={
+    [
+      {},
+      undefined,
+      undefined,
+    ]
+  }
+  testID="html"
+>
+  <View
+    style={
+      [
+        {},
+        undefined,
+        undefined,
+      ]
+    }
+    testID="body"
+  >
+    <View
+      style={
+        {
+          "margin": -16,
+          "marginBottom": -8,
+          "shadowColor": "#E6E6E6",
+          "shadowOffset": {
+            "height": 4,
+            "width": 0,
+          },
+          "shadowOpacity": 0.8,
+          "shadowRadius": 4,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "opacity": 1,
+          }
+        }
+        testID="photo"
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#FFFFFF",
+              "borderColor": "#F8F9FA",
+              "borderRadius": 8,
+              "borderWidth": 1,
+              "elevation": 6,
+              "flexDirection": "row",
+              "margin": 16,
+              "overflow": "hidden",
+              "shadowColor": "#939393",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "borderRadius": 8,
+                "margin": 16,
+                "marginRight": 8,
+                "overflow": "hidden",
+              }
+            }
+          >
+            <Image
+              source={
+                {
+                  "uri": "https://waarneming.nl/image.jpeg",
+                }
+              }
+              style={
+                {
+                  "height": 80,
+                  "width": 80,
+                }
+              }
+            />
+          </View>
+          <View
+            style={
+              {
+                "flex": 1,
+                "justifyContent": "center",
+                "marginLeft": 8,
+                "marginRight": 16,
+              }
+            }
+          >
+            <View>
+              <Text
+                numberOfLines={2}
+                style={
+                  {
+                    "color": "#212121",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 12,
+                    "fontStyle": "normal",
+                    "fontWeight": "bold",
+                    "lineHeight": 17,
+                    "marginBottom": 4,
+                  }
+                }
+              >
+                A picture
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RenderHtmlWrapper Rendering Custom image renderer Without url 1`] = `
+<View
+  style={
+    [
+      {},
+      undefined,
+      undefined,
+    ]
+  }
+  testID="html"
+>
+  <View
+    style={
+      [
+        {},
+        undefined,
+        undefined,
+      ]
+    }
+    testID="body"
+  />
+</View>
+`;
+
+exports[`RenderHtmlWrapper Rendering Custom ordered list renderer Normal renderer 1`] = `
+<View
+  style={
+    [
+      {},
+      undefined,
+      undefined,
+    ]
+  }
+  testID="html"
+>
+  <View
+    style={
+      [
+        {},
+        undefined,
+        undefined,
+      ]
+    }
+    testID="body"
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "marginBottom": 8,
+              "marginTop": 16,
+              "paddingLeft": 24,
+            },
+            null,
+            null,
+            {
+              "paddingLeft": 0,
+              "position": "relative",
+            },
+          ],
+          undefined,
+          undefined,
+        ]
+      }
+      testID="ol"
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View
+          style={
+            [
+              undefined,
+              {
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            ellipsizeMode="clip"
+            numberOfLines={1}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "color": "#666666",
+                "flexGrow": 0,
+                "flexShrink": 0,
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+                "textAlign": "right",
+              }
+            }
+            testID="marker-box"
+          >
+            1. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginBottom": 8,
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            testID="li"
+          >
+            <Text
+              allowFontScaling={true}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#666666",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Ein
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View
+          style={
+            [
+              undefined,
+              {
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            ellipsizeMode="clip"
+            numberOfLines={1}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "color": "#666666",
+                "flexGrow": 0,
+                "flexShrink": 0,
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+                "textAlign": "right",
+              }
+            }
+            testID="marker-box"
+          >
+            2. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginBottom": 8,
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            testID="li"
+          >
+            <Text
+              allowFontScaling={true}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#666666",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Zwei
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View
+          style={
+            [
+              undefined,
+              {
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            ellipsizeMode="clip"
+            numberOfLines={1}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "color": "#666666",
+                "flexGrow": 0,
+                "flexShrink": 0,
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+                "textAlign": "right",
+              }
+            }
+            testID="marker-box"
+          >
+            3. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginBottom": 8,
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            testID="li"
+          >
+            <Text
+              allowFontScaling={true}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#666666",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Drei
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RenderHtmlWrapper Rendering Custom ordered list renderer Ordered list inside an unorderer list 1`] = `
+<View
+  style={
+    [
+      {},
+      undefined,
+      undefined,
+    ]
+  }
+  testID="html"
+>
+  <View
+    style={
+      [
+        {},
+        undefined,
+        undefined,
+      ]
+    }
+    testID="body"
+  >
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "marginRight": 4,
+          }
+        }
+      >
+        •
+      </Text>
+      <Text
+        allowFontScaling={true}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        Ein
+      </Text>
+      <View
+        style={
+          [
+            [
+              {
+                "marginBottom": 8,
+                "marginTop": 16,
+                "paddingLeft": 24,
+              },
+              null,
+              {
+                "marginBottom": 0,
+              },
+              {
+                "paddingLeft": 0,
+                "position": "relative",
+              },
+            ],
+            undefined,
+            undefined,
+          ]
+        }
+        testID="ol"
+      >
+        <View
+          style={
+            [
+              {
+                "alignSelf": "stretch",
+                "flexDirection": "row",
+                "flexWrap": "nowrap",
+              },
+              undefined,
+            ]
+          }
+          testID="marked-list-item"
+        >
+          <View
+            style={
+              [
+                undefined,
+                {
+                  "width": 24,
+                },
+              ]
+            }
+          >
+            <Text
+              ellipsizeMode="clip"
+              numberOfLines={1}
+              style={
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#666666",
+                  "flexGrow": 0,
+                  "flexShrink": 0,
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 20,
+                  "textAlign": "right",
+                }
+              }
+              testID="marker-box"
+            >
+              1. 
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexShrink": 1,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "marginBottom": 8,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+              testID="li"
+            >
+              <Text
+                allowFontScaling={true}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#666666",
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 20,
+                    },
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                Ein
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "alignSelf": "stretch",
+                "flexDirection": "row",
+                "flexWrap": "nowrap",
+              },
+              undefined,
+            ]
+          }
+          testID="marked-list-item"
+        >
+          <View
+            style={
+              [
+                undefined,
+                {
+                  "width": 24,
+                },
+              ]
+            }
+          >
+            <Text
+              ellipsizeMode="clip"
+              numberOfLines={1}
+              style={
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#666666",
+                  "flexGrow": 0,
+                  "flexShrink": 0,
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 20,
+                  "textAlign": "right",
+                }
+              }
+              testID="marker-box"
+            >
+              2. 
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexShrink": 1,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "marginBottom": 8,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+              testID="li"
+            >
+              <Text
+                allowFontScaling={true}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#666666",
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 20,
+                    },
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                Zwei
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "alignSelf": "stretch",
+                "flexDirection": "row",
+                "flexWrap": "nowrap",
+              },
+              undefined,
+            ]
+          }
+          testID="marked-list-item"
+        >
+          <View
+            style={
+              [
+                undefined,
+                {
+                  "width": 24,
+                },
+              ]
+            }
+          >
+            <Text
+              ellipsizeMode="clip"
+              numberOfLines={1}
+              style={
+                {
+                  "alignSelf": "flex-end",
+                  "color": "#666666",
+                  "flexGrow": 0,
+                  "flexShrink": 0,
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 20,
+                  "textAlign": "right",
+                }
+              }
+              testID="marker-box"
+            >
+              3. 
+            </Text>
+          </View>
+          <View
+            style={
+              {
+                "flexShrink": 1,
+              }
+            }
+          >
+            <View
+              style={
+                [
+                  {
+                    "marginBottom": 8,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+              testID="li"
+            >
+              <Text
+                allowFontScaling={true}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#666666",
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 20,
+                    },
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                Drei
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "marginRight": 4,
+          }
+        }
+      >
+        •
+      </Text>
+      <Text
+        allowFontScaling={true}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        Zwei
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "marginRight": 4,
+          }
+        }
+      >
+        •
+      </Text>
+      <Text
+        allowFontScaling={true}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        Drei
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RenderHtmlWrapper Rendering Custom ordered list renderer Unorderer list inside an ordered list 1`] = `
+<View
+  style={
+    [
+      {},
+      undefined,
+      undefined,
+    ]
+  }
+  testID="html"
+>
+  <View
+    style={
+      [
+        {},
+        undefined,
+        undefined,
+      ]
+    }
+    testID="body"
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "marginBottom": 8,
+              "marginTop": 16,
+              "paddingLeft": 24,
+            },
+            null,
+            null,
+            {
+              "paddingLeft": 0,
+              "position": "relative",
+            },
+          ],
+          undefined,
+          undefined,
+        ]
+      }
+      testID="ol"
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View
+          style={
+            [
+              undefined,
+              {
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            ellipsizeMode="clip"
+            numberOfLines={1}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "color": "#666666",
+                "flexGrow": 0,
+                "flexShrink": 0,
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+                "textAlign": "right",
+              }
+            }
+            testID="marker-box"
+          >
+            1. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginBottom": 8,
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            testID="li"
+          >
+            <Text
+              allowFontScaling={true}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#666666",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Ein
+            </Text>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "marginRight": 4,
+                  }
+                }
+              >
+                •
+              </Text>
+              <Text
+                allowFontScaling={true}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#666666",
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 20,
+                    },
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                Ein
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "marginRight": 4,
+                  }
+                }
+              >
+                •
+              </Text>
+              <Text
+                allowFontScaling={true}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#666666",
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 20,
+                    },
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                Zwei
+              </Text>
+            </View>
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <Text
+                style={
+                  {
+                    "marginRight": 4,
+                  }
+                }
+              >
+                •
+              </Text>
+              <Text
+                allowFontScaling={true}
+                selectable={false}
+                style={
+                  [
+                    {
+                      "color": "#666666",
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 14,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 20,
+                    },
+                    undefined,
+                    undefined,
+                  ]
+                }
+              >
+                Drei
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View
+          style={
+            [
+              undefined,
+              {
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            ellipsizeMode="clip"
+            numberOfLines={1}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "color": "#666666",
+                "flexGrow": 0,
+                "flexShrink": 0,
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+                "textAlign": "right",
+              }
+            }
+            testID="marker-box"
+          >
+            2. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginBottom": 8,
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            testID="li"
+          >
+            <Text
+              allowFontScaling={true}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#666666",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Zwei
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View
+          style={
+            [
+              undefined,
+              {
+                "width": 24,
+              },
+            ]
+          }
+        >
+          <Text
+            ellipsizeMode="clip"
+            numberOfLines={1}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "color": "#666666",
+                "flexGrow": 0,
+                "flexShrink": 0,
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+                "textAlign": "right",
+              }
+            }
+            testID="marker-box"
+          >
+            3. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginBottom": 8,
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            testID="li"
+          >
+            <Text
+              allowFontScaling={true}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#666666",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Drei
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`RenderHtmlWrapper Rendering Custom unordered list Normal render 1`] = `
+<View
+  style={
+    [
+      {},
+      undefined,
+      undefined,
+    ]
+  }
+  testID="html"
+>
+  <View
+    style={
+      [
+        {},
+        undefined,
+        undefined,
+      ]
+    }
+    testID="body"
+  >
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "marginRight": 4,
+          }
+        }
+      >
+        •
+      </Text>
+      <Text
+        allowFontScaling={true}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        Ein
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "marginRight": 4,
+          }
+        }
+      >
+        •
+      </Text>
+      <Text
+        allowFontScaling={true}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        Zwei
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "flexDirection": "row",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "marginRight": 4,
+          }
+        }
+      >
+        •
+      </Text>
+      <Text
+        allowFontScaling={true}
+        selectable={false}
+        style={
+          [
+            {
+              "color": "#666666",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+            undefined,
+            undefined,
+          ]
+        }
+      >
+        Drei
+      </Text>
+    </View>
+  </View>
+</View>
+`;

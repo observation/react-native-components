@@ -1,0 +1,819 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotificationPopup Rendering Left and right buttons 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  style={
+    {
+      "flex": 1,
+    }
+  }
+  transparent={true}
+  visible={true}
+>
+  <BlurView
+    blurAmount={2}
+    blurType="light"
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+        },
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": "stretch",
+        "backgroundColor": "hsla(0, 0%, 18.1%, 0.6)",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "transparent",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "white",
+            "borderRadius": 16,
+            "margin": 16,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#212121",
+                "flex": 1,
+                "fontFamily": "Ubuntu",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 28,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "marginBottom": 32,
+              "marginTop": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Message
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "width": "50%",
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#0066B1",
+                  "borderRadius": 4,
+                  "height": 32,
+                  "justifyContent": "center",
+                  "margin": 0,
+                  "marginRight": 4,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+              testID="touchable-opacity"
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginHorizontal": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "#212121",
+                        "fontFamily": "Ubuntu",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "bold",
+                        "lineHeight": 20,
+                        "textAlignVertical": "center",
+                      },
+                      {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  left button
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "width": "50%",
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#0066B1",
+                  "borderRadius": 4,
+                  "height": 32,
+                  "justifyContent": "center",
+                  "margin": 0,
+                  "marginLeft": 4,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+              testID="touchable-opacity"
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginHorizontal": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "#212121",
+                        "fontFamily": "Ubuntu",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "bold",
+                        "lineHeight": 20,
+                        "textAlignVertical": "center",
+                      },
+                      {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  right button
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`NotificationPopup Rendering Only left button 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  style={
+    {
+      "flex": 1,
+    }
+  }
+  transparent={true}
+  visible={true}
+>
+  <BlurView
+    blurAmount={2}
+    blurType="light"
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+        },
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": "stretch",
+        "backgroundColor": "hsla(0, 0%, 18.1%, 0.6)",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "transparent",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "white",
+            "borderRadius": 16,
+            "margin": 16,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#212121",
+                "flex": 1,
+                "fontFamily": "Ubuntu",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 28,
+              }
+            }
+          >
+            Title
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "marginBottom": 32,
+              "marginTop": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Message
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "width": "50%",
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#0066B1",
+                  "borderRadius": 4,
+                  "height": 32,
+                  "justifyContent": "center",
+                  "margin": 0,
+                  "marginRight": 4,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+              testID="touchable-opacity"
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginHorizontal": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "#212121",
+                        "fontFamily": "Ubuntu",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "bold",
+                        "lineHeight": 20,
+                        "textAlignVertical": "center",
+                      },
+                      {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  left button
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "width": "50%",
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`NotificationPopup Rendering With close button 1`] = `
+<Modal
+  animationType="fade"
+  hardwareAccelerated={false}
+  style={
+    {
+      "flex": 1,
+    }
+  }
+  transparent={true}
+  visible={true}
+>
+  <BlurView
+    blurAmount={2}
+    blurType="light"
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+        },
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+      ]
+    }
+  />
+  <View
+    style={
+      {
+        "alignItems": "stretch",
+        "backgroundColor": "hsla(0, 0%, 18.1%, 0.6)",
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "center",
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "backgroundColor": "transparent",
+          "flexDirection": "column",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "backgroundColor": "white",
+            "borderRadius": 16,
+            "margin": 16,
+            "padding": 16,
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "justifyContent": "space-between",
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#212121",
+                "flex": 1,
+                "fontFamily": "Ubuntu",
+                "fontSize": 18,
+                "fontStyle": "normal",
+                "fontWeight": "bold",
+                "lineHeight": 28,
+              }
+            }
+          >
+            Title
+          </Text>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "marginLeft": 8,
+                "opacity": 1,
+              }
+            }
+            testID="close"
+          >
+            <Icon
+              color="#939393"
+              name="xmark"
+              size={18}
+              type="light"
+            />
+          </View>
+        </View>
+        <View
+          style={
+            {
+              "marginBottom": 32,
+              "marginTop": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+              }
+            }
+          >
+            Message
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexDirection": "row",
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "width": "50%",
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#0066B1",
+                  "borderRadius": 4,
+                  "height": 32,
+                  "justifyContent": "center",
+                  "margin": 0,
+                  "marginRight": 4,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+              testID="touchable-opacity"
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginHorizontal": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "#212121",
+                        "fontFamily": "Ubuntu",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "bold",
+                        "lineHeight": 20,
+                        "textAlignVertical": "center",
+                      },
+                      {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  left button
+                </Text>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              {
+                "width": "50%",
+              }
+            }
+          >
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "alignItems": "center",
+                  "backgroundColor": "#0066B1",
+                  "borderRadius": 4,
+                  "height": 32,
+                  "justifyContent": "center",
+                  "margin": 0,
+                  "marginLeft": 4,
+                  "opacity": 1,
+                  "overflow": "hidden",
+                }
+              }
+              testID="touchable-opacity"
+            >
+              <View
+                style={
+                  {
+                    "flexDirection": "row",
+                    "marginHorizontal": 16,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    [
+                      {
+                        "color": "#212121",
+                        "fontFamily": "Ubuntu",
+                        "fontSize": 14,
+                        "fontStyle": "normal",
+                        "fontWeight": "bold",
+                        "lineHeight": 20,
+                        "textAlignVertical": "center",
+                      },
+                      {
+                        "color": "#FFFFFF",
+                      },
+                    ]
+                  }
+                >
+                  right button
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
