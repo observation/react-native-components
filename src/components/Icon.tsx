@@ -5,8 +5,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 import Icons, { IconName } from '../lib/Icons'
 import theme from '../styles/theme'
 
+export type IconStyleProp = 'light' | 'solid'
+
 type IconAppearanceProps = {
-  style?: 'light' | 'solid'
+  style?: IconStyleProp
   color?: string
   size?: number
   testID?: string
@@ -81,6 +83,7 @@ export const IconError = (props: IconAppearanceProps) => <Icon name="error" {...
 export const IconErrorMessage = (props: IconAppearanceProps) => <Icon name="error-message" {...props} />
 export const IconExpand = (props: IconAppearanceProps) => <Icon name="expand" {...props} />
 export const IconExternalLink = (props: IconAppearanceProps) => <Icon name="external-link" {...props} />
+export const IconFeed = (props: IconAppearanceProps) => <Icon name="feed" {...props} />
 export const IconGroup = (props: IconAppearanceProps) => <Icon name="group" {...props} />
 export const IconImageGallery = (props: IconAppearanceProps) => <Icon name="image-gallery" {...props} />
 export const IconInfo = (props: IconAppearanceProps) => <Icon name="info" {...props} />

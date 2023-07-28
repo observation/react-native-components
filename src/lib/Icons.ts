@@ -48,6 +48,7 @@ import { faPlus as faPlusLight } from '@fortawesome/pro-light-svg-icons/faPlus'
 import { faQrcode as faQrcodeLight } from '@fortawesome/pro-light-svg-icons/faQrcode'
 import { faQuestionSquare as faQuestionSquareLight } from '@fortawesome/pro-light-svg-icons/faQuestionSquare'
 import { faRandom as faRandomLight } from '@fortawesome/pro-light-svg-icons/faRandom'
+import { faRectangleHistory as faRectangleHistoryLight } from '@fortawesome/pro-light-svg-icons/faRectangleHistory'
 import { faShareNodes as faShareNodesLight } from '@fortawesome/pro-light-svg-icons/faShareNodes'
 import { faSlidersH as faSlidersHLight } from '@fortawesome/pro-light-svg-icons/faSlidersH'
 import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSquare'
@@ -110,6 +111,7 @@ import { faPlus as faPlusSolid } from '@fortawesome/pro-solid-svg-icons/faPlus'
 import { faQrcode as faQrcodeSolid } from '@fortawesome/pro-solid-svg-icons/faQrcode'
 import { faQuestionSquare as faQuestionSquareSolid } from '@fortawesome/pro-solid-svg-icons/faQuestionSquare'
 import { faRandom as faRandomSolid } from '@fortawesome/pro-solid-svg-icons/faRandom'
+import { faRectangleHistory as faRectangleHistorySolid } from '@fortawesome/pro-solid-svg-icons/faRectangleHistory'
 import { faShareNodes as faShareNodesSolid } from '@fortawesome/pro-solid-svg-icons/faShareNodes'
 import { faSlidersH as faSlidersHSolid } from '@fortawesome/pro-solid-svg-icons/faSlidersH'
 import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSquare'
@@ -154,6 +156,7 @@ type IconName =
   | 'exclusion'
   | 'expand'
   | 'external-link'
+  | 'feed'
   | 'group'
   | 'hide'
   | 'image-gallery'
@@ -220,6 +223,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   exclusion: { light: faUsersSlashLight, solid: faUsersSlashSolid },
   expand: { light: faAngleDownLight, solid: faAngleDownSolid },
   'external-link': { light: faExternalLinkLight, solid: faExternalLinkSolid },
+  feed: { light: faRectangleHistoryLight, solid: faRectangleHistorySolid },
   group: { light: faUserGroupLight, solid: faUserGroupSolid },
   hide: { light: faEyeSlashLight, solid: faEyeSlashSolid },
   'image-gallery': { light: faImagesLight, solid: faImagesSolid },
