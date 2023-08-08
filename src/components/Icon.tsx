@@ -89,6 +89,7 @@ export const IconImageGallery = (props: IconAppearanceProps) => <Icon name="imag
 export const IconInfo = (props: IconAppearanceProps) => <Icon name="info" {...props} />
 export const IconList = (props: IconAppearanceProps) => <Icon name="list" {...props} />
 export const IconLocation = (props: IconAppearanceProps) => <Icon name="location" {...props} />
+export const IconLogin = (props: IconAppearanceProps) => <Icon name="login" {...props} />
 export const IconNext = (props: IconAppearanceProps) => <Icon name="next" {...props} />
 export const IconPhotography = (props: IconAppearanceProps) => <Icon name="photography" {...props} />
 export const IconPlayback = (props: IconAppearanceProps) => <Icon name="playback" {...props} />

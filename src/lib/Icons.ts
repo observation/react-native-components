@@ -49,6 +49,7 @@ import { faQrcode as faQrcodeLight } from '@fortawesome/pro-light-svg-icons/faQr
 import { faQuestionSquare as faQuestionSquareLight } from '@fortawesome/pro-light-svg-icons/faQuestionSquare'
 import { faRandom as faRandomLight } from '@fortawesome/pro-light-svg-icons/faRandom'
 import { faRectangleHistory as faRectangleHistoryLight } from '@fortawesome/pro-light-svg-icons/faRectangleHistory'
+import { faRightToBracket as faRightToBracketLight } from '@fortawesome/pro-light-svg-icons/faRightToBracket'
 import { faShareNodes as faShareNodesLight } from '@fortawesome/pro-light-svg-icons/faShareNodes'
 import { faSlidersH as faSlidersHLight } from '@fortawesome/pro-light-svg-icons/faSlidersH'
 import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSquare'
@@ -112,6 +113,7 @@ import { faQrcode as faQrcodeSolid } from '@fortawesome/pro-solid-svg-icons/faQr
 import { faQuestionSquare as faQuestionSquareSolid } from '@fortawesome/pro-solid-svg-icons/faQuestionSquare'
 import { faRandom as faRandomSolid } from '@fortawesome/pro-solid-svg-icons/faRandom'
 import { faRectangleHistory as faRectangleHistorySolid } from '@fortawesome/pro-solid-svg-icons/faRectangleHistory'
+import { faRightToBracket as faRightToBracketSolid } from '@fortawesome/pro-solid-svg-icons/faRightToBracket'
 import { faShareNodes as faShareNodesSolid } from '@fortawesome/pro-solid-svg-icons/faShareNodes'
 import { faSlidersH as faSlidersHSolid } from '@fortawesome/pro-solid-svg-icons/faSlidersH'
 import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSquare'
@@ -165,6 +167,7 @@ type IconName =
   | 'like'
   | 'list'
   | 'location'
+  | 'login'
   | 'new'
   | 'next'
   | 'photography'
@@ -232,6 +235,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   like: { light: faHeartLight, solid: faHeartSolid },
   list: { light: faAlignJustifyLight, solid: faAlignJustifySolid },
   location: { light: faMapMarkerAltLight, solid: faMapMarkerAltSolid },
+  login: { light: faRightToBracketLight, solid: faRightToBracketSolid },
   new: { light: faStarsLight, solid: faStarsSolid },
   next: { light: faChevronCircleRightLight, solid: faChevronCircleRightSolid },
   photography: { light: faCameraLight, solid: faCameraSolid },
