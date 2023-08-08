@@ -1,6 +1,8 @@
 import React from 'react'
 import { StyleSheet, View, Text, ViewStyle, StyleProp } from 'react-native'
 
+import { useTheme } from '@react-navigation/native'
+
 import LargeButton, { LargeButtonProps } from './LargeButton'
 import textStyle from '../styles/text'
 import theme from '../styles/theme'
@@ -15,10 +17,11 @@ type Props = {
 }
 
 const BottomSheet = ({ title, text, buttons = [], style, testID, children }: Props) => {
+  const { colors } = useTheme()
   const buttonsMarginTop = title || text ? theme.margin.common : 0
   return (
     <View style={[styles.container, style]} testID={testID}>
-      <View style={styles.bottomSheetContainer}>
+      <View style={[styles.bottomSheetContainer, { backgroundColor: colors.card }]}>
         <View style={styles.bottomSheet}>
           <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
             {title && (
@@ -70,7 +73,6 @@ const styles = StyleSheet.create({
     borderTopColor: theme.color.greySemi,
   },
   bottomSheetContainer: {
-    backgroundColor: 'white',
     ...theme.shadow.android,
   },
   bottomSheet: {
