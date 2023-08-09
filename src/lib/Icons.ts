@@ -25,6 +25,7 @@ import { faChevronLeft as faChevronLeftLight } from '@fortawesome/pro-light-svg-
 import { faChevronRight as faChevronRightLight } from '@fortawesome/pro-light-svg-icons/faChevronRight'
 import { faCircle as faCircleLight } from '@fortawesome/pro-light-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckLight } from '@fortawesome/pro-light-svg-icons/faCircleCheck'
+import { faCirclePlus as faCirclePlusLight } from '@fortawesome/pro-light-svg-icons/faCirclePlus'
 import { faCircleUser as faCircleUserLight } from '@fortawesome/pro-light-svg-icons/faCircleUser'
 import { faClone as faCloneLight } from '@fortawesome/pro-light-svg-icons/faClone'
 import { faCog as faCogLight } from '@fortawesome/pro-light-svg-icons/faCog'
@@ -89,6 +90,7 @@ import { faChevronLeft as faChevronLeftSolid } from '@fortawesome/pro-solid-svg-
 import { faChevronRight as faChevronRightSolid } from '@fortawesome/pro-solid-svg-icons/faChevronRight'
 import { faCircle as faCircleSolid } from '@fortawesome/pro-solid-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckSolid } from '@fortawesome/pro-solid-svg-icons/faCircleCheck'
+import { faCirclePlus as faCirclePlusSolid } from '@fortawesome/pro-solid-svg-icons/faCirclePlus'
 import { faCircleUser as faCircleUserSolid } from '@fortawesome/pro-solid-svg-icons/faCircleUser'
 import { faClone as faCloneSolid } from '@fortawesome/pro-solid-svg-icons/faClone'
 import { faCog as faCogSolid } from '@fortawesome/pro-solid-svg-icons/faCog'
@@ -188,6 +190,7 @@ type IconName =
   | 'show'
   | 'statistics'
   | 'success'
+  | 'tab-add'
   | 'undo'
   | 'upload'
   | 'user'
@@ -259,6 +262,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   show: { light: faEyeLight, solid: faEyeSolid },
   statistics: { light: faChartColumnLight, solid: faChartColumnSolid },
   success: { light: faCircleCheckLight, solid: faCircleCheckSolid },
+  'tab-add': { light: faCirclePlusLight, solid: faCirclePlusSolid },
   undo: { light: faUndoLight, solid: faUndoSolid },
   upload: { light: faArrowUpFromBracketLight, solid: faArrowUpFromBracketSolid },
   user: { light: faUserLight, solid: faUserSolid },

@@ -21,11 +21,15 @@ exports[`BottomSheet Rendering Only buttons 1`] = `
 >
   <View
     style={
-      {
-        "backgroundColor": "white",
-        "elevation": 6,
-        "shadowColor": "#939393",
-      }
+      [
+        {
+          "elevation": 6,
+          "shadowColor": "#939393",
+        },
+        {
+          "backgroundColor": "rgb(255, 255, 255)",
+        },
+      ]
     }
   >
     <View
@@ -155,11 +159,15 @@ exports[`BottomSheet Rendering With button 1`] = `
 >
   <View
     style={
-      {
-        "backgroundColor": "white",
-        "elevation": 6,
-        "shadowColor": "#939393",
-      }
+      [
+        {
+          "elevation": 6,
+          "shadowColor": "#939393",
+        },
+        {
+          "backgroundColor": "rgb(255, 255, 255)",
+        },
+      ]
     }
   >
     <View
@@ -334,11 +342,15 @@ exports[`BottomSheet Rendering With children 1`] = `
 >
   <View
     style={
-      {
-        "backgroundColor": "white",
-        "elevation": 6,
-        "shadowColor": "#939393",
-      }
+      [
+        {
+          "elevation": 6,
+          "shadowColor": "#939393",
+        },
+        {
+          "backgroundColor": "rgb(255, 255, 255)",
+        },
+      ]
     }
   >
     <View
@@ -386,11 +398,15 @@ exports[`BottomSheet Rendering Without icon 1`] = `
 >
   <View
     style={
-      {
-        "backgroundColor": "white",
-        "elevation": 6,
-        "shadowColor": "#939393",
-      }
+      [
+        {
+          "elevation": 6,
+          "shadowColor": "#939393",
+        },
+        {
+          "backgroundColor": "rgb(255, 255, 255)",
+        },
+      ]
     }
   >
     <View

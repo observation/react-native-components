@@ -54,6 +54,7 @@ const defaultProps: { [key in IconName]?: IconAppearanceProps } = {
   selection: { color: black },
   show: { style: 'solid' },
   success: { color: success },
+  'tab-add': { size: extraExtraLarge },
   user: { color: greySemi },
   'validation-accepted-by-admin': { style: 'solid', size: theme.icon.size.medium },
   'validation-accepted-with-evidence': { color: success, style: 'solid', size: theme.icon.size.medium },
@@ -106,6 +107,7 @@ export const IconSelection = (props: IconAppearanceProps) => <Icon name="selecti
 export const IconSettings = (props: IconAppearanceProps) => <Icon name="settings" {...props} />
 export const IconStatistics = (props: IconAppearanceProps) => <Icon name="statistics" {...props} />
 export const IconSuccess = (props: IconAppearanceProps) => <Icon name="success" {...props} />
+export const IconTabAdd = (props: IconAppearanceProps) => <Icon name="tab-add" {...props} />
 export const IconUpload = (props: IconAppearanceProps) => <Icon name="upload" {...props} />
 export const IconUser = (props: IconAppearanceProps) => <Icon name="user" {...props} />
 export const IconUserInactive = (props: IconAppearanceProps) => <Icon name="user-inactive" {...props} />
