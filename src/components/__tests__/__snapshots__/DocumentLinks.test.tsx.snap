@@ -62,7 +62,7 @@ exports[`DocumentLink Rendering 1`] = `
         color="#0066B1"
         name="file-lines"
         size={14}
-        type="light"
+        type="solid"
       />
     </View>
     <Text
