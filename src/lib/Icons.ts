@@ -36,6 +36,7 @@ import { faExclamationTriangle as faExclamationTriangleLight } from '@fortawesom
 import { faExternalLink as faExternalLinkLight } from '@fortawesome/pro-light-svg-icons/faExternalLink'
 import { faEye as faEyeLight } from '@fortawesome/pro-light-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashLight } from '@fortawesome/pro-light-svg-icons/faEyeSlash'
+import { faFileLines as faFileLinesLight } from '@fortawesome/pro-light-svg-icons/faFileLines'
 import { faGlobeEurope as faGlobeEuropeLight } from '@fortawesome/pro-light-svg-icons/faGlobeEurope'
 import { faHeart as faHeartLight } from '@fortawesome/pro-light-svg-icons/faHeart'
 import { faHexagon as faHexagonLight } from '@fortawesome/pro-light-svg-icons/faHexagon'
@@ -102,6 +103,7 @@ import { faExclamationTriangle as faExclamationTriangleSolid } from '@fortawesom
 import { faExternalLink as faExternalLinkSolid } from '@fortawesome/pro-solid-svg-icons/faExternalLink'
 import { faEye as faEyeSolid } from '@fortawesome/pro-solid-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashSolid } from '@fortawesome/pro-solid-svg-icons/faEyeSlash'
+import { faFileLines as faFileLinesSolid } from '@fortawesome/pro-solid-svg-icons/faFileLines'
 import { faGlobeEurope as faGlobeEuropeSolid } from '@fortawesome/pro-solid-svg-icons/faGlobeEurope'
 import { faHeart as faHeartSolid } from '@fortawesome/pro-solid-svg-icons/faHeart'
 import { faHexagon as faHexagonSolid } from '@fortawesome/pro-solid-svg-icons/faHexagon'
@@ -162,6 +164,7 @@ type IconName =
   | 'exclusion'
   | 'expand'
   | 'external-link'
+  | 'document'
   | 'feed'
   | 'group'
   | 'hide'
@@ -224,6 +227,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'date-range': { light: faCalendarRangeLight, solid: faCalendarRangeSolid },
   delete: { light: faTrashAltLight, solid: faTrashAltSolid },
   disclose: { light: faChevronRightLight, solid: faChevronRightSolid },
+  document: { light: faFileLinesLight, solid: faFileLinesSolid },
   email: { light: faEnvelopeLight, solid: faEnvelopeSolid },
   enumeration: { light: faCircleLight, solid: faCircleSolid },
   error: { light: faExclamationTriangleLight, solid: faExclamationTriangleSolid },

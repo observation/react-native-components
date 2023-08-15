@@ -79,6 +79,7 @@ export const IconDate = (props: IconAppearanceProps) => <Icon name="date" {...pr
 export const IconDateRange = (props: IconAppearanceProps) => <Icon name="date-range" {...props} />
 export const IconDelete = (props: IconAppearanceProps) => <Icon name="delete" {...props} />
 export const IconDisclose = (props: IconAppearanceProps) => <Icon name="disclose" {...props} />
+export const IconDocument = (props: IconAppearanceProps) => <Icon name="document" {...props} />
 export const IconEnumeration = (props: IconAppearanceProps) => <Icon name="enumeration" {...props} />
 export const IconError = (props: IconAppearanceProps) => <Icon name="error" {...props} />
 export const IconErrorMessage = (props: IconAppearanceProps) => <Icon name="error-message" {...props} />
