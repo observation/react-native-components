@@ -11,11 +11,13 @@ type Props = {
   containerStyle?: StyleProp<ViewStyle>
   testID?: string
   label: string
+  icon?: JSX.Element
 }
 
-const MoreInfo = ({ onPress, containerStyle, label }: Props) => (
+const defaultIcon = <IconInfo size={theme.icon.size.medium} />
+const MoreInfo = ({ onPress, containerStyle, icon = defaultIcon, label }: Props) => (
   <IconText
-    icon={<IconInfo size={theme.icon.size.medium} />}
+    icon={icon}
     text={label}
     style={{
       containerStyle,

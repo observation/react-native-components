@@ -41,6 +41,7 @@ import { faHeart as faHeartLight } from '@fortawesome/pro-light-svg-icons/faHear
 import { faHexagon as faHexagonLight } from '@fortawesome/pro-light-svg-icons/faHexagon'
 import { faImages as faImagesLight } from '@fortawesome/pro-light-svg-icons/faImages'
 import { faInfoCircle as faInfoCircleLight } from '@fortawesome/pro-light-svg-icons/faInfoCircle'
+import { faInfoSquare as faInfoSquareLight } from '@fortawesome/pro-light-svg-icons/faInfoSquare'
 import { faLanguage as faLanguageLight } from '@fortawesome/pro-light-svg-icons/faLanguage'
 import { faMapMarkerAlt as faMapMarkerAltLight } from '@fortawesome/pro-light-svg-icons/faMapMarkerAlt'
 import { faPaperPlaneTop as faPaperPlaneToplight } from '@fortawesome/pro-light-svg-icons/faPaperPlaneTop'
@@ -106,6 +107,7 @@ import { faHeart as faHeartSolid } from '@fortawesome/pro-solid-svg-icons/faHear
 import { faHexagon as faHexagonSolid } from '@fortawesome/pro-solid-svg-icons/faHexagon'
 import { faImages as faImagesSolid } from '@fortawesome/pro-solid-svg-icons/faImages'
 import { faInfoCircle as faInfoCircleSolid } from '@fortawesome/pro-solid-svg-icons/faInfoCircle'
+import { faInfoSquare as faInfoSquareSolid } from '@fortawesome/pro-solid-svg-icons/faInfoSquare'
 import { faLanguage as faLanguageSolid } from '@fortawesome/pro-solid-svg-icons/faLanguage'
 import { faMapMarkerAlt as faMapMarkerAltSolid } from '@fortawesome/pro-solid-svg-icons/faMapMarkerAlt'
 import { faPaperPlaneTop as faPaperPlaneTopSolid } from '@fortawesome/pro-solid-svg-icons/faPaperPlaneTop'
@@ -165,6 +167,7 @@ type IconName =
   | 'hide'
   | 'image-gallery'
   | 'info'
+  | 'info-square'
   | 'language'
   | 'like'
   | 'list'
@@ -234,6 +237,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   hide: { light: faEyeSlashLight, solid: faEyeSlashSolid },
   'image-gallery': { light: faImagesLight, solid: faImagesSolid },
   info: { light: faInfoCircleLight, solid: faInfoCircleSolid },
+  'info-square': { light: faInfoSquareLight, solid: faInfoSquareSolid },
   language: { light: faLanguageLight, solid: faLanguageSolid },
   like: { light: faHeartLight, solid: faHeartSolid },
   list: { light: faAlignJustifyLight, solid: faAlignJustifySolid },
