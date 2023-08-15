@@ -7,6 +7,7 @@ import Chip from './components/Chip'
 import ContentImage from './components/ContentImage'
 import Date from './components/Date'
 import Disclose from './components/Disclose'
+import DocumentLink from './components/DocumentLink'
 import FilterButton from './components/FilterButton'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
@@ -44,6 +45,7 @@ export {
   ContentImage,
   Date,
   Disclose,
+  DocumentLink,
   FilterButton,
   IconButton,
   IconText,

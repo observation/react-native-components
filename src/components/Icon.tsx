@@ -31,6 +31,7 @@ const defaultProps: { [key in IconName]?: IconAppearanceProps } = {
   count: { color: white80 },
   date: { style: 'solid', color: greySemi, size: medium },
   disclose: { size: extraLarge },
+  document: { style: 'solid' },
   email: { style: 'solid' },
   enumeration: { style: 'solid' },
   error: { color: error },
