@@ -31,6 +31,7 @@ const defaultProps: { [key in IconName]?: IconAppearanceProps } = {
   count: { color: white80 },
   date: { style: 'solid', color: greySemi, size: medium },
   disclose: { size: extraLarge },
+  document: { style: 'solid' },
   email: { style: 'solid' },
   enumeration: { style: 'solid' },
   error: { color: error },
@@ -54,6 +55,7 @@ const defaultProps: { [key in IconName]?: IconAppearanceProps } = {
   selection: { color: black },
   show: { style: 'solid' },
   success: { color: success },
+  'tab-add': { size: extraExtraLarge },
   user: { color: greySemi },
   'validation-accepted-by-admin': { style: 'solid', size: theme.icon.size.medium },
   'validation-accepted-with-evidence': { color: success, style: 'solid', size: theme.icon.size.medium },
@@ -78,6 +80,7 @@ export const IconDate = (props: IconAppearanceProps) => <Icon name="date" {...pr
 export const IconDateRange = (props: IconAppearanceProps) => <Icon name="date-range" {...props} />
 export const IconDelete = (props: IconAppearanceProps) => <Icon name="delete" {...props} />
 export const IconDisclose = (props: IconAppearanceProps) => <Icon name="disclose" {...props} />
+export const IconDocument = (props: IconAppearanceProps) => <Icon name="document" {...props} />
 export const IconEnumeration = (props: IconAppearanceProps) => <Icon name="enumeration" {...props} />
 export const IconError = (props: IconAppearanceProps) => <Icon name="error" {...props} />
 export const IconErrorMessage = (props: IconAppearanceProps) => <Icon name="error-message" {...props} />
@@ -89,6 +92,7 @@ export const IconImageGallery = (props: IconAppearanceProps) => <Icon name="imag
 export const IconInfo = (props: IconAppearanceProps) => <Icon name="info" {...props} />
 export const IconList = (props: IconAppearanceProps) => <Icon name="list" {...props} />
 export const IconLocation = (props: IconAppearanceProps) => <Icon name="location" {...props} />
+export const IconLogin = (props: IconAppearanceProps) => <Icon name="login" {...props} />
 export const IconNext = (props: IconAppearanceProps) => <Icon name="next" {...props} />
 export const IconPhotography = (props: IconAppearanceProps) => <Icon name="photography" {...props} />
 export const IconPlayback = (props: IconAppearanceProps) => <Icon name="playback" {...props} />
@@ -105,6 +109,7 @@ export const IconSelection = (props: IconAppearanceProps) => <Icon name="selecti
 export const IconSettings = (props: IconAppearanceProps) => <Icon name="settings" {...props} />
 export const IconStatistics = (props: IconAppearanceProps) => <Icon name="statistics" {...props} />
 export const IconSuccess = (props: IconAppearanceProps) => <Icon name="success" {...props} />
+export const IconTabAdd = (props: IconAppearanceProps) => <Icon name="tab-add" {...props} />
 export const IconUpload = (props: IconAppearanceProps) => <Icon name="upload" {...props} />
 export const IconUser = (props: IconAppearanceProps) => <Icon name="user" {...props} />
 export const IconUserInactive = (props: IconAppearanceProps) => <Icon name="user-inactive" {...props} />

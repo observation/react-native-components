@@ -25,6 +25,7 @@ import { faChevronLeft as faChevronLeftLight } from '@fortawesome/pro-light-svg-
 import { faChevronRight as faChevronRightLight } from '@fortawesome/pro-light-svg-icons/faChevronRight'
 import { faCircle as faCircleLight } from '@fortawesome/pro-light-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckLight } from '@fortawesome/pro-light-svg-icons/faCircleCheck'
+import { faCirclePlus as faCirclePlusLight } from '@fortawesome/pro-light-svg-icons/faCirclePlus'
 import { faCircleUser as faCircleUserLight } from '@fortawesome/pro-light-svg-icons/faCircleUser'
 import { faClone as faCloneLight } from '@fortawesome/pro-light-svg-icons/faClone'
 import { faCog as faCogLight } from '@fortawesome/pro-light-svg-icons/faCog'
@@ -35,6 +36,7 @@ import { faExclamationTriangle as faExclamationTriangleLight } from '@fortawesom
 import { faExternalLink as faExternalLinkLight } from '@fortawesome/pro-light-svg-icons/faExternalLink'
 import { faEye as faEyeLight } from '@fortawesome/pro-light-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashLight } from '@fortawesome/pro-light-svg-icons/faEyeSlash'
+import { faFileLines as faFileLinesLight } from '@fortawesome/pro-light-svg-icons/faFileLines'
 import { faGlobeEurope as faGlobeEuropeLight } from '@fortawesome/pro-light-svg-icons/faGlobeEurope'
 import { faHeart as faHeartLight } from '@fortawesome/pro-light-svg-icons/faHeart'
 import { faHexagon as faHexagonLight } from '@fortawesome/pro-light-svg-icons/faHexagon'
@@ -49,6 +51,7 @@ import { faQrcode as faQrcodeLight } from '@fortawesome/pro-light-svg-icons/faQr
 import { faQuestionSquare as faQuestionSquareLight } from '@fortawesome/pro-light-svg-icons/faQuestionSquare'
 import { faRandom as faRandomLight } from '@fortawesome/pro-light-svg-icons/faRandom'
 import { faRectangleHistory as faRectangleHistoryLight } from '@fortawesome/pro-light-svg-icons/faRectangleHistory'
+import { faRightToBracket as faRightToBracketLight } from '@fortawesome/pro-light-svg-icons/faRightToBracket'
 import { faShareNodes as faShareNodesLight } from '@fortawesome/pro-light-svg-icons/faShareNodes'
 import { faSlidersH as faSlidersHLight } from '@fortawesome/pro-light-svg-icons/faSlidersH'
 import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSquare'
@@ -88,6 +91,7 @@ import { faChevronLeft as faChevronLeftSolid } from '@fortawesome/pro-solid-svg-
 import { faChevronRight as faChevronRightSolid } from '@fortawesome/pro-solid-svg-icons/faChevronRight'
 import { faCircle as faCircleSolid } from '@fortawesome/pro-solid-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckSolid } from '@fortawesome/pro-solid-svg-icons/faCircleCheck'
+import { faCirclePlus as faCirclePlusSolid } from '@fortawesome/pro-solid-svg-icons/faCirclePlus'
 import { faCircleUser as faCircleUserSolid } from '@fortawesome/pro-solid-svg-icons/faCircleUser'
 import { faClone as faCloneSolid } from '@fortawesome/pro-solid-svg-icons/faClone'
 import { faCog as faCogSolid } from '@fortawesome/pro-solid-svg-icons/faCog'
@@ -98,6 +102,7 @@ import { faExclamationTriangle as faExclamationTriangleSolid } from '@fortawesom
 import { faExternalLink as faExternalLinkSolid } from '@fortawesome/pro-solid-svg-icons/faExternalLink'
 import { faEye as faEyeSolid } from '@fortawesome/pro-solid-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashSolid } from '@fortawesome/pro-solid-svg-icons/faEyeSlash'
+import { faFileLines as faFileLinesSolid } from '@fortawesome/pro-solid-svg-icons/faFileLines'
 import { faGlobeEurope as faGlobeEuropeSolid } from '@fortawesome/pro-solid-svg-icons/faGlobeEurope'
 import { faHeart as faHeartSolid } from '@fortawesome/pro-solid-svg-icons/faHeart'
 import { faHexagon as faHexagonSolid } from '@fortawesome/pro-solid-svg-icons/faHexagon'
@@ -112,6 +117,7 @@ import { faQrcode as faQrcodeSolid } from '@fortawesome/pro-solid-svg-icons/faQr
 import { faQuestionSquare as faQuestionSquareSolid } from '@fortawesome/pro-solid-svg-icons/faQuestionSquare'
 import { faRandom as faRandomSolid } from '@fortawesome/pro-solid-svg-icons/faRandom'
 import { faRectangleHistory as faRectangleHistorySolid } from '@fortawesome/pro-solid-svg-icons/faRectangleHistory'
+import { faRightToBracket as faRightToBracketSolid } from '@fortawesome/pro-solid-svg-icons/faRightToBracket'
 import { faShareNodes as faShareNodesSolid } from '@fortawesome/pro-solid-svg-icons/faShareNodes'
 import { faSlidersH as faSlidersHSolid } from '@fortawesome/pro-solid-svg-icons/faSlidersH'
 import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSquare'
@@ -156,6 +162,7 @@ type IconName =
   | 'exclusion'
   | 'expand'
   | 'external-link'
+  | 'document'
   | 'feed'
   | 'group'
   | 'hide'
@@ -165,6 +172,7 @@ type IconName =
   | 'like'
   | 'list'
   | 'location'
+  | 'login'
   | 'new'
   | 'next'
   | 'photography'
@@ -185,6 +193,7 @@ type IconName =
   | 'show'
   | 'statistics'
   | 'success'
+  | 'tab-add'
   | 'undo'
   | 'upload'
   | 'user'
@@ -215,6 +224,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'date-range': { light: faCalendarRangeLight, solid: faCalendarRangeSolid },
   delete: { light: faTrashAltLight, solid: faTrashAltSolid },
   disclose: { light: faChevronRightLight, solid: faChevronRightSolid },
+  document: { light: faFileLinesLight, solid: faFileLinesSolid },
   email: { light: faEnvelopeLight, solid: faEnvelopeSolid },
   enumeration: { light: faCircleLight, solid: faCircleSolid },
   error: { light: faExclamationTriangleLight, solid: faExclamationTriangleSolid },
@@ -232,6 +242,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   like: { light: faHeartLight, solid: faHeartSolid },
   list: { light: faAlignJustifyLight, solid: faAlignJustifySolid },
   location: { light: faMapMarkerAltLight, solid: faMapMarkerAltSolid },
+  login: { light: faRightToBracketLight, solid: faRightToBracketSolid },
   new: { light: faStarsLight, solid: faStarsSolid },
   next: { light: faChevronCircleRightLight, solid: faChevronCircleRightSolid },
   photography: { light: faCameraLight, solid: faCameraSolid },
@@ -255,6 +266,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   show: { light: faEyeLight, solid: faEyeSolid },
   statistics: { light: faChartColumnLight, solid: faChartColumnSolid },
   success: { light: faCircleCheckLight, solid: faCircleCheckSolid },
+  'tab-add': { light: faCirclePlusLight, solid: faCirclePlusSolid },
   undo: { light: faUndoLight, solid: faUndoSolid },
   upload: { light: faArrowUpFromBracketLight, solid: faArrowUpFromBracketSolid },
   user: { light: faUserLight, solid: faUserSolid },
