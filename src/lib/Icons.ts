@@ -11,6 +11,7 @@ import { faArrowUpFromBracket as faArrowUpFromBracketLight } from '@fortawesome/
 import { faArrowUpFromSquare as faArrowUpFromSquareLight } from '@fortawesome/pro-light-svg-icons/faArrowUpFromSquare'
 import { faBadge as faBadgeLight } from '@fortawesome/pro-light-svg-icons/faBadge'
 import { faBadgeCheck as faBadgeCheckLight } from '@fortawesome/pro-light-svg-icons/faBadgeCheck'
+import { faBanBug as faBanBugLight } from '@fortawesome/pro-light-svg-icons/faBanBug'
 import { faCalendarDay as faCalendarDayLight } from '@fortawesome/pro-light-svg-icons/faCalendarDay'
 import { faCalendarRange as faCalendarRangeLight } from '@fortawesome/pro-light-svg-icons/faCalendarRange'
 import { faCamera as faCameraLight } from '@fortawesome/pro-light-svg-icons/faCamera'
@@ -77,6 +78,7 @@ import { faArrowUpFromBracket as faArrowUpFromBracketSolid } from '@fortawesome/
 import { faArrowUpFromSquare as faArrowUpFromSquareSolid } from '@fortawesome/pro-solid-svg-icons/faArrowUpFromSquare'
 import { faBadge as faBadgeSolid } from '@fortawesome/pro-solid-svg-icons/faBadge'
 import { faBadgeCheck as faBadgeCheckSolid } from '@fortawesome/pro-solid-svg-icons/faBadgeCheck'
+import { faBanBug as faBanBugSolid } from '@fortawesome/pro-solid-svg-icons/faBanBug'
 import { faCalendarDay as faCalendarDaySolid } from '@fortawesome/pro-solid-svg-icons/faCalendarDay'
 import { faCalendarRange as faCalendarRangeSolid } from '@fortawesome/pro-solid-svg-icons/faCalendarRange'
 import { faCamera as faCameraSolid } from '@fortawesome/pro-solid-svg-icons/faCamera'
@@ -150,6 +152,7 @@ type IconName =
   | 'copy'
   | 'count'
   | 'crop'
+  | 'debug'
   | 'date'
   | 'date-range'
   | 'delete'
@@ -222,6 +225,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   crop: { light: faCropAltLight, solid: faCropAltSolid },
   date: { light: faCalendarDayLight, solid: faCalendarDaySolid },
   'date-range': { light: faCalendarRangeLight, solid: faCalendarRangeSolid },
+  debug: { light: faBanBugLight, solid: faBanBugSolid },
   delete: { light: faTrashAltLight, solid: faTrashAltSolid },
   disclose: { light: faChevronRightLight, solid: faChevronRightSolid },
   document: { light: faFileLinesLight, solid: faFileLinesSolid },

@@ -78,6 +78,7 @@ export const IconCount = (props: IconAppearanceProps) => <Icon name="count" {...
 export const IconCrop = (props: IconAppearanceProps) => <Icon name="crop" {...props} />
 export const IconDate = (props: IconAppearanceProps) => <Icon name="date" {...props} />
 export const IconDateRange = (props: IconAppearanceProps) => <Icon name="date-range" {...props} />
+export const IconDebug = (props: IconAppearanceProps) => <Icon name="debug" {...props} />
 export const IconDelete = (props: IconAppearanceProps) => <Icon name="delete" {...props} />
 export const IconDisclose = (props: IconAppearanceProps) => <Icon name="disclose" {...props} />
 export const IconDocument = (props: IconAppearanceProps) => <Icon name="document" {...props} />
