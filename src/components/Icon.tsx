@@ -108,6 +108,7 @@ export const IconRarityRelativelyCommon = (props: IconAppearanceProps) => (
 )
 export const IconSelection = (props: IconAppearanceProps) => <Icon name="selection" {...props} />
 export const IconSettings = (props: IconAppearanceProps) => <Icon name="settings" {...props} />
+export const IconSpeciesLists = (props: IconAppearanceProps) => <Icon name="species-lists" {...props} />
 export const IconStatistics = (props: IconAppearanceProps) => <Icon name="statistics" {...props} />
 export const IconSuccess = (props: IconAppearanceProps) => <Icon name="success" {...props} />
 export const IconTabAdd = (props: IconAppearanceProps) => <Icon name="tab-add" {...props} />
