@@ -28,6 +28,7 @@ import { faCircle as faCircleLight } from '@fortawesome/pro-light-svg-icons/faCi
 import { faCircleCheck as faCircleCheckLight } from '@fortawesome/pro-light-svg-icons/faCircleCheck'
 import { faCirclePlus as faCirclePlusLight } from '@fortawesome/pro-light-svg-icons/faCirclePlus'
 import { faCircleUser as faCircleUserLight } from '@fortawesome/pro-light-svg-icons/faCircleUser'
+import { faCircleXmark as faCircleXmarkLight } from '@fortawesome/pro-light-svg-icons/faCircleXmark'
 import { faClone as faCloneLight } from '@fortawesome/pro-light-svg-icons/faClone'
 import { faCog as faCogLight } from '@fortawesome/pro-light-svg-icons/faCog'
 import { faCommentAltExclamation as faCommentAltExclamationLight } from '@fortawesome/pro-light-svg-icons/faCommentAltExclamation'
@@ -96,6 +97,7 @@ import { faCircle as faCircleSolid } from '@fortawesome/pro-solid-svg-icons/faCi
 import { faCircleCheck as faCircleCheckSolid } from '@fortawesome/pro-solid-svg-icons/faCircleCheck'
 import { faCirclePlus as faCirclePlusSolid } from '@fortawesome/pro-solid-svg-icons/faCirclePlus'
 import { faCircleUser as faCircleUserSolid } from '@fortawesome/pro-solid-svg-icons/faCircleUser'
+import { faCircleXmark as faCircleXmarkSolid } from '@fortawesome/pro-solid-svg-icons/faCircleXmark'
 import { faClone as faCloneSolid } from '@fortawesome/pro-solid-svg-icons/faClone'
 import { faCog as faCogSolid } from '@fortawesome/pro-solid-svg-icons/faCog'
 import { faCommentAltExclamation as faCommentAltExclamationSolid } from '@fortawesome/pro-solid-svg-icons/faCommentAltExclamation'
@@ -147,6 +149,7 @@ type IconName =
   | 'back'
   | 'badge'
   | 'check'
+  | 'circle-xmark'
   | 'close'
   | 'collapse'
   | 'completed'
@@ -219,6 +222,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   back: { light: faChevronLeftLight, solid: faChevronLeftSolid },
   badge: { light: faBadgeLight, solid: faBadgeSolid },
   check: { light: faCheckLight, solid: faCheckSolid },
+  'circle-xmark': { light: faCircleXmarkLight, solid: faCircleXmarkSolid },
   close: { light: faTimesLight, solid: faTimesSolid },
   collapse: { light: faAngleUpLight, solid: faAngleUpSolid },
   completed: { light: faCheckSquareLight, solid: faCheckSquareSolid },
