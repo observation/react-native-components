@@ -46,6 +46,7 @@ import { faImages as faImagesLight } from '@fortawesome/pro-light-svg-icons/faIm
 import { faInfoCircle as faInfoCircleLight } from '@fortawesome/pro-light-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageLight } from '@fortawesome/pro-light-svg-icons/faLanguage'
 import { faMapMarkerAlt as faMapMarkerAltLight } from '@fortawesome/pro-light-svg-icons/faMapMarkerAlt'
+import { faMinus as faMinusLight } from '@fortawesome/pro-light-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneToplight } from '@fortawesome/pro-light-svg-icons/faPaperPlaneTop'
 import { faPlayCircle as faPlayCircleLight } from '@fortawesome/pro-light-svg-icons/faPlayCircle'
 import { faPlus as faPlusLight } from '@fortawesome/pro-light-svg-icons/faPlus'
@@ -115,6 +116,7 @@ import { faImages as faImagesSolid } from '@fortawesome/pro-solid-svg-icons/faIm
 import { faInfoCircle as faInfoCircleSolid } from '@fortawesome/pro-solid-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageSolid } from '@fortawesome/pro-solid-svg-icons/faLanguage'
 import { faMapMarkerAlt as faMapMarkerAltSolid } from '@fortawesome/pro-solid-svg-icons/faMapMarkerAlt'
+import { faMinus as faMinusSolid } from '@fortawesome/pro-solid-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneTopSolid } from '@fortawesome/pro-solid-svg-icons/faPaperPlaneTop'
 import { faPlayCircle as faPlayCircleSolid } from '@fortawesome/pro-solid-svg-icons/faPlayCircle'
 import { faPlus as faPlusSolid } from '@fortawesome/pro-solid-svg-icons/faPlus'
@@ -181,6 +183,7 @@ type IconName =
   | 'list'
   | 'location'
   | 'login'
+  | 'minus'
   | 'new'
   | 'next'
   | 'photography'
@@ -254,6 +257,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   list: { light: faAlignJustifyLight, solid: faAlignJustifySolid },
   location: { light: faMapMarkerAltLight, solid: faMapMarkerAltSolid },
   login: { light: faRightToBracketLight, solid: faRightToBracketSolid },
+  minus: { light: faMinusLight, solid: faMinusSolid },
   new: { light: faStarsLight, solid: faStarsSolid },
   next: { light: faChevronCircleRightLight, solid: faChevronCircleRightSolid },
   photography: { light: faCameraLight, solid: faCameraSolid },
