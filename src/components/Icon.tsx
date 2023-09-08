@@ -69,6 +69,7 @@ export const IconAdvance = (props: IconAppearanceProps) => <Icon name="advance" 
 export const IconAnalytics = (props: IconAppearanceProps) => <Icon name="analytics" {...props} />
 export const IconBadge = (props: IconAppearanceProps) => <Icon name="badge" {...props} />
 export const IconCheck = (props: IconAppearanceProps) => <Icon name="check" {...props} />
+export const IconCircleXmark = (props: IconAppearanceProps) => <Icon name="circle-xmark" {...props} />
 export const IconClose = (props: IconAppearanceProps) => <Icon name="close" {...props} />
 export const IconCollapse = (props: IconAppearanceProps) => <Icon name="collapse" {...props} />
 export const IconCompleted = (props: IconAppearanceProps) => <Icon name="completed" {...props} />
@@ -108,6 +109,7 @@ export const IconRarityRelativelyCommon = (props: IconAppearanceProps) => (
 )
 export const IconSelection = (props: IconAppearanceProps) => <Icon name="selection" {...props} />
 export const IconSettings = (props: IconAppearanceProps) => <Icon name="settings" {...props} />
+export const IconSpeciesLists = (props: IconAppearanceProps) => <Icon name="species-lists" {...props} />
 export const IconStatistics = (props: IconAppearanceProps) => <Icon name="statistics" {...props} />
 export const IconSuccess = (props: IconAppearanceProps) => <Icon name="success" {...props} />
 export const IconTabAdd = (props: IconAppearanceProps) => <Icon name="tab-add" {...props} />
