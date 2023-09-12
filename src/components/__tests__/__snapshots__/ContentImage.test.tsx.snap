@@ -449,7 +449,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
                 "fontSize": 12,
                 "fontStyle": "normal",
                 "fontWeight": "bold",
-                "lineHeight": 17,
+                "lineHeight": 16,
                 "marginBottom": 4,
               }
             }
@@ -573,7 +573,7 @@ exports[`ContentImage Interaction Close the lightbox 1`] = `
                 "fontSize": 12,
                 "fontStyle": "normal",
                 "fontWeight": "bold",
-                "lineHeight": 17,
+                "lineHeight": 16,
                 "marginBottom": 4,
               }
             }
@@ -697,7 +697,7 @@ exports[`ContentImage Rendering With alt title 1`] = `
                 "fontSize": 12,
                 "fontStyle": "normal",
                 "fontWeight": "bold",
-                "lineHeight": 17,
+                "lineHeight": 16,
                 "marginBottom": 4,
               }
             }
@@ -821,7 +821,7 @@ exports[`ContentImage Rendering With alt title and text 1`] = `
                 "fontSize": 12,
                 "fontStyle": "normal",
                 "fontWeight": "bold",
-                "lineHeight": 17,
+                "lineHeight": 16,
                 "marginBottom": 4,
               }
             }
@@ -837,7 +837,7 @@ exports[`ContentImage Rendering With alt title and text 1`] = `
                 "fontSize": 12,
                 "fontStyle": "normal",
                 "fontWeight": "normal",
-                "lineHeight": 17,
+                "lineHeight": 16,
               }
             }
           >
@@ -960,7 +960,7 @@ exports[`ContentImage Rendering With alt title ending in delimiter 1`] = `
                 "fontSize": 12,
                 "fontStyle": "normal",
                 "fontWeight": "bold",
-                "lineHeight": 17,
+                "lineHeight": 16,
                 "marginBottom": 4,
               }
             }
