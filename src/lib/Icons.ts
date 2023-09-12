@@ -46,6 +46,8 @@ import { faImages as faImagesLight } from '@fortawesome/pro-light-svg-icons/faIm
 import { faInfoCircle as faInfoCircleLight } from '@fortawesome/pro-light-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageLight } from '@fortawesome/pro-light-svg-icons/faLanguage'
 import { faMapMarkerAlt as faMapMarkerAltLight } from '@fortawesome/pro-light-svg-icons/faMapMarkerAlt'
+import { faMars as faMarsLight } from '@fortawesome/pro-light-svg-icons/faMars'
+import { faMinus as faMinusLight } from '@fortawesome/pro-light-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneToplight } from '@fortawesome/pro-light-svg-icons/faPaperPlaneTop'
 import { faPlayCircle as faPlayCircleLight } from '@fortawesome/pro-light-svg-icons/faPlayCircle'
 import { faPlus as faPlusLight } from '@fortawesome/pro-light-svg-icons/faPlus'
@@ -70,6 +72,7 @@ import { faUserGroup as faUserGroupLight } from '@fortawesome/pro-light-svg-icon
 import { faUserPlus as faUserPlusLight } from '@fortawesome/pro-light-svg-icons/faUserPlus'
 import { faUserSlash as faUserSlashLight } from '@fortawesome/pro-light-svg-icons/faUserSlash'
 import { faUsersSlash as faUsersSlashLight } from '@fortawesome/pro-light-svg-icons/faUsersSlash'
+import { faVenus as faVenusLight } from '@fortawesome/pro-light-svg-icons/faVenus'
 import { faAlignJustify as faAlignJustifySolid } from '@fortawesome/pro-solid-svg-icons/faAlignJustify'
 import { faAnalytics as faAnalyticsSolid } from '@fortawesome/pro-solid-svg-icons/faAnalytics'
 import { faAngleDown as faAngleDownSolid } from '@fortawesome/pro-solid-svg-icons/faAngleDown'
@@ -115,6 +118,8 @@ import { faImages as faImagesSolid } from '@fortawesome/pro-solid-svg-icons/faIm
 import { faInfoCircle as faInfoCircleSolid } from '@fortawesome/pro-solid-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageSolid } from '@fortawesome/pro-solid-svg-icons/faLanguage'
 import { faMapMarkerAlt as faMapMarkerAltSolid } from '@fortawesome/pro-solid-svg-icons/faMapMarkerAlt'
+import { faMars as faMarsSolid } from '@fortawesome/pro-solid-svg-icons/faMars'
+import { faMinus as faMinusSolid } from '@fortawesome/pro-solid-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneTopSolid } from '@fortawesome/pro-solid-svg-icons/faPaperPlaneTop'
 import { faPlayCircle as faPlayCircleSolid } from '@fortawesome/pro-solid-svg-icons/faPlayCircle'
 import { faPlus as faPlusSolid } from '@fortawesome/pro-solid-svg-icons/faPlus'
@@ -139,6 +144,7 @@ import { faUserGroup as faUserGroupSolid } from '@fortawesome/pro-solid-svg-icon
 import { faUserPlus as faUserPlusSolid } from '@fortawesome/pro-solid-svg-icons/faUserPlus'
 import { faUserSlash as faUserSlashSolid } from '@fortawesome/pro-solid-svg-icons/faUserSlash'
 import { faUsersSlash as faUsersSlashSolid } from '@fortawesome/pro-solid-svg-icons/faUsersSlash'
+import { faVenus as faVenusSolid } from '@fortawesome/pro-solid-svg-icons/faVenus'
 
 type IconName =
   | 'achievement'
@@ -181,6 +187,8 @@ type IconName =
   | 'list'
   | 'location'
   | 'login'
+  | 'mars'
+  | 'minus'
   | 'new'
   | 'next'
   | 'photography'
@@ -211,6 +219,7 @@ type IconName =
   | 'user-verified'
   | 'validation-accepted-by-admin'
   | 'validation-accepted-with-evidence'
+  | 'venus'
   | 'warning'
 
 const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition } } = {
@@ -254,6 +263,8 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   list: { light: faAlignJustifyLight, solid: faAlignJustifySolid },
   location: { light: faMapMarkerAltLight, solid: faMapMarkerAltSolid },
   login: { light: faRightToBracketLight, solid: faRightToBracketSolid },
+  mars: { light: faMarsLight, solid: faMarsSolid },
+  minus: { light: faMinusLight, solid: faMinusSolid },
   new: { light: faStarsLight, solid: faStarsSolid },
   next: { light: faChevronCircleRightLight, solid: faChevronCircleRightSolid },
   photography: { light: faCameraLight, solid: faCameraSolid },
@@ -287,6 +298,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'user-verified': { light: faUserCheckLight, solid: faUserCheckSolid },
   'validation-accepted-by-admin': { light: faCheckCircleLight, solid: faCheckCircleSolid },
   'validation-accepted-with-evidence': { light: faCheckSquareLight, solid: faCheckSquareSolid },
+  venus: { light: faVenusLight, solid: faVenusSolid },
   warning: { light: faExclamationTriangleLight, solid: faExclamationTriangleSolid },
 }
 
