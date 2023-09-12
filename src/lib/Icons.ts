@@ -30,6 +30,7 @@ import { faCirclePlus as faCirclePlusLight } from '@fortawesome/pro-light-svg-ic
 import { faCircleUser as faCircleUserLight } from '@fortawesome/pro-light-svg-icons/faCircleUser'
 import { faCircleXmark as faCircleXmarkLight } from '@fortawesome/pro-light-svg-icons/faCircleXmark'
 import { faClone as faCloneLight } from '@fortawesome/pro-light-svg-icons/faClone'
+import { faCloudArrowDown as faCloudArrowDownLight } from '@fortawesome/pro-light-svg-icons/faCloudArrowDown'
 import { faCog as faCogLight } from '@fortawesome/pro-light-svg-icons/faCog'
 import { faCommentAltExclamation as faCommentAltExclamationLight } from '@fortawesome/pro-light-svg-icons/faCommentAltExclamation'
 import { faCropAlt as faCropAltLight } from '@fortawesome/pro-light-svg-icons/faCropAlt'
@@ -102,6 +103,7 @@ import { faCirclePlus as faCirclePlusSolid } from '@fortawesome/pro-solid-svg-ic
 import { faCircleUser as faCircleUserSolid } from '@fortawesome/pro-solid-svg-icons/faCircleUser'
 import { faCircleXmark as faCircleXmarkSolid } from '@fortawesome/pro-solid-svg-icons/faCircleXmark'
 import { faClone as faCloneSolid } from '@fortawesome/pro-solid-svg-icons/faClone'
+import { faCloudArrowDown as faCloudArrowDownSolid } from '@fortawesome/pro-solid-svg-icons/faCloudArrowDown'
 import { faCog as faCogSolid } from '@fortawesome/pro-solid-svg-icons/faCog'
 import { faCommentAltExclamation as faCommentAltExclamationSolid } from '@fortawesome/pro-solid-svg-icons/faCommentAltExclamation'
 import { faCropAlt as faCropAltSolid } from '@fortawesome/pro-solid-svg-icons/faCropAlt'
@@ -157,6 +159,7 @@ type IconName =
   | 'check'
   | 'circle-xmark'
   | 'close'
+  | 'cloud-arrow-down'
   | 'collapse'
   | 'completed'
   | 'configuration'
@@ -233,6 +236,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   check: { light: faCheckLight, solid: faCheckSolid },
   'circle-xmark': { light: faCircleXmarkLight, solid: faCircleXmarkSolid },
   close: { light: faTimesLight, solid: faTimesSolid },
+  'cloud-arrow-down': { light: faCloudArrowDownLight, solid: faCloudArrowDownSolid },
   collapse: { light: faAngleUpLight, solid: faAngleUpSolid },
   completed: { light: faCheckSquareLight, solid: faCheckSquareSolid },
   configuration: { light: faSlidersHLight, solid: faSlidersHSolid },
