@@ -7,14 +7,14 @@ import theme from '../styles/theme'
 
 export type IconStyleProp = 'light' | 'solid'
 
-type IconAppearanceProps = {
+export type IconAppearanceProps = {
   style?: IconStyleProp
   color?: string
   size?: number
   testID?: string
 }
 
-type IconProps = IconAppearanceProps & {
+export type IconProps = IconAppearanceProps & {
   name: IconName
 }
 
