@@ -13,7 +13,7 @@ const BackButton = ({ navigation }: Props) => (
   <IconButton
     containerStyle={{ padding: theme.margin.common }}
     onPress={() => navigation.goBack()}
-    iconName="back"
+    iconName="chevron-left"
     size={theme.icon.size.extraExtraLarge}
     color={theme.color.primary}
   />

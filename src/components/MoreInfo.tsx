@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleProp, ViewStyle } from 'react-native'
 
-import { IconInfo } from './Icon'
+import { Icon } from './Icon'
 import IconText from './IconText'
 import textStyle from '../styles/text'
 import theme from '../styles/theme'
@@ -15,7 +15,7 @@ type Props = {
 
 const MoreInfo = ({ onPress, containerStyle, label }: Props) => (
   <IconText
-    icon={<IconInfo size={theme.icon.size.medium} />}
+    icon={<Icon name="info-circle" size={theme.icon.size.medium} />}
     text={label}
     style={{
       containerStyle,

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { act, render } from '@testing-library/react-native'
 
-import { IconInfo } from '../Icon'
+import { Icon } from '../Icon'
 import InputField from '../InputField'
 
 describe('InputField', () => {
@@ -47,7 +47,7 @@ describe('InputField', () => {
 
     test('With a right icon', async () => {
       // GIVEN
-      const { toJSON } = render(<InputField rightIcon={<IconInfo />} />)
+      const { toJSON } = render(<InputField rightIcon={<Icon name="info-circle" />} />)
 
       // THEN
       expect(toJSON()).toMatchSnapshot()

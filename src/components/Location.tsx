@@ -1,9 +1,10 @@
 import React from 'react'
 import { StyleProp, ViewStyle } from 'react-native'
 
-import { IconLocation } from './Icon'
+import { Icon } from './Icon'
 import IconText from './IconText'
 import textStyle from '../styles/text'
+import theme from '../styles/theme'
 
 type Props = {
   location: string
@@ -12,7 +13,7 @@ type Props = {
 
 const Location = ({ location, containerStyle }: Props) => (
   <IconText
-    icon={<IconLocation />}
+    icon={<Icon name="map-marker-alt" style="solid" color={theme.color.greySemi} size={theme.icon.size.medium} />}
     text={location}
     style={{
       containerStyle,

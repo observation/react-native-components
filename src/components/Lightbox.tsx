@@ -4,7 +4,7 @@ import { SafeAreaView, StyleSheet, Text, TextStyle, TouchableOpacity, View } fro
 import ImageView from '@observation.org/react-native-image-viewing'
 import Color from 'color'
 
-import { IconClose } from './Icon'
+import { Icon } from './Icon'
 import PageIndicator from './PageIndicator'
 import font from '../styles/font'
 import textStyle from '../styles/text'
@@ -23,7 +23,8 @@ const getLightboxHeaderComponent =
           </View>
           <View style={{ flex: 1 }}>
             <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
-              <IconClose
+              <Icon
+                name="times"
                 color={Color(theme.color.white).alpha(0.5).string()}
                 size={theme.icon.size.extraExtraLarge}
                 testID="close-lightbox"

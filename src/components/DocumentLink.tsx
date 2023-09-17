@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleProp, ViewStyle } from 'react-native'
 
-import { IconDocument } from './Icon'
+import { Icon } from './Icon'
 import IconText from './IconText'
 import textStyle from '../styles/text'
 import theme from '../styles/theme'
@@ -15,7 +15,7 @@ type Props = {
 
 const DocumentLink = ({ onPress, containerStyle, label }: Props) => (
   <IconText
-    icon={<IconDocument size={theme.icon.size.medium} />}
+    icon={<Icon name="file-lines" size={theme.icon.size.medium} style="solid" />}
     text={label}
     style={{
       containerStyle,

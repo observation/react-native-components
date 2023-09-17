@@ -1,7 +1,7 @@
 import React, { RefAttributes, useState } from 'react'
 import { Platform, TextInput, Text, View, StyleSheet, ViewStyle, TextInputProps, StyleProp } from 'react-native'
 
-import { IconError } from './Icon'
+import { Icon } from './Icon'
 import IconText from './IconText'
 import font from '../styles/font'
 import textStyle from '../styles/text'
@@ -48,7 +48,7 @@ const InputField = ({ containerStyle, inputProps, inputStyle, label, rightIcon, 
       </View>
       {errorMessage && (
         <IconText
-          icon={<IconError size={theme.icon.size.small} />}
+          icon={<Icon name="exclamation-triangle" size={theme.icon.size.small} color={theme.color.error} />}
           text={errorMessage}
           style={{
             textStyle: styles.errorStyle,

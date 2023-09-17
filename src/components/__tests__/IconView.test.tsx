@@ -3,7 +3,7 @@ import { Text } from 'react-native'
 
 import { render } from '@testing-library/react-native'
 
-import { IconInfo } from '../Icon'
+import { Icon } from '../Icon'
 import IconView from '../IconView'
 
 describe('IconView', () => {
@@ -19,7 +19,12 @@ describe('IconView', () => {
 
     test('With specified parameters', () => {
       const { toJSON } = render(
-        <IconView containerStyle={{ flex: 1 }} iconContainerStyle={{ flex: 1 }} icon={<IconInfo />} lineHeight={14}>
+        <IconView
+          containerStyle={{ flex: 1 }}
+          iconContainerStyle={{ flex: 1 }}
+          icon={<Icon name="info-circle" />}
+          lineHeight={14}
+        >
           <Text>Text to show</Text>
         </IconView>,
       )

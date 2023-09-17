@@ -1,7 +1,7 @@
 import React from 'react'
 import { View, StyleSheet, TouchableOpacity, ViewStyle, StyleProp } from 'react-native'
 
-import { IconCompleted, IconSelection } from './Icon'
+import { Icon } from './Icon'
 import Log from '../lib/Log'
 import theme from '../styles/theme'
 
@@ -31,7 +31,11 @@ const Checkbox = ({
       <View style={[styles.iconContainer, iconContainerStyle]}>
         <TouchableOpacity testID={testID} onPress={onPress} activeOpacity={0.5}>
           <View style={[styles.iconInnerContainer, { width: lineHeight, height: lineHeight }]}>
-            {enabled ? <IconCompleted /> : <IconSelection />}
+            {enabled ? (
+              <Icon name="check-square" color={theme.color.black} />
+            ) : (
+              <Icon name="square" color={theme.color.black} />
+            )}
           </View>
         </TouchableOpacity>
       </View>
