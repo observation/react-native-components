@@ -1,4 +1,4 @@
-import { IconDefinition } from '@fortawesome/fontawesome-svg-core'
+import { IconDefinition, IconName as FontawesomeIconName } from '@fortawesome/fontawesome-svg-core'
 import { faAlignJustify as faAlignJustifyLight } from '@fortawesome/pro-light-svg-icons/faAlignJustify'
 import { faAnalytics as faAnalyticsLight } from '@fortawesome/pro-light-svg-icons/faAnalytics'
 import { faAngleDown as faAngleDownLight } from '@fortawesome/pro-light-svg-icons/faAngleDown'
@@ -146,7 +146,8 @@ import { faUserSlash as faUserSlashSolid } from '@fortawesome/pro-solid-svg-icon
 import { faUsersSlash as faUsersSlashSolid } from '@fortawesome/pro-solid-svg-icons/faUsersSlash'
 import { faVenus as faVenusSolid } from '@fortawesome/pro-solid-svg-icons/faVenus'
 
-type IconName =
+type IconName = Extract<
+  FontawesomeIconName,
   | 'badge-check' // achievement
   | 'plus' // add
   | 'user-plus' // add-user
@@ -195,7 +196,7 @@ type IconName =
   | 'camera' // photography
   | 'play-circle' // playback
   | 'chevron-circle-left' // previous
-  | 'qr-code'
+  | 'qrcode'
   | 'random'
   | 'triangle' // rarity-common
   | 'hexagon' // rarity-rare
@@ -220,6 +221,7 @@ type IconName =
   | 'user-check' // user-verified
   | 'check-circle' // validation-accepted-by-admin
   | 'venus'
+>
 
 const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition } } = {
   'badge-check': { light: faBadgeCheckLight, solid: faBadgeCheckSolid },
@@ -270,7 +272,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   camera: { light: faCameraLight, solid: faCameraSolid },
   'play-circle': { light: faPlayCircleLight, solid: faPlayCircleSolid },
   'chevron-circle-left': { light: faChevronCircleLeftLight, solid: faChevronCircleLeftSolid },
-  'qr-code': { light: faQrcodeLight, solid: faQrcodeSolid },
+  qrcode: { light: faQrcodeLight, solid: faQrcodeSolid },
   random: { light: faRandomLight, solid: faRandomSolid },
   triangle: { light: faTriangleLight, solid: faTriangleSolid },
   hexagon: { light: faHexagonLight, solid: faHexagonSolid },
