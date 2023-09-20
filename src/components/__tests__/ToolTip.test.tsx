@@ -10,7 +10,7 @@ describe('Tooltip', () => {
   describe('Rendering', () => {
     test('With icon', () => {
       // GIVEN
-      const { toJSON } = render(<Tooltip iconName="info" title="Title" text="Text" />)
+      const { toJSON } = render(<Tooltip iconName="info-circle" title="Title" text="Text" />)
 
       // THEN
       expect(toJSON()).toMatchSnapshot()
@@ -44,7 +44,9 @@ describe('Tooltip', () => {
   describe('Interaction', () => {
     test('Click on close', () => {
       // GIVEN
-      const { getByTestId } = render(<Tooltip title="Title" text="Text" onClose={onCloseTooltip} iconName="info" />)
+      const { getByTestId } = render(
+        <Tooltip title="Title" text="Text" onClose={onCloseTooltip} iconName="info-circle" />,
+      )
       // WHEN
       fireEvent.press(getByTestId('close'))
 
@@ -56,7 +58,7 @@ describe('Tooltip', () => {
       // GIVEN
       const onPress = jest.fn()
       const { getByText } = render(
-        <Tooltip title="Title" text="Text" buttons={[{ onPress, title: 'Action!' }]} iconName="info" />,
+        <Tooltip title="Title" text="Text" buttons={[{ onPress, title: 'Action!' }]} iconName="info-circle" />,
       )
 
       // WHEN

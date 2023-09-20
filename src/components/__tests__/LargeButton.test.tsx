@@ -40,7 +40,9 @@ describe('LargeButton', () => {
   })
 
   test('Rendering, with icon', () => {
-    const { toJSON } = render(<LargeButton iconName="info" title="Press me" onPress={onPress} style={{ flex: 1 }} />)
+    const { toJSON } = render(
+      <LargeButton iconName="info-circle" title="Press me" onPress={onPress} style={{ flex: 1 }} />,
+    )
     expect(toJSON()).toMatchSnapshot()
   })
 

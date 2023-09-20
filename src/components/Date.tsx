@@ -1,8 +1,9 @@
 import React from 'react'
 import { StyleProp, ViewStyle } from 'react-native'
 
-import { IconDate } from './Icon'
+import { Icon } from './Icon'
 import IconText from './IconText'
+import { theme } from '../styles'
 import textStyle from '../styles/text'
 
 type Props = {
@@ -12,7 +13,7 @@ type Props = {
 
 const Date = ({ date, containerStyle }: Props) => (
   <IconText
-    icon={<IconDate />}
+    icon={<Icon name="calendar-day" style={'solid'} color={theme.color.greySemi} size={theme.icon.size.medium} />}
     text={date}
     style={{
       containerStyle,

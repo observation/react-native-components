@@ -1,8 +1,9 @@
 import React from 'react'
 import { StyleProp, TextStyle, ViewStyle } from 'react-native'
 
-import { IconExternalLink } from './Icon'
+import { Icon } from './Icon'
 import IconText from './IconText'
+import { theme } from '../styles'
 import textStyles from '../styles/text'
 
 type Props = {
@@ -14,7 +15,7 @@ type Props = {
 
 const WebLink = ({ onPress, containerStyle, text, textStyle }: Props) => (
   <IconText
-    icon={<IconExternalLink />}
+    icon={<Icon name="external-link" size={theme.icon.size.medium} />}
     text={text}
     style={{
       containerStyle,

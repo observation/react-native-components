@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, TouchableOpacity, View, Text, ViewStyle, TextStyle, StyleProp } from 'react-native'
 
-import { IconDisclose } from './Icon'
+import { Icon } from './Icon'
 import Log from '../lib/Log'
 import appTextStyle from '../styles/text'
 import theme from '../styles/theme'
@@ -19,7 +19,7 @@ const Disclose = ({ text, onPress, textStyle, containerStyle }: Props) => {
     <TouchableOpacity activeOpacity={0.5} onPress={onPress}>
       <View style={[styles.containerStyle, containerStyle]}>
         <Text style={[appTextStyle.link, textStyle]}>{text}</Text>
-        <IconDisclose />
+        <Icon name="chevron-right" size={theme.icon.size.extraLarge} />
       </View>
     </TouchableOpacity>
   )

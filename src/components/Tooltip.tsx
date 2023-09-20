@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, View, Text, TouchableOpacity, ViewStyle, StyleProp } from 'react-native'
 
-import { Icon, IconClose } from './Icon'
+import { Icon } from './Icon'
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
 import { IconName } from '../lib/Icons'
 import textStyle from '../styles/text'
@@ -45,7 +45,7 @@ const Tooltip = ({
           {closable && (
             <View style={{ ...styles.iconContainer, marginLeft: theme.margin.common }}>
               <TouchableOpacity testID="close" onPress={onClose} activeOpacity={0.5} accessibilityLabel="close">
-                <IconClose />
+                <Icon name="times" color={theme.color.greyBase} size={theme.icon.size.extraLarge} />
               </TouchableOpacity>
             </View>
           )}

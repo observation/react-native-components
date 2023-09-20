@@ -8,7 +8,7 @@ describe('IconButton', () => {
   test('Rendering', () => {
     // GIVEN
     const { toJSON } = render(
-      <IconButton containerStyle={{ flex: 1 }} disabled={false} iconName="back" size={20} color="black" />,
+      <IconButton containerStyle={{ flex: 1 }} disabled={false} iconName="chevron-left" size={20} color="black" />,
     )
 
     // THEN
@@ -19,7 +19,7 @@ describe('IconButton', () => {
     // GIVEN
     const mockOnPress = jest.fn()
     const { getByTestId } = render(
-      <IconButton disabled={false} onPress={mockOnPress} iconName="back" size={20} color="black" />,
+      <IconButton disabled={false} onPress={mockOnPress} iconName="chevron-left" size={20} color="black" />,
     )
 
     // WHEN
@@ -34,7 +34,7 @@ describe('IconButton', () => {
     // GIVEN
     const mockOnPress = jest.fn()
     const { getByTestId } = render(
-      <IconButton disabled onPress={mockOnPress} iconName="back" size={20} color="black" />,
+      <IconButton disabled onPress={mockOnPress} iconName="chevron-left" size={20} color="black" />,
     )
 
     // WHEN

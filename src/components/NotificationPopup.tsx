@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
-import { IconClose } from './Icon'
+import { Icon } from './Icon'
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
 import Popup from '../components/Popup'
 import textStyle from '../styles/text'
@@ -27,7 +27,7 @@ const NotificationPopup = ({ visible, title, message, leftButton, rightButton, o
 
         {onClose && (
           <TouchableOpacity testID="close" onPress={onClose} activeOpacity={0.5} style={styles.closeButton}>
-            <IconClose />
+            <Icon name="times" color={theme.color.greyBase} size={theme.icon.size.extraLarge} />
           </TouchableOpacity>
         )}
       </View>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-import { IconSuccess } from './Icon'
+import { Icon } from './Icon'
 import ProgressBar from '../data/ProgressBar'
 import font from '../styles/font'
 import theme from '../styles/theme'
@@ -94,9 +94,14 @@ const ProgressBarList = ({ progressBars, separator }: Props) => {
             }}
           >
             {progressBar.isCompleted ? (
-              <IconSuccess style="solid" color={progressBar.backgroundColor} size={theme.icon.size.small} />
+              <Icon
+                name="circle-check"
+                style="solid"
+                color={progressBar.backgroundColor}
+                size={theme.icon.size.small}
+              />
             ) : (
-              <IconSuccess color={theme.color.greySemi} size={theme.icon.size.small} />
+              <Icon name="circle-check" color={theme.color.greySemi} size={theme.icon.size.small} />
             )}
           </View>
         ))}
