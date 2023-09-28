@@ -45,6 +45,7 @@ import { faImages as faImagesLight } from '@fortawesome/pro-light-svg-icons/faIm
 import { faInfoCircle as faInfoCircleLight } from '@fortawesome/pro-light-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageLight } from '@fortawesome/pro-light-svg-icons/faLanguage'
 import { faMapMarkerAlt as faMapMarkerAltLight } from '@fortawesome/pro-light-svg-icons/faMapMarkerAlt'
+import { faMapMarkerAltSlash as faMapMarkerAltSlashLight } from '@fortawesome/pro-light-svg-icons/faMapMarkerAltSlash'
 import { faMars as faMarsLight } from '@fortawesome/pro-light-svg-icons/faMars'
 import { faMinus as faMinusLight } from '@fortawesome/pro-light-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneToplight } from '@fortawesome/pro-light-svg-icons/faPaperPlaneTop'
@@ -118,6 +119,7 @@ import { faImages as faImagesSolid } from '@fortawesome/pro-solid-svg-icons/faIm
 import { faInfoCircle as faInfoCircleSolid } from '@fortawesome/pro-solid-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageSolid } from '@fortawesome/pro-solid-svg-icons/faLanguage'
 import { faMapMarkerAlt as faMapMarkerAltSolid } from '@fortawesome/pro-solid-svg-icons/faMapMarkerAlt'
+import { faMapMarkerAltSlash as faMapMarkerAltSlashSolid } from '@fortawesome/pro-solid-svg-icons/faMapMarkerAltSlash'
 import { faMars as faMarsSolid } from '@fortawesome/pro-solid-svg-icons/faMars'
 import { faMinus as faMinusSolid } from '@fortawesome/pro-solid-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneTopSolid } from '@fortawesome/pro-solid-svg-icons/faPaperPlaneTop'
@@ -188,6 +190,7 @@ type IconName = Extract<
   | 'heart' // like
   | 'align-justify' // list
   | 'map-marker-alt' // location
+  | 'map-marker-alt-slash'
   | 'right-to-bracket' // login
   | 'mars'
   | 'minus'
@@ -264,6 +267,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   heart: { light: faHeartLight, solid: faHeartSolid },
   'align-justify': { light: faAlignJustifyLight, solid: faAlignJustifySolid },
   'map-marker-alt': { light: faMapMarkerAltLight, solid: faMapMarkerAltSolid },
+  'map-marker-alt-slash': { light: faMapMarkerAltSlashLight, solid: faMapMarkerAltSlashSolid },
   'right-to-bracket': { light: faRightToBracketLight, solid: faRightToBracketSolid },
   mars: { light: faMarsLight, solid: faMarsSolid },
   minus: { light: faMinusLight, solid: faMinusSolid },
