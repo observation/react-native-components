@@ -1,16 +1,15 @@
 import React from 'react'
 import { StyleSheet, View, Text, TouchableOpacity, ViewStyle, StyleProp } from 'react-native'
 
-import { Icon } from './Icon'
+import { Icon, IconProps } from './Icon'
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
-import { IconName } from '../lib/Icons'
 import textStyle from '../styles/text'
 import theme from '../styles/theme'
 
 type TooltipProps = {
   title: string
   text: string
-  iconName?: IconName
+  icon?: IconProps
   closable?: boolean
   onClose?: () => void
   buttons?: LargeButtonProps[]
@@ -20,7 +19,7 @@ type TooltipProps = {
 }
 
 const Tooltip = ({
-  iconName,
+  icon,
   title,
   text,
   closable = true,
@@ -34,9 +33,9 @@ const Tooltip = ({
     <View style={styles.tooltipContainer}>
       <View style={styles.tooltip}>
         <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
-          {iconName && (
+          {icon && (
             <View style={{ ...styles.iconContainer, marginRight: theme.margin.common }}>
-              <Icon name={iconName} size={theme.icon.size.extraLarge} />
+              <Icon size={theme.icon.size.extraLarge} {...icon} />
             </View>
           )}
           <View style={{ flex: 1 }}>

@@ -1,33 +1,19 @@
 import React from 'react'
 import { TouchableOpacity, ViewStyle, StyleProp } from 'react-native'
 
-import { Icon } from './Icon'
-import { IconName } from '../lib/Icons'
+import { Icon, IconProps } from './Icon'
 import theme from '../styles/theme'
 
 type Props = {
   containerStyle?: StyleProp<ViewStyle>
   disabled?: boolean
   onPress?: () => void
-  iconName: IconName
-  iconStyle?: 'light' | 'solid'
-  size?: number
-  color?: string
+  icon: IconProps
   accessibilityLabel?: string
   testID?: string
 }
 
-const IconButton = ({
-  containerStyle,
-  disabled,
-  onPress,
-  iconName,
-  iconStyle,
-  size = theme.icon.size.large,
-  color,
-  accessibilityLabel,
-  testID = 'pressable',
-}: Props) => (
+const IconButton = ({ containerStyle, disabled, onPress, icon, accessibilityLabel, testID = 'pressable' }: Props) => (
   <TouchableOpacity
     testID={testID}
     accessibilityLabel={accessibilityLabel}
@@ -36,7 +22,7 @@ const IconButton = ({
     onPress={disabled ? undefined : onPress}
     activeOpacity={0.5}
   >
-    <Icon style={iconStyle} name={iconName} color={color} size={size} />
+    <Icon size={theme.icon.size.large} {...icon} />
   </TouchableOpacity>
 )
 
