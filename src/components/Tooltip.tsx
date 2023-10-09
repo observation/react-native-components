@@ -35,12 +35,7 @@ const Tooltip = ({
         <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
           {icon && (
             <View style={{ ...styles.iconContainer, marginRight: theme.margin.common }}>
-              <Icon
-                name={icon.name}
-                style={icon.style}
-                color={icon.color}
-                size={icon.size ?? theme.icon.size.extraLarge}
-              />
+              <Icon size={theme.icon.size.extraLarge} {...icon} />
             </View>
           )}
           <View style={{ flex: 1 }}>
