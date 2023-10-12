@@ -53,9 +53,6 @@
     "@react-navigation/native": "^6.0.8",
     "accordion-collapse-react-native": "^1.0.0",
     "color": "^4.2.3",
-    "i18n-iso-countries": "^7.2.0",
-    "i18n-js": "^4.0.2",
-    "react-native-localize": "^2.1.9",
     "react-native-logs": "^5.0.1",
     "react-native-render-html": "^6.3.4",
     "react-native-scalable-image": "^1.1.0"
