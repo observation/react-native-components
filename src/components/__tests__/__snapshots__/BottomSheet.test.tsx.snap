@@ -50,12 +50,16 @@ exports[`BottomSheet Rendering Only buttons 1`] = `
       />
       <View
         style={
-          {
-            "alignItems": "flex-start",
-            "flexDirection": "row",
-            "marginHorizontal": -8,
-            "marginTop": 0,
-          }
+          [
+            {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "marginHorizontal": -8,
+            },
+            {
+              "marginTop": 0,
+            },
+          ]
         }
       >
         <View
@@ -233,12 +237,16 @@ exports[`BottomSheet Rendering With button 1`] = `
       </View>
       <View
         style={
-          {
-            "alignItems": "flex-start",
-            "flexDirection": "row",
-            "marginHorizontal": -8,
-            "marginTop": 16,
-          }
+          [
+            {
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "marginHorizontal": -8,
+            },
+            {
+              "marginTop": 16,
+            },
+          ]
         }
       >
         <View
