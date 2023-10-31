@@ -37,14 +37,7 @@ const BottomSheet = ({ title, text, buttons = [], style, testID, children }: Pro
           )}
           {children}
           {buttons && buttons.length > 0 && (
-            <View
-              style={{
-                marginTop: buttonsMarginTop,
-                marginHorizontal: -theme.margin.half,
-                flexDirection: 'row',
-                alignItems: 'flex-start',
-              }}
-            >
+            <View style={[styles.buttonContainer, { marginTop: buttonsMarginTop }]}>
               {buttons.map((button) => (
                 <LargeButton
                   iconName={button.iconName}
@@ -78,6 +71,11 @@ const styles = StyleSheet.create({
   bottomSheet: {
     flexDirection: 'column',
     margin: theme.margin.common,
+  },
+  buttonContainer: {
+    marginHorizontal: -theme.margin.half,
+    flexDirection: 'row',
+    alignItems: 'flex-start',
   },
   buttonStyle: {
     flex: 1,

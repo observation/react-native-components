@@ -5,6 +5,7 @@ import { render, fireEvent } from '@testing-library/react-native'
 import LargeButton from '../LargeButton'
 
 const onPress = jest.fn()
+const onPressIn = jest.fn()
 
 describe('LargeButton', () => {
   test('Rendering, enabled, primary', () => {
@@ -50,5 +51,13 @@ describe('LargeButton', () => {
     const { getByTestId } = render(<LargeButton title="Press me" onPress={onPress} style={{ flex: 1 }} />)
     await fireEvent.press(getByTestId('touchable-opacity'))
     expect(onPress).toBeCalled()
+  })
+
+  test('onPressIn', async () => {
+    const { getByTestId } = render(
+      <LargeButton title="Press me" onPress={onPress} onPressIn={onPressIn} style={{ flex: 1 }} />,
+    )
+    await fireEvent(getByTestId('touchable-opacity'), 'pressIn')
+    expect(onPressIn).toBeCalled()
   })
 })

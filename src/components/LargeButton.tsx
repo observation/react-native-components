@@ -12,6 +12,7 @@ import theme from '../styles/theme'
 type LargeButtonProps = {
   title: string
   onPress?: () => void
+  onPressIn?: () => void
   iconName?: IconName
   disabled?: boolean
   secondary?: boolean
@@ -51,6 +52,7 @@ const LargeButton = ({
   title,
   iconName,
   onPress,
+  onPressIn,
   testID = 'touchable-opacity',
 }: LargeButtonProps) => {
   const { textStyle, buttonStyle, iconColor } = getStyle(secondary, disabled, danger)
@@ -61,6 +63,7 @@ const LargeButton = ({
       style={[styles.container, style, buttonStyle]}
       disabled={disabled}
       onPress={onPress}
+      onPressIn={onPressIn}
       activeOpacity={0.5}
     >
       <View style={styles.titleContainer}>
