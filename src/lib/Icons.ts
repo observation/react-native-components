@@ -25,6 +25,7 @@ import { faChevronRight as faChevronRightLight } from '@fortawesome/pro-light-sv
 import { faCircle as faCircleLight } from '@fortawesome/pro-light-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckLight } from '@fortawesome/pro-light-svg-icons/faCircleCheck'
 import { faCirclePlus as faCirclePlusLight } from '@fortawesome/pro-light-svg-icons/faCirclePlus'
+import { faCircleStop as faCircleStopLight } from '@fortawesome/pro-light-svg-icons/faCircleStop'
 import { faCircleUser as faCircleUserLight } from '@fortawesome/pro-light-svg-icons/faCircleUser'
 import { faCircleXmark as faCircleXmarkLight } from '@fortawesome/pro-light-svg-icons/faCircleXmark'
 import { faClone as faCloneLight } from '@fortawesome/pro-light-svg-icons/faClone'
@@ -100,6 +101,7 @@ import { faChevronRight as faChevronRightSolid } from '@fortawesome/pro-solid-sv
 import { faCircle as faCircleSolid } from '@fortawesome/pro-solid-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckSolid } from '@fortawesome/pro-solid-svg-icons/faCircleCheck'
 import { faCirclePlus as faCirclePlusSolid } from '@fortawesome/pro-solid-svg-icons/faCirclePlus'
+import { faCircleStop as faCircleStopSolid } from '@fortawesome/pro-solid-svg-icons/faCircleStop'
 import { faCircleUser as faCircleUserSolid } from '@fortawesome/pro-solid-svg-icons/faCircleUser'
 import { faCircleXmark as faCircleXmarkSolid } from '@fortawesome/pro-solid-svg-icons/faCircleXmark'
 import { faClone as faCloneSolid } from '@fortawesome/pro-solid-svg-icons/faClone'
@@ -200,6 +202,7 @@ type IconName = Extract<
   | 'chevron-circle-right' // next
   | 'camera' // photography
   | 'play-circle' // playback
+  | 'circle-stop'
   | 'chevron-circle-left' // previous
   | 'qrcode'
   | 'random'
@@ -278,6 +281,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'chevron-circle-right': { light: faChevronCircleRightLight, solid: faChevronCircleRightSolid },
   camera: { light: faCameraLight, solid: faCameraSolid },
   'play-circle': { light: faPlayCircleLight, solid: faPlayCircleSolid },
+  'circle-stop': { light: faCircleStopLight, solid: faCircleStopSolid },
   'chevron-circle-left': { light: faChevronCircleLeftLight, solid: faChevronCircleLeftSolid },
   qrcode: { light: faQrcodeLight, solid: faQrcodeSolid },
   random: { light: faRandomLight, solid: faRandomSolid },
