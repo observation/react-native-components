@@ -32,6 +32,7 @@ import { faCloudArrowDown as faCloudArrowDownLight } from '@fortawesome/pro-ligh
 import { faCog as faCogLight } from '@fortawesome/pro-light-svg-icons/faCog'
 import { faCommentAltExclamation as faCommentAltExclamationLight } from '@fortawesome/pro-light-svg-icons/faCommentAltExclamation'
 import { faCropAlt as faCropAltLight } from '@fortawesome/pro-light-svg-icons/faCropAlt'
+import { faDash as faDashLight } from '@fortawesome/pro-light-svg-icons/faDash'
 import { faEnvelope as faEnvelopeLight } from '@fortawesome/pro-light-svg-icons/faEnvelope'
 import { faExclamationTriangle as faExclamationTriangleLight } from '@fortawesome/pro-light-svg-icons/faExclamationTriangle'
 import { faExternalLink as faExternalLinkLight } from '@fortawesome/pro-light-svg-icons/faExternalLink'
@@ -106,6 +107,7 @@ import { faCloudArrowDown as faCloudArrowDownSolid } from '@fortawesome/pro-soli
 import { faCog as faCogSolid } from '@fortawesome/pro-solid-svg-icons/faCog'
 import { faCommentAltExclamation as faCommentAltExclamationSolid } from '@fortawesome/pro-solid-svg-icons/faCommentAltExclamation'
 import { faCropAlt as faCropAltSolid } from '@fortawesome/pro-solid-svg-icons/faCropAlt'
+import { faDash as faDashSolid } from '@fortawesome/pro-solid-svg-icons/faDash'
 import { faEnvelope as faEnvelopeSolid } from '@fortawesome/pro-solid-svg-icons/faEnvelope'
 import { faExclamationTriangle as faExclamationTriangleSolid } from '@fortawesome/pro-solid-svg-icons/faExclamationTriangle'
 import { faExternalLink as faExternalLinkSolid } from '@fortawesome/pro-solid-svg-icons/faExternalLink'
@@ -224,6 +226,7 @@ type IconName = Extract<
   | 'user-check' // user-verified
   | 'check-circle' // validation-accepted-by-admin
   | 'venus'
+  | 'dash'
 >
 
 const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition } } = {
@@ -301,6 +304,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'user-check': { light: faUserCheckLight, solid: faUserCheckSolid },
   'check-circle': { light: faCheckCircleLight, solid: faCheckCircleSolid },
   venus: { light: faVenusLight, solid: faVenusSolid },
+  dash: { light: faDashLight, solid: faDashSolid },
 }
 
 export default icons
