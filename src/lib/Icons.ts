@@ -58,6 +58,7 @@ import { faQuestionSquare as faQuestionSquareLight } from '@fortawesome/pro-ligh
 import { faRandom as faRandomLight } from '@fortawesome/pro-light-svg-icons/faRandom'
 import { faRectangleHistory as faRectangleHistoryLight } from '@fortawesome/pro-light-svg-icons/faRectangleHistory'
 import { faRightToBracket as faRightToBracketLight } from '@fortawesome/pro-light-svg-icons/faRightToBracket'
+import { faRoute as faRouteLight } from '@fortawesome/pro-light-svg-icons/faRoute'
 import { faShareNodes as faShareNodesLight } from '@fortawesome/pro-light-svg-icons/faShareNodes'
 import { faSlidersH as faSlidersHLight } from '@fortawesome/pro-light-svg-icons/faSlidersH'
 import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSquare'
@@ -134,6 +135,7 @@ import { faQuestionSquare as faQuestionSquareSolid } from '@fortawesome/pro-soli
 import { faRandom as faRandomSolid } from '@fortawesome/pro-solid-svg-icons/faRandom'
 import { faRectangleHistory as faRectangleHistorySolid } from '@fortawesome/pro-solid-svg-icons/faRectangleHistory'
 import { faRightToBracket as faRightToBracketSolid } from '@fortawesome/pro-solid-svg-icons/faRightToBracket'
+import { faRoute as faRouteSolid } from '@fortawesome/pro-solid-svg-icons/faRoute'
 import { faShareNodes as faShareNodesSolid } from '@fortawesome/pro-solid-svg-icons/faShareNodes'
 import { faSlidersH as faSlidersHSolid } from '@fortawesome/pro-solid-svg-icons/faSlidersH'
 import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSquare'
@@ -206,6 +208,7 @@ type IconName = Extract<
   | 'chevron-circle-left' // previous
   | 'qrcode'
   | 'random'
+  | 'route'
   | 'triangle' // rarity-common
   | 'hexagon' // rarity-rare
   | 'square' // rarity-relatively-common, selection
@@ -309,6 +312,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'check-circle': { light: faCheckCircleLight, solid: faCheckCircleSolid },
   venus: { light: faVenusLight, solid: faVenusSolid },
   dash: { light: faDashLight, solid: faDashSolid },
+  route: { light: faRouteLight, solid: faRouteSolid },
 }
 
 export default icons
