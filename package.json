@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.13.0",
+  "version": "1.14.0",
   "main": "src/index.ts",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
