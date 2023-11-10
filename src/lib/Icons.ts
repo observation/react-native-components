@@ -24,6 +24,7 @@ import { faChevronLeft as faChevronLeftLight } from '@fortawesome/pro-light-svg-
 import { faChevronRight as faChevronRightLight } from '@fortawesome/pro-light-svg-icons/faChevronRight'
 import { faCircle as faCircleLight } from '@fortawesome/pro-light-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckLight } from '@fortawesome/pro-light-svg-icons/faCircleCheck'
+import { faCircleExclamation as faCircleExclamationLight } from '@fortawesome/pro-light-svg-icons/faCircleExclamation'
 import { faCirclePlus as faCirclePlusLight } from '@fortawesome/pro-light-svg-icons/faCirclePlus'
 import { faCircleStop as faCircleStopLight } from '@fortawesome/pro-light-svg-icons/faCircleStop'
 import { faCircleUser as faCircleUserLight } from '@fortawesome/pro-light-svg-icons/faCircleUser'
@@ -101,6 +102,7 @@ import { faChevronLeft as faChevronLeftSolid } from '@fortawesome/pro-solid-svg-
 import { faChevronRight as faChevronRightSolid } from '@fortawesome/pro-solid-svg-icons/faChevronRight'
 import { faCircle as faCircleSolid } from '@fortawesome/pro-solid-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckSolid } from '@fortawesome/pro-solid-svg-icons/faCircleCheck'
+import { faCircleExclamation as faCircleExclamationSolid } from '@fortawesome/pro-solid-svg-icons/faCircleExclamation'
 import { faCirclePlus as faCirclePlusSolid } from '@fortawesome/pro-solid-svg-icons/faCirclePlus'
 import { faCircleStop as faCircleStopSolid } from '@fortawesome/pro-solid-svg-icons/faCircleStop'
 import { faCircleUser as faCircleUserSolid } from '@fortawesome/pro-solid-svg-icons/faCircleUser'
@@ -233,6 +235,7 @@ type IconName = Extract<
   | 'check-circle' // validation-accepted-by-admin
   | 'venus'
   | 'dash'
+  | 'circle-exclamation'
 >
 
 const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition } } = {
@@ -313,6 +316,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   venus: { light: faVenusLight, solid: faVenusSolid },
   dash: { light: faDashLight, solid: faDashSolid },
   route: { light: faRouteLight, solid: faRouteSolid },
+  'circle-exclamation': { light: faCircleExclamationLight, solid: faCircleExclamationSolid },
 }
 
 export default icons
