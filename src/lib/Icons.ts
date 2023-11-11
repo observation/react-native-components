@@ -158,165 +158,165 @@ import { faVenus as faVenusSolid } from '@fortawesome/pro-solid-svg-icons/faVenu
 
 type IconName = Extract<
   FontawesomeIconName,
-  | 'badge-check' // achievement
-  | 'plus' // add
-  | 'user-plus' // add-user
-  | 'arrow-circle-right' // advance
+  | 'align-justify'
   | 'analytics'
-  | 'chevron-left' // back
+  | 'angle-down'
+  | 'angle-up'
+  | 'arrow-circle-right'
+  | 'arrow-up-from-bracket'
+  | 'arrow-up-from-square'
+  | 'arrows-rotate'
+  | 'badge-check'
   | 'badge'
+  | 'ban-bug'
+  | 'calendar-day'
+  | 'calendar-range'
+  | 'camera'
+  | 'certificate'
+  | 'chart-column'
+  | 'check-circle'
+  | 'check-square'
   | 'check'
+  | 'chevron-circle-left'
+  | 'chevron-circle-right'
+  | 'chevron-left'
+  | 'chevron-right'
+  | 'circle-check'
+  | 'circle-exclamation'
+  | 'circle-plus'
+  | 'circle-stop'
+  | 'circle-user'
   | 'circle-xmark'
-  | 'times' // close
+  | 'circle'
+  | 'clone'
   | 'cloud-arrow-down'
-  | 'angle-up' // collapse
-  | 'check-square' // completed, validation-accepted-with-evidence
-  | 'sliders-h' // configuration
-  | 'clone' // copy
-  | 'tally' // count
-  | 'crop-alt' // crop
-  | 'calendar-day' // date
-  | 'calendar-range' // date-range
-  | 'ban-bug' // debug
-  | 'trash-alt' // delete
-  | 'chevron-right' // disclose
-  | 'file-lines' // document
-  | 'envelope' // email
-  | 'circle' // enumeration
-  | 'exclamation-triangle' // error, warning
-  | 'comment-alt-exclamation' // error-message
-  | 'globe-europe' // europe
-  | 'users-slash' // exclusion
-  | 'angle-down' // expand
+  | 'cog'
+  | 'comment-alt-exclamation'
+  | 'crop-alt'
+  | 'dash'
+  | 'envelope'
+  | 'exclamation-triangle'
   | 'external-link'
-  | 'rectangle-history' // feed
-  | 'user-group' // group
-  | 'eye-slash' // hide
-  | 'images' // image-gallery
-  | 'info-circle' // info
+  | 'eye-slash'
+  | 'eye'
+  | 'file-lines'
+  | 'globe-europe'
+  | 'heart'
+  | 'hexagon'
+  | 'images'
+  | 'info-circle'
   | 'language'
-  | 'heart' // like
-  | 'align-justify' // list
-  | 'map-marker-alt' // location
   | 'map-marker-alt-slash'
-  | 'right-to-bracket' // login
+  | 'map-marker-alt'
   | 'mars'
   | 'minus'
-  | 'stars' // new
-  | 'chevron-circle-right' // next
-  | 'camera' // photography
-  | 'play-circle' // playback
-  | 'circle-stop'
-  | 'chevron-circle-left' // previous
+  | 'paper-plane-top'
+  | 'play-circle'
+  | 'plus'
   | 'qrcode'
+  | 'question-square'
   | 'random'
+  | 'rectangle-history'
+  | 'right-to-bracket'
   | 'route'
-  | 'triangle' // rarity-common
-  | 'hexagon' // rarity-rare
-  | 'square' // rarity-relatively-common, selection
-  | 'question-square' // rarity-unknown
-  | 'certificate' // rarity-very-rare
-  | 'arrows-rotate' // refresh
-  | 'paper-plane-top' // send
-  | 'cog' // settings
-  | 'arrow-up-from-square' // share (iOS)
-  | 'share-nodes' // share (Android)
-  | 'eye' // show
-  | 'swatchbook' // species-lists
-  | 'chart-column' // statistics
-  | 'circle-check' // success
-  | 'circle-plus' // tab-add
+  | 'share-nodes'
+  | 'sliders-h'
+  | 'square'
+  | 'stars'
+  | 'swatchbook'
+  | 'tally'
+  | 'times'
+  | 'trash-alt'
+  | 'triangle'
   | 'undo'
-  | 'arrow-up-from-bracket' // upload
+  | 'user-check'
+  | 'user-group'
+  | 'user-plus'
+  | 'user-slash'
   | 'user'
-  | 'user-slash' // user-inactive
-  | 'circle-user' //user-profile
-  | 'user-check' // user-verified
-  | 'check-circle' // validation-accepted-by-admin
+  | 'users-slash'
   | 'venus'
-  | 'dash'
-  | 'circle-exclamation'
 >
 
 const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition } } = {
-  'badge-check': { light: faBadgeCheckLight, solid: faBadgeCheckSolid },
-  plus: { light: faPlusLight, solid: faPlusSolid },
-  'user-plus': { light: faUserPlusLight, solid: faUserPlusSolid },
-  'arrow-circle-right': { light: faArrowCircleRightLight, solid: faArrowCircleRightSolid },
+  'align-justify': { light: faAlignJustifyLight, solid: faAlignJustifySolid },
   analytics: { light: faAnalyticsLight, solid: faAnalyticsSolid },
-  'chevron-left': { light: faChevronLeftLight, solid: faChevronLeftSolid },
-  badge: { light: faBadgeLight, solid: faBadgeSolid },
-  check: { light: faCheckLight, solid: faCheckSolid },
-  'circle-xmark': { light: faCircleXmarkLight, solid: faCircleXmarkSolid },
-  times: { light: faTimesLight, solid: faTimesSolid },
-  'cloud-arrow-down': { light: faCloudArrowDownLight, solid: faCloudArrowDownSolid },
+  'angle-down': { light: faAngleDownLight, solid: faAngleDownSolid },
   'angle-up': { light: faAngleUpLight, solid: faAngleUpSolid },
-  'check-square': { light: faCheckSquareLight, solid: faCheckSquareSolid },
-  'sliders-h': { light: faSlidersHLight, solid: faSlidersHSolid },
-  clone: { light: faCloneLight, solid: faCloneSolid },
-  tally: { light: faTallyLight, solid: faTallySolid },
-  'crop-alt': { light: faCropAltLight, solid: faCropAltSolid },
+  'arrow-circle-right': { light: faArrowCircleRightLight, solid: faArrowCircleRightSolid },
+  'arrow-up-from-bracket': { light: faArrowUpFromBracketLight, solid: faArrowUpFromBracketSolid },
+  'arrow-up-from-square': { light: faArrowUpFromSquareLight, solid: faArrowUpFromSquareSolid },
+  'arrows-rotate': { light: faArrowsRotateLight, solid: faArrowsRotateSolid },
+  'badge-check': { light: faBadgeCheckLight, solid: faBadgeCheckSolid },
+  badge: { light: faBadgeLight, solid: faBadgeSolid },
+  'ban-bug': { light: faBanBugLight, solid: faBanBugSolid },
   'calendar-day': { light: faCalendarDayLight, solid: faCalendarDaySolid },
   'calendar-range': { light: faCalendarRangeLight, solid: faCalendarRangeSolid },
-  'ban-bug': { light: faBanBugLight, solid: faBanBugSolid },
-  'trash-alt': { light: faTrashAltLight, solid: faTrashAltSolid },
+  camera: { light: faCameraLight, solid: faCameraSolid },
+  certificate: { light: faCertificateLight, solid: faCertificateSolid },
+  'chart-column': { light: faChartColumnLight, solid: faChartColumnSolid },
+  'check-circle': { light: faCheckCircleLight, solid: faCheckCircleSolid },
+  'check-square': { light: faCheckSquareLight, solid: faCheckSquareSolid },
+  check: { light: faCheckLight, solid: faCheckSolid },
+  'chevron-circle-left': { light: faChevronCircleLeftLight, solid: faChevronCircleLeftSolid },
+  'chevron-circle-right': { light: faChevronCircleRightLight, solid: faChevronCircleRightSolid },
+  'chevron-left': { light: faChevronLeftLight, solid: faChevronLeftSolid },
   'chevron-right': { light: faChevronRightLight, solid: faChevronRightSolid },
-  'file-lines': { light: faFileLinesLight, solid: faFileLinesSolid },
-  envelope: { light: faEnvelopeLight, solid: faEnvelopeSolid },
+  'circle-check': { light: faCircleCheckLight, solid: faCircleCheckSolid },
+  'circle-exclamation': { light: faCircleExclamationLight, solid: faCircleExclamationSolid },
+  'circle-plus': { light: faCirclePlusLight, solid: faCirclePlusSolid },
+  'circle-stop': { light: faCircleStopLight, solid: faCircleStopSolid },
+  'circle-user': { light: faCircleUserLight, solid: faCircleUserSolid },
+  'circle-xmark': { light: faCircleXmarkLight, solid: faCircleXmarkSolid },
   circle: { light: faCircleLight, solid: faCircleSolid },
-  'exclamation-triangle': { light: faExclamationTriangleLight, solid: faExclamationTriangleSolid },
+  clone: { light: faCloneLight, solid: faCloneSolid },
+  'cloud-arrow-down': { light: faCloudArrowDownLight, solid: faCloudArrowDownSolid },
+  cog: { light: faCogLight, solid: faCogSolid },
   'comment-alt-exclamation': { light: faCommentAltExclamationLight, solid: faCommentAltExclamationSolid },
-  'globe-europe': { light: faGlobeEuropeLight, solid: faGlobeEuropeSolid },
-  'users-slash': { light: faUsersSlashLight, solid: faUsersSlashSolid },
-  'angle-down': { light: faAngleDownLight, solid: faAngleDownSolid },
+  'crop-alt': { light: faCropAltLight, solid: faCropAltSolid },
+  dash: { light: faDashLight, solid: faDashSolid },
+  envelope: { light: faEnvelopeLight, solid: faEnvelopeSolid },
+  'exclamation-triangle': { light: faExclamationTriangleLight, solid: faExclamationTriangleSolid },
   'external-link': { light: faExternalLinkLight, solid: faExternalLinkSolid },
-  'rectangle-history': { light: faRectangleHistoryLight, solid: faRectangleHistorySolid },
-  'user-group': { light: faUserGroupLight, solid: faUserGroupSolid },
   'eye-slash': { light: faEyeSlashLight, solid: faEyeSlashSolid },
+  eye: { light: faEyeLight, solid: faEyeSolid },
+  'file-lines': { light: faFileLinesLight, solid: faFileLinesSolid },
+  'globe-europe': { light: faGlobeEuropeLight, solid: faGlobeEuropeSolid },
+  heart: { light: faHeartLight, solid: faHeartSolid },
+  hexagon: { light: faHexagonLight, solid: faHexagonSolid },
   images: { light: faImagesLight, solid: faImagesSolid },
   'info-circle': { light: faInfoCircleLight, solid: faInfoCircleSolid },
   language: { light: faLanguageLight, solid: faLanguageSolid },
-  heart: { light: faHeartLight, solid: faHeartSolid },
-  'align-justify': { light: faAlignJustifyLight, solid: faAlignJustifySolid },
-  'map-marker-alt': { light: faMapMarkerAltLight, solid: faMapMarkerAltSolid },
   'map-marker-alt-slash': { light: faMapMarkerAltSlashLight, solid: faMapMarkerAltSlashSolid },
-  'right-to-bracket': { light: faRightToBracketLight, solid: faRightToBracketSolid },
+  'map-marker-alt': { light: faMapMarkerAltLight, solid: faMapMarkerAltSolid },
   mars: { light: faMarsLight, solid: faMarsSolid },
   minus: { light: faMinusLight, solid: faMinusSolid },
-  stars: { light: faStarsLight, solid: faStarsSolid },
-  'chevron-circle-right': { light: faChevronCircleRightLight, solid: faChevronCircleRightSolid },
-  camera: { light: faCameraLight, solid: faCameraSolid },
-  'play-circle': { light: faPlayCircleLight, solid: faPlayCircleSolid },
-  'circle-stop': { light: faCircleStopLight, solid: faCircleStopSolid },
-  'chevron-circle-left': { light: faChevronCircleLeftLight, solid: faChevronCircleLeftSolid },
-  qrcode: { light: faQrcodeLight, solid: faQrcodeSolid },
-  random: { light: faRandomLight, solid: faRandomSolid },
-  triangle: { light: faTriangleLight, solid: faTriangleSolid },
-  hexagon: { light: faHexagonLight, solid: faHexagonSolid },
-  square: { light: faSquareLight, solid: faSquareSolid },
-  'question-square': { light: faQuestionSquareLight, solid: faQuestionSquareSolid },
-  certificate: { light: faCertificateLight, solid: faCertificateSolid },
-  'arrows-rotate': { light: faArrowsRotateLight, solid: faArrowsRotateSolid },
   'paper-plane-top': { light: faPaperPlaneToplight, solid: faPaperPlaneTopSolid },
-  cog: { light: faCogLight, solid: faCogSolid },
-  'arrow-up-from-square': { light: faArrowUpFromSquareLight, solid: faArrowUpFromSquareSolid },
-  'share-nodes': { light: faShareNodesLight, solid: faShareNodesSolid },
-  eye: { light: faEyeLight, solid: faEyeSolid },
-  swatchbook: { light: faSwatchbookLight, solid: faSwatchbookSolid },
-  'chart-column': { light: faChartColumnLight, solid: faChartColumnSolid },
-  'circle-check': { light: faCircleCheckLight, solid: faCircleCheckSolid },
-  'circle-plus': { light: faCirclePlusLight, solid: faCirclePlusSolid },
-  undo: { light: faUndoLight, solid: faUndoSolid },
-  'arrow-up-from-bracket': { light: faArrowUpFromBracketLight, solid: faArrowUpFromBracketSolid },
-  user: { light: faUserLight, solid: faUserSolid },
-  'user-slash': { light: faUserSlashLight, solid: faUserSlashSolid },
-  'circle-user': { light: faCircleUserLight, solid: faCircleUserSolid },
-  'user-check': { light: faUserCheckLight, solid: faUserCheckSolid },
-  'check-circle': { light: faCheckCircleLight, solid: faCheckCircleSolid },
-  venus: { light: faVenusLight, solid: faVenusSolid },
-  dash: { light: faDashLight, solid: faDashSolid },
+  'play-circle': { light: faPlayCircleLight, solid: faPlayCircleSolid },
+  plus: { light: faPlusLight, solid: faPlusSolid },
+  qrcode: { light: faQrcodeLight, solid: faQrcodeSolid },
+  'question-square': { light: faQuestionSquareLight, solid: faQuestionSquareSolid },
+  random: { light: faRandomLight, solid: faRandomSolid },
+  'rectangle-history': { light: faRectangleHistoryLight, solid: faRectangleHistorySolid },
+  'right-to-bracket': { light: faRightToBracketLight, solid: faRightToBracketSolid },
   route: { light: faRouteLight, solid: faRouteSolid },
-  'circle-exclamation': { light: faCircleExclamationLight, solid: faCircleExclamationSolid },
+  'share-nodes': { light: faShareNodesLight, solid: faShareNodesSolid },
+  'sliders-h': { light: faSlidersHLight, solid: faSlidersHSolid },
+  square: { light: faSquareLight, solid: faSquareSolid },
+  stars: { light: faStarsLight, solid: faStarsSolid },
+  swatchbook: { light: faSwatchbookLight, solid: faSwatchbookSolid },
+  tally: { light: faTallyLight, solid: faTallySolid },
+  times: { light: faTimesLight, solid: faTimesSolid },
+  'trash-alt': { light: faTrashAltLight, solid: faTrashAltSolid },
+  triangle: { light: faTriangleLight, solid: faTriangleSolid },
+  undo: { light: faUndoLight, solid: faUndoSolid },
+  'user-check': { light: faUserCheckLight, solid: faUserCheckSolid },
+  'user-group': { light: faUserGroupLight, solid: faUserGroupSolid },
+  'user-plus': { light: faUserPlusLight, solid: faUserPlusSolid },
+  'user-slash': { light: faUserSlashLight, solid: faUserSlashSolid },
+  user: { light: faUserLight, solid: faUserSolid },
+  'users-slash': { light: faUsersSlashLight, solid: faUsersSlashSolid },
+  venus: { light: faVenusLight, solid: faVenusSolid },
 }
 
 export default icons
