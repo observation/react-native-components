@@ -24,6 +24,14 @@ const primaryDisabled: LargeButtonStyle = {
   iconColor: theme.color.white,
 }
 
+const primaryDanger: LargeButtonStyle = {
+  buttonStyle: {
+    backgroundColor: theme.color.error,
+  },
+  textStyle: { color: theme.color.white },
+  iconColor: theme.color.white,
+}
+
 const secondary: LargeButtonStyle = {
   buttonStyle: {
     borderColor: theme.color.primary,
@@ -56,4 +64,4 @@ const secondaryDanger: LargeButtonStyle = {
 
 export type { LargeButtonStyle }
 
-export { primary, primaryDisabled, secondary, secondaryDisabled, secondaryDanger }
+export { primary, primaryDisabled, primaryDanger, secondary, secondaryDisabled, secondaryDanger }
