@@ -20,6 +20,7 @@ import { faCheckCircle as faCheckCircleLight } from '@fortawesome/pro-light-svg-
 import { faCheckSquare as faCheckSquareLight } from '@fortawesome/pro-light-svg-icons/faCheckSquare'
 import { faChevronCircleLeft as faChevronCircleLeftLight } from '@fortawesome/pro-light-svg-icons/faChevronCircleLeft'
 import { faChevronCircleRight as faChevronCircleRightLight } from '@fortawesome/pro-light-svg-icons/faChevronCircleRight'
+import { faChevronDown as faChevronDownLight } from '@fortawesome/pro-light-svg-icons/faChevronDown'
 import { faChevronLeft as faChevronLeftLight } from '@fortawesome/pro-light-svg-icons/faChevronLeft'
 import { faChevronRight as faChevronRightLight } from '@fortawesome/pro-light-svg-icons/faChevronRight'
 import { faCircle as faCircleLight } from '@fortawesome/pro-light-svg-icons/faCircle'
@@ -99,6 +100,7 @@ import { faCheckCircle as faCheckCircleSolid } from '@fortawesome/pro-solid-svg-
 import { faCheckSquare as faCheckSquareSolid } from '@fortawesome/pro-solid-svg-icons/faCheckSquare'
 import { faChevronCircleLeft as faChevronCircleLeftSolid } from '@fortawesome/pro-solid-svg-icons/faChevronCircleLeft'
 import { faChevronCircleRight as faChevronCircleRightSolid } from '@fortawesome/pro-solid-svg-icons/faChevronCircleRight'
+import { faChevronDown as faChevronDownSolid } from '@fortawesome/pro-light-svg-icons/faChevronDown'
 import { faChevronLeft as faChevronLeftSolid } from '@fortawesome/pro-solid-svg-icons/faChevronLeft'
 import { faChevronRight as faChevronRightSolid } from '@fortawesome/pro-solid-svg-icons/faChevronRight'
 import { faCircle as faCircleSolid } from '@fortawesome/pro-solid-svg-icons/faCircle'
@@ -181,6 +183,7 @@ type IconName = Extract<
   | 'check'
   | 'chevron-circle-left'
   | 'chevron-circle-right'
+  | 'chevron-down'
   | 'chevron-left'
   | 'chevron-right'
   | 'circle-check'
@@ -263,6 +266,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   check: { light: faCheckLight, solid: faCheckSolid },
   'chevron-circle-left': { light: faChevronCircleLeftLight, solid: faChevronCircleLeftSolid },
   'chevron-circle-right': { light: faChevronCircleRightLight, solid: faChevronCircleRightSolid },
+  'chevron-down': { light: faChevronDownLight, solid: faChevronDownSolid },
   'chevron-left': { light: faChevronLeftLight, solid: faChevronLeftSolid },
   'chevron-right': { light: faChevronRightLight, solid: faChevronRightSolid },
   'circle-check': { light: faCircleCheckLight, solid: faCircleCheckSolid },
