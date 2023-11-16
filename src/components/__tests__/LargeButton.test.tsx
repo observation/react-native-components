@@ -28,6 +28,11 @@ describe('LargeButton', () => {
     expect(toJSON()).toMatchSnapshot()
   })
 
+  test('Rendering, primary, danger', () => {
+    const { toJSON } = render(<LargeButton danger title="Press me" onPress={onPress} style={{ flex: 1 }} />)
+    expect(toJSON()).toMatchSnapshot()
+  })
+
   test('Rendering, secondary, danger', () => {
     const { toJSON } = render(<LargeButton secondary danger title="Press me" onPress={onPress} style={{ flex: 1 }} />)
     expect(toJSON()).toMatchSnapshot()

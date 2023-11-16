@@ -28,6 +28,8 @@ const getStyle = (secondary?: boolean, disabled?: boolean, danger?: boolean): La
   const primary = !secondary
 
   switch (true) {
+    case primary && enabled && danger:
+      return LargeButtonStyles.primaryDanger
     case primary && enabled && !danger:
       return LargeButtonStyles.primary
     case primary && disabled && !danger:
