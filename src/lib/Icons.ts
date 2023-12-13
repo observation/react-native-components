@@ -47,6 +47,7 @@ import { faHexagon as faHexagonLight } from '@fortawesome/pro-light-svg-icons/fa
 import { faImages as faImagesLight } from '@fortawesome/pro-light-svg-icons/faImages'
 import { faInfoCircle as faInfoCircleLight } from '@fortawesome/pro-light-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageLight } from '@fortawesome/pro-light-svg-icons/faLanguage'
+import { faLocationCrosshairs as faLocationCrosshairsLight } from '@fortawesome/pro-light-svg-icons/faLocationCrosshairs'
 import { faMapMarkerAlt as faMapMarkerAltLight } from '@fortawesome/pro-light-svg-icons/faMapMarkerAlt'
 import { faMapMarkerAltSlash as faMapMarkerAltSlashLight } from '@fortawesome/pro-light-svg-icons/faMapMarkerAltSlash'
 import { faMars as faMarsLight } from '@fortawesome/pro-light-svg-icons/faMars'
@@ -126,6 +127,7 @@ import { faHexagon as faHexagonSolid } from '@fortawesome/pro-solid-svg-icons/fa
 import { faImages as faImagesSolid } from '@fortawesome/pro-solid-svg-icons/faImages'
 import { faInfoCircle as faInfoCircleSolid } from '@fortawesome/pro-solid-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageSolid } from '@fortawesome/pro-solid-svg-icons/faLanguage'
+import { faLocationCrosshairs as faLocationCrosshairsSolid } from '@fortawesome/pro-solid-svg-icons/faLocationCrosshairs'
 import { faMapMarkerAlt as faMapMarkerAltSolid } from '@fortawesome/pro-solid-svg-icons/faMapMarkerAlt'
 import { faMapMarkerAltSlash as faMapMarkerAltSlashSolid } from '@fortawesome/pro-solid-svg-icons/faMapMarkerAltSlash'
 import { faMars as faMarsSolid } from '@fortawesome/pro-solid-svg-icons/faMars'
@@ -192,6 +194,7 @@ type IconName = Extract<
   | 'circle'
   | 'clone'
   | 'cloud-arrow-down'
+  | 'location-crosshairs'
   | 'cog'
   | 'comment-alt-exclamation'
   | 'crop-alt'
@@ -274,6 +277,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   circle: { light: faCircleLight, solid: faCircleSolid },
   clone: { light: faCloneLight, solid: faCloneSolid },
   'cloud-arrow-down': { light: faCloudArrowDownLight, solid: faCloudArrowDownSolid },
+  'location-crosshairs': { light: faLocationCrosshairsLight, solid: faLocationCrosshairsSolid },
   cog: { light: faCogLight, solid: faCogSolid },
   'comment-alt-exclamation': { light: faCommentAltExclamationLight, solid: faCommentAltExclamationSolid },
   'crop-alt': { light: faCropAltLight, solid: faCropAltSolid },
