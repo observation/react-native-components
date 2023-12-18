@@ -64,6 +64,7 @@ import { faRectangleHistory as faRectangleHistoryLight } from '@fortawesome/pro-
 import { faRightToBracket as faRightToBracketLight } from '@fortawesome/pro-light-svg-icons/faRightToBracket'
 import { faRoute as faRouteLight } from '@fortawesome/pro-light-svg-icons/faRoute'
 import { faShareNodes as faShareNodesLight } from '@fortawesome/pro-light-svg-icons/faShareNodes'
+import { faShield as faShieldLight } from '@fortawesome/pro-light-svg-icons/faShield'
 import { faSlidersH as faSlidersHLight } from '@fortawesome/pro-light-svg-icons/faSlidersH'
 import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSquare'
 import { faStars as faStarsLight } from '@fortawesome/pro-light-svg-icons/faStars'
@@ -145,6 +146,7 @@ import { faRectangleHistory as faRectangleHistorySolid } from '@fortawesome/pro-
 import { faRightToBracket as faRightToBracketSolid } from '@fortawesome/pro-solid-svg-icons/faRightToBracket'
 import { faRoute as faRouteSolid } from '@fortawesome/pro-solid-svg-icons/faRoute'
 import { faShareNodes as faShareNodesSolid } from '@fortawesome/pro-solid-svg-icons/faShareNodes'
+import { faShield as faShieldSolid } from '@fortawesome/pro-solid-svg-icons/faShield'
 import { faSlidersH as faSlidersHSolid } from '@fortawesome/pro-solid-svg-icons/faSlidersH'
 import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSquare'
 import { faStars as faStarsSolid } from '@fortawesome/pro-solid-svg-icons/faStars'
@@ -229,6 +231,7 @@ type IconName = Extract<
   | 'right-to-bracket'
   | 'route'
   | 'share-nodes'
+  | 'shield'
   | 'sliders-h'
   | 'square'
   | 'stars'
@@ -313,6 +316,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'right-to-bracket': { light: faRightToBracketLight, solid: faRightToBracketSolid },
   route: { light: faRouteLight, solid: faRouteSolid },
   'share-nodes': { light: faShareNodesLight, solid: faShareNodesSolid },
+  shield: { light: faShieldLight, solid: faShieldSolid },
   'sliders-h': { light: faSlidersHLight, solid: faSlidersHSolid },
   square: { light: faSquareLight, solid: faSquareSolid },
   stars: { light: faStarsLight, solid: faStarsSolid },
