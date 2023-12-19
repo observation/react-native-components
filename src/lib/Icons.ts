@@ -196,7 +196,6 @@ type IconName = Extract<
   | 'circle'
   | 'clone'
   | 'cloud-arrow-down'
-  | 'location-crosshairs'
   | 'cog'
   | 'comment-alt-exclamation'
   | 'crop-alt'
@@ -214,6 +213,7 @@ type IconName = Extract<
   | 'info-circle'
   | 'language'
   | 'location-check'
+  | 'location-crosshairs'
   | 'map-marker-alt-slash'
   | 'map-marker-alt'
   | 'mars'
@@ -296,8 +296,8 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   images: { light: faImagesLight, solid: faImagesSolid },
   'info-circle': { light: faInfoCircleLight, solid: faInfoCircleSolid },
   language: { light: faLanguageLight, solid: faLanguageSolid },
-  'location-crosshairs': { light: faLocationCrosshairsLight, solid: faLocationCrosshairsSolid },
   'location-check': { light: faLocationCheckLight, solid: faLocationCheckSolid },
+  'location-crosshairs': { light: faLocationCrosshairsLight, solid: faLocationCrosshairsSolid },
   'map-marker-alt-slash': { light: faMapMarkerAltSlashLight, solid: faMapMarkerAltSlashSolid },
   'map-marker-alt': { light: faMapMarkerAltLight, solid: faMapMarkerAltSolid },
   mars: { light: faMarsLight, solid: faMarsSolid },
