@@ -4,6 +4,7 @@ import { faAnalytics as faAnalyticsLight } from '@fortawesome/pro-light-svg-icon
 import { faAngleDown as faAngleDownLight } from '@fortawesome/pro-light-svg-icons/faAngleDown'
 import { faAngleUp as faAngleUpLight } from '@fortawesome/pro-light-svg-icons/faAngleUp'
 import { faArrowCircleRight as faArrowCircleRightLight } from '@fortawesome/pro-light-svg-icons/faArrowCircleRight'
+import { faArrowRotateLeft as faArrowRotateLeftLight } from '@fortawesome/pro-light-svg-icons/faArrowRotateLeft'
 import { faArrowsRotate as faArrowsRotateLight } from '@fortawesome/pro-light-svg-icons/faArrowsRotate'
 import { faArrowUpFromBracket as faArrowUpFromBracketLight } from '@fortawesome/pro-light-svg-icons/faArrowUpFromBracket'
 import { faArrowUpFromSquare as faArrowUpFromSquareLight } from '@fortawesome/pro-light-svg-icons/faArrowUpFromSquare'
@@ -87,6 +88,7 @@ import { faAnalytics as faAnalyticsSolid } from '@fortawesome/pro-solid-svg-icon
 import { faAngleDown as faAngleDownSolid } from '@fortawesome/pro-solid-svg-icons/faAngleDown'
 import { faAngleUp as faAngleUpSolid } from '@fortawesome/pro-solid-svg-icons/faAngleUp'
 import { faArrowCircleRight as faArrowCircleRightSolid } from '@fortawesome/pro-solid-svg-icons/faArrowCircleRight'
+import { faArrowRotateLeft as faArrowRotateLeftSolid } from '@fortawesome/pro-solid-svg-icons/faArrowRotateLeft'
 import { faArrowsRotate as faArrowsRotateSolid } from '@fortawesome/pro-solid-svg-icons/faArrowsRotate'
 import { faArrowUpFromBracket as faArrowUpFromBracketSolid } from '@fortawesome/pro-solid-svg-icons/faArrowUpFromBracket'
 import { faArrowUpFromSquare as faArrowUpFromSquareSolid } from '@fortawesome/pro-solid-svg-icons/faArrowUpFromSquare'
@@ -176,6 +178,7 @@ type IconName = Extract<
   | 'arrow-up-from-bracket'
   | 'arrow-up-from-square'
   | 'arrows-rotate'
+  | 'arrow-rotate-left'
   | 'badge-check'
   | 'badge'
   | 'ban-bug'
@@ -262,6 +265,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'arrow-up-from-bracket': { light: faArrowUpFromBracketLight, solid: faArrowUpFromBracketSolid },
   'arrow-up-from-square': { light: faArrowUpFromSquareLight, solid: faArrowUpFromSquareSolid },
   'arrows-rotate': { light: faArrowsRotateLight, solid: faArrowsRotateSolid },
+  'arrow-rotate-left': { light: faArrowRotateLeftLight, solid: faArrowRotateLeftSolid },
   'badge-check': { light: faBadgeCheckLight, solid: faBadgeCheckSolid },
   badge: { light: faBadgeLight, solid: faBadgeSolid },
   'ban-bug': { light: faBanBugLight, solid: faBanBugSolid },
