@@ -59,6 +59,7 @@ import { faPenToSquare as faPenToSquareLight } from '@fortawesome/pro-light-svg-
 import { faPlayCircle as faPlayCircleLight } from '@fortawesome/pro-light-svg-icons/faPlayCircle'
 import { faPlus as faPlusLight } from '@fortawesome/pro-light-svg-icons/faPlus'
 import { faQrcode as faQrcodeLight } from '@fortawesome/pro-light-svg-icons/faQrcode'
+import { faQuestionCircle as faQuestionCircleLight } from '@fortawesome/pro-light-svg-icons/faQuestionCircle'
 import { faQuestionSquare as faQuestionSquareLight } from '@fortawesome/pro-light-svg-icons/faQuestionSquare'
 import { faRandom as faRandomLight } from '@fortawesome/pro-light-svg-icons/faRandom'
 import { faRectangleHistory as faRectangleHistoryLight } from '@fortawesome/pro-light-svg-icons/faRectangleHistory'
@@ -143,6 +144,7 @@ import { faPenToSquare as faPenToSquareSolid } from '@fortawesome/pro-solid-svg-
 import { faPlayCircle as faPlayCircleSolid } from '@fortawesome/pro-solid-svg-icons/faPlayCircle'
 import { faPlus as faPlusSolid } from '@fortawesome/pro-solid-svg-icons/faPlus'
 import { faQrcode as faQrcodeSolid } from '@fortawesome/pro-solid-svg-icons/faQrcode'
+import { faQuestionCircle as faQuestionCircleSolid } from '@fortawesome/pro-solid-svg-icons/faQuestionCircle'
 import { faQuestionSquare as faQuestionSquareSolid } from '@fortawesome/pro-solid-svg-icons/faQuestionSquare'
 import { faRandom as faRandomSolid } from '@fortawesome/pro-solid-svg-icons/faRandom'
 import { faRectangleHistory as faRectangleHistorySolid } from '@fortawesome/pro-solid-svg-icons/faRectangleHistory'
@@ -231,6 +233,7 @@ type IconName = Extract<
   | 'plus'
   | 'qrcode'
   | 'question-square'
+  | 'question-circle'
   | 'random'
   | 'rectangle-history'
   | 'right-to-bracket'
@@ -318,6 +321,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   plus: { light: faPlusLight, solid: faPlusSolid },
   qrcode: { light: faQrcodeLight, solid: faQrcodeSolid },
   'question-square': { light: faQuestionSquareLight, solid: faQuestionSquareSolid },
+  'question-circle': { light: faQuestionCircleLight, solid: faQuestionCircleSolid },
   random: { light: faRandomLight, solid: faRandomSolid },
   'rectangle-history': { light: faRectangleHistoryLight, solid: faRectangleHistorySolid },
   'right-to-bracket': { light: faRightToBracketLight, solid: faRightToBracketSolid },
