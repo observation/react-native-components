@@ -19,15 +19,20 @@ const imgRenderer = ({ tnode }: { tnode: TBlock }) => {
   return <ContentImage key={src} alt={alt} src={src} />
 }
 
-const olRenderer = ({ InternalRenderer, ...props }: CustomRendererProps<TBlock>) => (
-  <InternalRenderer
-    {...props}
-    style={{
-      ...props.style,
-      paddingLeft: theme.margin.large,
-    }}
-  />
-)
+const olRenderer = ({ InternalRenderer, ...props }: CustomRendererProps<TBlock>) => {
+  Log.debug('RenderHtmlWrapper:olRenderer')
+  return (
+    <View onLayout={(event) => Log.debug('RenderHtmlWrapper:olRenderer xxxxxxxxxxxxxxxx', event)}>
+      <InternalRenderer
+        {...props}
+        style={{
+          ...props.style,
+          paddingLeft: theme.margin.large,
+        }}
+      />
+    </View>
+  )
+}
 
 const ulRenderer = ({ TNodeChildrenRenderer, ...props }: CustomRendererProps<TBlock>) => (
   <>
