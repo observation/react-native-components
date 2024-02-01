@@ -30,6 +30,7 @@ import { faCirclePlus as faCirclePlusLight } from '@fortawesome/pro-light-svg-ic
 import { faCircleStop as faCircleStopLight } from '@fortawesome/pro-light-svg-icons/faCircleStop'
 import { faCircleUser as faCircleUserLight } from '@fortawesome/pro-light-svg-icons/faCircleUser'
 import { faCircleXmark as faCircleXmarkLight } from '@fortawesome/pro-light-svg-icons/faCircleXmark'
+import { faClock as faClockLight } from '@fortawesome/pro-light-svg-icons/faClock'
 import { faClone as faCloneLight } from '@fortawesome/pro-light-svg-icons/faClone'
 import { faCloudArrowDown as faCloudArrowDownLight } from '@fortawesome/pro-light-svg-icons/faCloudArrowDown'
 import { faCog as faCogLight } from '@fortawesome/pro-light-svg-icons/faCog'
@@ -115,6 +116,7 @@ import { faCirclePlus as faCirclePlusSolid } from '@fortawesome/pro-solid-svg-ic
 import { faCircleStop as faCircleStopSolid } from '@fortawesome/pro-solid-svg-icons/faCircleStop'
 import { faCircleUser as faCircleUserSolid } from '@fortawesome/pro-solid-svg-icons/faCircleUser'
 import { faCircleXmark as faCircleXmarkSolid } from '@fortawesome/pro-solid-svg-icons/faCircleXmark'
+import { faClock as faClockSolid } from '@fortawesome/pro-solid-svg-icons/faClock'
 import { faClone as faCloneSolid } from '@fortawesome/pro-solid-svg-icons/faClone'
 import { faCloudArrowDown as faCloudArrowDownSolid } from '@fortawesome/pro-solid-svg-icons/faCloudArrowDown'
 import { faCog as faCogSolid } from '@fortawesome/pro-solid-svg-icons/faCog'
@@ -203,6 +205,7 @@ type IconName = Extract<
   | 'circle-user'
   | 'circle-xmark'
   | 'circle'
+  | 'clock'
   | 'clone'
   | 'cloud-arrow-down'
   | 'cog'
@@ -291,6 +294,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'circle-user': { light: faCircleUserLight, solid: faCircleUserSolid },
   'circle-xmark': { light: faCircleXmarkLight, solid: faCircleXmarkSolid },
   circle: { light: faCircleLight, solid: faCircleSolid },
+  clock: { light: faClockLight, solid: faClockSolid },
   clone: { light: faCloneLight, solid: faCloneSolid },
   'cloud-arrow-down': { light: faCloudArrowDownLight, solid: faCloudArrowDownSolid },
   cog: { light: faCogLight, solid: faCogSolid },
