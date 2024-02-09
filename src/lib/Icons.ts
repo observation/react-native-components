@@ -74,6 +74,7 @@ import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSq
 import { faStars as faStarsLight } from '@fortawesome/pro-light-svg-icons/faStars'
 import { faSwatchbook as faSwatchbookLight } from '@fortawesome/pro-light-svg-icons/faSwatchbook'
 import { faTally as faTallyLight } from '@fortawesome/pro-light-svg-icons/faTally'
+import { faThumbtack as faThumbtackLight } from '@fortawesome/pro-light-svg-icons/faThumbtack'
 import { faTimes as faTimesLight } from '@fortawesome/pro-light-svg-icons/faTimes'
 import { faTrashAlt as faTrashAltLight } from '@fortawesome/pro-light-svg-icons/faTrashAlt'
 import { faTriangle as faTriangleLight } from '@fortawesome/pro-light-svg-icons/faTriangle'
@@ -160,6 +161,7 @@ import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSq
 import { faStars as faStarsSolid } from '@fortawesome/pro-solid-svg-icons/faStars'
 import { faSwatchbook as faSwatchbookSolid } from '@fortawesome/pro-solid-svg-icons/faSwatchbook'
 import { faTally as faTallySolid } from '@fortawesome/pro-solid-svg-icons/faTally'
+import { faThumbtack as faThumbtackSolid } from '@fortawesome/pro-solid-svg-icons/faThumbtack'
 import { faTimes as faTimesSolid } from '@fortawesome/pro-solid-svg-icons/faTimes'
 import { faTrashAlt as faTrashAltSolid } from '@fortawesome/pro-solid-svg-icons/faTrashAlt'
 import { faTriangle as faTriangleSolid } from '@fortawesome/pro-solid-svg-icons/faTriangle'
@@ -252,6 +254,7 @@ type IconName = Extract<
   | 'times'
   | 'trash-alt'
   | 'triangle'
+  | 'thumbtack'
   | 'undo'
   | 'user-check'
   | 'user-group'
@@ -341,6 +344,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   times: { light: faTimesLight, solid: faTimesSolid },
   'trash-alt': { light: faTrashAltLight, solid: faTrashAltSolid },
   triangle: { light: faTriangleLight, solid: faTriangleSolid },
+  thumbtack: { light: faThumbtackLight, solid: faThumbtackSolid },
   undo: { light: faUndoLight, solid: faUndoSolid },
   'user-check': { light: faUserCheckLight, solid: faUserCheckSolid },
   'user-group': { light: faUserGroupLight, solid: faUserGroupSolid },
