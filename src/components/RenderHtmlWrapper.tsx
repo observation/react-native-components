@@ -10,7 +10,7 @@ import htmlStyle from '../styles/html'
 import textStyle from '../styles/text'
 import theme from '../styles/theme'
 
-const imgRenderer = ({ tnode }: { tnode: TBlock }) => {
+export const imgRenderer = ({ tnode }: { tnode: TBlock }) => {
   const { src, alt } = tnode.attributes
   Log.debug('RenderHtmlWrapper:imgRenderer', src, alt)
   if (!src) {
@@ -19,7 +19,7 @@ const imgRenderer = ({ tnode }: { tnode: TBlock }) => {
   return <ContentImage key={src} alt={alt} src={src} />
 }
 
-const olRenderer = ({ InternalRenderer, ...props }: CustomRendererProps<TBlock>) => (
+export const olRenderer = ({ InternalRenderer, ...props }: CustomRendererProps<TBlock>) => (
   <InternalRenderer
     {...props}
     style={{
@@ -29,7 +29,7 @@ const olRenderer = ({ InternalRenderer, ...props }: CustomRendererProps<TBlock>)
   />
 )
 
-const ulRenderer = ({ TNodeChildrenRenderer, ...props }: CustomRendererProps<TBlock>) => (
+export const ulRenderer = ({ TNodeChildrenRenderer, ...props }: CustomRendererProps<TBlock>) => (
   <>
     {props.tnode.children.map((item, i) => (
       <View key={i} style={{ flexDirection: 'row' }}>
