@@ -25,7 +25,7 @@ import Panel from './components/Panel'
 import PhotoStrip from './components/PhotoStrip'
 import Popup from './components/Popup'
 import ProgressBarList from './components/ProgressBarList'
-import RenderHtmlWrapper from './components/RenderHtmlWrapper'
+import RenderHtmlWrapper, { imgRenderer, olRenderer, ulRenderer } from './components/RenderHtmlWrapper'
 import TextLink from './components/TextLink'
 import Tooltip, { TooltipProps } from './components/Tooltip'
 import WebLink from './components/WebLink'
@@ -66,6 +66,9 @@ export {
   ProgressBar,
   ProgressBarList,
   RenderHtmlWrapper,
+  imgRenderer,
+  olRenderer,
+  ulRenderer,
   TextLink,
   Tooltip,
   WebLink,
