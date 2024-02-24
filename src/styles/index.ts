@@ -1,4 +1,4 @@
-import font, { FontStyle, FontName } from './font'
+import font, { FontName, FontStyle } from './font'
 import text from './text'
 import theme from './theme'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Text, ViewStyle, StyleProp } from 'react-native'
+import { StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
 
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
 import textStyle from '../styles/text'

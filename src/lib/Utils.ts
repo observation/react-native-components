@@ -1,4 +1,4 @@
-import { Platform, LayoutAnimation } from 'react-native'
+import { LayoutAnimation, Platform } from 'react-native'
 
 import Log from '../lib/Log'
 

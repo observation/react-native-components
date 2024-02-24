@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, TouchableOpacity, View, Text, ViewStyle, TextStyle, StyleProp } from 'react-native'
+import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
 import Log from '../lib/Log'

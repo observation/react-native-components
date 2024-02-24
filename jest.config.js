@@ -6,15 +6,15 @@ module.exports = {
   setupFiles: ['./jest.mocks.js'],
   collectCoverageFrom: ['**/src/**/*.{js,ts,tsx}'],
   transform: {
+    '\\.(jpg|jpeg|png|gif|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$': '<rootDir>/fileTransformer.js',
     '^.+\\.tsx?$': [
       'ts-jest',
       {
+        tsconfig: 'tsconfig.spec.json',
         diagnostics: {
           exclude: ['**/node_modules/**']
         },
       }
     ],
-    '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
-      '<rootDir>/fileTransformer.js',
   },
 }

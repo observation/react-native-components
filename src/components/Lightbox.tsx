@@ -37,24 +37,23 @@ const getLightboxHeaderComponent =
   }
 
 const getLightboxFooterComponent =
-  (title?: string, description?: string, content?: React.ReactNode, style?: LightboxStyle) => () =>
-    (
-      <SafeAreaView style={styles.lightboxFooterContainer}>
-        <View style={styles.lightboxFooter}>
-          {title && (
-            <View style={styles.footerItem}>
-              <Text style={styles.title}>{title}</Text>
-            </View>
-          )}
-          {description && (
-            <View style={styles.footerItem}>
-              <Text style={[styles.description, style?.descriptionTextStyle]}>{description}</Text>
-            </View>
-          )}
-          {content && <View style={styles.footerItem}>{content}</View>}
-        </View>
-      </SafeAreaView>
-    )
+  (title?: string, description?: string, content?: React.ReactNode, style?: LightboxStyle) => () => (
+    <SafeAreaView style={styles.lightboxFooterContainer}>
+      <View style={styles.lightboxFooter}>
+        {title && (
+          <View style={styles.footerItem}>
+            <Text style={styles.title}>{title}</Text>
+          </View>
+        )}
+        {description && (
+          <View style={styles.footerItem}>
+            <Text style={[styles.description, style?.descriptionTextStyle]}>{description}</Text>
+          </View>
+        )}
+        {content && <View style={styles.footerItem}>{content}</View>}
+      </View>
+    </SafeAreaView>
+  )
 
 type LightboxStyle = {
   descriptionTextStyle: TextStyle

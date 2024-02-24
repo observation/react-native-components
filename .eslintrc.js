@@ -1,7 +1,7 @@
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
-  extends: '@react-native-community',
+  extends: '@react-native',
   plugins: ['react', 'jsx-a11y', 'import', 'react-native', 'observation'],
   settings: {
     'import/resolver': {
@@ -21,6 +21,13 @@ module.exports = {
     'no-console': 'warn',
     curly: ['error', 'multi-line'],
     'prefer-destructuring': ['error'],
+    'no-duplicate-imports': 'error',
+    'sort-imports': [
+      'error',
+      {
+        ignoreDeclarationSort: true,
+      },
+    ],
     'import/order': [
       'error',
       {

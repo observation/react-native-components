@@ -1,4 +1,4 @@
-import { IconDefinition, IconName as FontawesomeIconName } from '@fortawesome/fontawesome-svg-core'
+import { IconName as FontawesomeIconName, IconDefinition } from '@fortawesome/fontawesome-svg-core'
 import { faAlignJustify as faAlignJustifyLight } from '@fortawesome/pro-light-svg-icons/faAlignJustify'
 import { faAnalytics as faAnalyticsLight } from '@fortawesome/pro-light-svg-icons/faAnalytics'
 import { faAngleDown as faAngleDownLight } from '@fortawesome/pro-light-svg-icons/faAngleDown'

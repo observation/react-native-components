@@ -1,5 +1,5 @@
 import React from 'react'
-import { Dimensions, TouchableOpacity, StyleSheet, View, Image, Text } from 'react-native'
+import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 import ScalableImage from 'react-native-scalable-image'
 

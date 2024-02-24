@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, View, Image, ViewStyle, ImageSourcePropType, StyleProp } from 'react-native'
+import { Image, ImageSourcePropType, StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 
 type Props = {
   source: ImageSourcePropType

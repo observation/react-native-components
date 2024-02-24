@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import React from 'react'
+import React, { useState } from 'react'
 import { InteractionManager, Platform } from 'react-native'
 
 import { useFocusEffect } from '@react-navigation/native'

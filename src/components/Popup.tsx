@@ -1,5 +1,5 @@
 import React from 'react'
-import { Modal, View, StyleSheet } from 'react-native'
+import { Modal, StyleSheet, View } from 'react-native'
 
 import { BlurView } from '@react-native-community/blur'
 

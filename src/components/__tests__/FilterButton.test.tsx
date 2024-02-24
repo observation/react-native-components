@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from 'react-native'
 
-import { render, fireEvent } from '@testing-library/react-native'
+import { fireEvent, render } from '@testing-library/react-native'
 
 import theme from '../../styles/theme'
 import FilterButton from '../FilterButton'

@@ -1,5 +1,5 @@
 import React, { RefAttributes, useState } from 'react'
-import { Platform, TextInput, Text, View, StyleSheet, ViewStyle, TextInputProps, StyleProp } from 'react-native'
+import { Platform, StyleProp, StyleSheet, Text, TextInput, TextInputProps, View, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
 import IconText from './IconText'
