@@ -1,7 +1,7 @@
 import React from 'react'
 import { Dimensions, GestureResponderEvent, Text, View } from 'react-native'
 
-import RenderHtml, { CustomRendererProps, defaultSystemFonts, RenderHTMLProps, TBlock } from 'react-native-render-html'
+import RenderHtml, { CustomRendererProps, RenderHTMLProps, TBlock, defaultSystemFonts } from 'react-native-render-html'
 
 import ContentImage from './ContentImage'
 import Log from '../lib/Log'

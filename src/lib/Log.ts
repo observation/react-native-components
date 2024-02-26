@@ -1,4 +1,4 @@
-import { logger, consoleTransport, configLoggerType } from 'react-native-logs'
+import { configLoggerType, consoleTransport, logger } from 'react-native-logs'
 
 const baseConfig = {
   transport: consoleTransport,
