@@ -22,7 +22,6 @@ import Notification from './components/Notification'
 import NotificationPopup, { NotificationPopupStaticProps } from './components/NotificationPopup'
 import PageIndicator from './components/PageIndicator'
 import Panel from './components/Panel'
-import PhotoStrip from './components/PhotoStrip'
 import Popup from './components/Popup'
 import ProgressBarList from './components/ProgressBarList'
 import RenderHtmlWrapper, { imgRenderer, olRenderer, ulRenderer } from './components/RenderHtmlWrapper'
@@ -61,7 +60,6 @@ export {
   NotificationPopup,
   PageIndicator,
   Panel,
-  PhotoStrip,
   Popup,
   ProgressBar,
   ProgressBarList,
