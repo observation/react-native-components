@@ -1,7 +1,9 @@
 # react-native-components
+
 React Native component library for components used by React Native applications of Observation.org.
 There are 2 kinds of components:
-UI components: 
+UI components:
+
 - `Accordion`
 - `BackButton`
 - `BackgroundImage`
@@ -28,7 +30,6 @@ UI components:
 - `NotificationPopup (+ NotificationPopupStaticProps)`
 - `PageIndicator`
 - `Panel`
-- `PhotoStrip`
 - `Popup`
 - `ProgressBar`
 - `ProgressBarList`
@@ -39,6 +40,7 @@ UI components:
 - `WebLink`
 
 non-UI components:
+
 - `Log.setLogConfiguration`: A function to change the logging of the component library
 - `openUrl`: Opens URLs
 - `useShowBlurView`: A safe way to set a blur on the background
