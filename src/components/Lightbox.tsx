@@ -26,7 +26,7 @@ const getLightboxHeaderComponent =
               <Icon
                 name="times"
                 color={Color(theme.color.white).alpha(0.5).string()}
-                size={theme.icon.size.extraExtraLarge}
+                size={theme.icon.size.xxl}
                 testID="close-lightbox"
               />
             </TouchableOpacity>

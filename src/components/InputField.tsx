@@ -48,7 +48,7 @@ const InputField = ({ containerStyle, inputProps, inputStyle, label, rightIcon, 
       </View>
       {errorMessage && (
         <IconText
-          icon={<Icon name="exclamation-triangle" size={theme.icon.size.small} color={theme.color.error} />}
+          icon={<Icon name="exclamation-triangle" size={theme.icon.size.xs} color={theme.color.error} />}
           text={errorMessage}
           style={{
             textStyle: styles.errorStyle,

@@ -15,7 +15,7 @@ type Props = {
 
 const DocumentLink = ({ onPress, containerStyle, label }: Props) => (
   <IconText
-    icon={<Icon name="file-lines" size={theme.icon.size.medium} style="solid" />}
+    icon={<Icon name="file-lines" size={theme.icon.size.s} style="solid" />}
     text={label}
     style={{
       containerStyle,

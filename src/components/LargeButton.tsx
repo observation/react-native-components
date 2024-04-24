@@ -71,7 +71,7 @@ const LargeButton = ({
       <View style={styles.titleContainer}>
         {iconName && (
           <View style={styles.iconContainerStyle}>
-            <Icon name={iconName} size={theme.icon.size.large} color={iconColor} />
+            <Icon name={iconName} size={theme.icon.size.m} color={iconColor} />
           </View>
         )}
         <Text style={[styles.title, textStyle]}>{title}</Text>

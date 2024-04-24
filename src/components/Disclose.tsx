@@ -19,7 +19,7 @@ const Disclose = ({ text, onPress, textStyle, containerStyle }: Props) => {
     <TouchableOpacity activeOpacity={0.5} onPress={onPress}>
       <View style={[styles.containerStyle, containerStyle]}>
         <Text style={[appTextStyle.link, textStyle]}>{text}</Text>
-        <Icon name="chevron-right" size={theme.icon.size.extraLarge} />
+        <Icon name="chevron-right" size={theme.icon.size.l} />
       </View>
     </TouchableOpacity>
   )

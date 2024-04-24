@@ -35,7 +35,7 @@ const Tooltip = ({
         <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
           {icon && (
             <View style={{ ...styles.iconContainer, marginRight: theme.margin.common }}>
-              <Icon size={theme.icon.size.extraLarge} {...icon} />
+              <Icon size={theme.icon.size.l} {...icon} />
             </View>
           )}
           <View style={{ flex: 1 }}>
@@ -44,7 +44,7 @@ const Tooltip = ({
           {closable && (
             <View style={{ ...styles.iconContainer, marginLeft: theme.margin.common }}>
               <TouchableOpacity testID="close" onPress={onClose} activeOpacity={0.5} accessibilityLabel="close">
-                <Icon name="times" color={theme.color.greyBase} size={theme.icon.size.extraLarge} />
+                <Icon name="times" color={theme.color.greyBase} size={theme.icon.size.l} />
               </TouchableOpacity>
             </View>
           )}

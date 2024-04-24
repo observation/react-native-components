@@ -15,7 +15,7 @@ type Props = {
 
 const MoreInfo = ({ onPress, containerStyle, label }: Props) => (
   <IconText
-    icon={<Icon name="info-circle" size={theme.icon.size.medium} />}
+    icon={<Icon name="info-circle" size={theme.icon.size.s} />}
     text={label}
     style={{
       containerStyle,

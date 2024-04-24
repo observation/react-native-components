@@ -94,14 +94,9 @@ const ProgressBarList = ({ progressBars, separator }: Props) => {
             }}
           >
             {progressBar.isCompleted ? (
-              <Icon
-                name="circle-check"
-                style="solid"
-                color={progressBar.backgroundColor}
-                size={theme.icon.size.small}
-              />
+              <Icon name="circle-check" style="solid" color={progressBar.backgroundColor} size={theme.icon.size.xs} />
             ) : (
-              <Icon name="circle-check" color={theme.color.greySemi} size={theme.icon.size.small} />
+              <Icon name="circle-check" color={theme.color.greySemi} size={theme.icon.size.xs} />
             )}
           </View>
         ))}

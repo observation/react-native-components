@@ -22,7 +22,7 @@ export const Icon = ({ name, color, size, testID, style }: IconProps): JSX.Eleme
   const iconStyle = style ?? 'light'
   const icon = iconStyle === 'light' ? Icons[name].light : Icons[name].solid
   const iconColor = color ?? theme.color.primary
-  const iconSize = size ?? theme.icon.size.large
+  const iconSize = size ?? theme.icon.size.m
 
   return <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} testID={testID} />
 }

@@ -21,12 +21,13 @@ const font = {
 
 const icon = {
   size: {
-    extraSmall: 10,
-    small: 12,
-    medium: 14,
-    large: 16,
-    extraLarge: 18,
-    extraExtraLarge: 24,
+    xxs: 10,
+    xs: 12,
+    s: 14,
+    m: 16,
+    l: 18,
+    xl: 20,
+    xxl: 24,
     huge: 48,
   },
 }

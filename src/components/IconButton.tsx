@@ -22,7 +22,7 @@ const IconButton = ({ containerStyle, disabled, onPress, icon, accessibilityLabe
     onPress={disabled ? undefined : onPress}
     activeOpacity={0.5}
   >
-    <Icon size={theme.icon.size.large} {...icon} />
+    <Icon size={theme.icon.size.m} {...icon} />
   </TouchableOpacity>
 )
 
