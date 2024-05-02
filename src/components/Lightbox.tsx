@@ -47,15 +47,6 @@ const getLightboxFooterComponent =
   ) =>
   () => (
     <SafeAreaView style={styles.lightboxFooterContainer}>
-      {onPressDelete && (
-        <View style={styles.editButtons}>
-          <IconButton
-            testID="delete-photo"
-            icon={{ name: 'trash-alt', size: 20, color: theme.color.white }}
-            onPress={onPressDelete}
-          />
-        </View>
-      )}
       <View style={styles.lightboxFooter}>
         {title && (
           <View style={styles.footerItem}>
@@ -69,6 +60,15 @@ const getLightboxFooterComponent =
         )}
         {content && <View style={styles.footerItem}>{content}</View>}
       </View>
+      {onPressDelete && (
+        <View style={styles.editButtons}>
+          <IconButton
+            testID="delete-photo"
+            icon={{ name: 'trash-alt', size: 20, color: theme.color.white }}
+            onPress={onPressDelete}
+          />
+        </View>
+      )}
     </SafeAreaView>
   )
 

@@ -1949,6 +1949,14 @@ exports[`Lightbox Rendering With a delete button 1`] = `
         <View
           style={
             {
+              "paddingHorizontal": 16,
+              "paddingVertical": 8,
+            }
+          }
+        />
+        <View
+          style={
+            {
               "flexDirection": "row",
               "marginHorizontal": 48,
               "marginVertical": 30,
@@ -1998,14 +2006,6 @@ exports[`Lightbox Rendering With a delete button 1`] = `
             />
           </View>
         </View>
-        <View
-          style={
-            {
-              "paddingHorizontal": 16,
-              "paddingVertical": 8,
-            }
-          }
-        />
       </RCTSafeAreaView>
     </View>
   </View>
