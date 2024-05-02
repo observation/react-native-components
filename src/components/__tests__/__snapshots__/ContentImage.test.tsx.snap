@@ -385,13 +385,6 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
                   Title
                 </Text>
               </View>
-              <View
-                style={
-                  {
-                    "flexDirection": "row",
-                  }
-                }
-              />
             </View>
           </RCTSafeAreaView>
         </View>
