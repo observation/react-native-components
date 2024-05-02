@@ -402,6 +402,13 @@ exports[`Lightbox Rendering First photo 1`] = `
               11/26/2020 2:37 PM
             </Text>
           </View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          />
         </View>
       </RCTSafeAreaView>
     </View>
@@ -763,7 +770,15 @@ exports[`Lightbox Rendering Only a photo 1`] = `
               "paddingVertical": 8,
             }
           }
-        />
+        >
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          />
+        </View>
       </RCTSafeAreaView>
     </View>
   </View>
@@ -1175,13 +1190,21 @@ exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
           <View
             style={
               {
-                "marginVertical": 4,
+                "flexDirection": "row",
               }
             }
           >
-            <Text>
-              Jan de Vogelaar
-            </Text>
+            <View
+              style={
+                {
+                  "marginVertical": 4,
+                }
+              }
+            >
+              <Text>
+                Jan de Vogelaar
+              </Text>
+            </View>
           </View>
         </View>
       </RCTSafeAreaView>
@@ -1592,6 +1615,13 @@ exports[`Lightbox Rendering Second photo 1`] = `
               11/26/2020 2:37 PM
             </Text>
           </View>
+          <View
+            style={
+              {
+                "flexDirection": "row",
+              }
+            }
+          />
         </View>
       </RCTSafeAreaView>
     </View>

@@ -58,7 +58,7 @@ const getLightboxFooterComponent =
             <Text style={[styles.description, style?.descriptionTextStyle]}>{description}</Text>
           </View>
         )}
-        <View>
+        <View style={{ flexDirection: 'row' }}>
           {onPressDelete && (
             <IconButton
               testID="delete-photo"
@@ -79,7 +79,7 @@ type LightboxStyle = {
 type Props = {
   index?: number
   onClose: () => void
-  onDelete: (imageIndex: number) => void
+  onDelete?: (imageIndex: number) => void
   photos: string[]
   title?: string
   description?: string
