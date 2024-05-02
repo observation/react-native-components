@@ -59,6 +59,15 @@ describe('Lightbox', () => {
 
       expect(toJSON()).toMatchSnapshot()
     })
+
+    test('With a delete button', () => {
+      const { toJSON, queryByTestId } = render(
+        <Lightbox photos={photos} index={0} onClose={onClose} onDelete={() => {}} />,
+      )
+
+      expect(queryByTestId('delete-photo')).not.toBeNull()
+      expect(toJSON()).toMatchSnapshot()
+    })
   })
 
   describe('Interaction', () => {
@@ -70,7 +79,19 @@ describe('Lightbox', () => {
       await fireEvent.press(getByTestId('close-lightbox'))
 
       // THEN
-      expect(onClose).toBeCalled()
+      expect(onClose).toHaveBeenCalled()
+    })
+
+    test('Press delete button calls onDelete', async () => {
+      // GIVEN
+      const onDelete = jest.fn()
+      const { getByTestId } = render(<Lightbox photos={photos} index={1} onClose={onClose} onDelete={onDelete} />)
+
+      // WHEN
+      await fireEvent.press(getByTestId('delete-photo'))
+
+      // THEN
+      expect(onDelete).toHaveBeenCalled()
     })
   })
 })
