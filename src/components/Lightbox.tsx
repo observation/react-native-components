@@ -11,31 +11,30 @@ import font from '../styles/font'
 import textStyle from '../styles/text'
 import theme from '../styles/theme'
 
+const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
+
 const getLightboxHeaderComponent =
   (numberOfPages: number, onClose: () => void) =>
-  ({ imageIndex }: { imageIndex: number }) => {
-    const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
-    return (
-      <SafeAreaView style={styles.lightboxHeaderContainer}>
-        <View style={styles.lightboxHeader}>
-          <View style={{ flex: 1 }} />
-          <View style={styles.pageIndicator}>
-            <PageIndicator currentPage={imageIndex + 1} numberOfPages={numberOfPages} />
-          </View>
-          <View style={{ flex: 1 }}>
-            <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
-              <Icon
-                name="times"
-                color={Color(theme.color.white).alpha(0.5).string()}
-                size={theme.icon.size.extraExtraLarge}
-                testID="close-lightbox"
-              />
-            </TouchableOpacity>
-          </View>
+  ({ imageIndex }: { imageIndex: number }) => (
+    <SafeAreaView style={styles.lightboxHeaderContainer}>
+      <View style={styles.lightboxHeader}>
+        <View style={{ flex: 1 }} />
+        <View style={styles.pageIndicator}>
+          <PageIndicator currentPage={imageIndex + 1} numberOfPages={numberOfPages} />
         </View>
-      </SafeAreaView>
-    )
-  }
+        <View style={{ flex: 1 }}>
+          <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
+            <Icon
+              name="times"
+              color={Color(theme.color.white).alpha(0.5).string()}
+              size={theme.icon.size.extraExtraLarge}
+              testID="close-lightbox"
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+    </SafeAreaView>
+  )
 
 const getLightboxFooterComponent =
   (
@@ -62,11 +61,9 @@ const getLightboxFooterComponent =
         {onPressDelete && (
           <View style={styles.buttonsContainer}>
             <View style={styles.buttonContainer}>
-              <IconButton
-                testID="delete-photo"
-                icon={{ name: 'trash-alt', size: 20, color: theme.color.white }}
-                onPress={onPressDelete}
-              />
+              <TouchableOpacity onPress={onPressDelete} hitSlop={hitSlop}>
+                <IconButton testID="delete-photo" icon={{ name: 'trash-alt', size: 20, color: theme.color.white }} />
+              </TouchableOpacity>
             </View>
           </View>
         )}
