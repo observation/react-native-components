@@ -1953,57 +1953,67 @@ exports[`Lightbox Rendering With a delete button 1`] = `
               "paddingVertical": 8,
             }
           }
-        />
-        <View
-          style={
-            {
-              "flexDirection": "row",
-              "marginHorizontal": 48,
-              "marginVertical": 30,
-            }
-          }
         >
           <View
-            accessibilityState={
-              {
-                "busy": undefined,
-                "checked": undefined,
-                "disabled": undefined,
-                "expanded": undefined,
-                "selected": undefined,
-              }
-            }
-            accessibilityValue={
-              {
-                "max": undefined,
-                "min": undefined,
-                "now": undefined,
-                "text": undefined,
-              }
-            }
-            accessible={true}
-            collapsable={false}
-            focusable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             style={
               {
-                "opacity": 1,
+                "flexDirection": "row",
+                "marginHorizontal": 16,
+                "marginVertical": 24,
               }
             }
-            testID="delete-photo"
           >
-            <Icon
-              color="#FFFFFF"
-              name="trash-can"
-              size={20}
-              type="light"
-            />
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "width": "50%",
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={true}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+                testID="delete-photo"
+              >
+                <Icon
+                  color="#FFFFFF"
+                  name="trash-can"
+                  size={20}
+                  type="light"
+                />
+              </View>
+            </View>
           </View>
         </View>
       </RCTSafeAreaView>

@@ -59,16 +59,18 @@ const getLightboxFooterComponent =
           </View>
         )}
         {content && <View style={styles.footerItem}>{content}</View>}
+        {onPressDelete && (
+          <View style={styles.buttonsContainer}>
+            <View style={styles.buttonContainer}>
+              <IconButton
+                testID="delete-photo"
+                icon={{ name: 'trash-alt', size: 20, color: theme.color.white }}
+                onPress={onPressDelete}
+              />
+            </View>
+          </View>
+        )}
       </View>
-      {onPressDelete && (
-        <View style={styles.editButtons}>
-          <IconButton
-            testID="delete-photo"
-            icon={{ name: 'trash-alt', size: 20, color: theme.color.white }}
-            onPress={onPressDelete}
-          />
-        </View>
-      )}
     </SafeAreaView>
   )
 
@@ -150,9 +152,13 @@ const styles = StyleSheet.create({
     ...textStyle.body,
     color: theme.color.white,
   },
-  editButtons: {
+  buttonsContainer: {
     flexDirection: 'row',
-    marginVertical: 30,
-    marginHorizontal: 48,
+    marginVertical: theme.margin.large,
+    marginHorizontal: theme.margin.common,
+  },
+  buttonContainer: {
+    width: '50%',
+    alignItems: 'center',
   },
 })
