@@ -1959,7 +1959,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
               {
                 "flexDirection": "row",
                 "marginHorizontal": 16,
-                "marginVertical": 24,
+                "marginVertical": 32,
               }
             }
           >

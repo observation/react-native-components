@@ -151,7 +151,7 @@ const styles = StyleSheet.create({
   },
   buttonsContainer: {
     flexDirection: 'row',
-    marginVertical: theme.margin.large,
+    marginVertical: theme.margin.double,
     marginHorizontal: theme.margin.common,
   },
   buttonContainer: {
