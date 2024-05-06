@@ -5,7 +5,6 @@ import ImageView from '@observation.org/react-native-image-viewing'
 import Color from 'color'
 
 import { Icon } from './Icon'
-import IconButton from './IconButton'
 import PageIndicator from './PageIndicator'
 import font from '../styles/font'
 import textStyle from '../styles/text'
@@ -62,7 +61,7 @@ const getLightboxFooterComponent =
           <View style={styles.buttonsContainer}>
             <View style={styles.buttonContainer}>
               <TouchableOpacity onPress={onPressDelete} hitSlop={hitSlop}>
-                <IconButton testID="delete-photo" icon={{ name: 'trash-alt', size: 20, color: theme.color.white }} />
+                <Icon name="trash-alt" color={theme.color.white} size={20} testID="delete-photo" />
               </TouchableOpacity>
             </View>
           </View>
