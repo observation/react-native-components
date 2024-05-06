@@ -86,19 +86,18 @@ type Props = {
 }
 
 const Lightbox = ({ index, onClose, onDelete, photos, title, description, content, style }: Props) => {
-  const [imageIndexAfterSwipe, setImageIndexAfterSwipe] = useState<number>()
+  const initialImageIndex = index ?? 0
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(initialImageIndex)
 
-  const imageIndex = index ?? 0
-
-  const onPressDelete = onDelete ? () => onDelete(imageIndexAfterSwipe ?? imageIndex) : undefined
+  const onPressDelete = onDelete ? () => onDelete(currentImageIndex) : undefined
 
   return (
     <ImageView
       images={photos.map((photo) => ({ uri: photo }))}
-      imageIndex={imageIndex}
+      imageIndex={currentImageIndex}
       visible={index !== undefined}
       swipeToCloseEnabled={false}
-      onImageIndexChange={setImageIndexAfterSwipe}
+      onImageIndexChange={setCurrentImageIndex}
       onRequestClose={onClose}
       HeaderComponent={getLightboxHeaderComponent(photos.length, onClose)}
       FooterComponent={getLightboxFooterComponent(title, description, content, style, onPressDelete)}
