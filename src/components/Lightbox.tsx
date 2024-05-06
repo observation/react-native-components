@@ -149,7 +149,7 @@ const styles = StyleSheet.create({
   },
   buttonsContainer: {
     flexDirection: 'row',
-    marginVertical: theme.margin.double,
+    marginVertical: theme.margin.large,
     marginHorizontal: theme.margin.common,
   },
   buttonContainer: {
