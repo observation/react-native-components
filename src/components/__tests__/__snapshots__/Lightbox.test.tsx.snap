@@ -1967,7 +1967,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
               style={
                 {
                   "alignItems": "center",
-                  "width": "50%",
+                  "flex": 0.5,
                 }
               }
             >

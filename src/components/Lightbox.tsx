@@ -86,15 +86,15 @@ type Props = {
 }
 
 const Lightbox = ({ index, onClose, onDelete, photos, title, description, content, style }: Props) => {
-  const initialIndex = index ?? 0
+  const initialImageIndex = index ?? 0
   const [currentImageIndex, setCurrentImageIndex] = useState<number>()
 
-  const onPressDelete = onDelete ? () => onDelete(currentImageIndex ?? initialIndex) : undefined
+  const onPressDelete = onDelete ? () => onDelete(currentImageIndex ?? initialImageIndex) : undefined
 
   return (
     <ImageView
       images={photos.map((photo) => ({ uri: photo }))}
-      imageIndex={initialIndex}
+      imageIndex={initialImageIndex}
       visible={index !== undefined}
       swipeToCloseEnabled={false}
       onImageIndexChange={setCurrentImageIndex}
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     marginHorizontal: theme.margin.common,
   },
   buttonContainer: {
-    width: '50%',
+    flex: 0.5,
     alignItems: 'center',
   },
 })
