@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { SafeAreaView, StyleSheet, Text, TextStyle, TouchableOpacity, View } from 'react-native'
 
 import ImageView from '@observation.org/react-native-image-viewing'
@@ -10,34 +10,40 @@ import font from '../styles/font'
 import textStyle from '../styles/text'
 import theme from '../styles/theme'
 
+const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
+
 const getLightboxHeaderComponent =
   (numberOfPages: number, onClose: () => void) =>
-  ({ imageIndex }: { imageIndex: number }) => {
-    const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
-    return (
-      <SafeAreaView style={styles.lightboxHeaderContainer}>
-        <View style={styles.lightboxHeader}>
-          <View style={{ flex: 1 }} />
-          <View style={styles.pageIndicator}>
-            <PageIndicator currentPage={imageIndex + 1} numberOfPages={numberOfPages} />
-          </View>
-          <View style={{ flex: 1 }}>
-            <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
-              <Icon
-                name="times"
-                color={Color(theme.color.white).alpha(0.5).string()}
-                size={theme.icon.size.extraExtraLarge}
-                testID="close-lightbox"
-              />
-            </TouchableOpacity>
-          </View>
+  ({ imageIndex }: { imageIndex: number }) => (
+    <SafeAreaView style={styles.lightboxHeaderContainer}>
+      <View style={styles.lightboxHeader}>
+        <View style={{ flex: 1 }} />
+        <View style={styles.pageIndicator}>
+          <PageIndicator currentPage={imageIndex + 1} numberOfPages={numberOfPages} />
         </View>
-      </SafeAreaView>
-    )
-  }
+        <View style={{ flex: 1 }}>
+          <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
+            <Icon
+              name="times"
+              color={Color(theme.color.white).alpha(0.5).string()}
+              size={theme.icon.size.extraExtraLarge}
+              testID="close-lightbox"
+            />
+          </TouchableOpacity>
+        </View>
+      </View>
+    </SafeAreaView>
+  )
 
 const getLightboxFooterComponent =
-  (title?: string, description?: string, content?: React.ReactNode, style?: LightboxStyle) => () => (
+  (
+    title?: string,
+    description?: string,
+    content?: React.ReactNode,
+    style?: LightboxStyle,
+    onPressDelete?: () => void,
+  ) =>
+  () => (
     <SafeAreaView style={styles.lightboxFooterContainer}>
       <View style={styles.lightboxFooter}>
         {title && (
@@ -51,6 +57,15 @@ const getLightboxFooterComponent =
           </View>
         )}
         {content && <View style={styles.footerItem}>{content}</View>}
+        {onPressDelete && (
+          <View style={styles.buttonsContainer}>
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity onPress={onPressDelete} hitSlop={hitSlop}>
+                <Icon name="trash-alt" color={theme.color.white} size={20} testID="delete-photo" />
+              </TouchableOpacity>
+            </View>
+          </View>
+        )}
       </View>
     </SafeAreaView>
   )
@@ -62,6 +77,7 @@ type LightboxStyle = {
 type Props = {
   index?: number
   onClose: () => void
+  onDelete?: (imageIndex: number) => void
   photos: string[]
   title?: string
   description?: string
@@ -69,17 +85,25 @@ type Props = {
   style?: LightboxStyle
 }
 
-const Lightbox = ({ index, onClose, photos, title, description, content, style }: Props) => (
-  <ImageView
-    images={photos.map((photo) => ({ uri: photo }))}
-    imageIndex={index ?? 0}
-    visible={index !== undefined}
-    swipeToCloseEnabled={false}
-    onRequestClose={onClose}
-    HeaderComponent={getLightboxHeaderComponent(photos.length, onClose)}
-    FooterComponent={getLightboxFooterComponent(title, description, content, style)}
-  />
-)
+const Lightbox = ({ index, onClose, onDelete, photos, title, description, content, style }: Props) => {
+  const initialImageIndex = index ?? 0
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>()
+
+  const onPressDelete = onDelete ? () => onDelete(currentImageIndex ?? initialImageIndex) : undefined
+
+  return (
+    <ImageView
+      images={photos.map((photo) => ({ uri: photo }))}
+      imageIndex={initialImageIndex}
+      visible={index !== undefined}
+      swipeToCloseEnabled={false}
+      onImageIndexChange={setCurrentImageIndex}
+      onRequestClose={onClose}
+      HeaderComponent={getLightboxHeaderComponent(photos.length, onClose)}
+      FooterComponent={getLightboxFooterComponent(title, description, content, style, onPressDelete)}
+    />
+  )
+}
 
 export default Lightbox
 
@@ -122,5 +146,14 @@ const styles = StyleSheet.create({
   description: {
     ...textStyle.body,
     color: theme.color.white,
+  },
+  buttonsContainer: {
+    flexDirection: 'row',
+    marginVertical: theme.margin.large,
+    marginHorizontal: theme.margin.common,
+  },
+  buttonContainer: {
+    flex: 0.5,
+    alignItems: 'center',
   },
 })

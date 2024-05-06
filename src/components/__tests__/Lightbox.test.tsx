@@ -15,6 +15,15 @@ const content = <Text>Jan de Vogelaar</Text>
 
 let onClose: () => void
 
+let mockOnImageIndexChange = jest.fn()
+jest.mock('@observation.org/react-native-image-viewing', () => {
+  const actualModule = jest.requireActual('@observation.org/react-native-image-viewing')
+  return (props: any) => {
+    mockOnImageIndexChange = props.onImageIndexChange as any
+    return actualModule.default(props)
+  }
+})
+
 describe('Lightbox', () => {
   beforeEach(() => {
     onClose = jest.fn()
@@ -59,6 +68,15 @@ describe('Lightbox', () => {
 
       expect(toJSON()).toMatchSnapshot()
     })
+
+    test('With a delete button', () => {
+      const { toJSON, queryByTestId } = render(
+        <Lightbox photos={photos} index={0} onClose={onClose} onDelete={() => {}} />,
+      )
+
+      expect(queryByTestId('delete-photo')).not.toBeNull()
+      expect(toJSON()).toMatchSnapshot()
+    })
   })
 
   describe('Interaction', () => {
@@ -70,7 +88,34 @@ describe('Lightbox', () => {
       await fireEvent.press(getByTestId('close-lightbox'))
 
       // THEN
-      expect(onClose).toBeCalled()
+      expect(onClose).toHaveBeenCalled()
+    })
+
+    test('Press delete button calls onDelete', async () => {
+      // GIVEN
+      const onDelete = jest.fn()
+      const { getByTestId } = render(<Lightbox photos={photos} index={0} onClose={onClose} onDelete={onDelete} />)
+
+      // WHEN
+      await fireEvent.press(getByTestId('delete-photo'))
+
+      // THEN
+      expect(onDelete).toHaveBeenCalledWith(0)
+    })
+
+    test('When swiping to the second photo and pressing the delete button, onDelete is called with the second photo', async () => {
+      // GIVEN
+      jest.mock('@observation.org/react-native-image-viewing', () => 'ImageCarousel')
+
+      const onDelete = jest.fn()
+      const { getByTestId } = render(<Lightbox photos={photos} index={0} onClose={onClose} onDelete={onDelete} />)
+
+      // WHEN
+      mockOnImageIndexChange(1)
+      await fireEvent.press(getByTestId('delete-photo'))
+
+      // THEN
+      expect(onDelete).toHaveBeenCalledWith(1)
     })
   })
 })
