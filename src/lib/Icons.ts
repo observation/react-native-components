@@ -44,6 +44,7 @@ import { faEye as faEyeLight } from '@fortawesome/pro-light-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashLight } from '@fortawesome/pro-light-svg-icons/faEyeSlash'
 import { faFileLines as faFileLinesLight } from '@fortawesome/pro-light-svg-icons/faFileLines'
 import { faGlobeEurope as faGlobeEuropeLight } from '@fortawesome/pro-light-svg-icons/faGlobeEurope'
+import { faGridRound2Plus as faGridRound2PlusLight } from '@fortawesome/pro-light-svg-icons/faGridRound2Plus'
 import { faHeart as faHeartLight } from '@fortawesome/pro-light-svg-icons/faHeart'
 import { faHexagon as faHexagonLight } from '@fortawesome/pro-light-svg-icons/faHexagon'
 import { faImages as faImagesLight } from '@fortawesome/pro-light-svg-icons/faImages'
@@ -131,6 +132,7 @@ import { faEye as faEyeSolid } from '@fortawesome/pro-solid-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashSolid } from '@fortawesome/pro-solid-svg-icons/faEyeSlash'
 import { faFileLines as faFileLinesSolid } from '@fortawesome/pro-solid-svg-icons/faFileLines'
 import { faGlobeEurope as faGlobeEuropeSolid } from '@fortawesome/pro-solid-svg-icons/faGlobeEurope'
+import { faGridRound2Plus as faGridRound2PlusSolid } from '@fortawesome/pro-solid-svg-icons/faGridRound2Plus'
 import { faHeart as faHeartSolid } from '@fortawesome/pro-solid-svg-icons/faHeart'
 import { faHexagon as faHexagonSolid } from '@fortawesome/pro-solid-svg-icons/faHexagon'
 import { faImages as faImagesSolid } from '@fortawesome/pro-solid-svg-icons/faImages'
@@ -221,6 +223,7 @@ type IconName = Extract<
   | 'eye'
   | 'file-lines'
   | 'globe-europe'
+  | 'grid-round-2-plus'
   | 'heart'
   | 'hexagon'
   | 'images'
@@ -311,6 +314,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   eye: { light: faEyeLight, solid: faEyeSolid },
   'file-lines': { light: faFileLinesLight, solid: faFileLinesSolid },
   'globe-europe': { light: faGlobeEuropeLight, solid: faGlobeEuropeSolid },
+  'grid-round-2-plus': { light: faGridRound2PlusLight, solid: faGridRound2PlusSolid },
   heart: { light: faHeartLight, solid: faHeartSolid },
   hexagon: { light: faHexagonLight, solid: faHexagonSolid },
   images: { light: faImagesLight, solid: faImagesSolid },
