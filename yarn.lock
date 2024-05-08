@@ -1551,7 +1551,7 @@
 
 "@observation.org/react-native-image-viewing@https://github.com/observation/react-native-image-viewing":
   version "0.2.2"
-  resolved "https://github.com/observation/react-native-image-viewing#2e2716d7d072b88241266a6eb0023251373d1a07"
+  resolved "https://github.com/observation/react-native-image-viewing#06772aee6d72f5538c540390db2eefa101374bc1"
 
 "@pkgr/core@^0.1.0":
   version "0.1.1"

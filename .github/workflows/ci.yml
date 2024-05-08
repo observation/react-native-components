@@ -3,10 +3,10 @@ on: [push]
 jobs:
   tests:
     runs-on: ubuntu-latest
+    env:
+      FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v3
-      - name: Authenticate with FontAwesome Pro
-        run: echo "//npm.fontawesome.com/:_authToken=${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}" >> .npmrc && cat .npmrc
       - name: Install modules
         run: yarn
       - name: Run lint
