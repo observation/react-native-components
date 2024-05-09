@@ -79,6 +79,7 @@ import { faThumbtack as faThumbtackLight } from '@fortawesome/pro-light-svg-icon
 import { faTimes as faTimesLight } from '@fortawesome/pro-light-svg-icons/faTimes'
 import { faTrashAlt as faTrashAltLight } from '@fortawesome/pro-light-svg-icons/faTrashAlt'
 import { faTriangle as faTriangleLight } from '@fortawesome/pro-light-svg-icons/faTriangle'
+import { faTriangleExclamation as faTriangleExclamationLight } from '@fortawesome/pro-light-svg-icons/faTriangleExclamation'
 import { faUndo as faUndoLight } from '@fortawesome/pro-light-svg-icons/faUndo'
 import { faUser as faUserLight } from '@fortawesome/pro-light-svg-icons/faUser'
 import { faUserCheck as faUserCheckLight } from '@fortawesome/pro-light-svg-icons/faUserCheck'
@@ -168,6 +169,7 @@ import { faThumbtack as faThumbtackSolid } from '@fortawesome/pro-solid-svg-icon
 import { faTimes as faTimesSolid } from '@fortawesome/pro-solid-svg-icons/faTimes'
 import { faTrashAlt as faTrashAltSolid } from '@fortawesome/pro-solid-svg-icons/faTrashAlt'
 import { faTriangle as faTriangleSolid } from '@fortawesome/pro-solid-svg-icons/faTriangle'
+import { faTriangleExclamation as faTriangleExclamationSolid } from '@fortawesome/pro-solid-svg-icons/faTriangleExclamation'
 import { faUndo as faUndoSolid } from '@fortawesome/pro-solid-svg-icons/faUndo'
 import { faUser as faUserSolid } from '@fortawesome/pro-solid-svg-icons/faUser'
 import { faUserCheck as faUserCheckSolid } from '@fortawesome/pro-solid-svg-icons/faUserCheck'
@@ -259,6 +261,7 @@ type IconName = Extract<
   | 'times'
   | 'trash-alt'
   | 'triangle'
+  | 'triangle-exclamation'
   | 'thumbtack'
   | 'undo'
   | 'user-check'
@@ -351,6 +354,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   times: { light: faTimesLight, solid: faTimesSolid },
   'trash-alt': { light: faTrashAltLight, solid: faTrashAltSolid },
   triangle: { light: faTriangleLight, solid: faTriangleSolid },
+  'triangle-exclamation': { light: faTriangleExclamationLight, solid: faTriangleExclamationSolid },
   thumbtack: { light: faThumbtackLight, solid: faThumbtackSolid },
   undo: { light: faUndoLight, solid: faUndoSolid },
   'user-check': { light: faUserCheckLight, solid: faUserCheckSolid },
