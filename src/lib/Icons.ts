@@ -87,6 +87,7 @@ import { faUserPlus as faUserPlusLight } from '@fortawesome/pro-light-svg-icons/
 import { faUserSlash as faUserSlashLight } from '@fortawesome/pro-light-svg-icons/faUserSlash'
 import { faUsersSlash as faUsersSlashLight } from '@fortawesome/pro-light-svg-icons/faUsersSlash'
 import { faVenus as faVenusLight } from '@fortawesome/pro-light-svg-icons/faVenus'
+import { faXmark as faXmarkLight } from '@fortawesome/pro-light-svg-icons/faXmark'
 import { faAlignJustify as faAlignJustifySolid } from '@fortawesome/pro-solid-svg-icons/faAlignJustify'
 import { faAnalytics as faAnalyticsSolid } from '@fortawesome/pro-solid-svg-icons/faAnalytics'
 import { faAngleDown as faAngleDownSolid } from '@fortawesome/pro-solid-svg-icons/faAngleDown'
@@ -175,6 +176,7 @@ import { faUserPlus as faUserPlusSolid } from '@fortawesome/pro-solid-svg-icons/
 import { faUserSlash as faUserSlashSolid } from '@fortawesome/pro-solid-svg-icons/faUserSlash'
 import { faUsersSlash as faUsersSlashSolid } from '@fortawesome/pro-solid-svg-icons/faUsersSlash'
 import { faVenus as faVenusSolid } from '@fortawesome/pro-solid-svg-icons/faVenus'
+import { faXmark as faXmarkSolid } from '@fortawesome/pro-solid-svg-icons/faXmark'
 
 type IconName = Extract<
   FontawesomeIconName,
@@ -266,6 +268,7 @@ type IconName = Extract<
   | 'user'
   | 'users-slash'
   | 'venus'
+  | 'xmark'
 >
 
 const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition } } = {
@@ -357,6 +360,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   user: { light: faUserLight, solid: faUserSolid },
   'users-slash': { light: faUsersSlashLight, solid: faUsersSlashSolid },
   venus: { light: faVenusLight, solid: faVenusSolid },
+  xmark: { light: faXmarkLight, solid: faXmarkSolid },
 }
 
 export default icons
