@@ -79,6 +79,7 @@ import { faThumbtack as faThumbtackLight } from '@fortawesome/pro-light-svg-icon
 import { faTimes as faTimesLight } from '@fortawesome/pro-light-svg-icons/faTimes'
 import { faTrashAlt as faTrashAltLight } from '@fortawesome/pro-light-svg-icons/faTrashAlt'
 import { faTriangle as faTriangleLight } from '@fortawesome/pro-light-svg-icons/faTriangle'
+import { faTriangleExclamation as faTriangleExclamationLight } from '@fortawesome/pro-light-svg-icons/faTriangleExclamation'
 import { faUndo as faUndoLight } from '@fortawesome/pro-light-svg-icons/faUndo'
 import { faUser as faUserLight } from '@fortawesome/pro-light-svg-icons/faUser'
 import { faUserCheck as faUserCheckLight } from '@fortawesome/pro-light-svg-icons/faUserCheck'
@@ -87,6 +88,7 @@ import { faUserPlus as faUserPlusLight } from '@fortawesome/pro-light-svg-icons/
 import { faUserSlash as faUserSlashLight } from '@fortawesome/pro-light-svg-icons/faUserSlash'
 import { faUsersSlash as faUsersSlashLight } from '@fortawesome/pro-light-svg-icons/faUsersSlash'
 import { faVenus as faVenusLight } from '@fortawesome/pro-light-svg-icons/faVenus'
+import { faXmark as faXmarkLight } from '@fortawesome/pro-light-svg-icons/faXmark'
 import { faAlignJustify as faAlignJustifySolid } from '@fortawesome/pro-solid-svg-icons/faAlignJustify'
 import { faAnalytics as faAnalyticsSolid } from '@fortawesome/pro-solid-svg-icons/faAnalytics'
 import { faAngleDown as faAngleDownSolid } from '@fortawesome/pro-solid-svg-icons/faAngleDown'
@@ -167,6 +169,7 @@ import { faThumbtack as faThumbtackSolid } from '@fortawesome/pro-solid-svg-icon
 import { faTimes as faTimesSolid } from '@fortawesome/pro-solid-svg-icons/faTimes'
 import { faTrashAlt as faTrashAltSolid } from '@fortawesome/pro-solid-svg-icons/faTrashAlt'
 import { faTriangle as faTriangleSolid } from '@fortawesome/pro-solid-svg-icons/faTriangle'
+import { faTriangleExclamation as faTriangleExclamationSolid } from '@fortawesome/pro-solid-svg-icons/faTriangleExclamation'
 import { faUndo as faUndoSolid } from '@fortawesome/pro-solid-svg-icons/faUndo'
 import { faUser as faUserSolid } from '@fortawesome/pro-solid-svg-icons/faUser'
 import { faUserCheck as faUserCheckSolid } from '@fortawesome/pro-solid-svg-icons/faUserCheck'
@@ -175,6 +178,7 @@ import { faUserPlus as faUserPlusSolid } from '@fortawesome/pro-solid-svg-icons/
 import { faUserSlash as faUserSlashSolid } from '@fortawesome/pro-solid-svg-icons/faUserSlash'
 import { faUsersSlash as faUsersSlashSolid } from '@fortawesome/pro-solid-svg-icons/faUsersSlash'
 import { faVenus as faVenusSolid } from '@fortawesome/pro-solid-svg-icons/faVenus'
+import { faXmark as faXmarkSolid } from '@fortawesome/pro-solid-svg-icons/faXmark'
 
 type IconName = Extract<
   FontawesomeIconName,
@@ -257,6 +261,7 @@ type IconName = Extract<
   | 'times'
   | 'trash-alt'
   | 'triangle'
+  | 'triangle-exclamation'
   | 'thumbtack'
   | 'undo'
   | 'user-check'
@@ -266,6 +271,7 @@ type IconName = Extract<
   | 'user'
   | 'users-slash'
   | 'venus'
+  | 'xmark'
 >
 
 const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition } } = {
@@ -348,6 +354,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   times: { light: faTimesLight, solid: faTimesSolid },
   'trash-alt': { light: faTrashAltLight, solid: faTrashAltSolid },
   triangle: { light: faTriangleLight, solid: faTriangleSolid },
+  'triangle-exclamation': { light: faTriangleExclamationLight, solid: faTriangleExclamationSolid },
   thumbtack: { light: faThumbtackLight, solid: faThumbtackSolid },
   undo: { light: faUndoLight, solid: faUndoSolid },
   'user-check': { light: faUserCheckLight, solid: faUserCheckSolid },
@@ -357,6 +364,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   user: { light: faUserLight, solid: faUserSolid },
   'users-slash': { light: faUsersSlashLight, solid: faUsersSlashSolid },
   venus: { light: faVenusLight, solid: faVenusSolid },
+  xmark: { light: faXmarkLight, solid: faXmarkSolid },
 }
 
 export default icons
