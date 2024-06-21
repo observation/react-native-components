@@ -12,17 +12,19 @@ export type IconAppearanceProps = {
   color?: string
   size?: number
   testID?: string
+  rotation?: number
 }
 
 export type IconProps = IconAppearanceProps & {
   name: IconName
 }
 
-export const Icon = ({ name, color, size, testID, style }: IconProps): JSX.Element => {
+export const Icon = ({ name, color, size, testID, style, rotation }: IconProps): JSX.Element => {
   const iconStyle = style ?? 'light'
   const icon = iconStyle === 'light' ? Icons[name].light : Icons[name].solid
   const iconColor = color ?? theme.color.primary
   const iconSize = size ?? theme.icon.size.large
+  const transform = rotation ? { rotate: 42 } : undefined
 
-  return <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} testID={testID} />
+  return <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} testID={testID} transform={transform} />
 }
