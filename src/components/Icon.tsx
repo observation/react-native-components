@@ -24,7 +24,7 @@ export const Icon = ({ name, color, size, testID, style, rotation }: IconProps):
   const icon = iconStyle === 'light' ? Icons[name].light : Icons[name].solid
   const iconColor = color ?? theme.color.primary
   const iconSize = size ?? theme.icon.size.large
-  const transform = rotation ? { rotate: 42 } : undefined
+  const transform = rotation ? { rotate: rotation } : undefined
 
   return <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} testID={testID} transform={transform} />
 }

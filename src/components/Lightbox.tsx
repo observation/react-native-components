@@ -42,6 +42,7 @@ const getLightboxFooterComponent =
     content?: React.ReactNode,
     style?: LightboxStyle,
     onPressDelete?: () => void,
+    onPressCrop?: () => void,
   ) =>
   () => (
     <SafeAreaView style={styles.lightboxFooterContainer}>
@@ -57,15 +58,23 @@ const getLightboxFooterComponent =
           </View>
         )}
         {content && <View style={styles.footerItem}>{content}</View>}
-        {onPressDelete && (
-          <View style={styles.buttonsContainer}>
+
+        <View style={styles.buttonsContainer}>
+          {onPressDelete && (
             <View style={styles.buttonContainer}>
               <TouchableOpacity onPress={onPressDelete} hitSlop={hitSlop}>
                 <Icon name="trash-alt" color={theme.color.white} size={20} testID="delete-photo" />
               </TouchableOpacity>
             </View>
-          </View>
-        )}
+          )}
+          {onPressCrop && (
+            <View style={styles.buttonContainer}>
+              <TouchableOpacity onPress={onPressCrop} hitSlop={hitSlop}>
+                <Icon name="crop-alt" color={theme.color.white} size={20} testID="crop-photo" />
+              </TouchableOpacity>
+            </View>
+          )}
+        </View>
       </View>
     </SafeAreaView>
   )
