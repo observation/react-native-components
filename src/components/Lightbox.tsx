@@ -87,6 +87,7 @@ type Props = {
   index?: number
   onClose: () => void
   onDelete?: (imageIndex: number) => void
+  onCrop?: (imageIndex: number) => void
   photos: string[]
   title?: string
   description?: string
@@ -94,11 +95,12 @@ type Props = {
   style?: LightboxStyle
 }
 
-const Lightbox = ({ index, onClose, onDelete, photos, title, description, content, style }: Props) => {
+const Lightbox = ({ index, onClose, onDelete, onCrop, photos, title, description, content, style }: Props) => {
   const initialImageIndex = index ?? 0
   const [currentImageIndex, setCurrentImageIndex] = useState<number>()
 
   const onPressDelete = onDelete ? () => onDelete(currentImageIndex ?? initialImageIndex) : undefined
+  const onPressCrop = onCrop ? () => onCrop(currentImageIndex ?? initialImageIndex) : undefined
 
   return (
     <ImageView
@@ -109,7 +111,7 @@ const Lightbox = ({ index, onClose, onDelete, photos, title, description, conten
       onImageIndexChange={setCurrentImageIndex}
       onRequestClose={onClose}
       HeaderComponent={getLightboxHeaderComponent(photos.length, onClose)}
-      FooterComponent={getLightboxFooterComponent(title, description, content, style, onPressDelete)}
+      FooterComponent={getLightboxFooterComponent(title, description, content, style, onPressDelete, onPressCrop)}
     />
   )
 }
