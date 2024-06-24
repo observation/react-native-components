@@ -59,22 +59,24 @@ const getLightboxFooterComponent =
         )}
         {content && <View style={styles.footerItem}>{content}</View>}
 
-        <View style={styles.buttonsContainer}>
-          {onPressDelete && (
-            <View style={styles.buttonContainer}>
-              <TouchableOpacity onPress={onPressDelete} hitSlop={hitSlop}>
-                <Icon name="trash-alt" color={theme.color.white} size={20} testID="delete-photo" />
-              </TouchableOpacity>
-            </View>
-          )}
-          {onPressCrop && (
-            <View style={styles.buttonContainer}>
-              <TouchableOpacity onPress={onPressCrop} hitSlop={hitSlop}>
-                <Icon name="crop-alt" color={theme.color.white} size={20} testID="crop-photo" />
-              </TouchableOpacity>
-            </View>
-          )}
-        </View>
+        {(onPressDelete || onPressCrop) && (
+          <View style={styles.buttonsContainer}>
+            {onPressDelete && (
+              <View style={styles.buttonContainer}>
+                <TouchableOpacity onPress={onPressDelete} hitSlop={hitSlop}>
+                  <Icon name="trash-alt" color={theme.color.white} size={20} testID="delete-photo" />
+                </TouchableOpacity>
+              </View>
+            )}
+            {onPressCrop && (
+              <View style={styles.buttonContainer}>
+                <TouchableOpacity onPress={onPressCrop} hitSlop={hitSlop}>
+                  <Icon name="crop-alt" color={theme.color.white} size={20} testID="crop-photo" />
+                </TouchableOpacity>
+              </View>
+            )}
+          </View>
+        )}
       </View>
     </SafeAreaView>
   )
