@@ -58,7 +58,6 @@ const getLightboxFooterComponent =
           </View>
         )}
         {content && <View style={styles.footerItem}>{content}</View>}
-
         {(onPressDelete || onPressCrop) && (
           <View style={styles.buttonsContainer}>
             {onPressDelete && (
