@@ -6,6 +6,7 @@ import { faAngleUp as faAngleUpLight } from '@fortawesome/pro-light-svg-icons/fa
 import { faArrowCircleRight as faArrowCircleRightLight } from '@fortawesome/pro-light-svg-icons/faArrowCircleRight'
 import { faArrowRotateLeft as faArrowRotateLeftLight } from '@fortawesome/pro-light-svg-icons/faArrowRotateLeft'
 import { faArrowsRotate as faArrowsRotateLight } from '@fortawesome/pro-light-svg-icons/faArrowsRotate'
+import { faArrowTurnRight as faArrowTurnRightLight } from '@fortawesome/pro-light-svg-icons/faArrowTurnRight'
 import { faArrowUpFromBracket as faArrowUpFromBracketLight } from '@fortawesome/pro-light-svg-icons/faArrowUpFromBracket'
 import { faArrowUpFromSquare as faArrowUpFromSquareLight } from '@fortawesome/pro-light-svg-icons/faArrowUpFromSquare'
 import { faBadge as faBadgeLight } from '@fortawesome/pro-light-svg-icons/faBadge'
@@ -52,7 +53,6 @@ import { faHexagon as faHexagonLight } from '@fortawesome/pro-light-svg-icons/fa
 import { faImages as faImagesLight } from '@fortawesome/pro-light-svg-icons/faImages'
 import { faInfoCircle as faInfoCircleLight } from '@fortawesome/pro-light-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageLight } from '@fortawesome/pro-light-svg-icons/faLanguage'
-import { faLevelDown as faLevelDownLight } from '@fortawesome/pro-light-svg-icons/faLevelDown'
 import { faLocationCheck as faLocationCheckLight } from '@fortawesome/pro-light-svg-icons/faLocationCheck'
 import { faLocationCrosshairs as faLocationCrosshairsLight } from '@fortawesome/pro-light-svg-icons/faLocationCrosshairs'
 import { faMapMarkerAlt as faMapMarkerAltLight } from '@fortawesome/pro-light-svg-icons/faMapMarkerAlt'
@@ -74,7 +74,6 @@ import { faShareNodes as faShareNodesLight } from '@fortawesome/pro-light-svg-ic
 import { faShield as faShieldLight } from '@fortawesome/pro-light-svg-icons/faShield'
 import { faShieldCheck as faShieldCheckLight } from '@fortawesome/pro-light-svg-icons/faShieldCheck'
 import { faSlidersH as faSlidersHLight } from '@fortawesome/pro-light-svg-icons/faSlidersH'
-import { faSparkles as faSparklesLight } from '@fortawesome/pro-light-svg-icons/faSparkles'
 import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSquare'
 import { faStars as faStarsLight } from '@fortawesome/pro-light-svg-icons/faStars'
 import { faSwatchbook as faSwatchbookLight } from '@fortawesome/pro-light-svg-icons/faSwatchbook'
@@ -100,6 +99,7 @@ import { faAngleUp as faAngleUpSolid } from '@fortawesome/pro-solid-svg-icons/fa
 import { faArrowCircleRight as faArrowCircleRightSolid } from '@fortawesome/pro-solid-svg-icons/faArrowCircleRight'
 import { faArrowRotateLeft as faArrowRotateLeftSolid } from '@fortawesome/pro-solid-svg-icons/faArrowRotateLeft'
 import { faArrowsRotate as faArrowsRotateSolid } from '@fortawesome/pro-solid-svg-icons/faArrowsRotate'
+import { faArrowTurnRight as faArrowTurnRightSolid } from '@fortawesome/pro-solid-svg-icons/faArrowTurnRight'
 import { faArrowUpFromBracket as faArrowUpFromBracketSolid } from '@fortawesome/pro-solid-svg-icons/faArrowUpFromBracket'
 import { faArrowUpFromSquare as faArrowUpFromSquareSolid } from '@fortawesome/pro-solid-svg-icons/faArrowUpFromSquare'
 import { faBadge as faBadgeSolid } from '@fortawesome/pro-solid-svg-icons/faBadge'
@@ -146,7 +146,6 @@ import { faHexagon as faHexagonSolid } from '@fortawesome/pro-solid-svg-icons/fa
 import { faImages as faImagesSolid } from '@fortawesome/pro-solid-svg-icons/faImages'
 import { faInfoCircle as faInfoCircleSolid } from '@fortawesome/pro-solid-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageSolid } from '@fortawesome/pro-solid-svg-icons/faLanguage'
-import { faLevelDown as faLevelDownSolid } from '@fortawesome/pro-solid-svg-icons/faLevelDown'
 import { faLocationCheck as faLocationCheckSolid } from '@fortawesome/pro-solid-svg-icons/faLocationCheck'
 import { faLocationCrosshairs as faLocationCrosshairsSolid } from '@fortawesome/pro-solid-svg-icons/faLocationCrosshairs'
 import { faMapMarkerAlt as faMapMarkerAltSolid } from '@fortawesome/pro-solid-svg-icons/faMapMarkerAlt'
@@ -168,7 +167,6 @@ import { faShareNodes as faShareNodesSolid } from '@fortawesome/pro-solid-svg-ic
 import { faShield as faShieldSolid } from '@fortawesome/pro-solid-svg-icons/faShield'
 import { faShieldCheck as faShieldCheckSolid } from '@fortawesome/pro-solid-svg-icons/faShieldCheck'
 import { faSlidersH as faSlidersHSolid } from '@fortawesome/pro-solid-svg-icons/faSlidersH'
-import { faSparkles as faSparklesSolid } from '@fortawesome/pro-solid-svg-icons/faSparkles'
 import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSquare'
 import { faStars as faStarsSolid } from '@fortawesome/pro-solid-svg-icons/faStars'
 import { faSwatchbook as faSwatchbookSolid } from '@fortawesome/pro-solid-svg-icons/faSwatchbook'
@@ -196,6 +194,7 @@ type IconName = Extract<
   | 'angle-up'
   | 'arrow-circle-right'
   | 'arrow-rotate-left'
+  | 'arrow-turn-right'
   | 'arrow-up-from-bracket'
   | 'arrow-up-from-square'
   | 'arrows-rotate'
@@ -243,7 +242,6 @@ type IconName = Extract<
   | 'images'
   | 'info-circle'
   | 'language'
-  | 'level-down'
   | 'location-check'
   | 'location-crosshairs'
   | 'map-marker-alt'
@@ -265,7 +263,6 @@ type IconName = Extract<
   | 'shield'
   | 'shield-check'
   | 'sliders-h'
-  | 'sparkles'
   | 'square'
   | 'stars'
   | 'swatchbook'
@@ -292,6 +289,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'angle-down': { light: faAngleDownLight, solid: faAngleDownSolid },
   'angle-up': { light: faAngleUpLight, solid: faAngleUpSolid },
   'arrow-circle-right': { light: faArrowCircleRightLight, solid: faArrowCircleRightSolid },
+  'arrow-turn-right': { light: faArrowTurnRightLight, solid: faArrowTurnRightSolid },
   'arrow-up-from-bracket': { light: faArrowUpFromBracketLight, solid: faArrowUpFromBracketSolid },
   'arrow-up-from-square': { light: faArrowUpFromSquareLight, solid: faArrowUpFromSquareSolid },
   'arrows-rotate': { light: faArrowsRotateLight, solid: faArrowsRotateSolid },
@@ -340,7 +338,6 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   images: { light: faImagesLight, solid: faImagesSolid },
   'info-circle': { light: faInfoCircleLight, solid: faInfoCircleSolid },
   language: { light: faLanguageLight, solid: faLanguageSolid },
-  'level-down': { light: faLevelDownLight, solid: faLevelDownSolid },
   'location-check': { light: faLocationCheckLight, solid: faLocationCheckSolid },
   'location-crosshairs': { light: faLocationCrosshairsLight, solid: faLocationCrosshairsSolid },
   'map-marker-alt-slash': { light: faMapMarkerAltSlashLight, solid: faMapMarkerAltSlashSolid },
@@ -362,7 +359,6 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   shield: { light: faShieldLight, solid: faShieldSolid },
   'shield-check': { light: faShieldCheckLight, solid: faShieldCheckSolid },
   'sliders-h': { light: faSlidersHLight, solid: faSlidersHSolid },
-  sparkles: { light: faSparklesLight, solid: faSparklesSolid },
   square: { light: faSquareLight, solid: faSquareSolid },
   stars: { light: faStarsLight, solid: faStarsSolid },
   swatchbook: { light: faSwatchbookLight, solid: faSwatchbookSolid },

@@ -77,6 +77,15 @@ describe('Lightbox', () => {
       expect(queryByTestId('delete-photo')).not.toBeNull()
       expect(toJSON()).toMatchSnapshot()
     })
+
+    test('With a crop button', () => {
+      const { toJSON, queryByTestId } = render(
+        <Lightbox photos={photos} index={0} onClose={onClose} onCrop={() => {}} />,
+      )
+
+      expect(queryByTestId('crop-photo')).not.toBeNull()
+      expect(toJSON()).toMatchSnapshot()
+    })
   })
 
   describe('Interaction', () => {
@@ -101,6 +110,18 @@ describe('Lightbox', () => {
 
       // THEN
       expect(onDelete).toHaveBeenCalledWith(0)
+    })
+
+    test('Press crop button calls onCrop', async () => {
+      // GIVEN
+      const onCrop = jest.fn()
+      const { getByTestId } = render(<Lightbox photos={photos} index={0} onClose={onClose} onCrop={onCrop} />)
+
+      // WHEN
+      await fireEvent.press(getByTestId('crop-photo'))
+
+      // THEN
+      expect(onCrop).toHaveBeenCalledWith(0)
     })
 
     test('When swiping to the second photo and pressing the delete button, onDelete is called with the second photo', async () => {
