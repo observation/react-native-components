@@ -74,6 +74,7 @@ import { faShareNodes as faShareNodesLight } from '@fortawesome/pro-light-svg-ic
 import { faShield as faShieldLight } from '@fortawesome/pro-light-svg-icons/faShield'
 import { faShieldCheck as faShieldCheckLight } from '@fortawesome/pro-light-svg-icons/faShieldCheck'
 import { faSlidersH as faSlidersHLight } from '@fortawesome/pro-light-svg-icons/faSlidersH'
+import { faSparkles as faSparklesLight } from '@fortawesome/pro-light-svg-icons/faSparkles'
 import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSquare'
 import { faStars as faStarsLight } from '@fortawesome/pro-light-svg-icons/faStars'
 import { faSwatchbook as faSwatchbookLight } from '@fortawesome/pro-light-svg-icons/faSwatchbook'
@@ -167,6 +168,7 @@ import { faShareNodes as faShareNodesSolid } from '@fortawesome/pro-solid-svg-ic
 import { faShield as faShieldSolid } from '@fortawesome/pro-solid-svg-icons/faShield'
 import { faShieldCheck as faShieldCheckSolid } from '@fortawesome/pro-solid-svg-icons/faShieldCheck'
 import { faSlidersH as faSlidersHSolid } from '@fortawesome/pro-solid-svg-icons/faSlidersH'
+import { faSparkles as faSparklesSolid } from '@fortawesome/pro-solid-svg-icons/faSparkles'
 import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSquare'
 import { faStars as faStarsSolid } from '@fortawesome/pro-solid-svg-icons/faStars'
 import { faSwatchbook as faSwatchbookSolid } from '@fortawesome/pro-solid-svg-icons/faSwatchbook'
@@ -263,6 +265,7 @@ type IconName = Extract<
   | 'shield'
   | 'shield-check'
   | 'sliders-h'
+  | 'sparkles'
   | 'square'
   | 'stars'
   | 'swatchbook'
@@ -359,6 +362,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   shield: { light: faShieldLight, solid: faShieldSolid },
   'shield-check': { light: faShieldCheckLight, solid: faShieldCheckSolid },
   'sliders-h': { light: faSlidersHLight, solid: faSlidersHSolid },
+  sparkles: { light: faSparklesLight, solid: faSparklesSolid },
   square: { light: faSquareLight, solid: faSquareSolid },
   stars: { light: faStarsLight, solid: faStarsSolid },
   swatchbook: { light: faSwatchbookLight, solid: faSwatchbookSolid },
