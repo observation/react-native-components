@@ -54,6 +54,7 @@ import { faHexagon as faHexagonLight } from '@fortawesome/pro-light-svg-icons/fa
 import { faImages as faImagesLight } from '@fortawesome/pro-light-svg-icons/faImages'
 import { faInfoCircle as faInfoCircleLight } from '@fortawesome/pro-light-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageLight } from '@fortawesome/pro-light-svg-icons/faLanguage'
+import { faLayerGroup as faLayerGroupLight } from '@fortawesome/pro-light-svg-icons/faLayerGroup'
 import { faLocationCheck as faLocationCheckLight } from '@fortawesome/pro-light-svg-icons/faLocationCheck'
 import { faLocationCrosshairs as faLocationCrosshairsLight } from '@fortawesome/pro-light-svg-icons/faLocationCrosshairs'
 import { faMapMarkerAlt as faMapMarkerAltLight } from '@fortawesome/pro-light-svg-icons/faMapMarkerAlt'
@@ -149,6 +150,7 @@ import { faHexagon as faHexagonSolid } from '@fortawesome/pro-solid-svg-icons/fa
 import { faImages as faImagesSolid } from '@fortawesome/pro-solid-svg-icons/faImages'
 import { faInfoCircle as faInfoCircleSolid } from '@fortawesome/pro-solid-svg-icons/faInfoCircle'
 import { faLanguage as faLanguageSolid } from '@fortawesome/pro-solid-svg-icons/faLanguage'
+import { faLayerGroup as faLayerGroupSolid } from '@fortawesome/pro-solid-svg-icons/faLayerGroup'
 import { faLocationCheck as faLocationCheckSolid } from '@fortawesome/pro-solid-svg-icons/faLocationCheck'
 import { faLocationCrosshairs as faLocationCrosshairsSolid } from '@fortawesome/pro-solid-svg-icons/faLocationCrosshairs'
 import { faMapMarkerAlt as faMapMarkerAltSolid } from '@fortawesome/pro-solid-svg-icons/faMapMarkerAlt'
@@ -247,6 +249,7 @@ type IconName = Extract<
   | 'images'
   | 'info-circle'
   | 'language'
+  | 'layer-group'
   | 'location-check'
   | 'location-crosshairs'
   | 'map-marker-alt'
@@ -345,6 +348,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   images: { light: faImagesLight, solid: faImagesSolid },
   'info-circle': { light: faInfoCircleLight, solid: faInfoCircleSolid },
   language: { light: faLanguageLight, solid: faLanguageSolid },
+  'layer-group': { light: faLayerGroupLight, solid: faLayerGroupSolid },
   'location-check': { light: faLocationCheckLight, solid: faLocationCheckSolid },
   'location-crosshairs': { light: faLocationCrosshairsLight, solid: faLocationCrosshairsSolid },
   'map-marker-alt-slash': { light: faMapMarkerAltSlashLight, solid: faMapMarkerAltSlashSolid },
