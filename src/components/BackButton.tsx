@@ -1,12 +1,12 @@
 import React from 'react'
 
-import { NavigationHelpers } from '@react-navigation/native'
+import { NavigationProp, ParamListBase } from '@react-navigation/native'
 
 import IconButton from '../components/IconButton'
 import theme from '../styles/theme'
 
 type Props = {
-  navigation: NavigationHelpers<{}>
+  navigation: NavigationProp<ParamListBase>
 }
 
 const BackButton = ({ navigation }: Props) => (

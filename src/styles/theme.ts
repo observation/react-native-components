@@ -75,7 +75,7 @@ const margin = {
 
 const rounded = {
   borderRadius: 4,
-  overflow: 'hidden' as 'hidden',
+  overflow: 'hidden' as const,
 }
 
 const input = {
@@ -128,39 +128,39 @@ export default {
   rounded,
   roundedLarge: {
     borderRadius: 8,
-    overflow: 'hidden' as 'hidden',
+    overflow: 'hidden' as const,
   },
   roundedHuge: {
     borderRadius: 10,
-    overflow: 'hidden' as 'hidden',
+    overflow: 'hidden' as const,
   },
   absolute: {
-    position: 'absolute' as 'absolute',
+    position: 'absolute' as const,
     top: 0,
     bottom: 0,
     left: 0,
     right: 0,
   },
   absoluteLeft: {
-    position: 'absolute' as 'absolute',
+    position: 'absolute' as const,
     top: 0,
     bottom: 0,
     left: 0,
   },
   absoluteRight: {
-    position: 'absolute' as 'absolute',
+    position: 'absolute' as const,
     top: 0,
     bottom: 0,
     right: 0,
   },
   absoluteBottom: {
-    position: 'absolute' as 'absolute',
+    position: 'absolute' as const,
     bottom: 0,
     left: 0,
     right: 0,
   },
   absoluteTop: {
-    position: 'absolute' as 'absolute',
+    position: 'absolute' as const,
     top: 0,
     left: 0,
     right: 0,
