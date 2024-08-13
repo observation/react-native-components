@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { View } from 'react-native'
 
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore Suppress a missing type declaration error
 import { Collapse, CollapseBody, CollapseHeader } from 'accordion-collapse-react-native'
 
 import Log from '../lib/Log'
