@@ -15,9 +15,19 @@ type Props = {
   rightIcon?: JSX.Element
   description?: string
   errorMessage?: string
+  disabled?: boolean
 }
 
-const InputField = ({ containerStyle, inputProps, inputStyle, label, rightIcon, description, errorMessage }: Props) => {
+const InputField = ({
+  containerStyle,
+  inputProps,
+  inputStyle,
+  label,
+  rightIcon,
+  description,
+  errorMessage,
+  disabled = false,
+}: Props) => {
   const [isFocused, setIsFocused] = useState(false)
 
   // Set lineHeight to 0 to fix vertical alignment of the input text on iOS
@@ -27,6 +37,9 @@ const InputField = ({ containerStyle, inputProps, inputStyle, label, rightIcon, 
   const hasErrors = !!errorMessage
   const borderColor = theme.getBorderColor({ isFocused, hasErrors })
 
+  const inputContainerStyle = disabled ? { backgroundColor: theme.color.greyLight } : {}
+  const placeholderTextColor = disabled ? theme.color.greySemi : theme.color.placeholder
+
   return (
     <View style={[styles.containerStyle, containerStyle]}>
       {label && (
@@ -34,7 +47,7 @@ const InputField = ({ containerStyle, inputProps, inputStyle, label, rightIcon, 
           <Text style={styles.labelStyle}>{label}</Text>
         </View>
       )}
-      <View style={{ flexDirection: 'row' }}>
+      <View style={{ flexDirection: 'row', ...inputContainerStyle }}>
         <TextInput
           style={[{ borderColor }, styles.inputStyle, inputStyle, fixInputStyle]}
           {...inputProps}
@@ -42,7 +55,7 @@ const InputField = ({ containerStyle, inputProps, inputStyle, label, rightIcon, 
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
           underlineColorAndroid="transparent"
-          placeholderTextColor={theme.color.placeholder}
+          placeholderTextColor={placeholderTextColor}
         />
         {rightIcon && <View style={styles.rightIcon}>{rightIcon}</View>}
       </View>
