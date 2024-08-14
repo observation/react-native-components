@@ -53,6 +53,14 @@ describe('InputField', () => {
       expect(toJSON()).toMatchSnapshot()
     })
 
+    test('Disabled', async () => {
+      // GIVEN
+      const { toJSON } = render(<InputField label="The label" disabled />)
+
+      // THEN
+      expect(toJSON()).toMatchSnapshot()
+    })
+
     test('With an error message', async () => {
       // GIVEN
       const { toJSON } = render(<InputField errorMessage={'The error message'} />)
