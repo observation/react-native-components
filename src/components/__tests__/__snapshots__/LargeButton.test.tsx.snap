@@ -21,7 +21,7 @@ exports[`LargeButton Rendering, disabled, primary 1`] = `
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -97,7 +97,7 @@ exports[`LargeButton Rendering, disabled, secondary 1`] = `
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
@@ -483,7 +483,7 @@ exports[`LargeButton Rendering, secondary, danger, disabled => defaults to prima
   }
   accessible={true}
   collapsable={false}
-  focusable={true}
+  focusable={false}
   onClick={[Function]}
   onResponderGrant={[Function]}
   onResponderMove={[Function]}
