@@ -2,6 +2,7 @@ import React from 'react'
 
 import { fireEvent, render } from '@testing-library/react-native'
 
+import appTextStyle from '../../styles/text'
 import LargeButton from '../LargeButton'
 
 const onPress = jest.fn()
@@ -48,6 +49,19 @@ describe('LargeButton', () => {
   test('Rendering, with icon', () => {
     const { toJSON } = render(
       <LargeButton iconName="info-circle" title="Press me" onPress={onPress} style={{ flex: 1 }} />,
+    )
+    expect(toJSON()).toMatchSnapshot()
+  })
+
+  test('Rendering, with title style', () => {
+    const { toJSON } = render(
+      <LargeButton
+        iconName="info-circle"
+        title="Press me"
+        titleStyle={appTextStyle.subtitle}
+        onPress={onPress}
+        style={{ flex: 1 }}
+      />,
     )
     expect(toJSON()).toMatchSnapshot()
   })

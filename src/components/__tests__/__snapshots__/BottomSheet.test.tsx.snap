@@ -126,6 +126,7 @@ exports[`BottomSheet Rendering Only buttons 1`] = `
                     "lineHeight": 20,
                     "textAlignVertical": "center",
                   },
+                  undefined,
                   {
                     "color": "#FFFFFF",
                   },
@@ -313,6 +314,7 @@ exports[`BottomSheet Rendering With button 1`] = `
                     "lineHeight": 20,
                     "textAlignVertical": "center",
                   },
+                  undefined,
                   {
                     "color": "#FFFFFF",
                   },

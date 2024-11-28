@@ -64,6 +64,7 @@ exports[`LargeButton Rendering, disabled, primary 1`] = `
             "lineHeight": 20,
             "textAlignVertical": "center",
           },
+          undefined,
           {
             "color": "#FFFFFF",
           },
@@ -142,6 +143,7 @@ exports[`LargeButton Rendering, disabled, secondary 1`] = `
             "lineHeight": 20,
             "textAlignVertical": "center",
           },
+          undefined,
           {
             "color": "#E6E6E6",
           },
@@ -218,6 +220,7 @@ exports[`LargeButton Rendering, enabled, primary 1`] = `
             "lineHeight": 20,
             "textAlignVertical": "center",
           },
+          undefined,
           {
             "color": "#FFFFFF",
           },
@@ -296,6 +299,7 @@ exports[`LargeButton Rendering, enabled, secondary 1`] = `
             "lineHeight": 20,
             "textAlignVertical": "center",
           },
+          undefined,
           {
             "color": "#0066B1",
           },
@@ -372,6 +376,7 @@ exports[`LargeButton Rendering, primary, danger 1`] = `
             "lineHeight": 20,
             "textAlignVertical": "center",
           },
+          undefined,
           {
             "color": "#FFFFFF",
           },
@@ -450,6 +455,7 @@ exports[`LargeButton Rendering, secondary, danger 1`] = `
             "lineHeight": 20,
             "textAlignVertical": "center",
           },
+          undefined,
           {
             "color": "#EA554B",
           },
@@ -526,6 +532,7 @@ exports[`LargeButton Rendering, secondary, danger, disabled => defaults to prima
             "lineHeight": 20,
             "textAlignVertical": "center",
           },
+          undefined,
           {
             "color": "#FFFFFF",
           },
@@ -616,6 +623,106 @@ exports[`LargeButton Rendering, with icon 1`] = `
             "fontWeight": "bold",
             "lineHeight": 20,
             "textAlignVertical": "center",
+          },
+          undefined,
+          {
+            "color": "#FFFFFF",
+          },
+        ]
+      }
+    >
+      Press me
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`LargeButton Rendering, with title style 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#0066B1",
+      "borderRadius": 4,
+      "flex": 1,
+      "height": 32,
+      "justifyContent": "center",
+      "margin": 16,
+      "opacity": 1,
+      "overflow": "hidden",
+    }
+  }
+  testID="touchable-opacity"
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "marginHorizontal": 16,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "justifyContent": "center",
+          "paddingRight": 8,
+        }
+      }
+    >
+      <Icon
+        color="#FFFFFF"
+        name="circle-info"
+        size={16}
+        type="light"
+      />
+    </View>
+    <Text
+      style={
+        [
+          {
+            "color": "#212121",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "bold",
+            "lineHeight": 20,
+            "textAlignVertical": "center",
+          },
+          {
+            "color": "#212121",
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "bold",
+            "lineHeight": 26,
           },
           {
             "color": "#FFFFFF",
