@@ -11,6 +11,8 @@ type Props = {
   containerStyle?: StyleProp<ViewStyle>
   inputProps?: TextInputProps & RefAttributes<TextInput>
   inputStyle?: StyleProp<ViewStyle>
+  errorStyle?: StyleProp<ViewStyle>
+  descriptionStyle?: StyleProp<ViewStyle>
   label?: string
   rightIcon?: JSX.Element
   description?: string
@@ -22,6 +24,8 @@ const InputField = ({
   containerStyle,
   inputProps,
   inputStyle,
+  errorStyle,
+  descriptionStyle,
   label,
   rightIcon,
   description,
@@ -64,12 +68,14 @@ const InputField = ({
           icon={<Icon name="exclamation-triangle" size={theme.icon.size.small} color={theme.color.error} />}
           text={errorMessage}
           style={{
-            textStyle: styles.errorStyle,
+            textStyle: [styles.errorStyle, errorStyle],
             containerStyle: { marginTop: theme.margin.half },
           }}
         />
       )}
-      {description && <Text style={{ marginTop: theme.margin.half, ...styles.descriptionStyle }}>{description}</Text>}
+      {description && (
+        <Text style={[{ marginTop: theme.margin.half }, styles.descriptionStyle, descriptionStyle]}>{description}</Text>
+      )}
     </View>
   )
 }

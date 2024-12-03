@@ -182,15 +182,20 @@ exports[`InputField Rendering With a description 1`] = `
   </View>
   <Text
     style={
-      {
-        "color": "#666666",
-        "fontFamily": "Ubuntu",
-        "fontSize": 12,
-        "fontStyle": "normal",
-        "fontWeight": "normal",
-        "lineHeight": 16,
-        "marginTop": 8,
-      }
+      [
+        {
+          "marginTop": 8,
+        },
+        {
+          "color": "#666666",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 16,
+        },
+        undefined,
+      ]
     }
   >
     The description
@@ -431,14 +436,17 @@ exports[`InputField Rendering With an error message 1`] = `
           {
             "flexShrink": 1,
           },
-          {
-            "color": "#EA554B",
-            "fontFamily": "Ubuntu",
-            "fontSize": 12,
-            "fontStyle": "normal",
-            "fontWeight": "normal",
-            "lineHeight": 16,
-          },
+          [
+            {
+              "color": "#EA554B",
+              "fontFamily": "Ubuntu",
+              "fontSize": 12,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 16,
+            },
+            undefined,
+          ],
         ]
       }
     >
