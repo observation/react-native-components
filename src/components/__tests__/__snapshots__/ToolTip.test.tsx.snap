@@ -163,6 +163,7 @@ exports[`Tooltip Rendering With button 1`] = `
                     "lineHeight": 20,
                     "textAlignVertical": "center",
                   },
+                  undefined,
                   {
                     "color": "#FFFFFF",
                   },

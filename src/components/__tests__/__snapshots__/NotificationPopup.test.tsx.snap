@@ -184,6 +184,7 @@ exports[`NotificationPopup Rendering Left and right buttons 1`] = `
                         "lineHeight": 20,
                         "textAlignVertical": "center",
                       },
+                      undefined,
                       {
                         "color": "#FFFFFF",
                       },
@@ -265,6 +266,7 @@ exports[`NotificationPopup Rendering Left and right buttons 1`] = `
                         "lineHeight": 20,
                         "textAlignVertical": "center",
                       },
+                      undefined,
                       {
                         "color": "#FFFFFF",
                       },
@@ -467,6 +469,7 @@ exports[`NotificationPopup Rendering Only left button 1`] = `
                         "lineHeight": 20,
                         "textAlignVertical": "center",
                       },
+                      undefined,
                       {
                         "color": "#FFFFFF",
                       },
@@ -719,6 +722,7 @@ exports[`NotificationPopup Rendering With close button 1`] = `
                         "lineHeight": 20,
                         "textAlignVertical": "center",
                       },
+                      undefined,
                       {
                         "color": "#FFFFFF",
                       },
@@ -800,6 +804,7 @@ exports[`NotificationPopup Rendering With close button 1`] = `
                         "lineHeight": 20,
                         "textAlignVertical": "center",
                       },
+                      undefined,
                       {
                         "color": "#FFFFFF",
                       },

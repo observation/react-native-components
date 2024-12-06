@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleProp, StyleSheet, Text, TouchableOpacity, View, ViewStyle } from 'react-native'
+import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
 import { IconName } from '../lib/Icons'
@@ -11,6 +11,7 @@ import theme from '../styles/theme'
 
 type LargeButtonProps = {
   title: string
+  titleStyle?: StyleProp<TextStyle>
   onPress?: () => void
   onPressIn?: () => void
   iconName?: IconName
@@ -52,6 +53,7 @@ const LargeButton = ({
   danger,
   style,
   title,
+  titleStyle,
   iconName,
   onPress,
   onPressIn,
@@ -74,7 +76,7 @@ const LargeButton = ({
             <Icon name={iconName} size={theme.icon.size.large} color={iconColor} />
           </View>
         )}
-        <Text style={[styles.title, textStyle]}>{title}</Text>
+        <Text style={[styles.title, titleStyle, textStyle]}>{title}</Text>
       </View>
     </TouchableOpacity>
   )
