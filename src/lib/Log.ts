@@ -24,7 +24,7 @@ const Log = {
   error: (...args: unknown[]) => loggerInstance.error(...args),
 }
 
-const setLogConfiguration = (config: Omit<configLoggerType, 'levels'>) => {
+const setLogConfiguration = (config: Omit<configLoggerType<typeof consoleTransport, string>, 'levels'>) => {
   Log.debug('Log:setLogConfiguration')
 
   const newConfig = {
