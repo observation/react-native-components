@@ -30,6 +30,7 @@ import Tooltip, { TooltipProps } from './components/Tooltip'
 import WebLink from './components/WebLink'
 import ProgressBar from './data/ProgressBar'
 import useShowBlurView from './hooks/useShowBlurView'
+import BrandIcons from './lib/BrandIcons'
 import Icons, { IconName } from './lib/Icons'
 import { setLogConfiguration } from './lib/Log'
 import { openUrl } from './lib/Url'
@@ -50,6 +51,7 @@ export {
   IconText,
   IconView,
   Icons,
+  BrandIcons,
   InputField,
   LargeButton,
   Lightbox,
