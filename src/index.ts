@@ -80,4 +80,5 @@ export {
 export type { IconName, LargeButtonProps, NotificationPopupStaticProps, TooltipProps }
 
 export * from './components/Icon'
+export * from './components/BrandIcon'
 export * from './styles'
