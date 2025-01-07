@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BrandIcon Rendering Normal 1`] = `
+<Icon
+  color="#0066B1"
+  name="wikipedia-w"
+  size={16}
+  type="brand"
+/>
+`;
+
+exports[`BrandIcon Rendering With color 1`] = `
+<Icon
+  color="#EA554B"
+  name="wikipedia-w"
+  size={16}
+  type="brand"
+/>
+`;
+
+exports[`BrandIcon Rendering With size 1`] = `
+<Icon
+  color="#0066B1"
+  name="wikipedia-w"
+  size={20}
+  type="brand"
+/>
+`;

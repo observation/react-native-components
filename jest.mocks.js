@@ -10,6 +10,8 @@ const getIconType = (prefix) => {
       return 'solid'
     case 'fal':
       return 'light'
+    case 'fab':
+      return 'brand'
     default:
       throw new Error()
   }
