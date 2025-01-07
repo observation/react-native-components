@@ -3,7 +3,7 @@ import React from 'react'
 import { render } from '@testing-library/react-native'
 
 import { theme } from '../../styles'
-import BrandIcon from '../BrandIcon'
+import { BrandIcon } from '../BrandIcon'
 
 describe('BrandIcon', () => {
   describe('Rendering', () => {

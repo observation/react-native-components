@@ -11,12 +11,10 @@ type Props = {
   size?: number
 }
 
-const BrandIcon = ({ name, color, size }: Props) => {
+export const BrandIcon = ({ name, color, size }: Props) => {
   const icon = BrandIcons[name]
   const iconColor = color ?? theme.color.primary
   const iconSize = size ?? theme.icon.size.large
 
   return <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} />
 }
-
-export default BrandIcon
