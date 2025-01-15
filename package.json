@@ -1,42 +1,42 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.50.0",
+  "version": "1.51.0",
   "main": "src/index.ts",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
   "license": "MIT",
   "devDependencies": {
-    "@eslint/compat": "^1.1.1",
-    "@eslint/eslintrc": "^3.1.0",
-    "@eslint/js": "^9.11.1",
-    "@react-native/eslint-config": "0.75.3",
-    "@react-native/metro-config": "0.75.3",
-    "@react-native/typescript-config": "0.75.3",
+    "@eslint/compat": "^1.2.4",
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.17.0",
+    "@react-native/eslint-config": "0.76.5",
+    "@react-native/metro-config": "0.76.5",
+    "@react-native/typescript-config": "0.76.5",
     "@react-navigation/native": "^6.1.18",
-    "@rnx-kit/align-deps": "^3.0.1",
-    "@testing-library/react-native": "^12.7.2",
-    "@types/color": "^3.0.6",
-    "@types/jest": "^29.5.13",
-    "@types/react": "^18.3.10",
-    "eslint": "^9.11.1",
+    "@rnx-kit/align-deps": "^3.0.2",
+    "@testing-library/react-native": "^12.9.0",
+    "@types/color": "^4.2.0",
+    "@types/jest": "^29.5.14",
+    "@types/react": "^18.3.18",
+    "eslint": "^9.17.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-import": "^2.30.0",
-    "eslint-plugin-jsx-a11y": "^6.10.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-observation": "https://github.com/observation/eslint-rules.git",
     "eslint-plugin-prettier": "^5.2.1",
-    "eslint-plugin-react": "^7.37.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-native": "^4.1.0",
-    "globals": "^15.9.0",
+    "globals": "^15.14.0",
     "jest": "^29.7.0",
-    "prettier": "^3.3.3",
+    "prettier": "^3.4.2",
     "react": "18.3.1",
-    "react-native": "0.75.3",
+    "react-native": "0.76.5",
     "react-native-render-html": "^6.3.4",
     "react-test-renderer": "18.3.1",
     "ts-jest": "^29.2.5",
     "typescript": "5.0.4",
-    "typescript-eslint": "^8.8.0"
+    "typescript-eslint": "^8.18.1"
   },
   "react-native": "src/index.ts",
   "scripts": {
@@ -50,20 +50,20 @@
   "peerDependencies": {
     "@react-navigation/native": "^6.0.8",
     "react": "18.3.1",
-    "react-native": "0.75.3",
+    "react-native": "0.76.5",
     "react-native-render-html": "^6.1.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.6.0",
-    "@fortawesome/free-brands-svg-icons": "6.6.0",
-    "@fortawesome/pro-light-svg-icons": "^6.6.0",
-    "@fortawesome/pro-solid-svg-icons": "^6.6.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "6.7.2",
+    "@fortawesome/pro-light-svg-icons": "^6.7.2",
+    "@fortawesome/pro-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-native-fontawesome": "^0.3.2",
     "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing",
     "@react-native-community/blur": "^4.4.1",
     "accordion-collapse-react-native": "^1.1.1",
     "color": "^4.2.3",
-    "react-native-logs": "^5.1.0",
+    "react-native-logs": "^5.3.0",
     "react-native-scalable-image": "^1.1.0"
   },
   "packageManager": "yarn@3.6.4",
@@ -72,10 +72,10 @@
     "alignDeps": {
       "requirements": {
         "development": [
-          "react-native@0.75"
+          "react-native@0.76"
         ],
         "production": [
-          "react-native@>=0.75"
+          "react-native@>=0.76"
         ]
       },
       "capabilities": [

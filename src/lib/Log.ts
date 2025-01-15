@@ -1,4 +1,4 @@
-import { configLoggerType, consoleTransport, logger } from 'react-native-logs'
+import { configLoggerType, consoleTransport, logger, transportFunctionType } from 'react-native-logs'
 
 const baseConfig = {
   transport: consoleTransport,
@@ -24,7 +24,9 @@ const Log = {
   error: (...args: unknown[]) => loggerInstance.error(...args),
 }
 
-const setLogConfiguration = (config: Omit<configLoggerType, 'levels'>) => {
+const setLogConfiguration = (
+  config: configLoggerType<transportFunctionType<object>, 'error' | 'warn' | 'info' | 'debug' | 'trace'>,
+) => {
   Log.debug('Log:setLogConfiguration')
 
   const newConfig = {
