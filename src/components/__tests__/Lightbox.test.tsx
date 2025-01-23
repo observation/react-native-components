@@ -11,7 +11,7 @@ const photos = [
 ]
 const title = 'Grey Wagtail'
 const description = '11/26/2020 2:37 PM'
-const content = <Text>Jan de Vogelaar</Text>
+const content = () => <Text>Jan de Vogelaar</Text>
 
 let onClose: () => void
 
@@ -66,6 +66,23 @@ describe('Lightbox', () => {
         />,
       )
 
+      expect(toJSON()).toMatchSnapshot()
+    })
+
+    test('Content that is dependent on the selected image', () => {
+      const imageIndexDependentContent = (imageIndex?: number) => <Text>Karel de {imageIndex}e</Text>
+      const { toJSON, queryByText } = render(
+        <Lightbox
+          photos={photos}
+          title={title}
+          description={description}
+          content={imageIndexDependentContent}
+          index={99}
+          onClose={onClose}
+        />,
+      )
+
+      expect(queryByText('Karel de 99e')).not.toBeNull()
       expect(toJSON()).toMatchSnapshot()
     })
 
