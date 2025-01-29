@@ -92,7 +92,7 @@ type Props = {
   photos: string[]
   title?: string
   description?: string
-  content?: (currentImageIndex?: number) => JSX.Element | undefined
+  content?: (imageIndex?: number) => JSX.Element | undefined
   style?: LightboxStyle
 }
 
@@ -115,7 +115,7 @@ const Lightbox = ({ index, onClose, onDelete, onCrop, photos, title, description
       FooterComponent={getLightboxFooterComponent(
         title,
         description,
-        content ? content(currentImageIndex) : undefined,
+        content?.(currentImageIndex),
         style,
         onPressDelete,
         onPressCrop,
