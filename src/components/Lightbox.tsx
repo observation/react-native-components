@@ -39,7 +39,7 @@ const getLightboxFooterComponent =
   (
     title?: string,
     description?: string,
-    content?: React.ReactNode,
+    content?: JSX.Element,
     style?: LightboxStyle,
     onPressDelete?: () => void,
     onPressCrop?: () => void,
@@ -92,7 +92,7 @@ type Props = {
   photos: string[]
   title?: string
   description?: string
-  content?: JSX.Element
+  content?: (imageIndex?: number) => JSX.Element | undefined
   style?: LightboxStyle
 }
 
@@ -112,7 +112,14 @@ const Lightbox = ({ index, onClose, onDelete, onCrop, photos, title, description
       onImageIndexChange={setCurrentImageIndex}
       onRequestClose={onClose}
       HeaderComponent={getLightboxHeaderComponent(photos.length, onClose)}
-      FooterComponent={getLightboxFooterComponent(title, description, content, style, onPressDelete, onPressCrop)}
+      FooterComponent={getLightboxFooterComponent(
+        title,
+        description,
+        content?.(currentImageIndex),
+        style,
+        onPressDelete,
+        onPressCrop,
+      )}
     />
   )
 }
