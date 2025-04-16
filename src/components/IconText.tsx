@@ -10,7 +10,7 @@ type IconTextStyle = {
 }
 
 type Props = {
-  icon: JSX.Element
+  icon: React.ReactElement
   text: string
   style: IconTextStyle
   onPress?: () => void

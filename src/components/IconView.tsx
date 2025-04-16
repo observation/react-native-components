@@ -4,7 +4,7 @@ import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 import theme from '../styles/theme'
 
 type Props = {
-  icon?: JSX.Element
+  icon?: React.ReactElement
   lineHeight?: number
   children?: React.ReactNode
   containerStyle?: StyleProp<ViewStyle>

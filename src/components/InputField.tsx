@@ -14,7 +14,7 @@ type Props = {
   errorStyle?: StyleProp<ViewStyle>
   descriptionStyle?: StyleProp<ViewStyle>
   label?: string
-  rightIcon?: JSX.Element
+  rightIcon?: React.ReactElement
   description?: string
   errorMessage?: string
   disabled?: boolean

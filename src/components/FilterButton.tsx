@@ -4,7 +4,7 @@ import { StyleProp, StyleSheet, TouchableOpacity, ViewStyle } from 'react-native
 import theme from '../styles/theme'
 
 type Props = {
-  content: (_: { color: string }) => JSX.Element
+  content: (_: { color: string }) => React.ReactElement
   onPress?: () => void
   active?: boolean
   style?: StyleProp<ViewStyle>
