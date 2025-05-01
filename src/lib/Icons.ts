@@ -63,6 +63,7 @@ import { faMapMarkerAltSlash as faMapMarkerAltSlashLight } from '@fortawesome/pr
 import { faMars as faMarsLight } from '@fortawesome/pro-light-svg-icons/faMars'
 import { faMinus as faMinusLight } from '@fortawesome/pro-light-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneToplight } from '@fortawesome/pro-light-svg-icons/faPaperPlaneTop'
+import { faPen as faPenLight } from '@fortawesome/pro-light-svg-icons/faPen'
 import { faPenToSquare as faPenToSquareLight } from '@fortawesome/pro-light-svg-icons/faPenToSquare'
 import { faPlayCircle as faPlayCircleLight } from '@fortawesome/pro-light-svg-icons/faPlayCircle'
 import { faPlus as faPlusLight } from '@fortawesome/pro-light-svg-icons/faPlus'
@@ -160,6 +161,7 @@ import { faMapMarkerAltSlash as faMapMarkerAltSlashSolid } from '@fortawesome/pr
 import { faMars as faMarsSolid } from '@fortawesome/pro-solid-svg-icons/faMars'
 import { faMinus as faMinusSolid } from '@fortawesome/pro-solid-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneTopSolid } from '@fortawesome/pro-solid-svg-icons/faPaperPlaneTop'
+import { faPen as faPenSolid } from '@fortawesome/pro-solid-svg-icons/faPen'
 import { faPenToSquare as faPenToSquareSolid } from '@fortawesome/pro-solid-svg-icons/faPenToSquare'
 import { faPlayCircle as faPlayCircleSolid } from '@fortawesome/pro-solid-svg-icons/faPlayCircle'
 import { faPlus as faPlusSolid } from '@fortawesome/pro-solid-svg-icons/faPlus'
@@ -260,6 +262,7 @@ type IconName = Extract<
   | 'mars'
   | 'minus'
   | 'paper-plane-top'
+  | 'pen'
   | 'pen-to-square'
   | 'play-circle'
   | 'plus'
@@ -360,6 +363,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   mars: { light: faMarsLight, solid: faMarsSolid },
   minus: { light: faMinusLight, solid: faMinusSolid },
   'paper-plane-top': { light: faPaperPlaneToplight, solid: faPaperPlaneTopSolid },
+  pen: { light: faPenLight, solid: faPenSolid },
   'pen-to-square': { light: faPenToSquareLight, solid: faPenToSquareSolid },
   'play-circle': { light: faPlayCircleLight, solid: faPlayCircleSolid },
   plus: { light: faPlusLight, solid: faPlusSolid },
