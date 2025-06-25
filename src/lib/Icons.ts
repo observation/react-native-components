@@ -83,7 +83,6 @@ import { faSlidersH as faSlidersHLight } from '@fortawesome/pro-light-svg-icons/
 import { faSparkles as faSparklesLight } from '@fortawesome/pro-light-svg-icons/faSparkles'
 import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSquare'
 import { faStars as faStarsLight } from '@fortawesome/pro-light-svg-icons/faStars'
-import { faSwatchbook as faSwatchbookLight } from '@fortawesome/pro-light-svg-icons/faSwatchbook'
 import { faTally as faTallyLight } from '@fortawesome/pro-light-svg-icons/faTally'
 import { faThumbtack as faThumbtackLight } from '@fortawesome/pro-light-svg-icons/faThumbtack'
 import { faTimes as faTimesLight } from '@fortawesome/pro-light-svg-icons/faTimes'
@@ -183,7 +182,6 @@ import { faSlidersH as faSlidersHSolid } from '@fortawesome/pro-solid-svg-icons/
 import { faSparkles as faSparklesSolid } from '@fortawesome/pro-solid-svg-icons/faSparkles'
 import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSquare'
 import { faStars as faStarsSolid } from '@fortawesome/pro-solid-svg-icons/faStars'
-import { faSwatchbook as faSwatchbookSolid } from '@fortawesome/pro-solid-svg-icons/faSwatchbook'
 import { faTally as faTallySolid } from '@fortawesome/pro-solid-svg-icons/faTally'
 import { faThumbtack as faThumbtackSolid } from '@fortawesome/pro-solid-svg-icons/faThumbtack'
 import { faTimes as faTimesSolid } from '@fortawesome/pro-solid-svg-icons/faTimes'
@@ -286,7 +284,6 @@ type IconName = Extract<
   | 'sparkles'
   | 'square'
   | 'stars'
-  | 'swatchbook'
   | 'tally'
   | 'thumbtack'
   | 'times'
@@ -389,7 +386,6 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   sparkles: { light: faSparklesLight, solid: faSparklesSolid },
   square: { light: faSquareLight, solid: faSquareSolid },
   stars: { light: faStarsLight, solid: faStarsSolid },
-  swatchbook: { light: faSwatchbookLight, solid: faSwatchbookSolid },
   tally: { light: faTallyLight, solid: faTallySolid },
   times: { light: faTimesLight, solid: faTimesSolid },
   'trash-alt': { light: faTrashAltLight, solid: faTrashAltSolid },
