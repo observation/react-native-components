@@ -44,7 +44,9 @@ import { faExclamationTriangle as faExclamationTriangleLight } from '@fortawesom
 import { faExternalLink as faExternalLinkLight } from '@fortawesome/pro-light-svg-icons/faExternalLink'
 import { faEye as faEyeLight } from '@fortawesome/pro-light-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashLight } from '@fortawesome/pro-light-svg-icons/faEyeSlash'
+import { faFile as faFileLight } from '@fortawesome/pro-light-svg-icons/faFile'
 import { faFileLines as faFileLinesLight } from '@fortawesome/pro-light-svg-icons/faFileLines'
+import { faFiles as faFilesLight } from '@fortawesome/pro-light-svg-icons/faFiles'
 import { faFlag as faFlagLight } from '@fortawesome/pro-light-svg-icons/faFlag'
 import { faGlobe as faGlobeLight } from '@fortawesome/pro-light-svg-icons/faGlobe'
 import { faGlobeEurope as faGlobeEuropeLight } from '@fortawesome/pro-light-svg-icons/faGlobeEurope'
@@ -142,7 +144,9 @@ import { faExclamationTriangle as faExclamationTriangleSolid } from '@fortawesom
 import { faExternalLink as faExternalLinkSolid } from '@fortawesome/pro-solid-svg-icons/faExternalLink'
 import { faEye as faEyeSolid } from '@fortawesome/pro-solid-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashSolid } from '@fortawesome/pro-solid-svg-icons/faEyeSlash'
+import { faFile as faFileSolid } from '@fortawesome/pro-solid-svg-icons/faFile'
 import { faFileLines as faFileLinesSolid } from '@fortawesome/pro-solid-svg-icons/faFileLines'
+import { faFiles as faFilesSolid } from '@fortawesome/pro-solid-svg-icons/faFiles'
 import { faFlag as faFlagSolid } from '@fortawesome/pro-solid-svg-icons/faFlag'
 import { faGlobe as faGlobeSolid } from '@fortawesome/pro-solid-svg-icons/faGlobe'
 import { faGlobeEurope as faGlobeEuropeSolid } from '@fortawesome/pro-solid-svg-icons/faGlobeEurope'
@@ -243,7 +247,9 @@ type IconName = Extract<
   | 'external-link'
   | 'eye'
   | 'eye-slash'
+  | 'file'
   | 'file-lines'
+  | 'files'
   | 'flag'
   | 'globe'
   | 'globe-europe'
@@ -344,7 +350,9 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'external-link': { light: faExternalLinkLight, solid: faExternalLinkSolid },
   'eye-slash': { light: faEyeSlashLight, solid: faEyeSlashSolid },
   eye: { light: faEyeLight, solid: faEyeSolid },
+  file: { light: faFileLight, solid: faFileSolid },
   'file-lines': { light: faFileLinesLight, solid: faFileLinesSolid },
+  files: { light: faFilesLight, solid: faFilesSolid },
   flag: { light: faFlagLight, solid: faFlagSolid },
   globe: { light: faGlobeLight, solid: faGlobeSolid },
   'globe-europe': { light: faGlobeEuropeLight, solid: faGlobeEuropeSolid },
