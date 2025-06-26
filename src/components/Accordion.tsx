@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { JSX, useState } from 'react'
 import { View } from 'react-native'
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment

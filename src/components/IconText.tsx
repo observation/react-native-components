@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { JSX } from 'react'
 import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
 import theme from '../styles/theme'

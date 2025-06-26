@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { JSX, useState } from 'react'
 import { SafeAreaView, StyleSheet, Text, TextStyle, TouchableOpacity, View } from 'react-native'
 
 import ImageView from '@observation.org/react-native-image-viewing'
