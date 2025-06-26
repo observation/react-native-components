@@ -18,11 +18,12 @@ export type IconProps = IconAppearanceProps & {
   name: IconName
 }
 
-export const Icon = ({ name, color, size, testID, style }: IconProps): JSX.Element => {
+export const Icon = ({ name, color, size, testID, style }: IconProps): React.ReactElement => {
+  const FontAwesomeIconTypeErased = FontAwesomeIcon as unknown as any
   const iconStyle = style ?? 'light'
   const icon = iconStyle === 'light' ? Icons[name].light : Icons[name].solid
   const iconColor = color ?? theme.color.primary
   const iconSize = size ?? theme.icon.size.large
 
-  return <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} testID={testID} />
+  return <FontAwesomeIconTypeErased icon={icon} color={iconColor} size={iconSize} testID={testID} />
 }

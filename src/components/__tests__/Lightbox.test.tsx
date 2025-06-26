@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from 'react-native'
 
-import { fireEvent, render } from '@testing-library/react-native'
+import { act, fireEvent, render } from '@testing-library/react-native'
 
 import Lightbox from '../Lightbox'
 
@@ -149,7 +149,7 @@ describe('Lightbox', () => {
       const { getByTestId } = render(<Lightbox photos={photos} index={0} onClose={onClose} onDelete={onDelete} />)
 
       // WHEN
-      mockOnImageIndexChange(1)
+      act(() => mockOnImageIndexChange(1))
       await fireEvent.press(getByTestId('delete-photo'))
 
       // THEN

@@ -39,7 +39,7 @@ const getLightboxFooterComponent =
   (
     title?: string,
     description?: string,
-    content?: JSX.Element,
+    content?: React.ReactElement,
     style?: LightboxStyle,
     onPressDelete?: () => void,
     onPressCrop?: () => void,
@@ -92,7 +92,7 @@ type Props = {
   photos: string[]
   title?: string
   description?: string
-  content?: (imageIndex?: number) => JSX.Element | undefined
+  content?: (imageIndex?: number) => React.ReactElement | undefined
   style?: LightboxStyle
 }
 
@@ -103,8 +103,10 @@ const Lightbox = ({ index, onClose, onDelete, onCrop, photos, title, description
   const onPressDelete = onDelete ? () => onDelete(currentImageIndex ?? initialImageIndex) : undefined
   const onPressCrop = onCrop ? () => onCrop(currentImageIndex ?? initialImageIndex) : undefined
 
+  const ImageViewTypeErased = ImageView as unknown as any
+
   return (
-    <ImageView
+    <ImageViewTypeErased
       images={photos.map((photo) => ({ uri: photo }))}
       imageIndex={initialImageIndex}
       visible={index !== undefined}

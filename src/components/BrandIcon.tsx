@@ -15,6 +15,7 @@ export const BrandIcon = ({ name, color, size }: Props) => {
   const icon = BrandIcons[name]
   const iconColor = color ?? theme.color.primary
   const iconSize = size ?? theme.icon.size.large
+  const FontAwesomeIconTypeErased = FontAwesomeIcon as unknown as any
 
-  return <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} />
+  return <FontAwesomeIconTypeErased icon={icon} color={iconColor} size={iconSize} />
 }

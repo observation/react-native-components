@@ -16,9 +16,9 @@ type Props<T extends Item> = {
   list: T[]
   header: (item: T, index: number, isActive: boolean) => void
   footer: (item: T, index: number, isActive: boolean) => void
-  body: (item: T) => JSX.Element
+  body: (item: T) => React.ReactElement
   onOpen: (index: number) => void
-  ListEmptyComponent?: () => JSX.Element
+  ListEmptyComponent?: () => React.ReactElement
 }
 
 const Accordion = <T extends Item>({ list, header, footer, body, onOpen, ListEmptyComponent }: Props<T>) => {

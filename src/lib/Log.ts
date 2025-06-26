@@ -11,6 +11,7 @@ const baseConfig = {
   },
   printLevel: false,
   printDate: true,
+  dateFormat: 'iso',
   severity: 'debug',
 }
 
