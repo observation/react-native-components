@@ -44,7 +44,9 @@ import { faExclamationTriangle as faExclamationTriangleLight } from '@fortawesom
 import { faExternalLink as faExternalLinkLight } from '@fortawesome/pro-light-svg-icons/faExternalLink'
 import { faEye as faEyeLight } from '@fortawesome/pro-light-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashLight } from '@fortawesome/pro-light-svg-icons/faEyeSlash'
+import { faFile as faFileLight } from '@fortawesome/pro-light-svg-icons/faFile'
 import { faFileLines as faFileLinesLight } from '@fortawesome/pro-light-svg-icons/faFileLines'
+import { faFiles as faFilesLight } from '@fortawesome/pro-light-svg-icons/faFiles'
 import { faFlag as faFlagLight } from '@fortawesome/pro-light-svg-icons/faFlag'
 import { faGlobe as faGlobeLight } from '@fortawesome/pro-light-svg-icons/faGlobe'
 import { faGlobeEurope as faGlobeEuropeLight } from '@fortawesome/pro-light-svg-icons/faGlobeEurope'
@@ -63,7 +65,6 @@ import { faMapMarkerAltSlash as faMapMarkerAltSlashLight } from '@fortawesome/pr
 import { faMars as faMarsLight } from '@fortawesome/pro-light-svg-icons/faMars'
 import { faMinus as faMinusLight } from '@fortawesome/pro-light-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneToplight } from '@fortawesome/pro-light-svg-icons/faPaperPlaneTop'
-import { faPen as faPenLight } from '@fortawesome/pro-light-svg-icons/faPen'
 import { faPenToSquare as faPenToSquareLight } from '@fortawesome/pro-light-svg-icons/faPenToSquare'
 import { faPlayCircle as faPlayCircleLight } from '@fortawesome/pro-light-svg-icons/faPlayCircle'
 import { faPlus as faPlusLight } from '@fortawesome/pro-light-svg-icons/faPlus'
@@ -81,7 +82,6 @@ import { faSlidersH as faSlidersHLight } from '@fortawesome/pro-light-svg-icons/
 import { faSparkles as faSparklesLight } from '@fortawesome/pro-light-svg-icons/faSparkles'
 import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSquare'
 import { faStars as faStarsLight } from '@fortawesome/pro-light-svg-icons/faStars'
-import { faSwatchbook as faSwatchbookLight } from '@fortawesome/pro-light-svg-icons/faSwatchbook'
 import { faTally as faTallyLight } from '@fortawesome/pro-light-svg-icons/faTally'
 import { faThumbtack as faThumbtackLight } from '@fortawesome/pro-light-svg-icons/faThumbtack'
 import { faTimes as faTimesLight } from '@fortawesome/pro-light-svg-icons/faTimes'
@@ -142,7 +142,9 @@ import { faExclamationTriangle as faExclamationTriangleSolid } from '@fortawesom
 import { faExternalLink as faExternalLinkSolid } from '@fortawesome/pro-solid-svg-icons/faExternalLink'
 import { faEye as faEyeSolid } from '@fortawesome/pro-solid-svg-icons/faEye'
 import { faEyeSlash as faEyeSlashSolid } from '@fortawesome/pro-solid-svg-icons/faEyeSlash'
+import { faFile as faFileSolid } from '@fortawesome/pro-solid-svg-icons/faFile'
 import { faFileLines as faFileLinesSolid } from '@fortawesome/pro-solid-svg-icons/faFileLines'
+import { faFiles as faFilesSolid } from '@fortawesome/pro-solid-svg-icons/faFiles'
 import { faFlag as faFlagSolid } from '@fortawesome/pro-solid-svg-icons/faFlag'
 import { faGlobe as faGlobeSolid } from '@fortawesome/pro-solid-svg-icons/faGlobe'
 import { faGlobeEurope as faGlobeEuropeSolid } from '@fortawesome/pro-solid-svg-icons/faGlobeEurope'
@@ -161,7 +163,6 @@ import { faMapMarkerAltSlash as faMapMarkerAltSlashSolid } from '@fortawesome/pr
 import { faMars as faMarsSolid } from '@fortawesome/pro-solid-svg-icons/faMars'
 import { faMinus as faMinusSolid } from '@fortawesome/pro-solid-svg-icons/faMinus'
 import { faPaperPlaneTop as faPaperPlaneTopSolid } from '@fortawesome/pro-solid-svg-icons/faPaperPlaneTop'
-import { faPen as faPenSolid } from '@fortawesome/pro-solid-svg-icons/faPen'
 import { faPenToSquare as faPenToSquareSolid } from '@fortawesome/pro-solid-svg-icons/faPenToSquare'
 import { faPlayCircle as faPlayCircleSolid } from '@fortawesome/pro-solid-svg-icons/faPlayCircle'
 import { faPlus as faPlusSolid } from '@fortawesome/pro-solid-svg-icons/faPlus'
@@ -179,7 +180,6 @@ import { faSlidersH as faSlidersHSolid } from '@fortawesome/pro-solid-svg-icons/
 import { faSparkles as faSparklesSolid } from '@fortawesome/pro-solid-svg-icons/faSparkles'
 import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSquare'
 import { faStars as faStarsSolid } from '@fortawesome/pro-solid-svg-icons/faStars'
-import { faSwatchbook as faSwatchbookSolid } from '@fortawesome/pro-solid-svg-icons/faSwatchbook'
 import { faTally as faTallySolid } from '@fortawesome/pro-solid-svg-icons/faTally'
 import { faThumbtack as faThumbtackSolid } from '@fortawesome/pro-solid-svg-icons/faThumbtack'
 import { faTimes as faTimesSolid } from '@fortawesome/pro-solid-svg-icons/faTimes'
@@ -243,7 +243,9 @@ type IconName = Extract<
   | 'external-link'
   | 'eye'
   | 'eye-slash'
+  | 'file'
   | 'file-lines'
+  | 'files'
   | 'flag'
   | 'globe'
   | 'globe-europe'
@@ -262,7 +264,6 @@ type IconName = Extract<
   | 'mars'
   | 'minus'
   | 'paper-plane-top'
-  | 'pen'
   | 'pen-to-square'
   | 'play-circle'
   | 'plus'
@@ -280,7 +281,6 @@ type IconName = Extract<
   | 'sparkles'
   | 'square'
   | 'stars'
-  | 'swatchbook'
   | 'tally'
   | 'thumbtack'
   | 'times'
@@ -344,7 +344,9 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'external-link': { light: faExternalLinkLight, solid: faExternalLinkSolid },
   'eye-slash': { light: faEyeSlashLight, solid: faEyeSlashSolid },
   eye: { light: faEyeLight, solid: faEyeSolid },
+  file: { light: faFileLight, solid: faFileSolid },
   'file-lines': { light: faFileLinesLight, solid: faFileLinesSolid },
+  files: { light: faFilesLight, solid: faFilesSolid },
   flag: { light: faFlagLight, solid: faFlagSolid },
   globe: { light: faGlobeLight, solid: faGlobeSolid },
   'globe-europe': { light: faGlobeEuropeLight, solid: faGlobeEuropeSolid },
@@ -363,7 +365,6 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   mars: { light: faMarsLight, solid: faMarsSolid },
   minus: { light: faMinusLight, solid: faMinusSolid },
   'paper-plane-top': { light: faPaperPlaneToplight, solid: faPaperPlaneTopSolid },
-  pen: { light: faPenLight, solid: faPenSolid },
   'pen-to-square': { light: faPenToSquareLight, solid: faPenToSquareSolid },
   'play-circle': { light: faPlayCircleLight, solid: faPlayCircleSolid },
   plus: { light: faPlusLight, solid: faPlusSolid },
@@ -381,7 +382,6 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   sparkles: { light: faSparklesLight, solid: faSparklesSolid },
   square: { light: faSquareLight, solid: faSquareSolid },
   stars: { light: faStarsLight, solid: faStarsSolid },
-  swatchbook: { light: faSwatchbookLight, solid: faSwatchbookSolid },
   tally: { light: faTallyLight, solid: faTallySolid },
   times: { light: faTimesLight, solid: faTimesSolid },
   'trash-alt': { light: faTrashAltLight, solid: faTrashAltSolid },
