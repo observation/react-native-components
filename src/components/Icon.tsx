@@ -1,4 +1,4 @@
-import React, { JSX } from 'react'
+import React from 'react'
 
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 

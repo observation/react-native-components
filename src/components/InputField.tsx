@@ -1,4 +1,4 @@
-import React, { JSX, RefAttributes, useState } from 'react'
+import React, { RefAttributes, useState } from 'react'
 import { Platform, StyleProp, StyleSheet, Text, TextInput, TextInputProps, View, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
