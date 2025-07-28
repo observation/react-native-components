@@ -28,6 +28,7 @@ import { faChevronRight as faChevronRightLight } from '@fortawesome/pro-light-sv
 import { faCircle as faCircleLight } from '@fortawesome/pro-light-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckLight } from '@fortawesome/pro-light-svg-icons/faCircleCheck'
 import { faCircleExclamation as faCircleExclamationLight } from '@fortawesome/pro-light-svg-icons/faCircleExclamation'
+import { faCirclePause as faCirclePauseLight } from '@fortawesome/pro-light-svg-icons/faCirclePause'
 import { faCirclePlus as faCirclePlusLight } from '@fortawesome/pro-light-svg-icons/faCirclePlus'
 import { faCircleStop as faCircleStopLight } from '@fortawesome/pro-light-svg-icons/faCircleStop'
 import { faCircleUser as faCircleUserLight } from '@fortawesome/pro-light-svg-icons/faCircleUser'
@@ -126,6 +127,7 @@ import { faChevronRight as faChevronRightSolid } from '@fortawesome/pro-solid-sv
 import { faCircle as faCircleSolid } from '@fortawesome/pro-solid-svg-icons/faCircle'
 import { faCircleCheck as faCircleCheckSolid } from '@fortawesome/pro-solid-svg-icons/faCircleCheck'
 import { faCircleExclamation as faCircleExclamationSolid } from '@fortawesome/pro-solid-svg-icons/faCircleExclamation'
+import { faCirclePause as faCirclePauseSolid } from '@fortawesome/pro-solid-svg-icons/faCirclePause'
 import { faCirclePlus as faCirclePlusSolid } from '@fortawesome/pro-solid-svg-icons/faCirclePlus'
 import { faCircleStop as faCircleStopSolid } from '@fortawesome/pro-solid-svg-icons/faCircleStop'
 import { faCircleUser as faCircleUserSolid } from '@fortawesome/pro-solid-svg-icons/faCircleUser'
@@ -227,6 +229,7 @@ type IconName = Extract<
   | 'circle'
   | 'circle-check'
   | 'circle-exclamation'
+  | 'circle-pause'
   | 'circle-plus'
   | 'circle-stop'
   | 'circle-user'
@@ -327,6 +330,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'chevron-right': { light: faChevronRightLight, solid: faChevronRightSolid },
   'circle-check': { light: faCircleCheckLight, solid: faCircleCheckSolid },
   'circle-exclamation': { light: faCircleExclamationLight, solid: faCircleExclamationSolid },
+  'circle-pause': { light: faCirclePauseLight, solid: faCirclePauseSolid },
   'circle-plus': { light: faCirclePlusLight, solid: faCirclePlusSolid },
   'circle-stop': { light: faCircleStopLight, solid: faCircleStopSolid },
   'circle-user': { light: faCircleUserLight, solid: faCircleUserSolid },
