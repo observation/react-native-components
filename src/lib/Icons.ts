@@ -4,8 +4,9 @@ import { faAnalytics as faAnalyticsLight } from '@fortawesome/pro-light-svg-icon
 import { faAngleDown as faAngleDownLight } from '@fortawesome/pro-light-svg-icons/faAngleDown'
 import { faAngleUp as faAngleUpLight } from '@fortawesome/pro-light-svg-icons/faAngleUp'
 import { faArrowCircleRight as faArrowCircleRightLight } from '@fortawesome/pro-light-svg-icons/faArrowCircleRight'
-import { faArrowRight as faArrowRightlight } from '@fortawesome/pro-light-svg-icons/faArrowRight'
+import { faArrowRight as faArrowRightLight } from '@fortawesome/pro-light-svg-icons/faArrowRight'
 import { faArrowRotateLeft as faArrowRotateLeftLight } from '@fortawesome/pro-light-svg-icons/faArrowRotateLeft'
+import { faArrowsFromDottedLine as faArrowsFromDottedLineLight } from '@fortawesome/pro-light-svg-icons/faArrowsFromDottedLine'
 import { faArrowsRotate as faArrowsRotateLight } from '@fortawesome/pro-light-svg-icons/faArrowsRotate'
 import { faArrowTurnRight as faArrowTurnRightLight } from '@fortawesome/pro-light-svg-icons/faArrowTurnRight'
 import { faArrowUpFromBracket as faArrowUpFromBracketLight } from '@fortawesome/pro-light-svg-icons/faArrowUpFromBracket'
@@ -105,6 +106,7 @@ import { faAngleUp as faAngleUpSolid } from '@fortawesome/pro-solid-svg-icons/fa
 import { faArrowCircleRight as faArrowCircleRightSolid } from '@fortawesome/pro-solid-svg-icons/faArrowCircleRight'
 import { faArrowRight as faArrowRightSolid } from '@fortawesome/pro-solid-svg-icons/faArrowRight'
 import { faArrowRotateLeft as faArrowRotateLeftSolid } from '@fortawesome/pro-solid-svg-icons/faArrowRotateLeft'
+import { faArrowsFromDottedLine as faArrowsFromDottedLineSolid } from '@fortawesome/pro-solid-svg-icons/faArrowsFromDottedLine'
 import { faArrowsRotate as faArrowsRotateSolid } from '@fortawesome/pro-solid-svg-icons/faArrowsRotate'
 import { faArrowTurnRight as faArrowTurnRightSolid } from '@fortawesome/pro-solid-svg-icons/faArrowTurnRight'
 import { faArrowUpFromBracket as faArrowUpFromBracketSolid } from '@fortawesome/pro-solid-svg-icons/faArrowUpFromBracket'
@@ -210,6 +212,7 @@ type IconName = Extract<
   | 'arrow-turn-right'
   | 'arrow-up-from-bracket'
   | 'arrow-up-from-square'
+  | 'arrows-from-dotted-line'
   | 'arrows-rotate'
   | 'badge'
   | 'badge-check'
@@ -307,10 +310,11 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'angle-down': { light: faAngleDownLight, solid: faAngleDownSolid },
   'angle-up': { light: faAngleUpLight, solid: faAngleUpSolid },
   'arrow-circle-right': { light: faArrowCircleRightLight, solid: faArrowCircleRightSolid },
-  'arrow-right': { light: faArrowRightlight, solid: faArrowRightSolid },
+  'arrow-right': { light: faArrowRightLight, solid: faArrowRightSolid },
   'arrow-turn-right': { light: faArrowTurnRightLight, solid: faArrowTurnRightSolid },
   'arrow-up-from-bracket': { light: faArrowUpFromBracketLight, solid: faArrowUpFromBracketSolid },
   'arrow-up-from-square': { light: faArrowUpFromSquareLight, solid: faArrowUpFromSquareSolid },
+  'arrows-from-dotted-line': { light: faArrowsFromDottedLineLight, solid: faArrowsFromDottedLineSolid },
   'arrows-rotate': { light: faArrowsRotateLight, solid: faArrowsRotateSolid },
   'arrow-rotate-left': { light: faArrowRotateLeftLight, solid: faArrowRotateLeftSolid },
   'badge-check': { light: faBadgeCheckLight, solid: faBadgeCheckSolid },
