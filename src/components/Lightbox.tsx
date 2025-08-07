@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { SafeAreaView, StyleSheet, Text, TextStyle, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, TextStyle, TouchableOpacity, View } from 'react-native'
 
 import ImageView from '@observation.org/react-native-image-viewing'
 import Color from 'color'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 import { Icon } from './Icon'
 import PageIndicator from './PageIndicator'
