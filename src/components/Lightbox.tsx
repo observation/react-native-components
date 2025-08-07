@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { SafeAreaView, StyleSheet, Text, TextStyle, TouchableOpacity, View } from 'react-native'
+import { StyleSheet, Text, TextStyle, TouchableOpacity, View } from 'react-native'
 
 import ImageView from '@observation.org/react-native-image-viewing'
 import Color from 'color'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 import { Icon } from './Icon'
 import PageIndicator from './PageIndicator'
@@ -15,7 +16,7 @@ const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
 const getLightboxHeaderComponent =
   (numberOfPages: number, onClose: () => void) =>
   ({ imageIndex }: { imageIndex: number }) => (
-    <SafeAreaView style={styles.lightboxHeaderContainer}>
+    <View style={styles.lightboxHeaderContainer}>
       <View style={styles.lightboxHeader}>
         <View style={{ flex: 1 }} />
         <View style={styles.pageIndicator}>
@@ -32,7 +33,7 @@ const getLightboxHeaderComponent =
           </TouchableOpacity>
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   )
 
 const getLightboxFooterComponent =
@@ -45,7 +46,7 @@ const getLightboxFooterComponent =
     onPressCrop?: () => void,
   ) =>
   () => (
-    <SafeAreaView style={styles.lightboxFooterContainer}>
+    <View style={styles.lightboxFooterContainer}>
       <View style={styles.lightboxFooter}>
         {title && (
           <View style={styles.footerItem}>
@@ -77,7 +78,7 @@ const getLightboxFooterComponent =
           </View>
         )}
       </View>
-    </SafeAreaView>
+    </View>
   )
 
 type LightboxStyle = {
@@ -106,23 +107,25 @@ const Lightbox = ({ index, onClose, onDelete, onCrop, photos, title, description
   const ImageViewTypeErased = ImageView as unknown as any
 
   return (
-    <ImageViewTypeErased
-      images={photos.map((photo) => ({ uri: photo }))}
-      imageIndex={initialImageIndex}
-      visible={index !== undefined}
-      swipeToCloseEnabled={false}
-      onImageIndexChange={setCurrentImageIndex}
-      onRequestClose={onClose}
-      HeaderComponent={getLightboxHeaderComponent(photos.length, onClose)}
-      FooterComponent={getLightboxFooterComponent(
-        title,
-        description,
-        content?.(currentImageIndex),
-        style,
-        onPressDelete,
-        onPressCrop,
-      )}
-    />
+    <SafeAreaView>
+      <ImageViewTypeErased
+        images={photos.map((photo) => ({ uri: photo }))}
+        imageIndex={initialImageIndex}
+        visible={index !== undefined}
+        swipeToCloseEnabled={false}
+        onImageIndexChange={setCurrentImageIndex}
+        onRequestClose={onClose}
+        HeaderComponent={getLightboxHeaderComponent(photos.length, onClose)}
+        FooterComponent={getLightboxFooterComponent(
+          title,
+          description,
+          content?.(currentImageIndex),
+          style,
+          onPressDelete,
+          onPressCrop,
+        )}
+      />
+    </SafeAreaView>
   )
 }
 

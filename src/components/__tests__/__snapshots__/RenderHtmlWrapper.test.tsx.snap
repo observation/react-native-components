@@ -71,6 +71,16 @@ exports[`RenderHtmlWrapper Rendering Custom image renderer Normal render 1`] = `
         }
         testID="photo"
       >
+        <RNCSafeAreaView
+          edges={
+            {
+              "bottom": "additive",
+              "left": "additive",
+              "right": "additive",
+              "top": "additive",
+            }
+          }
+        />
         <View
           style={
             {
