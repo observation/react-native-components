@@ -2433,6 +2433,7 @@ __metadata:
     react-native: 0.79.1
     react-native-logs: ^5.3.0
     react-native-render-html: ^6.3.4
+    react-native-safe-area-context: ^5.6.0
     react-native-scalable-image: ^1.1.0
     react-test-renderer: 19.0.0
     ts-jest: ^29.2.5
@@ -2443,6 +2444,7 @@ __metadata:
     react: 19.0.0
     react-native: 0.79.1
     react-native-render-html: ^6.1.0
+    react-native-safe-area-context: ^5.6.0
   languageName: unknown
   linkType: soft
 
@@ -9395,6 +9397,16 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 9fd0c915664d4d25d23f48b4b33101385f2e497c643664c09b457eb091f90cd1d60f9c2c4bfad1a55403c8037d52de5dcbdebe0b1ebc9e4883d8a3099a23633b
+  languageName: node
+  linkType: hard
+
+"react-native-safe-area-context@npm:^5.6.0":
+  version: 5.6.0
+  resolution: "react-native-safe-area-context@npm:5.6.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 23f382a6504dc6ff1064fe45af53207014a27d3312eeaa5e0fd92281c425cb518d7e5e7bc79cf29b0f8e685a30931df93800dfe98e5d81bd768499aa5e737ab0
   languageName: node
   linkType: hard
 
