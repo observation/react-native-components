@@ -96,15 +96,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
             }
           }
         >
-          <RNCSafeAreaView
-            edges={
-              {
-                "bottom": "additive",
-                "left": "additive",
-                "right": "additive",
-                "top": "additive",
-              }
-            }
+          <View
             style={
               {
                 "backgroundColor": "#00000077",
@@ -211,7 +203,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
                 </View>
               </View>
             </View>
-          </RNCSafeAreaView>
+          </View>
         </View>
         <RCTScrollView
           data={
@@ -352,15 +344,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
             }
           }
         >
-          <RNCSafeAreaView
-            edges={
-              {
-                "bottom": "additive",
-                "left": "additive",
-                "right": "additive",
-                "top": "additive",
-              }
-            }
+          <View
             style={
               {
                 "backgroundColor": "#00000077",
@@ -402,7 +386,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
                 </Text>
               </View>
             </View>
-          </RNCSafeAreaView>
+          </View>
         </View>
       </View>
     </Modal>

@@ -3,7 +3,6 @@ import { StyleSheet, Text, TextStyle, TouchableOpacity, View } from 'react-nativ
 
 import ImageView from '@observation.org/react-native-image-viewing'
 import Color from 'color'
-import { SafeAreaView } from 'react-native-safe-area-context'
 
 import { Icon } from './Icon'
 import PageIndicator from './PageIndicator'
@@ -16,7 +15,7 @@ const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
 const getLightboxHeaderComponent =
   (numberOfPages: number, onClose: () => void) =>
   ({ imageIndex }: { imageIndex: number }) => (
-    <SafeAreaView style={styles.lightboxHeaderContainer}>
+    <View style={styles.lightboxHeaderContainer}>
       <View style={styles.lightboxHeader}>
         <View style={{ flex: 1 }} />
         <View style={styles.pageIndicator}>
@@ -33,7 +32,7 @@ const getLightboxHeaderComponent =
           </TouchableOpacity>
         </View>
       </View>
-    </SafeAreaView>
+    </View>
   )
 
 const getLightboxFooterComponent =
@@ -46,7 +45,7 @@ const getLightboxFooterComponent =
     onPressCrop?: () => void,
   ) =>
   () => (
-    <SafeAreaView style={styles.lightboxFooterContainer}>
+    <View style={styles.lightboxFooterContainer}>
       <View style={styles.lightboxFooter}>
         {title && (
           <View style={styles.footerItem}>
@@ -78,7 +77,7 @@ const getLightboxFooterComponent =
           </View>
         )}
       </View>
-    </SafeAreaView>
+    </View>
   )
 
 type LightboxStyle = {

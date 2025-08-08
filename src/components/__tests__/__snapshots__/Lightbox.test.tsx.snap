@@ -46,15 +46,7 @@ exports[`Lightbox Rendering Content that is dependent on the selected image 1`] 
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -206,7 +198,7 @@ exports[`Lightbox Rendering Content that is dependent on the selected image 1`] 
             </View>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
     <RCTScrollView
       data={
@@ -357,15 +349,7 @@ exports[`Lightbox Rendering Content that is dependent on the selected image 1`] 
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -445,7 +429,7 @@ exports[`Lightbox Rendering Content that is dependent on the selected image 1`] 
             </Text>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
   </View>
 </Modal>
@@ -497,15 +481,7 @@ exports[`Lightbox Rendering First photo 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -644,7 +620,7 @@ exports[`Lightbox Rendering First photo 1`] = `
             </View>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
     <RCTScrollView
       data={
@@ -795,15 +771,7 @@ exports[`Lightbox Rendering First photo 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -870,7 +838,7 @@ exports[`Lightbox Rendering First photo 1`] = `
             </Text>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
   </View>
 </Modal>
@@ -922,15 +890,7 @@ exports[`Lightbox Rendering Only a photo 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -1069,7 +1029,7 @@ exports[`Lightbox Rendering Only a photo 1`] = `
             </View>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
     <RCTScrollView
       data={
@@ -1220,15 +1180,7 @@ exports[`Lightbox Rendering Only a photo 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -1247,7 +1199,7 @@ exports[`Lightbox Rendering Only a photo 1`] = `
             }
           }
         />
-      </RNCSafeAreaView>
+      </View>
     </View>
   </View>
 </Modal>
@@ -1299,15 +1251,7 @@ exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -1446,7 +1390,7 @@ exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
             </View>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
     <RCTScrollView
       data={
@@ -1597,15 +1541,7 @@ exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -1683,7 +1619,7 @@ exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
             </Text>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
   </View>
 </Modal>
@@ -1735,15 +1671,7 @@ exports[`Lightbox Rendering Second photo 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -1882,7 +1810,7 @@ exports[`Lightbox Rendering Second photo 1`] = `
             </View>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
     <RCTScrollView
       data={
@@ -2033,15 +1961,7 @@ exports[`Lightbox Rendering Second photo 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -2108,7 +2028,7 @@ exports[`Lightbox Rendering Second photo 1`] = `
             </Text>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
   </View>
 </Modal>
@@ -2160,15 +2080,7 @@ exports[`Lightbox Rendering With a crop button 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -2307,7 +2219,7 @@ exports[`Lightbox Rendering With a crop button 1`] = `
             </View>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
     <RCTScrollView
       data={
@@ -2458,15 +2370,7 @@ exports[`Lightbox Rendering With a crop button 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -2555,7 +2459,7 @@ exports[`Lightbox Rendering With a crop button 1`] = `
             </View>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
   </View>
 </Modal>
@@ -2607,15 +2511,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -2754,7 +2650,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
             </View>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
     <RCTScrollView
       data={
@@ -2905,15 +2801,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
         }
       }
     >
-      <RNCSafeAreaView
-        edges={
-          {
-            "bottom": "additive",
-            "left": "additive",
-            "right": "additive",
-            "top": "additive",
-          }
-        }
+      <View
         style={
           {
             "backgroundColor": "#00000077",
@@ -3002,7 +2890,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
             </View>
           </View>
         </View>
-      </RNCSafeAreaView>
+      </View>
     </View>
   </View>
 </Modal>
