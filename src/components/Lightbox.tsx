@@ -3,7 +3,7 @@ import { StyleSheet, Text, TextStyle, TouchableOpacity, View } from 'react-nativ
 
 import ImageView from '@observation.org/react-native-image-viewing'
 import Color from 'color'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import { Icon } from './Icon'
 import PageIndicator from './PageIndicator'
@@ -15,26 +15,29 @@ const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
 
 const getLightboxHeaderComponent =
   (numberOfPages: number, onClose: () => void) =>
-  ({ imageIndex }: { imageIndex: number }) => (
-    <SafeAreaView style={styles.lightboxHeaderContainer}>
-      <View style={styles.lightboxHeader}>
-        <View style={{ flex: 1 }} />
-        <View style={styles.pageIndicator}>
-          <PageIndicator currentPage={imageIndex + 1} numberOfPages={numberOfPages} />
-        </View>
-        <View style={{ flex: 1 }}>
-          <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
-            <Icon
-              name="times"
-              color={Color(theme.color.white).alpha(0.5).string()}
-              size={theme.icon.size.extraExtraLarge}
-              testID="close-lightbox"
-            />
-          </TouchableOpacity>
+  ({ imageIndex }: { imageIndex: number }) => {
+    const insets = useSafeAreaInsets()
+    return (
+      <View style={[styles.lightboxHeaderContainer, { paddingTop: insets.top }]}>
+        <View style={styles.lightboxHeader}>
+          <View style={{ flex: 1 }} />
+          <View style={styles.pageIndicator}>
+            <PageIndicator currentPage={imageIndex + 1} numberOfPages={numberOfPages} />
+          </View>
+          <View style={{ flex: 1 }}>
+            <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
+              <Icon
+                name="times"
+                color={Color(theme.color.white).alpha(0.5).string()}
+                size={theme.icon.size.extraExtraLarge}
+                testID="close-lightbox"
+              />
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
-    </SafeAreaView>
-  )
+    )
+  }
 
 const getLightboxFooterComponent =
   (
@@ -45,41 +48,44 @@ const getLightboxFooterComponent =
     onPressDelete?: () => void,
     onPressCrop?: () => void,
   ) =>
-  () => (
-    <SafeAreaView style={styles.lightboxFooterContainer}>
-      <View style={styles.lightboxFooter}>
-        {title && (
-          <View style={styles.footerItem}>
-            <Text style={styles.title}>{title}</Text>
-          </View>
-        )}
-        {description && (
-          <View style={styles.footerItem}>
-            <Text style={[styles.description, style?.descriptionTextStyle]}>{description}</Text>
-          </View>
-        )}
-        {content && <View style={styles.footerItem}>{content}</View>}
-        {(onPressDelete || onPressCrop) && (
-          <View style={styles.buttonsContainer}>
-            {onPressDelete && (
-              <View style={styles.buttonContainer}>
-                <TouchableOpacity onPress={onPressDelete} hitSlop={hitSlop}>
-                  <Icon name="trash-alt" color={theme.color.white} size={20} testID="delete-photo" />
-                </TouchableOpacity>
-              </View>
-            )}
-            {onPressCrop && (
-              <View style={styles.buttonContainer}>
-                <TouchableOpacity onPress={onPressCrop} hitSlop={hitSlop}>
-                  <Icon name="crop-alt" color={theme.color.white} size={20} testID="crop-photo" />
-                </TouchableOpacity>
-              </View>
-            )}
-          </View>
-        )}
+  () => {
+    const insets = useSafeAreaInsets()
+    return (
+      <View style={[styles.lightboxFooterContainer, { paddingBottom: insets.bottom }]}>
+        <View style={styles.lightboxFooter}>
+          {title && (
+            <View style={styles.footerItem}>
+              <Text style={styles.title}>{title}</Text>
+            </View>
+          )}
+          {description && (
+            <View style={styles.footerItem}>
+              <Text style={[styles.description, style?.descriptionTextStyle]}>{description}</Text>
+            </View>
+          )}
+          {content && <View style={styles.footerItem}>{content}</View>}
+          {(onPressDelete || onPressCrop) && (
+            <View style={styles.buttonsContainer}>
+              {onPressDelete && (
+                <View style={styles.buttonContainer}>
+                  <TouchableOpacity onPress={onPressDelete} hitSlop={hitSlop}>
+                    <Icon name="trash-alt" color={theme.color.white} size={20} testID="delete-photo" />
+                  </TouchableOpacity>
+                </View>
+              )}
+              {onPressCrop && (
+                <View style={styles.buttonContainer}>
+                  <TouchableOpacity onPress={onPressCrop} hitSlop={hitSlop}>
+                    <Icon name="crop-alt" color={theme.color.white} size={20} testID="crop-photo" />
+                  </TouchableOpacity>
+                </View>
+              )}
+            </View>
+          )}
+        </View>
       </View>
-    </SafeAreaView>
-  )
+    )
+  }
 
 type LightboxStyle = {
   descriptionTextStyle: TextStyle
