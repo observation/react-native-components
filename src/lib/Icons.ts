@@ -53,6 +53,7 @@ import { faFlag as faFlagLight } from '@fortawesome/pro-light-svg-icons/faFlag'
 import { faGlobe as faGlobeLight } from '@fortawesome/pro-light-svg-icons/faGlobe'
 import { faGlobeEurope as faGlobeEuropeLight } from '@fortawesome/pro-light-svg-icons/faGlobeEurope'
 import { faGridRound2Plus as faGridRound2PlusLight } from '@fortawesome/pro-light-svg-icons/faGridRound2Plus'
+import { faGripLines as faGripLinesLight } from '@fortawesome/pro-light-svg-icons/faGripLines'
 import { faHandHoldingHeart as faHandHoldingHeartLight } from '@fortawesome/pro-light-svg-icons/faHandHoldingHeart'
 import { faHeart as faHeartLight } from '@fortawesome/pro-light-svg-icons/faHeart'
 import { faHexagon as faHexagonLight } from '@fortawesome/pro-light-svg-icons/faHexagon'
@@ -153,6 +154,7 @@ import { faFlag as faFlagSolid } from '@fortawesome/pro-solid-svg-icons/faFlag'
 import { faGlobe as faGlobeSolid } from '@fortawesome/pro-solid-svg-icons/faGlobe'
 import { faGlobeEurope as faGlobeEuropeSolid } from '@fortawesome/pro-solid-svg-icons/faGlobeEurope'
 import { faGridRound2Plus as faGridRound2PlusSolid } from '@fortawesome/pro-solid-svg-icons/faGridRound2Plus'
+import { faGripLines as faGripLinesSolid } from '@fortawesome/pro-solid-svg-icons/faGripLines'
 import { faHandHoldingHeart as faHandHoldingHeartSolid } from '@fortawesome/pro-solid-svg-icons/faHandHoldingHeart'
 import { faHeart as faHeartSolid } from '@fortawesome/pro-solid-svg-icons/faHeart'
 import { faHexagon as faHexagonSolid } from '@fortawesome/pro-solid-svg-icons/faHexagon'
@@ -256,6 +258,7 @@ type IconName = Extract<
   | 'globe'
   | 'globe-europe'
   | 'grid-round-2-plus'
+  | 'grip-lines'
   | 'hand-holding-heart'
   | 'heart'
   | 'hexagon'
@@ -359,6 +362,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   globe: { light: faGlobeLight, solid: faGlobeSolid },
   'globe-europe': { light: faGlobeEuropeLight, solid: faGlobeEuropeSolid },
   'grid-round-2-plus': { light: faGridRound2PlusLight, solid: faGridRound2PlusSolid },
+  'grip-lines': { light: faGripLinesLight, solid: faGripLinesSolid },
   'hand-holding-heart': { light: faHandHoldingHeartLight, solid: faHandHoldingHeartSolid },
   heart: { light: faHeartLight, solid: faHeartSolid },
   hexagon: { light: faHexagonLight, solid: faHexagonSolid },
