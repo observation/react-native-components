@@ -7,6 +7,13 @@ jobs:
       FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v3
+      - name: Cache Yarn cache and node_modules
+        uses: actions/cache@v4
+        with:
+          path: |
+            .yarn/cache
+            node_modules
+          key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
       - name: Install modules
         run: yarn
       - name: Run lint
