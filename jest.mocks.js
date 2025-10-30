@@ -25,6 +25,7 @@ jest.mock('@fortawesome/react-native-fontawesome', () => ({
       size={faIcon.size}
       style={faIcon.style}
       type={getIconType(faIcon.icon.prefix)}
+      transform={faIcon.transform}
     />
   ),
 }))
