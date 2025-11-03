@@ -98,6 +98,7 @@ import { faUserPlus as faUserPlusLight } from '@fortawesome/pro-light-svg-icons/
 import { faUserSlash as faUserSlashLight } from '@fortawesome/pro-light-svg-icons/faUserSlash'
 import { faUsersSlash as faUsersSlashLight } from '@fortawesome/pro-light-svg-icons/faUsersSlash'
 import { faVenus as faVenusLight } from '@fortawesome/pro-light-svg-icons/faVenus'
+import { faWaveformLines as faWaveformLinesLight } from '@fortawesome/pro-light-svg-icons/faWaveformLines'
 import { faXmark as faXmarkLight } from '@fortawesome/pro-light-svg-icons/faXmark'
 import { faAlignJustify as faAlignJustifySolid } from '@fortawesome/pro-solid-svg-icons/faAlignJustify'
 import { faAnalytics as faAnalyticsSolid } from '@fortawesome/pro-solid-svg-icons/faAnalytics'
@@ -198,6 +199,7 @@ import { faUserPlus as faUserPlusSolid } from '@fortawesome/pro-solid-svg-icons/
 import { faUserSlash as faUserSlashSolid } from '@fortawesome/pro-solid-svg-icons/faUserSlash'
 import { faUsersSlash as faUsersSlashSolid } from '@fortawesome/pro-solid-svg-icons/faUsersSlash'
 import { faVenus as faVenusSolid } from '@fortawesome/pro-solid-svg-icons/faVenus'
+import { faWaveformLines as faWaveformLinesSolid } from '@fortawesome/pro-solid-svg-icons/faWaveformLines'
 import { faXmark as faXmarkSolid } from '@fortawesome/pro-solid-svg-icons/faXmark'
 
 type IconName = Extract<
@@ -301,6 +303,7 @@ type IconName = Extract<
   | 'user-slash'
   | 'users-slash'
   | 'venus'
+  | 'waveform-lines'
   | 'xmark'
 >
 
@@ -404,6 +407,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   user: { light: faUserLight, solid: faUserSolid },
   'users-slash': { light: faUsersSlashLight, solid: faUsersSlashSolid },
   venus: { light: faVenusLight, solid: faVenusSolid },
+  'waveform-lines': { light: faWaveformLinesLight, solid: faWaveformLinesSolid },
   xmark: { light: faXmarkLight, solid: faXmarkSolid },
 }
 
