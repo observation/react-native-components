@@ -89,6 +89,7 @@ type Props = {
   onClose: () => void
   onDelete?: (imageIndex: number) => void
   onCrop?: (imageIndex: number) => void
+  canCrop?: (imageIndex: number) => boolean
   photos: string[]
   title?: string
   description?: string
@@ -96,12 +97,14 @@ type Props = {
   style?: LightboxStyle
 }
 
-const Lightbox = ({ index, onClose, onDelete, onCrop, photos, title, description, content, style }: Props) => {
+const Lightbox = ({ index, onClose, onDelete, onCrop, canCrop, photos, title, description, content, style }: Props) => {
   const initialImageIndex = index ?? 0
   const [currentImageIndex, setCurrentImageIndex] = useState<number>()
 
-  const onPressDelete = onDelete ? () => onDelete(currentImageIndex ?? initialImageIndex) : undefined
-  const onPressCrop = onCrop ? () => onCrop(currentImageIndex ?? initialImageIndex) : undefined
+  const imageIndex = currentImageIndex ?? initialImageIndex
+  const onPressDelete = onDelete ? () => onDelete(imageIndex) : undefined
+  const onPressCrop = onCrop ? () => onCrop(imageIndex) : undefined
+  const showCrop = canCrop ? canCrop(imageIndex) : true
 
   const ImageViewTypeErased = ImageView as unknown as any
 
@@ -117,10 +120,10 @@ const Lightbox = ({ index, onClose, onDelete, onCrop, photos, title, description
       FooterComponent={getLightboxFooterComponent(
         title,
         description,
-        content?.(currentImageIndex),
+        content?.(imageIndex),
         style,
         onPressDelete,
-        onPressCrop,
+        showCrop ? onPressCrop : undefined,
       )}
     />
   )

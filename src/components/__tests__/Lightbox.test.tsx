@@ -103,6 +103,33 @@ describe('Lightbox', () => {
       expect(queryByTestId('crop-photo')).not.toBeNull()
       expect(toJSON()).toMatchSnapshot()
     })
+
+    test('Do not show crop button when canCrop returns false', () => {
+      const { toJSON, queryByTestId } = render(
+        <Lightbox photos={photos} index={0} onClose={onClose} onCrop={() => {}} canCrop={() => false} />,
+      )
+
+      expect(queryByTestId('crop-photo')).toBeNull()
+      expect(toJSON()).toMatchSnapshot()
+    })
+
+    test('Show crop button when canCrop returns true', () => {
+      const { toJSON, queryByTestId } = render(
+        <Lightbox photos={photos} index={0} onClose={onClose} onCrop={() => {}} canCrop={() => true} />,
+      )
+
+      expect(queryByTestId('crop-photo')).not.toBeNull()
+      expect(toJSON()).toMatchSnapshot()
+    })
+
+    test('When canCrop returns true, but no onCrop is provided, show no crop button', () => {
+      const { toJSON, queryByTestId } = render(
+        <Lightbox photos={photos} index={0} onClose={onClose} canCrop={() => true} />,
+      )
+
+      expect(queryByTestId('crop-photo')).toBeNull()
+      expect(toJSON()).toMatchSnapshot()
+    })
   })
 
   describe('Interaction', () => {
@@ -154,6 +181,27 @@ describe('Lightbox', () => {
 
       // THEN
       expect(onDelete).toHaveBeenCalledWith(1)
+    })
+
+    test('When swiping to a photo that is not cropable, the crop button is not shown', async () => {
+      // GIVEN
+      jest.mock('@observation.org/react-native-image-viewing', () => 'ImageCarousel')
+      const { queryByTestId } = render(
+        <Lightbox
+          photos={photos}
+          index={0}
+          onClose={onClose}
+          onCrop={() => {}}
+          canCrop={(imageIndex) => imageIndex === 0}
+        />,
+      )
+      expect(queryByTestId('crop-photo')).not.toBeNull()
+
+      // WHEN
+      act(() => mockOnImageIndexChange(1))
+
+      // THEN
+      expect(queryByTestId('crop-photo')).toBeNull()
     })
   })
 })
