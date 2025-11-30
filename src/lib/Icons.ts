@@ -13,6 +13,7 @@ import { faArrowUpFromSquare as faArrowUpFromSquareLight } from '@fortawesome/pr
 import { faBadge as faBadgeLight } from '@fortawesome/pro-light-svg-icons/faBadge'
 import { faBadgeCheck as faBadgeCheckLight } from '@fortawesome/pro-light-svg-icons/faBadgeCheck'
 import { faBanBug as faBanBugLight } from '@fortawesome/pro-light-svg-icons/faBanBug'
+import { faBarsFilter as faBarsFilterLight } from '@fortawesome/pro-light-svg-icons/faBarsFilter'
 import { faCalendarDay as faCalendarDayLight } from '@fortawesome/pro-light-svg-icons/faCalendarDay'
 import { faCalendarRange as faCalendarRangeLight } from '@fortawesome/pro-light-svg-icons/faCalendarRange'
 import { faCamera as faCameraLight } from '@fortawesome/pro-light-svg-icons/faCamera'
@@ -114,6 +115,7 @@ import { faArrowUpFromSquare as faArrowUpFromSquareSolid } from '@fortawesome/pr
 import { faBadge as faBadgeSolid } from '@fortawesome/pro-solid-svg-icons/faBadge'
 import { faBadgeCheck as faBadgeCheckSolid } from '@fortawesome/pro-solid-svg-icons/faBadgeCheck'
 import { faBanBug as faBanBugSolid } from '@fortawesome/pro-solid-svg-icons/faBanBug'
+import { faBarsFilter as faBarsFilterSolid } from '@fortawesome/pro-solid-svg-icons/faBarsFilter'
 import { faCalendarDay as faCalendarDaySolid } from '@fortawesome/pro-solid-svg-icons/faCalendarDay'
 import { faCalendarRange as faCalendarRangeSolid } from '@fortawesome/pro-solid-svg-icons/faCalendarRange'
 import { faCamera as faCameraSolid } from '@fortawesome/pro-solid-svg-icons/faCamera'
@@ -218,6 +220,7 @@ type IconName = Extract<
   | 'badge'
   | 'badge-check'
   | 'ban-bug'
+  | 'bars-filter'
   | 'calendar-day'
   | 'calendar-range'
   | 'camera'
@@ -322,6 +325,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'badge-check': { light: faBadgeCheckLight, solid: faBadgeCheckSolid },
   badge: { light: faBadgeLight, solid: faBadgeSolid },
   'ban-bug': { light: faBanBugLight, solid: faBanBugSolid },
+  'bars-filter': { light: faBarsFilterLight, solid: faBarsFilterSolid },
   'calendar-day': { light: faCalendarDayLight, solid: faCalendarDaySolid },
   'calendar-range': { light: faCalendarRangeLight, solid: faCalendarRangeSolid },
   camera: { light: faCameraLight, solid: faCameraSolid },
