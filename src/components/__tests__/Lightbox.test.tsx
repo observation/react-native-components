@@ -104,27 +104,27 @@ describe('Lightbox', () => {
       expect(toJSON()).toMatchSnapshot()
     })
 
-    test('Do not show crop button when canCrop returns false', () => {
+    test('Do not show crop button when editable returns false', () => {
       const { toJSON, queryByTestId } = render(
-        <Lightbox photos={photos} index={0} onClose={onClose} onCrop={() => {}} canCrop={() => false} />,
+        <Lightbox photos={photos} index={0} onClose={onClose} onCrop={() => {}} editable={() => false} />,
       )
 
       expect(queryByTestId('crop-photo')).toBeNull()
       expect(toJSON()).toMatchSnapshot()
     })
 
-    test('Show crop button when canCrop returns true', () => {
+    test('Show crop button when editable returns true', () => {
       const { toJSON, queryByTestId } = render(
-        <Lightbox photos={photos} index={0} onClose={onClose} onCrop={() => {}} canCrop={() => true} />,
+        <Lightbox photos={photos} index={0} onClose={onClose} onCrop={() => {}} editable={() => true} />,
       )
 
       expect(queryByTestId('crop-photo')).not.toBeNull()
       expect(toJSON()).toMatchSnapshot()
     })
 
-    test('When canCrop returns true, but no onCrop is provided, show no crop button', () => {
+    test('When editable returns true, but no onCrop is provided, show no crop button', () => {
       const { toJSON, queryByTestId } = render(
-        <Lightbox photos={photos} index={0} onClose={onClose} canCrop={() => true} />,
+        <Lightbox photos={photos} index={0} onClose={onClose} editable={() => true} />,
       )
 
       expect(queryByTestId('crop-photo')).toBeNull()
@@ -192,7 +192,7 @@ describe('Lightbox', () => {
           index={0}
           onClose={onClose}
           onCrop={() => {}}
-          canCrop={(imageIndex) => imageIndex === 0}
+          editable={(imageIndex) => imageIndex === 0}
         />,
       )
       expect(queryByTestId('crop-photo')).not.toBeNull()

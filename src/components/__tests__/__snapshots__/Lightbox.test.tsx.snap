@@ -435,7 +435,7 @@ exports[`Lightbox Rendering Content that is dependent on the selected image 1`] 
 </Modal>
 `;
 
-exports[`Lightbox Rendering Do not show crop button when canCrop returns false 1`] = `
+exports[`Lightbox Rendering Do not show crop button when editable returns false 1`] = `
 <Modal
   animationType="fade"
   hardwareAccelerated={true}
@@ -2395,7 +2395,7 @@ exports[`Lightbox Rendering Second photo 1`] = `
 </Modal>
 `;
 
-exports[`Lightbox Rendering Show crop button when canCrop returns true 1`] = `
+exports[`Lightbox Rendering Show crop button when editable returns true 1`] = `
 <Modal
   animationType="fade"
   hardwareAccelerated={true}
@@ -2826,7 +2826,7 @@ exports[`Lightbox Rendering Show crop button when canCrop returns true 1`] = `
 </Modal>
 `;
 
-exports[`Lightbox Rendering When canCrop returns true, but no onCrop is provided, show no crop button 1`] = `
+exports[`Lightbox Rendering When editable returns true, but no onCrop is provided, show no crop button 1`] = `
 <Modal
   animationType="fade"
   hardwareAccelerated={true}
