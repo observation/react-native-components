@@ -46,6 +46,19 @@ const InputField = ({
   const inputContainerStyle = disabled ? { backgroundColor: theme.color.greyLight } : {}
   const placeholderTextColor = disabled ? theme.color.greySemi : theme.color.placeholder
 
+  const layoutHandler = inputProps?.autoFocus
+    ? () => {
+        if (didAutoFocus.current) {
+          return
+        }
+
+        requestAnimationFrame(() => {
+          inputRef.current?.focus()
+          didAutoFocus.current = true
+        })
+      }
+    : undefined
+
   return (
     <View style={[styles.containerStyle, containerStyle]}>
       {label && (
@@ -61,14 +74,7 @@ const InputField = ({
           autoCapitalize="none"
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
-          onLayout={() => {
-            if (inputProps?.autoFocus && !didAutoFocus.current) {
-              requestAnimationFrame(() => {
-                inputRef.current?.focus()
-                didAutoFocus.current = true
-              })
-            }
-          }}
+          onLayout={layoutHandler}
           underlineColorAndroid="transparent"
           placeholderTextColor={placeholderTextColor}
         />

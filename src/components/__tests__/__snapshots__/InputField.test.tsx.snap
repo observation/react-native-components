@@ -40,7 +40,6 @@ exports[`InputField Rendering Disabled 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      onLayout={[Function]}
       placeholderTextColor="#E6E6E6"
       style={
         [
@@ -96,7 +95,6 @@ exports[`InputField Rendering Normal 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      onLayout={[Function]}
       placeholderTextColor="#939393"
       style={
         [
@@ -152,7 +150,6 @@ exports[`InputField Rendering With a description 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      onLayout={[Function]}
       placeholderTextColor="#939393"
       style={
         [
@@ -245,7 +242,6 @@ exports[`InputField Rendering With a label 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      onLayout={[Function]}
       placeholderTextColor="#939393"
       style={
         [
@@ -301,7 +297,6 @@ exports[`InputField Rendering With a right icon 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      onLayout={[Function]}
       placeholderTextColor="#939393"
       style={
         [
@@ -375,7 +370,6 @@ exports[`InputField Rendering With an error message 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      onLayout={[Function]}
       placeholderTextColor="#939393"
       style={
         [
@@ -484,7 +478,6 @@ exports[`InputField Rendering With focus 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      onLayout={[Function]}
       placeholderTextColor="#939393"
       style={
         [
@@ -541,7 +534,6 @@ exports[`InputField Rendering With focus and an error message 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      onLayout={[Function]}
       placeholderTextColor="#939393"
       style={
         [
@@ -598,7 +590,6 @@ exports[`InputField Rendering Without focus 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      onLayout={[Function]}
       placeholderTextColor="#939393"
       style={
         [
