@@ -55,6 +55,7 @@ const InputField = ({
       )}
       <View style={{ flexDirection: 'row', ...inputContainerStyle }}>
         <TextInput
+          ref={inputRef}
           style={[{ borderColor }, styles.inputStyle, inputStyle, fixInputStyle]}
           {...inputProps}
           autoCapitalize="none"
