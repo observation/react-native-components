@@ -1,4 +1,4 @@
-import React, { RefAttributes, useState } from 'react'
+import React, { RefAttributes, useRef, useState } from 'react'
 import { Platform, StyleProp, StyleSheet, Text, TextInput, TextInputProps, View, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
@@ -33,6 +33,8 @@ const InputField = ({
   disabled = false,
 }: Props) => {
   const [isFocused, setIsFocused] = useState(false)
+  const inputRef = useRef<TextInput>(null)
+  const didAutoFocus = useRef(false)
 
   // Set lineHeight to 0 to fix vertical alignment of the input text on iOS
   // Do this only for iOS, as setting it to 0 on Android results in input text being invisible
@@ -58,6 +60,14 @@ const InputField = ({
           autoCapitalize="none"
           onFocus={() => setIsFocused(true)}
           onBlur={() => setIsFocused(false)}
+          onLayout={() => {
+            if (inputProps?.autoFocus && !didAutoFocus.current) {
+              requestAnimationFrame(() => {
+                inputRef.current?.focus()
+                didAutoFocus.current = true
+              })
+            }
+          }}
           underlineColorAndroid="transparent"
           placeholderTextColor={placeholderTextColor}
         />
