@@ -3,7 +3,6 @@
 exports[`Popup Rendering 1`] = `
 <Modal
   animationType="fade"
-  hardwareAccelerated={false}
   style={
     {
       "flex": 1,
