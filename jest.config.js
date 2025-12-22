@@ -1,7 +1,7 @@
 module.exports = {
   preset: 'react-native',
   transformIgnorePatterns: [
-    'node_modules/(?!((jest-)?react-native|@react-native(-community)?|@observation.org/react-native-image-viewing|i18n-js|react-native-scalable-image)/)',
+    'node_modules/(?!((jest-)?react-native|@react-native(-community)?|@observation.org/react-native-image-viewing|i18n-js|react-native-scalable-image|color|@react-navigation))',
   ],
   setupFiles: ['./jest.mocks.js'],
   collectCoverageFrom: ['**/src/**/*.{js,ts,tsx}'],
@@ -12,9 +12,9 @@ module.exports = {
       {
         tsconfig: 'tsconfig.spec.json',
         diagnostics: {
-          exclude: ['**/node_modules/**']
+          exclude: ['**/node_modules/**'],
         },
-      }
+      },
     ],
   },
 }

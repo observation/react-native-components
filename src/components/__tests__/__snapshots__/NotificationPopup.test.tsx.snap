@@ -3,7 +3,6 @@
 exports[`NotificationPopup Rendering Left and right buttons 1`] = `
 <Modal
   animationType="fade"
-  hardwareAccelerated={false}
   style={
     {
       "flex": 1,
@@ -288,7 +287,6 @@ exports[`NotificationPopup Rendering Left and right buttons 1`] = `
 exports[`NotificationPopup Rendering Only left button 1`] = `
 <Modal
   animationType="fade"
-  hardwareAccelerated={false}
   style={
     {
       "flex": 1,
@@ -498,7 +496,6 @@ exports[`NotificationPopup Rendering Only left button 1`] = `
 exports[`NotificationPopup Rendering With close button 1`] = `
 <Modal
   animationType="fade"
-  hardwareAccelerated={false}
   style={
     {
       "flex": 1,

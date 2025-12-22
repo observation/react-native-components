@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text } from 'react-native'
 
+import { NavigationContainer } from '@react-navigation/native'
 import { fireEvent, render } from '@testing-library/react-native'
 
 import BottomSheet from '../BottomSheet'
@@ -9,7 +10,11 @@ describe('BottomSheet', () => {
   describe('Rendering', () => {
     test('Without icon', () => {
       // GIVEN
-      const { toJSON } = render(<BottomSheet title="Title" text="Text" />)
+      const { toJSON } = render(
+        <NavigationContainer>
+          <BottomSheet title="Title" text="Text" />
+        </NavigationContainer>,
+      )
 
       // THEN
       expect(toJSON()).toMatchSnapshot()
@@ -18,7 +23,9 @@ describe('BottomSheet', () => {
     test('With button', () => {
       // GIVEN
       const { toJSON } = render(
-        <BottomSheet title="Title" text="Text" buttons={[{ onPress: () => {}, title: 'Action!' }]} />,
+        <NavigationContainer>
+          <BottomSheet title="Title" text="Text" buttons={[{ onPress: () => {}, title: 'Action!' }]} />
+        </NavigationContainer>,
       )
       // THEN
       expect(toJSON()).toMatchSnapshot()
@@ -26,7 +33,11 @@ describe('BottomSheet', () => {
 
     test('Only buttons', () => {
       // GIVEN
-      const { toJSON } = render(<BottomSheet buttons={[{ onPress: () => {}, title: 'Action!' }]} />)
+      const { toJSON } = render(
+        <NavigationContainer>
+          <BottomSheet buttons={[{ onPress: () => {}, title: 'Action!' }]} />
+        </NavigationContainer>,
+      )
       // THEN
       expect(toJSON()).toMatchSnapshot()
     })
@@ -34,9 +45,11 @@ describe('BottomSheet', () => {
     test('With children', () => {
       // GIVEN
       const { queryByText, toJSON } = render(
-        <BottomSheet>
-          <Text>Hello world!</Text>
-        </BottomSheet>,
+        <NavigationContainer>
+          <BottomSheet>
+            <Text>Hello world!</Text>
+          </BottomSheet>
+        </NavigationContainer>,
       )
 
       // THEN
@@ -49,7 +62,11 @@ describe('BottomSheet', () => {
     test('Click on a button', () => {
       // GIVEN
       const onPress = jest.fn()
-      const { getByText } = render(<BottomSheet title="Title" text="Text" buttons={[{ onPress, title: 'Action!' }]} />)
+      const { getByText } = render(
+        <NavigationContainer>
+          <BottomSheet title="Title" text="Text" buttons={[{ onPress, title: 'Action!' }]} />
+        </NavigationContainer>,
+      )
 
       // WHEN
       fireEvent.press(getByText('Action!'))
