@@ -14,11 +14,11 @@ type Item = {
 
 type Props<T extends Item> = {
   list: T[]
-  header: (item: T, index: number, isActive: boolean) => void
-  footer: (item: T, index: number, isActive: boolean) => void
-  body: (item: T) => React.ReactElement
+  header: (item: T, index: number, isActive: boolean) => React.ReactNode
+  footer: (item: T, index: number, isActive: boolean) => React.ReactNode
+  body: (item: T) => React.ReactNode
   onOpen: (index: number) => void
-  ListEmptyComponent?: () => React.ReactElement
+  ListEmptyComponent?: () => React.ReactNode
 }
 
 const Accordion = <T extends Item>({ list, header, footer, body, onOpen, ListEmptyComponent }: Props<T>) => {
