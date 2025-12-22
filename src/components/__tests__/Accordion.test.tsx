@@ -48,7 +48,7 @@ describe('Accordion', () => {
       fireEvent.press(getByText('Header 1st item'))
 
       // THEN
-      expect(onOpen).toBeCalledTimes(1)
+      expect(onOpen).toHaveBeenCalledTimes(1)
       expect(queryByText('Body 1st item')).toBeTruthy()
       expect(toJSON()).toMatchSnapshot()
     })
@@ -64,7 +64,7 @@ describe('Accordion', () => {
       fireEvent.press(getByText('Header 2nd item'))
 
       // THEN
-      expect(onOpen).toBeCalledTimes(2)
+      expect(onOpen).toHaveBeenCalledTimes(2)
       expect(queryByText('Body 2nd item')).toBeTruthy()
 
       expect(toJSON()).toMatchSnapshot()
@@ -81,7 +81,7 @@ describe('Accordion', () => {
       fireEvent.press(getByText('Header 1st item'))
 
       // THEN
-      expect(onOpen).toBeCalledTimes(1)
+      expect(onOpen).toHaveBeenCalledTimes(1)
       expect(queryByText('Body 1st item')).not.toBeTruthy()
       expect(toJSON()).toMatchSnapshot()
     })

@@ -14,6 +14,6 @@ describe('WebLink', () => {
   test('Click', async () => {
     const { getByText } = render(<WebLink onPress={onPress} containerStyle={{ flex: 1 }} text="View on website" />)
     await fireEvent.press(getByText('View on website'))
-    expect(onPress).toBeCalled()
+    expect(onPress).toHaveBeenCalled()
   })
 })

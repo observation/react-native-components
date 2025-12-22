@@ -19,6 +19,6 @@ describe('BackButton', () => {
     fireEvent.press(getByTestId('pressable'))
 
     // THEN
-    expect(mockNavigation.goBack).toBeCalled()
+    expect(mockNavigation.goBack).toHaveBeenCalled()
   })
 })

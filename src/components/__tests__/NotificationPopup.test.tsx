@@ -83,9 +83,9 @@ describe('NotificationPopup', () => {
       await fireEvent.press(getByTestId('close'))
 
       // THEN
-      expect(buttonFunction1).toBeCalledTimes(1)
-      expect(buttonFunction2).toBeCalledTimes(1)
-      expect(onClose).toBeCalledTimes(1)
+      expect(buttonFunction1).toHaveBeenCalledTimes(1)
+      expect(buttonFunction2).toHaveBeenCalledTimes(1)
+      expect(onClose).toHaveBeenCalledTimes(1)
     })
   })
 })

@@ -72,7 +72,7 @@ describe('BottomSheet', () => {
       fireEvent.press(getByText('Action!'))
 
       // THEN
-      expect(onPress).toBeCalled()
+      expect(onPress).toHaveBeenCalled()
     })
   })
 })

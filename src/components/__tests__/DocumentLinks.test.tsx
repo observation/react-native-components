@@ -16,6 +16,6 @@ describe('DocumentLink', () => {
       <DocumentLink onPress={onPress} containerStyle={{ flex: 1 }} label="Privacy statement" />,
     )
     await fireEvent.press(getByText('Privacy statement'))
-    expect(onPress).toBeCalled()
+    expect(onPress).toHaveBeenCalled()
   })
 })

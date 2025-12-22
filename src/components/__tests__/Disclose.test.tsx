@@ -35,6 +35,6 @@ describe('Disclose', () => {
     fireEvent.press(getByText(/some text/))
 
     // THEN
-    expect(onPress).toBeCalled()
+    expect(onPress).toHaveBeenCalled()
   })
 })

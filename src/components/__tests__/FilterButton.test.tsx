@@ -14,13 +14,13 @@ describe('FilterButton', () => {
     test('Enabled', () => {
       const { toJSON } = render(<FilterButton content={content} active onPress={onPress} style={{ flex: 1 }} />)
       expect(toJSON()).toMatchSnapshot()
-      expect(content).toBeCalledWith({ color: theme.color.white })
+      expect(content).toHaveBeenCalledWith({ color: theme.color.white })
     })
 
     test('Disabled', () => {
       const { toJSON } = render(<FilterButton content={content} active={false} style={{ flex: 1 }} />)
       expect(toJSON()).toMatchSnapshot()
-      expect(content).toBeCalledWith({ color: theme.color.greyDark })
+      expect(content).toHaveBeenCalledWith({ color: theme.color.greyDark })
     })
   })
 
@@ -30,7 +30,7 @@ describe('FilterButton', () => {
         <FilterButton content={content} active={false} onPress={onPress} style={{ flex: 1 }} />,
       )
       await fireEvent.press(getByText('Some text'))
-      expect(onPress).toBeCalled()
+      expect(onPress).toHaveBeenCalled()
     })
   })
 })
