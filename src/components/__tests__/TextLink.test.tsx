@@ -25,6 +25,6 @@ describe('TextLink', () => {
       <TextLink text="Text to click" onPress={onPress} containerStyle={{ flex: 1 }} textStyle={{ fontSize: 1 }} />,
     )
     await fireEvent.press(getByText('Text to click'))
-    expect(onPress).toBeCalled()
+    expect(onPress).toHaveBeenCalled()
   })
 })

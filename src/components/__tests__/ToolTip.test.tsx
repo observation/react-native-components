@@ -51,7 +51,7 @@ describe('Tooltip', () => {
       fireEvent.press(getByTestId('close'))
 
       // THEN
-      expect(onCloseTooltip).toBeCalled()
+      expect(onCloseTooltip).toHaveBeenCalled()
     })
 
     test('Click on a button', () => {
@@ -65,7 +65,7 @@ describe('Tooltip', () => {
       fireEvent.press(getByText('Action!'))
 
       // THEN
-      expect(onPress).toBeCalled()
+      expect(onPress).toHaveBeenCalled()
     })
   })
 })

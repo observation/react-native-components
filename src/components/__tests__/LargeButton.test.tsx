@@ -69,7 +69,7 @@ describe('LargeButton', () => {
   test('Click', async () => {
     const { getByTestId } = render(<LargeButton title="Press me" onPress={onPress} style={{ flex: 1 }} />)
     await fireEvent.press(getByTestId('touchable-opacity'))
-    expect(onPress).toBeCalled()
+    expect(onPress).toHaveBeenCalled()
   })
 
   test('onPressIn', async () => {
@@ -77,6 +77,6 @@ describe('LargeButton', () => {
       <LargeButton title="Press me" onPress={onPress} onPressIn={onPressIn} style={{ flex: 1 }} />,
     )
     await fireEvent(getByTestId('touchable-opacity'), 'pressIn')
-    expect(onPressIn).toBeCalled()
+    expect(onPressIn).toHaveBeenCalled()
   })
 })

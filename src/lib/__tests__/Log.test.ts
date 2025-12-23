@@ -11,7 +11,7 @@ describe('Log', () => {
       Log.trace('Some text')
 
       // THEN
-      expect(transportFunction).toBeCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
+      expect(transportFunction).toHaveBeenCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
     })
 
     test('Debug', () => {
@@ -23,7 +23,7 @@ describe('Log', () => {
       Log.debug('Some text')
 
       // THEN
-      expect(transportFunction).toBeCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
+      expect(transportFunction).toHaveBeenCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
     })
 
     test('Info', () => {
@@ -35,7 +35,7 @@ describe('Log', () => {
       Log.info('Some text')
 
       // THEN
-      expect(transportFunction).toBeCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
+      expect(transportFunction).toHaveBeenCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
     })
 
     test('Warn', () => {
@@ -47,7 +47,7 @@ describe('Log', () => {
       Log.warn('Some text')
 
       // THEN
-      expect(transportFunction).toBeCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
+      expect(transportFunction).toHaveBeenCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
     })
 
     test('Error', () => {
@@ -59,7 +59,7 @@ describe('Log', () => {
       Log.error('Some text')
 
       // THEN
-      expect(transportFunction).toBeCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
+      expect(transportFunction).toHaveBeenCalledWith(expect.objectContaining({ rawMsg: ['Some text'] }))
     })
   })
 })
