@@ -1904,46 +1904,46 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-common-types@npm:7.1.0":
-  version: 7.1.0
-  resolution: "@fortawesome/fontawesome-common-types@npm:7.1.0"
-  checksum: 4cc34a4cd4b96dcf4e83a40f9537038e25a6069b6c6f57c15138b9e00188b3f610ff794995672548831c51634b5513111743ae41b9ce68b836954e0f0044766a
+"@fortawesome/fontawesome-common-types@npm:6.7.2":
+  version: 6.7.2
+  resolution: "@fortawesome/fontawesome-common-types@npm:6.7.2"
+  checksum: 9c17f03032e56b8e8e996e5b2c15c8b47baf6f8d5c0703025b0b2711907245f94a7032b3da52d2714b5aeff1c14d3535e6869a82086136dcacae9ccd479dc6a2
   languageName: node
   linkType: hard
 
-"@fortawesome/fontawesome-svg-core@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@fortawesome/fontawesome-svg-core@npm:7.1.0"
+"@fortawesome/fontawesome-svg-core@npm:^6.7.2":
+  version: 6.7.2
+  resolution: "@fortawesome/fontawesome-svg-core@npm:6.7.2"
   dependencies:
-    "@fortawesome/fontawesome-common-types": 7.1.0
-  checksum: 83d0839257c979dfd689ca068d231fca00896da97e1f91fd4a1e27de87b5afb1bf341dc2cbc90e9476885bb720bd9d0cf1d29f7736338ecdba3fceb6f923298e
+    "@fortawesome/fontawesome-common-types": 6.7.2
+  checksum: b3c269545d99202111d8334955466a7f050c38cf80c6be5fdd36baae36822421e0806986db8d1670834fab6595ce527e06ea58248e053703722d03f19eccbb82
   languageName: node
   linkType: hard
 
-"@fortawesome/free-brands-svg-icons@npm:7.1.0":
-  version: 7.1.0
-  resolution: "@fortawesome/free-brands-svg-icons@npm:7.1.0"
+"@fortawesome/free-brands-svg-icons@npm:6.7.2":
+  version: 6.7.2
+  resolution: "@fortawesome/free-brands-svg-icons@npm:6.7.2"
   dependencies:
-    "@fortawesome/fontawesome-common-types": 7.1.0
-  checksum: 9f4b5f412fa3452b5a70514316339521123bfe8320922860ec11bd396445e2e2882be34690600526b86d2b45be2a122903bf26cf1659f67ec449d30e173720ab
+    "@fortawesome/fontawesome-common-types": 6.7.2
+  checksum: 1583c684e3070952ae392dcb1a6f8a3af3637b8030f2aa2a7305f09150d957493ac2e22d29fd45c801d7166c28200a8d1fc92d67b6aa528e9a3f9715b24a8e95
   languageName: node
   linkType: hard
 
-"@fortawesome/pro-light-svg-icons@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@fortawesome/pro-light-svg-icons@npm:7.1.0"
+"@fortawesome/pro-light-svg-icons@npm:^6.7.2":
+  version: 6.7.2
+  resolution: "@fortawesome/pro-light-svg-icons@npm:6.7.2"
   dependencies:
-    "@fortawesome/fontawesome-common-types": 7.1.0
-  checksum: 2906a957c7ddb4577e2b8745f3d62d167dd380c5fcd7effd2eb478ceedb4bd464f645d2f7fde5dfb038b7b99bbf85bc7ed6c9dfe3dbda8fea65afca4c430cc4c
+    "@fortawesome/fontawesome-common-types": 6.7.2
+  checksum: dd682f51ef3a42bdb0677c6978387fd2d0384764b06cea37d02851cc7983075c7dbdef102054ec4fb9047448914db6dd78152fb2add8cced4454ae02819543fa
   languageName: node
   linkType: hard
 
-"@fortawesome/pro-solid-svg-icons@npm:^7.1.0":
-  version: 7.1.0
-  resolution: "@fortawesome/pro-solid-svg-icons@npm:7.1.0"
+"@fortawesome/pro-solid-svg-icons@npm:^6.7.2":
+  version: 6.7.2
+  resolution: "@fortawesome/pro-solid-svg-icons@npm:6.7.2"
   dependencies:
-    "@fortawesome/fontawesome-common-types": 7.1.0
-  checksum: 8e5f2bfa1e1c8a66d4cb62986150c8a51af0d516d137c54c40295ce29989e87853a7547280aad2ba7dac95433f1850d70dd458e8aed3f3bad32069c78d0d0daf
+    "@fortawesome/fontawesome-common-types": 6.7.2
+  checksum: 850d45b0fc0feabc41b44cba736916602506e2f80e771086213e2fd18ce6dfa6c2e89f81b84ecd0878f7bfa2c04f57e1a4334d5978405ac13a4344550137f24f
   languageName: node
   linkType: hard
 
@@ -2861,10 +2861,10 @@ __metadata:
     "@eslint/compat": ^2.0.0
     "@eslint/eslintrc": ^3.3.3
     "@eslint/js": ^9.39.2
-    "@fortawesome/fontawesome-svg-core": ^7.1.0
-    "@fortawesome/free-brands-svg-icons": 7.1.0
-    "@fortawesome/pro-light-svg-icons": ^7.1.0
-    "@fortawesome/pro-solid-svg-icons": ^7.1.0
+    "@fortawesome/fontawesome-svg-core": ^6.7.2
+    "@fortawesome/free-brands-svg-icons": 6.7.2
+    "@fortawesome/pro-light-svg-icons": ^6.7.2
+    "@fortawesome/pro-solid-svg-icons": ^6.7.2
     "@fortawesome/react-native-fontawesome": ^0.3.2
     "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing"
     "@react-native-community/blur": ^4.4.1

@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.65.0",
+  "version": "1.66.0",
   "main": "src/index.ts",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
@@ -57,10 +57,10 @@
     "react-native-render-html": "^6.1.0"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^7.1.0",
-    "@fortawesome/free-brands-svg-icons": "7.1.0",
-    "@fortawesome/pro-light-svg-icons": "^7.1.0",
-    "@fortawesome/pro-solid-svg-icons": "^7.1.0",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "6.7.2",
+    "@fortawesome/pro-light-svg-icons": "^6.7.2",
+    "@fortawesome/pro-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-native-fontawesome": "^0.3.2",
     "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing",
     "@react-native-community/blur": "^4.4.1",
