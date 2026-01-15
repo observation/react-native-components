@@ -46,30 +46,30 @@ const renderers = {
   ul: ulRenderer,
 }
 
+const defaultRenderersProps = {
+  a: {
+    onPress: (_event: GestureResponderEvent, href: string) => openUrl(href),
+  },
+}
+
+const systemFonts = [...defaultSystemFonts, 'Ubuntu']
+
 const RenderHtmlWrapper = ({
   contentWidth = Dimensions.get('window').width - 2 * theme.margin.common,
-  renderersProps = {
-    a: {
-      onPress: (_event: GestureResponderEvent, href: string) => openUrl(href),
-    },
-  },
+  renderersProps = defaultRenderersProps,
   baseStyle = textStyle.body,
   ...props
-}: RenderHTMLProps) => {
-  const systemFonts = [...defaultSystemFonts, 'Ubuntu']
-
-  return (
-    <RenderHtml
-      contentWidth={contentWidth}
-      renderersProps={renderersProps}
-      renderers={renderers}
-      systemFonts={systemFonts}
-      baseStyle={baseStyle}
-      tagsStyles={htmlStyle}
-      enableExperimentalMarginCollapsing
-      {...props}
-    />
-  )
-}
+}: RenderHTMLProps) => (
+  <RenderHtml
+    contentWidth={contentWidth}
+    renderersProps={renderersProps}
+    renderers={renderers}
+    systemFonts={systemFonts}
+    baseStyle={baseStyle}
+    tagsStyles={htmlStyle}
+    enableExperimentalMarginCollapsing
+    {...props}
+  />
+)
 
 export default RenderHtmlWrapper
