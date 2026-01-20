@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { InteractionManager, Platform } from 'react-native'
+import { Platform } from 'react-native'
 
 import { useFocusEffect } from '@react-navigation/native'
 
@@ -21,14 +21,14 @@ const useShowBlurView = () => {
     React.useCallback(() => {
       let timer: Timeout
       const timeout = isIOSDevice ? 0 : 200
-      const task = InteractionManager.runAfterInteractions(() => {
+      const taskHandle = requestIdleCallback(() => {
         timer = setTimeout(() => {
           setShowBlurView(true)
         }, timeout)
       })
 
       return () => {
-        task.cancel()
+        cancelIdleCallback(taskHandle)
         clearTimeout(timer)
         setShowBlurView(isIOSDevice)
       }
