@@ -1456,3 +1456,336 @@ exports[`RenderHtmlWrapper Rendering Custom unordered list Normal render 1`] = `
   </View>
 </View>
 `;
+
+exports[`RenderHtmlWrapper Rendering Override renderer Override ol 1`] = `
+<View
+  style={
+    [
+      {},
+      undefined,
+      undefined,
+    ]
+  }
+  testID="html"
+>
+  <View
+    style={
+      [
+        {},
+        undefined,
+        undefined,
+      ]
+    }
+    testID="body"
+  />
+</View>
+`;
+
+exports[`RenderHtmlWrapper Rendering Override renderer Override ul does not affect ol 1`] = `
+<View
+  style={
+    [
+      {},
+      undefined,
+      undefined,
+    ]
+  }
+  testID="html"
+>
+  <View
+    style={
+      [
+        {},
+        undefined,
+        undefined,
+      ]
+    }
+    testID="body"
+  >
+    <View
+      style={
+        [
+          [
+            {
+              "marginBottom": 8,
+              "marginTop": 16,
+              "paddingLeft": 16,
+            },
+            null,
+            null,
+            {
+              "paddingLeft": 0,
+              "position": "relative",
+            },
+          ],
+          undefined,
+          undefined,
+        ]
+      }
+      testID="ol"
+    >
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View
+          style={
+            [
+              undefined,
+              {
+                "width": 16,
+              },
+            ]
+          }
+        >
+          <Text
+            ellipsizeMode="clip"
+            numberOfLines={1}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "color": "#666666",
+                "flexGrow": 0,
+                "flexShrink": 0,
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+                "textAlign": "right",
+              }
+            }
+            testID="marker-box"
+          >
+            1. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginBottom": 8,
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            testID="li"
+          >
+            <Text
+              allowFontScaling={true}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#666666",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Ein
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View
+          style={
+            [
+              undefined,
+              {
+                "width": 16,
+              },
+            ]
+          }
+        >
+          <Text
+            ellipsizeMode="clip"
+            numberOfLines={1}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "color": "#666666",
+                "flexGrow": 0,
+                "flexShrink": 0,
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+                "textAlign": "right",
+              }
+            }
+            testID="marker-box"
+          >
+            2. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginBottom": 8,
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            testID="li"
+          >
+            <Text
+              allowFontScaling={true}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#666666",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Zwei
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        style={
+          [
+            {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "flexWrap": "nowrap",
+            },
+            undefined,
+          ]
+        }
+        testID="marked-list-item"
+      >
+        <View
+          style={
+            [
+              undefined,
+              {
+                "width": 16,
+              },
+            ]
+          }
+        >
+          <Text
+            ellipsizeMode="clip"
+            numberOfLines={1}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "color": "#666666",
+                "flexGrow": 0,
+                "flexShrink": 0,
+                "fontFamily": "Ubuntu",
+                "fontSize": 14,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "lineHeight": 20,
+                "textAlign": "right",
+              }
+            }
+            testID="marker-box"
+          >
+            3. 
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "flexShrink": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "marginBottom": 8,
+                },
+                undefined,
+                undefined,
+              ]
+            }
+            testID="li"
+          >
+            <Text
+              allowFontScaling={true}
+              selectable={false}
+              style={
+                [
+                  {
+                    "color": "#666666",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 14,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  },
+                  undefined,
+                  undefined,
+                ]
+              }
+            >
+              Drei
+            </Text>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;

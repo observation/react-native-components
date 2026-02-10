@@ -20,6 +20,24 @@ describe('RenderHtmlWrapper', () => {
       })
     })
 
+    describe('Override renderer', () => {
+      test('Override ol', () => {
+        const html = '<ol>\n<li>Ein</li>\n<li>Zwei</li>\n<li>Drei</li>\n</ol>'
+        const renderers = { ol: () => <></> }
+        const { toJSON, queryByText } = render(<RenderHtmlWrapper source={{ html }} renderers={renderers} />)
+        expect(queryByText('Ein')).toBeFalsy()
+        expect(toJSON()).toMatchSnapshot()
+      })
+
+      test('Override ul does not affect ol', () => {
+        const html = '<ol>\n<li>Ein</li>\n<li>Zwei</li>\n<li>Drei</li>\n</ol>'
+        const renderers = { ul: () => <></> }
+        const { toJSON, queryByText } = render(<RenderHtmlWrapper source={{ html }} renderers={renderers} />)
+        expect(queryByText('Ein')).toBeTruthy()
+        expect(toJSON()).toMatchSnapshot()
+      })
+    })
+
     describe('Custom ordered list renderer', () => {
       test('Normal renderer', () => {
         const html = '<ol>\n<li>Ein</li>\n<li>Zwei</li>\n<li>Drei</li>\n</ol>'

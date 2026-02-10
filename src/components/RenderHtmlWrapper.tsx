@@ -59,17 +59,23 @@ const RenderHtmlWrapper = ({
   renderersProps = defaultRenderersProps,
   baseStyle = textStyle.body,
   ...props
-}: RenderHTMLProps) => (
-  <RenderHtml
-    contentWidth={contentWidth}
-    renderersProps={renderersProps}
-    renderers={renderers}
-    systemFonts={systemFonts}
-    baseStyle={baseStyle}
-    tagsStyles={htmlStyle}
-    enableExperimentalMarginCollapsing
-    {...props}
-  />
-)
+}: RenderHTMLProps) => {
+  const mergedRenderers = {
+    ...renderers,
+    ...props.renderers,
+  }
+  return (
+    <RenderHtml
+      contentWidth={contentWidth}
+      renderersProps={renderersProps}
+      renderers={mergedRenderers}
+      systemFonts={systemFonts}
+      baseStyle={baseStyle}
+      tagsStyles={htmlStyle}
+      enableExperimentalMarginCollapsing
+      {...props}
+    />
+  )
+}
 
 export default RenderHtmlWrapper
