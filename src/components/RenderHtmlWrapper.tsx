@@ -10,7 +10,7 @@ import htmlStyle from '../styles/html'
 import textStyle from '../styles/text'
 import theme from '../styles/theme'
 
-export const imgRenderer = ({ tnode }: { tnode: TBlock }) => {
+const imgRenderer = ({ tnode }: { tnode: TBlock }) => {
   const { src, alt } = tnode.attributes
   Log.debug('RenderHtmlWrapper:imgRenderer', src, alt)
   if (!src) {
@@ -19,7 +19,7 @@ export const imgRenderer = ({ tnode }: { tnode: TBlock }) => {
   return <ContentImage key={src} alt={alt} src={src} />
 }
 
-export const olRenderer = ({ InternalRenderer, ...props }: CustomRendererProps<TBlock>) => (
+const olRenderer = ({ InternalRenderer, ...props }: CustomRendererProps<TBlock>) => (
   <InternalRenderer
     {...props}
     style={{
@@ -29,7 +29,7 @@ export const olRenderer = ({ InternalRenderer, ...props }: CustomRendererProps<T
   />
 )
 
-export const ulRenderer = ({ TNodeChildrenRenderer, ...props }: CustomRendererProps<TBlock>) => (
+const ulRenderer = ({ TNodeChildrenRenderer, ...props }: CustomRendererProps<TBlock>) => (
   <>
     {props.tnode.children.map((item, i) => (
       <View key={i} style={{ flexDirection: 'row' }}>
@@ -40,7 +40,7 @@ export const ulRenderer = ({ TNodeChildrenRenderer, ...props }: CustomRendererPr
   </>
 )
 
-const renderers = {
+const defaultRenderers = {
   img: imgRenderer,
   ol: olRenderer,
   ul: ulRenderer,
@@ -57,12 +57,13 @@ const systemFonts = [...defaultSystemFonts, 'Ubuntu']
 const RenderHtmlWrapper = ({
   contentWidth = Dimensions.get('window').width - 2 * theme.margin.common,
   renderersProps = defaultRenderersProps,
+  renderers: customRenderers = {},
   baseStyle = textStyle.body,
   ...props
 }: RenderHTMLProps) => {
   const mergedRenderers = {
-    ...renderers,
-    ...props.renderers,
+    ...defaultRenderers,
+    ...customRenderers,
   }
   return (
     <RenderHtml
