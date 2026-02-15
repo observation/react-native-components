@@ -24,7 +24,6 @@ import PageIndicator from './components/PageIndicator'
 import Panel from './components/Panel'
 import Popup from './components/Popup'
 import ProgressBarList from './components/ProgressBarList'
-import RenderHtmlWrapper, { imgRenderer, olRenderer, ulRenderer } from './components/RenderHtmlWrapper'
 import TextLink from './components/TextLink'
 import Tooltip, { TooltipProps } from './components/Tooltip'
 import WebLink from './components/WebLink'
@@ -65,10 +64,6 @@ export {
   Popup,
   ProgressBar,
   ProgressBarList,
-  RenderHtmlWrapper,
-  imgRenderer,
-  olRenderer,
-  ulRenderer,
   TextLink,
   Tooltip,
   WebLink,

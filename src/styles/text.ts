@@ -1,4 +1,6 @@
-import font, { FontStyle } from './font'
+import { TextStyle } from 'react-native'
+
+import font from './font'
 import theme from './theme'
 
 type TextName =
@@ -17,7 +19,7 @@ type TextName =
   | 'percentage'
   | 'thumbnail'
 
-const text: Record<TextName, FontStyle> = {
+const text: Record<TextName, TextStyle> = {
   ...font,
   iconLabel: font.extraSmall,
   tabIconLabel: font.small,

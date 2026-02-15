@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.69.0",
+  "version": "1.70.0",
   "main": "src/index.ts",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
@@ -31,7 +31,6 @@
     "prettier": "^3.7.4",
     "react": "19.2.0",
     "react-native": "0.83.1",
-    "react-native-render-html": "^6.3.4",
     "react-test-renderer": "19.2.0",
     "ts-jest": "^29.4.6",
     "typescript": "5.8.3",
@@ -53,8 +52,7 @@
   "peerDependencies": {
     "@react-navigation/native": "^6.0.8",
     "react": "19.2.0",
-    "react-native": "0.83.1",
-    "react-native-render-html": "^6.1.0"
+    "react-native": "0.83.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",

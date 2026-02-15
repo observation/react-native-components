@@ -1,22 +1,6 @@
 import { Platform, TextStyle } from 'react-native'
 
-import { MixedSizeCSSPropertiesKeys } from 'react-native-render-html'
-
 import theme from './theme'
-
-/**
- * React Native's TextStyle without the overflow:'scroll' property.
- *
- * The component @native-html (used by react-native-render-html) is missing the overflow: 'scroll' property.
- * In order to use the React Native's TextStyle together with the RenderHtml component (and type checking)
- * we override the overflow property with our own overflow type
- *
- * Since React Native has introduced DimensionValue for some types, the MixedSizeCSSPropertiesKeys is forced
- * to be number | string | undefined
- */
-type FontStyle = TextStyle & { overflow?: 'visible' | 'hidden' | undefined } & {
-  [k in MixedSizeCSSPropertiesKeys]?: number | string
-}
 
 type FontName =
   | 'extraSmall'
@@ -32,7 +16,7 @@ type FontName =
   | 'huge'
   | 'hugeBold'
 
-const font: Record<FontName, FontStyle> = {
+const font: Record<FontName, TextStyle> = {
   extraSmall: {
     fontFamily: 'Ubuntu',
     fontStyle: 'normal',
@@ -120,4 +104,4 @@ const font: Record<FontName, FontStyle> = {
 }
 
 export default font
-export type { FontStyle, FontName }
+export type { FontName }
