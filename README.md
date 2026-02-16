@@ -33,7 +33,6 @@ UI components:
 - `Popup`
 - `ProgressBar`
 - `ProgressBarList`
-- `RenderHtmlWrapper`
 - `TextLink`
 - `Tooltip`
 - `TooltipProps`
