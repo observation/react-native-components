@@ -43,8 +43,8 @@ const InputField = ({
   const hasErrors = !!errorMessage
   const borderColor = theme.getBorderColor({ isFocused, hasErrors })
 
-  const inputContainerStyle = disabled ? { backgroundColor: theme.color.greyLight } : {}
-  const placeholderTextColor = disabled ? theme.color.greySemi : theme.color.placeholder
+  const inputContainerStyle = disabled ? { backgroundColor: theme.color.grey50 } : {}
+  const placeholderTextColor = disabled ? theme.color.grey300 : theme.color.grey500
 
   const layoutHandler = inputProps?.autoFocus
     ? () => {
@@ -82,7 +82,7 @@ const InputField = ({
       </View>
       {errorMessage && (
         <IconText
-          icon={<Icon name="exclamation-triangle" size={theme.icon.size.small} color={theme.color.error} />}
+          icon={<Icon name="exclamation-triangle" size={theme.icon.size.small} color={theme.color.error500} />}
           text={errorMessage}
           style={{
             textStyle: [styles.errorStyle, errorStyle],
@@ -117,10 +117,10 @@ const styles = StyleSheet.create({
   },
   errorStyle: {
     ...font.small,
-    color: theme.color.error,
+    color: theme.color.error500,
   },
   descriptionStyle: {
     ...font.small,
-    color: theme.color.greyDark,
+    color: theme.color.grey800,
   },
 })

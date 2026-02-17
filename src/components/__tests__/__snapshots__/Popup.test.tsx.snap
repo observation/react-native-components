@@ -33,7 +33,7 @@ exports[`Popup Rendering 1`] = `
     style={
       {
         "alignItems": "stretch",
-        "backgroundColor": "hsla(0, 0%, 18.1%, 0.6)",
+        "backgroundColor": "#66666699",
         "flex": 1,
         "flexDirection": "column",
         "justifyContent": "center",

@@ -101,7 +101,7 @@ const ProgressBarList = ({ progressBars, separator }: Props) => {
                 size={theme.icon.size.small}
               />
             ) : (
-              <Icon name="circle-check" color={theme.color.greySemi} size={theme.icon.size.small} />
+              <Icon name="circle-check" color={theme.color.grey300} size={theme.icon.size.small} />
             )}
           </View>
         ))}
@@ -130,7 +130,7 @@ const styles = StyleSheet.create({
   },
   label: {
     ...font.small,
-    color: theme.color.white70,
+    color: theme.overlay.white70,
     justifyContent: 'center',
     lineHeight: barHeight,
   },
@@ -141,7 +141,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     borderTopRightRadius: borderRadius,
     borderBottomRightRadius: borderRadius,
-    backgroundColor: theme.color.greySemi,
+    backgroundColor: theme.color.grey300,
     width: '100%',
   },
   numbersContainer: {
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
   },
   denominator: {
     ...font.small,
-    color: theme.color.white70,
+    color: theme.overlay.white70,
     lineHeight: barHeight,
   },
   numerator: {

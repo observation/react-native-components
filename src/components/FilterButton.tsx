@@ -12,7 +12,7 @@ type Props = {
 
 const FilterButton = ({ content, onPress, active = false, style }: Props) => {
   const buttonStyle = active ? styles.activeButton : styles.button
-  const contentColor = active ? theme.color.white : theme.color.greyDark
+  const contentColor = active ? theme.color.white : theme.color.grey800
   return (
     <TouchableOpacity
       testID="touchable-opacity"
@@ -36,6 +36,6 @@ const styles = StyleSheet.create({
     backgroundColor: theme.color.white,
   },
   activeButton: {
-    backgroundColor: theme.color.primary,
+    backgroundColor: theme.color.primary500,
   },
 })

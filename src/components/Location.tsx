@@ -13,7 +13,7 @@ type Props = {
 
 const Location = ({ location, containerStyle }: Props) => (
   <IconText
-    icon={<Icon name="map-marker-alt" style="solid" color={theme.color.greySemi} size={theme.icon.size.medium} />}
+    icon={<Icon name="map-marker-alt" style="solid" color={theme.color.grey300} size={theme.icon.size.medium} />}
     text={location}
     style={{
       containerStyle,

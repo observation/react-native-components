@@ -25,20 +25,20 @@ const text: Record<TextName, TextStyle> = {
   tabIconLabel: font.small,
   inputLabel: {
     ...font.smallBold,
-    color: theme.color.greyDark,
+    color: theme.color.grey800,
   },
   scientificName: {
     ...font.small,
     fontStyle: 'italic',
-    color: theme.color.greyBase,
+    color: theme.color.grey500,
   },
   body: {
     ...font.medium,
-    color: theme.color.greyDark,
+    color: theme.color.grey800,
   },
   light: {
     ...font.medium,
-    color: theme.color.greyBase,
+    color: theme.color.grey500,
   },
   lead: {
     ...font.mediumBold,
@@ -46,11 +46,11 @@ const text: Record<TextName, TextStyle> = {
   },
   link: {
     ...font.medium,
-    color: theme.color.primary,
+    color: theme.color.primary500,
   },
   linkBold: {
     ...font.mediumBold,
-    color: theme.color.primary,
+    color: theme.color.primary500,
   },
   input: {
     ...font.large,

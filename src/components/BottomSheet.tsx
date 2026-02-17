@@ -63,7 +63,7 @@ const styles = StyleSheet.create({
   container: {
     ...theme.shadow.ios,
     borderTopWidth: 1 / 3,
-    borderTopColor: theme.color.greySemi,
+    borderTopColor: theme.color.grey300,
   },
   bottomSheetContainer: {
     ...theme.shadow.android,

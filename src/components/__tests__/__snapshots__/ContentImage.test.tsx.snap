@@ -394,7 +394,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
       style={
         {
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#F8F9FA",
+          "borderColor": "#F9FAFB",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,
@@ -518,7 +518,7 @@ exports[`ContentImage Interaction Close the lightbox 1`] = `
       style={
         {
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#F8F9FA",
+          "borderColor": "#F9FAFB",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,
@@ -642,7 +642,7 @@ exports[`ContentImage Rendering With alt title 1`] = `
       style={
         {
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#F8F9FA",
+          "borderColor": "#F9FAFB",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,
@@ -766,7 +766,7 @@ exports[`ContentImage Rendering With alt title and text 1`] = `
       style={
         {
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#F8F9FA",
+          "borderColor": "#F9FAFB",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,
@@ -905,7 +905,7 @@ exports[`ContentImage Rendering With alt title ending in delimiter 1`] = `
       style={
         {
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#F8F9FA",
+          "borderColor": "#F9FAFB",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,

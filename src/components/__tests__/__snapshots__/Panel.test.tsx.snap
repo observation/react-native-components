@@ -24,7 +24,7 @@ exports[`Panel Rendering 1`] = `
       [
         {
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#F8F9FA",
+          "borderColor": "#F9FAFB",
           "borderTopWidth": 1,
           "elevation": 4,
           "paddingVertical": 16,
@@ -68,7 +68,7 @@ exports[`Panel Rendering without top shadow 1`] = `
       [
         {
           "backgroundColor": "#FFFFFF",
-          "borderColor": "#F8F9FA",
+          "borderColor": "#F9FAFB",
           "borderTopWidth": 1,
           "elevation": 4,
           "paddingVertical": 16,
