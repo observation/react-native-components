@@ -40,7 +40,7 @@ exports[`Chip Rendering All props 1`] = `
     style={
       [
         {
-          "backgroundColor": "#9DC556",
+          "backgroundColor": "#9BC454",
           "borderRadius": 16,
           "justifyContent": "center",
           "minWidth": 44,
@@ -128,7 +128,7 @@ exports[`Chip Rendering Required props 1`] = `
     style={
       [
         {
-          "backgroundColor": "#9DC556",
+          "backgroundColor": "#9BC454",
           "borderRadius": 16,
           "justifyContent": "center",
           "minWidth": 44,
