@@ -53,8 +53,8 @@ const color = {
 }
 
 const overlay = {
-  white70: '#FFFFFFB4',
-  grey99: '#66666699',
+  white70: '#FFFFFFB3',
+  grey60: '#66666699',
 }
 
 const margin = {

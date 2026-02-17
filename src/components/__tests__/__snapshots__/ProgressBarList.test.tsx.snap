@@ -34,7 +34,7 @@ exports[`ProgressBarList Show bars 1`] = `
         numberOfLines={1}
         style={
           {
-            "color": "#FFFFFFB4",
+            "color": "#FFFFFFB3",
             "fontFamily": "Ubuntu",
             "fontSize": 12,
             "fontStyle": "normal",
@@ -73,7 +73,7 @@ exports[`ProgressBarList Show bars 1`] = `
         numberOfLines={1}
         style={
           {
-            "color": "#FFFFFFB4",
+            "color": "#FFFFFFB3",
             "fontFamily": "Ubuntu",
             "fontSize": 12,
             "fontStyle": "normal",
@@ -112,7 +112,7 @@ exports[`ProgressBarList Show bars 1`] = `
         numberOfLines={1}
         style={
           {
-            "color": "#FFFFFFB4",
+            "color": "#FFFFFFB3",
             "fontFamily": "Ubuntu",
             "fontSize": 12,
             "fontStyle": "normal",
@@ -151,7 +151,7 @@ exports[`ProgressBarList Show bars 1`] = `
         numberOfLines={1}
         style={
           {
-            "color": "#FFFFFFB4",
+            "color": "#FFFFFFB3",
             "fontFamily": "Ubuntu",
             "fontSize": 12,
             "fontStyle": "normal",
@@ -190,7 +190,7 @@ exports[`ProgressBarList Show bars 1`] = `
         numberOfLines={1}
         style={
           {
-            "color": "#FFFFFFB4",
+            "color": "#FFFFFFB3",
             "fontFamily": "Ubuntu",
             "fontSize": 12,
             "fontStyle": "normal",
@@ -229,7 +229,7 @@ exports[`ProgressBarList Show bars 1`] = `
         numberOfLines={1}
         style={
           {
-            "color": "#FFFFFFB4",
+            "color": "#FFFFFFB3",
             "fontFamily": "Ubuntu",
             "fontSize": 12,
             "fontStyle": "normal",
@@ -268,7 +268,7 @@ exports[`ProgressBarList Show bars 1`] = `
         numberOfLines={1}
         style={
           {
-            "color": "#FFFFFFB4",
+            "color": "#FFFFFFB3",
             "fontFamily": "Ubuntu",
             "fontSize": 12,
             "fontStyle": "normal",
@@ -358,7 +358,7 @@ exports[`ProgressBarList Show bars 1`] = `
             <Text
               style={
                 {
-                  "color": "#FFFFFFB4",
+                  "color": "#FFFFFFB3",
                   "fontFamily": "Ubuntu",
                   "fontSize": 12,
                   "fontStyle": "normal",
@@ -434,7 +434,7 @@ exports[`ProgressBarList Show bars 1`] = `
             <Text
               style={
                 {
-                  "color": "#FFFFFFB4",
+                  "color": "#FFFFFFB3",
                   "fontFamily": "Ubuntu",
                   "fontSize": 12,
                   "fontStyle": "normal",
@@ -510,7 +510,7 @@ exports[`ProgressBarList Show bars 1`] = `
             <Text
               style={
                 {
-                  "color": "#FFFFFFB4",
+                  "color": "#FFFFFFB3",
                   "fontFamily": "Ubuntu",
                   "fontSize": 12,
                   "fontStyle": "normal",
@@ -586,7 +586,7 @@ exports[`ProgressBarList Show bars 1`] = `
             <Text
               style={
                 {
-                  "color": "#FFFFFFB4",
+                  "color": "#FFFFFFB3",
                   "fontFamily": "Ubuntu",
                   "fontSize": 12,
                   "fontStyle": "normal",
@@ -662,7 +662,7 @@ exports[`ProgressBarList Show bars 1`] = `
             <Text
               style={
                 {
-                  "color": "#FFFFFFB4",
+                  "color": "#FFFFFFB3",
                   "fontFamily": "Ubuntu",
                   "fontSize": 12,
                   "fontStyle": "normal",
@@ -738,7 +738,7 @@ exports[`ProgressBarList Show bars 1`] = `
             <Text
               style={
                 {
-                  "color": "#FFFFFFB4",
+                  "color": "#FFFFFFB3",
                   "fontFamily": "Ubuntu",
                   "fontSize": 12,
                   "fontStyle": "normal",
@@ -814,7 +814,7 @@ exports[`ProgressBarList Show bars 1`] = `
             <Text
               style={
                 {
-                  "color": "#FFFFFFB4",
+                  "color": "#FFFFFFB3",
                   "fontFamily": "Ubuntu",
                   "fontSize": 12,
                   "fontStyle": "normal",
@@ -988,7 +988,7 @@ exports[`ProgressBarList Use different translation 1`] = `
         numberOfLines={1}
         style={
           {
-            "color": "#FFFFFFB4",
+            "color": "#FFFFFFB3",
             "fontFamily": "Ubuntu",
             "fontSize": 12,
             "fontStyle": "normal",
@@ -1078,7 +1078,7 @@ exports[`ProgressBarList Use different translation 1`] = `
             <Text
               style={
                 {
-                  "color": "#FFFFFFB4",
+                  "color": "#FFFFFFB3",
                   "fontFamily": "Ubuntu",
                   "fontSize": 12,
                   "fontStyle": "normal",
