@@ -42,7 +42,6 @@ const color = {
   success600: '#689023',
   success500: '#85B92D',
   success400: '#9BC454',
-  success300: '#B6D482',
   success200: '#CEE2AB',
   success50: '#F7FBEF',
   warning500: '#F4C015',
