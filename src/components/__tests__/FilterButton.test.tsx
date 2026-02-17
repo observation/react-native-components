@@ -20,7 +20,7 @@ describe('FilterButton', () => {
     test('Disabled', () => {
       const { toJSON } = render(<FilterButton content={content} active={false} style={{ flex: 1 }} />)
       expect(toJSON()).toMatchSnapshot()
-      expect(content).toHaveBeenCalledWith({ color: theme.color.greyDark })
+      expect(content).toHaveBeenCalledWith({ color: theme.color.grey800 })
     })
   })
 

@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
     ...theme.shadow.android,
     ...theme.roundedLarge,
     borderWidth: 1,
-    borderColor: theme.color.greyLight,
+    borderColor: theme.color.grey50,
   },
   imageContainer: {
     margin: theme.margin.common,
@@ -91,6 +91,6 @@ const styles = StyleSheet.create({
   },
   description: {
     ...font.small,
-    color: theme.color.greyBase,
+    color: theme.color.grey500,
   },
 })

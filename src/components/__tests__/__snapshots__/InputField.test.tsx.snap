@@ -31,7 +31,7 @@ exports[`InputField Rendering Disabled 1`] = `
   <View
     style={
       {
-        "backgroundColor": "#F8F9FA",
+        "backgroundColor": "#F9FAFB",
         "flexDirection": "row",
       }
     }
@@ -482,7 +482,7 @@ exports[`InputField Rendering With focus 1`] = `
       style={
         [
           {
-            "borderColor": "#66A3D0",
+            "borderColor": "#67A4D0",
           },
           {
             "borderRadius": 4,
@@ -538,7 +538,7 @@ exports[`InputField Rendering With focus and an error message 1`] = `
       style={
         [
           {
-            "borderColor": "#66A3D0",
+            "borderColor": "#67A4D0",
           },
           {
             "borderRadius": 4,

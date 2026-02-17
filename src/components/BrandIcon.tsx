@@ -13,7 +13,7 @@ type Props = {
 
 export const BrandIcon = ({ name, color, size }: Props) => {
   const icon = BrandIcons[name]
-  const iconColor = color ?? theme.color.primary
+  const iconColor = color ?? theme.color.primary500
   const iconSize = size ?? theme.icon.size.large
   const FontAwesomeIconTypeErased = FontAwesomeIcon as unknown as any
 

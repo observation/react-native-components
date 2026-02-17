@@ -1,5 +1,3 @@
-import Color from 'color'
-
 const font = {
   size: {
     extraSmall: 10,
@@ -31,36 +29,32 @@ const icon = {
   },
 }
 
-const black = '#212121'
-const greyBase = '#939393'
-
 const color = {
-  primary: '#0066B1',
-  primaryLighter: '#66A3D0',
-  primaryLightest: '#E6F0F7',
-  secondaryLight: '#709FFD',
-  secondaryLightestExtra: '#F0F5FF',
-  black,
-  greyDark: '#666666',
-  greyBase,
-  placeholder: greyBase,
-  greySemi: '#E6E6E6',
-  greyLight: '#F8F9FA',
   white: '#FFFFFF',
-  white70: '#FFFFFFB4',
-  white77: '#FFFFFFC4',
-  white80: '#FFFFFFCD',
-  success: '#84B72C',
-  successLight: '#9DC556',
-  successLighter: '#B5D480',
-  successLightest: '#CEE2AB',
-  successLightestExtra: '#F7FBEF',
-  successDark: '#6A9223',
-  warning: '#F4C013',
-  error: '#EA554B',
-  errorLightest: '#F7BBB7',
-  modalBackground: Color(black).alpha(0.6).lighten(0.4).string(),
-  darkPanelBackground: Color(black).alpha(0.5).string(),
+  black: '#212121',
+  grey800: '#666666',
+  grey500: '#939393',
+  grey300: '#E6E6E6',
+  grey50: '#F9FAFB',
+  primary500: '#0066B1',
+  primary300: '#67A4D0',
+  primary50: '#E8F1F8',
+  success600: '#689023',
+  success500: '#85B92D',
+  success400: '#9BC454',
+  success200: '#CEE2AB',
+  success50: '#F7FBEF',
+  warning500: '#F4C015',
+  error500: '#EA554B',
+  error200: '#F7BAB6',
+  accentLime400: '#9BC454',
+  accentSky400: '#72A1FD',
+  accentSky50: '#F0F5FF',
+}
+
+const overlay = {
+  white70: '#FFFFFFB3',
+  grey60: '#66666699',
 }
 
 const margin = {
@@ -91,12 +85,13 @@ const bottomGradientColors = ['#30303000', '#30303059']
 const topGradientColors = bottomGradientColors.slice().reverse()
 
 const getBorderColor = ({ isFocused = false, hasErrors = false }) =>
-  hasErrors ? color.error : isFocused ? color.primaryLighter : color.greySemi
+  hasErrors ? color.error500 : isFocused ? color.primary300 : color.grey300
 
 export default {
   font,
   icon,
   color,
+  overlay,
   bottomGradientColors,
   topGradientColors,
   margin,
@@ -104,11 +99,11 @@ export default {
   shadow: {
     android: {
       elevation: 6,
-      shadowColor: color.greyBase,
+      shadowColor: color.grey500,
     },
     ios: {
       shadowOffset: { width: 0, height: 4 },
-      shadowColor: color.greySemi,
+      shadowColor: color.grey300,
       shadowOpacity: 0.8,
       shadowRadius: 4,
     },
@@ -116,11 +111,11 @@ export default {
   shadowSmall: {
     android: {
       elevation: 4,
-      shadowColor: color.greyBase,
+      shadowColor: color.grey500,
     },
     ios: {
       shadowOffset: { width: 0, height: 2 },
-      shadowColor: color.greySemi,
+      shadowColor: color.grey300,
       shadowOpacity: 0.8,
       shadowRadius: 2,
     },

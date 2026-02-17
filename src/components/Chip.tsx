@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
     fontSize: theme.font.size.medium,
   },
   chipContainer: {
-    backgroundColor: theme.color.successLight,
+    backgroundColor: theme.color.accentLime400,
     paddingHorizontal: theme.margin.common,
     paddingVertical: theme.margin.half,
     borderRadius: theme.margin.common,

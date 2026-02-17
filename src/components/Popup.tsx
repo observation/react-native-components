@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     alignItems: 'stretch',
     justifyContent: 'center',
     flexDirection: 'column',
-    backgroundColor: theme.color.modalBackground,
+    backgroundColor: theme.overlay.grey60,
   },
   viewPort: {
     flexDirection: 'column',

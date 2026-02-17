@@ -14,7 +14,7 @@ const Notification = ({ count, style }: Props) => (
     style={[
       style,
       {
-        backgroundColor: theme.color.error,
+        backgroundColor: theme.color.error500,
         borderRadius: 9,
         width: 18,
         height: 18,

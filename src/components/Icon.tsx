@@ -22,7 +22,7 @@ export type IconProps = IconAppearanceProps & {
 export const Icon = ({ name, color, size, testID, style, rotation }: IconProps): React.ReactElement => {
   const iconStyle = style ?? 'light'
   const icon = iconStyle === 'light' ? Icons[name].light : Icons[name].solid
-  const iconColor = color ?? theme.color.primary
+  const iconColor = color ?? theme.color.primary500
   const iconSize = size ?? theme.icon.size.large
   const transform = rotation ? { rotate: rotation } : undefined
 

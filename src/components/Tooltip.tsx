@@ -44,7 +44,7 @@ const Tooltip = ({
           {closable && (
             <View style={{ ...styles.iconContainer, marginLeft: theme.margin.common }}>
               <TouchableOpacity testID="close" onPress={onClose} activeOpacity={0.5} accessibilityLabel="close">
-                <Icon name="times" color={theme.color.greyBase} size={theme.icon.size.extraLarge} />
+                <Icon name="times" color={theme.color.grey500} size={theme.icon.size.extraLarge} />
               </TouchableOpacity>
             </View>
           )}

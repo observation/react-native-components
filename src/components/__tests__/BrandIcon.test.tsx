@@ -13,7 +13,7 @@ describe('BrandIcon', () => {
     })
 
     test('With color', () => {
-      const { toJSON } = render(<BrandIcon name="wikipedia-w" color={theme.color.error} />)
+      const { toJSON } = render(<BrandIcon name="wikipedia-w" color={theme.color.error500} />)
       expect(toJSON()).toMatchSnapshot()
     })
 

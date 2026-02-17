@@ -75,7 +75,7 @@ const styles = StyleSheet.create({
     width: 8,
     margin: 4,
     ...theme.rounded,
-    backgroundColor: theme.color.greyBase,
+    backgroundColor: theme.color.grey500,
   },
   smallDot: {
     margin: 6,

@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
     backgroundColor: theme.color.white,
     ...theme.shadowSmall.android,
     borderTopWidth: 1,
-    borderColor: theme.color.greyLight,
+    borderColor: theme.color.grey50,
   },
 })

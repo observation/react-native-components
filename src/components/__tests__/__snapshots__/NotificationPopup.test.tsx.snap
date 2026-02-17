@@ -33,7 +33,7 @@ exports[`NotificationPopup Rendering Left and right buttons 1`] = `
     style={
       {
         "alignItems": "stretch",
-        "backgroundColor": "hsla(0, 0%, 18.1%, 0.6)",
+        "backgroundColor": "#66666699",
         "flex": 1,
         "flexDirection": "column",
         "justifyContent": "center",
@@ -317,7 +317,7 @@ exports[`NotificationPopup Rendering Only left button 1`] = `
     style={
       {
         "alignItems": "stretch",
-        "backgroundColor": "hsla(0, 0%, 18.1%, 0.6)",
+        "backgroundColor": "#66666699",
         "flex": 1,
         "flexDirection": "column",
         "justifyContent": "center",
@@ -526,7 +526,7 @@ exports[`NotificationPopup Rendering With close button 1`] = `
     style={
       {
         "alignItems": "stretch",
-        "backgroundColor": "hsla(0, 0%, 18.1%, 0.6)",
+        "backgroundColor": "#66666699",
         "flex": 1,
         "flexDirection": "column",
         "justifyContent": "center",
