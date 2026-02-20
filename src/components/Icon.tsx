@@ -3,7 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 
 import Icons, { IconName } from '../lib/Icons'
-import theme from '../styles/theme'
+import { theme } from '../styles'
 
 export type IconStyleProp = 'light' | 'solid'
 
@@ -23,7 +23,7 @@ export const Icon = ({ name, color, size, testID, style, rotation }: IconProps):
   const iconStyle = style ?? 'light'
   const icon = iconStyle === 'light' ? Icons[name].light : Icons[name].solid
   const iconColor = color ?? theme.color.primary500
-  const iconSize = size ?? theme.icon.size.large
+  const iconSize = size ?? theme.icon.size.l
   const transform = rotation ? { rotate: rotation } : undefined
 
   return <FontAwesomeIcon icon={icon} color={iconColor} size={iconSize} testID={testID} transform={transform} />

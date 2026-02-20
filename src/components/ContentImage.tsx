@@ -4,8 +4,7 @@ import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'rea
 import ScalableImage from 'react-native-scalable-image'
 
 import Lightbox from './Lightbox'
-import font from '../styles/font'
-import theme from '../styles/theme'
+import { font, rounded, shadow, theme } from '../styles'
 
 type Props = {
   src: string
@@ -58,21 +57,21 @@ const styles = StyleSheet.create({
   outerContainer: {
     margin: -theme.margin.common,
     marginBottom: -theme.margin.half,
-    ...theme.shadow.ios,
+    ...shadow.normal.ios,
   },
   innerContainer: {
     flexDirection: 'row',
     margin: theme.margin.common,
     backgroundColor: theme.color.white,
-    ...theme.shadow.android,
-    ...theme.roundedLarge,
+    ...shadow.normal.android,
+    ...rounded.large,
     borderWidth: 1,
     borderColor: theme.color.grey50,
   },
   imageContainer: {
     margin: theme.margin.common,
     marginRight: theme.margin.half,
-    ...theme.roundedLarge,
+    ...rounded.large,
   },
   image: {
     height: 80,

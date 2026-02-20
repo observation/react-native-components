@@ -6,9 +6,8 @@ import Color from 'color'
 
 import { Icon } from './Icon'
 import PageIndicator from './PageIndicator'
-import font from '../styles/font'
+import { font, layout, theme } from '../styles'
 import textStyle from '../styles/text'
-import theme from '../styles/theme'
 
 const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
 
@@ -26,7 +25,7 @@ const getLightboxHeaderComponent =
             <Icon
               name="times"
               color={Color(theme.color.white).alpha(0.5).string()}
-              size={theme.icon.size.extraExtraLarge}
+              size={theme.icon.size.xxl}
               testID="close-lightbox"
             />
           </TouchableOpacity>
@@ -144,11 +143,11 @@ export default Lightbox
 
 const styles = StyleSheet.create({
   lightboxFooterContainer: {
-    ...theme.absoluteBottom,
+    ...layout.absoluteBottom,
     backgroundColor: '#00000077',
   },
   lightboxHeaderContainer: {
-    ...theme.absoluteTop,
+    ...layout.absoluteTop,
     backgroundColor: '#00000077',
   },
   lightboxHeader: {

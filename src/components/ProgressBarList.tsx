@@ -3,8 +3,7 @@ import { StyleSheet, Text, View } from 'react-native'
 
 import { Icon } from './Icon'
 import ProgressBar from '../data/ProgressBar'
-import font from '../styles/font'
-import theme from '../styles/theme'
+import { font, theme } from '../styles'
 
 type Props = {
   progressBars: ProgressBar[]
@@ -94,14 +93,9 @@ const ProgressBarList = ({ progressBars, separator }: Props) => {
             }}
           >
             {progressBar.isCompleted ? (
-              <Icon
-                name="circle-check"
-                style="solid"
-                color={progressBar.backgroundColor}
-                size={theme.icon.size.small}
-              />
+              <Icon name="circle-check" style="solid" color={progressBar.backgroundColor} size={theme.icon.size.s} />
             ) : (
-              <Icon name="circle-check" color={theme.color.grey300} size={theme.icon.size.small} />
+              <Icon name="circle-check" color={theme.color.grey300} size={theme.icon.size.s} />
             )}
           </View>
         ))}

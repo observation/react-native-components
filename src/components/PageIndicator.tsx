@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, View } from 'react-native'
 
 import Log from '../lib/Log'
-import theme from '../styles/theme'
+import { rounded, theme } from '../styles'
 
 /** Maximum number of dots to display, should be odd */
 const maximumNumberOfDots = 7
@@ -74,7 +74,7 @@ const styles = StyleSheet.create({
     aspectRatio: 1,
     width: 8,
     margin: 4,
-    ...theme.rounded,
+    ...rounded.normal,
     backgroundColor: theme.color.grey500,
   },
   smallDot: {

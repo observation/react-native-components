@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.71.0",
+  "version": "1.72.0",
   "main": "src/index.ts",
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
@@ -65,6 +65,7 @@
     "accordion-collapse-react-native": "^1.1.1",
     "color": "^5.0.3",
     "react-native-logs": "^5.5.0",
+    "react-native-render-html": "^6.3.4",
     "react-native-scalable-image": "^1.1.0"
   },
   "packageManager": "yarn@3.6.4",

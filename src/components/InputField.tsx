@@ -3,9 +3,8 @@ import { Platform, StyleProp, StyleSheet, Text, TextInput, TextInputProps, View,
 
 import { Icon } from './Icon'
 import IconText from './IconText'
-import font from '../styles/font'
+import { font, inputStyles, layout, rounded, theme } from '../styles'
 import textStyle from '../styles/text'
-import theme from '../styles/theme'
 
 type Props = {
   containerStyle?: StyleProp<ViewStyle>
@@ -41,7 +40,7 @@ const InputField = ({
   const fixInputStyle = Platform.OS === 'ios' ? { lineHeight: 0 } : {}
 
   const hasErrors = !!errorMessage
-  const borderColor = theme.getBorderColor({ isFocused, hasErrors })
+  const borderColor = hasErrors ? theme.color.error500 : isFocused ? theme.color.primary300 : theme.color.grey300
 
   const inputContainerStyle = disabled ? { backgroundColor: theme.color.grey50 } : {}
   const placeholderTextColor = disabled ? theme.color.grey300 : theme.color.grey500
@@ -82,7 +81,7 @@ const InputField = ({
       </View>
       {errorMessage && (
         <IconText
-          icon={<Icon name="exclamation-triangle" size={theme.icon.size.small} color={theme.color.error500} />}
+          icon={<Icon name="exclamation-triangle" size={theme.icon.size.s} color={theme.color.error500} />}
           text={errorMessage}
           style={{
             textStyle: [styles.errorStyle, errorStyle],
@@ -108,11 +107,12 @@ const styles = StyleSheet.create({
     marginBottom: theme.margin.half,
   },
   inputStyle: {
-    ...theme.input,
+    ...rounded.normal,
+    ...inputStyles.input,
     ...textStyle.input,
   },
   rightIcon: {
-    ...theme.absoluteRight,
+    ...layout.absoluteRight,
     justifyContent: 'center',
   },
   errorStyle: {

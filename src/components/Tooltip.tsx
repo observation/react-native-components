@@ -3,8 +3,8 @@ import { StyleProp, StyleSheet, Text, TouchableOpacity, View, ViewStyle } from '
 
 import { Icon, IconProps } from './Icon'
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
+import { lineHeight, shadow, theme } from '../styles'
 import textStyle from '../styles/text'
-import theme from '../styles/theme'
 
 type TooltipProps = {
   title: string
@@ -29,13 +29,13 @@ const Tooltip = ({
   testID,
   children,
 }: TooltipProps) => (
-  <View style={[theme.shadow.ios, style]} testID={testID}>
+  <View style={[shadow.normal.ios, style]} testID={testID}>
     <View style={styles.tooltipContainer}>
       <View style={styles.tooltip}>
         <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
           {icon && (
             <View style={{ ...styles.iconContainer, marginRight: theme.margin.common }}>
-              <Icon size={theme.icon.size.extraLarge} {...icon} />
+              <Icon size={theme.icon.size.xl} {...icon} />
             </View>
           )}
           <View style={{ flex: 1 }}>
@@ -44,7 +44,7 @@ const Tooltip = ({
           {closable && (
             <View style={{ ...styles.iconContainer, marginLeft: theme.margin.common }}>
               <TouchableOpacity testID="close" onPress={onClose} activeOpacity={0.5} accessibilityLabel="close">
-                <Icon name="times" color={theme.color.grey500} size={theme.icon.size.extraLarge} />
+                <Icon name="times" color={theme.color.grey500} size={theme.icon.size.xl} />
               </TouchableOpacity>
             </View>
           )}
@@ -89,14 +89,14 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 16,
     overflow: 'hidden',
     backgroundColor: 'white',
-    ...theme.shadow.android,
+    ...shadow.normal.android,
   },
   tooltip: {
     flexDirection: 'column',
     margin: theme.margin.common,
   },
   iconContainer: {
-    height: theme.font.lineHeight.medium,
+    height: lineHeight.medium,
     justifyContent: 'center',
   },
 })

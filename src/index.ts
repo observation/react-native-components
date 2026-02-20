@@ -1,3 +1,4 @@
+import { Theme } from './@types/theme'
 import Accordion from './components/Accordion'
 import BackButton from './components/BackButton'
 import BackgroundImage from './components/BackgroundImage'
@@ -72,8 +73,9 @@ export {
   useShowBlurView,
 }
 
-export type { IconName, LargeButtonProps, NotificationPopupStaticProps, TooltipProps }
-
+export type { IconName, LargeButtonProps, NotificationPopupStaticProps, Theme, TooltipProps }
 export * from './components/Icon'
 export * from './components/BrandIcon'
+
+export type { FontName, FontStyle } from './@types/font'
 export * from './styles'

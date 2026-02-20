@@ -15,7 +15,7 @@ type Props = {
 
 const WebLink = ({ onPress, containerStyle, text, textStyle }: Props) => (
   <IconText
-    icon={<Icon name="external-link" size={theme.icon.size.medium} />}
+    icon={<Icon name="external-link" size={theme.icon.size.m} />}
     text={text}
     style={{
       containerStyle,

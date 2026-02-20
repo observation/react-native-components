@@ -4,8 +4,8 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { Icon } from './Icon'
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
 import Popup from '../components/Popup'
+import { theme } from '../styles'
 import textStyle from '../styles/text'
-import theme from '../styles/theme'
 
 type NotificationPopupStaticProps = {
   title: string
@@ -27,7 +27,7 @@ const NotificationPopup = ({ visible, title, message, leftButton, rightButton, o
 
         {onClose && (
           <TouchableOpacity testID="close" onPress={onClose} activeOpacity={0.5} style={styles.closeButton}>
-            <Icon name="times" color={theme.color.grey500} size={theme.icon.size.extraLarge} />
+            <Icon name="times" color={theme.color.grey500} size={theme.icon.size.xl} />
           </TouchableOpacity>
         )}
       </View>

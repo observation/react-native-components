@@ -10,8 +10,8 @@ import {
   ViewStyle,
 } from 'react-native'
 
+import { fontSize, theme } from '../styles'
 import appTextStyle from '../styles/text'
-import theme from '../styles/theme'
 
 type Props = {
   text?: string
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     ...appTextStyle.body,
     color: theme.color.white,
     lineHeight: theme.margin.common,
-    fontSize: theme.font.size.medium,
+    fontSize: fontSize.medium,
   },
   chipContainer: {
     backgroundColor: theme.color.accentLime400,

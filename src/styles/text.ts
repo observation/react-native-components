@@ -1,6 +1,6 @@
 import { TextStyle } from 'react-native'
 
-import font from './font'
+import { font } from './font'
 import theme from './theme'
 
 type TextName =
@@ -19,7 +19,7 @@ type TextName =
   | 'percentage'
   | 'thumbnail'
 
-const text: Record<TextName, TextStyle> = {
+const text = {
   ...font,
   iconLabel: font.extraSmall,
   tabIconLabel: font.small,
@@ -74,6 +74,6 @@ const text: Record<TextName, TextStyle> = {
     fontWeight: 'bold',
     color: theme.color.white,
   },
-}
+} satisfies Record<TextName, TextStyle>
 
 export default text

@@ -6,8 +6,8 @@ import { IconName } from '../lib/Icons'
 import * as LargeButtonStyles from '../lib/LargeButtonStyles'
 import { LargeButtonStyle } from '../lib/LargeButtonStyles'
 import Log from '../lib/Log'
+import { rounded, theme } from '../styles'
 import appTextStyle from '../styles/text'
-import theme from '../styles/theme'
 
 type LargeButtonProps = {
   title: string
@@ -73,7 +73,7 @@ const LargeButton = ({
       <View style={styles.titleContainer}>
         {iconName && (
           <View style={styles.iconContainerStyle}>
-            <Icon name={iconName} size={theme.icon.size.large} color={iconColor} />
+            <Icon name={iconName} size={theme.icon.size.l} color={iconColor} />
           </View>
         )}
         <Text style={[styles.title, titleStyle, textStyle]}>{title}</Text>
@@ -87,7 +87,7 @@ export type { LargeButtonProps }
 
 const styles = StyleSheet.create({
   container: {
-    ...theme.rounded,
+    ...rounded.normal,
     margin: theme.margin.common,
     height: 32,
     justifyContent: 'center',
