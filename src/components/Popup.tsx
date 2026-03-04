@@ -4,7 +4,7 @@ import { Modal, StyleSheet, View } from 'react-native'
 import { BlurView } from '@react-native-community/blur'
 
 import useShowBlurView from '../hooks/useShowBlurView'
-import theme from '../styles/theme'
+import { layout, theme } from '../styles'
 
 type Props = {
   visible: boolean
@@ -16,7 +16,7 @@ const Popup = ({ children, visible }: Props) => {
 
   return (
     <Modal transparent animationType="fade" visible={visible} style={{ flex: 1 }}>
-      {showBlurView && <BlurView style={theme.absolute} blurType="light" blurAmount={2} />}
+      {showBlurView && <BlurView style={layout.absolute} blurType="light" blurAmount={2} />}
       <View style={styles.modalBackground}>
         <View style={styles.viewPort}>{children}</View>
       </View>

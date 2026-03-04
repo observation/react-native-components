@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 
-import theme from '../styles/theme'
+import { shadow, theme } from '../styles'
 
 type Props = {
   children?: React.ReactNode
@@ -24,12 +24,12 @@ export default Panel
 const styles = StyleSheet.create({
   panelContainer: {
     marginTop: theme.margin.quarter,
-    ...theme.shadowSmall.ios,
+    ...shadow.small.ios,
   },
   panel: {
     paddingVertical: theme.margin.common,
     backgroundColor: theme.color.white,
-    ...theme.shadowSmall.android,
+    ...shadow.small.android,
     borderTopWidth: 1,
     borderColor: theme.color.grey50,
   },

@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleProp, StyleSheet, TouchableOpacity, ViewStyle } from 'react-native'
 
-import theme from '../styles/theme'
+import { rounded, theme } from '../styles'
 
 type Props = {
   content: (_: { color: string }) => React.ReactElement
@@ -29,7 +29,7 @@ export default FilterButton
 
 const styles = StyleSheet.create({
   container: {
-    ...theme.rounded,
+    ...rounded.normal,
     justifyContent: 'center',
   },
   button: {

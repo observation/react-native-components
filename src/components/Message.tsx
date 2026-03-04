@@ -2,8 +2,8 @@ import React from 'react'
 import { StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
 
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
+import { theme } from '../styles'
 import textStyle from '../styles/text'
-import theme from '../styles/theme'
 
 type Props = {
   title?: string

@@ -13,7 +13,7 @@ type Props = {
 
 const Date = ({ date, containerStyle }: Props) => (
   <IconText
-    icon={<Icon name="calendar-day" style={'solid'} color={theme.color.grey300} size={theme.icon.size.medium} />}
+    icon={<Icon name="calendar-day" style={'solid'} color={theme.color.grey300} size={theme.icon.size.m} />}
     text={date}
     style={{
       containerStyle,

@@ -722,7 +722,7 @@ exports[`LargeButton Rendering, with title style 1`] = `
             "fontSize": 16,
             "fontStyle": "normal",
             "fontWeight": "bold",
-            "lineHeight": 26,
+            "lineHeight": 24,
           },
           {
             "color": "#FFFFFF",

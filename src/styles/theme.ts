@@ -1,33 +1,17 @@
-const font = {
-  size: {
-    extraSmall: 10,
-    small: 12,
-    medium: 14,
-    large: 16,
-    extraLarge: 18,
-    huge: 31,
-  },
-  lineHeight: {
-    extraSmall: 16,
-    small: 16,
-    medium: 20,
-    large: 26,
-    extraLarge: 28,
-    huge: 37,
-  },
-}
+import { Theme, ThemeAnimation, ThemeColor, ThemeGradient, ThemeIcon, ThemeMargin, ThemeOverlay } from '../@types/theme'
 
 const icon = {
   size: {
-    extraSmall: 10,
-    small: 12,
-    medium: 14,
-    large: 16,
-    extraLarge: 18,
-    extraExtraLarge: 24,
-    huge: 48,
+    xxs: 8,
+    xs: 10,
+    s: 12,
+    m: 14,
+    l: 16,
+    xl: 18,
+    xxl: 24,
+    xxxl: 48,
   },
-}
+} satisfies ThemeIcon
 
 const color = {
   white: '#FFFFFF',
@@ -35,27 +19,43 @@ const color = {
   grey800: '#666666',
   grey500: '#939393',
   grey300: '#E6E6E6',
+  grey100: '#F0F0F0',
   grey50: '#F9FAFB',
   primary500: '#0066B1',
   primary300: '#67A4D0',
   primary50: '#E8F1F8',
+  success700: '#50701A',
   success600: '#689023',
   success500: '#85B92D',
   success400: '#9BC454',
   success200: '#CEE2AB',
   success50: '#F7FBEF',
+  warning700: '#93730B',
   warning500: '#F4C015',
+  warning200: '#FBE6A2',
+  error700: '#8B332D',
   error500: '#EA554B',
   error200: '#F7BAB6',
+  accentLime50: '#F7FBEF',
   accentLime400: '#9BC454',
-  accentSky400: '#72A1FD',
   accentSky50: '#F0F5FF',
-}
+  accentSky400: '#72A1FD',
+} satisfies ThemeColor
 
 const overlay = {
+  white00: '#ffffff00',
+  white05: '#FFFFFF0D',
+  white10: '#FFFFFF1A',
   white70: '#FFFFFFB3',
+  white80: '#FFFFFFCC',
+  black50: '#00000080',
   grey60: '#66666699',
-}
+} satisfies ThemeOverlay
+
+const gradient = {
+  bottom: ['#30303000', '#30303059'],
+  top: ['#30303059', '#30303000'],
+} satisfies ThemeGradient
 
 const margin = {
   eighth: 2,
@@ -65,100 +65,22 @@ const margin = {
   large: 24,
   double: 32,
   huge: 48,
-}
+} satisfies ThemeMargin
 
-const rounded = {
-  borderRadius: 4,
-  overflow: 'hidden' as const,
-}
+const animation = {
+  duration: {
+    medium: 300,
+  },
+} satisfies ThemeAnimation
 
-const input = {
-  ...rounded,
-  flex: 1,
-  minHeight: 40,
-  borderWidth: 2,
-  paddingLeft: margin.half,
-  paddingRight: margin.double,
-}
-
-const bottomGradientColors = ['#30303000', '#30303059']
-const topGradientColors = bottomGradientColors.slice().reverse()
-
-const getBorderColor = ({ isFocused = false, hasErrors = false }) =>
-  hasErrors ? color.error500 : isFocused ? color.primary300 : color.grey300
-
-export default {
-  font,
+export const defaultTheme = {
   icon,
   color,
   overlay,
-  bottomGradientColors,
-  topGradientColors,
+  gradient,
+  animation,
   margin,
-  input,
-  shadow: {
-    android: {
-      elevation: 6,
-      shadowColor: color.grey500,
-    },
-    ios: {
-      shadowOffset: { width: 0, height: 4 },
-      shadowColor: color.grey300,
-      shadowOpacity: 0.8,
-      shadowRadius: 4,
-    },
-  },
-  shadowSmall: {
-    android: {
-      elevation: 4,
-      shadowColor: color.grey500,
-    },
-    ios: {
-      shadowOffset: { width: 0, height: 2 },
-      shadowColor: color.grey300,
-      shadowOpacity: 0.8,
-      shadowRadius: 2,
-    },
-  },
-  rounded,
-  roundedLarge: {
-    borderRadius: 8,
-    overflow: 'hidden' as const,
-  },
-  roundedHuge: {
-    borderRadius: 10,
-    overflow: 'hidden' as const,
-  },
-  absolute: {
-    position: 'absolute' as const,
-    top: 0,
-    bottom: 0,
-    left: 0,
-    right: 0,
-  },
-  absoluteLeft: {
-    position: 'absolute' as const,
-    top: 0,
-    bottom: 0,
-    left: 0,
-  },
-  absoluteRight: {
-    position: 'absolute' as const,
-    top: 0,
-    bottom: 0,
-    right: 0,
-  },
-  absoluteBottom: {
-    position: 'absolute' as const,
-    bottom: 0,
-    left: 0,
-    right: 0,
-  },
-  absoluteTop: {
-    position: 'absolute' as const,
-    top: 0,
-    left: 0,
-    right: 0,
-  },
-  getBorderColor,
-}
+} satisfies Theme
+
+// To make existing imports work without having to change the import path
+export default defaultTheme

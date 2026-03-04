@@ -1,8 +1,7 @@
 import React from 'react'
 import { StyleProp, Text, View, ViewStyle } from 'react-native'
 
-import font from '../styles/font'
-import theme from '../styles/theme'
+import { font, theme } from '../styles'
 
 type Props = {
   count: number

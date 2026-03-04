@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleProp, TouchableOpacity, ViewStyle } from 'react-native'
 
 import { Icon, IconProps } from './Icon'
-import theme from '../styles/theme'
+import { theme } from '../styles'
 
 type Props = {
   containerStyle?: StyleProp<ViewStyle>
@@ -22,7 +22,7 @@ const IconButton = ({ containerStyle, disabled, onPress, icon, accessibilityLabe
     onPress={disabled ? undefined : onPress}
     activeOpacity={0.5}
   >
-    <Icon size={theme.icon.size.large} {...icon} />
+    <Icon size={theme.icon.size.l} {...icon} />
   </TouchableOpacity>
 )
 
