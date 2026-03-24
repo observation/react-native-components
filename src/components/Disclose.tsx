@@ -2,9 +2,10 @@ import React from 'react'
 import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
+import { Theme } from '../@types/theme'
 import Log from '../lib/Log'
-import { theme } from '../styles'
 import appTextStyle from '../styles/text'
+import { useStyles, useTheme } from '../theme/ThemeProvider'
 
 type Props = {
   text: string
@@ -15,6 +16,9 @@ type Props = {
 
 const Disclose = ({ text, onPress, textStyle, containerStyle }: Props) => {
   Log.debug('Disclose')
+  const theme = useTheme()
+  const styles = useStyles(createStyles)
+
   return (
     <TouchableOpacity activeOpacity={0.5} onPress={onPress}>
       <View style={[styles.containerStyle, containerStyle]}>
@@ -27,12 +31,13 @@ const Disclose = ({ text, onPress, textStyle, containerStyle }: Props) => {
 
 export default Disclose
 
-const styles = StyleSheet.create({
-  containerStyle: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    marginHorizontal: theme.margin.common,
-    backgroundColor: theme.color.white,
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    containerStyle: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginHorizontal: theme.margin.common,
+      backgroundColor: theme.color.white,
+    },
+  })

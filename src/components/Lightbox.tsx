@@ -6,44 +6,60 @@ import Color from 'color'
 
 import { Icon } from './Icon'
 import PageIndicator from './PageIndicator'
-import { font, layout, theme } from '../styles'
+import { Theme } from '../@types/theme'
+import { font, layout } from '../styles'
 import textStyle from '../styles/text'
+import { useStyles, useTheme } from '../theme/ThemeProvider'
 
 const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
 
-const getLightboxHeaderComponent =
-  (numberOfPages: number, onClose: () => void) =>
-  ({ imageIndex }: { imageIndex: number }) => (
-    <SafeAreaView style={styles.lightboxHeaderContainer}>
-      <View style={styles.lightboxHeader}>
-        <View style={{ flex: 1 }} />
-        <View style={styles.pageIndicator}>
-          <PageIndicator currentPage={imageIndex + 1} numberOfPages={numberOfPages} />
-        </View>
-        <View style={{ flex: 1 }}>
-          <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
-            <Icon
-              name="times"
-              color={Color(theme.color.white).alpha(0.5).string()}
-              size={theme.icon.size.xxl}
-              testID="close-lightbox"
-            />
-          </TouchableOpacity>
-        </View>
-      </View>
-    </SafeAreaView>
-  )
+type getLightboxHeaderComponentParams = {
+  theme: Theme
+  styles: ReturnType<typeof createStyles>
+  numberOfPages: number
+  onClose: () => void
+}
 
-const getLightboxFooterComponent =
-  (
-    title?: string,
-    description?: string,
-    content?: React.ReactElement,
-    style?: LightboxStyle,
-    onPressDelete?: () => void,
-    onPressCrop?: () => void,
-  ) =>
-  () => (
+const getLightboxHeaderComponent =
+  (params: getLightboxHeaderComponentParams) =>
+  ({ imageIndex }: { imageIndex: number }) => {
+    const { theme, styles, numberOfPages, onClose } = params
+    return (
+      <SafeAreaView style={styles.lightboxHeaderContainer}>
+        <View style={styles.lightboxHeader}>
+          <View style={{ flex: 1 }} />
+          <View style={styles.pageIndicator}>
+            <PageIndicator currentPage={imageIndex + 1} numberOfPages={numberOfPages} />
+          </View>
+          <View style={{ flex: 1 }}>
+            <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
+              <Icon
+                name="times"
+                color={Color(theme.color.white).alpha(0.5).string()}
+                size={theme.icon.size.xxl}
+                testID="close-lightbox"
+              />
+            </TouchableOpacity>
+          </View>
+        </View>
+      </SafeAreaView>
+    )
+  }
+
+type getLightboxFooterComponentParams = {
+  theme: Theme
+  styles: ReturnType<typeof createStyles>
+  title?: string
+  description?: string
+  content?: React.ReactElement
+  style?: LightboxStyle
+  onPressDelete?: () => void
+  onPressCrop?: () => void
+}
+
+const getLightboxFooterComponent = (params: getLightboxFooterComponentParams) => () => {
+  const { theme, styles, title, description, content, style, onPressDelete, onPressCrop } = params
+  return (
     <SafeAreaView style={styles.lightboxFooterContainer}>
       <View style={styles.lightboxFooter}>
         {title && (
@@ -78,6 +94,7 @@ const getLightboxFooterComponent =
       </View>
     </SafeAreaView>
   )
+}
 
 type LightboxStyle = {
   descriptionTextStyle: TextStyle
@@ -108,6 +125,8 @@ const Lightbox = ({
   content,
   style,
 }: Props) => {
+  const theme = useTheme()
+  const styles = useStyles(createStyles)
   const initialImageIndex = index ?? 0
   const [currentImageIndex, setCurrentImageIndex] = useState<number>()
 
@@ -126,68 +145,76 @@ const Lightbox = ({
       swipeToCloseEnabled={false}
       onImageIndexChange={setCurrentImageIndex}
       onRequestClose={onClose}
-      HeaderComponent={getLightboxHeaderComponent(photos.length, onClose)}
-      FooterComponent={getLightboxFooterComponent(
+      HeaderComponent={getLightboxHeaderComponent({
+        theme,
+        styles,
+        numberOfPages: photos.length,
+        onClose,
+      })}
+      FooterComponent={getLightboxFooterComponent({
+        theme,
+        styles,
         title,
         description,
-        content?.(imageIndex),
+        content: content?.(imageIndex),
         style,
         onPressDelete,
-        showCrop ? onPressCrop : undefined,
-      )}
+        onPressCrop: showCrop ? onPressCrop : undefined,
+      })}
     />
   )
 }
 
 export default Lightbox
 
-const styles = StyleSheet.create({
-  lightboxFooterContainer: {
-    ...layout.absoluteBottom,
-    backgroundColor: '#00000077',
-  },
-  lightboxHeaderContainer: {
-    ...layout.absoluteTop,
-    backgroundColor: '#00000077',
-  },
-  lightboxHeader: {
-    flex: 1,
-    flexDirection: 'row',
-    alignContent: 'space-between',
-    padding: theme.margin.common,
-  },
-  lightboxFooter: {
-    paddingHorizontal: theme.margin.common,
-    paddingVertical: theme.margin.half,
-  },
-  pageIndicator: {
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  closeButton: {
-    alignItems: 'center',
-    alignSelf: 'flex-end',
-    justifyContent: 'center',
-  },
-  footerItem: {
-    marginVertical: theme.margin.quarter,
-  },
-  title: {
-    ...font.largeBold,
-    lineHeight: 24,
-    color: 'white',
-  },
-  description: {
-    ...textStyle.body,
-    color: theme.color.white,
-  },
-  buttonsContainer: {
-    flexDirection: 'row',
-    marginVertical: theme.margin.large,
-    marginHorizontal: theme.margin.common,
-  },
-  buttonContainer: {
-    flex: 0.5,
-    alignItems: 'center',
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    lightboxFooterContainer: {
+      ...layout.absoluteBottom,
+      backgroundColor: '#00000077',
+    },
+    lightboxHeaderContainer: {
+      ...layout.absoluteTop,
+      backgroundColor: '#00000077',
+    },
+    lightboxHeader: {
+      flex: 1,
+      flexDirection: 'row',
+      alignContent: 'space-between',
+      padding: theme.margin.common,
+    },
+    lightboxFooter: {
+      paddingHorizontal: theme.margin.common,
+      paddingVertical: theme.margin.half,
+    },
+    pageIndicator: {
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    closeButton: {
+      alignItems: 'center',
+      alignSelf: 'flex-end',
+      justifyContent: 'center',
+    },
+    footerItem: {
+      marginVertical: theme.margin.quarter,
+    },
+    title: {
+      ...font.largeBold,
+      lineHeight: 24,
+      color: 'white',
+    },
+    description: {
+      ...textStyle.body,
+      color: theme.color.white,
+    },
+    buttonsContainer: {
+      flexDirection: 'row',
+      marginVertical: theme.margin.large,
+      marginHorizontal: theme.margin.common,
+    },
+    buttonContainer: {
+      flex: 0.5,
+      alignItems: 'center',
+    },
+  })

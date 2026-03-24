@@ -3,7 +3,7 @@ import { StyleProp, StyleSheet, TouchableOpacity, View, ViewStyle } from 'react-
 
 import { Icon } from './Icon'
 import Log from '../lib/Log'
-import { theme } from '../styles'
+import { useTheme } from '../theme/ThemeProvider'
 
 type Props = {
   enabled: boolean
@@ -21,16 +21,18 @@ const Checkbox = ({
   containerStyle,
   iconContainerStyle,
   children,
-  lineHeight = theme.margin.large,
+  lineHeight,
   testID = 'pressable',
 }: Props) => {
   Log.debug('Checkbox')
 
+  const theme = useTheme()
+  const size = lineHeight ?? theme.margin.large
   return (
     <View style={[styles.containerStyle, containerStyle]}>
       <View style={[styles.iconContainer, iconContainerStyle]}>
         <TouchableOpacity testID={testID} onPress={onPress} activeOpacity={0.5}>
-          <View style={[styles.iconInnerContainer, { width: lineHeight, height: lineHeight }]}>
+          <View style={[styles.iconInnerContainer, { width: size, height: size }]}>
             {enabled ? (
               <Icon name="check-square" color={theme.color.black} />
             ) : (

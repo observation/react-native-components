@@ -11,7 +11,7 @@ exports[`BrandIcon Rendering Normal 1`] = `
 
 exports[`BrandIcon Rendering With color 1`] = `
 <Icon
-  color="#EA554B"
+  color="red"
   name="wikipedia-w"
   size={16}
   type="brand"

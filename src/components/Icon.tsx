@@ -3,7 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 
 import Icons, { IconName } from '../lib/Icons'
-import { theme } from '../styles'
+import { useTheme } from '../theme/ThemeProvider'
 
 export type IconStyleProp = 'light' | 'solid'
 
@@ -20,6 +20,7 @@ export type IconProps = IconAppearanceProps & {
 }
 
 export const Icon = ({ name, color, size, testID, style, rotation }: IconProps): React.ReactElement => {
+  const theme = useTheme()
   const iconStyle = style ?? 'light'
   const icon = iconStyle === 'light' ? Icons[name].light : Icons[name].solid
   const iconColor = color ?? theme.color.primary500

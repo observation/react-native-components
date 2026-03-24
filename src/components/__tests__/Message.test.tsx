@@ -2,7 +2,6 @@ import React from 'react'
 
 import { render } from '@testing-library/react-native'
 
-import theme from '../../styles/theme'
 import Message from '../Message'
 
 jest.mock('../../components/LargeButton', () => 'mock-large-button')
@@ -37,7 +36,7 @@ describe('Message', () => {
 
     test('With style', () => {
       // GIVEN
-      const { toJSON } = render(<Message title="Title" text="Text" style={{ margin: theme.margin.common }} />)
+      const { toJSON } = render(<Message title="Title" text="Text" style={{ margin: 16 }} />)
 
       // THEN
       expect(toJSON()).toMatchSnapshot()

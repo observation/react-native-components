@@ -1,8 +1,10 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 
+import { Theme } from '../@types/theme'
 import Log from '../lib/Log'
-import { rounded, theme } from '../styles'
+import { rounded } from '../styles'
+import { useStyles } from '../theme/ThemeProvider'
 
 /** Maximum number of dots to display, should be odd */
 const maximumNumberOfDots = 7
@@ -17,6 +19,7 @@ type Props = {
 const PageIndicator = ({ currentPage, numberOfPages }: Props) => {
   Log.debug('PageIndicator', currentPage, numberOfPages)
 
+  const styles = useStyles(createStyles)
   const getIndicators = () => {
     Log.debug('PageIndicator:getIndicators')
 
@@ -64,24 +67,25 @@ const PageIndicator = ({ currentPage, numberOfPages }: Props) => {
 
 export default PageIndicator
 
-const styles = StyleSheet.create({
-  containerStyle: {
-    flexDirection: 'row',
-    alignSelf: 'center',
-  },
-  dot: {
-    alignSelf: 'center',
-    aspectRatio: 1,
-    width: 8,
-    margin: 4,
-    ...rounded.normal,
-    backgroundColor: theme.color.grey500,
-  },
-  smallDot: {
-    margin: 6,
-    width: 4,
-  },
-  currentDot: {
-    backgroundColor: theme.color.white,
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    containerStyle: {
+      flexDirection: 'row',
+      alignSelf: 'center',
+    },
+    dot: {
+      alignSelf: 'center',
+      aspectRatio: 1,
+      width: 8,
+      margin: 4,
+      ...rounded.normal,
+      backgroundColor: theme.color.grey500,
+    },
+    smallDot: {
+      margin: 6,
+      width: 4,
+    },
+    currentDot: {
+      backgroundColor: theme.color.white,
+    },
+  })

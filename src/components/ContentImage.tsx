@@ -4,7 +4,9 @@ import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'rea
 import ScalableImage from 'react-native-scalable-image'
 
 import Lightbox from './Lightbox'
-import { font, rounded, shadow, theme } from '../styles'
+import { Theme } from '../@types/theme'
+import { font, rounded, shadow } from '../styles'
+import { useTheme } from '../theme/ThemeProvider'
 
 type Props = {
   src: string
@@ -12,6 +14,8 @@ type Props = {
 }
 
 const ContentImage = ({ src, alt }: Props) => {
+  const theme = useTheme()
+  const styles = createStyles(theme)
   const [photoIndex, setPhotoIndex] = React.useState<number>()
   if (!alt) {
     return <ScalableImage width={Dimensions.get('window').width - 2 * theme.margin.common} source={{ uri: src }} />
@@ -53,43 +57,44 @@ const ContentImage = ({ src, alt }: Props) => {
 
 export default ContentImage
 
-const styles = StyleSheet.create({
-  outerContainer: {
-    margin: -theme.margin.common,
-    marginBottom: -theme.margin.half,
-    ...shadow.normal.ios,
-  },
-  innerContainer: {
-    flexDirection: 'row',
-    margin: theme.margin.common,
-    backgroundColor: theme.color.white,
-    ...shadow.normal.android,
-    ...rounded.large,
-    borderWidth: 1,
-    borderColor: theme.color.grey50,
-  },
-  imageContainer: {
-    margin: theme.margin.common,
-    marginRight: theme.margin.half,
-    ...rounded.large,
-  },
-  image: {
-    height: 80,
-    width: 80,
-  },
-  textContainer: {
-    flex: 1,
-    marginRight: theme.margin.common,
-    marginLeft: theme.margin.half,
-    justifyContent: 'center',
-  },
-  title: {
-    ...font.smallBold,
-    color: theme.color.black,
-    marginBottom: theme.margin.quarter,
-  },
-  description: {
-    ...font.small,
-    color: theme.color.grey500,
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    outerContainer: {
+      margin: -theme.margin.common,
+      marginBottom: -theme.margin.half,
+      ...shadow.normal.ios,
+    },
+    innerContainer: {
+      flexDirection: 'row',
+      margin: theme.margin.common,
+      backgroundColor: theme.color.white,
+      ...shadow.normal.android,
+      ...rounded.large,
+      borderWidth: 1,
+      borderColor: theme.color.grey50,
+    },
+    imageContainer: {
+      margin: theme.margin.common,
+      marginRight: theme.margin.half,
+      ...rounded.large,
+    },
+    image: {
+      height: 80,
+      width: 80,
+    },
+    textContainer: {
+      flex: 1,
+      marginRight: theme.margin.common,
+      marginLeft: theme.margin.half,
+      justifyContent: 'center',
+    },
+    title: {
+      ...font.smallBold,
+      color: theme.color.black,
+      marginBottom: theme.margin.quarter,
+    },
+    description: {
+      ...font.small,
+      color: theme.color.grey500,
+    },
+  })

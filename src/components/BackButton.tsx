@@ -3,18 +3,22 @@ import React from 'react'
 import { NavigationProp, ParamListBase } from '@react-navigation/native'
 
 import IconButton from '../components/IconButton'
-import { theme } from '../styles'
+import { useTheme } from '../theme/ThemeProvider'
 
 type Props = {
   navigation: NavigationProp<ParamListBase>
 }
 
-const BackButton = ({ navigation }: Props) => (
-  <IconButton
-    containerStyle={{ padding: theme.margin.common }}
-    onPress={() => navigation.goBack()}
-    icon={{ name: 'chevron-left', size: theme.icon.size.xxl, color: theme.color.primary500 }}
-  />
-)
+const BackButton = ({ navigation }: Props) => {
+  const theme = useTheme()
+
+  return (
+    <IconButton
+      containerStyle={{ padding: theme.margin.common }}
+      onPress={() => navigation.goBack()}
+      icon={{ name: 'chevron-left', size: theme.icon.size.xxl, color: theme.color.primary500 }}
+    />
+  )
+}
 
 export default BackButton

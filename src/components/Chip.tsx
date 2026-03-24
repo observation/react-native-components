@@ -10,8 +10,10 @@ import {
   ViewStyle,
 } from 'react-native'
 
-import { fontSize, theme } from '../styles'
+import { Theme } from '../@types/theme'
+import { fontSize } from '../styles'
 import appTextStyle from '../styles/text'
+import { useStyles, useTheme } from '../theme/ThemeProvider'
 
 type Props = {
   text?: string
@@ -22,6 +24,8 @@ type Props = {
 }
 
 const Chip = ({ text, textStyle, containerStyle, onPress, disabled }: Props) => {
+  const theme = useTheme()
+  const styles = useStyles(createStyles)
   const [borderRadius, setBorderRadius] = useState(theme.margin.common)
   return (
     <TouchableOpacity onPress={disabled ? undefined : onPress} activeOpacity={0.5} disabled={disabled}>
@@ -37,25 +41,26 @@ const Chip = ({ text, textStyle, containerStyle, onPress, disabled }: Props) => 
   )
 }
 
-const styles = StyleSheet.create({
-  chipTextContainer: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-  },
-  chipText: {
-    ...appTextStyle.body,
-    color: theme.color.white,
-    lineHeight: theme.margin.common,
-    fontSize: fontSize.medium,
-  },
-  chipContainer: {
-    backgroundColor: theme.color.accentLime400,
-    paddingHorizontal: theme.margin.common,
-    paddingVertical: theme.margin.half,
-    borderRadius: theme.margin.common,
-    minWidth: 44,
-    justifyContent: 'center',
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    chipTextContainer: {
+      flexDirection: 'row',
+      justifyContent: 'center',
+    },
+    chipText: {
+      ...appTextStyle.body,
+      color: theme.color.white,
+      lineHeight: theme.margin.common,
+      fontSize: fontSize.medium,
+    },
+    chipContainer: {
+      backgroundColor: theme.color.accentLime400,
+      paddingHorizontal: theme.margin.common,
+      paddingVertical: theme.margin.half,
+      borderRadius: theme.margin.common,
+      minWidth: 44,
+      justifyContent: 'center',
+    },
+  })
 
 export default Chip

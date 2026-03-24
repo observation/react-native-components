@@ -1,7 +1,8 @@
 import React from 'react'
 import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
-import { theme } from '../styles'
+import { Theme } from '../@types/theme'
+import { useStyles } from '../theme/ThemeProvider'
 
 type IconTextStyle = {
   containerStyle?: StyleProp<ViewStyle>
@@ -18,6 +19,8 @@ type Props = {
 }
 
 const IconText = ({ icon, text, style, onPress, singleLineText = false }: Props) => {
+  const styles = useStyles(createStyles)
+
   const content = (
     <View style={[styles.containerStyle, style.containerStyle]}>
       <View style={[styles.iconContainer, style.iconContainerStyle]}>{icon}</View>
@@ -36,14 +39,15 @@ const IconText = ({ icon, text, style, onPress, singleLineText = false }: Props)
   )
 }
 
-const styles = StyleSheet.create({
-  containerStyle: {
-    flexDirection: 'row',
-  },
-  iconContainer: {
-    justifyContent: 'center',
-    marginRight: theme.margin.half,
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    containerStyle: {
+      flexDirection: 'row',
+    },
+    iconContainer: {
+      justifyContent: 'center',
+      marginRight: theme.margin.half,
+    },
+  })
 
 export default IconText

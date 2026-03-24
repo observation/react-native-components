@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 
-import { theme } from '../styles'
+import { useTheme } from '../theme/ThemeProvider'
 
 type Props = {
   icon?: React.ReactElement
@@ -11,16 +11,20 @@ type Props = {
   iconContainerStyle?: StyleProp<ViewStyle>
 }
 
-const IconView = ({ icon, lineHeight = theme.margin.large, children, containerStyle, iconContainerStyle }: Props) => (
-  <View style={[styles.containerStyle, containerStyle]}>
-    {icon && (
-      <View style={[styles.iconContainer, { width: lineHeight }, iconContainerStyle]}>
-        <View style={[styles.iconInnerContainer, { height: lineHeight }]}>{icon}</View>
-      </View>
-    )}
-    <View style={{ flexShrink: 1 }}>{children}</View>
-  </View>
-)
+const IconView = ({ icon, lineHeight, children, containerStyle, iconContainerStyle }: Props) => {
+  const theme = useTheme()
+  const size = lineHeight ?? theme.margin.large
+  return (
+    <View style={[styles.containerStyle, containerStyle]}>
+      {icon && (
+        <View style={[styles.iconContainer, { width: size }, iconContainerStyle]}>
+          <View style={[styles.iconInnerContainer, { height: size }]}>{icon}</View>
+        </View>
+      )}
+      <View style={{ flexShrink: 1 }}>{children}</View>
+    </View>
+  )
+}
 
 export default IconView
 

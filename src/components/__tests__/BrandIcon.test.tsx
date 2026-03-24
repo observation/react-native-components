@@ -2,7 +2,6 @@ import React from 'react'
 
 import { render } from '@testing-library/react-native'
 
-import { theme } from '../../styles'
 import { BrandIcon } from '../BrandIcon'
 
 describe('BrandIcon', () => {
@@ -13,7 +12,7 @@ describe('BrandIcon', () => {
     })
 
     test('With color', () => {
-      const { toJSON } = render(<BrandIcon name="wikipedia-w" color={theme.color.error500} />)
+      const { toJSON } = render(<BrandIcon name="wikipedia-w" color={'red'} />)
       expect(toJSON()).toMatchSnapshot()
     })
 
