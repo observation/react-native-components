@@ -2,8 +2,10 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
 import { Icon } from './Icon'
+import { Theme } from '../@types/theme'
 import ProgressBar from '../data/ProgressBar'
-import { font, theme } from '../styles'
+import { font } from '../styles'
+import { useStyles, useTheme } from '../theme/ThemeProvider'
 
 type Props = {
   progressBars: ProgressBar[]
@@ -11,6 +13,8 @@ type Props = {
 }
 
 const ProgressBarList = ({ progressBars, separator }: Props) => {
+  const theme = useTheme()
+  const styles = useStyles(createStyles)
   const getMarginBottom = (i: number) => (i === progressBars.length - 1 ? 0 : borderRadius)
 
   // With small percentages (<10%) the gray bar is visible because of the border radius:
@@ -107,59 +111,60 @@ const ProgressBarList = ({ progressBars, separator }: Props) => {
 const barHeight = 16
 const borderRadius = barHeight / 2
 
-const styles = StyleSheet.create({
-  mainContainer: {
-    width: '100%',
-    flexDirection: 'row',
-  },
-  labelsContainer: {
-    maxWidth: '50%',
-  },
-  labelContainer: {
-    justifyContent: 'center',
-    height: barHeight,
-    borderTopLeftRadius: borderRadius,
-    borderBottomLeftRadius: borderRadius,
-    paddingLeft: borderRadius,
-  },
-  label: {
-    ...font.small,
-    color: theme.overlay.white70,
-    justifyContent: 'center',
-    lineHeight: barHeight,
-  },
-  barsContainer: {
-    flex: 1,
-  },
-  greyBar: {
-    flexDirection: 'row',
-    borderTopRightRadius: borderRadius,
-    borderBottomRightRadius: borderRadius,
-    backgroundColor: theme.color.grey300,
-    width: '100%',
-  },
-  numbersContainer: {
-    justifyContent: 'center',
-    height: barHeight,
-    borderTopRightRadius: borderRadius,
-    borderBottomRightRadius: borderRadius,
-    paddingRight: borderRadius,
-  },
-  denominator: {
-    ...font.small,
-    color: theme.overlay.white70,
-    lineHeight: barHeight,
-  },
-  numerator: {
-    ...font.smallBold,
-    color: theme.color.white,
-    lineHeight: barHeight,
-  },
-  checkContainer: {
-    justifyContent: 'center',
-    marginLeft: borderRadius,
-    height: barHeight,
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    mainContainer: {
+      width: '100%',
+      flexDirection: 'row',
+    },
+    labelsContainer: {
+      maxWidth: '50%',
+    },
+    labelContainer: {
+      justifyContent: 'center',
+      height: barHeight,
+      borderTopLeftRadius: borderRadius,
+      borderBottomLeftRadius: borderRadius,
+      paddingLeft: borderRadius,
+    },
+    label: {
+      ...font.small,
+      color: theme.overlay.white70,
+      justifyContent: 'center',
+      lineHeight: barHeight,
+    },
+    barsContainer: {
+      flex: 1,
+    },
+    greyBar: {
+      flexDirection: 'row',
+      borderTopRightRadius: borderRadius,
+      borderBottomRightRadius: borderRadius,
+      backgroundColor: theme.color.grey300,
+      width: '100%',
+    },
+    numbersContainer: {
+      justifyContent: 'center',
+      height: barHeight,
+      borderTopRightRadius: borderRadius,
+      borderBottomRightRadius: borderRadius,
+      paddingRight: borderRadius,
+    },
+    denominator: {
+      ...font.small,
+      color: theme.overlay.white70,
+      lineHeight: barHeight,
+    },
+    numerator: {
+      ...font.smallBold,
+      color: theme.color.white,
+      lineHeight: barHeight,
+    },
+    checkContainer: {
+      justifyContent: 'center',
+      marginLeft: borderRadius,
+      height: barHeight,
+    },
+  })
 
 export default ProgressBarList

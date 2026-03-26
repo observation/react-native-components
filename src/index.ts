@@ -9,7 +9,6 @@ import ContentImage from './components/ContentImage'
 import Date from './components/Date'
 import Disclose from './components/Disclose'
 import DocumentLink from './components/DocumentLink'
-import FilterButton from './components/FilterButton'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
 import IconView from './components/IconView'
@@ -34,6 +33,7 @@ import BrandIcons from './lib/BrandIcons'
 import Icons, { IconName } from './lib/Icons'
 import { setLogConfiguration } from './lib/Log'
 import { openUrl } from './lib/Url'
+import { ThemeProvider } from './theme/ThemeProvider'
 
 export {
   Accordion,
@@ -46,7 +46,6 @@ export {
   Date,
   Disclose,
   DocumentLink,
-  FilterButton,
   IconButton,
   IconText,
   IconView,
@@ -66,6 +65,7 @@ export {
   ProgressBar,
   ProgressBarList,
   TextLink,
+  ThemeProvider,
   Tooltip,
   WebLink,
   openUrl,
@@ -79,3 +79,5 @@ export * from './components/BrandIcon'
 
 export type { FontName, FontStyle } from './@types/font'
 export * from './styles'
+
+export * from './theme/ThemeProvider'

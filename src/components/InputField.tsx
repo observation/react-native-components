@@ -3,8 +3,10 @@ import { Platform, StyleProp, StyleSheet, Text, TextInput, TextInputProps, View,
 
 import { Icon } from './Icon'
 import IconText from './IconText'
-import { font, inputStyles, layout, rounded, theme } from '../styles'
+import { Theme } from '../@types/theme'
+import { font, inputStyles, layout, rounded } from '../styles'
 import textStyle from '../styles/text'
+import { useStyles, useTheme } from '../theme/ThemeProvider'
 
 type Props = {
   containerStyle?: StyleProp<ViewStyle>
@@ -31,6 +33,8 @@ const InputField = ({
   errorMessage,
   disabled = false,
 }: Props) => {
+  const theme = useTheme()
+  const styles = useStyles(createStyles)
   const [isFocused, setIsFocused] = useState(false)
   const inputRef = useRef<TextInput>(null)
   const didAutoFocus = useRef(false)
@@ -98,29 +102,30 @@ const InputField = ({
 
 export default InputField
 
-const styles = StyleSheet.create({
-  containerStyle: {
-    flexDirection: 'column',
-  },
-  labelStyle: {
-    ...textStyle.inputLabel,
-    marginBottom: theme.margin.half,
-  },
-  inputStyle: {
-    ...rounded.normal,
-    ...inputStyles.input,
-    ...textStyle.input,
-  },
-  rightIcon: {
-    ...layout.absoluteRight,
-    justifyContent: 'center',
-  },
-  errorStyle: {
-    ...font.small,
-    color: theme.color.error500,
-  },
-  descriptionStyle: {
-    ...font.small,
-    color: theme.color.grey800,
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    containerStyle: {
+      flexDirection: 'column',
+    },
+    labelStyle: {
+      ...textStyle.inputLabel,
+      marginBottom: theme.margin.half,
+    },
+    inputStyle: {
+      ...rounded.normal,
+      ...inputStyles.input,
+      ...textStyle.input,
+    },
+    rightIcon: {
+      ...layout.absoluteRight,
+      justifyContent: 'center',
+    },
+    errorStyle: {
+      ...font.small,
+      color: theme.color.error500,
+    },
+    descriptionStyle: {
+      ...font.small,
+      color: theme.color.grey800,
+    },
+  })

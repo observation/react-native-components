@@ -1,11 +1,13 @@
 import React from 'react'
 import { StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
 
-import { useTheme } from '@react-navigation/native'
+import { useTheme as useNavigationTheme } from '@react-navigation/native'
 
 import LargeButton, { LargeButtonProps } from './LargeButton'
-import { shadow, theme } from '../styles'
+import { Theme } from '../@types/theme'
+import { shadow } from '../styles'
 import textStyle from '../styles/text'
+import { useStyles, useTheme } from '../theme/ThemeProvider'
 
 type Props = {
   title?: string
@@ -17,7 +19,10 @@ type Props = {
 }
 
 const BottomSheet = ({ title, text, buttons = [], style, testID, children }: Props) => {
-  const { colors } = useTheme()
+  const { colors } = useNavigationTheme()
+  const theme = useTheme()
+  const styles = useStyles(createStyles)
+
   const buttonsMarginTop = title || text ? theme.margin.common : 0
   return (
     <View style={[styles.container, style]} testID={testID}>
@@ -59,27 +64,28 @@ const BottomSheet = ({ title, text, buttons = [], style, testID, children }: Pro
 
 export default BottomSheet
 
-const styles = StyleSheet.create({
-  container: {
-    ...shadow.normal.ios,
-    borderTopWidth: 1 / 3,
-    borderTopColor: theme.color.grey300,
-  },
-  bottomSheetContainer: {
-    ...shadow.normal.android,
-  },
-  bottomSheet: {
-    flexDirection: 'column',
-    margin: theme.margin.common,
-  },
-  buttonContainer: {
-    marginHorizontal: -theme.margin.half,
-    flexDirection: 'row',
-    alignItems: 'flex-start',
-  },
-  buttonStyle: {
-    flex: 1,
-    margin: 0,
-    marginHorizontal: theme.margin.half,
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    container: {
+      ...shadow.normal.ios,
+      borderTopWidth: 1 / 3,
+      borderTopColor: theme.color.grey300,
+    },
+    bottomSheetContainer: {
+      ...shadow.normal.android,
+    },
+    bottomSheet: {
+      flexDirection: 'column',
+      margin: theme.margin.common,
+    },
+    buttonContainer: {
+      marginHorizontal: -theme.margin.half,
+      flexDirection: 'row',
+      alignItems: 'flex-start',
+    },
+    buttonStyle: {
+      flex: 1,
+      margin: 0,
+      marginHorizontal: theme.margin.half,
+    },
+  })

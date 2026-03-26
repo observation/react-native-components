@@ -1,7 +1,9 @@
 import React from 'react'
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 
-import { shadow, theme } from '../styles'
+import { Theme } from '../@types/theme'
+import { shadow } from '../styles'
+import { useStyles } from '../theme/ThemeProvider'
 
 type Props = {
   children?: React.ReactNode
@@ -12,6 +14,7 @@ type Props = {
 
 /** Display content in a full width panel with a shadow */
 const Panel = ({ children, topShadow = true, containerStyle, panelStyle }: Props) => {
+  const styles = useStyles(createStyles)
   return (
     <View style={[styles.panelContainer, topShadow ? {} : { marginTop: 0 }, containerStyle]}>
       <View style={[styles.panel, topShadow ? {} : { paddingTop: 0, borderTopWidth: 0 }, panelStyle]}>{children}</View>
@@ -21,16 +24,17 @@ const Panel = ({ children, topShadow = true, containerStyle, panelStyle }: Props
 
 export default Panel
 
-const styles = StyleSheet.create({
-  panelContainer: {
-    marginTop: theme.margin.quarter,
-    ...shadow.small.ios,
-  },
-  panel: {
-    paddingVertical: theme.margin.common,
-    backgroundColor: theme.color.white,
-    ...shadow.small.android,
-    borderTopWidth: 1,
-    borderColor: theme.color.grey50,
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    panelContainer: {
+      marginTop: theme.margin.quarter,
+      ...shadow.small.ios,
+    },
+    panel: {
+      paddingVertical: theme.margin.common,
+      backgroundColor: theme.color.white,
+      ...shadow.small.android,
+      borderTopWidth: 1,
+      borderColor: theme.color.grey50,
+    },
+  })

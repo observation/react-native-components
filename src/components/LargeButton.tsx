@@ -2,12 +2,14 @@ import React from 'react'
 import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
+import { Theme } from '../@types/theme'
 import { IconName } from '../lib/Icons'
 import * as LargeButtonStyles from '../lib/LargeButtonStyles'
 import { LargeButtonStyle } from '../lib/LargeButtonStyles'
 import Log from '../lib/Log'
-import { rounded, theme } from '../styles'
+import { rounded } from '../styles'
 import appTextStyle from '../styles/text'
+import { useStyles, useTheme } from '../theme/ThemeProvider'
 
 type LargeButtonProps = {
   title: string
@@ -22,7 +24,7 @@ type LargeButtonProps = {
   testID?: string
 }
 
-const getStyle = (secondary?: boolean, disabled?: boolean, danger?: boolean): LargeButtonStyle => {
+const getStyle = (theme: Theme, secondary?: boolean, disabled?: boolean, danger?: boolean): LargeButtonStyle => {
   Log.trace('LargeButton:getStyle')
 
   const enabled = !disabled
@@ -30,20 +32,20 @@ const getStyle = (secondary?: boolean, disabled?: boolean, danger?: boolean): La
 
   switch (true) {
     case primary && enabled && danger:
-      return LargeButtonStyles.primaryDanger
+      return LargeButtonStyles.primaryDanger(theme)
     case primary && enabled && !danger:
-      return LargeButtonStyles.primary
+      return LargeButtonStyles.primary(theme)
     case primary && disabled && !danger:
-      return LargeButtonStyles.primaryDisabled
+      return LargeButtonStyles.primaryDisabled(theme)
     case secondary && enabled && danger:
-      return LargeButtonStyles.secondaryDanger
+      return LargeButtonStyles.secondaryDanger(theme)
     case secondary && enabled && !danger:
-      return LargeButtonStyles.secondary
+      return LargeButtonStyles.secondary(theme)
     case secondary && disabled && !danger:
-      return LargeButtonStyles.secondaryDisabled
+      return LargeButtonStyles.secondaryDisabled(theme)
 
     default:
-      return LargeButtonStyles.primary
+      return LargeButtonStyles.primary(theme)
   }
 }
 
@@ -59,7 +61,9 @@ const LargeButton = ({
   onPressIn,
   testID = 'touchable-opacity',
 }: LargeButtonProps) => {
-  const { textStyle, buttonStyle, iconColor } = getStyle(secondary, disabled, danger)
+  const theme = useTheme()
+  const styles = useStyles(createStyles)
+  const { textStyle, buttonStyle, iconColor } = getStyle(theme, secondary, disabled, danger)
 
   return (
     <TouchableOpacity
@@ -85,24 +89,25 @@ const LargeButton = ({
 export default LargeButton
 export type { LargeButtonProps }
 
-const styles = StyleSheet.create({
-  container: {
-    ...rounded.normal,
-    margin: theme.margin.common,
-    height: 32,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    textAlignVertical: 'center',
-    ...appTextStyle.lead,
-  },
-  titleContainer: {
-    marginHorizontal: theme.margin.common,
-    flexDirection: 'row',
-  },
-  iconContainerStyle: {
-    justifyContent: 'center',
-    paddingRight: theme.margin.half,
-  },
-})
+const createStyles = (theme: Theme) =>
+  StyleSheet.create({
+    container: {
+      ...rounded.normal,
+      margin: theme.margin.common,
+      height: 32,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    title: {
+      textAlignVertical: 'center',
+      ...appTextStyle.lead,
+    },
+    titleContainer: {
+      marginHorizontal: theme.margin.common,
+      flexDirection: 'row',
+    },
+    iconContainerStyle: {
+      justifyContent: 'center',
+      paddingRight: theme.margin.half,
+    },
+  })
