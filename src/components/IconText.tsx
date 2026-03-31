@@ -1,8 +1,7 @@
 import React from 'react'
 import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
-import { Theme } from '../@types/theme'
-import { useStyles } from '../theme/ThemeProvider'
+import { Theme, useStyles } from '../theme'
 
 type IconTextStyle = {
   containerStyle?: StyleProp<ViewStyle>

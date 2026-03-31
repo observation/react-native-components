@@ -1,10 +1,9 @@
 import React from 'react'
 import { StyleSheet, View } from 'react-native'
 
-import { Theme } from '../@types/theme'
 import Log from '../lib/Log'
 import { rounded } from '../styles'
-import { useStyles } from '../theme/ThemeProvider'
+import { Theme, useStyles } from '../theme'
 
 /** Maximum number of dots to display, should be odd */
 const maximumNumberOfDots = 7

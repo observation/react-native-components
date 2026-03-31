@@ -3,7 +3,6 @@ import { StyleProp, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
 import IconText from './IconText'
-import textStyle from '../styles/text'
 import { useTheme } from '../theme/ThemeProvider'
 
 type Props = {
@@ -21,7 +20,7 @@ const DocumentLink = ({ onPress, containerStyle, label }: Props) => {
       text={label}
       style={{
         containerStyle,
-        textStyle: textStyle.link,
+        textStyle: theme.text.link,
       }}
       onPress={onPress}
     />

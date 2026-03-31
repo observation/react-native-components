@@ -1,9 +1,8 @@
 import React from 'react'
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 
-import { Theme } from '../@types/theme'
 import { shadow } from '../styles'
-import { useStyles } from '../theme/ThemeProvider'
+import { Theme, useStyles } from '../theme'
 
 type Props = {
   children?: React.ReactNode

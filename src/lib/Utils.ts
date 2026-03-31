@@ -1,17 +1,16 @@
-import { LayoutAnimation, Platform } from 'react-native'
-
 import Log from '../lib/Log'
 
-const safeLayoutAnimation = (tag: string) => {
-  Log.debug('Utils:safeLayoutAnimation', tag)
-  if (Platform.OS === 'ios') {
-    LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
+export const deepMerge = <T>(target: T, source: Partial<T>): T => {
+  Log.debug('Utils:deepMerge')
+  for (const key in source) {
+    const value = source[key]
+
+    if (value && typeof value === 'object' && !Array.isArray(value)) {
+      target[key] = deepMerge({ ...target[key] }, value)
+    } else {
+      // @ts-expect-error assignment is safe
+      target[key] = value
+    }
   }
+  return target
 }
-
-const unsafeLayoutAnimation = (tag: string) => {
-  Log.debug('Utils:unsafeLayoutAnimation', tag)
-  LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
-}
-
-export { safeLayoutAnimation, unsafeLayoutAnimation }

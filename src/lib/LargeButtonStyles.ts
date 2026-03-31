@@ -1,6 +1,6 @@
 import { StyleProp, TextStyle, ViewStyle } from 'react-native'
 
-import { Theme } from '../@types/theme'
+import { Theme } from '../theme/types'
 
 type LargeButtonStyle = {
   buttonStyle: StyleProp<ViewStyle>

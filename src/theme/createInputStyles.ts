@@ -1,7 +1,7 @@
 import { StyleSheet } from 'react-native'
 
-import { rounded } from './rounded'
-import { Theme } from '../theme'
+import { Theme } from './types'
+import { rounded } from '../styles/rounded'
 
 export const createInputStyles = (theme: Theme) =>
   StyleSheet.create({

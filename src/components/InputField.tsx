@@ -3,10 +3,8 @@ import { Platform, StyleProp, StyleSheet, Text, TextInput, TextInputProps, View,
 
 import { Icon } from './Icon'
 import IconText from './IconText'
-import { Theme } from '../@types/theme'
-import { font, inputStyles, layout, rounded } from '../styles'
-import textStyle from '../styles/text'
-import { useStyles, useTheme } from '../theme/ThemeProvider'
+import { font, layout, rounded } from '../styles'
+import { Theme, createInputStyles, useStyles, useTheme } from '../theme'
 
 type Props = {
   containerStyle?: StyleProp<ViewStyle>
@@ -102,19 +100,22 @@ const InputField = ({
 
 export default InputField
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+// eslint-disable-next-line observation/no-function-without-logging
+const createStyles = (theme: Theme) => {
+  const inputStyles = createInputStyles(theme)
+
+  return StyleSheet.create({
     containerStyle: {
       flexDirection: 'column',
     },
     labelStyle: {
-      ...textStyle.inputLabel,
+      ...theme.text.inputLabel,
       marginBottom: theme.margin.half,
     },
     inputStyle: {
       ...rounded.normal,
       ...inputStyles.input,
-      ...textStyle.input,
+      ...theme.text.input,
     },
     rightIcon: {
       ...layout.absoluteRight,
@@ -129,3 +130,4 @@ const createStyles = (theme: Theme) =>
       color: theme.color.grey800,
     },
   })
+}

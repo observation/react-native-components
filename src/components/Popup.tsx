@@ -3,10 +3,9 @@ import { Modal, StyleSheet, View } from 'react-native'
 
 import { BlurView } from '@react-native-community/blur'
 
-import { Theme } from '../@types/theme'
 import useShowBlurView from '../hooks/useShowBlurView'
 import { layout } from '../styles'
-import { useStyles } from '../theme/ThemeProvider'
+import { Theme, useStyles } from '../theme'
 
 type Props = {
   visible: boolean

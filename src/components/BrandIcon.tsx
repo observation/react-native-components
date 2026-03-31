@@ -3,7 +3,7 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome'
 
 import BrandIcons, { BrandIconName } from '../lib/BrandIcons'
-import { useTheme } from '../theme/ThemeProvider'
+import { useTheme } from '../theme'
 
 type Props = {
   name: BrandIconName

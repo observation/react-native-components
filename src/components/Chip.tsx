@@ -10,10 +10,7 @@ import {
   ViewStyle,
 } from 'react-native'
 
-import { Theme } from '../@types/theme'
-import { fontSize } from '../styles'
-import appTextStyle from '../styles/text'
-import { useStyles, useTheme } from '../theme/ThemeProvider'
+import { Theme, useStyles, useTheme } from '../theme'
 
 type Props = {
   text?: string
@@ -48,10 +45,10 @@ const createStyles = (theme: Theme) =>
       justifyContent: 'center',
     },
     chipText: {
-      ...appTextStyle.body,
+      ...theme.text.body,
       color: theme.color.white,
       lineHeight: theme.margin.common,
-      fontSize: fontSize.medium,
+      fontSize: theme.fontSize.medium,
     },
     chipContainer: {
       backgroundColor: theme.color.accentLime400,

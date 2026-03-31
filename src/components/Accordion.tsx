@@ -6,7 +6,6 @@ import { View } from 'react-native'
 import { Collapse, CollapseBody, CollapseHeader } from 'accordion-collapse-react-native'
 
 import Log from '../lib/Log'
-import { unsafeLayoutAnimation } from '../lib/Utils'
 
 type Item = {
   title: string
@@ -26,7 +25,6 @@ const Accordion = <T extends Item>({ list, header, footer, body, onOpen, ListEmp
 
   const onToggle = (index: number, isExpanded: boolean) => {
     Log.debug('Accordion:onToggle', index, isExpanded)
-    unsafeLayoutAnimation('Accordion:onToggle')
     if (isExpanded) {
       setActiveIndex(index)
       onOpen(index)

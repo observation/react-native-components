@@ -3,7 +3,7 @@ import React from 'react'
 import { NavigationProp, ParamListBase } from '@react-navigation/native'
 
 import IconButton from '../components/IconButton'
-import { useTheme } from '../theme/ThemeProvider'
+import { useTheme } from '../theme'
 
 type Props = {
   navigation: NavigationProp<ParamListBase>

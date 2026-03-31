@@ -2,11 +2,13 @@ import React from 'react'
 
 import { fireEvent, render } from '@testing-library/react-native'
 
-import appTextStyle from '../../styles/text'
+import { defaultTheme } from '../../theme/defaultTheme'
 import LargeButton from '../LargeButton'
 
 const onPress = jest.fn()
 const onPressIn = jest.fn()
+
+const theme = defaultTheme
 
 describe('LargeButton', () => {
   test('Rendering, enabled, primary', () => {
@@ -58,7 +60,7 @@ describe('LargeButton', () => {
       <LargeButton
         iconName="info-circle"
         title="Press me"
-        titleStyle={appTextStyle.subtitle}
+        titleStyle={theme.text.subtitle}
         onPress={onPress}
         style={{ flex: 1 }}
       />,

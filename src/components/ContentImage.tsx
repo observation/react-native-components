@@ -4,9 +4,8 @@ import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'rea
 import ScalableImage from 'react-native-scalable-image'
 
 import Lightbox from './Lightbox'
-import { Theme } from '../@types/theme'
-import { font, rounded, shadow } from '../styles'
-import { useTheme } from '../theme/ThemeProvider'
+import { rounded, shadow } from '../styles'
+import { Theme, useTheme } from '../theme'
 
 type Props = {
   src: string
@@ -89,12 +88,12 @@ const createStyles = (theme: Theme) =>
       justifyContent: 'center',
     },
     title: {
-      ...font.smallBold,
+      ...theme.font.smallBold,
       color: theme.color.black,
       marginBottom: theme.margin.quarter,
     },
     description: {
-      ...font.small,
+      ...theme.font.small,
       color: theme.color.grey500,
     },
   })
