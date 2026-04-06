@@ -1,4 +1,11 @@
+import { LayoutAnimation } from 'react-native'
+
 import Log from '../lib/Log'
+
+export const unsafeLayoutAnimation = (tag: string) => {
+  Log.debug('Utils:unsafeLayoutAnimation', tag)
+  LayoutAnimation.configureNext(LayoutAnimation.Presets.easeInEaseOut)
+}
 
 export const deepMerge = <T>(target: T, source: Partial<T>): T => {
   Log.debug('Utils:deepMerge')
