@@ -2,11 +2,9 @@ import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 import { Icon } from './Icon'
-import { Theme } from '../@types/theme'
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
 import Popup from '../components/Popup'
-import textStyle from '../styles/text'
-import { useStyles, useTheme } from '../theme/ThemeProvider'
+import { Theme, useStyles, useTheme } from '../theme'
 
 type NotificationPopupStaticProps = {
   title: string
@@ -36,7 +34,7 @@ const NotificationPopup = ({ visible, title, message, leftButton, rightButton, o
           )}
         </View>
         <View style={styles.body}>
-          <Text style={textStyle.body}>{message}</Text>
+          <Text style={theme.text.body}>{message}</Text>
         </View>
 
         <View style={styles.footer}>
@@ -66,7 +64,7 @@ const createStyles = (theme: Theme) =>
     },
     title: {
       flex: 1,
-      ...textStyle.title,
+      ...theme.text.title,
     },
     closeButton: {
       marginLeft: theme.margin.half,

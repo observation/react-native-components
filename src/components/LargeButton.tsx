@@ -2,14 +2,12 @@ import React from 'react'
 import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
-import { Theme } from '../@types/theme'
 import { IconName } from '../lib/Icons'
 import * as LargeButtonStyles from '../lib/LargeButtonStyles'
 import { LargeButtonStyle } from '../lib/LargeButtonStyles'
 import Log from '../lib/Log'
 import { rounded } from '../styles'
-import appTextStyle from '../styles/text'
-import { useStyles, useTheme } from '../theme/ThemeProvider'
+import { Theme, useStyles, useTheme } from '../theme'
 
 type LargeButtonProps = {
   title: string
@@ -100,7 +98,7 @@ const createStyles = (theme: Theme) =>
     },
     title: {
       textAlignVertical: 'center',
-      ...appTextStyle.lead,
+      ...theme.text.lead,
     },
     titleContainer: {
       marginHorizontal: theme.margin.common,

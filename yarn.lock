@@ -1920,7 +1920,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fortawesome/free-brands-svg-icons@npm:6.7.2":
+"@fortawesome/free-brands-svg-icons@npm:^6.7.2":
   version: 6.7.2
   resolution: "@fortawesome/free-brands-svg-icons@npm:6.7.2"
   dependencies:
@@ -2862,7 +2862,7 @@ __metadata:
     "@eslint/eslintrc": ^3.3.3
     "@eslint/js": ^9.39.2
     "@fortawesome/fontawesome-svg-core": ^6.7.2
-    "@fortawesome/free-brands-svg-icons": 6.7.2
+    "@fortawesome/free-brands-svg-icons": ^6.7.2
     "@fortawesome/pro-light-svg-icons": ^6.7.2
     "@fortawesome/pro-solid-svg-icons": ^6.7.2
     "@fortawesome/react-native-fontawesome": ^0.3.2
@@ -2874,7 +2874,6 @@ __metadata:
     "@react-navigation/native": ^7.1.26
     "@rnx-kit/align-deps": ^3.3.4
     "@testing-library/react-native": ^13.3.3
-    "@types/color": ^4.2.0
     "@types/jest": ^30.0.0
     "@types/react": ^19.2.0
     accordion-collapse-react-native: ^1.1.1
@@ -2900,9 +2899,10 @@ __metadata:
     typescript: 5.8.3
     typescript-eslint: ^8.50.0
   peerDependencies:
-    "@react-navigation/native": ^6.0.8
-    react: 19.2.0
-    react-native: 0.83.1
+    "@react-navigation/native": ^7.0.0
+    react: ^19.0.0
+    react-native: ">=0.83.0"
+    react-native-svg: ">=15.0.0"
   languageName: unknown
   linkType: soft
 
@@ -3370,31 +3370,6 @@ __metadata:
   dependencies:
     "@babel/types": ^7.20.7
   checksum: 58341e23c649c0eba134a1682d4f20d027fad290d92e5740faa1279978f6ed476fc467ae51ce17a877e2566d805aeac64eae541168994367761ec883a4150221
-  languageName: node
-  linkType: hard
-
-"@types/color-convert@npm:*":
-  version: 2.0.3
-  resolution: "@types/color-convert@npm:2.0.3"
-  dependencies:
-    "@types/color-name": "*"
-  checksum: bb6649b49a9da85435c0076c0b00183b972ee2ccbebb7f2f20e58843f081616bba054280fad96fe19e8bb998b3494a3f4c105dea6fef31147f92097f2c08f1ca
-  languageName: node
-  linkType: hard
-
-"@types/color-name@npm:*":
-  version: 1.1.3
-  resolution: "@types/color-name@npm:1.1.3"
-  checksum: 9060d16d0bce2cdf562d6da54e18c5f23e80308ccb58b725b9173a028818f27d8e01c8a5cd96952e76f11145a7388ed7d2f450fb4652f4760383834f2e698263
-  languageName: node
-  linkType: hard
-
-"@types/color@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@types/color@npm:4.2.0"
-  dependencies:
-    "@types/color-convert": "*"
-  checksum: 4f9ddddac07f9c2d79823a5dfaf8689330f3e102c183200c5f772545ac421942ed9e42a2591afe96bbccddf5d5a87ad1bb46671da6056583ebf9c9fdc238b54e
   languageName: node
   linkType: hard
 

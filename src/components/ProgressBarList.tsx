@@ -2,10 +2,9 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
 import { Icon } from './Icon'
-import { Theme } from '../@types/theme'
 import ProgressBar from '../data/ProgressBar'
 import { font } from '../styles'
-import { useStyles, useTheme } from '../theme/ThemeProvider'
+import { Theme, useStyles, useTheme } from '../theme'
 
 type Props = {
   progressBars: ProgressBar[]

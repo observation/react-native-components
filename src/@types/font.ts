@@ -11,7 +11,8 @@ import { MixedSizeCSSPropertiesKeys } from 'react-native-render-html'
  */
 export type FontStyle = TextStyle & { overflow?: 'visible' | 'hidden' | undefined } & {
   [k in MixedSizeCSSPropertiesKeys]?: number | string
-}
+} & Required<Pick<TextStyle, 'fontSize' | 'lineHeight'>>
+
 export type FontName =
   | 'extraSmall'
   | 'small'

@@ -3,7 +3,6 @@ import { StyleProp, ViewStyle } from 'react-native'
 
 import { Icon } from './Icon'
 import IconText from './IconText'
-import textStyle from '../styles/text'
 import { useTheme } from '../theme/ThemeProvider'
 
 type Props = {
@@ -19,7 +18,7 @@ const Location = ({ location, containerStyle }: Props) => {
       text={location}
       style={{
         containerStyle,
-        textStyle: textStyle.light,
+        textStyle: theme.text.light,
       }}
       singleLineText
     />

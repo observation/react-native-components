@@ -4,10 +4,8 @@ import { StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
 import { useTheme as useNavigationTheme } from '@react-navigation/native'
 
 import LargeButton, { LargeButtonProps } from './LargeButton'
-import { Theme } from '../@types/theme'
 import { shadow } from '../styles'
-import textStyle from '../styles/text'
-import { useStyles, useTheme } from '../theme/ThemeProvider'
+import { Theme, useStyles, useTheme } from '../theme/'
 
 type Props = {
   title?: string
@@ -31,13 +29,13 @@ const BottomSheet = ({ title, text, buttons = [], style, testID, children }: Pro
           <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
             {title && (
               <View style={{ flex: 1 }}>
-                <Text style={textStyle.lead}>{title}</Text>
+                <Text style={theme.text.lead}>{title}</Text>
               </View>
             )}
           </View>
           {text && (
             <View style={{ marginTop: theme.margin.half }}>
-              <Text style={textStyle.body}>{text}</Text>
+              <Text style={theme.text.body}>{text}</Text>
             </View>
           )}
           {children}

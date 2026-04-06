@@ -3,7 +3,7 @@ import { StyleProp, StyleSheet, TouchableOpacity, View, ViewStyle } from 'react-
 
 import { Icon } from './Icon'
 import Log from '../lib/Log'
-import { useTheme } from '../theme/ThemeProvider'
+import { useTheme } from '../theme'
 
 type Props = {
   enabled: boolean

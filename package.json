@@ -1,7 +1,12 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.73.0",
+  "version": "1.74.0",
   "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./theme": "./src/theme/index.ts",
+    "./styles": "./src/styles/index.ts"
+  },
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
   "license": "MIT",
@@ -15,7 +20,6 @@
     "@react-navigation/native": "^7.1.26",
     "@rnx-kit/align-deps": "^3.3.4",
     "@testing-library/react-native": "^13.3.3",
-    "@types/color": "^4.2.0",
     "@types/jest": "^30.0.0",
     "@types/react": "^19.2.0",
     "eslint": "^9.39.2",
@@ -50,13 +54,14 @@
     "src"
   ],
   "peerDependencies": {
-    "@react-navigation/native": "^6.0.8",
-    "react": "19.2.0",
-    "react-native": "0.83.1"
+    "@react-navigation/native": "^7.0.0",
+    "react": "^19.0.0",
+    "react-native": ">=0.83.0",
+    "react-native-svg": ">=15.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-brands-svg-icons": "6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
     "@fortawesome/pro-light-svg-icons": "^6.7.2",
     "@fortawesome/pro-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-native-fontawesome": "^0.3.2",

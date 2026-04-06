@@ -2,7 +2,6 @@ import React from 'react'
 import { StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
 
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
-import textStyle from '../styles/text'
 import { useTheme } from '../theme/ThemeProvider'
 
 type Props = {
@@ -18,11 +17,11 @@ const Message = ({ title, text, buttons, style }: Props) => {
     <View style={[styles.message, style]}>
       {title && (
         <View style={{ marginBottom: theme.margin.half }}>
-          <Text style={textStyle.lead}>{title}</Text>
+          <Text style={theme.text.lead}>{title}</Text>
         </View>
       )}
       <View>
-        <Text style={textStyle.body}>{text}</Text>
+        <Text style={theme.text.body}>{text}</Text>
       </View>
       {buttons && buttons.length > 0 && (
         <View

@@ -2,11 +2,9 @@ import React from 'react'
 import { StyleProp, StyleSheet, Text, TouchableOpacity, View, ViewStyle } from 'react-native'
 
 import { Icon, IconProps } from './Icon'
-import { Theme } from '../@types/theme'
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
-import { lineHeight, shadow } from '../styles'
-import textStyle from '../styles/text'
-import { useStyles, useTheme } from '../theme/ThemeProvider'
+import { shadow } from '../styles'
+import { Theme, useStyles, useTheme } from '../theme'
 
 type TooltipProps = {
   title: string
@@ -45,7 +43,7 @@ const Tooltip = ({
               </View>
             )}
             <View style={{ flex: 1 }}>
-              <Text style={textStyle.lead}>{title}</Text>
+              <Text style={theme.text.lead}>{title}</Text>
             </View>
             {closable && (
               <View style={{ ...styles.iconContainer, marginLeft: theme.margin.common }}>
@@ -57,7 +55,7 @@ const Tooltip = ({
           </View>
           {children}
           <View style={{ marginTop: theme.margin.half }}>
-            <Text style={textStyle.body}>{text}</Text>
+            <Text style={theme.text.body}>{text}</Text>
           </View>
           {buttons && buttons.length > 0 && (
             <View
@@ -104,7 +102,7 @@ const createStyles = (theme: Theme) =>
       margin: theme.margin.common,
     },
     iconContainer: {
-      height: lineHeight.medium,
+      height: theme.lineHeight.medium,
       justifyContent: 'center',
     },
   })

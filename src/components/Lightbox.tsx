@@ -6,10 +6,8 @@ import Color from 'color'
 
 import { Icon } from './Icon'
 import PageIndicator from './PageIndicator'
-import { Theme } from '../@types/theme'
-import { font, layout } from '../styles'
-import textStyle from '../styles/text'
-import { useStyles, useTheme } from '../theme/ThemeProvider'
+import { layout } from '../styles'
+import { Theme, useStyles, useTheme } from '../theme'
 
 const hitSlop = { top: 16, left: 16, bottom: 16, right: 16 }
 
@@ -200,12 +198,12 @@ const createStyles = (theme: Theme) =>
       marginVertical: theme.margin.quarter,
     },
     title: {
-      ...font.largeBold,
+      ...theme.font.largeBold,
       lineHeight: 24,
       color: 'white',
     },
     description: {
-      ...textStyle.body,
+      ...theme.text.body,
       color: theme.color.white,
     },
     buttonsContainer: {
