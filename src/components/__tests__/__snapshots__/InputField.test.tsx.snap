@@ -348,6 +348,81 @@ exports[`InputField Rendering With a right icon 1`] = `
 </View>
 `;
 
+exports[`InputField Rendering With an alternative TextInput component 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "column",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+      }
+    }
+  >
+    <TextInput
+      autoCapitalize="none"
+      onBlur={[Function]}
+      onFocus={[Function]}
+      placeholderTextColor="#939393"
+      style={
+        [
+          {
+            "borderColor": "#E6E6E6",
+          },
+          {
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "color": "#212121",
+            "flex": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 16,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 24,
+            "minHeight": 40,
+            "overflow": "hidden",
+            "paddingLeft": 8,
+            "paddingRight": 32,
+          },
+          undefined,
+          {
+            "lineHeight": 0,
+          },
+        ]
+      }
+      underlineColorAndroid="transparent"
+    />
+  </View>
+  <Text
+    style={
+      [
+        {
+          "marginTop": 8,
+        },
+        {
+          "color": "#666666",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 16,
+        },
+        undefined,
+      ]
+    }
+  >
+    The description
+  </Text>
+</View>
+`;
+
 exports[`InputField Rendering With an error message 1`] = `
 <View
   style={

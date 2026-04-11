@@ -1,9 +1,12 @@
 import React from 'react'
+import { TextInput } from 'react-native'
 
 import { act, render } from '@testing-library/react-native'
 
 import { Icon } from '../Icon'
 import InputField from '../InputField'
+
+class CustomTextInput extends TextInput {}
 
 describe('InputField', () => {
   describe('Rendering', () => {
@@ -83,6 +86,14 @@ describe('InputField', () => {
     test('With a description', () => {
       // GIVEN
       const { toJSON } = render(<InputField description="The description" />)
+
+      // THEN
+      expect(toJSON()).toMatchSnapshot()
+    })
+
+    test('With an alternative TextInput component', () => {
+      // GIVEN
+      const { toJSON } = render(<InputField description="The description" textInputComponent={CustomTextInput} />)
 
       // THEN
       expect(toJSON()).toMatchSnapshot()
