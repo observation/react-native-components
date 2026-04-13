@@ -17,6 +17,7 @@ type Props = {
   description?: string
   errorMessage?: string
   disabled?: boolean
+  textInputComponent?: React.ComponentType<any>
 }
 
 const InputField = ({
@@ -30,6 +31,7 @@ const InputField = ({
   description,
   errorMessage,
   disabled = false,
+  textInputComponent: TextInputComponent = TextInput,
 }: Props) => {
   const theme = useTheme()
   const styles = useStyles(createStyles)
@@ -68,7 +70,7 @@ const InputField = ({
         </View>
       )}
       <View style={{ flexDirection: 'row', ...inputContainerStyle }}>
-        <TextInput
+        <TextInputComponent
           ref={inputRef}
           style={[{ borderColor }, styles.inputStyle, inputStyle, fixInputStyle]}
           {...inputProps}
