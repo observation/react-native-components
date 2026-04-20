@@ -23,7 +23,7 @@ export const Icon = ({ name, color, size, testID, style, rotation }: IconProps):
   const theme = useTheme()
   const iconStyle = style ?? 'light'
   const icon = iconStyle === 'light' ? Icons[name].light : Icons[name].solid
-  const iconColor = color ?? theme.color.primary500
+  const iconColor = color ?? theme.color.icon.system.brand
   const iconSize = size ?? theme.icon.size.l
   const transform = rotation ? { rotate: rotation } : undefined
 

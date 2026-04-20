@@ -31,9 +31,9 @@ const createStyles = (theme: Theme) =>
     },
     panel: {
       paddingVertical: theme.margin.common,
-      backgroundColor: theme.color.white,
+      backgroundColor: theme.color.background.system.surfaceBase,
       ...shadow.small.android,
       borderTopWidth: 1,
-      borderColor: theme.color.grey50,
+      borderColor: theme.color.border.system.subtle,
     },
   })

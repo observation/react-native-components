@@ -14,7 +14,9 @@ const Date = ({ date, containerStyle }: Props) => {
   const theme = useTheme()
   return (
     <IconText
-      icon={<Icon name="calendar-day" style={'solid'} color={theme.color.grey300} size={theme.icon.size.m} />}
+      icon={
+        <Icon name="calendar-day" style={'solid'} color={theme.color.icon.system.disabled} size={theme.icon.size.m} />
+      }
       text={date}
       style={{
         containerStyle,

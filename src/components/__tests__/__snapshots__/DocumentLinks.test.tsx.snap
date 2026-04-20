@@ -59,7 +59,7 @@ exports[`DocumentLink Rendering 1`] = `
       }
     >
       <Icon
-        color="#0066B1"
+        color="#0066b1"
         name="file-lines"
         size={14}
         type="solid"
@@ -72,7 +72,7 @@ exports[`DocumentLink Rendering 1`] = `
             "flexShrink": 1,
           },
           {
-            "color": "#0066B1",
+            "color": "#0066b1",
             "fontFamily": "Ubuntu",
             "fontSize": 14,
             "fontStyle": "normal",

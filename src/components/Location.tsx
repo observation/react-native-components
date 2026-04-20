@@ -14,7 +14,9 @@ const Location = ({ location, containerStyle }: Props) => {
   const theme = useTheme()
   return (
     <IconText
-      icon={<Icon name="map-marker-alt" style="solid" color={theme.color.grey300} size={theme.icon.size.m} />}
+      icon={
+        <Icon name="map-marker-alt" style="solid" color={theme.color.icon.system.disabled} size={theme.icon.size.m} />
+      }
       text={location}
       style={{
         containerStyle,

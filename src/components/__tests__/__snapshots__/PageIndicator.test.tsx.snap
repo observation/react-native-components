@@ -33,7 +33,7 @@ exports[`PageIndicator Rendering Page 1/4 1`] = `
           "width": 8,
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
         },
       ]
     }
@@ -102,7 +102,7 @@ exports[`PageIndicator Rendering Page 1/12 1`] = `
           "width": 8,
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
         },
       ]
     }
@@ -229,7 +229,7 @@ exports[`PageIndicator Rendering Page 2/4 1`] = `
           "width": 8,
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
         },
       ]
     }
@@ -298,7 +298,7 @@ exports[`PageIndicator Rendering Page 2/12 1`] = `
           "width": 8,
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
         },
       ]
     }
@@ -438,7 +438,7 @@ exports[`PageIndicator Rendering Page 4/4 1`] = `
           "width": 8,
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
         },
       ]
     }
@@ -513,7 +513,7 @@ exports[`PageIndicator Rendering Page 5/12 1`] = `
           "width": 8,
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
         },
       ]
     }
@@ -633,7 +633,7 @@ exports[`PageIndicator Rendering Page 6/12 1`] = `
           "width": 8,
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
         },
       ]
     }
@@ -753,7 +753,7 @@ exports[`PageIndicator Rendering Page 7/12 1`] = `
           "width": 8,
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
         },
       ]
     }
@@ -912,7 +912,7 @@ exports[`PageIndicator Rendering Page 12/12 1`] = `
           "width": 8,
         },
         {
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
         },
       ]
     }

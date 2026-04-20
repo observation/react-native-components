@@ -38,7 +38,7 @@ exports[`BackButton Rendering 1`] = `
   testID="pressable"
 >
   <Icon
-    color="#0066B1"
+    color="#0066b1"
     name="chevron-left"
     size={24}
     type="light"

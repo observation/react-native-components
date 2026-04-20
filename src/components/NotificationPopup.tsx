@@ -29,7 +29,7 @@ const NotificationPopup = ({ visible, title, message, leftButton, rightButton, o
 
           {onClose && (
             <TouchableOpacity testID="close" onPress={onClose} activeOpacity={0.5} style={styles.closeButton}>
-              <Icon name="times" color={theme.color.grey500} size={theme.icon.size.xl} />
+              <Icon name="times" color={theme.color.icon.system.subtle} size={theme.icon.size.xl} />
             </TouchableOpacity>
           )}
         </View>
@@ -53,7 +53,7 @@ const NotificationPopup = ({ visible, title, message, leftButton, rightButton, o
 const createStyles = (theme: Theme) =>
   StyleSheet.create({
     mainContainer: {
-      backgroundColor: 'white',
+      backgroundColor: theme.color.background.system.surfaceBase,
       margin: theme.margin.common,
       padding: theme.margin.common,
       borderRadius: theme.margin.common,

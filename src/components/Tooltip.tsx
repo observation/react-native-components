@@ -48,7 +48,7 @@ const Tooltip = ({
             {closable && (
               <View style={{ ...styles.iconContainer, marginLeft: theme.margin.common }}>
                 <TouchableOpacity testID="close" onPress={onClose} activeOpacity={0.5} accessibilityLabel="close">
-                  <Icon name="times" color={theme.color.grey500} size={theme.icon.size.xl} />
+                  <Icon name="times" color={theme.color.icon.system.subtle} size={theme.icon.size.xl} />
                 </TouchableOpacity>
               </View>
             )}
@@ -94,7 +94,7 @@ const createStyles = (theme: Theme) =>
       borderBottomLeftRadius: 16,
       borderBottomRightRadius: 16,
       overflow: 'hidden',
-      backgroundColor: 'white',
+      backgroundColor: theme.color.background.system.surfaceBase,
       ...shadow.normal.android,
     },
     tooltip: {

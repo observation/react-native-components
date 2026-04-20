@@ -59,7 +59,7 @@ exports[`MoreInfo Rendering 1`] = `
       }
     >
       <Icon
-        color="#0066B1"
+        color="#0066b1"
         name="circle-info"
         size={14}
         type="light"
@@ -72,7 +72,7 @@ exports[`MoreInfo Rendering 1`] = `
             "flexShrink": 1,
           },
           {
-            "color": "#0066B1",
+            "color": "#0066b1",
             "fontFamily": "Ubuntu",
             "fontSize": 14,
             "fontStyle": "normal",
@@ -147,7 +147,7 @@ exports[`MoreInfo Rendering, different translation 1`] = `
       }
     >
       <Icon
-        color="#0066B1"
+        color="#0066b1"
         name="circle-info"
         size={14}
         type="light"
@@ -160,7 +160,7 @@ exports[`MoreInfo Rendering, different translation 1`] = `
             "flexShrink": 1,
           },
           {
-            "color": "#0066B1",
+            "color": "#0066b1",
             "fontFamily": "Ubuntu",
             "fontSize": 14,
             "fontStyle": "normal",

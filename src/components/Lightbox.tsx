@@ -33,7 +33,7 @@ const getLightboxHeaderComponent =
             <TouchableOpacity style={styles.closeButton} onPress={() => onClose()} hitSlop={hitSlop}>
               <Icon
                 name="times"
-                color={Color(theme.color.white).alpha(0.5).string()}
+                color={Color(theme.color.icon.system.staticWhite).alpha(0.5).string()}
                 size={theme.icon.size.xxl}
                 testID="close-lightbox"
               />
@@ -76,14 +76,14 @@ const getLightboxFooterComponent = (params: getLightboxFooterComponentParams) =>
             {onPressDelete && (
               <View style={styles.buttonContainer}>
                 <TouchableOpacity onPress={onPressDelete} hitSlop={hitSlop}>
-                  <Icon name="trash-alt" color={theme.color.white} size={20} testID="delete-photo" />
+                  <Icon name="trash-alt" color={theme.color.icon.system.staticWhite} size={20} testID="delete-photo" />
                 </TouchableOpacity>
               </View>
             )}
             {onPressCrop && (
               <View style={styles.buttonContainer}>
                 <TouchableOpacity onPress={onPressCrop} hitSlop={hitSlop}>
-                  <Icon name="crop-alt" color={theme.color.white} size={20} testID="crop-photo" />
+                  <Icon name="crop-alt" color={theme.color.icon.system.staticWhite} size={20} testID="crop-photo" />
                 </TouchableOpacity>
               </View>
             )}
@@ -169,11 +169,11 @@ const createStyles = (theme: Theme) =>
   StyleSheet.create({
     lightboxFooterContainer: {
       ...layout.absoluteBottom,
-      backgroundColor: '#00000077',
+      backgroundColor: theme.overlay.black50,
     },
     lightboxHeaderContainer: {
       ...layout.absoluteTop,
-      backgroundColor: '#00000077',
+      backgroundColor: theme.overlay.black50,
     },
     lightboxHeader: {
       flex: 1,
@@ -200,11 +200,11 @@ const createStyles = (theme: Theme) =>
     title: {
       ...theme.font.largeBold,
       lineHeight: 24,
-      color: 'white',
+      color: theme.color.text.system.staticWhite,
     },
     description: {
       ...theme.text.body,
-      color: theme.color.white,
+      color: theme.color.text.system.staticWhite,
     },
     buttonsContainer: {
       flexDirection: 'row',

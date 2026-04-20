@@ -20,7 +20,7 @@ exports[`Tooltip Rendering With button 1`] = `
   <View
     style={
       {
-        "backgroundColor": "white",
+        "backgroundColor": "#ffffff",
         "borderBottomLeftRadius": 16,
         "borderBottomRightRadius": 16,
         "elevation": 6,
@@ -131,7 +131,7 @@ exports[`Tooltip Rendering With button 1`] = `
           style={
             {
               "alignItems": "center",
-              "backgroundColor": "#0066B1",
+              "backgroundColor": "#0066b1",
               "borderRadius": 4,
               "height": 32,
               "justifyContent": "center",
@@ -165,7 +165,7 @@ exports[`Tooltip Rendering With button 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#FFFFFF",
+                    "color": "#ffffff",
                   },
                 ]
               }
@@ -200,7 +200,7 @@ exports[`Tooltip Rendering With icon 1`] = `
   <View
     style={
       {
-        "backgroundColor": "white",
+        "backgroundColor": "#ffffff",
         "borderBottomLeftRadius": 16,
         "borderBottomRightRadius": 16,
         "elevation": 6,
@@ -235,7 +235,7 @@ exports[`Tooltip Rendering With icon 1`] = `
           }
         >
           <Icon
-            color="#0066B1"
+            color="#0066b1"
             name="circle-info"
             size={18}
             type="light"
@@ -364,7 +364,7 @@ exports[`Tooltip Rendering Without icon 1`] = `
   <View
     style={
       {
-        "backgroundColor": "white",
+        "backgroundColor": "#ffffff",
         "borderBottomLeftRadius": 16,
         "borderBottomRightRadius": 16,
         "elevation": 6,
@@ -512,7 +512,7 @@ exports[`Tooltip Rendering Without icon or close button 1`] = `
   <View
     style={
       {
-        "backgroundColor": "white",
+        "backgroundColor": "#ffffff",
         "borderBottomLeftRadius": 16,
         "borderBottomRightRadius": 16,
         "elevation": 6,

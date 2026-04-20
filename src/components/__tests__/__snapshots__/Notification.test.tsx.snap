@@ -9,7 +9,7 @@ exports[`Notification Rendering 1`] = `
       },
       {
         "alignItems": "center",
-        "backgroundColor": "#EA554B",
+        "backgroundColor": "#ea554b",
         "borderRadius": 9,
         "height": 18,
         "justifyContent": "center",
@@ -22,7 +22,7 @@ exports[`Notification Rendering 1`] = `
     allowFontScaling={false}
     style={
       {
-        "color": "white",
+        "color": "#ffffff",
         "fontFamily": "Ubuntu",
         "fontSize": 10,
         "fontStyle": "normal",

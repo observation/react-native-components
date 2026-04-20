@@ -2,7 +2,7 @@
 
 exports[`Icon Light icon 1`] = `
 <Icon
-  color="#0066B1"
+  color="#0066b1"
   name="circle-info"
   size={16}
   type="light"
@@ -11,7 +11,7 @@ exports[`Icon Light icon 1`] = `
 
 exports[`Icon Solid icon 1`] = `
 <Icon
-  color="#0066B1"
+  color="#0066b1"
   name="circle-info"
   size={16}
   type="solid"
@@ -29,7 +29,7 @@ exports[`Icon With color and size 1`] = `
 
 exports[`Icon With rotation 1`] = `
 <Icon
-  color="#0066B1"
+  color="#0066b1"
   name="circle-info"
   size={16}
   transform={

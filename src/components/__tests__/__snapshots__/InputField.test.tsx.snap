@@ -31,7 +31,7 @@ exports[`InputField Rendering Disabled 1`] = `
   <View
     style={
       {
-        "backgroundColor": "#F9FAFB",
+        "backgroundColor": "#f9fafb",
         "flexDirection": "row",
       }
     }
@@ -40,11 +40,11 @@ exports[`InputField Rendering Disabled 1`] = `
       autoCapitalize="none"
       onBlur={[Function]}
       onFocus={[Function]}
-      placeholderTextColor="#E6E6E6"
+      placeholderTextColor="#e6e6e6"
       style={
         [
           {
-            "borderColor": "#E6E6E6",
+            "borderColor": "#e6e6e6",
           },
           {
             "borderRadius": 4,
@@ -99,7 +99,7 @@ exports[`InputField Rendering Normal 1`] = `
       style={
         [
           {
-            "borderColor": "#E6E6E6",
+            "borderColor": "#e6e6e6",
           },
           {
             "borderRadius": 4,
@@ -154,7 +154,7 @@ exports[`InputField Rendering With a description 1`] = `
       style={
         [
           {
-            "borderColor": "#E6E6E6",
+            "borderColor": "#e6e6e6",
           },
           {
             "borderRadius": 4,
@@ -246,7 +246,7 @@ exports[`InputField Rendering With a label 1`] = `
       style={
         [
           {
-            "borderColor": "#E6E6E6",
+            "borderColor": "#e6e6e6",
           },
           {
             "borderRadius": 4,
@@ -301,7 +301,7 @@ exports[`InputField Rendering With a right icon 1`] = `
       style={
         [
           {
-            "borderColor": "#E6E6E6",
+            "borderColor": "#e6e6e6",
           },
           {
             "borderRadius": 4,
@@ -338,7 +338,7 @@ exports[`InputField Rendering With a right icon 1`] = `
       }
     >
       <Icon
-        color="#0066B1"
+        color="#0066b1"
         name="circle-info"
         size={16}
         type="light"
@@ -374,7 +374,7 @@ exports[`InputField Rendering With an alternative TextInput component 1`] = `
       style={
         [
           {
-            "borderColor": "#E6E6E6",
+            "borderColor": "#e6e6e6",
           },
           {
             "borderRadius": 4,
@@ -449,7 +449,7 @@ exports[`InputField Rendering With an error message 1`] = `
       style={
         [
           {
-            "borderColor": "#EA554B",
+            "borderColor": "#ea554b",
           },
           {
             "borderRadius": 4,
@@ -499,7 +499,7 @@ exports[`InputField Rendering With an error message 1`] = `
       }
     >
       <Icon
-        color="#EA554B"
+        color="#ea554b"
         name="triangle-exclamation"
         size={12}
         type="light"
@@ -513,7 +513,7 @@ exports[`InputField Rendering With an error message 1`] = `
           },
           [
             {
-              "color": "#EA554B",
+              "color": "#ea554b",
               "fontFamily": "Ubuntu",
               "fontSize": 12,
               "fontStyle": "normal",
@@ -557,7 +557,7 @@ exports[`InputField Rendering With focus 1`] = `
       style={
         [
           {
-            "borderColor": "#67A4D0",
+            "borderColor": "#67a4d0",
           },
           {
             "borderRadius": 4,
@@ -613,7 +613,7 @@ exports[`InputField Rendering With focus and an error message 1`] = `
       style={
         [
           {
-            "borderColor": "#67A4D0",
+            "borderColor": "#67a4d0",
           },
           {
             "borderRadius": 4,
@@ -669,7 +669,7 @@ exports[`InputField Rendering Without focus 1`] = `
       style={
         [
           {
-            "borderColor": "#E6E6E6",
+            "borderColor": "#e6e6e6",
           },
           {
             "borderRadius": 4,

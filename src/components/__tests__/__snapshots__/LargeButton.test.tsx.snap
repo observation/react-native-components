@@ -32,7 +32,7 @@ exports[`LargeButton Rendering, disabled, primary 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#E6E6E6",
+      "backgroundColor": "#e6e6e6",
       "borderRadius": 4,
       "flex": 1,
       "height": 32,
@@ -66,7 +66,7 @@ exports[`LargeButton Rendering, disabled, primary 1`] = `
           },
           undefined,
           {
-            "color": "#FFFFFF",
+            "color": "#ffffff",
           },
         ]
       }
@@ -109,8 +109,8 @@ exports[`LargeButton Rendering, disabled, secondary 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#FFFFFF",
-      "borderColor": "#E6E6E6",
+      "backgroundColor": "#ffffff",
+      "borderColor": "#e6e6e6",
       "borderRadius": 4,
       "borderWidth": 2,
       "flex": 1,
@@ -145,7 +145,7 @@ exports[`LargeButton Rendering, disabled, secondary 1`] = `
           },
           undefined,
           {
-            "color": "#E6E6E6",
+            "color": "#e6e6e6",
           },
         ]
       }
@@ -188,7 +188,7 @@ exports[`LargeButton Rendering, enabled, primary 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#0066B1",
+      "backgroundColor": "#0066b1",
       "borderRadius": 4,
       "flex": 1,
       "height": 32,
@@ -222,7 +222,7 @@ exports[`LargeButton Rendering, enabled, primary 1`] = `
           },
           undefined,
           {
-            "color": "#FFFFFF",
+            "color": "#ffffff",
           },
         ]
       }
@@ -265,8 +265,8 @@ exports[`LargeButton Rendering, enabled, secondary 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#FFFFFF",
-      "borderColor": "#0066B1",
+      "backgroundColor": "#ffffff",
+      "borderColor": "#0066b1",
       "borderRadius": 4,
       "borderWidth": 2,
       "flex": 1,
@@ -301,7 +301,7 @@ exports[`LargeButton Rendering, enabled, secondary 1`] = `
           },
           undefined,
           {
-            "color": "#0066B1",
+            "color": "#0066b1",
           },
         ]
       }
@@ -344,7 +344,7 @@ exports[`LargeButton Rendering, primary, danger 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#EA554B",
+      "backgroundColor": "#ea554b",
       "borderRadius": 4,
       "flex": 1,
       "height": 32,
@@ -378,7 +378,7 @@ exports[`LargeButton Rendering, primary, danger 1`] = `
           },
           undefined,
           {
-            "color": "#FFFFFF",
+            "color": "#ffffff",
           },
         ]
       }
@@ -421,8 +421,8 @@ exports[`LargeButton Rendering, secondary, danger 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#FFFFFF",
-      "borderColor": "#EA554B",
+      "backgroundColor": "#ffffff",
+      "borderColor": "#ea554b",
       "borderRadius": 4,
       "borderWidth": 2,
       "flex": 1,
@@ -457,7 +457,7 @@ exports[`LargeButton Rendering, secondary, danger 1`] = `
           },
           undefined,
           {
-            "color": "#EA554B",
+            "color": "#ea554b",
           },
         ]
       }
@@ -500,7 +500,7 @@ exports[`LargeButton Rendering, secondary, danger, disabled => defaults to prima
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#0066B1",
+      "backgroundColor": "#0066b1",
       "borderRadius": 4,
       "flex": 1,
       "height": 32,
@@ -534,7 +534,7 @@ exports[`LargeButton Rendering, secondary, danger, disabled => defaults to prima
           },
           undefined,
           {
-            "color": "#FFFFFF",
+            "color": "#ffffff",
           },
         ]
       }
@@ -577,7 +577,7 @@ exports[`LargeButton Rendering, with icon 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#0066B1",
+      "backgroundColor": "#0066b1",
       "borderRadius": 4,
       "flex": 1,
       "height": 32,
@@ -606,7 +606,7 @@ exports[`LargeButton Rendering, with icon 1`] = `
       }
     >
       <Icon
-        color="#FFFFFF"
+        color="#ffffff"
         name="circle-info"
         size={16}
         type="light"
@@ -626,7 +626,7 @@ exports[`LargeButton Rendering, with icon 1`] = `
           },
           undefined,
           {
-            "color": "#FFFFFF",
+            "color": "#ffffff",
           },
         ]
       }
@@ -669,7 +669,7 @@ exports[`LargeButton Rendering, with title style 1`] = `
   style={
     {
       "alignItems": "center",
-      "backgroundColor": "#0066B1",
+      "backgroundColor": "#0066b1",
       "borderRadius": 4,
       "flex": 1,
       "height": 32,
@@ -698,7 +698,7 @@ exports[`LargeButton Rendering, with title style 1`] = `
       }
     >
       <Icon
-        color="#FFFFFF"
+        color="#ffffff"
         name="circle-info"
         size={16}
         type="light"
@@ -725,7 +725,7 @@ exports[`LargeButton Rendering, with title style 1`] = `
             "lineHeight": 24,
           },
           {
-            "color": "#FFFFFF",
+            "color": "#ffffff",
           },
         ]
       }

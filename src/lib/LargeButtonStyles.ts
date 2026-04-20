@@ -10,56 +10,56 @@ type LargeButtonStyle = {
 
 const primary = (theme: Theme): LargeButtonStyle => ({
   buttonStyle: {
-    backgroundColor: theme.color.primary500,
+    backgroundColor: theme.color.background.system.brand,
   },
-  textStyle: { color: theme.color.white },
-  iconColor: theme.color.white,
+  textStyle: { color: theme.color.text.system.staticWhite },
+  iconColor: theme.color.icon.system.staticWhite,
 })
 
 const primaryDisabled = (theme: Theme): LargeButtonStyle => ({
   buttonStyle: {
-    backgroundColor: theme.color.grey300,
+    backgroundColor: theme.color.background.system.disabled,
   },
-  textStyle: { color: theme.color.white },
-  iconColor: theme.color.white,
+  textStyle: { color: theme.color.text.system.staticWhite },
+  iconColor: theme.color.icon.system.staticWhite,
 })
 
 const primaryDanger = (theme: Theme): LargeButtonStyle => ({
   buttonStyle: {
-    backgroundColor: theme.color.error500,
+    backgroundColor: theme.color.background.system.error,
   },
-  textStyle: { color: theme.color.white },
-  iconColor: theme.color.white,
+  textStyle: { color: theme.color.text.system.staticWhite },
+  iconColor: theme.color.icon.system.staticWhite,
 })
 
 const secondary = (theme: Theme): LargeButtonStyle => ({
   buttonStyle: {
-    borderColor: theme.color.primary500,
+    borderColor: theme.color.border.system.brand,
     borderWidth: 2,
-    backgroundColor: theme.color.white,
+    backgroundColor: theme.color.background.system.surfaceBase,
   },
-  textStyle: { color: theme.color.primary500 },
-  iconColor: theme.color.primary500,
+  textStyle: { color: theme.color.text.system.brand },
+  iconColor: theme.color.icon.system.brand,
 })
 
 const secondaryDisabled = (theme: Theme): LargeButtonStyle => ({
   buttonStyle: {
-    borderColor: theme.color.grey300,
+    borderColor: theme.color.border.system.disabled,
     borderWidth: 2,
-    backgroundColor: theme.color.white,
+    backgroundColor: theme.color.background.system.surfaceBase,
   },
-  textStyle: { color: theme.color.grey300 },
-  iconColor: theme.color.grey300,
+  textStyle: { color: theme.color.text.system.disabled },
+  iconColor: theme.color.icon.system.disabled,
 })
 
 const secondaryDanger = (theme: Theme): LargeButtonStyle => ({
   buttonStyle: {
-    borderColor: theme.color.error500,
+    borderColor: theme.color.border.system.error,
     borderWidth: 2,
-    backgroundColor: theme.color.white,
+    backgroundColor: theme.color.background.system.surfaceBase,
   },
-  textStyle: { color: theme.color.error500 },
-  iconColor: theme.color.error500,
+  textStyle: { color: theme.color.text.system.error },
+  iconColor: theme.color.icon.system.error,
 })
 
 export type { LargeButtonStyle }

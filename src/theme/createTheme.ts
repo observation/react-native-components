@@ -9,9 +9,11 @@ import { lineHeight } from './tokens/lineHeight'
 import { margin } from './tokens/margin'
 import { overlay } from './tokens/overlay'
 import { createTextStyles } from './tokens/text'
-import { Font, Text, Theme } from './types'
+import { Color, Font, Text, Theme } from './types'
 
-export const createTheme = (overrides: Partial<Theme> = {}): Theme => {
+type ThemeInput = Omit<Partial<Theme>, 'color'> & { color?: Partial<Color> }
+
+export const createTheme = (overrides: ThemeInput = {}): Theme => {
   const theme: Theme = {
     color,
     overlay,
@@ -28,5 +30,5 @@ export const createTheme = (overrides: Partial<Theme> = {}): Theme => {
   theme.font = createFont(theme)
   theme.text = createTextStyles(theme)
 
-  return deepMerge(theme, overrides)
+  return deepMerge(theme, overrides as Partial<Theme>)
 }

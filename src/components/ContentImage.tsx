@@ -66,11 +66,11 @@ const createStyles = (theme: Theme) =>
     innerContainer: {
       flexDirection: 'row',
       margin: theme.margin.common,
-      backgroundColor: theme.color.white,
+      backgroundColor: theme.color.background.system.surfaceBase,
       ...shadow.normal.android,
       ...rounded.large,
       borderWidth: 1,
-      borderColor: theme.color.grey50,
+      borderColor: theme.color.border.system.subtle,
     },
     imageContainer: {
       margin: theme.margin.common,
@@ -89,11 +89,11 @@ const createStyles = (theme: Theme) =>
     },
     title: {
       ...theme.font.smallBold,
-      color: theme.color.black,
+      color: theme.color.text.system.strong,
       marginBottom: theme.margin.quarter,
     },
     description: {
       ...theme.font.small,
-      color: theme.color.grey500,
+      color: theme.color.text.system.subtler,
     },
   })

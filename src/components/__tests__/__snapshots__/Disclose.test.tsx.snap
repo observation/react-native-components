@@ -40,7 +40,7 @@ exports[`Disclose Rendering Only text 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginHorizontal": 16,
@@ -53,7 +53,7 @@ exports[`Disclose Rendering Only text 1`] = `
       style={
         [
           {
-            "color": "#0066B1",
+            "color": "#0066b1",
             "fontFamily": "Ubuntu",
             "fontSize": 14,
             "fontStyle": "normal",
@@ -67,7 +67,7 @@ exports[`Disclose Rendering Only text 1`] = `
       some text
     </Text>
     <Icon
-      color="#0066B1"
+      color="#0066b1"
       name="chevron-right"
       size={18}
       type="light"
@@ -116,7 +116,7 @@ exports[`Disclose Rendering Styles and callback 1`] = `
       [
         {
           "alignItems": "center",
-          "backgroundColor": "#FFFFFF",
+          "backgroundColor": "#ffffff",
           "flexDirection": "row",
           "justifyContent": "space-between",
           "marginHorizontal": 16,
@@ -131,7 +131,7 @@ exports[`Disclose Rendering Styles and callback 1`] = `
       style={
         [
           {
-            "color": "#0066B1",
+            "color": "#0066b1",
             "fontFamily": "Ubuntu",
             "fontSize": 14,
             "fontStyle": "normal",
@@ -147,7 +147,7 @@ exports[`Disclose Rendering Styles and callback 1`] = `
       some text
     </Text>
     <Icon
-      color="#0066B1"
+      color="#0066b1"
       name="chevron-right"
       size={18}
       type="light"

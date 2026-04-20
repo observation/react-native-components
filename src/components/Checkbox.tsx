@@ -34,9 +34,9 @@ const Checkbox = ({
         <TouchableOpacity testID={testID} onPress={onPress} activeOpacity={0.5}>
           <View style={[styles.iconInnerContainer, { width: size, height: size }]}>
             {enabled ? (
-              <Icon name="check-square" color={theme.color.black} />
+              <Icon name="check-square" color={theme.color.icon.system.strong} />
             ) : (
-              <Icon name="square" color={theme.color.black} />
+              <Icon name="square" color={theme.color.icon.system.strong} />
             )}
           </View>
         </TouchableOpacity>

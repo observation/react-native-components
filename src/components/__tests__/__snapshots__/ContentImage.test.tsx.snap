@@ -99,7 +99,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
           <RCTSafeAreaView
             style={
               {
-                "backgroundColor": "#00000077",
+                "backgroundColor": "#00000080",
                 "left": 0,
                 "position": "absolute",
                 "right": 0,
@@ -347,7 +347,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
           <RCTSafeAreaView
             style={
               {
-                "backgroundColor": "#00000077",
+                "backgroundColor": "#00000080",
                 "bottom": 0,
                 "left": 0,
                 "position": "absolute",
@@ -373,7 +373,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
                 <Text
                   style={
                     {
-                      "color": "white",
+                      "color": "#ffffff",
                       "fontFamily": "Ubuntu",
                       "fontSize": 16,
                       "fontStyle": "normal",
@@ -393,8 +393,8 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#F9FAFB",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#f9fafb",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,
@@ -517,8 +517,8 @@ exports[`ContentImage Interaction Close the lightbox 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#F9FAFB",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#f9fafb",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,
@@ -641,8 +641,8 @@ exports[`ContentImage Rendering With alt title 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#F9FAFB",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#f9fafb",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,
@@ -765,8 +765,8 @@ exports[`ContentImage Rendering With alt title and text 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#F9FAFB",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#f9fafb",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,
@@ -904,8 +904,8 @@ exports[`ContentImage Rendering With alt title ending in delimiter 1`] = `
     <View
       style={
         {
-          "backgroundColor": "#FFFFFF",
-          "borderColor": "#F9FAFB",
+          "backgroundColor": "#ffffff",
+          "borderColor": "#f9fafb",
           "borderRadius": 8,
           "borderWidth": 1,
           "elevation": 6,

@@ -46,12 +46,12 @@ const createStyles = (theme: Theme) =>
     },
     chipText: {
       ...theme.text.body,
-      color: theme.color.white,
+      color: theme.color.text.system.staticWhite,
       lineHeight: theme.margin.common,
       fontSize: theme.fontSize.medium,
     },
     chipContainer: {
-      backgroundColor: theme.color.accentLime400,
+      backgroundColor: theme.color.background.system.observationStrong,
       paddingHorizontal: theme.margin.common,
       paddingVertical: theme.margin.half,
       borderRadius: theme.margin.common,

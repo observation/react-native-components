@@ -40,7 +40,7 @@ exports[`TextLink Rendering disabled 1`] = `
     style={
       [
         {
-          "color": "#0066B1",
+          "color": "#0066b1",
           "fontFamily": "Ubuntu",
           "fontSize": 14,
           "fontStyle": "normal",
@@ -98,7 +98,7 @@ exports[`TextLink Rendering enabled 1`] = `
     style={
       [
         {
-          "color": "#0066B1",
+          "color": "#0066b1",
           "fontFamily": "Ubuntu",
           "fontSize": 14,
           "fontStyle": "normal",

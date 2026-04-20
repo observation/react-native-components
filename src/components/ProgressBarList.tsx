@@ -98,7 +98,7 @@ const ProgressBarList = ({ progressBars, separator }: Props) => {
             {progressBar.isCompleted ? (
               <Icon name="circle-check" style="solid" color={progressBar.backgroundColor} size={theme.icon.size.s} />
             ) : (
-              <Icon name="circle-check" color={theme.color.grey300} size={theme.icon.size.s} />
+              <Icon name="circle-check" color={theme.color.icon.system.disabled} size={theme.icon.size.s} />
             )}
           </View>
         ))}
@@ -139,7 +139,7 @@ const createStyles = (theme: Theme) =>
       flexDirection: 'row',
       borderTopRightRadius: borderRadius,
       borderBottomRightRadius: borderRadius,
-      backgroundColor: theme.color.grey300,
+      backgroundColor: theme.color.background.system.disabled,
       width: '100%',
     },
     numbersContainer: {
@@ -156,7 +156,7 @@ const createStyles = (theme: Theme) =>
     },
     numerator: {
       ...font.smallBold,
-      color: theme.color.white,
+      color: theme.color.text.system.staticWhite,
       lineHeight: barHeight,
     },
     checkContainer: {
