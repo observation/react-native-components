@@ -32,7 +32,6 @@ export interface ColorPrimitives {
   error: Scale
   accentLime: Scale
   accentSky: Scale
-  whiteTransparency: Scale
   rarity: Scale
   validation: Scale
   speciesStatus: Scale
