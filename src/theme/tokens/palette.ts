@@ -79,6 +79,7 @@ export const palette: Palette = {
     },
     speciesStatus: {
       unknown: '#a6a6a4',
+      insufficientData: '#a6a6a4',
       native: '#85b92d',
       exoticEtc: '#ea554b',
     },

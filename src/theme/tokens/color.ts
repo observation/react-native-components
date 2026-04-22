@@ -71,6 +71,7 @@ export const color = {
     },
     speciesStatus: {
       unknown: paletteMode.speciesStatus['unknown'],
+      insufficientData: paletteMode.speciesStatus['insufficientData'],
       native: paletteMode.speciesStatus['native'],
       exoticEtc: paletteMode.speciesStatus['exoticEtc'],
     },

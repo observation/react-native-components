@@ -158,6 +158,7 @@ export interface Color {
     }
     speciesStatus: {
       unknown: string
+      insufficientData: string
       native: string
       exoticEtc: string
     }
