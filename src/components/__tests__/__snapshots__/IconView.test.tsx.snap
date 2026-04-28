@@ -66,7 +66,7 @@ exports[`IconView Rendering With specified parameters 1`] = `
       }
     >
       <Icon
-        color="#0066B1"
+        color="#0066b1"
         name="circle-info"
         size={16}
         type="light"

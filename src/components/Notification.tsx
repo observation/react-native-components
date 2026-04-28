@@ -16,7 +16,7 @@ const Notification = ({ count, style }: Props) => {
       style={[
         style,
         {
-          backgroundColor: theme.color.error500,
+          backgroundColor: theme.color.background.system.error,
           borderRadius: 9,
           width: 18,
           height: 18,
@@ -25,7 +25,10 @@ const Notification = ({ count, style }: Props) => {
         },
       ]}
     >
-      <Text allowFontScaling={false} style={{ ...font.extraSmall, color: 'white', textAlign: 'center' }}>
+      <Text
+        allowFontScaling={false}
+        style={{ ...font.extraSmall, color: theme.color.text.system.staticWhite, textAlign: 'center' }}
+      >
         {count}
       </Text>
     </View>

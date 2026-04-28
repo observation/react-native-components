@@ -5,7 +5,7 @@ exports[`BottomSheet Rendering Only buttons 1`] = `
   style={
     [
       {
-        "borderTopColor": "#E6E6E6",
+        "borderTopColor": "#e6e6e6",
         "borderTopWidth": 0.3333333333333333,
         "shadowColor": "#E6E6E6",
         "shadowOffset": {
@@ -93,7 +93,7 @@ exports[`BottomSheet Rendering Only buttons 1`] = `
           style={
             {
               "alignItems": "center",
-              "backgroundColor": "#0066B1",
+              "backgroundColor": "#0066b1",
               "borderRadius": 4,
               "flex": 1,
               "height": 32,
@@ -128,7 +128,7 @@ exports[`BottomSheet Rendering Only buttons 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#FFFFFF",
+                    "color": "#ffffff",
                   },
                 ]
               }
@@ -148,7 +148,7 @@ exports[`BottomSheet Rendering With button 1`] = `
   style={
     [
       {
-        "borderTopColor": "#E6E6E6",
+        "borderTopColor": "#e6e6e6",
         "borderTopWidth": 0.3333333333333333,
         "shadowColor": "#E6E6E6",
         "shadowOffset": {
@@ -281,7 +281,7 @@ exports[`BottomSheet Rendering With button 1`] = `
           style={
             {
               "alignItems": "center",
-              "backgroundColor": "#0066B1",
+              "backgroundColor": "#0066b1",
               "borderRadius": 4,
               "flex": 1,
               "height": 32,
@@ -316,7 +316,7 @@ exports[`BottomSheet Rendering With button 1`] = `
                   },
                   undefined,
                   {
-                    "color": "#FFFFFF",
+                    "color": "#ffffff",
                   },
                 ]
               }
@@ -336,7 +336,7 @@ exports[`BottomSheet Rendering With children 1`] = `
   style={
     [
       {
-        "borderTopColor": "#E6E6E6",
+        "borderTopColor": "#e6e6e6",
         "borderTopWidth": 0.3333333333333333,
         "shadowColor": "#E6E6E6",
         "shadowOffset": {
@@ -392,7 +392,7 @@ exports[`BottomSheet Rendering Without icon 1`] = `
   style={
     [
       {
-        "borderTopColor": "#E6E6E6",
+        "borderTopColor": "#e6e6e6",
         "borderTopWidth": 0.3333333333333333,
         "shadowColor": "#E6E6E6",
         "shadowOffset": {

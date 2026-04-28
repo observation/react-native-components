@@ -36,6 +36,6 @@ const createStyles = (theme: Theme) =>
       alignItems: 'center',
       justifyContent: 'space-between',
       marginHorizontal: theme.margin.common,
-      backgroundColor: theme.color.white,
+      backgroundColor: theme.color.background.system.surfaceBase,
     },
   })

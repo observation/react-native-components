@@ -78,13 +78,13 @@ const createStyles = (theme: Theme) =>
       width: 8,
       margin: 4,
       ...rounded.normal,
-      backgroundColor: theme.color.grey500,
+      backgroundColor: theme.color.icon.system.subtle,
     },
     smallDot: {
       margin: 6,
       width: 4,
     },
     currentDot: {
-      backgroundColor: theme.color.white,
+      backgroundColor: theme.color.background.system.surfaceBase,
     },
   })

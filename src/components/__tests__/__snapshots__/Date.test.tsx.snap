@@ -25,7 +25,7 @@ exports[`Date Rendering 1`] = `
     }
   >
     <Icon
-      color="#E6E6E6"
+      color="#e6e6e6"
       name="calendar-day"
       size={14}
       type="solid"

@@ -59,7 +59,7 @@ exports[`WebLink Rendering 1`] = `
       }
     >
       <Icon
-        color="#0066B1"
+        color="#0066b1"
         name="arrow-up-right-from-square"
         size={14}
         type="light"
@@ -73,7 +73,7 @@ exports[`WebLink Rendering 1`] = `
           },
           [
             {
-              "color": "#0066B1",
+              "color": "#0066b1",
               "fontFamily": "Ubuntu",
               "fontSize": 14,
               "fontStyle": "normal",

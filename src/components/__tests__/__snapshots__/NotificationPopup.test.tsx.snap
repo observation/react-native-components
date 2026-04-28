@@ -52,7 +52,7 @@ exports[`NotificationPopup Rendering Left and right buttons 1`] = `
       <View
         style={
           {
-            "backgroundColor": "white",
+            "backgroundColor": "#ffffff",
             "borderRadius": 16,
             "margin": 16,
             "padding": 16,
@@ -151,7 +151,7 @@ exports[`NotificationPopup Rendering Left and right buttons 1`] = `
               style={
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#0066B1",
+                  "backgroundColor": "#0066b1",
                   "borderRadius": 4,
                   "height": 32,
                   "justifyContent": "center",
@@ -185,7 +185,7 @@ exports[`NotificationPopup Rendering Left and right buttons 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#FFFFFF",
+                        "color": "#ffffff",
                       },
                     ]
                   }
@@ -233,7 +233,7 @@ exports[`NotificationPopup Rendering Left and right buttons 1`] = `
               style={
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#0066B1",
+                  "backgroundColor": "#0066b1",
                   "borderRadius": 4,
                   "height": 32,
                   "justifyContent": "center",
@@ -267,7 +267,7 @@ exports[`NotificationPopup Rendering Left and right buttons 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#FFFFFF",
+                        "color": "#ffffff",
                       },
                     ]
                   }
@@ -336,7 +336,7 @@ exports[`NotificationPopup Rendering Only left button 1`] = `
       <View
         style={
           {
-            "backgroundColor": "white",
+            "backgroundColor": "#ffffff",
             "borderRadius": 16,
             "margin": 16,
             "padding": 16,
@@ -435,7 +435,7 @@ exports[`NotificationPopup Rendering Only left button 1`] = `
               style={
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#0066B1",
+                  "backgroundColor": "#0066b1",
                   "borderRadius": 4,
                   "height": 32,
                   "justifyContent": "center",
@@ -469,7 +469,7 @@ exports[`NotificationPopup Rendering Only left button 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#FFFFFF",
+                        "color": "#ffffff",
                       },
                     ]
                   }
@@ -545,7 +545,7 @@ exports[`NotificationPopup Rendering With close button 1`] = `
       <View
         style={
           {
-            "backgroundColor": "white",
+            "backgroundColor": "#ffffff",
             "borderRadius": 16,
             "margin": 16,
             "padding": 16,
@@ -687,7 +687,7 @@ exports[`NotificationPopup Rendering With close button 1`] = `
               style={
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#0066B1",
+                  "backgroundColor": "#0066b1",
                   "borderRadius": 4,
                   "height": 32,
                   "justifyContent": "center",
@@ -721,7 +721,7 @@ exports[`NotificationPopup Rendering With close button 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#FFFFFF",
+                        "color": "#ffffff",
                       },
                     ]
                   }
@@ -769,7 +769,7 @@ exports[`NotificationPopup Rendering With close button 1`] = `
               style={
                 {
                   "alignItems": "center",
-                  "backgroundColor": "#0066B1",
+                  "backgroundColor": "#0066b1",
                   "borderRadius": 4,
                   "height": 32,
                   "justifyContent": "center",
@@ -803,7 +803,7 @@ exports[`NotificationPopup Rendering With close button 1`] = `
                       },
                       undefined,
                       {
-                        "color": "#FFFFFF",
+                        "color": "#ffffff",
                       },
                     ]
                   }

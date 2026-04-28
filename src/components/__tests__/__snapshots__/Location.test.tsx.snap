@@ -25,7 +25,7 @@ exports[`Location Rendering 1`] = `
     }
   >
     <Icon
-      color="#E6E6E6"
+      color="#e6e6e6"
       name="location-dot"
       size={14}
       type="solid"
