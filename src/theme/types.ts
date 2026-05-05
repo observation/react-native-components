@@ -124,6 +124,7 @@ export interface Color {
       success: string
       warning: string
       error: string
+      coverImage: string
       observationSubtle: string
       observationStrong: string
       speciesSubtle: string
@@ -179,6 +180,7 @@ export interface Color {
       success: string
       warning: string
       error: string
+      subtler: string
       inverse: string
       speciesStrong: string
       observationStrong: string

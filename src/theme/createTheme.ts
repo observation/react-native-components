@@ -21,8 +21,8 @@ export const createTheme = (overrides: ThemeInput = {}): Theme => {
     margin,
     icon,
     animation,
-    fontSize,
-    lineHeight,
+    fontSize: overrides.fontSize ? { ...fontSize, ...overrides.fontSize } : fontSize,
+    lineHeight: overrides.lineHeight ? { ...lineHeight, ...overrides.lineHeight } : lineHeight,
     font: {} as Font,
     text: {} as Text,
   }
@@ -30,5 +30,6 @@ export const createTheme = (overrides: ThemeInput = {}): Theme => {
   theme.font = createFont(theme)
   theme.text = createTextStyles(theme)
 
-  return deepMerge(theme, overrides as Partial<Theme>)
+  const { fontSize: _f, lineHeight: _l, ...remainingOverrides } = overrides
+  return deepMerge(theme, remainingOverrides as Partial<Theme>)
 }
