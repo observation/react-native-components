@@ -61,4 +61,9 @@ export const createTextStyles = (theme: Theme) =>
       fontWeight: 'bold',
       color: theme.color.text.system.staticWhite,
     },
+    inputPanelHeader: {
+      ...theme.font.extraExtraSmall,
+      letterSpacing: 0.3,
+      color: theme.color.text.system.subtler,
+    },
   }) satisfies Text

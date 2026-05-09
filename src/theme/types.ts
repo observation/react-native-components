@@ -229,12 +229,13 @@ export interface Margin {
   huge: number
 }
 
-export type ScaleName = 'extraSmall' | 'small' | 'medium' | 'large' | 'extraLarge' | 'huge'
+export type ScaleName = 'extraExtraSmall' | 'extraSmall' | 'small' | 'medium' | 'large' | 'extraLarge' | 'huge'
 
 export type FontSize = Record<ScaleName, number>
 export type LineHeight = Record<ScaleName, number>
 
 export type FontName =
+  | 'extraExtraSmall'
   | 'extraSmall'
   | 'small'
   | 'smallBold'
