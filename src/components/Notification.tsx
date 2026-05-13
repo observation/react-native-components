@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyleProp, Text, View, ViewStyle } from 'react-native'
 
-import { font } from '../styles'
 import { useTheme } from '../theme/ThemeProvider'
 
 type Props = {
@@ -27,7 +26,7 @@ const Notification = ({ count, style }: Props) => {
     >
       <Text
         allowFontScaling={false}
-        style={{ ...font.extraSmall, color: theme.color.text.system.staticWhite, textAlign: 'center' }}
+        style={{ ...theme.font.extraSmall, color: theme.color.text.system.staticWhite, textAlign: 'center' }}
       >
         {count}
       </Text>
