@@ -40,7 +40,7 @@ export const createTextStyles = (theme: Theme) =>
       color: theme.color.text.system.link,
     },
     input: {
-      ...theme.font.large,
+      ...theme.font.medium,
       color: theme.color.text.system.strong,
     },
     subtitle: {
