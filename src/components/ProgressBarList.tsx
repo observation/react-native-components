@@ -3,7 +3,6 @@ import { StyleSheet, Text, View } from 'react-native'
 
 import { Icon } from './Icon'
 import ProgressBar from '../data/ProgressBar'
-import { font } from '../styles'
 import { Theme, useStyles, useTheme } from '../theme'
 
 type Props = {
@@ -127,7 +126,7 @@ const createStyles = (theme: Theme) =>
       paddingLeft: borderRadius,
     },
     label: {
-      ...font.small,
+      ...theme.font.small,
       color: theme.overlay.white70,
       justifyContent: 'center',
       lineHeight: barHeight,
@@ -150,12 +149,12 @@ const createStyles = (theme: Theme) =>
       paddingRight: borderRadius,
     },
     denominator: {
-      ...font.small,
+      ...theme.font.small,
       color: theme.overlay.white70,
       lineHeight: barHeight,
     },
     numerator: {
-      ...font.smallBold,
+      ...theme.font.smallBold,
       color: theme.color.text.system.staticWhite,
       lineHeight: barHeight,
     },

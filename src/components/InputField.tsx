@@ -3,7 +3,7 @@ import { Platform, StyleProp, StyleSheet, Text, TextInput, TextInputProps, View,
 
 import { Icon } from './Icon'
 import IconText from './IconText'
-import { font, layout, rounded } from '../styles'
+import { layout, rounded } from '../styles'
 import { Theme, createInputStyles, useStyles, useTheme } from '../theme'
 
 type Props = {
@@ -128,11 +128,11 @@ const createStyles = (theme: Theme) => {
       justifyContent: 'center',
     },
     errorStyle: {
-      ...font.small,
+      ...theme.font.small,
       color: theme.color.text.system.error,
     },
     descriptionStyle: {
-      ...font.small,
+      ...theme.font.small,
       color: theme.color.text.system.subtle,
     },
   })
