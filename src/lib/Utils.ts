@@ -21,3 +21,5 @@ export const deepMerge = <T>(target: T, source: Partial<T>): T => {
   }
   return target
 }
+
+export const capitalize = (input: string) => input.charAt(0).toUpperCase() + input.slice(1)
