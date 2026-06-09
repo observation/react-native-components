@@ -1,10 +1,9 @@
 import React from 'react'
 import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
-import { Icon } from '@observation.org/react-native-components'
-import { type Theme, useStyles, useTheme } from '@observation.org/react-native-components/theme'
-
 import CapitalizeText from './CapitalizeText'
+import { Theme, useStyles, useTheme } from '../theme'
+import { Icon } from './Icon'
 
 type Props = {
   label?: string
@@ -62,7 +61,6 @@ const InputPanel = ({
   )
 }
 
-// todo: dit werd geexporteerd als een observer
 export default InputPanel
 
 const createStyles = (theme: Theme) =>
@@ -76,7 +74,7 @@ const createStyles = (theme: Theme) =>
     headerTextStyle: {
       ...theme.font.extraSmall,
       lineHeight: theme.font.extraSmall.fontSize,
-      letterSpacing: 0.3, // todo: should this be dynamic?
+      letterSpacing: 0.03 * theme.font.extraSmall.fontSize,
       color: theme.color.text.system.subtler,
     },
     contentContainer: {

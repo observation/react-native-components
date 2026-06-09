@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 
-import { type Theme, useStyles } from '@observation.org/react-native-components/theme'
+import { Theme, useStyles } from '../theme'
 
 type Orientation = 'horizontal' | 'vertical'
 

@@ -11,14 +11,6 @@ const onPress = jest.fn()
 
 describe('ListItem', () => {
   describe('Rendering', () => {
-    test('Rendering', () => {
-      // WHEN
-      const { toJSON } = render(<ListItem onPress={onPress} label="Read this!" />)
-
-      // THEN
-      expect(toJSON()).toMatchSnapshot()
-    })
-
     test('Rendering with radio button unselected', () => {
       // WHEN
       const { toJSON } = render(<ListItem onPress={onPress} label="Read this!" />)

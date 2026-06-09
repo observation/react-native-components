@@ -2,10 +2,9 @@ import React from 'react'
 import { StyleSheet, TouchableOpacity, View } from 'react-native'
 
 import { Icon, IconProps } from '@observation.org/react-native-components'
-import { type Theme, useStyles, useTheme } from '@observation.org/react-native-components/theme'
 
 import SingleLine from './SingleLine'
-import Log from '../lib/Log'
+import { Theme, useStyles, useTheme } from '../theme'
 
 type Props = {
   icon?: IconProps
@@ -17,8 +16,6 @@ type Props = {
 }
 
 const ListItem = ({ icon, onPress, label, subLabel, extraSubLabel, selected = false }: Props) => {
-  Log.trace('ListItem', onPress)
-
   const theme = useTheme()
   const styles = useStyles(createStyles)
 
