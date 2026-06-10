@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`ItemSeparator Rendering default separator 1`] = `
+<View
+  style={
+    [
+      {
+        "borderBottomColor": "#f9fafb",
+        "borderBottomWidth": 1,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`ItemSeparator Rendering vertical separator 1`] = `
+<View
+  style={
+    [
+      {
+        "borderRightColor": "#f9fafb",
+        "borderRightWidth": 1,
+      },
+      undefined,
+    ]
+  }
+/>
+`;
+
+exports[`ItemSeparator Rendering with custom style separator 1`] = `
+<View
+  style={
+    [
+      {
+        "borderBottomColor": "#f9fafb",
+        "borderBottomWidth": 1,
+      },
+      {
+        "marginLeft": 16,
+      },
+    ]
+  }
+/>
+`;

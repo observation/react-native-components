@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`SectionHeader Rendering Normal 1`] = `
+<View
+  style={
+    [
+      {
+        "marginTop": 16,
+        "paddingHorizontal": 16,
+      },
+      {
+        "paddingVertical": 4,
+      },
+      undefined,
+    ]
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#939393",
+        "fontFamily": "Ubuntu",
+        "fontSize": 12,
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "lineHeight": 16,
+      }
+    }
+  >
+    Header title
+  </Text>
+</View>
+`;
+
+exports[`SectionHeader Rendering With container style 1`] = `
+<View
+  style={
+    [
+      {
+        "marginTop": 16,
+        "paddingHorizontal": 16,
+      },
+      {
+        "paddingVertical": 4,
+      },
+      {
+        "margin": 0,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#939393",
+        "fontFamily": "Ubuntu",
+        "fontSize": 12,
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "lineHeight": 16,
+      }
+    }
+  >
+    Header title
+  </Text>
+</View>
+`;
