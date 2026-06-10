@@ -29,7 +29,7 @@ const InputPanel = ({
   const theme = useTheme()
   const styles = useStyles(createStyles)
 
-  // todo: 48 and 36 should be input heights and we should make them dynamically themed
+  // TODO: 48 and 36 should be input heights and we should make them dynamically themed
   const paddingVertical = label
     ? (48 - (styles.headerTextStyle.lineHeight! + styles.value.lineHeight!)) / 2
     : (36 - styles.value.lineHeight!) / 2
