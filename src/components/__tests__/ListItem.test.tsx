@@ -1,10 +1,10 @@
 import React from 'react'
 
 import { describe, expect, jest, test } from '@jest/globals'
-import { IconProps } from '@observation.org/react-native-components'
 import { fireEvent, render } from '@testing-library/react-native'
 
 import { color } from '../../theme/tokens/color'
+import { IconProps } from '../Icon'
 import ListItem from '../ListItem'
 
 const onPress = jest.fn()

@@ -1,10 +1,9 @@
 import React from 'react'
 import { StyleSheet, TouchableOpacity, View } from 'react-native'
 
-import { Icon, IconProps } from '@observation.org/react-native-components'
-
 import SingleLine from './SingleLine'
 import { Theme, useStyles, useTheme } from '../theme'
+import { Icon, IconProps } from './Icon'
 
 type Props = {
   icon?: IconProps
