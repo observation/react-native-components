@@ -6,7 +6,7 @@ jobs:
     env:
       FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Cache Yarn cache and node_modules
         uses: actions/cache@v5
         with:
