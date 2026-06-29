@@ -48,7 +48,7 @@ const InputField = ({
     ? theme.color.border.system.error
     : isFocused
       ? theme.color.border.system.focus
-      : theme.color.border.system.default
+      : theme.color.border.system.base
 
   const inputContainerStyle = disabled ? { backgroundColor: theme.color.background.system.surfaceRaised } : {}
   const placeholderTextColor = disabled ? theme.color.text.system.disabled : theme.color.text.system.subtler

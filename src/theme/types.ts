@@ -176,20 +176,22 @@ export interface Color {
   }
   border: {
     system: {
+      subtle: string
+      subtler: string
       brand: string
       disabled: string
       success: string
       warning: string
       error: string
-      subtler: string
       inverse: string
       speciesStrong: string
       observationStrong: string
-      default: string
-      subtle: string
+      strong: string
+      base: string
       focus: string
       transect: string
       transectBorder: string
+      selected: string
     }
     status: {
       uploadable: string

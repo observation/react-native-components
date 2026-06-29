@@ -67,7 +67,7 @@ const createStyles = (theme: Theme) => {
     container: {
       ...shadow.normal.ios,
       borderTopWidth: 1 / 3,
-      borderTopColor: theme.color.border.system.default,
+      borderTopColor: theme.color.border.system.base,
     },
     bottomSheetContainer: {
       ...shadow.normal.android,
