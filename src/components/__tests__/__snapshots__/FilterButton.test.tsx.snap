@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`FilterButton Rendering Default props 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#ffffff",
+      "borderColor": "#0066b1",
+      "borderRadius": 4,
+      "borderWidth": 2,
+      "height": 32,
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "justifyContent": "center",
+          "paddingRight": 8,
+        }
+      }
+    >
+      <Icon
+        color="#0066b1"
+        name="bars-filter"
+        size={14}
+        type="light"
+      />
+    </View>
+    <Text
+      style={
+        {
+          "color": "#0066b1",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 16,
+          "textAlignVertical": "center",
+        }
+      }
+    >
+      Filter
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`FilterButton Rendering Enabled 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#e8f1f8",
+      "borderColor": "#0066b1",
+      "borderRadius": 4,
+      "borderWidth": 2,
+      "height": 32,
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "justifyContent": "center",
+          "paddingRight": 8,
+        }
+      }
+    >
+      <Icon
+        color="#0066b1"
+        name="bars-filter"
+        size={14}
+        type="light"
+      />
+    </View>
+    <Text
+      style={
+        {
+          "color": "#0066b1",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 16,
+          "textAlignVertical": "center",
+        }
+      }
+    >
+      Filter
+    </Text>
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "backgroundColor": "#0066b1",
+          "borderRadius": 4,
+          "height": 18,
+          "justifyContent": "center",
+          "marginLeft": 8,
+          "overflow": "hidden",
+          "width": 18,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 16,
+            "textAlignVertical": "center",
+          }
+        }
+      >
+        3
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FilterButton Rendering No active filters 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#ffffff",
+      "borderColor": "#0066b1",
+      "borderRadius": 4,
+      "borderWidth": 2,
+      "height": 32,
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "justifyContent": "center",
+          "paddingRight": 8,
+        }
+      }
+    >
+      <Icon
+        color="#0066b1"
+        name="bars-filter"
+        size={14}
+        type="light"
+      />
+    </View>
+    <Text
+      style={
+        {
+          "color": "#0066b1",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 16,
+          "textAlignVertical": "center",
+        }
+      }
+    >
+      Filter
+    </Text>
+  </View>
+</View>
+`;
