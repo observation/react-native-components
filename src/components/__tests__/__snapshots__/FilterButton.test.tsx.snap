@@ -62,7 +62,7 @@ exports[`FilterButton Rendering Default props 1`] = `
       <Icon
         color="#0066b1"
         name="bars-filter"
-        size={14}
+        size={12}
         type="light"
       />
     </View>
@@ -147,7 +147,7 @@ exports[`FilterButton Rendering Enabled 1`] = `
       <Icon
         color="#0066b1"
         name="bars-filter"
-        size={14}
+        size={12}
         type="light"
       />
     </View>
@@ -262,7 +262,7 @@ exports[`FilterButton Rendering No active filters 1`] = `
       <Icon
         color="#0066b1"
         name="bars-filter"
-        size={14}
+        size={12}
         type="light"
       />
     </View>

@@ -22,7 +22,7 @@ const FilterButton = ({ activeFilters = 0, label, onPress }: FilterButtonProps) 
     <TouchableOpacity style={[styles.container, { backgroundColor }]} onPress={onPress} activeOpacity={0.5}>
       <View style={styles.titleContainer}>
         <View style={styles.iconContainerStyle}>
-          <Icon name="bars-filter" size={theme.icon.size.m} color={theme.color.icon.system.brand} />
+          <Icon name="bars-filter" size={theme.icon.size.s} color={theme.color.icon.system.brand} />
         </View>
         <Text style={styles.title}>{label}</Text>
         {activeFilters > 0 && (
