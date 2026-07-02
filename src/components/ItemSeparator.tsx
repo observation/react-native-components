@@ -18,8 +18,8 @@ const ItemSeparator = ({ style, orientation = 'horizontal' }: Props) => {
 
 export default ItemSeparator
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     horizontalSeparator: {
       borderBottomWidth: 1,
       borderBottomColor: theme.color.background.system.surfaceRaised,
@@ -29,3 +29,6 @@ const createStyles = (theme: Theme) =>
       borderRightColor: theme.color.background.system.surfaceRaised,
     },
   })
+
+  return styles
+}

@@ -28,8 +28,8 @@ const Popup = ({ children, visible }: Props) => {
 
 export default Popup
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     modalBackground: {
       flex: 1,
       alignItems: 'stretch',
@@ -43,3 +43,6 @@ const createStyles = (theme: Theme) =>
       backgroundColor: 'transparent',
     },
   })
+
+  return styles
+}

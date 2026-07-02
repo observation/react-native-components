@@ -38,8 +38,10 @@ const Chip = ({ text, textStyle, containerStyle, onPress, disabled }: Props) => 
   )
 }
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+export default Chip
+
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     chipTextContainer: {
       flexDirection: 'row',
       justifyContent: 'center',
@@ -60,4 +62,5 @@ const createStyles = (theme: Theme) =>
     },
   })
 
-export default Chip
+  return styles
+}

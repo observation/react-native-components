@@ -52,9 +52,14 @@ export default [
     },
 
     rules: {
-      'observation/no-function-without-logging': 'error',
+      'observation/no-function-without-logging': [
+        'error',
+        {
+          ignoreList: ['createStyles'],
+        },
+      ],
 
-      'react-native/no-unused-styles': 'off',
+      'react-native/no-unused-styles': 'error',
       'react-native/no-inline-styles': 'off',
 
       'prettier/prettier': 'error',

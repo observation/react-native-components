@@ -38,8 +38,10 @@ const IconText = ({ icon, text, style, onPress, singleLineText = false }: Props)
   )
 }
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+export default IconText
+
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     containerStyle: {
       flexDirection: 'row',
     },
@@ -49,4 +51,5 @@ const createStyles = (theme: Theme) =>
     },
   })
 
-export default IconText
+  return styles
+}

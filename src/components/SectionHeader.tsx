@@ -19,8 +19,8 @@ const SectionHeader = ({ title, containerStyle }: Props) => {
 
 export default SectionHeader
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     header: {
       paddingHorizontal: theme.margin.common,
       marginTop: theme.margin.common,
@@ -33,3 +33,6 @@ const createStyles = (theme: Theme) =>
       color: theme.color.text.system.subtler,
     },
   })
+
+  return styles
+}

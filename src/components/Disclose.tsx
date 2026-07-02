@@ -29,8 +29,8 @@ const Disclose = ({ text, onPress, textStyle, containerStyle }: Props) => {
 
 export default Disclose
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     containerStyle: {
       flexDirection: 'row',
       alignItems: 'center',
@@ -39,3 +39,6 @@ const createStyles = (theme: Theme) =>
       backgroundColor: theme.color.background.system.surfaceBase,
     },
   })
+
+  return styles
+}

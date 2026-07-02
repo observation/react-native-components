@@ -69,8 +69,8 @@ const ListItem = ({ icon, onPress, label, subLabel, extraSubLabel, selected = fa
 
 export default ListItem
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     containerStyle: {
       flexDirection: 'row',
       alignItems: 'center',
@@ -86,3 +86,6 @@ const createStyles = (theme: Theme) =>
       color: theme.color.text.system.subtler,
     },
   })
+
+  return styles
+}

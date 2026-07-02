@@ -109,8 +109,10 @@ const ProgressBarList = ({ progressBars, separator }: Props) => {
 const barHeight = 16
 const borderRadius = barHeight / 2
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+export default ProgressBarList
+
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     mainContainer: {
       width: '100%',
       flexDirection: 'row',
@@ -165,4 +167,5 @@ const createStyles = (theme: Theme) =>
     },
   })
 
-export default ProgressBarList
+  return styles
+}

@@ -62,8 +62,8 @@ const BottomSheet = ({ title, text, buttons = [], style, testID, children }: Pro
 
 export default BottomSheet
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     container: {
       ...shadow.normal.ios,
       borderTopWidth: 1 / 3,
@@ -87,3 +87,6 @@ const createStyles = (theme: Theme) =>
       marginHorizontal: theme.margin.half,
     },
   })
+
+  return styles
+}

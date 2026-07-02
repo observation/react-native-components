@@ -87,8 +87,8 @@ const LargeButton = ({
 export default LargeButton
 export type { LargeButtonProps }
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     container: {
       ...rounded.normal,
       margin: theme.margin.common,
@@ -109,3 +109,6 @@ const createStyles = (theme: Theme) =>
       paddingRight: theme.margin.half,
     },
   })
+
+  return styles
+}

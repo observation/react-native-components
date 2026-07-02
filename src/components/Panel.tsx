@@ -23,8 +23,8 @@ const Panel = ({ children, topShadow = true, containerStyle, panelStyle }: Props
 
 export default Panel
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     panelContainer: {
       marginTop: theme.margin.quarter,
       ...shadow.small.ios,
@@ -37,3 +37,6 @@ const createStyles = (theme: Theme) =>
       borderColor: theme.color.border.system.subtle,
     },
   })
+
+  return styles
+}

@@ -66,8 +66,8 @@ const PageIndicator = ({ currentPage, numberOfPages }: Props) => {
 
 export default PageIndicator
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     containerStyle: {
       flexDirection: 'row',
       alignSelf: 'center',
@@ -88,3 +88,6 @@ const createStyles = (theme: Theme) =>
       backgroundColor: theme.color.background.system.surfaceBase,
     },
   })
+
+  return styles
+}

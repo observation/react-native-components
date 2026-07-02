@@ -50,8 +50,12 @@ const NotificationPopup = ({ visible, title, message, leftButton, rightButton, o
   )
 }
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+export default NotificationPopup
+
+export type { NotificationPopupProps, NotificationPopupStaticProps }
+
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     mainContainer: {
       backgroundColor: theme.color.background.system.surfaceBase,
       margin: theme.margin.common,
@@ -89,6 +93,5 @@ const createStyles = (theme: Theme) =>
     },
   })
 
-export default NotificationPopup
-
-export type { NotificationPopupProps, NotificationPopupStaticProps }
+  return styles
+}
