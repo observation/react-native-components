@@ -106,11 +106,10 @@ const InputField = ({
 
 export default InputField
 
-// eslint-disable-next-line observation/no-function-without-logging
 const createStyles = (theme: Theme) => {
   const inputStyles = createInputStyles(theme)
 
-  return StyleSheet.create({
+  const styles = StyleSheet.create({
     containerStyle: {
       flexDirection: 'column',
     },
@@ -136,4 +135,6 @@ const createStyles = (theme: Theme) => {
       color: theme.color.text.system.subtle,
     },
   })
+
+  return styles
 }

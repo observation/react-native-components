@@ -165,8 +165,8 @@ const Lightbox = ({
 
 export default Lightbox
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     lightboxFooterContainer: {
       ...layout.absoluteBottom,
       backgroundColor: theme.overlay.black50,
@@ -216,3 +216,6 @@ const createStyles = (theme: Theme) =>
       alignItems: 'center',
     },
   })
+
+  return styles
+}

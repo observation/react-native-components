@@ -56,8 +56,8 @@ const ContentImage = ({ src, alt }: Props) => {
 
 export default ContentImage
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     outerContainer: {
       margin: -theme.margin.common,
       marginBottom: -theme.margin.half,
@@ -97,3 +97,6 @@ const createStyles = (theme: Theme) =>
       color: theme.color.text.system.subtler,
     },
   })
+
+  return styles
+}

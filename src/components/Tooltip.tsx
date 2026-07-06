@@ -88,8 +88,8 @@ export default Tooltip
 
 export type { TooltipProps }
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     tooltipContainer: {
       borderBottomLeftRadius: 16,
       borderBottomRightRadius: 16,
@@ -106,3 +106,6 @@ const createStyles = (theme: Theme) =>
       justifyContent: 'center',
     },
   })
+
+  return styles
+}

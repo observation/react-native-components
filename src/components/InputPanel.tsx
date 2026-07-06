@@ -63,8 +63,8 @@ const InputPanel = ({
 
 export default InputPanel
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     container: {
       flexDirection: 'row',
       justifyContent: 'space-between',
@@ -89,3 +89,6 @@ const createStyles = (theme: Theme) =>
       marginLeft: theme.margin.half,
     },
   })
+
+  return styles
+}
