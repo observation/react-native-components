@@ -37,8 +37,8 @@ const FilterButton = ({ activeFilters = 0, label, onPress }: FilterButtonProps) 
 
 export default FilterButton
 
-const createStyles = (theme: Theme) =>
-  StyleSheet.create({
+const createStyles = (theme: Theme) => {
+  const styles = StyleSheet.create({
     container: {
       ...rounded.normal,
       borderWidth: 2,
@@ -75,3 +75,5 @@ const createStyles = (theme: Theme) =>
       color: theme.color.text.system.staticWhite,
     },
   })
+  return styles
+}
