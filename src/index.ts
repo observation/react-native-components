@@ -7,6 +7,8 @@ import Checkbox from './components/Checkbox'
 import Chip from './components/Chip'
 import ContentImage from './components/ContentImage'
 import Date from './components/Date'
+import DateFromToFilter from './components/DateFromToFilter'
+import DatePicker from './components/DatePicker'
 import Disclose from './components/Disclose'
 import DocumentLink from './components/DocumentLink'
 import FilterButton from './components/FilterButton'
@@ -51,6 +53,8 @@ export {
   Chip,
   ContentImage,
   Date,
+  DateFromToFilter,
+  DatePicker,
   Disclose,
   DocumentLink,
   FilterButton,

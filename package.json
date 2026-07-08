@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.81.0",
+  "version": "1.82.0",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
@@ -22,6 +22,7 @@
     "@testing-library/react-native": "^13.3.3",
     "@types/jest": "^30.0.0",
     "@types/react": "^19.2.0",
+    "@types/react-native-calendar-picker": "^8.0.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-import": "^2.32.0",
@@ -69,6 +70,8 @@
     "@react-native-community/blur": "^4.4.1",
     "accordion-collapse-react-native": "^1.1.1",
     "color": "^5.0.3",
+    "date-fns": "^4.1.0",
+    "react-native-calendar-picker": "^8.0.5",
     "react-native-logs": "^5.5.0",
     "react-native-render-html": "^6.3.4",
     "react-native-scalable-image": "^1.1.0"
