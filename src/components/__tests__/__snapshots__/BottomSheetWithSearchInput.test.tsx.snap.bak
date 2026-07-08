@@ -1,0 +1,1273 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`BottomSheetWithSearchInput Rendering Initial state 1`] = `
+<View
+  testID="bottom-sheet"
+>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    ListHeaderComponent={
+      <View
+        style={
+          {
+            "backgroundColor": "#f9fafb",
+          }
+        }
+      >
+        <InputField
+          containerStyle={
+            {
+              "backgroundColor": "#ffffff",
+              "marginHorizontal": 8,
+              "marginTop": 16,
+            }
+          }
+          inputProps={
+            {
+              "onChangeText": [Function],
+              "placeholder": "Start typing",
+              "testID": "textInput",
+              "value": "",
+            }
+          }
+          inputStyle={
+            {
+              "borderRadius": 4,
+              "borderWidth": 2,
+              "color": "#212121",
+              "flex": 1,
+              "fontFamily": "Ubuntu",
+              "fontSize": 16,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 24,
+              "minHeight": 40,
+              "overflow": "hidden",
+              "paddingLeft": 8,
+              "paddingRight": 32,
+            }
+          }
+          rightIcon={
+            <IconButton
+              containerStyle={
+                {
+                  "paddingRight": 16,
+                }
+              }
+              icon={
+                {
+                  "color": "#939393",
+                  "name": "circle-xmark",
+                  "size": 14,
+                  "style": "solid",
+                }
+              }
+              onPress={[Function]}
+              testID="clearButton"
+            />
+          }
+          textInputComponent={[Function]}
+        />
+        <SectionHeader
+          title="Countries"
+        />
+      </View>
+    }
+    contentContainerStyle={
+      {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "paddingBottom": 0,
+      }
+    }
+    data={
+      [
+        {
+          "key": "nl",
+          "label": "Netherlands",
+        },
+        {
+          "key": "be",
+          "label": "Belgium",
+        },
+        {
+          "key": "de",
+          "label": "Germany",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={0.0001}
+    stickyHeaderIndices={
+      [
+        0,
+      ]
+    }
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#f9fafb",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "flexDirection": "column",
+                },
+                {
+                  "backgroundColor": "#ffffff",
+                  "marginHorizontal": 8,
+                  "marginTop": 16,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <TextInput
+                autoCapitalize="none"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                placeholder="Start typing"
+                placeholderTextColor="#939393"
+                style={
+                  [
+                    {
+                      "borderColor": "#e6e6e6",
+                    },
+                    {
+                      "borderRadius": 4,
+                      "borderWidth": 2,
+                      "color": "#212121",
+                      "flex": 1,
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 16,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 24,
+                      "minHeight": 40,
+                      "overflow": "hidden",
+                      "paddingLeft": 8,
+                      "paddingRight": 32,
+                    },
+                    {
+                      "borderRadius": 4,
+                      "borderWidth": 2,
+                      "color": "#212121",
+                      "flex": 1,
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 16,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 24,
+                      "minHeight": 40,
+                      "overflow": "hidden",
+                      "paddingLeft": 8,
+                      "paddingRight": 32,
+                    },
+                    {
+                      "lineHeight": 0,
+                    },
+                  ]
+                }
+                testID="textInput"
+                underlineColorAndroid="transparent"
+                value=""
+              />
+              <View
+                style={
+                  {
+                    "bottom": 0,
+                    "justifyContent": "center",
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessibilityValue={
+                    {
+                      "max": undefined,
+                      "min": undefined,
+                      "now": undefined,
+                      "text": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                      "paddingRight": 16,
+                    }
+                  }
+                  testID="clearButton"
+                >
+                  <Icon
+                    color="#939393"
+                    name="circle-xmark"
+                    size={14}
+                    type="solid"
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "marginTop": 16,
+                  "paddingHorizontal": 16,
+                },
+                {
+                  "paddingVertical": 4,
+                },
+                undefined,
+              ]
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#939393",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 20,
+                }
+              }
+            >
+              Countries
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingHorizontal": 16,
+                },
+                {
+                  "backgroundColor": undefined,
+                  "paddingVertical": 13,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "marginRight": 8,
+                }
+              }
+            >
+              <Icon
+                color="#e6e6e6"
+                name="circle"
+                size={20}
+                type="light"
+              />
+            </View>
+            <View
+              style={
+                {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#212121",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 16,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  }
+                }
+              >
+                Netherlands
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "borderBottomColor": "#f9fafb",
+                "borderBottomWidth": 1,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingHorizontal": 16,
+                },
+                {
+                  "backgroundColor": undefined,
+                  "paddingVertical": 13,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "marginRight": 8,
+                }
+              }
+            >
+              <Icon
+                color="#e6e6e6"
+                name="circle"
+                size={20}
+                type="light"
+              />
+            </View>
+            <View
+              style={
+                {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#212121",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 16,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  }
+                }
+              >
+                Belgium
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "borderBottomColor": "#f9fafb",
+                "borderBottomWidth": 1,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingHorizontal": 16,
+                },
+                {
+                  "backgroundColor": undefined,
+                  "paddingVertical": 13,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "marginRight": 8,
+                }
+              }
+            >
+              <Icon
+                color="#e6e6e6"
+                name="circle"
+                size={20}
+                type="light"
+              />
+            </View>
+            <View
+              style={
+                {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#212121",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 16,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  }
+                }
+              >
+                Germany
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="bottom-sheet-backdrop"
+  />
+</View>
+`;
+
+exports[`BottomSheetWithSearchInput Rendering With selected item 1`] = `
+<View
+  testID="bottom-sheet"
+>
+  <RCTScrollView
+    ItemSeparatorComponent={[Function]}
+    ListHeaderComponent={
+      <View
+        style={
+          {
+            "backgroundColor": "#f9fafb",
+          }
+        }
+      >
+        <InputField
+          containerStyle={
+            {
+              "backgroundColor": "#ffffff",
+              "marginHorizontal": 8,
+              "marginTop": 16,
+            }
+          }
+          inputProps={
+            {
+              "onChangeText": [Function],
+              "placeholder": "Start typing",
+              "testID": "textInput",
+              "value": "",
+            }
+          }
+          inputStyle={
+            {
+              "borderRadius": 4,
+              "borderWidth": 2,
+              "color": "#212121",
+              "flex": 1,
+              "fontFamily": "Ubuntu",
+              "fontSize": 16,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 24,
+              "minHeight": 40,
+              "overflow": "hidden",
+              "paddingLeft": 8,
+              "paddingRight": 32,
+            }
+          }
+          rightIcon={
+            <IconButton
+              containerStyle={
+                {
+                  "paddingRight": 16,
+                }
+              }
+              icon={
+                {
+                  "color": "#939393",
+                  "name": "circle-xmark",
+                  "size": 14,
+                  "style": "solid",
+                }
+              }
+              onPress={[Function]}
+              testID="clearButton"
+            />
+          }
+          textInputComponent={[Function]}
+        />
+        <SectionHeader
+          title="Countries"
+        />
+      </View>
+    }
+    contentContainerStyle={
+      {
+        "backgroundColor": "rgb(255, 255, 255)",
+        "paddingBottom": 0,
+      }
+    }
+    data={
+      [
+        {
+          "key": "nl",
+          "label": "Netherlands",
+        },
+        {
+          "key": "be",
+          "label": "Belgium",
+        },
+        {
+          "key": "de",
+          "label": "Germany",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    keyboardDismissMode="on-drag"
+    keyboardShouldPersistTaps="handled"
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={0.0001}
+    stickyHeaderIndices={
+      [
+        0,
+      ]
+    }
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        collapsable={false}
+        onLayout={[Function]}
+      >
+        <View
+          style={
+            {
+              "backgroundColor": "#f9fafb",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "flexDirection": "column",
+                },
+                {
+                  "backgroundColor": "#ffffff",
+                  "marginHorizontal": 8,
+                  "marginTop": 16,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "flexDirection": "row",
+                }
+              }
+            >
+              <TextInput
+                autoCapitalize="none"
+                onBlur={[Function]}
+                onChangeText={[Function]}
+                onFocus={[Function]}
+                placeholder="Start typing"
+                placeholderTextColor="#939393"
+                style={
+                  [
+                    {
+                      "borderColor": "#e6e6e6",
+                    },
+                    {
+                      "borderRadius": 4,
+                      "borderWidth": 2,
+                      "color": "#212121",
+                      "flex": 1,
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 16,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 24,
+                      "minHeight": 40,
+                      "overflow": "hidden",
+                      "paddingLeft": 8,
+                      "paddingRight": 32,
+                    },
+                    {
+                      "borderRadius": 4,
+                      "borderWidth": 2,
+                      "color": "#212121",
+                      "flex": 1,
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 16,
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                      "lineHeight": 24,
+                      "minHeight": 40,
+                      "overflow": "hidden",
+                      "paddingLeft": 8,
+                      "paddingRight": 32,
+                    },
+                    {
+                      "lineHeight": 0,
+                    },
+                  ]
+                }
+                testID="textInput"
+                underlineColorAndroid="transparent"
+                value=""
+              />
+              <View
+                style={
+                  {
+                    "bottom": 0,
+                    "justifyContent": "center",
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                  }
+                }
+              >
+                <View
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessibilityValue={
+                    {
+                      "max": undefined,
+                      "min": undefined,
+                      "now": undefined,
+                      "text": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                      "paddingRight": 16,
+                    }
+                  }
+                  testID="clearButton"
+                >
+                  <Icon
+                    color="#939393"
+                    name="circle-xmark"
+                    size={14}
+                    type="solid"
+                  />
+                </View>
+              </View>
+            </View>
+          </View>
+          <View
+            style={
+              [
+                {
+                  "marginTop": 16,
+                  "paddingHorizontal": 16,
+                },
+                {
+                  "paddingVertical": 4,
+                },
+                undefined,
+              ]
+            }
+          >
+            <Text
+              style={
+                {
+                  "color": "#939393",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 20,
+                }
+              }
+            >
+              Countries
+            </Text>
+          </View>
+        </View>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingHorizontal": 16,
+                },
+                {
+                  "backgroundColor": "#e8f1f8",
+                  "paddingVertical": 13,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "marginRight": 8,
+                }
+              }
+            >
+              <Icon
+                color="#0066b1"
+                name="circle-check"
+                size={20}
+                type="solid"
+              />
+            </View>
+            <View
+              style={
+                {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#212121",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 16,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  }
+                }
+              >
+                Netherlands
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "borderBottomColor": "#f9fafb",
+                "borderBottomWidth": 1,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingHorizontal": 16,
+                },
+                {
+                  "backgroundColor": undefined,
+                  "paddingVertical": 13,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "marginRight": 8,
+                }
+              }
+            >
+              <Icon
+                color="#e6e6e6"
+                name="circle"
+                size={20}
+                type="light"
+              />
+            </View>
+            <View
+              style={
+                {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#212121",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 16,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  }
+                }
+              >
+                Belgium
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            [
+              {
+                "borderBottomColor": "#f9fafb",
+                "borderBottomWidth": 1,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": false,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "paddingHorizontal": 16,
+                },
+                {
+                  "backgroundColor": undefined,
+                  "paddingVertical": 13,
+                },
+              ]
+            }
+          >
+            <View
+              style={
+                {
+                  "marginRight": 8,
+                }
+              }
+            >
+              <Icon
+                color="#e6e6e6"
+                name="circle"
+                size={20}
+                type="light"
+              />
+            </View>
+            <View
+              style={
+                {
+                  "flex": 1,
+                }
+              }
+            >
+              <Text
+                ellipsizeMode="tail"
+                numberOfLines={1}
+                style={
+                  {
+                    "color": "#212121",
+                    "fontFamily": "Ubuntu",
+                    "fontSize": 16,
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                    "lineHeight": 20,
+                  }
+                }
+              >
+                Germany
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="bottom-sheet-backdrop"
+  />
+</View>
+`;
