@@ -86,15 +86,15 @@ exports[`DateFromToFilter Rendering From and date selected 1`] = `
       </Text>
     </View>
   </View>
-  <View
-    style={
-      {
-        "color": "#939393",
-        "marginHorizontal": 8,
+  <View>
+    <Text
+      style={
+        {
+          "color": "#939393",
+          "marginHorizontal": 8,
+        }
       }
-    }
-  >
-    <Text>
+    >
       –
     </Text>
   </View>
@@ -264,15 +264,15 @@ exports[`DateFromToFilter Rendering From date selected 1`] = `
       </Text>
     </View>
   </View>
-  <View
-    style={
-      {
-        "color": "#939393",
-        "marginHorizontal": 8,
+  <View>
+    <Text
+      style={
+        {
+          "color": "#939393",
+          "marginHorizontal": 8,
+        }
       }
-    }
-  >
-    <Text>
+    >
       –
     </Text>
   </View>
@@ -442,15 +442,15 @@ exports[`DateFromToFilter Rendering No date selected 1`] = `
       </Text>
     </View>
   </View>
-  <View
-    style={
-      {
-        "color": "#939393",
-        "marginHorizontal": 8,
+  <View>
+    <Text
+      style={
+        {
+          "color": "#939393",
+          "marginHorizontal": 8,
+        }
       }
-    }
-  >
-    <Text>
+    >
       –
     </Text>
   </View>
@@ -620,15 +620,15 @@ exports[`DateFromToFilter Rendering To date selected 1`] = `
       </Text>
     </View>
   </View>
-  <View
-    style={
-      {
-        "color": "#939393",
-        "marginHorizontal": 8,
+  <View>
+    <Text
+      style={
+        {
+          "color": "#939393",
+          "marginHorizontal": 8,
+        }
       }
-    }
-  >
-    <Text>
+    >
       –
     </Text>
   </View>

@@ -61,8 +61,8 @@ const DateFromToFilter = ({
         </View>
       </TouchableOpacity>
 
-      <View style={styles.divider}>
-        <Text>&ndash;</Text>
+      <View>
+        <Text style={styles.divider}>&ndash;</Text>
       </View>
 
       <TouchableOpacity
