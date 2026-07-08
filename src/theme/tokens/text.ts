@@ -23,6 +23,10 @@ export const createTextStyles = (theme: Theme) =>
       ...theme.font.medium,
       color: theme.color.text.system.subtle,
     },
+    bodyBlack: {
+      ...theme.font.medium,
+      color: theme.color.text.system.strong,
+    },
     light: {
       ...theme.font.medium,
       color: theme.color.text.system.subtler,
@@ -60,5 +64,9 @@ export const createTextStyles = (theme: Theme) =>
       lineHeight: 16,
       fontWeight: 'bold',
       color: theme.color.text.system.staticWhite,
+    },
+    subLabel: {
+      ...theme.font.extraSmall,
+      color: theme.color.text.system.subtler,
     },
   }) satisfies Text
