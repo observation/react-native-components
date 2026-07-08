@@ -5,12 +5,11 @@ import { fireEvent, render } from '@testing-library/react-native'
 
 import DatePicker from '../DatePicker'
 
-jest.useFakeTimers({ now: new Date('2023-10-31T20:49:12').getTime() })
+jest.useFakeTimers({ now: new Date('2024-10-15T20:49:12').getTime() })
 
 describe('DatePicker', () => {
   const onDateChange = jest.fn()
   const date = new Date()
-  date.setFullYear(date.getFullYear() + 1)
 
   const labelNext = 'Next'
   const labelPrevious = 'Previous'
@@ -47,6 +46,83 @@ describe('DatePicker', () => {
         />,
       )
 
+      expect(toJSON()).toMatchSnapshot()
+    })
+
+    test('With a minimum and maximum date', () => {
+      // GIVEN
+      const minimumDate = new Date('2024-10-10')
+      const maximumDate = new Date('2024-10-20')
+
+      // WHEN
+      const { toJSON } = render(
+        <DatePicker
+          selectedDate={date}
+          onDateChange={onDateChange}
+          minimumDate={minimumDate}
+          maximumDate={maximumDate}
+          labelNext={labelNext}
+          labelPrevious={labelPrevious}
+          labelSelectMonth={labelSelectMonth}
+          labelSelectYear={labelSelectYear}
+          labelsShortWeekdays={labelsShortWeekdays}
+          labelsMonths={labelsMonths}
+        />,
+      )
+
+      // THEN
+      expect(toJSON()).toMatchSnapshot()
+    })
+
+    test('With a selected date that is before the minimum date', () => {
+      // GIVEN
+      const selectedDate = new Date('2024-10-05')
+      const minimumDate = new Date('2024-10-10')
+      const maximumDate = new Date('2024-10-20')
+
+      // WHEN
+      const { toJSON } = render(
+        <DatePicker
+          selectedDate={selectedDate}
+          onDateChange={onDateChange}
+          minimumDate={minimumDate}
+          maximumDate={maximumDate}
+          labelNext={labelNext}
+          labelPrevious={labelPrevious}
+          labelSelectMonth={labelSelectMonth}
+          labelSelectYear={labelSelectYear}
+          labelsShortWeekdays={labelsShortWeekdays}
+          labelsMonths={labelsMonths}
+        />,
+      )
+
+      // THEN
+      expect(toJSON()).toMatchSnapshot()
+    })
+
+    test('With a selected date that is after the maximum date', () => {
+      // GIVEN
+      const selectedDate = new Date('2024-10-25')
+      const minimumDate = new Date('2024-10-10')
+      const maximumDate = new Date('2024-10-20')
+
+      // WHEN
+      const { toJSON } = render(
+        <DatePicker
+          selectedDate={selectedDate}
+          onDateChange={onDateChange}
+          minimumDate={minimumDate}
+          maximumDate={maximumDate}
+          labelNext={labelNext}
+          labelPrevious={labelPrevious}
+          labelSelectMonth={labelSelectMonth}
+          labelSelectYear={labelSelectYear}
+          labelsShortWeekdays={labelsShortWeekdays}
+          labelsMonths={labelsMonths}
+        />,
+      )
+
+      // THEN
       expect(toJSON()).toMatchSnapshot()
     })
   })

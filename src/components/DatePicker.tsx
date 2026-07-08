@@ -1,6 +1,7 @@
 import React from 'react'
 import { Dimensions, StyleSheet, View } from 'react-native'
 
+import { isAfter } from 'date-fns'
 import CalendarPicker from 'react-native-calendar-picker'
 
 import Log from '../lib/Log'
@@ -35,6 +36,14 @@ const DatePicker = ({
 
   const theme = useTheme()
   const styles = useStyles(createStyles)
+
+  if (maximumDate && isAfter(selectedDate, maximumDate)) {
+    selectedDate = maximumDate
+  }
+
+  if (minimumDate && isAfter(minimumDate, selectedDate)) {
+    selectedDate = minimumDate
+  }
 
   return (
     <View style={styles.container}>
