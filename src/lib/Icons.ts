@@ -10,6 +10,7 @@ import { faArrowsRotate as faArrowsRotateLight } from '@fortawesome/pro-light-sv
 import { faArrowTurnRight as faArrowTurnRightLight } from '@fortawesome/pro-light-svg-icons/faArrowTurnRight'
 import { faArrowUpFromBracket as faArrowUpFromBracketLight } from '@fortawesome/pro-light-svg-icons/faArrowUpFromBracket'
 import { faArrowUpFromSquare as faArrowUpFromSquareLight } from '@fortawesome/pro-light-svg-icons/faArrowUpFromSquare'
+import { faArrowUpRightAndArrowDownLeftFromCenter as faArrowUpRightAndArrowDownLeftFromCenterLight } from '@fortawesome/pro-light-svg-icons/faArrowUpRightAndArrowDownLeftFromCenter'
 import { faBadge as faBadgeLight } from '@fortawesome/pro-light-svg-icons/faBadge'
 import { faBadgeCheck as faBadgeCheckLight } from '@fortawesome/pro-light-svg-icons/faBadgeCheck'
 import { faBanBug as faBanBugLight } from '@fortawesome/pro-light-svg-icons/faBanBug'
@@ -113,6 +114,7 @@ import { faArrowsRotate as faArrowsRotateSolid } from '@fortawesome/pro-solid-sv
 import { faArrowTurnRight as faArrowTurnRightSolid } from '@fortawesome/pro-solid-svg-icons/faArrowTurnRight'
 import { faArrowUpFromBracket as faArrowUpFromBracketSolid } from '@fortawesome/pro-solid-svg-icons/faArrowUpFromBracket'
 import { faArrowUpFromSquare as faArrowUpFromSquareSolid } from '@fortawesome/pro-solid-svg-icons/faArrowUpFromSquare'
+import { faArrowUpRightAndArrowDownLeftFromCenter as faArrowUpRightAndArrowDownLeftFromCenterSolid } from '@fortawesome/pro-solid-svg-icons/faArrowUpRightAndArrowDownLeftFromCenter'
 import { faBadge as faBadgeSolid } from '@fortawesome/pro-solid-svg-icons/faBadge'
 import { faBadgeCheck as faBadgeCheckSolid } from '@fortawesome/pro-solid-svg-icons/faBadgeCheck'
 import { faBanBug as faBanBugSolid } from '@fortawesome/pro-solid-svg-icons/faBanBug'
@@ -218,6 +220,7 @@ type IconName = Extract<
   | 'arrow-turn-right'
   | 'arrow-up-from-bracket'
   | 'arrow-up-from-square'
+  | 'arrow-up-right-and-arrow-down-left-from-center'
   | 'arrows-rotate'
   | 'badge'
   | 'badge-check'
@@ -323,6 +326,10 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   'arrow-turn-right': { light: faArrowTurnRightLight, solid: faArrowTurnRightSolid },
   'arrow-up-from-bracket': { light: faArrowUpFromBracketLight, solid: faArrowUpFromBracketSolid },
   'arrow-up-from-square': { light: faArrowUpFromSquareLight, solid: faArrowUpFromSquareSolid },
+  'arrow-up-right-and-arrow-down-left-from-center': {
+    light: faArrowUpRightAndArrowDownLeftFromCenterLight,
+    solid: faArrowUpRightAndArrowDownLeftFromCenterSolid,
+  },
   'arrows-rotate': { light: faArrowsRotateLight, solid: faArrowsRotateSolid },
   'arrow-rotate-left': { light: faArrowRotateLeftLight, solid: faArrowRotateLeftSolid },
   'badge-check': { light: faBadgeCheckLight, solid: faBadgeCheckSolid },
