@@ -188,6 +188,10 @@ export interface Color {
       subtle: string
       focus: string
     }
+    status: {
+      uploadable: string
+      error: string
+    }
   }
 }
 

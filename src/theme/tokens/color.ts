@@ -101,6 +101,10 @@ export const color = {
       subtle: paletteMode.grey[50],
       focus: paletteMode.primary[300],
     },
+    status: {
+      uploadable: paletteMode.accentSky[400],
+      error: paletteMode.error[500],
+    },
   },
 
   // Deprecated flat properties — kept for backward compatibility with consuming apps.
