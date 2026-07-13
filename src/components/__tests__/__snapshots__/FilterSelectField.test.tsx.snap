@@ -1,0 +1,227 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`FilterSelectField Rendering No value selected 1`] = `
+<View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#f9fafb",
+        "borderRadius": 8,
+        "flexDirection": "row",
+        "height": 48,
+        "justifyContent": "space-between",
+        "opacity": 1,
+        "overflow": "hidden",
+        "paddingHorizontal": 16,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "flex": 1,
+            "flexDirection": "column",
+          },
+          {
+            "paddingVertical": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          [
+            {
+              "color": "#212121",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+            {
+              "color": "#0066b1",
+            },
+          ]
+        }
+      >
+        Placeholder
+      </Text>
+    </View>
+    <View
+      style={
+        {
+          "marginLeft": 8,
+        }
+      }
+    >
+      <Icon
+        color="#939393"
+        name="angle-down"
+        size={14}
+        type="light"
+      />
+    </View>
+  </View>
+</View>
+`;
+
+exports[`FilterSelectField Rendering Value selected 1`] = `
+<View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": false,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#f9fafb",
+        "borderRadius": 8,
+        "flexDirection": "row",
+        "height": 48,
+        "justifyContent": "space-between",
+        "opacity": 1,
+        "overflow": "hidden",
+        "paddingHorizontal": 16,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "flex": 1,
+            "flexDirection": "column",
+          },
+          {
+            "paddingVertical": 8,
+          },
+        ]
+      }
+    >
+      <Text
+        ellipsizeMode="tail"
+        numberOfLines={1}
+        style={
+          [
+            {
+              "color": "#212121",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+            {
+              "color": "#0066b1",
+            },
+          ]
+        }
+      >
+        Birds
+      </Text>
+    </View>
+  </View>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+        "padding": 17,
+        "position": "absolute",
+        "right": -1,
+        "top": 0,
+      }
+    }
+    testID="filterField-clear"
+  >
+    <Icon
+      color="#939393"
+      name="circle-xmark"
+      size={14}
+      type="solid"
+    />
+  </View>
+</View>
+`;
