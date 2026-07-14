@@ -12,6 +12,7 @@ import DatePicker from './components/DatePicker'
 import Disclose from './components/Disclose'
 import DocumentLink from './components/DocumentLink'
 import FilterButton from './components/FilterButton'
+import FilterOption from './components/FilterOption'
 import FilterSelectField from './components/FilterSelectField'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
@@ -61,6 +62,7 @@ export {
   Disclose,
   DocumentLink,
   FilterButton,
+  FilterOption,
   FilterSelectField,
   IconButton,
   IconText,

@@ -52,7 +52,7 @@ export interface Color {
   grey50: string
   /** @deprecated Use theme.color.background.system.surfaceLowered */
   grey100: string
-  /** @deprecated Use theme.color.icon.system.brand or theme.color.text.system.brand */
+  /** @deprecated Use theme.color.icon.system.brand or theme.color.text.system.brand or theme.color.border.system.brand */
   primary500: string
   /** @deprecated Use theme.color.border.system.focus */
   primary300: string
