@@ -1,3 +1,5 @@
+import Rarity from '../data/Rarity'
+
 const mockNavigation: any = {
   navigate: jest.fn(),
   addListener: jest.fn(() => jest.fn()),
@@ -15,4 +17,12 @@ const mockNavigationContext: any = {
   navigate: jest.fn(),
 }
 
-export { mockNavigation, mockNavigationContext }
+const rarities = [
+  new Rarity(0, 'unknown'),
+  new Rarity(1, 'common'),
+  new Rarity(2, 'relatively common'),
+  new Rarity(3, 'rare'),
+  new Rarity(4, 'very rare'),
+]
+
+export { mockNavigation, mockNavigationContext, rarities }

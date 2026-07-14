@@ -72,9 +72,12 @@
     "color": "^5.0.3",
     "date-fns": "^4.1.0",
     "react-native-calendar-picker": "^8.0.5",
+    "react-native-gesture-handler": "^2.31.1",
     "react-native-logs": "^5.5.0",
+    "react-native-reanimated": "4.3.1",
     "react-native-render-html": "^6.3.4",
-    "react-native-scalable-image": "^1.1.0"
+    "react-native-scalable-image": "^1.1.0",
+    "react-native-worklets": "0.8.3"
   },
   "packageManager": "yarn@3.6.4",
   "rnx-kit": {

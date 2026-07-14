@@ -46,7 +46,7 @@ export interface Color {
   grey800: string
   /** @deprecated Use theme.color.text.system.subtler or theme.color.icon.system.subtle */
   grey500: string
-  /** @deprecated Use theme.color.icon.system.disabled or theme.color.text.system.disabled or theme.color.border.system.default */
+  /** @deprecated Use theme.color.icon.system.disabled or theme.color.text.system.disabled or theme.color.border.system.default or theme.color.background.system.disabled */
   grey300: string
   /** @deprecated Use theme.color.background.system.surfaceRaised or theme.color.border.system.subtle */
   grey50: string
