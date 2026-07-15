@@ -18,7 +18,7 @@ const FilterOption = ({ title, active = false, onPress }: FilterOptionProps) => 
   const theme = useTheme()
   const styles = useStyles(createStyles)
 
-  const backgroundColor = active ? theme.color.primary50 : theme.color.background.system.surfaceRaised
+  const backgroundColor = active ? theme.color.background.system.active : theme.color.background.system.surfaceRaised
   const borderColor = active ? theme.color.border.system.brand : theme.color.border.system.subtle
   const titleColor = active ? theme.color.text.system.brand : theme.color.text.system.subtle
 

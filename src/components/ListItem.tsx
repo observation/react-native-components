@@ -20,7 +20,7 @@ const ListItem = ({ icon, onPress, label, subLabel, extraSubLabel, selected = fa
 
   const iconMarginRight = subLabel ? theme.margin.common : theme.margin.half
   const containerPaddingVertical = subLabel ? 7 : 13
-  const containerBackgroundColor = selected ? theme.color.primary50 : undefined
+  const containerBackgroundColor = selected ? theme.color.background.system.active : undefined
 
   const renderIcon = (() => {
     switch (true) {

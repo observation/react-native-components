@@ -56,7 +56,7 @@ export interface Color {
   primary500: string
   /** @deprecated Use theme.color.border.system.focus */
   primary300: string
-  /** @deprecated Use theme.color.background.system.brand */
+  /** @deprecated Use theme.color.background.system.active */
   primary50: string
   /** @deprecated Use theme.color.background.system.success or theme.color.text.system.success */
   success500: string
@@ -129,6 +129,7 @@ export interface Color {
       observationStrong: string
       speciesSubtle: string
       speciesStrong: string
+      active: string
     }
     gps: {
       accuracySuccess: string
