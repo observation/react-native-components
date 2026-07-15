@@ -101,6 +101,8 @@ export const color = {
       default: paletteMode.grey[300],
       subtle: paletteMode.grey[50],
       focus: paletteMode.primary[300],
+      transect: paletteMode.error[500],
+      transectBorder: paletteMode.base['white'],
     },
     status: {
       uploadable: paletteMode.accentSky[400],

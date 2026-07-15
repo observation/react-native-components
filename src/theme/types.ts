@@ -188,6 +188,8 @@ export interface Color {
       default: string
       subtle: string
       focus: string
+      transect: string
+      transectBorder: string
     }
     status: {
       uploadable: string
