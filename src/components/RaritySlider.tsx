@@ -44,7 +44,7 @@ const RaritySlider = ({ rarities, onChange, value }: Props) => {
 
   const { width } = useWindowDimensions()
 
-  const options = rarities.filter((r) => r.id !== Config.rarityId.unknown)
+  const options = useMemo(() => rarities.filter((r) => r.id !== Config.rarityId.unknown), [rarities])
   const rarityWidth = (width - margin * 2) / options.length
   const rarityConfig = Config.rarityConfig(theme)
 
