@@ -219,7 +219,7 @@ exports[`FilterSelectField Rendering Value selected 1`] = `
     <Icon
       color="#939393"
       name="circle-xmark"
-      size={14}
+      size={16}
       type="solid"
     />
   </View>

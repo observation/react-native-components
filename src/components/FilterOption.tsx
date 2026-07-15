@@ -20,7 +20,7 @@ const FilterOption = ({ title, active = false, onPress }: FilterOptionProps) => 
 
   const backgroundColor = active ? theme.color.background.system.active : theme.color.background.system.surfaceRaised
   const borderColor = active ? theme.color.border.system.brand : theme.color.border.system.subtle
-  const titleColor = active ? theme.color.text.system.brand : theme.color.text.system.subtle
+  const titleColor = active ? theme.color.text.system.brand : theme.color.text.system.subtler
 
   return (
     <TouchableOpacity

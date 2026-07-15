@@ -152,7 +152,7 @@ exports[`FilterOption Rendering Default props 1`] = `
             "textAlignVertical": "center",
           },
           {
-            "color": "#666666",
+            "color": "#939393",
           },
         ]
       }
@@ -226,7 +226,7 @@ exports[`FilterOption Rendering Inactive 1`] = `
             "textAlignVertical": "center",
           },
           {
-            "color": "#666666",
+            "color": "#939393",
           },
         ]
       }

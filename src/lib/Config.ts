@@ -19,7 +19,6 @@ const rarityConfig = (theme: Theme): RarityConfig => ({
     iconName: 'triangle',
   },
   2: {
-    // previously #45D1D6, now #4ad1d6
     color: theme.color.icon.rarity.relativelyCommon,
     iconName: 'square',
   },

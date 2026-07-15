@@ -37,7 +37,7 @@ const FilterSelectField = ({ testID, isActive, value, placeholder, onPress, onCl
       />
       {isActive && (
         <TouchableOpacity style={styles.clear} onPress={onClear} testID={testID + '-clear'}>
-          <Icon name="circle-xmark" style="solid" color={theme.color.icon.system.subtle} size={theme.icon.size.m} />
+          <Icon name="circle-xmark" style="solid" color={theme.color.icon.system.subtle} size={theme.icon.size.l} />
         </TouchableOpacity>
       )}
     </View>
