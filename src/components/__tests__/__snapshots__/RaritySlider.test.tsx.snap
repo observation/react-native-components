@@ -1,0 +1,1041 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`RaritySlider Rendering No value is translated to common 1`] = `
+<View>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "paddingHorizontal": 40,
+        "paddingTop": 8,
+        "paddingVertical": 16,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "paddingHorizontal": 0.5,
+            "width": "25%",
+          },
+          {
+            "opacity": NaN,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexGrow": 1,
+            "gap": 6,
+            "opacity": 1,
+            "width": "100%",
+          }
+        }
+      >
+        <Icon
+          color="#85b92d"
+          name="triangle"
+          size={14}
+          type="solid"
+        />
+        <View
+          style={
+            {
+              "flexGrow": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "includeFontPadding": false,
+                "lineHeight": 14,
+                "textAlign": "center",
+              }
+            }
+          >
+            Common
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 8,
+              "justifyContent": "center",
+              "marginTop": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 8,
+                  "height": 8,
+                },
+                {
+                  "backgroundColor": "#85b92d",
+                },
+                {
+                  "height": NaN,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "paddingHorizontal": 0.5,
+            "width": "25%",
+          },
+          {
+            "opacity": NaN,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexGrow": 1,
+            "gap": 6,
+            "opacity": 1,
+            "width": "100%",
+          }
+        }
+      >
+        <Icon
+          color="#4ad1d6"
+          name="square"
+          size={14}
+          type="solid"
+        />
+        <View
+          style={
+            {
+              "flexGrow": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "includeFontPadding": false,
+                "lineHeight": 14,
+                "textAlign": "center",
+              }
+            }
+          >
+            Relatively common
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 8,
+              "justifyContent": "center",
+              "marginTop": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 8,
+                  "height": 8,
+                },
+                {
+                  "backgroundColor": "#4ad1d6",
+                },
+                {
+                  "height": NaN,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "paddingHorizontal": 0.5,
+            "width": "25%",
+          },
+          {
+            "opacity": NaN,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexGrow": 1,
+            "gap": 6,
+            "opacity": 1,
+            "width": "100%",
+          }
+        }
+      >
+        <Icon
+          color="#f4c015"
+          name="hexagon"
+          size={14}
+          type="solid"
+        />
+        <View
+          style={
+            {
+              "flexGrow": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "includeFontPadding": false,
+                "lineHeight": 14,
+                "textAlign": "center",
+              }
+            }
+          >
+            Rare
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 8,
+              "justifyContent": "center",
+              "marginTop": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 8,
+                  "height": 8,
+                },
+                {
+                  "backgroundColor": "#f4c015",
+                },
+                {
+                  "height": NaN,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "paddingHorizontal": 0.5,
+            "width": "25%",
+          },
+          {},
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexGrow": 1,
+            "gap": 6,
+            "opacity": 1,
+            "width": "100%",
+          }
+        }
+      >
+        <Icon
+          color="#ea554b"
+          name="certificate"
+          size={14}
+          type="solid"
+        />
+        <View
+          style={
+            {
+              "flexGrow": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "includeFontPadding": false,
+                "lineHeight": 14,
+                "textAlign": "center",
+              }
+            }
+          >
+            Very rare
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 8,
+              "justifyContent": "center",
+              "marginTop": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 8,
+                  "height": 8,
+                },
+                {
+                  "backgroundColor": "#ea554b",
+                },
+                {},
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "bottom": 8,
+        "height": 24,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        [
+          {
+            "backgroundColor": "#e6e6e6",
+            "borderColor": "#ffffff",
+            "borderRadius": 12,
+            "borderWidth": 2,
+            "height": 24,
+            "position": "absolute",
+            "width": 24,
+          },
+          {
+            "transform": [
+              {
+                "translateX": 28,
+              },
+            ],
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;
+
+exports[`RaritySlider Rendering Normal 1`] = `
+<View>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "paddingHorizontal": 40,
+        "paddingTop": 8,
+        "paddingVertical": 16,
+        "width": "100%",
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "paddingHorizontal": 0.5,
+            "width": "25%",
+          },
+          {
+            "opacity": NaN,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexGrow": 1,
+            "gap": 6,
+            "opacity": 1,
+            "width": "100%",
+          }
+        }
+      >
+        <Icon
+          color="#85b92d"
+          name="triangle"
+          size={14}
+          type="solid"
+        />
+        <View
+          style={
+            {
+              "flexGrow": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "includeFontPadding": false,
+                "lineHeight": 14,
+                "textAlign": "center",
+              }
+            }
+          >
+            Common
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 8,
+              "justifyContent": "center",
+              "marginTop": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 8,
+                  "height": 8,
+                },
+                {
+                  "backgroundColor": "#85b92d",
+                },
+                {
+                  "height": NaN,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "paddingHorizontal": 0.5,
+            "width": "25%",
+          },
+          {
+            "opacity": NaN,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexGrow": 1,
+            "gap": 6,
+            "opacity": 1,
+            "width": "100%",
+          }
+        }
+      >
+        <Icon
+          color="#4ad1d6"
+          name="square"
+          size={14}
+          type="solid"
+        />
+        <View
+          style={
+            {
+              "flexGrow": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "includeFontPadding": false,
+                "lineHeight": 14,
+                "textAlign": "center",
+              }
+            }
+          >
+            Relatively common
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 8,
+              "justifyContent": "center",
+              "marginTop": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 8,
+                  "height": 8,
+                },
+                {
+                  "backgroundColor": "#4ad1d6",
+                },
+                {
+                  "height": NaN,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "paddingHorizontal": 0.5,
+            "width": "25%",
+          },
+          {
+            "opacity": NaN,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexGrow": 1,
+            "gap": 6,
+            "opacity": 1,
+            "width": "100%",
+          }
+        }
+      >
+        <Icon
+          color="#f4c015"
+          name="hexagon"
+          size={14}
+          type="solid"
+        />
+        <View
+          style={
+            {
+              "flexGrow": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "includeFontPadding": false,
+                "lineHeight": 14,
+                "textAlign": "center",
+              }
+            }
+          >
+            Rare
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 8,
+              "justifyContent": "center",
+              "marginTop": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 8,
+                  "height": 8,
+                },
+                {
+                  "backgroundColor": "#f4c015",
+                },
+                {
+                  "height": NaN,
+                },
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "paddingHorizontal": 0.5,
+            "width": "25%",
+          },
+          {},
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "flexGrow": 1,
+            "gap": 6,
+            "opacity": 1,
+            "width": "100%",
+          }
+        }
+      >
+        <Icon
+          color="#ea554b"
+          name="certificate"
+          size={14}
+          type="solid"
+        />
+        <View
+          style={
+            {
+              "flexGrow": 1,
+            }
+          }
+        >
+          <Text
+            style={
+              {
+                "color": "#666666",
+                "fontFamily": "Ubuntu",
+                "fontSize": 12,
+                "fontStyle": "normal",
+                "fontWeight": "normal",
+                "includeFontPadding": false,
+                "lineHeight": 14,
+                "textAlign": "center",
+              }
+            }
+          >
+            Very rare
+          </Text>
+        </View>
+        <View
+          style={
+            {
+              "height": 8,
+              "justifyContent": "center",
+              "marginTop": 2,
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              [
+                {
+                  "borderRadius": 8,
+                  "height": 8,
+                },
+                {
+                  "backgroundColor": "#ea554b",
+                },
+                {},
+              ]
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "bottom": 8,
+        "height": 24,
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+      }
+    }
+  >
+    <View
+      collapsable={false}
+      style={
+        [
+          {
+            "backgroundColor": "#e6e6e6",
+            "borderColor": "#ffffff",
+            "borderRadius": 12,
+            "borderWidth": 2,
+            "height": 24,
+            "position": "absolute",
+            "width": 24,
+          },
+          {
+            "transform": [
+              {
+                "translateX": 28,
+              },
+            ],
+          },
+        ]
+      }
+    />
+  </View>
+</View>
+`;

@@ -12,6 +12,8 @@ import DatePicker from './components/DatePicker'
 import Disclose from './components/Disclose'
 import DocumentLink from './components/DocumentLink'
 import FilterButton from './components/FilterButton'
+import FilterOption from './components/FilterOption'
+import FilterSelectField from './components/FilterSelectField'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
 import IconView from './components/IconView'
@@ -30,12 +32,14 @@ import PageIndicator from './components/PageIndicator'
 import Panel from './components/Panel'
 import Popup from './components/Popup'
 import ProgressBarList from './components/ProgressBarList'
+import RaritySlider from './components/RaritySlider'
 import SectionHeader from './components/SectionHeader'
 import SingleLine from './components/SingleLine'
 import TextLink from './components/TextLink'
 import Tooltip, { TooltipProps } from './components/Tooltip'
 import WebLink from './components/WebLink'
 import ProgressBar from './data/ProgressBar'
+import Rarity from './data/Rarity'
 import useShowBlurView from './hooks/useShowBlurView'
 import BrandIcons from './lib/BrandIcons'
 import Icons, { IconName } from './lib/Icons'
@@ -58,6 +62,8 @@ export {
   Disclose,
   DocumentLink,
   FilterButton,
+  FilterOption,
+  FilterSelectField,
   IconButton,
   IconText,
   IconView,
@@ -79,6 +85,8 @@ export {
   Popup,
   ProgressBar,
   ProgressBarList,
+  Rarity,
+  RaritySlider,
   SectionHeader,
   SingleLine,
   TextLink,

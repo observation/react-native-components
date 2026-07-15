@@ -46,17 +46,17 @@ export interface Color {
   grey800: string
   /** @deprecated Use theme.color.text.system.subtler or theme.color.icon.system.subtle */
   grey500: string
-  /** @deprecated Use theme.color.icon.system.disabled or theme.color.text.system.disabled or theme.color.border.system.default */
+  /** @deprecated Use theme.color.icon.system.disabled or theme.color.text.system.disabled or theme.color.border.system.default or theme.color.background.system.disabled */
   grey300: string
   /** @deprecated Use theme.color.background.system.surfaceRaised or theme.color.border.system.subtle */
   grey50: string
   /** @deprecated Use theme.color.background.system.surfaceLowered */
   grey100: string
-  /** @deprecated Use theme.color.icon.system.brand or theme.color.text.system.brand */
+  /** @deprecated Use theme.color.icon.system.brand or theme.color.text.system.brand or theme.color.border.system.brand */
   primary500: string
   /** @deprecated Use theme.color.border.system.focus */
   primary300: string
-  /** @deprecated Use theme.color.background.system.brand */
+  /** @deprecated Use theme.color.background.system.active */
   primary50: string
   /** @deprecated Use theme.color.background.system.success or theme.color.text.system.success */
   success500: string
@@ -129,6 +129,7 @@ export interface Color {
       observationStrong: string
       speciesSubtle: string
       speciesStrong: string
+      active: string
     }
     gps: {
       accuracySuccess: string

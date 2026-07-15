@@ -42,6 +42,7 @@ export const color = {
       observationStrong: paletteMode.accentLime[400],
       speciesSubtle: paletteMode.accentSky[50],
       speciesStrong: paletteMode.accentSky[400],
+      active: paletteMode.primary[50],
     },
     gps: {
       accuracySuccess: paletteMode.success[200],

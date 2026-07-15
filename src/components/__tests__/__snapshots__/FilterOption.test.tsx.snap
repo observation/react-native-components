@@ -1,0 +1,238 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`FilterOption Rendering Active 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#e8f1f8",
+      "borderColor": "#0066b1",
+      "borderRadius": 16,
+      "borderWidth": 2,
+      "height": 32,
+      "justifyContent": "center",
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "justifyContent": "center",
+          "paddingRight": 8,
+        }
+      }
+    >
+      <Icon
+        color="#0066b1"
+        name="check"
+        size={14}
+        type="light"
+      />
+    </View>
+    <Text
+      style={
+        [
+          {
+            "color": "#666666",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+            "textAlignVertical": "center",
+          },
+          {
+            "color": "#0066b1",
+          },
+        ]
+      }
+    >
+      Size
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`FilterOption Rendering Default props 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#f9fafb",
+      "borderColor": "#f9fafb",
+      "borderRadius": 16,
+      "borderWidth": 2,
+      "height": 32,
+      "justifyContent": "center",
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#666666",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+            "textAlignVertical": "center",
+          },
+          {
+            "color": "#939393",
+          },
+        ]
+      }
+    >
+      Size
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`FilterOption Rendering Inactive 1`] = `
+<View
+  accessibilityState={
+    {
+      "busy": undefined,
+      "checked": undefined,
+      "disabled": undefined,
+      "expanded": undefined,
+      "selected": undefined,
+    }
+  }
+  accessibilityValue={
+    {
+      "max": undefined,
+      "min": undefined,
+      "now": undefined,
+      "text": undefined,
+    }
+  }
+  accessible={true}
+  collapsable={false}
+  focusable={false}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    {
+      "alignItems": "center",
+      "backgroundColor": "#f9fafb",
+      "borderColor": "#f9fafb",
+      "borderRadius": 16,
+      "borderWidth": 2,
+      "height": 32,
+      "justifyContent": "center",
+      "opacity": 1,
+    }
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "row",
+        "marginHorizontal": 8,
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "color": "#666666",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+            "textAlignVertical": "center",
+          },
+          {
+            "color": "#939393",
+          },
+        ]
+      }
+    >
+      Size
+    </Text>
+  </View>
+</View>
+`;

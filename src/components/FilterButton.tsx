@@ -17,7 +17,8 @@ const FilterButton = ({ activeFilters = 0, label, onPress }: FilterButtonProps) 
   const theme = useTheme()
   const styles = useStyles(createStyles)
 
-  const backgroundColor = activeFilters > 0 ? theme.color.primary50 : theme.color.background.system.surfaceBase
+  const backgroundColor =
+    activeFilters > 0 ? theme.color.background.system.active : theme.color.background.system.surfaceBase
   return (
     <TouchableOpacity style={[styles.container, { backgroundColor }]} onPress={onPress} activeOpacity={0.5}>
       <View style={styles.titleContainer}>

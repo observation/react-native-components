@@ -1,6 +1,8 @@
 /* eslint-disable observation/no-function-without-logging */
+/* eslint-disable @typescript-eslint/no-require-imports */
 import React from 'react'
 import { Image } from 'react-native'
+import 'react-native-gesture-handler/jestSetup'
 
 // === Globals ===
 
@@ -57,3 +59,7 @@ jest.mock('@fortawesome/react-native-fontawesome', () => {
 })
 
 Image.getSizeWithHeaders = jest.fn(() => Promise.resolve({ width: 0, height: 0 }))
+
+jest.mock('react-native-worklets', () => require('react-native-worklets/src/mock'))
+
+jest.mock('react-native-reanimated', () => require('react-native-reanimated/mock'))
