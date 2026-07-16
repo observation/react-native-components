@@ -78,7 +78,7 @@ const createStyles = (theme: Theme) => {
       width: 8,
       margin: 4,
       ...rounded.normal,
-      backgroundColor: theme.color.icon.system.subtle,
+      backgroundColor: theme.color.icon.system.subtler,
     },
     smallDot: {
       margin: 6,

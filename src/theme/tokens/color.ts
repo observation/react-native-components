@@ -52,6 +52,10 @@ export const color = {
   },
   icon: {
     system: {
+      strong: paletteMode.base['black'],
+      subtle: paletteMode.grey[800],
+      subtler: paletteMode.grey[500],
+      staticWhite: paletteMode.base['white'],
       brand: paletteMode.primary[500],
       link: paletteMode.primary[500],
       disabled: paletteMode.grey[300],
@@ -60,9 +64,6 @@ export const color = {
       error: paletteMode.error[500],
       observationStrong: paletteMode.accentLime[400],
       speciesStrong: paletteMode.accentSky[400],
-      staticWhite: paletteMode.base['white'],
-      subtle: paletteMode.grey[500],
-      strong: paletteMode.base['black'],
     },
     rarity: {
       unknown: paletteMode.rarity['unknown'],
