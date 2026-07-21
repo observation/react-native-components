@@ -48,7 +48,7 @@ const DateFromToFilter = ({
             name="calendar-day"
             style="light"
             size={theme.icon.size.m}
-            color={fromIsActive ? theme.color.icon.system.brand : theme.color.icon.system.subtle}
+            color={fromIsActive ? theme.color.icon.system.brand : theme.color.icon.system.subtler}
           />
           <Text
             style={[
@@ -76,7 +76,7 @@ const DateFromToFilter = ({
             name="calendar-day"
             style="light"
             size={theme.icon.size.m}
-            color={toIsActive ? theme.color.icon.system.brand : theme.color.icon.system.subtle}
+            color={toIsActive ? theme.color.icon.system.brand : theme.color.icon.system.subtler}
           />
           <Text
             style={[

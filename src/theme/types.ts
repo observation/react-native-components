@@ -44,9 +44,9 @@ export interface Color {
   black: string
   /** @deprecated Use theme.color.text.system.subtle */
   grey800: string
-  /** @deprecated Use theme.color.text.system.subtler or theme.color.icon.system.subtle */
+  /** @deprecated Use theme.color.text.system.subtler or theme.color.icon.system.subtler */
   grey500: string
-  /** @deprecated Use theme.color.icon.system.disabled or theme.color.text.system.disabled or theme.color.border.system.default or theme.color.background.system.disabled */
+  /** @deprecated Use theme.color.icon.system.disabled or theme.color.text.system.disabled or theme.color.border.system.default or theme.color.background.system.disabled or theme.color.text.system.subtle or theme.color.icon.system.subtle */
   grey300: string
   /** @deprecated Use theme.color.background.system.surfaceRaised or theme.color.border.system.subtle */
   grey50: string
@@ -139,6 +139,10 @@ export interface Color {
   }
   icon: {
     system: {
+      strong: string
+      subtle: string
+      subtler: string
+      staticWhite: string
       brand: string
       link: string
       disabled: string
@@ -147,9 +151,6 @@ export interface Color {
       error: string
       observationStrong: string
       speciesStrong: string
-      staticWhite: string
-      subtle: string
-      strong: string
     }
     rarity: {
       unknown: string
@@ -176,20 +177,22 @@ export interface Color {
   }
   border: {
     system: {
+      subtle: string
+      subtler: string
       brand: string
       disabled: string
       success: string
       warning: string
       error: string
-      subtler: string
       inverse: string
       speciesStrong: string
       observationStrong: string
-      default: string
-      subtle: string
+      strong: string
+      base: string
       focus: string
       transect: string
       transectBorder: string
+      selected: string
     }
     status: {
       uploadable: string

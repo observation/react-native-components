@@ -29,7 +29,7 @@ const NotificationPopup = ({ visible, title, message, leftButton, rightButton, o
 
           {onClose && (
             <TouchableOpacity testID="close" onPress={onClose} activeOpacity={0.5} style={styles.closeButton}>
-              <Icon name="times" color={theme.color.icon.system.subtle} size={theme.icon.size.xl} />
+              <Icon name="times" color={theme.color.icon.system.subtler} size={theme.icon.size.xl} />
             </TouchableOpacity>
           )}
         </View>
