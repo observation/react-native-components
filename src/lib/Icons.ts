@@ -89,6 +89,7 @@ import { faSquare as faSquareLight } from '@fortawesome/pro-light-svg-icons/faSq
 import { faStars as faStarsLight } from '@fortawesome/pro-light-svg-icons/faStars'
 import { faTally as faTallyLight } from '@fortawesome/pro-light-svg-icons/faTally'
 import { faThumbtack as faThumbtackLight } from '@fortawesome/pro-light-svg-icons/faThumbtack'
+import { faTimer as faTimerLight } from '@fortawesome/pro-light-svg-icons/faTimer'
 import { faTimes as faTimesLight } from '@fortawesome/pro-light-svg-icons/faTimes'
 import { faTrashAlt as faTrashAltLight } from '@fortawesome/pro-light-svg-icons/faTrashAlt'
 import { faTriangle as faTriangleLight } from '@fortawesome/pro-light-svg-icons/faTriangle'
@@ -193,6 +194,7 @@ import { faSquare as faSquareSolid } from '@fortawesome/pro-solid-svg-icons/faSq
 import { faStars as faStarsSolid } from '@fortawesome/pro-solid-svg-icons/faStars'
 import { faTally as faTallySolid } from '@fortawesome/pro-solid-svg-icons/faTally'
 import { faThumbtack as faThumbtackSolid } from '@fortawesome/pro-solid-svg-icons/faThumbtack'
+import { faTimer as faTimerSolid } from '@fortawesome/pro-solid-svg-icons/faTimer'
 import { faTimes as faTimesSolid } from '@fortawesome/pro-solid-svg-icons/faTimes'
 import { faTrashAlt as faTrashAltSolid } from '@fortawesome/pro-solid-svg-icons/faTrashAlt'
 import { faTriangle as faTriangleSolid } from '@fortawesome/pro-solid-svg-icons/faTriangle'
@@ -300,6 +302,7 @@ type IconName = Extract<
   | 'stars'
   | 'tally'
   | 'thumbtack'
+  | 'timer'
   | 'times'
   | 'trash-alt'
   | 'triangle'
@@ -409,6 +412,7 @@ const icons: { [key in IconName]: { light: IconDefinition; solid: IconDefinition
   square: { light: faSquareLight, solid: faSquareSolid },
   stars: { light: faStarsLight, solid: faStarsSolid },
   tally: { light: faTallyLight, solid: faTallySolid },
+  timer: { light: faTimerLight, solid: faTimerSolid },
   times: { light: faTimesLight, solid: faTimesSolid },
   'trash-alt': { light: faTrashAltLight, solid: faTrashAltSolid },
   triangle: { light: faTriangleLight, solid: faTriangleSolid },

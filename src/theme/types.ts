@@ -102,8 +102,11 @@ export interface Color {
       link: string
       disabled: string
       success: string
+      successDark: string
       warning: string
+      warningDark: string
       error: string
+      errorDark: string
       observationStrong: string
       speciesStrong: string
     }
@@ -122,8 +125,11 @@ export interface Color {
       surfacePopped: string
       brand: string
       success: string
+      successSubtle: string
       warning: string
+      warningSubtle: string
       error: string
+      errorSubtle: string
       coverImage: string
       observationSubtle: string
       observationStrong: string
