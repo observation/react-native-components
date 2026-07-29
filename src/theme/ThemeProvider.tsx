@@ -31,5 +31,5 @@ export const useTheme = (): Theme => useContext(ThemeContext)
  */
 export const useStyles = <T,>(stylesFactory: (theme: Theme) => T): T => {
   const theme = useTheme()
-  return useMemo(() => stylesFactory(theme), [theme])
+  return useMemo(() => stylesFactory(theme), [stylesFactory, theme])
 }
