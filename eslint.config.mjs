@@ -1,16 +1,17 @@
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-import { fixupPluginRules } from '@eslint/compat'
 import { FlatCompat } from '@eslint/eslintrc'
 import js from '@eslint/js'
 import tsParser from '@typescript-eslint/parser'
+import eslintConfigPrettier from 'eslint-config-prettier'
 import _import from 'eslint-plugin-import'
-import jsxA11Y from 'eslint-plugin-jsx-a11y'
 import observation from 'eslint-plugin-observation'
 import prettier from 'eslint-plugin-prettier'
 import react from 'eslint-plugin-react'
+import reactHooks from 'eslint-plugin-react-hooks'
 import reactNative from 'eslint-plugin-react-native'
+import reactNativeA11Y from 'eslint-plugin-react-native-a11y'
 import globals from 'globals'
 
 const __filename = fileURLToPath(import.meta.url)
@@ -23,12 +24,15 @@ const compat = new FlatCompat({
 
 export default [
   ...compat.extends('plugin:@typescript-eslint/recommended'),
+  // Apply prettier config here (to disable conflicting rules); our own rules below override where needed.
+  eslintConfigPrettier,
   {
     plugins: {
-      'react-native': fixupPluginRules(reactNative),
+      'react-native': reactNative,
       react,
-      'jsx-a11y': jsxA11Y,
-      import: fixupPluginRules(_import),
+      'react-hooks': reactHooks,
+      'jsx-a11y': reactNativeA11Y,
+      import: _import,
       prettier,
       observation,
     },
@@ -61,6 +65,9 @@ export default [
 
       'react-native/no-unused-styles': 'error',
       'react-native/no-inline-styles': 'off',
+
+      'react-hooks/rules-of-hooks': 'error',
+      'react-hooks/exhaustive-deps': 'warn',
 
       'prettier/prettier': 'error',
 
