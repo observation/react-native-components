@@ -11,6 +11,20 @@ export const createFont = (theme: Theme): Font =>
       lineHeight: theme.lineHeight.extraSmall,
       fontWeight: 'normal',
     },
+    extraSmallBold: {
+      fontFamily: 'Ubuntu',
+      fontStyle: 'normal',
+      fontSize: theme.fontSize.extraSmall,
+      lineHeight: theme.lineHeight.extraSmall,
+      fontWeight: 'bold',
+    },
+    extraSmallLight: {
+      fontFamily: Platform.OS === 'android' ? 'Ubuntu-Light' : 'Ubuntu',
+      fontStyle: 'normal',
+      fontSize: theme.fontSize.extraSmall,
+      lineHeight: theme.lineHeight.extraSmall,
+      fontWeight: '100',
+    },
     small: {
       fontFamily: 'Ubuntu',
       fontStyle: 'normal',

@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.90.0",
+  "version": "1.91.0",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",

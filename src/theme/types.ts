@@ -252,6 +252,8 @@ export type LineHeight = Record<ScaleName, number>
 
 export type FontName =
   | 'extraSmall'
+  | 'extraSmallBold'
+  | 'extraSmallLight'
   | 'small'
   | 'smallBold'
   | 'smallLight'
