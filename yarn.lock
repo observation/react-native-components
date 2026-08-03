@@ -2140,7 +2140,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@gorhom/bottom-sheet@npm:>=5.2.14":
+"@gorhom/bottom-sheet@npm:^5.2.14":
   version: 5.2.14
   resolution: "@gorhom/bottom-sheet@npm:5.2.14"
   dependencies:
@@ -2817,7 +2817,7 @@ __metadata:
     "@fortawesome/pro-light-svg-icons": ^6.7.2
     "@fortawesome/pro-solid-svg-icons": ^6.7.2
     "@fortawesome/react-native-fontawesome": ^0.3.2
-    "@gorhom/bottom-sheet": ">=5.2.14"
+    "@gorhom/bottom-sheet": ^5.2.14
     "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing"
     "@react-native-community/blur": ^4.4.1
     "@react-native/babel-preset": 0.83.1

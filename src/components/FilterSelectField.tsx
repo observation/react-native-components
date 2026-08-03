@@ -1,12 +1,11 @@
 import React from 'react'
 import { StyleSheet, TouchableOpacity, View } from 'react-native'
 
-import { rounded } from '@observation.org/react-native-components/styles'
-
 import Log from '../lib/Log'
 import { Theme, useStyles, useTheme } from '../theme'
 import { Icon } from './Icon'
 import InputPanel from './InputPanel'
+import { rounded } from '../styles'
 
 const height = 48
 

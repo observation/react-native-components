@@ -10,15 +10,19 @@ import BottomSheet, {
   TouchableOpacity,
   useBottomSheetTimingConfigs,
 } from '@gorhom/bottom-sheet'
-import { Icon, InputField, ItemSeparator, ListItem, SectionHeader } from '@observation.org/react-native-components'
-import { type Theme, createInputStyles, useStyles, useTheme } from '@observation.org/react-native-components/theme'
 import { useTheme as useNavigationTheme } from '@react-navigation/native'
 import { Easing } from 'react-native-reanimated'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
+import { Icon } from './Icon'
+import ItemSeparator from './ItemSeparator'
+import ListItem from './ListItem'
 import useBottomSheetBackHandler from '../hooks/useBottomSheetBackHandler'
 import Log from '../lib/Log'
 import { createBottomSheetStyles } from '../styles/bottomSheet'
+import { type Theme, createInputStyles, useStyles, useTheme } from '../theme'
+import InputField from './InputField'
+import SectionHeader from './SectionHeader'
 
 type Props = {
   onClose: () => void
@@ -135,7 +139,7 @@ const BottomSheetWithSearchInput = ({
         <SectionHeader title={sectionTitle} />
       </View>
     ),
-    [children, sectionTitle, searchString, onChange, onClear, styles, theme],
+    [children, inputFieldPlaceholder, sectionTitle, searchString, onChange, onClear, styles, theme],
   )
 
   return (

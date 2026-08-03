@@ -1,10 +1,9 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
-import { Icon } from '@observation.org/react-native-components'
-import { rounded } from '@observation.org/react-native-components/styles'
-
+import { rounded } from '../styles'
 import { Theme, useStyles, useTheme } from '../theme'
+import { Icon } from './Icon'
 
 type FilterButtonProps = {
   disabled?: boolean
