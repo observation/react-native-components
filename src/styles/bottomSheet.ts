@@ -5,7 +5,7 @@ import { Theme } from '../theme'
 export const createBottomSheetStyles = (theme: Theme) =>
   StyleSheet.create({
     handleIndicator: {
-      backgroundColor: theme.color.grey800,
+      backgroundColor: theme.color.icon.system.subtle,
       height: 4,
       margin: -2,
       width: 48,
