@@ -2,7 +2,7 @@
   "extends": "@react-native/typescript-config",
   "typeRoots": ["./src/@types", "./node_modules/@types"],
   "compilerOptions": {
-    "types": ["jest"],
+    "types": ["jest"]
   },
   "include": ["**/*.ts", "**/*.tsx"],
   "exclude": ["**/node_modules", "**/Pods"]
