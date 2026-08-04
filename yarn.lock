@@ -2140,6 +2140,40 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@gorhom/bottom-sheet@npm:^5.2.14":
+  version: 5.2.14
+  resolution: "@gorhom/bottom-sheet@npm:5.2.14"
+  dependencies:
+    "@gorhom/portal": 1.0.14
+    invariant: ^2.2.4
+  peerDependencies:
+    "@types/react": "*"
+    "@types/react-native": "*"
+    react: "*"
+    react-native: "*"
+    react-native-gesture-handler: ">=2.16.1"
+    react-native-reanimated: "*"
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+    "@types/react-native":
+      optional: true
+  checksum: c4387fa66b06e9c5dac713af7cdc9f9f5da42743f7dd6a2117d8c956e9410573c24e552fdb20232e251de5890ee83569894312eb5d4531f933f512b673ffeb53
+  languageName: node
+  linkType: hard
+
+"@gorhom/portal@npm:1.0.14":
+  version: 1.0.14
+  resolution: "@gorhom/portal@npm:1.0.14"
+  dependencies:
+    nanoid: ^3.3.1
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 227bb96a2db854ab29bb9da8d4f3823c7f7448358de459709dd1b78522110da564c9a8734c6bc7d7153ed7c99320e0fb5d60b420c2ebb75ecaf2f0d757f410f9
+  languageName: node
+  linkType: hard
+
 "@humanfs/core@npm:^0.19.1":
   version: 0.19.1
   resolution: "@humanfs/core@npm:0.19.1"
@@ -2783,6 +2817,7 @@ __metadata:
     "@fortawesome/pro-light-svg-icons": ^6.7.2
     "@fortawesome/pro-solid-svg-icons": ^6.7.2
     "@fortawesome/react-native-fontawesome": ^0.3.2
+    "@gorhom/bottom-sheet": ^5.2.14
     "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing"
     "@react-native-community/blur": ^4.4.1
     "@react-native/babel-preset": 0.83.1
@@ -2817,12 +2852,14 @@ __metadata:
     react-native-logs: ^5.6.0
     react-native-reanimated: 4.5.3
     react-native-render-html: ^6.3.4
+    react-native-safe-area-context: ^5.8.0
     react-native-scalable-image: ^1.1.0
     react-native-worklets: 0.11.3
     react-test-renderer: 19.2.0
     ts-jest: ^29.4.6
     typescript: 5.8.3
   peerDependencies:
+    "@gorhom/bottom-sheet": ">=5.2.9"
     "@react-native-community/blur": ">=4.4.1"
     "@react-navigation/native": ^7.0.0
     react: ^19.0.0
@@ -2830,6 +2867,7 @@ __metadata:
     react-native-gesture-handler: ">=2.16.1"
     react-native-reanimated: ">=4.0.0"
     react-native-render-html: ^6.1.0
+    react-native-safe-area-context: ">=5.7.0"
     react-native-svg: ">=15.0.0"
     react-native-worklets: ">=0.8.0"
   languageName: unknown
@@ -9548,6 +9586,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"nanoid@npm:^3.3.1":
+  version: 3.3.16
+  resolution: "nanoid@npm:3.3.16"
+  bin:
+    nanoid: bin/nanoid.cjs
+  checksum: 2489d8f87f02178a15b901d7d06e490838383a2acdf01ec2b4e4343c02325ab648965a539eba8bdb821560a33e4c34be506b9e1c7c1bb5cb750e894f500fce92
+  languageName: node
+  linkType: hard
+
 "nanoid@npm:^3.3.11":
   version: 3.3.11
   resolution: "nanoid@npm:3.3.11"
@@ -10290,28 +10337,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-is@npm:^16.13.1, react-is@npm:^16.7.0":
-  version: 16.13.1
-  resolution: "react-is@npm:16.13.1"
-  checksum: f7a19ac3496de32ca9ae12aa030f00f14a3d45374f1ceca0af707c831b2a6098ef0d6bdae51bd437b0a306d7f01d4677fcc8de7c0d331eb47ad0f46130e53c5f
-  languageName: node
-  linkType: hard
-
-"react-is@npm:^18.0.0":
-  version: 18.2.0
-  resolution: "react-is@npm:18.2.0"
-  checksum: e72d0ba81b5922759e4aff17e0252bd29988f9642ed817f56b25a3e217e13eea8a7f2322af99a06edb779da12d5d636e9fda473d620df9a3da0df2a74141d53e
-  languageName: node
-  linkType: hard
-
-"react-is@npm:^18.3.1":
-  version: 18.3.1
-  resolution: "react-is@npm:18.3.1"
-  checksum: e20fe84c86ff172fc8d898251b7cc2c43645d108bf96d0b8edf39b98f9a2cae97b40520ee7ed8ee0085ccc94736c4886294456033304151c3f94978cec03df21
-  languageName: node
-  linkType: hard
-
-"react-is@npm:^19.1.0, react-is@npm:^19.2.0":
+"react-is@npm:19.2.3":
   version: 19.2.3
   resolution: "react-is@npm:19.2.3"
   checksum: 3bb317292dc574632ec33093d38b8ff97abb6dc400e7b0375baef9429f148cf5ae0307e37de97358f3fad07edd159cda8fcb9d28aaaf0dcd8d408ee320638b83
@@ -10396,6 +10422,16 @@ __metadata:
     react: "*"
     react-native: "*"
   checksum: 9fd0c915664d4d25d23f48b4b33101385f2e497c643664c09b457eb091f90cd1d60f9c2c4bfad1a55403c8037d52de5dcbdebe0b1ebc9e4883d8a3099a23633b
+  languageName: node
+  linkType: hard
+
+"react-native-safe-area-context@npm:^5.8.0":
+  version: 5.8.0
+  resolution: "react-native-safe-area-context@npm:5.8.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 082bb1cb7e9609f1b5b04bc4ee04d71c32637bbaf4f065a1f15ec693100c855f63de0d9ec3d6bb972c39d7029c1952d1bceec5ba2167851f8e47e8dfd05d983e
   languageName: node
   linkType: hard
 

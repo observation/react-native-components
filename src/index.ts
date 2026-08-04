@@ -2,6 +2,7 @@ import Accordion from './components/Accordion'
 import BackButton from './components/BackButton'
 import BackgroundImage from './components/BackgroundImage'
 import BottomSheet from './components/BottomSheet'
+import BottomSheetWithSearchInput from './components/BottomSheetWithSearchInput'
 import CapitalizeText from './components/CapitalizeText'
 import Checkbox from './components/Checkbox'
 import Chip from './components/Chip'
@@ -40,6 +41,7 @@ import Tooltip, { TooltipProps } from './components/Tooltip'
 import WebLink from './components/WebLink'
 import ProgressBar from './data/ProgressBar'
 import Rarity from './data/Rarity'
+import useBottomSheetBackHandler from './hooks/useBottomSheetBackHandler'
 import useShowBlurView from './hooks/useShowBlurView'
 import BrandIcons from './lib/BrandIcons'
 import Icons, { IconName } from './lib/Icons'
@@ -52,6 +54,7 @@ export {
   BackButton,
   BackgroundImage,
   BottomSheet,
+  BottomSheetWithSearchInput,
   CapitalizeText,
   Checkbox,
   Chip,
@@ -95,6 +98,7 @@ export {
   WebLink,
   openUrl,
   setLogConfiguration,
+  useBottomSheetBackHandler,
   useShowBlurView,
 }
 

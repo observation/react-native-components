@@ -1,11 +1,10 @@
 import React from 'react'
 import { StyleProp, StyleSheet, Text, TouchableOpacity, View, ViewStyle } from 'react-native'
 
-import { Icon } from '@observation.org/react-native-components'
-import { rounded } from '@observation.org/react-native-components/styles'
-
 import Log from '../lib/Log'
+import { rounded } from '../styles'
 import { Theme, useStyles, useTheme } from '../theme'
+import { Icon } from './Icon'
 
 const height = 48
 
