@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.91.0",
+  "version": "1.92.0",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
@@ -10,18 +10,43 @@
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
   "license": "MIT",
+  "scripts": {
+    "lint": "tsc --noEmit && eslint src",
+    "test": "jest --silent",
+    "verify": "$npm_execpath lint && $npm_execpath test",
+    "check-dependencies": "rnx-align-deps --diff-mode allow-subset"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-brands-svg-icons": "^6.7.2",
+    "@fortawesome/pro-light-svg-icons": "^6.7.2",
+    "@fortawesome/pro-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-native-fontawesome": "^0.3.2",
+    "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing",
+    "accordion-collapse-react-native": "^1.1.1",
+    "color": "^5.0.3",
+    "date-fns": "^4.4.0",
+    "react-native-calendar-picker": "^8.0.5",
+    "react-native-logs": "^5.6.0",
+    "react-native-scalable-image": "^1.1.0"
+  },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.6",
     "@eslint/js": "^9.39.5",
     "@gorhom/bottom-sheet": "^5.2.14",
     "@react-native-community/blur": "^4.4.1",
-    "@react-native/babel-preset": "0.83.1",
-    "@react-native/typescript-config": "0.83.1",
+    "@react-native-community/cli": "^20.1.0",
+    "@react-native-community/cli-platform-android": "^20.1.0",
+    "@react-native-community/cli-platform-ios": "^20.1.0",
+    "@react-native/babel-preset": "0.86.2",
+    "@react-native/jest-preset": "0.86.2",
+    "@react-native/metro-config": "^0.86.2",
+    "@react-native/typescript-config": "0.86.2",
     "@react-navigation/native": "^7.3.14",
     "@rnx-kit/align-deps": "^4.0.2",
     "@testing-library/react-native": "^13.3.3",
     "@types/jest": "^30.0.0",
-    "@types/react": "^19.2.0",
+    "@types/react": "^19.2.3",
     "@types/react-native-calendar-picker": "^8.0.0",
     "@typescript-eslint/eslint-plugin": "^8.65.0",
     "@typescript-eslint/parser": "^8.65.0",
@@ -37,27 +62,21 @@
     "globals": "^16.5.0",
     "jest": "^30.2.0",
     "prettier": "^3.9.6",
-    "react": "19.2.0",
-    "react-native": "0.83.1",
+    "react": "19.2.3",
+    "react-native": "0.86.2",
     "react-native-gesture-handler": "^2.32.0",
     "react-native-reanimated": "4.5.3",
     "react-native-render-html": "^6.3.4",
     "react-native-safe-area-context": "^5.8.0",
     "react-native-worklets": "0.11.3",
-    "react-test-renderer": "19.2.0",
+    "react-test-renderer": "19.2.3",
     "ts-jest": "^29.4.6",
     "typescript": "5.8.3"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22.11.0"
   },
   "react-native": "src/index.ts",
-  "scripts": {
-    "lint": "tsc --noEmit && eslint src",
-    "test": "jest --silent",
-    "verify": "$npm_execpath lint && $npm_execpath test",
-    "check-dependencies": "rnx-align-deps"
-  },
   "files": [
     "src"
   ],
@@ -74,27 +93,13 @@
     "react-native-svg": ">=15.0.0",
     "react-native-worklets": ">=0.8.0"
   },
-  "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-brands-svg-icons": "^6.7.2",
-    "@fortawesome/pro-light-svg-icons": "^6.7.2",
-    "@fortawesome/pro-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-native-fontawesome": "^0.3.2",
-    "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing",
-    "accordion-collapse-react-native": "^1.1.1",
-    "color": "^5.0.3",
-    "date-fns": "^4.4.0",
-    "react-native-calendar-picker": "^8.0.5",
-    "react-native-logs": "^5.6.0",
-    "react-native-scalable-image": "^1.1.0"
-  },
   "packageManager": "yarn@3.6.4",
   "rnx-kit": {
     "kitType": "library",
     "alignDeps": {
       "requirements": {
         "development": [
-          "react-native@0.83"
+          "react-native@0.86"
         ],
         "production": [
           "react-native@>=0.83"
@@ -106,7 +111,6 @@
         "core-ios",
         "html",
         "jest",
-        "navigation/native",
         "react",
         "react-test-renderer"
       ]
