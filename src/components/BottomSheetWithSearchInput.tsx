@@ -14,7 +14,7 @@ import { useTheme as useNavigationTheme } from '@react-navigation/native'
 import { Easing } from 'react-native-reanimated'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
-import { Icon } from './Icon'
+import IconButton from './IconButton'
 import ItemSeparator from './ItemSeparator'
 import ListItem from './ListItem'
 import useBottomSheetBackHandler from '../hooks/useBottomSheetBackHandler'
@@ -121,19 +121,18 @@ const BottomSheetWithSearchInput = ({
             onChangeText: onChange,
           }}
           rightIcon={
-            <TouchableOpacity
-              style={styles.iconButtonContainer}
+            <IconButton
+              Touchable={TouchableOpacity}
+              containerStyle={styles.iconButtonContainer}
               onPress={onClear}
               testID="clearButton"
-              activeOpacity={0.5}
-            >
-              <Icon
-                name="circle-xmark"
-                style="solid"
-                color={theme.color.icon.system.subtler}
-                size={theme.icon.size.s}
-              />
-            </TouchableOpacity>
+              icon={{
+                name: 'circle-xmark',
+                style: 'solid',
+                color: theme.color.icon.system.subtler,
+                size: theme.icon.size.s,
+              }}
+            />
           }
         />
         <SectionHeader title={sectionTitle} />

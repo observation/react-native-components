@@ -1,5 +1,5 @@
-import React from 'react'
-import { StyleProp, TouchableOpacity, ViewStyle } from 'react-native'
+import React, { ComponentType } from 'react'
+import { StyleProp, TouchableOpacity, TouchableOpacityProps, ViewStyle } from 'react-native'
 
 import { Icon, IconProps } from './Icon'
 import { useTheme } from '../theme/ThemeProvider'
@@ -11,12 +11,21 @@ type Props = {
   icon: IconProps
   accessibilityLabel?: string
   testID?: string
+  Touchable?: ComponentType<TouchableOpacityProps>
 }
 
-const IconButton = ({ containerStyle, disabled, onPress, icon, accessibilityLabel, testID = 'pressable' }: Props) => {
+const IconButton = ({
+  containerStyle,
+  disabled,
+  onPress,
+  icon,
+  accessibilityLabel,
+  testID = 'pressable',
+  Touchable = TouchableOpacity,
+}: Props) => {
   const theme = useTheme()
   return (
-    <TouchableOpacity
+    <Touchable
       testID={testID}
       accessibilityLabel={accessibilityLabel}
       style={containerStyle}
@@ -25,7 +34,7 @@ const IconButton = ({ containerStyle, disabled, onPress, icon, accessibilityLabe
       activeOpacity={0.5}
     >
       <Icon size={theme.icon.size.l} {...icon} />
-    </TouchableOpacity>
+    </Touchable>
   )
 }
 

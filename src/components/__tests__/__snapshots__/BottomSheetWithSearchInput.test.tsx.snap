@@ -49,23 +49,24 @@ exports[`BottomSheetWithSearchInput Rendering Initial state 1`] = `
             }
           }
           rightIcon={
-            <TouchableOpacity
-              activeOpacity={0.5}
-              onPress={[Function]}
-              style={
+            <IconButton
+              Touchable={[Function]}
+              containerStyle={
                 {
                   "paddingRight": 16,
                 }
               }
+              icon={
+                {
+                  "color": "#939393",
+                  "name": "circle-xmark",
+                  "size": 12,
+                  "style": "solid",
+                }
+              }
+              onPress={[Function]}
               testID="clearButton"
-            >
-              <Icon
-                color="#939393"
-                name="circle-xmark"
-                size={12}
-                style="solid"
-              />
-            </TouchableOpacity>
+            />
           }
           textInputComponent={[Function]}
         />
@@ -652,23 +653,24 @@ exports[`BottomSheetWithSearchInput Rendering With selected item 1`] = `
             }
           }
           rightIcon={
-            <TouchableOpacity
-              activeOpacity={0.5}
-              onPress={[Function]}
-              style={
+            <IconButton
+              Touchable={[Function]}
+              containerStyle={
                 {
                   "paddingRight": 16,
                 }
               }
+              icon={
+                {
+                  "color": "#939393",
+                  "name": "circle-xmark",
+                  "size": 12,
+                  "style": "solid",
+                }
+              }
+              onPress={[Function]}
               testID="clearButton"
-            >
-              <Icon
-                color="#939393"
-                name="circle-xmark"
-                size={12}
-                style="solid"
-              />
-            </TouchableOpacity>
+            />
           }
           textInputComponent={[Function]}
         />
