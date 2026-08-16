@@ -1,6 +1,7 @@
 import React from 'react'
 import { StyleProp, StyleSheet, Text, TextStyle, TouchableOpacity, View, ViewStyle } from 'react-native'
 
+import CapitalizeText from './CapitalizeText'
 import { Theme, useStyles } from '../theme'
 
 type IconTextStyle = {
@@ -15,17 +16,20 @@ type Props = {
   style: IconTextStyle
   onPress?: () => void
   singleLineText?: boolean
+  capitalize?: boolean
 }
 
-const IconText = ({ icon, text, style, onPress, singleLineText = false }: Props) => {
+const IconText = ({ icon, text, style, onPress, singleLineText = false, capitalize = false }: Props) => {
   const styles = useStyles(createStyles)
+
+  const TextComponent = capitalize ? CapitalizeText : Text
 
   const content = (
     <View style={[styles.containerStyle, style.containerStyle]}>
       <View style={[styles.iconContainer, style.iconContainerStyle]}>{icon}</View>
-      <Text numberOfLines={singleLineText ? 1 : undefined} style={[{ flexShrink: 1 }, style.textStyle]}>
+      <TextComponent numberOfLines={singleLineText ? 1 : undefined} style={[{ flexShrink: 1 }, style.textStyle]}>
         {text}
-      </Text>
+      </TextComponent>
     </View>
   )
 

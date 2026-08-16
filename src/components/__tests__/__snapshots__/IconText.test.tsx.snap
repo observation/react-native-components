@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`IconText Rendering Capitalize text 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "justifyContent": "center",
+          "marginRight": 8,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text>
+      icon
+    </Text>
+  </View>
+  <Text
+    style={
+      [
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    Some text
+  </Text>
+</View>
+`;
+
+exports[`IconText Rendering Single line text 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "justifyContent": "center",
+          "marginRight": 8,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text>
+      icon
+    </Text>
+  </View>
+  <Text
+    numberOfLines={1}
+    style={
+      [
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    Some text
+  </Text>
+</View>
+`;
+
+exports[`IconText Rendering With content 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "justifyContent": "center",
+          "marginRight": 8,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Text>
+      icon
+    </Text>
+  </View>
+  <Text
+    style={
+      [
+        {
+          "flexShrink": 1,
+        },
+        undefined,
+      ]
+    }
+  >
+    Some text
+  </Text>
+</View>
+`;
