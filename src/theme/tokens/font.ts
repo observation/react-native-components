@@ -4,6 +4,20 @@ import { Font, Theme } from '../types'
 
 export const createFont = (theme: Theme): Font =>
   ({
+    extraExtraSmall: {
+      fontFamily: 'Ubuntu',
+      fontStyle: 'normal',
+      fontSize: theme.fontSize.extraExtraSmall,
+      lineHeight: theme.lineHeight.extraExtraSmall,
+      fontWeight: 'normal',
+    },
+    extraExtraSmallBold: {
+      fontFamily: 'Ubuntu',
+      fontStyle: 'normal',
+      fontSize: theme.fontSize.extraExtraSmall,
+      lineHeight: theme.lineHeight.extraExtraSmall,
+      fontWeight: 'bold',
+    },
     extraSmall: {
       fontFamily: 'Ubuntu',
       fontStyle: 'normal',
