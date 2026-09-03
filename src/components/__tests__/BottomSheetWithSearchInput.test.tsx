@@ -1,9 +1,11 @@
 import React from 'react'
 import { Keyboard } from 'react-native'
 
+import BottomSheet from '@gorhom/bottom-sheet'
 import { describe, expect, jest, test } from '@jest/globals'
 import { NavigationContainer } from '@react-navigation/native'
 import { fireEvent, render } from '@testing-library/react-native'
+import { SafeAreaProvider } from 'react-native-safe-area-context'
 
 import BottomSheetWithSearchInput from '../BottomSheetWithSearchInput'
 
@@ -42,6 +44,34 @@ describe('BottomSheetWithSearchInput', () => {
     test('With selected item', () => {
       const { toJSON } = renderComponent({ selectedKey: 'nl' })
       expect(toJSON()).toMatchSnapshot()
+    })
+
+    test('Passes the safe area bottom inset to the bottom sheet when insets are present', () => {
+      const { UNSAFE_getByType } = render(
+        <NavigationContainer>
+          <SafeAreaProvider
+            initialMetrics={{
+              frame: { x: 0, y: 0, width: 0, height: 0 },
+              insets: {
+                left: 0,
+                top: 59,
+                right: 0,
+                bottom: 34,
+              },
+            }}
+          >
+            <BottomSheetWithSearchInput
+              inputFieldPlaceholder="Start typing..."
+              data={DATA}
+              sectionTitle="Countries"
+              onClose={jest.fn()}
+              onPress={jest.fn()}
+            />
+          </SafeAreaProvider>
+        </NavigationContainer>,
+      )
+
+      expect(UNSAFE_getByType(BottomSheet).props.bottomInset).toBe(34)
     })
   })
 
