@@ -150,6 +150,7 @@ const BottomSheetWithSearchInput = ({
       animationConfigs={animationConfigs}
       snapPoints={['80%']}
       enableDynamicSizing={false}
+      bottomInset={insets.bottom}
       handleIndicatorStyle={bottomSheetStyles.handleIndicator}
       handleStyle={[bottomSheetStyles.handle, { backgroundColor: colors.card }]}
       keyboardBehavior="extend"
@@ -161,7 +162,7 @@ const BottomSheetWithSearchInput = ({
         ItemSeparatorComponent={Separator}
         keyboardDismissMode="on-drag"
         keyboardShouldPersistTaps="handled"
-        contentContainerStyle={{ paddingBottom: insets.bottom, backgroundColor: colors.card }}
+        contentContainerStyle={{ backgroundColor: colors.card }}
         ListHeaderComponent={listHeader}
         stickyHeaderIndices={[0]}
         renderItem={({ item }) => (
