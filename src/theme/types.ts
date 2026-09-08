@@ -289,6 +289,7 @@ export type TextName =
   | 'inputLabel'
   | 'scientificName'
   | 'body'
+  | 'bodyBlack'
   | 'light'
   | 'lead'
   | 'link'
@@ -298,6 +299,30 @@ export type TextName =
   | 'title'
   | 'percentage'
   | 'thumbnail'
+  | 'subLabel'
+  | 'speciesLocalName'
+  | 'speciesScientificName'
   | keyof TextNameOverrides
 
-export type Text = Record<TextName, TextStyle>
+export interface Text {
+  iconLabel: TextStyle
+  tabIconLabel: TextStyle
+  inputLabel: TextStyle
+  /** @deprecated Use theme.text.speciesScientificName */
+  scientificName: TextStyle
+  body: TextStyle
+  bodyBlack: TextStyle
+  light: TextStyle
+  lead: TextStyle
+  link: TextStyle
+  linkBold: TextStyle
+  input: TextStyle
+  subtitle: TextStyle
+  title: TextStyle
+  percentage: TextStyle
+  thumbnail: TextStyle
+  subLabel: TextStyle
+  speciesLocalName: TextStyle
+  speciesScientificName: TextStyle
+  [name: string]: TextStyle
+}

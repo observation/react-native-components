@@ -19,6 +19,22 @@ export const createTextStyles = (theme: Theme) =>
       fontStyle: 'italic',
       color: theme.color.text.system.subtler,
     },
+    speciesLocalName: {
+      fontFamily: 'Ubuntu',
+      fontStyle: 'normal',
+      fontSize: 16,
+      lineHeight: 24,
+      fontWeight: 'bold',
+      color: theme.color.text.system.strong,
+    },
+    speciesScientificName: {
+      fontFamily: 'Ubuntu',
+      fontStyle: 'italic',
+      fontSize: 12,
+      lineHeight: 16,
+      fontWeight: 'normal',
+      color: theme.color.text.system.subtler,
+    },
     body: {
       ...theme.font.medium,
       color: theme.color.text.system.subtle,
