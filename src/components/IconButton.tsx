@@ -10,6 +10,7 @@ type Props = {
   onPress?: () => void
   icon: IconProps
   accessibilityLabel?: string
+  hitSlop?: TouchableOpacityProps['hitSlop']
   testID?: string
   Touchable?: ComponentType<TouchableOpacityProps>
 }
@@ -20,6 +21,7 @@ const IconButton = ({
   onPress,
   icon,
   accessibilityLabel,
+  hitSlop,
   testID = 'pressable',
   Touchable = TouchableOpacity,
 }: Props) => {
@@ -32,6 +34,7 @@ const IconButton = ({
       disabled={disabled}
       onPress={disabled ? undefined : onPress}
       activeOpacity={0.5}
+      hitSlop={hitSlop}
     >
       <Icon size={theme.icon.size.l} {...icon} />
     </Touchable>
