@@ -40,4 +40,16 @@ describe('IconButton', () => {
     // THEN
     expect(mockOnPress).toHaveBeenCalledTimes(0)
   })
+
+  test('Applies hitSlop', () => {
+    // GIVEN
+    const hitSlop = { top: 10, bottom: 10, left: 10, right: 10 }
+    const { getByTestId } = render(<IconButton icon={icon} hitSlop={hitSlop} />)
+
+    // WHEN
+    const pressable = getByTestId('pressable')
+
+    // THEN
+    expect(pressable.props.hitSlop).toEqual(hitSlop)
+  })
 })
