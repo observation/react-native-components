@@ -27,6 +27,14 @@ export const createTextStyles = (theme: Theme) =>
       fontWeight: 'bold',
       color: theme.color.text.system.strong,
     },
+    speciesLocalNameCompact: {
+      fontFamily: 'Ubuntu',
+      fontStyle: 'normal',
+      fontSize: 16,
+      lineHeight: 22,
+      fontWeight: 'bold',
+      color: theme.color.text.system.strong,
+    },
     speciesScientificName: {
       fontFamily: 'Ubuntu',
       fontStyle: 'italic',
@@ -83,6 +91,15 @@ export const createTextStyles = (theme: Theme) =>
     },
     subLabel: {
       ...theme.font.extraSmall,
+      color: theme.color.text.system.subtler,
+    },
+    inputPanelHeader: {
+      fontFamily: 'Ubuntu',
+      fontStyle: 'normal',
+      fontSize: 10,
+      lineHeight: 14,
+      fontWeight: 'normal',
+      letterSpacing: 0.3,
       color: theme.color.text.system.subtler,
     },
   }) satisfies Text
