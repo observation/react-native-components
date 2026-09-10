@@ -301,7 +301,9 @@ export type TextName =
   | 'thumbnail'
   | 'subLabel'
   | 'speciesLocalName'
+  | 'speciesLocalNameCompact'
   | 'speciesScientificName'
+  | 'inputPanelHeader'
   | keyof TextNameOverrides
 
 export interface Text {
@@ -323,6 +325,8 @@ export interface Text {
   thumbnail: TextStyle
   subLabel: TextStyle
   speciesLocalName: TextStyle
+  speciesLocalNameCompact: TextStyle
   speciesScientificName: TextStyle
+  inputPanelHeader: TextStyle
   [name: string]: TextStyle
 }
