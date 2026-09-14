@@ -8,21 +8,34 @@ UI components:
 - `BackButton`
 - `BackgroundImage`
 - `BottomSheet`
+- `BottomSheetWithSearchInput`
+- `BrandIcon`
+- `BrandIcons`
+- `CapitalizeText`
 - `Checkbox`
 - `Chip`
 - `ContentImage`
 - `Date`
+- `DateFromToFilter`
+- `DatePicker`
 - `Disclose`
+- `DocumentLink`
 - `FilterButton`
+- `FilterOption`
+- `FilterSelectField`
+- `HtmlContent (+ HtmlContentProps)`
+- `Icon`
 - `IconButton`
 - `IconName`
 - `IconText`
 - `IconView`
 - `Icons`
 - `InputField`
+- `InputPanel`
+- `ItemSeparator`
 - `LargeButton (+ LargeButtonProps)`
-- `Icon/Icons`
 - `Lightbox`
+- `ListItem`
 - `Location`
 - `Message`
 - `MoreInfo`
@@ -33,16 +46,30 @@ UI components:
 - `Popup`
 - `ProgressBar`
 - `ProgressBarList`
+- `Rarity`
+- `RaritySlider`
+- `SectionHeader`
+- `SingleLine`
 - `TextLink`
-- `Tooltip`
-- `TooltipProps`
+- `Tooltip (+ TooltipProps)`
 - `WebLink`
 
 non-UI components:
 
 - `Log.setLogConfiguration`: A function to change the logging of the component library
 - `openUrl`: Opens URLs
+- `useBottomSheetBackHandler`: A hook to close a BottomSheet on the Android hardware back button
 - `useShowBlurView`: A safe way to set a blur on the background
-- `theme`: A default theme with color and margins
-- `font`: A set of font styles
-- `text`: A set of text styles
+
+Additionally, the package exposes two subpath entry points:
+
+`react-native-components/theme`:
+
+- `ThemeProvider`, `useTheme`, `useStyles`
+- `createTheme`, `defaultTheme`: The default theme with colors, margins and text styles
+
+`react-native-components/styles`:
+
+- `font`, `fontSize`, `lineHeight`: Font styles
+- `layout`, `rounded`, `shadow`: Layout styles
+- `createInputStyles`, `createBottomSheetStyles`
