@@ -1,7 +1,5 @@
 import { Text, Theme } from '../types'
 
-/* eslint-disable observation/no-function-without-logging */
-
 export const createTextStyles = (theme: Theme) => {
   const speciesLocalName = {
     fontFamily: 'Ubuntu',
