@@ -1,7 +1,18 @@
 import { Text, Theme } from '../types'
 
-export const createTextStyles = (theme: Theme) =>
-  ({
+/* eslint-disable observation/no-function-without-logging */
+
+export const createTextStyles = (theme: Theme) => {
+  const speciesLocalName = {
+    fontFamily: 'Ubuntu',
+    fontStyle: 'normal',
+    fontSize: 16,
+    lineHeight: 24,
+    fontWeight: 'bold',
+    color: theme.color.text.system.strong,
+  } satisfies Text['speciesLocalName']
+
+  return {
     iconLabel: {
       ...theme.font.extraSmall,
       color: theme.color.text.system.subtle,
@@ -19,21 +30,10 @@ export const createTextStyles = (theme: Theme) =>
       fontStyle: 'italic',
       color: theme.color.text.system.subtler,
     },
-    speciesLocalName: {
-      fontFamily: 'Ubuntu',
-      fontStyle: 'normal',
-      fontSize: 16,
-      lineHeight: 24,
-      fontWeight: 'bold',
-      color: theme.color.text.system.strong,
-    },
+    speciesLocalName,
     speciesLocalNameCompact: {
-      fontFamily: 'Ubuntu',
-      fontStyle: 'normal',
-      fontSize: 16,
+      ...speciesLocalName,
       lineHeight: 22,
-      fontWeight: 'bold',
-      color: theme.color.text.system.strong,
     },
     speciesScientificName: {
       fontFamily: 'Ubuntu',
@@ -97,9 +97,10 @@ export const createTextStyles = (theme: Theme) =>
       fontFamily: 'Ubuntu',
       fontStyle: 'normal',
       fontSize: 10,
-      lineHeight: 14,
+      lineHeight: 12,
       fontWeight: 'normal',
       letterSpacing: 0.3,
       color: theme.color.text.system.subtler,
     },
-  }) satisfies Text
+  } satisfies Text
+}
