@@ -72,10 +72,7 @@ const createStyles = (theme: Theme) => {
       paddingHorizontal: theme.margin.common,
     },
     headerTextStyle: {
-      ...theme.font.extraSmall,
-      lineHeight: theme.font.extraSmall.fontSize,
-      letterSpacing: 0.03 * theme.font.extraSmall.fontSize,
-      color: theme.color.text.system.subtler,
+      ...theme.text.inputPanelHeader,
     },
     contentContainer: {
       flex: 1,

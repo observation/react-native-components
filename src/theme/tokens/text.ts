@@ -1,7 +1,16 @@
 import { Text, Theme } from '../types'
 
-export const createTextStyles = (theme: Theme) =>
-  ({
+export const createTextStyles = (theme: Theme) => {
+  const speciesLocalName = {
+    fontFamily: 'Ubuntu',
+    fontStyle: 'normal',
+    fontSize: 16,
+    lineHeight: 24,
+    fontWeight: 'bold',
+    color: theme.color.text.system.strong,
+  } satisfies Text['speciesLocalName']
+
+  return {
     iconLabel: {
       ...theme.font.extraSmall,
       color: theme.color.text.system.subtle,
@@ -19,13 +28,10 @@ export const createTextStyles = (theme: Theme) =>
       fontStyle: 'italic',
       color: theme.color.text.system.subtler,
     },
-    speciesLocalName: {
-      fontFamily: 'Ubuntu',
-      fontStyle: 'normal',
-      fontSize: 16,
-      lineHeight: 24,
-      fontWeight: 'bold',
-      color: theme.color.text.system.strong,
+    speciesLocalName,
+    speciesLocalNameCompact: {
+      ...speciesLocalName,
+      lineHeight: 22,
     },
     speciesScientificName: {
       fontFamily: 'Ubuntu',
@@ -85,4 +91,14 @@ export const createTextStyles = (theme: Theme) =>
       ...theme.font.extraSmall,
       color: theme.color.text.system.subtler,
     },
-  }) satisfies Text
+    inputPanelHeader: {
+      fontFamily: 'Ubuntu',
+      fontStyle: 'normal',
+      fontSize: 10,
+      lineHeight: 12,
+      fontWeight: 'normal',
+      letterSpacing: 0.3,
+      color: theme.color.text.system.subtler,
+    },
+  } satisfies Text
+}

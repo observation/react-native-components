@@ -59,7 +59,7 @@ export default [
       'observation/no-function-without-logging': [
         'error',
         {
-          ignoreList: ['createStyles'],
+          ignoreList: ['createStyles', 'createTextStyles'],
         },
       ],
 
