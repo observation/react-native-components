@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Action Rendering Danger 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      {
+        "alignItems": "center",
+        "marginHorizontal": 16,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "justifyContent": "center",
+          "marginRight": 8,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Icon
+      color="#ea554b"
+      name="circle-chevron-right"
+      size={18}
+      type="light"
+    />
+  </View>
+  <Text
+    style={
+      [
+        {
+          "flexShrink": 1,
+        },
+        [
+          {
+            "color": "#666666",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          },
+          {
+            "color": "#ea554b",
+          },
+        ],
+      ]
+    }
+  >
+    Press me
+  </Text>
+</View>
+`;
+
+exports[`Action Rendering Neutral 1`] = `
+<View
+  style={
+    [
+      {
+        "flexDirection": "row",
+      },
+      {
+        "alignItems": "center",
+        "marginHorizontal": 16,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      [
+        {
+          "justifyContent": "center",
+          "marginRight": 8,
+        },
+        undefined,
+      ]
+    }
+  >
+    <Icon
+      color="#0066b1"
+      name="circle-chevron-right"
+      size={18}
+      type="light"
+    />
+  </View>
+  <Text
+    style={
+      [
+        {
+          "flexShrink": 1,
+        },
+        [
+          {
+            "color": "#666666",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          },
+          {
+            "color": "#0066b1",
+          },
+        ],
+      ]
+    }
+  >
+    Press me
+  </Text>
+</View>
+`;

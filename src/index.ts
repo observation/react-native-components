@@ -1,4 +1,5 @@
 import Accordion from './components/Accordion'
+import Action from './components/Action'
 import BackButton from './components/BackButton'
 import BackgroundImage from './components/BackgroundImage'
 import BottomSheet from './components/BottomSheet'
@@ -52,6 +53,7 @@ import { ThemeProvider } from './theme/ThemeProvider'
 
 export {
   Accordion,
+  Action,
   BackButton,
   BackgroundImage,
   BottomSheet,
