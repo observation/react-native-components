@@ -49,6 +49,7 @@ export const color = {
       speciesSubtle: paletteMode.accentSky[50],
       speciesStrong: paletteMode.accentSky[400],
       active: paletteMode.primary[50],
+      accented: paletteMode.accentSky[400],
     },
     gps: {
       accuracySuccess: paletteMode.success[200],
@@ -116,6 +117,9 @@ export const color = {
     status: {
       uploadable: paletteMode.accentSky[400],
       error: paletteMode.error[500],
+    },
+    syncStatus: {
+      local: paletteMode.accentSky[400],
     },
   },
 

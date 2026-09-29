@@ -136,6 +136,7 @@ export interface Color {
       speciesSubtle: string
       speciesStrong: string
       active: string
+      accented: string
     }
     gps: {
       accuracySuccess: string
@@ -199,6 +200,9 @@ export interface Color {
       transect: string
       transectBorder: string
       selected: string
+    }
+    syncStatus: {
+      local: string
     }
     status: {
       uploadable: string
