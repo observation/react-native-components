@@ -318,6 +318,7 @@ export interface Text {
   scientificName: TextStyle
   body: TextStyle
   bodyBlack: TextStyle
+  bodyCompact: TextStyle
   light: TextStyle
   lead: TextStyle
   link: TextStyle

@@ -49,6 +49,11 @@ export const createTextStyles = (theme: Theme) => {
       ...theme.font.medium,
       color: theme.color.text.system.strong,
     },
+    bodyCompact: {
+      ...theme.font.medium,
+      lineHeight: theme.font.medium.lineHeight - 2,
+      color: theme.color.text.system.strong,
+    },
     light: {
       ...theme.font.medium,
       color: theme.color.text.system.subtler,
