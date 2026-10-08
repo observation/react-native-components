@@ -15,14 +15,14 @@ import { Easing } from 'react-native-reanimated'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 import IconButton from './IconButton'
+import InputField from './InputField'
 import ItemSeparator from './ItemSeparator'
 import ListItem from './ListItem'
+import SectionHeader from './SectionHeader'
 import useBottomSheetBackHandler from '../hooks/useBottomSheetBackHandler'
 import Log from '../lib/Log'
 import { createBottomSheetStyles } from '../styles/bottomSheet'
 import { type Theme, createInputStyles, useStyles, useTheme } from '../theme'
-import InputField from './InputField'
-import SectionHeader from './SectionHeader'
 
 type Props = {
   onClose: () => void
@@ -150,6 +150,7 @@ const BottomSheetWithSearchInput = ({
       animationConfigs={animationConfigs}
       snapPoints={['80%']}
       enableDynamicSizing={false}
+      backgroundStyle={{ backgroundColor: colors.card }}
       handleIndicatorStyle={bottomSheetStyles.handleIndicator}
       handleStyle={[bottomSheetStyles.handle, { backgroundColor: colors.card }]}
       keyboardBehavior="extend"
@@ -161,7 +162,8 @@ const BottomSheetWithSearchInput = ({
         ItemSeparatorComponent={Separator}
         keyboardDismissMode="on-drag"
         keyboardShouldPersistTaps="handled"
-        contentContainerStyle={{ paddingBottom: insets.bottom, backgroundColor: colors.card }}
+        style={{ marginBottom: insets.bottom }}
+        contentContainerStyle={{ backgroundColor: colors.card }}
         ListHeaderComponent={listHeader}
         stickyHeaderIndices={[0]}
         renderItem={({ item }) => (
