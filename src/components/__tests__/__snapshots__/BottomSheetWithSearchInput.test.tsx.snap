@@ -116,6 +116,11 @@ exports[`BottomSheetWithSearchInput Rendering Initial state 1`] = `
         0,
       ]
     }
+    style={
+      {
+        "marginBottom": 0,
+      }
+    }
     viewabilityConfigCallbackPairs={[]}
   >
     <View>
@@ -718,6 +723,11 @@ exports[`BottomSheetWithSearchInput Rendering With selected item 1`] = `
       [
         0,
       ]
+    }
+    style={
+      {
+        "marginBottom": 0,
+      }
     }
     viewabilityConfigCallbackPairs={[]}
   >
