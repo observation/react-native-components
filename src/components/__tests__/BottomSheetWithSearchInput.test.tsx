@@ -1,7 +1,7 @@
 import React from 'react'
 import { Keyboard } from 'react-native'
 
-import BottomSheet from '@gorhom/bottom-sheet'
+import { BottomSheetFlatList } from '@gorhom/bottom-sheet'
 import { describe, expect, jest, test } from '@jest/globals'
 import { NavigationContainer } from '@react-navigation/native'
 import { fireEvent, render } from '@testing-library/react-native'
@@ -46,7 +46,7 @@ describe('BottomSheetWithSearchInput', () => {
       expect(toJSON()).toMatchSnapshot()
     })
 
-    test('Passes the safe area bottom inset to the bottom sheet when insets are present', () => {
+    test('Keeps the list above the safe area bottom inset when insets are present', () => {
       const { UNSAFE_getByType } = render(
         <NavigationContainer>
           <SafeAreaProvider
@@ -71,7 +71,7 @@ describe('BottomSheetWithSearchInput', () => {
         </NavigationContainer>,
       )
 
-      expect(UNSAFE_getByType(BottomSheet).props.bottomInset).toBe(34)
+      expect(UNSAFE_getByType(BottomSheetFlatList).props.style).toEqual({ marginBottom: 34 })
     })
   })
 
