@@ -19,22 +19,18 @@ export interface Animation {
   }
 }
 
-export type ColorMode = 'light'
-export type Palette = Record<ColorMode, ColorPrimitives>
 export type Scale = Record<number | string, string>
 
-export interface ColorPrimitives {
+export interface Palette {
   base: Scale
   grey: Scale
   primary: Scale
-  success: Scale
-  warning: Scale
-  error: Scale
+  green: Scale
+  yellow: Scale
+  red: Scale
   accentLime: Scale
   accentSky: Scale
-  rarity: Scale
-  validation: Scale
-  speciesStatus: Scale
+  accentCyan: Scale
 }
 
 export interface Color {
@@ -167,10 +163,11 @@ export interface Color {
       veryRare: string
     }
     speciesStatus: {
-      unknown: string
-      insufficientData: string
       native: string
-      exoticEtc: string
+      incidentalMigrant: string
+      insufficientData: string
+      other: string
+      unknown: string
     }
     validation: {
       unknown: string
