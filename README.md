@@ -23,7 +23,7 @@ UI components:
 - `FilterButton`
 - `FilterOption`
 - `FilterSelectField`
-- `HtmlContent (+ HtmlContentProps)`
+- `HtmlContent (+ HtmlContentProps, CustomRendererProps, RenderersProps, TBlock)`
 - `Icon`
 - `IconButton`
 - `IconName`

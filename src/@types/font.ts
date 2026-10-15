@@ -1,13 +1,14 @@
 import { TextStyle } from 'react-native'
 
-import { MixedSizeCSSPropertiesKeys } from 'react-native-render-html'
+import { MixedSizeCSSPropertiesKeys } from '@native-html/render'
 
 /**
- * React Native's TextStyle without the overflow:'scroll' property.
+ * React Native's TextStyle, narrowed to be compatible with @native-html/render's MixedStyleDeclaration.
  *
- * The component @native-html (used by react-native-render-html) is missing the overflow: 'scroll' property.
- * In order to use the React Native's TextStyle together with the HtmlContent (RenderHtml) component
- * (and type checking) we override the overflow property with our own overflow type.
+ * MixedStyleDeclaration is missing the overflow: 'scroll' property, and only accepts number | string
+ * for size properties (React Native's DimensionValue also allows null). In order to use the React
+ * Native's TextStyle together with the HtmlContent (RenderHtml) component (and type checking) we
+ * override the overflow property and the size properties with our own types.
  */
 export type FontStyle = TextStyle & { overflow?: 'visible' | 'hidden' | undefined } & {
   [k in MixedSizeCSSPropertiesKeys]?: number | string
