@@ -7,7 +7,7 @@ import RenderHtml, {
   RenderHTMLProps,
   TBlock,
   defaultSystemFonts,
-} from 'react-native-render-html'
+} from '@native-html/render'
 
 import ContentImage from './ContentImage'
 import Log from '../lib/Log'
@@ -158,3 +158,4 @@ const HtmlContent = ({
 const MemoHtmlContent = React.memo(HtmlContent)
 export default MemoHtmlContent
 export type { HtmlContentProps }
+export type { CustomRendererProps, RenderersProps, TBlock } from '@native-html/render'

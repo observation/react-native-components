@@ -15,7 +15,7 @@ import DocumentLink from './components/DocumentLink'
 import FilterButton from './components/FilterButton'
 import FilterOption from './components/FilterOption'
 import FilterSelectField from './components/FilterSelectField'
-import HtmlContent, { HtmlContentProps } from './components/HtmlContent'
+import HtmlContent, { CustomRendererProps, HtmlContentProps, RenderersProps, TBlock } from './components/HtmlContent'
 import IconButton from './components/IconButton'
 import IconText from './components/IconText'
 import IconView from './components/IconView'
@@ -104,6 +104,15 @@ export {
   useShowBlurView,
 }
 
-export type { HtmlContentProps, IconName, LargeButtonProps, NotificationPopupStaticProps, TooltipProps }
+export type {
+  CustomRendererProps,
+  HtmlContentProps,
+  IconName,
+  LargeButtonProps,
+  NotificationPopupStaticProps,
+  RenderersProps,
+  TBlock,
+  TooltipProps,
+}
 export * from './components/Icon'
 export * from './components/BrandIcon'
