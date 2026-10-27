@@ -96,7 +96,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
             }
           }
         >
-          <RCTSafeAreaView
+          <SafeAreaView
             style={
               {
                 "backgroundColor": "#00000080",
@@ -203,7 +203,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
                 </View>
               </View>
             </View>
-          </RCTSafeAreaView>
+          </SafeAreaView>
         </View>
         <RCTScrollView
           data={
@@ -344,7 +344,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
             }
           }
         >
-          <RCTSafeAreaView
+          <SafeAreaView
             style={
               {
                 "backgroundColor": "#00000080",
@@ -386,7 +386,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
                 </Text>
               </View>
             </View>
-          </RCTSafeAreaView>
+          </SafeAreaView>
         </View>
       </View>
     </Modal>
