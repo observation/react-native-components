@@ -67,9 +67,15 @@ jest.mock('react-native/Libraries/LayoutAnimation/LayoutAnimation', () => ({
   configureNext: jest.fn(),
 }))
 
+// GestureDetector requires a GestureHandlerRootView ancestor. Let tests behave as if there is one, without
+// adding a root view to every rendered tree (and snapshot).
+jest.mock('react-native-gesture-handler/src/GestureHandlerRootViewContext', () => require('react').createContext(true))
+jest.mock('react-native-gesture-handler/lib/module/GestureHandlerRootViewContext', () =>
+  require('react').createContext(true),
+)
+
 jest.mock('react-native-worklets', () => require('react-native-worklets/src/mock'))
 
 jest.mock('react-native-reanimated', () => require('react-native-reanimated/mock'))
 
 jest.mock('react-native-safe-area-context', () => mockSafeAreaContext)
-
