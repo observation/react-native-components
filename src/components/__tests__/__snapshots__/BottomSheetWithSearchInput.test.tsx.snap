@@ -77,7 +77,7 @@ exports[`BottomSheetWithSearchInput Rendering Initial state 1`] = `
     }
     contentContainerStyle={
       {
-        "backgroundColor": "rgb(255, 255, 255)",
+        "backgroundColor": "#ffffff",
         "paddingBottom": 0,
       }
     }
@@ -681,7 +681,7 @@ exports[`BottomSheetWithSearchInput Rendering With selected item 1`] = `
     }
     contentContainerStyle={
       {
-        "backgroundColor": "rgb(255, 255, 255)",
+        "backgroundColor": "#ffffff",
         "paddingBottom": 0,
       }
     }

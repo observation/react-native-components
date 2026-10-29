@@ -6,7 +6,7 @@ exports[`Panel Rendering 1`] = `
     [
       {
         "marginTop": 4,
-        "shadowColor": "#E6E6E6",
+        "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 2,
           "width": 0,
@@ -48,7 +48,7 @@ exports[`Panel Rendering without top shadow 1`] = `
     [
       {
         "marginTop": 4,
-        "shadowColor": "#E6E6E6",
+        "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 2,
           "width": 0,
