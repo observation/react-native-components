@@ -5,7 +5,7 @@ exports[`Tooltip Rendering With button 1`] = `
   style={
     [
       {
-        "shadowColor": "#E6E6E6",
+        "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 4,
           "width": 0,
@@ -185,7 +185,7 @@ exports[`Tooltip Rendering With icon 1`] = `
   style={
     [
       {
-        "shadowColor": "#E6E6E6",
+        "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 4,
           "width": 0,
@@ -349,7 +349,7 @@ exports[`Tooltip Rendering Without icon 1`] = `
   style={
     [
       {
-        "shadowColor": "#E6E6E6",
+        "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 4,
           "width": 0,
@@ -497,7 +497,7 @@ exports[`Tooltip Rendering Without icon or close button 1`] = `
   style={
     [
       {
-        "shadowColor": "#E6E6E6",
+        "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 4,
           "width": 0,

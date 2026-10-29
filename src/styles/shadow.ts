@@ -1,5 +1,6 @@
 import { ShadowStyle, ShadowStyles } from '../@types/shadow'
 
+/** @deprecated Use theme.shadow.normal */
 export const normal = {
   android: {
     elevation: 6,
@@ -13,6 +14,7 @@ export const normal = {
   },
 } satisfies ShadowStyle
 
+/** @deprecated Use theme.shadow.small */
 export const small = {
   android: {
     elevation: 4,
@@ -26,6 +28,7 @@ export const small = {
   },
 } satisfies ShadowStyle
 
+/** @deprecated Use theme.shadow */
 export const shadow = {
   normal,
   small,

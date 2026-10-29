@@ -4,8 +4,8 @@ import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'rea
 import ScalableImage from 'react-native-scalable-image'
 
 import Lightbox from './Lightbox'
-import { rounded, shadow } from '../styles'
-import { Theme, useTheme } from '../theme'
+import { rounded } from '../styles'
+import { Theme, useStyles, useTheme } from '../theme'
 
 type Props = {
   src: string
@@ -14,7 +14,7 @@ type Props = {
 
 const ContentImage = ({ src, alt }: Props) => {
   const theme = useTheme()
-  const styles = createStyles(theme)
+  const styles = useStyles(createStyles)
   const [photoIndex, setPhotoIndex] = React.useState<number>()
   if (!alt) {
     return <ScalableImage width={Dimensions.get('window').width - 2 * theme.margin.common} source={{ uri: src }} />
@@ -61,13 +61,13 @@ const createStyles = (theme: Theme) => {
     outerContainer: {
       margin: -theme.margin.common,
       marginBottom: -theme.margin.half,
-      ...shadow.normal.ios,
+      ...theme.shadow.normal.ios,
     },
     innerContainer: {
       flexDirection: 'row',
       margin: theme.margin.common,
       backgroundColor: theme.color.background.system.surfaceBase,
-      ...shadow.normal.android,
+      ...theme.shadow.normal.android,
       ...rounded.large,
       borderWidth: 1,
       borderColor: theme.color.border.system.subtle,

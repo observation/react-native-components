@@ -1,0 +1,476 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`BottomActionBar Rendering Only buttons 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#ffffff",
+        "borderTopColor": "#e6e6e6",
+        "borderTopWidth": 0.3333333333333333,
+        "shadowColor": "#e6e6e6",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 4,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "column",
+        "margin": 16,
+      }
+    }
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "marginHorizontal": -8,
+          },
+          {
+            "marginTop": 0,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#ffffff",
+            "borderColor": "#0066b1",
+            "borderRadius": 4,
+            "borderWidth": 2,
+            "flex": 1,
+            "height": 32,
+            "justifyContent": "center",
+            "margin": 0,
+            "marginHorizontal": 8,
+            "opacity": 1,
+            "overflow": "hidden",
+          }
+        }
+        testID="touchable-opacity"
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "marginHorizontal": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#212121",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 20,
+                  "textAlignVertical": "center",
+                },
+                undefined,
+                {
+                  "color": "#0066b1",
+                },
+              ]
+            }
+          >
+            Cancel
+          </Text>
+        </View>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#e6e6e6",
+            "borderRadius": 4,
+            "flex": 1,
+            "height": 32,
+            "justifyContent": "center",
+            "margin": 0,
+            "marginHorizontal": 8,
+            "opacity": 1,
+            "overflow": "hidden",
+          }
+        }
+        testID="touchable-opacity"
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "marginHorizontal": 16,
+            }
+          }
+        >
+          <View
+            style={
+              {
+                "justifyContent": "center",
+                "paddingRight": 8,
+              }
+            }
+          >
+            <Icon
+              color="#ffffff"
+              name="check"
+              size={16}
+              type="light"
+            />
+          </View>
+          <Text
+            style={
+              [
+                {
+                  "color": "#212121",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 20,
+                  "textAlignVertical": "center",
+                },
+                undefined,
+                {
+                  "color": "#ffffff",
+                },
+              ]
+            }
+          >
+            Save
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`BottomActionBar Rendering With children 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#ffffff",
+        "borderTopColor": "#e6e6e6",
+        "borderTopWidth": 0.3333333333333333,
+        "shadowColor": "#e6e6e6",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 4,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "column",
+        "margin": 16,
+      }
+    }
+  >
+    <Text>
+      Hello world!
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`BottomActionBar Rendering With title and text 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#ffffff",
+        "borderTopColor": "#e6e6e6",
+        "borderTopWidth": 0.3333333333333333,
+        "shadowColor": "#e6e6e6",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 4,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "column",
+        "margin": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#212121",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Title
+    </Text>
+    <View
+      style={
+        {
+          "marginTop": 8,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#666666",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Text
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`BottomActionBar Rendering With title, text and button 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#ffffff",
+        "borderTopColor": "#e6e6e6",
+        "borderTopWidth": 0.3333333333333333,
+        "shadowColor": "#e6e6e6",
+        "shadowOffset": {
+          "height": 4,
+          "width": 0,
+        },
+        "shadowOpacity": 0.8,
+        "shadowRadius": 4,
+      },
+      undefined,
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "flexDirection": "column",
+        "margin": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#212121",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Title
+    </Text>
+    <View
+      style={
+        {
+          "marginTop": 8,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#666666",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Text
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "flex-start",
+            "flexDirection": "row",
+            "marginHorizontal": -8,
+          },
+          {
+            "marginTop": 16,
+          },
+        ]
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#0066b1",
+            "borderRadius": 4,
+            "flex": 1,
+            "height": 32,
+            "justifyContent": "center",
+            "margin": 0,
+            "marginHorizontal": 8,
+            "opacity": 1,
+            "overflow": "hidden",
+          }
+        }
+        testID="touchable-opacity"
+      >
+        <View
+          style={
+            {
+              "flexDirection": "row",
+              "marginHorizontal": 16,
+            }
+          }
+        >
+          <Text
+            style={
+              [
+                {
+                  "color": "#212121",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 14,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 20,
+                  "textAlignVertical": "center",
+                },
+                undefined,
+                {
+                  "color": "#ffffff",
+                },
+              ]
+            }
+          >
+            Action!
+          </Text>
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
