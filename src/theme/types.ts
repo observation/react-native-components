@@ -1,5 +1,7 @@
 import { TextStyle } from 'react-native'
 
+import { ShadowStyle } from '../@types/shadow'
+
 export interface Theme {
   animation: Animation
   icon: Icon
@@ -11,6 +13,9 @@ export interface Theme {
   lineHeight: LineHeight
   font: Font
   text: Text
+  shadow: Shadow
+  surface: Surface
+  elevation: Elevation
 }
 
 export interface Animation {
@@ -114,6 +119,9 @@ export interface Color {
   }
   background: {
     system: {
+      /** Background of a screen, the color of the surface selected by theme.surface.screen */
+      screen: string
+
       surfaceBase: string
       surfaceRaised: string
       surfaceLowered: string
@@ -206,6 +214,14 @@ export interface Color {
       error: string
     }
   }
+  shadow: {
+    system: {
+      /** Shadow color on iOS */
+      base: string
+      /** Shadow color of an elevation on Android */
+      elevation: string
+    }
+  }
 }
 
 export interface Overlay {
@@ -234,6 +250,28 @@ export interface Icon {
     xxl: number
     xxxl: number
   }
+}
+
+export interface Shadow {
+  normal: ShadowStyle
+  small: ShadowStyle
+  none: ShadowStyle
+}
+
+export type ShadowName = keyof Shadow
+
+export type SurfaceName = Extract<keyof Color['background']['system'], `surface${string}`>
+
+/** Surfaces the app uses for specific roles, referenced by name so they follow the color of the active mode */
+export interface Surface {
+  /** Background of a screen, also used by bars docked to a screen edge */
+  screen: SurfaceName
+}
+
+/** Shadows the app uses for elevated elements, referenced by name so they follow the shadow of the active mode */
+export interface Elevation {
+  /** Elements docked to a screen edge, raised above the screen content */
+  raised: ShadowName
 }
 
 export interface Margin {

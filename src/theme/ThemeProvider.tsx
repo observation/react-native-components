@@ -1,5 +1,5 @@
 /* eslint-disable observation/no-function-without-logging */
-import { createContext, useContext, useMemo } from 'react'
+import React, { createContext, useContext, useMemo } from 'react'
 
 import { defaultTheme } from './defaultTheme'
 import { Theme } from './types'

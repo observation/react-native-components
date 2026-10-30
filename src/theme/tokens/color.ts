@@ -29,6 +29,9 @@ export const color = {
   },
   background: {
     system: {
+      // Replaced by the color of theme.surface.screen in createTheme
+      screen: palette.base['white'],
+
       surfaceBase: palette.base['white'],
       surfaceRaised: palette.grey[50],
       surfaceLowered: palette.grey[100],
@@ -119,6 +122,12 @@ export const color = {
     },
     syncStatus: {
       local: palette.accentSky[400],
+    },
+  },
+  shadow: {
+    system: {
+      base: palette.grey[300],
+      elevation: palette.grey[500],
     },
   },
 

@@ -6,7 +6,7 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#E6E6E6",
+      "shadowColor": "#e6e6e6",
       "shadowOffset": {
         "height": 4,
         "width": 0,
@@ -469,7 +469,7 @@ exports[`ContentImage Interaction Close the lightbox 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#E6E6E6",
+      "shadowColor": "#e6e6e6",
       "shadowOffset": {
         "height": 4,
         "width": 0,
@@ -593,7 +593,7 @@ exports[`ContentImage Rendering With alt title 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#E6E6E6",
+      "shadowColor": "#e6e6e6",
       "shadowOffset": {
         "height": 4,
         "width": 0,
@@ -717,7 +717,7 @@ exports[`ContentImage Rendering With alt title and text 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#E6E6E6",
+      "shadowColor": "#e6e6e6",
       "shadowOffset": {
         "height": 4,
         "width": 0,
@@ -856,7 +856,7 @@ exports[`ContentImage Rendering With alt title ending in delimiter 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#E6E6E6",
+      "shadowColor": "#e6e6e6",
       "shadowOffset": {
         "height": 4,
         "width": 0,
