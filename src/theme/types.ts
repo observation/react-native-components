@@ -47,9 +47,9 @@ export interface Color {
   grey800: string
   /** @deprecated Use theme.color.text.system.subtler or theme.color.icon.system.subtler */
   grey500: string
-  /** @deprecated Use theme.color.icon.system.disabled or theme.color.text.system.disabled or theme.color.border.system.default or theme.color.background.system.disabled or theme.color.text.system.subtle or theme.color.icon.system.subtle */
+  /** @deprecated Use theme.color.icon.system.disabled or theme.color.text.system.disabled or theme.color.border.system.base or theme.color.background.system.disabled or theme.color.text.system.subtle or theme.color.icon.system.subtle */
   grey300: string
-  /** @deprecated Use theme.color.background.system.surfaceRaised or theme.color.border.system.subtle */
+  /** @deprecated Use theme.color.background.system.surfaceRaised or theme.color.border.system.subtlest */
   grey50: string
   /** @deprecated Use theme.color.background.system.surfaceLowered */
   grey100: string
@@ -141,6 +141,10 @@ export interface Color {
       speciesStrong: string
       active: string
       accented: string
+      staticBlack: string
+      audioPlayer: string
+      readOnly: string
+      chipSelected: string
     }
     gps: {
       accuracySuccess: string
@@ -162,6 +166,7 @@ export interface Color {
       error: string
       observationStrong: string
       speciesStrong: string
+      audioPlayer: string
     }
     rarity: {
       unknown: string
@@ -189,17 +194,19 @@ export interface Color {
   }
   border: {
     system: {
+      strong: string
       subtle: string
       subtler: string
+      subtlest: string
       brand: string
       disabled: string
       success: string
       warning: string
       error: string
       inverse: string
+      staticWhite: string
       speciesStrong: string
       observationStrong: string
-      strong: string
       base: string
       focus: string
       transect: string
@@ -220,6 +227,8 @@ export interface Color {
       base: string
       /** Shadow color of an elevation on Android */
       elevation: string
+      /** Darker shadow color of an elevation on Android, for large floating surfaces */
+      elevationStrong: string
     }
   }
 }
@@ -253,9 +262,11 @@ export interface Icon {
 }
 
 export interface Shadow {
-  normal: ShadowStyle
-  small: ShadowStyle
   none: ShadowStyle
+  small: ShadowStyle
+  normal: ShadowStyle
+  large: ShadowStyle
+  dragged: ShadowStyle
 }
 
 export type ShadowName = keyof Shadow

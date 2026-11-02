@@ -51,6 +51,10 @@ export const color = {
       speciesStrong: palette.accentSky[400],
       active: palette.primary[50],
       accented: palette.accentSky[400],
+      staticBlack: palette.base['blackFull'],
+      audioPlayer: palette.grey[500],
+      readOnly: palette.grey[500],
+      chipSelected: palette.grey[800],
     },
     gps: {
       accuracySuccess: palette.green[200],
@@ -72,6 +76,7 @@ export const color = {
       error: palette.red[500],
       observationStrong: palette.accentLime[400],
       speciesStrong: palette.accentSky[400],
+      audioPlayer: palette.grey[600],
     },
     rarity: {
       unknown: palette.grey[400],
@@ -99,17 +104,19 @@ export const color = {
   },
   border: {
     system: {
-      subtle: palette.grey[50],
+      strong: palette.base['black'],
+      subtle: palette.grey[800],
       subtler: palette.grey[500],
+      subtlest: palette.grey[50],
       brand: palette.primary[500],
       disabled: palette.grey[300],
       success: palette.green[500],
       warning: palette.yellow[500],
       error: palette.red[500],
       inverse: palette.base['white'],
+      staticWhite: palette.base['white'],
       speciesStrong: palette.accentSky[400],
       observationStrong: palette.accentLime[400],
-      strong: palette.base['black'],
       base: palette.grey[300],
       focus: palette.primary[300],
       transect: palette.red[500],
@@ -128,6 +135,7 @@ export const color = {
     system: {
       base: palette.grey[300],
       elevation: palette.grey[500],
+      elevationStrong: palette.grey[800],
     },
   },
 
