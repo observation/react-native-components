@@ -6,9 +6,11 @@ import IconText from './IconText'
 import { layout, rounded } from '../styles'
 import { Theme, createInputStyles, useStyles, useTheme } from '../theme'
 
+type TextInputRef = React.ComponentRef<typeof TextInput>
+
 type Props = {
   containerStyle?: StyleProp<ViewStyle>
-  inputProps?: TextInputProps & RefAttributes<TextInput>
+  inputProps?: TextInputProps & RefAttributes<TextInputRef>
   inputStyle?: StyleProp<ViewStyle>
   errorStyle?: StyleProp<ViewStyle>
   descriptionStyle?: StyleProp<ViewStyle>
@@ -36,7 +38,7 @@ const InputField = ({
   const theme = useTheme()
   const styles = useStyles(createStyles)
   const [isFocused, setIsFocused] = useState(false)
-  const inputRef = useRef<TextInput>(null)
+  const inputRef = useRef<TextInputRef>(null)
   const didAutoFocus = useRef(false)
 
   // Set lineHeight to 0 to fix vertical alignment of the input text on iOS

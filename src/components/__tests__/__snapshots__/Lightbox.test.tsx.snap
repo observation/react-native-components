@@ -46,7 +46,7 @@ exports[`Lightbox Rendering Content that is dependent on the selected image 1`] 
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -198,7 +198,7 @@ exports[`Lightbox Rendering Content that is dependent on the selected image 1`] 
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -349,7 +349,7 @@ exports[`Lightbox Rendering Content that is dependent on the selected image 1`] 
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -429,7 +429,7 @@ exports[`Lightbox Rendering Content that is dependent on the selected image 1`] 
             </Text>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>
@@ -481,7 +481,7 @@ exports[`Lightbox Rendering Do not show crop button when editable returns false 
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -620,7 +620,7 @@ exports[`Lightbox Rendering Do not show crop button when editable returns false 
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -771,7 +771,7 @@ exports[`Lightbox Rendering Do not show crop button when editable returns false 
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -790,7 +790,7 @@ exports[`Lightbox Rendering Do not show crop button when editable returns false 
             }
           }
         />
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>
@@ -842,7 +842,7 @@ exports[`Lightbox Rendering First photo 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -981,7 +981,7 @@ exports[`Lightbox Rendering First photo 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -1132,7 +1132,7 @@ exports[`Lightbox Rendering First photo 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -1199,7 +1199,7 @@ exports[`Lightbox Rendering First photo 1`] = `
             </Text>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>
@@ -1251,7 +1251,7 @@ exports[`Lightbox Rendering Only a photo 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -1390,7 +1390,7 @@ exports[`Lightbox Rendering Only a photo 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -1541,7 +1541,7 @@ exports[`Lightbox Rendering Only a photo 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -1560,7 +1560,7 @@ exports[`Lightbox Rendering Only a photo 1`] = `
             }
           }
         />
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>
@@ -1612,7 +1612,7 @@ exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -1751,7 +1751,7 @@ exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -1902,7 +1902,7 @@ exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -1980,7 +1980,7 @@ exports[`Lightbox Rendering Photo with species name, date and user 1`] = `
             </Text>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>
@@ -2032,7 +2032,7 @@ exports[`Lightbox Rendering Second photo 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -2171,7 +2171,7 @@ exports[`Lightbox Rendering Second photo 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -2322,7 +2322,7 @@ exports[`Lightbox Rendering Second photo 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -2389,7 +2389,7 @@ exports[`Lightbox Rendering Second photo 1`] = `
             </Text>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>
@@ -2441,7 +2441,7 @@ exports[`Lightbox Rendering Show crop button when editable returns true 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -2580,7 +2580,7 @@ exports[`Lightbox Rendering Show crop button when editable returns true 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -2731,7 +2731,7 @@ exports[`Lightbox Rendering Show crop button when editable returns true 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -2820,7 +2820,7 @@ exports[`Lightbox Rendering Show crop button when editable returns true 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>
@@ -2872,7 +2872,7 @@ exports[`Lightbox Rendering When editable returns true, but no onCrop is provide
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -3011,7 +3011,7 @@ exports[`Lightbox Rendering When editable returns true, but no onCrop is provide
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -3162,7 +3162,7 @@ exports[`Lightbox Rendering When editable returns true, but no onCrop is provide
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -3181,7 +3181,7 @@ exports[`Lightbox Rendering When editable returns true, but no onCrop is provide
             }
           }
         />
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>
@@ -3233,7 +3233,7 @@ exports[`Lightbox Rendering With a crop button 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -3372,7 +3372,7 @@ exports[`Lightbox Rendering With a crop button 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -3523,7 +3523,7 @@ exports[`Lightbox Rendering With a crop button 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -3612,7 +3612,7 @@ exports[`Lightbox Rendering With a crop button 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>
@@ -3664,7 +3664,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -3803,7 +3803,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
     <RCTScrollView
       data={
@@ -3954,7 +3954,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
         }
       }
     >
-      <RCTSafeAreaView
+      <SafeAreaView
         style={
           {
             "backgroundColor": "#00000080",
@@ -4043,7 +4043,7 @@ exports[`Lightbox Rendering With a delete button 1`] = `
             </View>
           </View>
         </View>
-      </RCTSafeAreaView>
+      </SafeAreaView>
     </View>
   </View>
 </Modal>

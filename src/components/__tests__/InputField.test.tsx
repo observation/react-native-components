@@ -1,12 +1,12 @@
 import React from 'react'
-import { TextInput } from 'react-native'
+import { TextInput, TextInputProps } from 'react-native'
 
 import { act, render } from '@testing-library/react-native'
 
 import { Icon } from '../Icon'
 import InputField from '../InputField'
 
-class CustomTextInput extends TextInput {}
+const CustomTextInput = (props: TextInputProps) => <TextInput {...props} />
 
 describe('InputField', () => {
   describe('Rendering', () => {
