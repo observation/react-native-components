@@ -145,6 +145,7 @@ export interface Color {
       audioPlayer: string
       readOnly: string
       chipSelected: string
+      placeholder: string
     }
     gps: {
       accuracySuccess: string
@@ -240,11 +241,13 @@ export interface Overlay {
   white70: string
   white80: string
   black50: string
+  grey40: string
   grey60: string
 }
 
 export interface Gradient {
   bottom: string[]
+  bottomLight: string[]
   top: string[]
 }
 

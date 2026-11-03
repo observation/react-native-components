@@ -55,6 +55,7 @@ export const color = {
       audioPlayer: palette.grey[500],
       readOnly: palette.grey[500],
       chipSelected: palette.grey[800],
+      placeholder: palette.grey[500],
     },
     gps: {
       accuracySuccess: palette.green[200],
