@@ -39,59 +39,6 @@ export interface Palette {
 }
 
 export interface Color {
-  /** @deprecated Use theme.color.background.system.surfaceBase or theme.color.text.system.staticWhite */
-  white: string
-  /** @deprecated Use theme.color.text.system.strong or theme.color.icon.system.strong */
-  black: string
-  /** @deprecated Use theme.color.text.system.subtle */
-  grey800: string
-  /** @deprecated Use theme.color.text.system.subtler or theme.color.icon.system.subtler */
-  grey500: string
-  /** @deprecated Use theme.color.icon.system.disabled or theme.color.text.system.disabled or theme.color.border.system.base or theme.color.background.system.disabled or theme.color.text.system.subtle or theme.color.icon.system.subtle */
-  grey300: string
-  /** @deprecated Use theme.color.background.system.surfaceRaised or theme.color.border.system.subtlest */
-  grey50: string
-  /** @deprecated Use theme.color.background.system.surfaceLowered */
-  grey100: string
-  /** @deprecated Use theme.color.icon.system.brand or theme.color.text.system.brand or theme.color.border.system.brand */
-  primary500: string
-  /** @deprecated Use theme.color.border.system.focus */
-  primary300: string
-  /** @deprecated Use theme.color.background.system.active */
-  primary50: string
-  /** @deprecated Use theme.color.background.system.success or theme.color.text.system.success */
-  success500: string
-  /** @deprecated Use theme.color.background.system.success */
-  success400: string
-  /** @deprecated Use theme.color.background.system.success */
-  success200: string
-  /** @deprecated Use theme.color.background.system.success */
-  success50: string
-  /** @deprecated Use theme.color.text.gps.accuracySuccess */
-  success600: string
-  /** @deprecated Use theme.color.text.system.success */
-  success700: string
-  /** @deprecated Use theme.color.background.system.warning or theme.color.text.system.warning */
-  warning500: string
-  /** @deprecated Use theme.color.background.system.warning */
-  warning200: string
-  /** @deprecated Use theme.color.text.system.warning */
-  warning700: string
-  /** @deprecated Use theme.color.background.system.error or theme.color.text.system.error */
-  error500: string
-  /** @deprecated Use theme.color.background.system.error */
-  error200: string
-  /** @deprecated Use theme.color.text.system.error */
-  error700: string
-  /** @deprecated Use theme.color.background.system.observationStrong or theme.color.icon.system.observationStrong */
-  accentLime400: string
-  /** @deprecated Use theme.color.background.system.observationSubtle */
-  accentLime50: string
-  /** @deprecated Use theme.color.background.system.speciesStrong or theme.color.icon.system.speciesStrong */
-  accentSky400: string
-  /** @deprecated Use theme.color.background.system.speciesSubtle */
-  accentSky50: string
-
   text: {
     system: {
       strong: string

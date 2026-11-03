@@ -4,7 +4,6 @@ import { StyleProp, StyleSheet, Text, View, ViewStyle } from 'react-native'
 import { useTheme as useNavigationTheme } from '@react-navigation/native'
 
 import LargeButton, { LargeButtonProps } from './LargeButton'
-import { shadow } from '../styles'
 import { Theme, useStyles, useTheme } from '../theme/'
 
 type Props = {
@@ -66,12 +65,12 @@ export default BottomSheet
 const createStyles = (theme: Theme) => {
   const styles = StyleSheet.create({
     container: {
-      ...shadow.normal.ios,
+      ...theme.shadow.normal.ios,
       borderTopWidth: 1 / 3,
       borderTopColor: theme.color.border.system.base,
     },
     bottomSheetContainer: {
-      ...shadow.normal.android,
+      ...theme.shadow.normal.android,
     },
     bottomSheet: {
       flexDirection: 'column',
