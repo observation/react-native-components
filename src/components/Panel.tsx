@@ -33,7 +33,7 @@ const createStyles = (theme: Theme) => {
       backgroundColor: theme.color.background.system.surfaceBase,
       ...theme.shadow.small.android,
       borderTopWidth: 1,
-      borderColor: theme.color.border.system.subtle,
+      borderColor: theme.color.border.system.subtlest,
     },
   })
 

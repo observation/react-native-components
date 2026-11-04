@@ -54,7 +54,7 @@ const InputPanel = ({
       </View>
       {showChevron && (
         <View style={styles.icon}>
-          <Icon name="angle-down" color={theme.color.grey500} size={theme.icon.size.m} />
+          <Icon name="angle-down" color={theme.color.icon.system.subtler} size={theme.icon.size.m} />
         </View>
       )}
     </TouchableOpacity>

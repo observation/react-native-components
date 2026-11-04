@@ -47,7 +47,7 @@ describe('ListItem', () => {
 
     test('Rendering with custom icon', () => {
       // WHEN
-      const icon: IconProps = { name: 'check', color: color.grey300, size: 20, style: 'light' }
+      const icon: IconProps = { name: 'check', color: color.icon.system.disabled, size: 20, style: 'light' }
       const { toJSON } = render(<ListItem onPress={onPress} label="Read this!" icon={icon} />)
 
       // THEN

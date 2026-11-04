@@ -7,5 +7,6 @@ export const overlay = {
   white70: '#FFFFFFB3',
   white80: '#FFFFFFCC',
   black50: '#00000080',
+  grey40: '#66666666',
   grey60: '#66666699',
 } satisfies Overlay

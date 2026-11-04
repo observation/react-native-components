@@ -75,5 +75,4 @@ Additionally, the package exposes two subpath entry points:
 
 - `font`, `fontSize`, `lineHeight`: Font styles
 - `layout`, `rounded`: Layout styles
-- `shadow`: Deprecated, use `theme.shadow`
 - `createInputStyles`, `createBottomSheetStyles`

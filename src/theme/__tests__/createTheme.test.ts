@@ -60,6 +60,24 @@ describe('createTheme', () => {
       expect(theme.shadow[name].android.shadowColor).toBe(theme.color.shadow.system.elevation)
     })
 
+    test('dragged uses the elevation shadow color on both platforms', () => {
+      // GIVEN
+      const theme = createTheme()
+
+      // THEN
+      expect(theme.shadow.dragged.ios.shadowColor).toBe(theme.color.shadow.system.elevation)
+      expect(theme.shadow.dragged.android.shadowColor).toBe(theme.color.shadow.system.elevation)
+    })
+
+    test('large uses the elevation shadow color on iOS and the strong elevation shadow color on Android', () => {
+      // GIVEN
+      const theme = createTheme()
+
+      // THEN
+      expect(theme.shadow.large.ios.shadowColor).toBe(theme.color.shadow.system.elevation)
+      expect(theme.shadow.large.android.shadowColor).toBe(theme.color.shadow.system.elevationStrong)
+    })
+
     test('none has no shadow', () => {
       // GIVEN
       const theme = createTheme()
