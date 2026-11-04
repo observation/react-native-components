@@ -16,6 +16,7 @@ type Props = {
   children?: React.ReactNode
 }
 
+/** @deprecated Use BottomActionBar */
 const BottomSheet = ({ title, text, buttons = [], style, testID, children }: Props) => {
   const { colors } = useNavigationTheme()
   const theme = useTheme()

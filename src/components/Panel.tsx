@@ -1,7 +1,6 @@
 import React from 'react'
 import { StyleProp, StyleSheet, View, ViewStyle } from 'react-native'
 
-import { shadow } from '../styles'
 import { Theme, useStyles } from '../theme'
 
 type Props = {
@@ -27,12 +26,12 @@ const createStyles = (theme: Theme) => {
   const styles = StyleSheet.create({
     panelContainer: {
       marginTop: theme.margin.quarter,
-      ...shadow.small.ios,
+      ...theme.shadow.small.ios,
     },
     panel: {
       paddingVertical: theme.margin.common,
       backgroundColor: theme.color.background.system.surfaceBase,
-      ...shadow.small.android,
+      ...theme.shadow.small.android,
       borderTopWidth: 1,
       borderColor: theme.color.border.system.subtle,
     },

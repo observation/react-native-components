@@ -3,7 +3,6 @@ import { StyleProp, StyleSheet, Text, TouchableOpacity, View, ViewStyle } from '
 
 import { Icon, IconProps } from './Icon'
 import LargeButton, { LargeButtonProps } from '../components/LargeButton'
-import { shadow } from '../styles'
 import { Theme, useStyles, useTheme } from '../theme'
 
 type TooltipProps = {
@@ -33,7 +32,7 @@ const Tooltip = ({
   const styles = useStyles(createStyles)
 
   return (
-    <View style={[shadow.normal.ios, style]} testID={testID}>
+    <View style={[theme.shadow.normal.ios, style]} testID={testID}>
       <View style={styles.tooltipContainer}>
         <View style={styles.tooltip}>
           <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
@@ -95,7 +94,7 @@ const createStyles = (theme: Theme) => {
       borderBottomRightRadius: 16,
       overflow: 'hidden',
       backgroundColor: theme.color.background.system.surfaceBase,
-      ...shadow.normal.android,
+      ...theme.shadow.normal.android,
     },
     tooltip: {
       flexDirection: 'column',

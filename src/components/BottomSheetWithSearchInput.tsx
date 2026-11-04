@@ -10,7 +10,6 @@ import BottomSheet, {
   TouchableOpacity,
   useBottomSheetTimingConfigs,
 } from '@gorhom/bottom-sheet'
-import { useTheme as useNavigationTheme } from '@react-navigation/native'
 import { Easing } from 'react-native-reanimated'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
@@ -59,7 +58,6 @@ const BottomSheetWithSearchInput = ({
   const [searchString, setSearchString] = useState('')
   const bottomSheetRef = useRef<BottomSheet>(null)
   const insets = useSafeAreaInsets()
-  const { colors } = useNavigationTheme()
   const bottomSheetStyles = useStyles(createBottomSheetStyles)
   const animationConfigs = useBottomSheetTimingConfigs({
     duration: theme.animation.duration.medium,
@@ -151,7 +149,7 @@ const BottomSheetWithSearchInput = ({
       snapPoints={['80%']}
       enableDynamicSizing={false}
       handleIndicatorStyle={bottomSheetStyles.handleIndicator}
-      handleStyle={[bottomSheetStyles.handle, { backgroundColor: colors.card }]}
+      handleStyle={[bottomSheetStyles.handle, { backgroundColor: theme.color.background.system.screen }]}
       keyboardBehavior="extend"
     >
       <BottomSheetFlatList<DataItem>
@@ -161,7 +159,7 @@ const BottomSheetWithSearchInput = ({
         ItemSeparatorComponent={Separator}
         keyboardDismissMode="on-drag"
         keyboardShouldPersistTaps="handled"
-        contentContainerStyle={{ paddingBottom: insets.bottom, backgroundColor: colors.card }}
+        contentContainerStyle={{ paddingBottom: insets.bottom, backgroundColor: theme.color.background.system.screen }}
         ListHeaderComponent={listHeader}
         stickyHeaderIndices={[0]}
         renderItem={({ item }) => (
