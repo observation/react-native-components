@@ -32,7 +32,7 @@ const Tooltip = ({
   const styles = useStyles(createStyles)
 
   return (
-    <View style={[theme.shadow.normal.ios, style]} testID={testID}>
+    <View style={[styles.shadowContainer, style]} testID={testID}>
       <View style={styles.tooltipContainer}>
         <View style={styles.tooltip}>
           <View style={{ flexDirection: 'row', alignItems: 'flex-start' }}>
@@ -89,6 +89,12 @@ export type { TooltipProps }
 
 const createStyles = (theme: Theme) => {
   const styles = StyleSheet.create({
+    shadowContainer: {
+      borderBottomLeftRadius: 16,
+      borderBottomRightRadius: 16,
+      backgroundColor: theme.color.background.system.surfaceBase,
+      ...theme.shadow.normal.ios,
+    },
     tooltipContainer: {
       borderBottomLeftRadius: 16,
       borderBottomRightRadius: 16,

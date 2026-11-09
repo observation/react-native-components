@@ -26,13 +26,6 @@ exports[`HtmlContent Rendering Custom image renderer Normal render 1`] = `
         {
           "margin": -16,
           "marginBottom": -8,
-          "shadowColor": "#e6e6e6",
-          "shadowOffset": {
-            "height": 4,
-            "width": 0,
-          },
-          "shadowOpacity": 0.8,
-          "shadowRadius": 4,
         }
       }
     >
@@ -75,68 +68,84 @@ exports[`HtmlContent Rendering Custom image renderer Normal render 1`] = `
           style={
             {
               "backgroundColor": "#ffffff",
-              "borderColor": "#f9fafb",
               "borderRadius": 8,
-              "borderWidth": 1,
-              "elevation": 6,
-              "flexDirection": "row",
               "margin": 16,
-              "overflow": "hidden",
-              "shadowColor": "#939393",
+              "shadowColor": "#e6e6e6",
+              "shadowOffset": {
+                "height": 2,
+                "width": 0,
+              },
+              "shadowOpacity": 0.8,
+              "shadowRadius": 2,
             }
           }
         >
           <View
             style={
               {
+                "backgroundColor": "#ffffff",
+                "borderColor": "#f9fafb",
                 "borderRadius": 8,
-                "margin": 16,
-                "marginRight": 8,
+                "borderWidth": 1,
+                "elevation": 4,
+                "flexDirection": "row",
                 "overflow": "hidden",
+                "shadowColor": "#939393",
               }
             }
           >
-            <Image
-              source={
-                {
-                  "uri": "https://waarneming.nl/image.jpeg",
-                }
-              }
+            <View
               style={
                 {
-                  "height": 80,
-                  "width": 80,
+                  "borderRadius": 8,
+                  "margin": 16,
+                  "marginRight": 8,
+                  "overflow": "hidden",
                 }
               }
-            />
-          </View>
-          <View
-            style={
-              {
-                "flex": 1,
-                "justifyContent": "center",
-                "marginLeft": 8,
-                "marginRight": 16,
-              }
-            }
-          >
-            <View>
-              <Text
-                numberOfLines={2}
-                style={
+            >
+              <Image
+                source={
                   {
-                    "color": "#212121",
-                    "fontFamily": "Ubuntu",
-                    "fontSize": 12,
-                    "fontStyle": "normal",
-                    "fontWeight": "bold",
-                    "lineHeight": 16,
-                    "marginBottom": 4,
+                    "uri": "https://waarneming.nl/image.jpeg",
                   }
                 }
-              >
-                A picture
-              </Text>
+                style={
+                  {
+                    "height": 80,
+                    "width": 80,
+                  }
+                }
+              />
+            </View>
+            <View
+              style={
+                {
+                  "flex": 1,
+                  "justifyContent": "center",
+                  "marginLeft": 8,
+                  "marginRight": 16,
+                }
+              }
+            >
+              <View>
+                <Text
+                  numberOfLines={2}
+                  style={
+                    {
+                      "color": "#212121",
+                      "fontFamily": "Ubuntu",
+                      "fontSize": 12,
+                      "fontStyle": "normal",
+                      "fontWeight": "bold",
+                      "lineHeight": 16,
+                      "marginBottom": 4,
+                    }
+                  }
+                >
+                  A picture
+                </Text>
+              </View>
             </View>
           </View>
         </View>
