@@ -2,7 +2,6 @@ import Accordion from './components/Accordion'
 import BackButton from './components/BackButton'
 import BackgroundImage from './components/BackgroundImage'
 import BottomActionBar, { BottomActionBarProps } from './components/BottomActionBar'
-import BottomSheet from './components/BottomSheet'
 import BottomSheetWithSearchInput from './components/BottomSheetWithSearchInput'
 import CapitalizeText from './components/CapitalizeText'
 import Checkbox from './components/Checkbox'
@@ -58,7 +57,6 @@ export {
   BackButton,
   BackgroundImage,
   BottomActionBar,
-  BottomSheet,
   BottomSheetWithSearchInput,
   CapitalizeText,
   Checkbox,

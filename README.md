@@ -8,7 +8,6 @@ UI components:
 - `BackButton`
 - `BackgroundImage`
 - `BottomActionBar (+ BottomActionBarProps)`
-- `BottomSheet`: Deprecated, use `BottomActionBar`
 - `BottomSheetWithSearchInput`
 - `BrandIcon`
 - `BrandIcons`
