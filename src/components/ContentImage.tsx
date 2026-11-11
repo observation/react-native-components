@@ -70,7 +70,7 @@ const createStyles = (theme: Theme) => {
       ...theme.shadow.normal.android,
       ...rounded.large,
       borderWidth: 1,
-      borderColor: theme.color.border.system.subtle,
+      borderColor: theme.color.border.system.subtlest,
     },
     imageContainer: {
       margin: theme.margin.common,

@@ -57,7 +57,7 @@ describe('InputPanel', () => {
           label={'Counting method'}
           value={'seen'}
           onPress={onPress}
-          valueStyle={{ color: color.primary500 }}
+          valueStyle={{ color: color.text.system.brand }}
         />,
       )
 

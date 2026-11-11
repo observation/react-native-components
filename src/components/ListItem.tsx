@@ -29,7 +29,7 @@ const ListItem = ({ icon, onPress, label, subLabel, extraSubLabel, selected = fa
           <Icon
             name={icon!.name}
             style={icon!.style ?? 'solid'}
-            color={icon!.color ?? theme.color.grey500}
+            color={icon!.color ?? theme.color.icon.system.subtler}
             size={icon!.size ?? theme.icon.size.s}
           />
         )
