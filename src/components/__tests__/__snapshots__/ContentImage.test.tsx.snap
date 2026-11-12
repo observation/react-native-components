@@ -6,13 +6,6 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#e6e6e6",
-      "shadowOffset": {
-        "height": 4,
-        "width": 0,
-      },
-      "shadowOpacity": 0.8,
-      "shadowRadius": 4,
     }
   }
 >
@@ -394,68 +387,84 @@ exports[`ContentImage Interaction Click the image to show the lightbox 1`] = `
       style={
         {
           "backgroundColor": "#ffffff",
-          "borderColor": "#f9fafb",
           "borderRadius": 8,
-          "borderWidth": 1,
-          "elevation": 6,
-          "flexDirection": "row",
           "margin": 16,
-          "overflow": "hidden",
-          "shadowColor": "#939393",
+          "shadowColor": "#e6e6e6",
+          "shadowOffset": {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.8,
+          "shadowRadius": 2,
         }
       }
     >
       <View
         style={
           {
+            "backgroundColor": "#ffffff",
+            "borderColor": "#f9fafb",
             "borderRadius": 8,
-            "margin": 16,
-            "marginRight": 8,
+            "borderWidth": 1,
+            "elevation": 4,
+            "flexDirection": "row",
             "overflow": "hidden",
+            "shadowColor": "#939393",
           }
         }
       >
-        <Image
-          source={
-            {
-              "uri": "https://path.to/image.jpg",
-            }
-          }
+        <View
           style={
             {
-              "height": 80,
-              "width": 80,
+              "borderRadius": 8,
+              "margin": 16,
+              "marginRight": 8,
+              "overflow": "hidden",
             }
           }
-        />
-      </View>
-      <View
-        style={
-          {
-            "flex": 1,
-            "justifyContent": "center",
-            "marginLeft": 8,
-            "marginRight": 16,
-          }
-        }
-      >
-        <View>
-          <Text
-            numberOfLines={2}
-            style={
+        >
+          <Image
+            source={
               {
-                "color": "#212121",
-                "fontFamily": "Ubuntu",
-                "fontSize": 12,
-                "fontStyle": "normal",
-                "fontWeight": "bold",
-                "lineHeight": 16,
-                "marginBottom": 4,
+                "uri": "https://path.to/image.jpg",
               }
             }
-          >
-            Title
-          </Text>
+            style={
+              {
+                "height": 80,
+                "width": 80,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            {
+              "flex": 1,
+              "justifyContent": "center",
+              "marginLeft": 8,
+              "marginRight": 16,
+            }
+          }
+        >
+          <View>
+            <Text
+              numberOfLines={2}
+              style={
+                {
+                  "color": "#212121",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                  "marginBottom": 4,
+                }
+              }
+            >
+              Title
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -469,13 +478,6 @@ exports[`ContentImage Interaction Close the lightbox 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#e6e6e6",
-      "shadowOffset": {
-        "height": 4,
-        "width": 0,
-      },
-      "shadowOpacity": 0.8,
-      "shadowRadius": 4,
     }
   }
 >
@@ -518,68 +520,84 @@ exports[`ContentImage Interaction Close the lightbox 1`] = `
       style={
         {
           "backgroundColor": "#ffffff",
-          "borderColor": "#f9fafb",
           "borderRadius": 8,
-          "borderWidth": 1,
-          "elevation": 6,
-          "flexDirection": "row",
           "margin": 16,
-          "overflow": "hidden",
-          "shadowColor": "#939393",
+          "shadowColor": "#e6e6e6",
+          "shadowOffset": {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.8,
+          "shadowRadius": 2,
         }
       }
     >
       <View
         style={
           {
+            "backgroundColor": "#ffffff",
+            "borderColor": "#f9fafb",
             "borderRadius": 8,
-            "margin": 16,
-            "marginRight": 8,
+            "borderWidth": 1,
+            "elevation": 4,
+            "flexDirection": "row",
             "overflow": "hidden",
+            "shadowColor": "#939393",
           }
         }
       >
-        <Image
-          source={
-            {
-              "uri": "https://path.to/image.jpg",
-            }
-          }
+        <View
           style={
             {
-              "height": 80,
-              "width": 80,
+              "borderRadius": 8,
+              "margin": 16,
+              "marginRight": 8,
+              "overflow": "hidden",
             }
           }
-        />
-      </View>
-      <View
-        style={
-          {
-            "flex": 1,
-            "justifyContent": "center",
-            "marginLeft": 8,
-            "marginRight": 16,
-          }
-        }
-      >
-        <View>
-          <Text
-            numberOfLines={2}
-            style={
+        >
+          <Image
+            source={
               {
-                "color": "#212121",
-                "fontFamily": "Ubuntu",
-                "fontSize": 12,
-                "fontStyle": "normal",
-                "fontWeight": "bold",
-                "lineHeight": 16,
-                "marginBottom": 4,
+                "uri": "https://path.to/image.jpg",
               }
             }
-          >
-            Title
-          </Text>
+            style={
+              {
+                "height": 80,
+                "width": 80,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            {
+              "flex": 1,
+              "justifyContent": "center",
+              "marginLeft": 8,
+              "marginRight": 16,
+            }
+          }
+        >
+          <View>
+            <Text
+              numberOfLines={2}
+              style={
+                {
+                  "color": "#212121",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                  "marginBottom": 4,
+                }
+              }
+            >
+              Title
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -593,13 +611,6 @@ exports[`ContentImage Rendering With alt title 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#e6e6e6",
-      "shadowOffset": {
-        "height": 4,
-        "width": 0,
-      },
-      "shadowOpacity": 0.8,
-      "shadowRadius": 4,
     }
   }
 >
@@ -642,68 +653,84 @@ exports[`ContentImage Rendering With alt title 1`] = `
       style={
         {
           "backgroundColor": "#ffffff",
-          "borderColor": "#f9fafb",
           "borderRadius": 8,
-          "borderWidth": 1,
-          "elevation": 6,
-          "flexDirection": "row",
           "margin": 16,
-          "overflow": "hidden",
-          "shadowColor": "#939393",
+          "shadowColor": "#e6e6e6",
+          "shadowOffset": {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.8,
+          "shadowRadius": 2,
         }
       }
     >
       <View
         style={
           {
+            "backgroundColor": "#ffffff",
+            "borderColor": "#f9fafb",
             "borderRadius": 8,
-            "margin": 16,
-            "marginRight": 8,
+            "borderWidth": 1,
+            "elevation": 4,
+            "flexDirection": "row",
             "overflow": "hidden",
+            "shadowColor": "#939393",
           }
         }
       >
-        <Image
-          source={
-            {
-              "uri": "https://path.to/image.jpg",
-            }
-          }
+        <View
           style={
             {
-              "height": 80,
-              "width": 80,
+              "borderRadius": 8,
+              "margin": 16,
+              "marginRight": 8,
+              "overflow": "hidden",
             }
           }
-        />
-      </View>
-      <View
-        style={
-          {
-            "flex": 1,
-            "justifyContent": "center",
-            "marginLeft": 8,
-            "marginRight": 16,
-          }
-        }
-      >
-        <View>
-          <Text
-            numberOfLines={2}
-            style={
+        >
+          <Image
+            source={
               {
-                "color": "#212121",
-                "fontFamily": "Ubuntu",
-                "fontSize": 12,
-                "fontStyle": "normal",
-                "fontWeight": "bold",
-                "lineHeight": 16,
-                "marginBottom": 4,
+                "uri": "https://path.to/image.jpg",
               }
             }
-          >
-            Title
-          </Text>
+            style={
+              {
+                "height": 80,
+                "width": 80,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            {
+              "flex": 1,
+              "justifyContent": "center",
+              "marginLeft": 8,
+              "marginRight": 16,
+            }
+          }
+        >
+          <View>
+            <Text
+              numberOfLines={2}
+              style={
+                {
+                  "color": "#212121",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                  "marginBottom": 4,
+                }
+              }
+            >
+              Title
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -717,13 +744,6 @@ exports[`ContentImage Rendering With alt title and text 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#e6e6e6",
-      "shadowOffset": {
-        "height": 4,
-        "width": 0,
-      },
-      "shadowOpacity": 0.8,
-      "shadowRadius": 4,
     }
   }
 >
@@ -766,83 +786,99 @@ exports[`ContentImage Rendering With alt title and text 1`] = `
       style={
         {
           "backgroundColor": "#ffffff",
-          "borderColor": "#f9fafb",
           "borderRadius": 8,
-          "borderWidth": 1,
-          "elevation": 6,
-          "flexDirection": "row",
           "margin": 16,
-          "overflow": "hidden",
-          "shadowColor": "#939393",
+          "shadowColor": "#e6e6e6",
+          "shadowOffset": {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.8,
+          "shadowRadius": 2,
         }
       }
     >
       <View
         style={
           {
+            "backgroundColor": "#ffffff",
+            "borderColor": "#f9fafb",
             "borderRadius": 8,
-            "margin": 16,
-            "marginRight": 8,
+            "borderWidth": 1,
+            "elevation": 4,
+            "flexDirection": "row",
             "overflow": "hidden",
+            "shadowColor": "#939393",
           }
         }
       >
-        <Image
-          source={
-            {
-              "uri": "https://path.to/image.jpg",
-            }
-          }
+        <View
           style={
             {
-              "height": 80,
-              "width": 80,
+              "borderRadius": 8,
+              "margin": 16,
+              "marginRight": 8,
+              "overflow": "hidden",
             }
           }
-        />
-      </View>
-      <View
-        style={
-          {
-            "flex": 1,
-            "justifyContent": "center",
-            "marginLeft": 8,
-            "marginRight": 16,
+        >
+          <Image
+            source={
+              {
+                "uri": "https://path.to/image.jpg",
+              }
+            }
+            style={
+              {
+                "height": 80,
+                "width": 80,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            {
+              "flex": 1,
+              "justifyContent": "center",
+              "marginLeft": 8,
+              "marginRight": 16,
+            }
           }
-        }
-      >
-        <View>
-          <Text
-            numberOfLines={2}
-            style={
-              {
-                "color": "#212121",
-                "fontFamily": "Ubuntu",
-                "fontSize": 12,
-                "fontStyle": "normal",
-                "fontWeight": "bold",
-                "lineHeight": 16,
-                "marginBottom": 4,
+        >
+          <View>
+            <Text
+              numberOfLines={2}
+              style={
+                {
+                  "color": "#212121",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                  "marginBottom": 4,
+                }
               }
-            }
-          >
-            Title
-          </Text>
-          <Text
-            numberOfLines={3}
-            style={
-              {
-                "color": "#939393",
-                "fontFamily": "Ubuntu",
-                "fontSize": 12,
-                "fontStyle": "normal",
-                "fontWeight": "normal",
-                "lineHeight": 16,
+            >
+              Title
+            </Text>
+            <Text
+              numberOfLines={3}
+              style={
+                {
+                  "color": "#939393",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "normal",
+                  "lineHeight": 16,
+                }
               }
-            }
-          >
-            Text
-          </Text>
+            >
+              Text
+            </Text>
+          </View>
         </View>
       </View>
     </View>
@@ -856,13 +892,6 @@ exports[`ContentImage Rendering With alt title ending in delimiter 1`] = `
     {
       "margin": -16,
       "marginBottom": -8,
-      "shadowColor": "#e6e6e6",
-      "shadowOffset": {
-        "height": 4,
-        "width": 0,
-      },
-      "shadowOpacity": 0.8,
-      "shadowRadius": 4,
     }
   }
 >
@@ -905,68 +934,84 @@ exports[`ContentImage Rendering With alt title ending in delimiter 1`] = `
       style={
         {
           "backgroundColor": "#ffffff",
-          "borderColor": "#f9fafb",
           "borderRadius": 8,
-          "borderWidth": 1,
-          "elevation": 6,
-          "flexDirection": "row",
           "margin": 16,
-          "overflow": "hidden",
-          "shadowColor": "#939393",
+          "shadowColor": "#e6e6e6",
+          "shadowOffset": {
+            "height": 2,
+            "width": 0,
+          },
+          "shadowOpacity": 0.8,
+          "shadowRadius": 2,
         }
       }
     >
       <View
         style={
           {
+            "backgroundColor": "#ffffff",
+            "borderColor": "#f9fafb",
             "borderRadius": 8,
-            "margin": 16,
-            "marginRight": 8,
+            "borderWidth": 1,
+            "elevation": 4,
+            "flexDirection": "row",
             "overflow": "hidden",
+            "shadowColor": "#939393",
           }
         }
       >
-        <Image
-          source={
-            {
-              "uri": "https://path.to/image.jpg",
-            }
-          }
+        <View
           style={
             {
-              "height": 80,
-              "width": 80,
+              "borderRadius": 8,
+              "margin": 16,
+              "marginRight": 8,
+              "overflow": "hidden",
             }
           }
-        />
-      </View>
-      <View
-        style={
-          {
-            "flex": 1,
-            "justifyContent": "center",
-            "marginLeft": 8,
-            "marginRight": 16,
-          }
-        }
-      >
-        <View>
-          <Text
-            numberOfLines={2}
-            style={
+        >
+          <Image
+            source={
               {
-                "color": "#212121",
-                "fontFamily": "Ubuntu",
-                "fontSize": 12,
-                "fontStyle": "normal",
-                "fontWeight": "bold",
-                "lineHeight": 16,
-                "marginBottom": 4,
+                "uri": "https://path.to/image.jpg",
               }
             }
-          >
-            Title
-          </Text>
+            style={
+              {
+                "height": 80,
+                "width": 80,
+              }
+            }
+          />
+        </View>
+        <View
+          style={
+            {
+              "flex": 1,
+              "justifyContent": "center",
+              "marginLeft": 8,
+              "marginRight": 16,
+            }
+          }
+        >
+          <View>
+            <Text
+              numberOfLines={2}
+              style={
+                {
+                  "color": "#212121",
+                  "fontFamily": "Ubuntu",
+                  "fontSize": 12,
+                  "fontStyle": "normal",
+                  "fontWeight": "bold",
+                  "lineHeight": 16,
+                  "marginBottom": 4,
+                }
+              }
+            >
+              Title
+            </Text>
+          </View>
         </View>
       </View>
     </View>

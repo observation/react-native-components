@@ -30,22 +30,24 @@ const ContentImage = ({ src, alt }: Props) => {
           description={description}
           onClose={() => setPhotoIndex(undefined)}
         />
-        <View style={styles.innerContainer}>
-          <View style={styles.imageContainer}>
-            <Image style={styles.image} source={{ uri: src }} />
-          </View>
-          <View style={styles.textContainer}>
-            <View>
-              {!!title && (
-                <Text style={styles.title} numberOfLines={2}>
-                  {title}
-                </Text>
-              )}
-              {!!description && (
-                <Text style={styles.description} numberOfLines={3}>
-                  {description}
-                </Text>
-              )}
+        <View style={styles.shadowContainer}>
+          <View style={styles.innerContainer}>
+            <View style={styles.imageContainer}>
+              <Image style={styles.image} source={{ uri: src }} />
+            </View>
+            <View style={styles.textContainer}>
+              <View>
+                {!!title && (
+                  <Text style={styles.title} numberOfLines={2}>
+                    {title}
+                  </Text>
+                )}
+                {!!description && (
+                  <Text style={styles.description} numberOfLines={3}>
+                    {description}
+                  </Text>
+                )}
+              </View>
             </View>
           </View>
         </View>
@@ -61,13 +63,17 @@ const createStyles = (theme: Theme) => {
     outerContainer: {
       margin: -theme.margin.common,
       marginBottom: -theme.margin.half,
-      ...theme.shadow.normal.ios,
+    },
+    shadowContainer: {
+      margin: theme.margin.common,
+      borderRadius: rounded.large.borderRadius,
+      backgroundColor: theme.color.background.system.surfaceBase,
+      ...theme.shadow.small.ios,
     },
     innerContainer: {
       flexDirection: 'row',
-      margin: theme.margin.common,
       backgroundColor: theme.color.background.system.surfaceBase,
-      ...theme.shadow.normal.android,
+      ...theme.shadow.small.android,
       ...rounded.large,
       borderWidth: 1,
       borderColor: theme.color.border.system.subtlest,

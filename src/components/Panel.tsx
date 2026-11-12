@@ -13,8 +13,9 @@ type Props = {
 /** Display content in a full width panel with a shadow */
 const Panel = ({ children, topShadow = true, containerStyle, panelStyle }: Props) => {
   const styles = useStyles(createStyles)
+  const { borderRadius } = StyleSheet.flatten(panelStyle) ?? {}
   return (
-    <View style={[styles.panelContainer, topShadow ? {} : { marginTop: 0 }, containerStyle]}>
+    <View style={[styles.panelContainer, { borderRadius }, topShadow ? {} : { marginTop: 0 }, containerStyle]}>
       <View style={[styles.panel, topShadow ? {} : { paddingTop: 0, borderTopWidth: 0 }, panelStyle]}>{children}</View>
     </View>
   )
@@ -26,6 +27,7 @@ const createStyles = (theme: Theme) => {
   const styles = StyleSheet.create({
     panelContainer: {
       marginTop: theme.margin.quarter,
+      backgroundColor: theme.color.background.system.surfaceBase,
       ...theme.shadow.small.ios,
     },
     panel: {

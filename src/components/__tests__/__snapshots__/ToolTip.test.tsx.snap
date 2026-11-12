@@ -5,6 +5,9 @@ exports[`Tooltip Rendering With button 1`] = `
   style={
     [
       {
+        "backgroundColor": "#ffffff",
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
         "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 4,
@@ -185,6 +188,9 @@ exports[`Tooltip Rendering With icon 1`] = `
   style={
     [
       {
+        "backgroundColor": "#ffffff",
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
         "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 4,
@@ -349,6 +355,9 @@ exports[`Tooltip Rendering Without icon 1`] = `
   style={
     [
       {
+        "backgroundColor": "#ffffff",
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
         "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 4,
@@ -497,6 +506,9 @@ exports[`Tooltip Rendering Without icon or close button 1`] = `
   style={
     [
       {
+        "backgroundColor": "#ffffff",
+        "borderBottomLeftRadius": 16,
+        "borderBottomRightRadius": 16,
         "shadowColor": "#e6e6e6",
         "shadowOffset": {
           "height": 4,
