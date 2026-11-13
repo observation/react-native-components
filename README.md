@@ -43,6 +43,7 @@ UI components:
 - `NotificationPopup (+ NotificationPopupStaticProps)`
 - `PageIndicator`
 - `Panel`
+- `PercentageCircle`
 - `Popup`
 - `ProgressBar`
 - `ProgressBarList`
