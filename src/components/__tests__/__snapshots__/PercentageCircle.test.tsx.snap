@@ -1,0 +1,544 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PercentageCircle Rendering 0% 1`] = `
+<View
+  style={
+    {
+      "height": 48,
+      "width": 48,
+    }
+  }
+>
+  <RNSVGSvgView
+    bbHeight={48}
+    bbWidth={48}
+    focusable={false}
+    height={48}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 48,
+          "width": 48,
+        },
+      ]
+    }
+    width={48}
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGCircle
+        cx={24}
+        cy={24}
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        r={21}
+        stroke={
+          {
+            "payload": 4293322470,
+            "type": 0,
+          }
+        }
+        strokeWidth={6}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "bottom": 0,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        {
+          "color": "#212121",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 16,
+        }
+      }
+    >
+      0
+      <Text
+        style={
+          {
+            "color": "#212121",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "100",
+            "lineHeight": 16,
+          }
+        }
+      >
+        %
+      </Text>
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`PercentageCircle Rendering 42% 1`] = `
+<View
+  style={
+    {
+      "height": 48,
+      "width": 48,
+    }
+  }
+>
+  <RNSVGSvgView
+    bbHeight={48}
+    bbWidth={48}
+    focusable={false}
+    height={48}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 48,
+          "width": 48,
+        },
+      ]
+    }
+    width={48}
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGCircle
+        cx={24}
+        cy={24}
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        r={21}
+        stroke={
+          {
+            "payload": 4293322470,
+            "type": 0,
+          }
+        }
+        strokeWidth={6}
+      />
+      <RNSVGCircle
+        cx={24}
+        cy={24}
+        fill={null}
+        matrix={
+          [
+            6.123233995736766e-17,
+            -1,
+            1,
+            6.123233995736766e-17,
+            0,
+            48,
+          ]
+        }
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeDasharray",
+            "strokeDashoffset",
+            "strokeLinecap",
+          ]
+        }
+        r={21}
+        stroke={
+          {
+            "payload": 4294944000,
+            "type": 0,
+          }
+        }
+        strokeDasharray={
+          [
+            "131.94689145077132",
+            "131.94689145077132",
+          ]
+        }
+        strokeDashoffset={76.52919704144738}
+        strokeLinecap={1}
+        strokeWidth={6}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "bottom": 0,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        {
+          "color": "#212121",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 16,
+        }
+      }
+    >
+      42
+      <Text
+        style={
+          {
+            "color": "#212121",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "100",
+            "lineHeight": 16,
+          }
+        }
+      >
+        %
+      </Text>
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`PercentageCircle Rendering 100% 1`] = `
+<View
+  style={
+    {
+      "height": 48,
+      "width": 48,
+    }
+  }
+>
+  <RNSVGSvgView
+    bbHeight={48}
+    bbWidth={48}
+    focusable={false}
+    height={48}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 48,
+          "width": 48,
+        },
+      ]
+    }
+    width={48}
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGCircle
+        cx={24}
+        cy={24}
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        r={21}
+        stroke={
+          {
+            "payload": 4293322470,
+            "type": 0,
+          }
+        }
+        strokeWidth={6}
+      />
+      <RNSVGCircle
+        cx={24}
+        cy={24}
+        fill={null}
+        matrix={
+          [
+            6.123233995736766e-17,
+            -1,
+            1,
+            6.123233995736766e-17,
+            0,
+            48,
+          ]
+        }
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeDasharray",
+            "strokeDashoffset",
+            "strokeLinecap",
+          ]
+        }
+        r={21}
+        stroke={
+          {
+            "payload": 4278222848,
+            "type": 0,
+          }
+        }
+        strokeDasharray={
+          [
+            "131.94689145077132",
+            "131.94689145077132",
+          ]
+        }
+        strokeDashoffset={null}
+        strokeLinecap={1}
+        strokeWidth={6}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "bottom": 0,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        {
+          "color": "#212121",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 16,
+        }
+      }
+    >
+      100
+      <Text
+        style={
+          {
+            "color": "#212121",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "100",
+            "lineHeight": 16,
+          }
+        }
+      >
+        %
+      </Text>
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`PercentageCircle Rendering Custom size and thickness 1`] = `
+<View
+  style={
+    {
+      "height": 64,
+      "width": 64,
+    }
+  }
+>
+  <RNSVGSvgView
+    bbHeight={64}
+    bbWidth={64}
+    focusable={false}
+    height={64}
+    style={
+      [
+        {
+          "backgroundColor": "transparent",
+          "borderWidth": 0,
+        },
+        {
+          "flex": 0,
+          "height": 64,
+          "width": 64,
+        },
+      ]
+    }
+    width={64}
+  >
+    <RNSVGGroup
+      fill={
+        {
+          "payload": 4278190080,
+          "type": 0,
+        }
+      }
+    >
+      <RNSVGCircle
+        cx={32}
+        cy={32}
+        fill={null}
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+          ]
+        }
+        r={28}
+        stroke={
+          {
+            "payload": 4293322470,
+            "type": 0,
+          }
+        }
+        strokeWidth={8}
+      />
+      <RNSVGCircle
+        cx={32}
+        cy={32}
+        fill={null}
+        matrix={
+          [
+            6.123233995736766e-17,
+            -1,
+            1,
+            6.123233995736766e-17,
+            0,
+            64,
+          ]
+        }
+        propList={
+          [
+            "fill",
+            "stroke",
+            "strokeWidth",
+            "strokeDasharray",
+            "strokeDashoffset",
+            "strokeLinecap",
+          ]
+        }
+        r={28}
+        stroke={
+          {
+            "payload": 4278222848,
+            "type": 0,
+          }
+        }
+        strokeDasharray={
+          [
+            "175.92918860102841",
+            "175.92918860102841",
+          ]
+        }
+        strokeDashoffset={43.982297150257104}
+        strokeLinecap={1}
+        strokeWidth={8}
+      />
+    </RNSVGGroup>
+  </RNSVGSvgView>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "bottom": 0,
+        "justifyContent": "center",
+        "left": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+      }
+    }
+  >
+    <Text
+      allowFontScaling={false}
+      style={
+        {
+          "color": "#212121",
+          "fontFamily": "Ubuntu",
+          "fontSize": 12,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 16,
+        }
+      }
+    >
+      75
+      <Text
+        style={
+          {
+            "color": "#212121",
+            "fontFamily": "Ubuntu",
+            "fontSize": 12,
+            "fontStyle": "normal",
+            "fontWeight": "100",
+            "lineHeight": 16,
+          }
+        }
+      >
+        %
+      </Text>
+    </Text>
+  </View>
+</View>
+`;
