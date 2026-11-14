@@ -1,6 +1,6 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.106.0",
+  "version": "1.107.0",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
@@ -86,7 +86,7 @@
     "@react-navigation/native": "^7.0.0",
     "react": "^19.0.0",
     "react-native": ">=0.83.0",
-    "react-native-gesture-handler": ">=2.16.1",
+    "react-native-gesture-handler": ">=3.0.0",
     "react-native-reanimated": ">=4.0.0",
     "react-native-safe-area-context": ">=5.7.0",
     "react-native-svg": ">=15.0.0",

@@ -494,28 +494,46 @@ exports[`RaritySlider Rendering No value is translated to common 1`] = `
     }
   >
     <View
-      collapsable={false}
-      style={
+      handlerTags={
         [
-          {
-            "backgroundColor": "#e6e6e6",
-            "borderColor": "#ffffff",
-            "borderRadius": 12,
-            "borderWidth": 2,
-            "height": 24,
-            "position": "absolute",
-            "width": 24,
-          },
-          {
-            "transform": [
-              {
-                "translateX": 28,
-              },
-            ],
-          },
+          2,
         ]
       }
-    />
+      moduleId={-1}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onGestureHandlerTouchEvent={[Function]}
+      onStartShouldSetResponder={[Function]}
+      pointerEvents="box-none"
+      style={
+        {
+          "display": "contents",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#e6e6e6",
+              "borderColor": "#ffffff",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 24,
+              "position": "absolute",
+              "width": 24,
+            },
+            {
+              "transform": [
+                {
+                  "translateX": 28,
+                },
+              ],
+            },
+          ]
+        }
+      />
+    </View>
   </View>
 </View>
 `;
@@ -1014,28 +1032,46 @@ exports[`RaritySlider Rendering Normal 1`] = `
     }
   >
     <View
-      collapsable={false}
-      style={
+      handlerTags={
         [
-          {
-            "backgroundColor": "#e6e6e6",
-            "borderColor": "#ffffff",
-            "borderRadius": 12,
-            "borderWidth": 2,
-            "height": 24,
-            "position": "absolute",
-            "width": 24,
-          },
-          {
-            "transform": [
-              {
-                "translateX": 28,
-              },
-            ],
-          },
+          1,
         ]
       }
-    />
+      moduleId={-1}
+      onGestureHandlerEvent={[Function]}
+      onGestureHandlerStateChange={[Function]}
+      onGestureHandlerTouchEvent={[Function]}
+      onStartShouldSetResponder={[Function]}
+      pointerEvents="box-none"
+      style={
+        {
+          "display": "contents",
+        }
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "backgroundColor": "#e6e6e6",
+              "borderColor": "#ffffff",
+              "borderRadius": 12,
+              "borderWidth": 2,
+              "height": 24,
+              "position": "absolute",
+              "width": 24,
+            },
+            {
+              "transform": [
+                {
+                  "translateX": 28,
+                },
+              ],
+            },
+          ]
+        }
+      />
+    </View>
   </View>
 </View>
 `;

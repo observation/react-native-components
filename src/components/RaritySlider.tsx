@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo } from 'react'
 import { StyleSheet, TouchableOpacity, View, useWindowDimensions } from 'react-native'
 
-import { Gesture, GestureDetector } from 'react-native-gesture-handler'
+import { GestureDetector, usePanGesture } from 'react-native-gesture-handler'
 import Animated, {
   interpolate,
   useAnimatedStyle,
@@ -105,10 +105,13 @@ const RaritySlider = ({ rarities, onChange, value }: Props) => {
     onChange(options[index])
   }
 
-  const pan = Gesture.Pan()
-    .hitSlop(layout.hitSlop)
-    .onChange((event) => (offset.value = Math.min(Math.max(event.absoluteX, margin), width - margin)))
-    .onEnd(() => scheduleOnRN(onEndPan))
+  const pan = usePanGesture({
+    testID: 'raritySliderPan',
+    onUpdate: (event) => {
+      offset.value = Math.min(Math.max(event.absoluteX, margin), width - margin)
+    },
+    onDeactivate: () => scheduleOnRN(onEndPan),
+  })
 
   const sliderStyle = useAnimatedStyle(() => ({ transform: [{ translateX: offset.value - handleWidth / 2 }] }))
 
