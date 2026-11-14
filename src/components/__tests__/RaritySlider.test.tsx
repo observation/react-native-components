@@ -2,24 +2,10 @@ import React from 'react'
 
 import { describe, expect, jest, test } from '@jest/globals'
 import { fireEvent, render, waitFor } from '@testing-library/react-native'
-import { Gesture } from 'react-native-gesture-handler'
+import { createGestureController, getByGestureTestId } from 'react-native-gesture-handler/jest-utils'
 
 import { rarities } from '../../lib/TestUtils'
 import RaritySlider from '../RaritySlider'
-
-jest.mock('react-native-gesture-handler', () => {
-  const actualModule = jest.requireActual<any>('react-native-gesture-handler')
-
-  // Always return the same mock pan gesture instance so we can call its handlers in tests
-  const mockPanGesture = actualModule.Gesture.Pan()
-  return {
-    ...actualModule,
-    Gesture: {
-      ...actualModule.Gesture,
-      Pan: () => mockPanGesture,
-    },
-  }
-})
 
 describe('RaritySlider', () => {
   const onChange = jest.fn()
@@ -58,8 +44,11 @@ describe('RaritySlider', () => {
       render(<RaritySlider onChange={onChange} rarities={rarities} value={common} />)
 
       // WHEN
-      Gesture.Pan().handlers.onChange?.({ absoluteX: 300 })
-      Gesture.Pan().handlers.onEnd?.({} as any, true)
+      const pan = createGestureController(getByGestureTestId('raritySliderPan'))
+      pan.begin()
+      pan.activate()
+      pan.update({ absoluteX: 300 })
+      pan.end()
 
       // THEN
       await waitFor(() =>
