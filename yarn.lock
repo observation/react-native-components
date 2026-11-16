@@ -2887,7 +2887,7 @@ __metadata:
     react: 19.3.0
     react-native: 0.88.1
     react-native-calendar-picker: ^8.0.5
-    react-native-fast-image: 8.6.3
+    react-native-fast-image: ^10.11.0
     react-native-fs: ^2.20.0
     react-native-gesture-handler: ^3.4.0
     react-native-logs: ^5.6.0
@@ -2908,7 +2908,7 @@ __metadata:
     "@react-navigation/native": ^7.0.0
     react: ^19.0.0
     react-native: ">=0.83.0"
-    react-native-fast-image: ">=8.6.3"
+    react-native-fast-image: ">=10.11.0"
     react-native-fs: ">=2.20.0"
     react-native-gesture-handler: ">=2.16.1"
     react-native-photo-manipulator: ">=1.9.2"
@@ -11777,23 +11777,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-fast-image@npm:8.6.3":
-  version: 8.6.3
-  resolution: "react-native-fast-image@npm:8.6.3"
+"react-native-fast-image@npm:^10.11.0":
+  version: 10.11.0
+  resolution: "react-native-fast-image@npm:10.11.0"
   peerDependencies:
-    react: ^17 || ^18
-    react-native: ">=0.60.0"
-  checksum: 29289cb6b2eae0983c8922b22e2d9de3be07322bb7991c5def19f95eadefaedb0e308ff0b38cc1d0444e8bd4fe94a7621a99a2d3d9298100bcb60b3144677234
-  languageName: node
-  linkType: hard
-
-"react-native-fast-image@patch:react-native-fast-image@npm%3A8.6.3#./.yarn/patches/react-native-fast-image-npm-8.6.3-03ee2d23c0.patch::locator=%40observation.org%2Freact-native-components%40workspace%3A.":
-  version: 8.6.3
-  resolution: "react-native-fast-image@patch:react-native-fast-image@npm%3A8.6.3#./.yarn/patches/react-native-fast-image-npm-8.6.3-03ee2d23c0.patch::version=8.6.3&hash=8a123a&locator=%40observation.org%2Freact-native-components%40workspace%3A."
-  peerDependencies:
-    react: ^17 || ^18
-    react-native: ">=0.60.0"
-  checksum: 2b704dca141dd8e943d177633c5ec2917640ab330e92907e9ea7e6a28341e9e6888532e9e56d05d8c18370dd96291ece237722f761749ebc5243114c65bfd1cb
+    react: "*"
+    react-native: "*"
+  checksum: 383514f0795158daf4452002bb21a035348ad6c1e0303873f38525a19c3923f38bbfe56fc6a1f2e170daf66d26877d2ce83c1c45ce1ce6d7ad9d72d78b5e7ee6
   languageName: node
   linkType: hard
 
