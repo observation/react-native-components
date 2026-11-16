@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`GalleryImage Rendering Normal 1`] = `
+<Image
+  onLoad={[Function]}
+  resizeMethod="resize"
+  resizeMode="cover"
+  source={
+    {
+      "uri": "file://path/to/photo1.jpg",
+    }
+  }
+  style={
+    {
+      "height": 750,
+      "width": 750,
+    }
+  }
+  testID="image-gallery-image"
+/>
+`;

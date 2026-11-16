@@ -6,7 +6,7 @@ import BottomSheetWithSearchInput from './components/BottomSheetWithSearchInput'
 import CapitalizeText from './components/CapitalizeText'
 import Checkbox from './components/Checkbox'
 import Chip from './components/Chip'
-import ContentImage from './components/ContentImage'
+import ContentImage, { ContentImagePressEvent } from './components/ContentImage'
 import Date from './components/Date'
 import DateFromToFilter from './components/DateFromToFilter'
 import DatePicker from './components/DatePicker'
@@ -32,6 +32,10 @@ import Notification from './components/Notification'
 import NotificationPopup, { NotificationPopupStaticProps } from './components/NotificationPopup'
 import PageIndicator from './components/PageIndicator'
 import Panel from './components/Panel'
+import PhotoCropper from './components/PhotoCropper'
+import PhotoDetails from './components/PhotoDetails'
+import PhotoGallery from './components/PhotoGallery'
+import PhotoGalleryFooter from './components/PhotoGalleryFooter'
 import Popup from './components/Popup'
 import ProgressBarList from './components/ProgressBarList'
 import RaritySlider from './components/RaritySlider'
@@ -40,14 +44,18 @@ import SingleLine from './components/SingleLine'
 import TextLink from './components/TextLink'
 import Tooltip, { TooltipProps } from './components/Tooltip'
 import WebLink from './components/WebLink'
+import CropRegion from './data/CropRegion'
+import ImageFile from './data/ImageFile'
 import ProgressBar from './data/ProgressBar'
 import Rarity from './data/Rarity'
 import useBottomSheetBackHandler from './hooks/useBottomSheetBackHandler'
 import useReportSnackbarInset from './hooks/useReportSnackbarInset'
 import useShowBlurView from './hooks/useShowBlurView'
 import BrandIcons from './lib/BrandIcons'
+import cropImage from './lib/cropImage'
 import Icons, { IconName } from './lib/Icons'
 import { setLogConfiguration } from './lib/Log'
+import scaleImage from './lib/scaleImage'
 import SnackbarReporterContext, { SnackbarReporter } from './lib/SnackbarReporterContext'
 import { openUrl } from './lib/Url'
 import { ThemeProvider } from './theme/ThemeProvider'
@@ -89,6 +97,10 @@ export {
   NotificationPopup,
   PageIndicator,
   Panel,
+  PhotoCropper,
+  PhotoDetails,
+  PhotoGallery,
+  PhotoGalleryFooter,
   Popup,
   ProgressBar,
   ProgressBarList,
@@ -101,7 +113,9 @@ export {
   ThemeProvider,
   Tooltip,
   WebLink,
+  cropImage,
   openUrl,
+  scaleImage,
   setLogConfiguration,
   useBottomSheetBackHandler,
   useReportSnackbarInset,
@@ -119,6 +133,9 @@ export type {
   SnackbarReporter,
   TBlock,
   TooltipProps,
+  ContentImagePressEvent,
+  ImageFile,
+  CropRegion,
 }
 export * from './components/Icon'
 export * from './components/BrandIcon'

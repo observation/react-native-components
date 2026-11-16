@@ -1,0 +1,1365 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PhotoGallery Rendering Normal 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#000000",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "overflow": "hidden",
+      }
+    }
+    testID="root"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "opacity": 1,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": "100%",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "scale": 0,
+              },
+            ],
+          },
+          {
+            "zIndex": 3,
+          },
+        ]
+      }
+      testID="child-0"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "translateY": 0,
+              },
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          resizeMethod="resize"
+          resizeMode="cover"
+          source={
+            {
+              "uri": "https://path.to/image0.jpg",
+            }
+          }
+          style={
+            {
+              "height": 750,
+              "width": 750,
+            }
+          }
+          testID="image-gallery-image"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "opacity": 1,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": "100%",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "scale": 0,
+              },
+            ],
+          },
+          {
+            "zIndex": 2,
+          },
+        ]
+      }
+      testID="child-1"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "translateY": 0,
+              },
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          resizeMethod="resize"
+          resizeMode="cover"
+          source={
+            {
+              "uri": "https://path.to/image1.jpg",
+            }
+          }
+          style={
+            {
+              "height": 750,
+              "width": 750,
+            }
+          }
+          testID="image-gallery-image"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "opacity": 1,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": "100%",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "scale": 0,
+              },
+            ],
+          },
+          {
+            "zIndex": 1,
+          },
+        ]
+      }
+      testID="child-2"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "translateY": 0,
+              },
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          resizeMethod="resize"
+          resizeMode="cover"
+          source={
+            {
+              "uri": "https://path.to/image2.jpg",
+            }
+          }
+          style={
+            {
+              "height": 750,
+              "width": 750,
+            }
+          }
+          testID="image-gallery-image"
+        />
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      style={
+        {
+          "height": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 0,
+          "zIndex": 2147483647,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#00000080",
+          "flexDirection": "row",
+          "left": 0,
+          "paddingBottom": 16,
+          "paddingHorizontal": 16,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        {
+          "paddingTop": 16,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    />
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignSelf": "center",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "alignSelf": "center",
+                "aspectRatio": 1,
+                "backgroundColor": "#939393",
+                "borderRadius": 4,
+                "margin": 4,
+                "overflow": "hidden",
+                "width": 8,
+              },
+              {
+                "backgroundColor": "#ffffff",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            {
+              "alignSelf": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#939393",
+              "borderRadius": 4,
+              "margin": 4,
+              "overflow": "hidden",
+              "width": 8,
+            }
+          }
+        />
+        <View
+          style={
+            {
+              "alignSelf": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#939393",
+              "borderRadius": 4,
+              "margin": 4,
+              "overflow": "hidden",
+              "width": 8,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-end",
+            "justifyContent": "center",
+            "opacity": 1,
+          }
+        }
+        testID="close"
+      >
+        <Icon
+          color="rgba(255, 255, 255, 0.5)"
+          name="xmark"
+          size={24}
+          type="light"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`PhotoGallery Rendering With delete and crop buttons 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#000000",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "overflow": "hidden",
+      }
+    }
+    testID="root"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "opacity": 1,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": "100%",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "scale": 0,
+              },
+            ],
+          },
+          {
+            "zIndex": 3,
+          },
+        ]
+      }
+      testID="child-0"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "translateY": 0,
+              },
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          resizeMethod="resize"
+          resizeMode="cover"
+          source={
+            {
+              "uri": "https://path.to/image0.jpg",
+            }
+          }
+          style={
+            {
+              "height": 750,
+              "width": 750,
+            }
+          }
+          testID="image-gallery-image"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "opacity": 1,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": "100%",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "scale": 0,
+              },
+            ],
+          },
+          {
+            "zIndex": 2,
+          },
+        ]
+      }
+      testID="child-1"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "translateY": 0,
+              },
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          resizeMethod="resize"
+          resizeMode="cover"
+          source={
+            {
+              "uri": "https://path.to/image1.jpg",
+            }
+          }
+          style={
+            {
+              "height": 750,
+              "width": 750,
+            }
+          }
+          testID="image-gallery-image"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "opacity": 1,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": "100%",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "scale": 0,
+              },
+            ],
+          },
+          {
+            "zIndex": 1,
+          },
+        ]
+      }
+      testID="child-2"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "translateY": 0,
+              },
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          resizeMethod="resize"
+          resizeMode="cover"
+          source={
+            {
+              "uri": "https://path.to/image2.jpg",
+            }
+          }
+          style={
+            {
+              "height": 750,
+              "width": 750,
+            }
+          }
+          testID="image-gallery-image"
+        />
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      style={
+        {
+          "height": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 0,
+          "zIndex": 2147483647,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#00000080",
+          "flexDirection": "row",
+          "left": 0,
+          "paddingBottom": 16,
+          "paddingHorizontal": 16,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        {
+          "paddingTop": 16,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    />
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignSelf": "center",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            [
+              {
+                "alignSelf": "center",
+                "aspectRatio": 1,
+                "backgroundColor": "#939393",
+                "borderRadius": 4,
+                "margin": 4,
+                "overflow": "hidden",
+                "width": 8,
+              },
+              {
+                "backgroundColor": "#ffffff",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            {
+              "alignSelf": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#939393",
+              "borderRadius": 4,
+              "margin": 4,
+              "overflow": "hidden",
+              "width": 8,
+            }
+          }
+        />
+        <View
+          style={
+            {
+              "alignSelf": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#939393",
+              "borderRadius": 4,
+              "margin": 4,
+              "overflow": "hidden",
+              "width": 8,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-end",
+            "justifyContent": "center",
+            "opacity": 1,
+          }
+        }
+        testID="close"
+      >
+        <Icon
+          color="rgba(255, 255, 255, 0.5)"
+          name="xmark"
+          size={24}
+          type="light"
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#00000080",
+          "bottom": 0,
+          "left": 0,
+          "paddingHorizontal": 16,
+          "paddingTop": 8,
+          "position": "absolute",
+          "right": 0,
+        },
+        {
+          "paddingBottom": 8,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "flexDirection": "row",
+          "marginHorizontal": 16,
+          "marginVertical": 24,
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          hitSlop={
+            {
+              "bottom": 8,
+              "left": 8,
+              "right": 8,
+              "top": 8,
+            }
+          }
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+          testID="delete-photo"
+        >
+          <Icon
+            color="#ffffff"
+            name="trash-can"
+            size={20}
+            type="light"
+          />
+        </View>
+      </View>
+      <View
+        style={
+          {
+            "alignItems": "center",
+            "flex": 1,
+          }
+        }
+      >
+        <View
+          accessibilityState={
+            {
+              "busy": undefined,
+              "checked": undefined,
+              "disabled": undefined,
+              "expanded": undefined,
+              "selected": undefined,
+            }
+          }
+          accessibilityValue={
+            {
+              "max": undefined,
+              "min": undefined,
+              "now": undefined,
+              "text": undefined,
+            }
+          }
+          accessible={true}
+          collapsable={false}
+          focusable={true}
+          hitSlop={
+            {
+              "bottom": 8,
+              "left": 8,
+              "right": 8,
+              "top": 8,
+            }
+          }
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            {
+              "opacity": 1,
+            }
+          }
+          testID="crop-photo"
+        >
+          <Icon
+            color="#ffffff"
+            name="crop-simple"
+            size={20}
+            type="light"
+          />
+        </View>
+      </View>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`PhotoGallery Rendering With footer for the current photo 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#000000",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      {
+        "alignItems": "center",
+        "flex": 1,
+        "justifyContent": "center",
+        "overflow": "hidden",
+      }
+    }
+    testID="root"
+  >
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "opacity": 1,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": "100%",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "scale": 0,
+              },
+            ],
+          },
+          {
+            "zIndex": 3,
+          },
+        ]
+      }
+      testID="child-0"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "translateY": 0,
+              },
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          resizeMethod="resize"
+          resizeMode="cover"
+          source={
+            {
+              "uri": "https://path.to/image0.jpg",
+            }
+          }
+          style={
+            {
+              "height": 750,
+              "width": 750,
+            }
+          }
+          testID="image-gallery-image"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "opacity": 1,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": "100%",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "scale": 0,
+              },
+            ],
+          },
+          {
+            "zIndex": 2,
+          },
+        ]
+      }
+      testID="child-1"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "translateY": 0,
+              },
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          resizeMethod="resize"
+          resizeMode="cover"
+          source={
+            {
+              "uri": "https://path.to/image1.jpg",
+            }
+          }
+          style={
+            {
+              "height": 750,
+              "width": 750,
+            }
+          }
+          testID="image-gallery-image"
+        />
+      </View>
+    </View>
+    <View
+      style={
+        [
+          {
+            "alignItems": "center",
+            "height": "100%",
+            "justifyContent": "center",
+            "opacity": 1,
+            "overflow": "hidden",
+            "position": "absolute",
+            "width": "100%",
+          },
+          {
+            "opacity": 1,
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "scale": 0,
+              },
+            ],
+          },
+          {
+            "zIndex": 1,
+          },
+        ]
+      }
+      testID="child-2"
+    >
+      <View
+        onLayout={[Function]}
+        style={
+          {
+            "transform": [
+              {
+                "translateX": 0,
+              },
+              {
+                "translateY": 0,
+              },
+              {
+                "scale": 1,
+              },
+            ],
+          }
+        }
+      >
+        <Image
+          onLoad={[Function]}
+          resizeMethod="resize"
+          resizeMode="cover"
+          source={
+            {
+              "uri": "https://path.to/image2.jpg",
+            }
+          }
+          style={
+            {
+              "height": 750,
+              "width": 750,
+            }
+          }
+          testID="image-gallery-image"
+        />
+      </View>
+    </View>
+    <View
+      collapsable={false}
+      style={
+        {
+          "height": 0,
+          "position": "absolute",
+          "transform": [
+            {
+              "translateX": 0,
+            },
+            {
+              "translateY": 0,
+            },
+            {
+              "scale": 1,
+            },
+          ],
+          "width": 0,
+          "zIndex": 2147483647,
+        }
+      }
+    />
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#00000080",
+          "flexDirection": "row",
+          "left": 0,
+          "paddingBottom": 16,
+          "paddingHorizontal": 16,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        },
+        {
+          "paddingTop": 16,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    />
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "justifyContent": "center",
+        }
+      }
+    >
+      <View
+        style={
+          {
+            "alignSelf": "center",
+            "flexDirection": "row",
+          }
+        }
+      >
+        <View
+          style={
+            {
+              "alignSelf": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#939393",
+              "borderRadius": 4,
+              "margin": 4,
+              "overflow": "hidden",
+              "width": 8,
+            }
+          }
+        />
+        <View
+          style={
+            [
+              {
+                "alignSelf": "center",
+                "aspectRatio": 1,
+                "backgroundColor": "#939393",
+                "borderRadius": 4,
+                "margin": 4,
+                "overflow": "hidden",
+                "width": 8,
+              },
+              {
+                "backgroundColor": "#ffffff",
+              },
+            ]
+          }
+        />
+        <View
+          style={
+            {
+              "alignSelf": "center",
+              "aspectRatio": 1,
+              "backgroundColor": "#939393",
+              "borderRadius": 4,
+              "margin": 4,
+              "overflow": "hidden",
+              "width": 8,
+            }
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        {
+          "flex": 1,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "alignSelf": "flex-end",
+            "justifyContent": "center",
+            "opacity": 1,
+          }
+        }
+        testID="close"
+      >
+        <Icon
+          color="rgba(255, 255, 255, 0.5)"
+          name="xmark"
+          size={24}
+          type="light"
+        />
+      </View>
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "backgroundColor": "#00000080",
+          "bottom": 0,
+          "left": 0,
+          "paddingHorizontal": 16,
+          "paddingTop": 8,
+          "position": "absolute",
+          "right": 0,
+        },
+        {
+          "paddingBottom": 8,
+        },
+      ]
+    }
+  >
+    <Text>
+      Footer of photo 
+      1
+    </Text>
+  </View>
+</View>
+`;
