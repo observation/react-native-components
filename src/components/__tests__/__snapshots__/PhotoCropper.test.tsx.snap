@@ -591,7 +591,20 @@ exports[`PhotoCropper Rendering Square crop area on iOS 1`] = `
           />
         </RNSVGGroup>
       </RNSVGSvgView>
-      <View
+      <FastImageView
+        handledEvents={0}
+        loopCount={-1}
+        objectFit="cover"
+        objectPositionX={0.5}
+        objectPositionXOffset={0}
+        objectPositionY={0.5}
+        objectPositionYOffset={0}
+        placeholder={null}
+        source={
+          {
+            "uri": "file:///path/to/photo.jpg",
+          }
+        }
         style={
           [
             {
@@ -602,26 +615,10 @@ exports[`PhotoCropper Rendering Square crop area on iOS 1`] = `
             },
           ]
         }
-      >
-        <FastImageView
-          defaultSource={null}
-          resizeMode="cover"
-          source={
-            {
-              "uri": "file:///path/to/photo.jpg",
-            }
-          }
-          style={
-            {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            }
-          }
-        />
-      </View>
+        transitionBetweenImages={false}
+        transitionDuration={0}
+        transitionSkipOnCacheHit="memory"
+      />
     </View>
   </View>
   <View
@@ -1428,7 +1425,20 @@ exports[`PhotoCropper Rendering Without a fixed aspect ratio, the presets are sh
           />
         </RNSVGGroup>
       </RNSVGSvgView>
-      <View
+      <FastImageView
+        handledEvents={0}
+        loopCount={-1}
+        objectFit="cover"
+        objectPositionX={0.5}
+        objectPositionXOffset={0}
+        objectPositionY={0.5}
+        objectPositionYOffset={0}
+        placeholder={null}
+        source={
+          {
+            "uri": "file:///path/to/photo.jpg",
+          }
+        }
         style={
           [
             {
@@ -1439,26 +1449,10 @@ exports[`PhotoCropper Rendering Without a fixed aspect ratio, the presets are sh
             },
           ]
         }
-      >
-        <FastImageView
-          defaultSource={null}
-          resizeMode="cover"
-          source={
-            {
-              "uri": "file:///path/to/photo.jpg",
-            }
-          }
-          style={
-            {
-              "bottom": 0,
-              "left": 0,
-              "position": "absolute",
-              "right": 0,
-              "top": 0,
-            }
-          }
-        />
-      </View>
+        transitionBetweenImages={false}
+        transitionDuration={0}
+        transitionSkipOnCacheHit="memory"
+      />
     </View>
   </View>
   <View
