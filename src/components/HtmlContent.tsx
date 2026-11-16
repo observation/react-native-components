@@ -7,12 +7,23 @@ import RenderHtml, {
   RenderHTMLProps,
   TBlock,
   defaultSystemFonts,
+  useRendererProps,
 } from '@native-html/render'
 
-import ContentImage from './ContentImage'
+import ContentImage, { ContentImagePressEvent } from './ContentImage'
 import Log from '../lib/Log'
 import { openUrl } from '../lib/Url'
 import { useTheme } from '../theme'
+
+declare module '@native-html/render' {
+  interface ImgElementConfig {
+    /**
+     * Called when an image with an `alt` text is pressed, e.g. to show it in a photo gallery.
+     * Without it, the image opens in a `Lightbox` (deprecated).
+     */
+    onPress?: (image: ContentImagePressEvent) => void
+  }
+}
 
 type HtmlContentProps =
   | ({ html: string; source?: never } & Omit<RenderHTMLProps, 'source'>)
@@ -65,11 +76,12 @@ const useHtmlStyles = (): Readonly<Record<string, MixedStyleDeclaration>> => {
 
 const ImgRenderer = ({ tnode }: { tnode: TBlock }) => {
   Log.trace('HtmlContent:ImgRenderer')
+  const { onPress } = useRendererProps('img')
   const { src, alt } = tnode.attributes
   if (!src) {
     return null
   }
-  return <ContentImage key={src} alt={alt} src={src} />
+  return <ContentImage key={src} alt={alt} src={src} onPress={onPress} />
 }
 
 const OlRenderer = ({ InternalRenderer, ...props }: CustomRendererProps<TBlock>) => {

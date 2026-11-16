@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`CropMask Rendering Circle 1`] = `
+<RNSVGSvgView
+  bbHeight={600}
+  bbWidth={400}
+  focusable={false}
+  height={600}
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "flex": 0,
+        "height": 600,
+        "width": 400,
+      },
+    ]
+  }
+  width={400}
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGDefs>
+      <RNSVGMask
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+        height="100%"
+        maskContentUnits={1}
+        maskType={0}
+        maskUnits={0}
+        name="mask"
+        width="100%"
+        x="0%"
+        y="0%"
+      >
+        <RNSVGRect
+          fill={
+            {
+              "payload": 4294967295,
+              "type": 0,
+            }
+          }
+          height="100%"
+          propList={
+            [
+              "fill",
+            ]
+          }
+          width="100%"
+          x={0}
+          y={0}
+        />
+        <RNSVGCircle
+          cx={200}
+          cy={300}
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          propList={
+            [
+              "fill",
+              "strokeWidth",
+            ]
+          }
+          r={150}
+          strokeWidth={0.5}
+        />
+      </RNSVGMask>
+    </RNSVGDefs>
+    <RNSVGRect
+      fill={
+        {
+          "payload": 2147483648,
+          "type": 0,
+        }
+      }
+      height="100%"
+      mask="mask"
+      propList={
+        [
+          "fill",
+        ]
+      }
+      width="100%"
+      x={0}
+      y={0}
+    />
+    <RNSVGCircle
+      cx={200}
+      cy={300}
+      fill={
+        {
+          "payload": 0,
+          "type": 0,
+        }
+      }
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+        ]
+      }
+      r={150}
+      stroke={
+        {
+          "payload": 4294967295,
+          "type": 0,
+        }
+      }
+      strokeWidth={0.5}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;
+
+exports[`CropMask Rendering Rectangle 1`] = `
+<RNSVGSvgView
+  bbHeight={600}
+  bbWidth={400}
+  focusable={false}
+  height={600}
+  style={
+    [
+      {
+        "backgroundColor": "transparent",
+        "borderWidth": 0,
+      },
+      {
+        "flex": 0,
+        "height": 600,
+        "width": 400,
+      },
+    ]
+  }
+  width={400}
+>
+  <RNSVGGroup
+    fill={
+      {
+        "payload": 4278190080,
+        "type": 0,
+      }
+    }
+  >
+    <RNSVGDefs>
+      <RNSVGMask
+        fill={
+          {
+            "payload": 4278190080,
+            "type": 0,
+          }
+        }
+        height="100%"
+        maskContentUnits={1}
+        maskType={0}
+        maskUnits={0}
+        name="mask"
+        width="100%"
+        x="0%"
+        y="0%"
+      >
+        <RNSVGRect
+          fill={
+            {
+              "payload": 4294967295,
+              "type": 0,
+            }
+          }
+          height="100%"
+          propList={
+            [
+              "fill",
+            ]
+          }
+          width="100%"
+          x={0}
+          y={0}
+        />
+        <RNSVGRect
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+          height={200}
+          propList={
+            [
+              "fill",
+              "strokeWidth",
+            ]
+          }
+          strokeWidth={0.5}
+          width={300}
+          x={50}
+          y={200}
+        />
+      </RNSVGMask>
+    </RNSVGDefs>
+    <RNSVGRect
+      fill={
+        {
+          "payload": 2147483648,
+          "type": 0,
+        }
+      }
+      height="100%"
+      mask="mask"
+      propList={
+        [
+          "fill",
+        ]
+      }
+      width="100%"
+      x={0}
+      y={0}
+    />
+    <RNSVGRect
+      fill={
+        {
+          "payload": 0,
+          "type": 0,
+        }
+      }
+      height={200}
+      propList={
+        [
+          "fill",
+          "stroke",
+          "strokeWidth",
+        ]
+      }
+      stroke={
+        {
+          "payload": 4294967295,
+          "type": 0,
+        }
+      }
+      strokeWidth={0.5}
+      width={300}
+      x={50}
+      y={200}
+    />
+  </RNSVGGroup>
+</RNSVGSvgView>
+`;

@@ -14,7 +14,7 @@ UI components:
 - `CapitalizeText`
 - `Checkbox`
 - `Chip`
-- `ContentImage`
+- `ContentImage (+ ContentImagePressEvent)`
 - `Date`
 - `DateFromToFilter`
 - `DatePicker`
@@ -34,7 +34,7 @@ UI components:
 - `InputPanel`
 - `ItemSeparator`
 - `LargeButton (+ LargeButtonProps)`
-- `Lightbox`
+- `Lightbox`: Deprecated, use `PhotoGallery`
 - `ListItem`
 - `Location`
 - `Message`
@@ -44,6 +44,10 @@ UI components:
 - `PageIndicator`
 - `Panel`
 - `PercentageCircle`
+- `PhotoCropper`
+- `PhotoDetails`
+- `PhotoGallery`
+- `PhotoGalleryFooter`
 - `Popup`
 - `ProgressBar`
 - `ProgressBarList`
@@ -57,8 +61,10 @@ UI components:
 
 non-UI components:
 
+- `cropImage (+ CropRegion, ImageFile)`: Rotates and crops a photo to the region selected in `PhotoCropper`
 - `Log.setLogConfiguration`: A function to change the logging of the component library
 - `openUrl`: Opens URLs
+- `scaleImage`: Scales a photo down to fit within a maximum size, as a JPEG in the tmp directory
 - `SnackbarReporterContext (+ SnackbarReporter)`: Context through which a screen reports bottom insets and open modals to the app's snackbar
 - `useBottomSheetBackHandler`: A hook to close a BottomSheet on the Android hardware back button
 - `useReportSnackbarInset`: A hook to report the height of a UI element at the bottom of the screen, so a snackbar is shown above it
