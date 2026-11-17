@@ -1,11 +1,12 @@
 {
   "name": "@observation.org/react-native-components",
-  "version": "1.108.0",
+  "versioe": "1.109.0",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
     "./theme": "./src/theme/index.ts",
-    "./styles": "./src/styles/index.ts"
+    "./styles": "./src/styles/index.ts",
+    "./testing": "./src/testing/index.ts"
   },
   "repository": "git@github.com:observation/react-native-components.git",
   "author": "Observation.org",
@@ -43,7 +44,9 @@
     "@react-native/jest-preset": "0.88.1",
     "@react-native/metro-config": "^0.88.1",
     "@react-native/typescript-config": "0.88.1",
+    "@react-navigation/bottom-tabs": "^7.21.0",
     "@react-navigation/native": "^7.5.1",
+    "@react-navigation/stack": "^7.12.1",
     "@rnx-kit/align-deps": "^5.0.1",
     "@testing-library/react-native": "^13.3.3",
     "@types/jest": "^30.0.0",
@@ -62,6 +65,8 @@
     "eslint-plugin-react-native-a11y": "^3.5.1",
     "globals": "^16.5.0",
     "jest": "^30.5.2",
+    "mobx": "^6.16.1",
+    "mobx-react-lite": "^4.1.1",
     "prettier": "^3.9.10",
     "react": "19.3.0",
     "react-native": "0.88.1",
@@ -84,7 +89,11 @@
   "peerDependencies": {
     "@gorhom/bottom-sheet": ">=5.2.9",
     "@react-native-community/blur": ">=4.4.1",
+    "@react-navigation/bottom-tabs": "^7.0.0",
     "@react-navigation/native": "^7.0.0",
+    "@testing-library/react-native": ">=13.0.0",
+    "mobx": ">=6.10.0",
+    "mobx-react-lite": ">=4.0.0",
     "react": "^19.0.0",
     "react-native": ">=0.83.0",
     "react-native-gesture-handler": ">=3.0.0",
@@ -92,6 +101,11 @@
     "react-native-safe-area-context": ">=5.7.0",
     "react-native-svg": ">=15.0.0",
     "react-native-worklets": ">=0.8.0"
+  },
+  "peerDependenciesMeta": {
+    "@testing-library/react-native": {
+      "optional": true
+    }
   },
   "packageManager": "yarn@3.6.4",
   "rnx-kit": {

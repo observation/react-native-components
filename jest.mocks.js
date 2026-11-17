@@ -74,6 +74,11 @@ jest.mock('react-native-gesture-handler/lib/module/GestureHandlerRootViewContext
   require('react').createContext(true),
 )
 
+// mobx-react-lite's CommonJS build gets its batching from react-dom, which is not installed in this library
+jest.mock('react-dom', () => ({ unstable_batchedUpdates: require('react-native').unstable_batchedUpdates }), {
+  virtual: true,
+})
+
 jest.mock('react-native-worklets', () => require('react-native-worklets/src/mock'))
 
 jest.mock('react-native-reanimated', () => require('react-native-reanimated/mock'))
