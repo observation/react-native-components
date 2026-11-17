@@ -55,7 +55,6 @@ import BrandIcons from './lib/BrandIcons'
 import cropImage from './lib/cropImage'
 import Icons, { IconName } from './lib/Icons'
 import { setLogConfiguration } from './lib/Log'
-import scaleImage from './lib/scaleImage'
 import SnackbarReporterContext, { SnackbarReporter } from './lib/SnackbarReporterContext'
 import { openUrl } from './lib/Url'
 import { ThemeProvider } from './theme/ThemeProvider'
@@ -115,7 +114,6 @@ export {
   WebLink,
   cropImage,
   openUrl,
-  scaleImage,
   setLogConfiguration,
   useBottomSheetBackHandler,
   useReportSnackbarInset,
