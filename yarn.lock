@@ -1783,16 +1783,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@bam.tech/react-native-image-resizer@npm:^3.0.11":
-  version: 3.0.11
-  resolution: "@bam.tech/react-native-image-resizer@npm:3.0.11"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  checksum: 0d9e95c625f8ef3a5d7195721d8ac6463a08468c9474f2627a1a85cefa509efc06bd160bd9108d1cce1fa05751a4b69871dce975659571009149d258cf9ddd8b
-  languageName: node
-  linkType: hard
-
 "@bcoe/v8-coverage@npm:^0.2.3":
   version: 0.2.3
   resolution: "@bcoe/v8-coverage@npm:0.2.3"
@@ -2842,7 +2832,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@observation.org/react-native-components@workspace:."
   dependencies:
-    "@bam.tech/react-native-image-resizer": ^3.0.11
     "@eslint/eslintrc": ^3.3.7
     "@eslint/js": ^9.39.5
     "@fortawesome/fontawesome-svg-core": ^6.7.2
@@ -2888,7 +2877,6 @@ __metadata:
     react-native: 0.88.1
     react-native-calendar-picker: ^8.0.5
     react-native-fast-image: ^10.11.0
-    react-native-fs: ^2.20.0
     react-native-gesture-handler: ^3.4.0
     react-native-logs: ^5.6.0
     react-native-photo-manipulator: ^1.9.2
@@ -2902,7 +2890,6 @@ __metadata:
     ts-jest: ^29.4.15
     typescript: 6.0.3
   peerDependencies:
-    "@bam.tech/react-native-image-resizer": ">=3.0.0"
     "@gorhom/bottom-sheet": ">=5.2.9"
     "@react-native-community/blur": ">=4.4.1"
     "@react-navigation/native": ^7.0.0
@@ -5221,13 +5208,6 @@ __metadata:
   version: 4.0.4
   resolution: "balanced-match@npm:4.0.4"
   checksum: fb07bb66a0959c2843fc055838047e2a95ccebb837c519614afb067ebfdf2fa967ca8d712c35ced07f2cd26fc6f07964230b094891315ad74f11eba3d53178a0
-  languageName: node
-  linkType: hard
-
-"base-64@npm:^0.1.0":
-  version: 0.1.0
-  resolution: "base-64@npm:0.1.0"
-  checksum: 5a42938f82372ab5392cbacc85a5a78115cbbd9dbef9f7540fa47d78763a3a8bd7d598475f0d92341f66285afd377509851a9bb5c67bbecb89686e9255d5b3eb
   languageName: node
   linkType: hard
 
@@ -11787,22 +11767,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-native-fs@npm:^2.20.0":
-  version: 2.20.0
-  resolution: "react-native-fs@npm:2.20.0"
-  dependencies:
-    base-64: ^0.1.0
-    utf8: ^3.0.0
-  peerDependencies:
-    react-native: "*"
-    react-native-windows: "*"
-  peerDependenciesMeta:
-    react-native-windows:
-      optional: true
-  checksum: 0be9bb9a5c13b501d0a3006efc3aa5c0b5b211456ee04718297f4e522532f3527f1daa220bd67d3b82d819ed8fdab8f64b7d6e0d7b768c1fd1d8ec9122d94316
-  languageName: node
-  linkType: hard
-
 "react-native-gesture-handler@npm:^3.4.0":
   version: 3.4.0
   resolution: "react-native-gesture-handler@npm:3.4.0"
@@ -13893,13 +13857,6 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   checksum: 61a62e910713adfaf91bdb72ff2cd30e5ba83687accaf3b6e75a903b45bf635f5722e3694af30d83a03e92cb533c0a5c699298d2fef639a03ffc86b469f4eee2
-  languageName: node
-  linkType: hard
-
-"utf8@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "utf8@npm:3.0.0"
-  checksum: cb89a69ad9ab393e3eae9b25305b3ff08bebca9adc839191a34f90777eb2942f86a96369d2839925fea58f8f722f7e27031d697f10f5f39690f8c5047303e62d
   languageName: node
   linkType: hard
 
