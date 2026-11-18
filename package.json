@@ -65,10 +65,14 @@
     "prettier": "^3.9.10",
     "react": "19.3.0",
     "react-native": "0.88.1",
+    "react-native-fast-image": "^10.11.0",
     "react-native-gesture-handler": "^3.4.0",
+    "react-native-photo-manipulator": "^1.9.2",
     "react-native-reanimated": "4.7.1",
     "react-native-safe-area-context": "^5.11.0",
+    "react-native-svg": "^15.16.0",
     "react-native-worklets": "0.13.1",
+    "react-native-zoom-toolkit": "^5.1.0",
     "react-test-renderer": "19.3.0",
     "ts-jest": "^29.4.15",
     "typescript": "6.0.3"
@@ -86,11 +90,14 @@
     "@react-navigation/native": "^7.0.0",
     "react": "^19.0.0",
     "react-native": ">=0.83.0",
+    "react-native-fast-image": ">=10.11.0",
     "react-native-gesture-handler": ">=2.16.1",
+    "react-native-photo-manipulator": ">=1.9.2",
     "react-native-reanimated": ">=4.0.0",
     "react-native-safe-area-context": ">=5.7.0",
     "react-native-svg": ">=15.0.0",
-    "react-native-worklets": ">=0.8.0"
+    "react-native-worklets": ">=0.8.0",
+    "react-native-zoom-toolkit": ">=5.1.0"
   },
   "packageManager": "yarn@3.6.4",
   "rnx-kit": {

@@ -111,6 +111,9 @@ type Props = {
   style?: LightboxStyle
 }
 
+/**
+ * @deprecated Use `PhotoGallery` instead. For images in `HtmlContent`, pass `renderersProps.img.onPress`.
+ */
 const Lightbox = ({
   index,
   onClose,
