@@ -40,6 +40,7 @@ import RaritySlider from './components/RaritySlider'
 import SectionHeader from './components/SectionHeader'
 import SingleLine from './components/SingleLine'
 import SnackbarHost, { snackbarAutoDismissDuration } from './components/SnackbarHost'
+import SnackbarProvider from './components/SnackbarProvider'
 import TabBarInsetReporter from './components/TabBarInsetReporter'
 import TextLink from './components/TextLink'
 import Tooltip, { TooltipProps } from './components/Tooltip'
@@ -108,6 +109,7 @@ export {
   SingleLine,
   SnackbarHost,
   SnackbarMessage,
+  SnackbarProvider,
   SnackbarReporterContext,
   SnackbarStore,
   SnackbarStoreContext,
