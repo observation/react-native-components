@@ -1,5 +1,8 @@
 name: CI
 on: [push]
+concurrency:
+  group: ${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   tests:
     runs-on: ubuntu-latest
@@ -7,6 +10,11 @@ jobs:
       FONTAWESOME_NPM_AUTH_TOKEN: ${{ secrets.FONTAWESOME_NPM_AUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+
       - name: Cache Yarn cache and node_modules
         uses: actions/cache@v6
         with:
@@ -14,9 +22,12 @@ jobs:
             .yarn/cache
             node_modules
           key: ${{ runner.os }}-yarn-${{ hashFiles('yarn.lock') }}
+
       - name: Install modules
         run: yarn
+
       - name: Run lint
         run: yarn lint
+
       - name: Run tests with coverage
         run: yarn test --coverage --silent
