@@ -62,6 +62,7 @@ non-UI components:
 - `openUrl`: Opens URLs
 - `snackbarAutoDismissDuration`: Time in ms before a snackbar message without a close button or action is dismissed
 - `SnackbarMessage (+ SnackbarMessageParams)`: A message shown in the snackbar
+- `SnackbarProvider`: Provides the app's `SnackbarStore` through `SnackbarStoreContext` and `SnackbarReporterContext`
 - `SnackbarReporterContext (+ SnackbarReporter)`: Context through which a screen reports bottom insets and open modals to the app's snackbar
 - `SnackbarStore`: MobX store with the current snackbar message, the content insets and the open modals
 - `SnackbarStoreContext`, `useSnackbarStore`: Context through which the app provides its `SnackbarStore`
@@ -94,17 +95,15 @@ The snackbar shows one message at a time at the bottom of the screen, above bott
 
 ### Setup
 
-Create one `SnackbarStore`, provide it through `SnackbarStoreContext` (for showing messages) and `SnackbarReporterContext` (for reporting insets and modals), and place the `SnackbarHost` once in the root of the app, after the navigation:
+Create one `SnackbarStore`, provide it with `SnackbarProvider` (for showing messages and for reporting insets and modals), and place the `SnackbarHost` once in the root of the app, after the navigation:
 
 ```tsx
 const snackbarStore = new SnackbarStore()
 
-<SnackbarStoreContext.Provider value={snackbarStore}>
-  <SnackbarReporterContext.Provider value={snackbarStore}>
-    <AppContainer />
-  </SnackbarReporterContext.Provider>
+<SnackbarProvider store={snackbarStore}>
+  <AppContainer />
   <SnackbarHost />
-</SnackbarStoreContext.Provider>
+</SnackbarProvider>
 ```
 
 `SnackbarHost` positions the message above the reported insets, dismisses messages without a close button or action after `snackbarAutoDismissDuration`, suppresses the snackbar while a modal is open, and hides the message when the app goes to the background.
