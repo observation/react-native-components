@@ -1,0 +1,287 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`Snackbar Rendering An action button and a close button are shown when the message has an action 1`] = `
+<View
+  entering={BaseAnimationMock {}}
+  exiting={BaseAnimationMock {}}
+  pointerEvents="box-none"
+  style={
+    [
+      {
+        "left": 0,
+        "marginHorizontal": 16,
+        "position": "absolute",
+        "right": 0,
+      },
+      {
+        "bottom": 0,
+      },
+    ]
+  }
+  testID="snackbar"
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#212121",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "gap": 8,
+        "paddingHorizontal": 16,
+        "paddingVertical": 14,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Something happened
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "flex-end",
+            "alignSelf": "flex-start",
+            "marginLeft": 4,
+            "opacity": 1,
+          }
+        }
+        testID="close-button"
+      >
+        <Icon
+          color="#72a1fd"
+          name="xmark"
+          size={18}
+          type="light"
+        />
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "alignSelf": "flex-end",
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#72a1fd",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Undo
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`Snackbar Rendering The message text is rendered 1`] = `
+<View
+  entering={BaseAnimationMock {}}
+  exiting={BaseAnimationMock {}}
+  pointerEvents="box-none"
+  style={
+    [
+      {
+        "left": 0,
+        "marginHorizontal": 16,
+        "position": "absolute",
+        "right": 0,
+      },
+      {
+        "bottom": 0,
+      },
+    ]
+  }
+  testID="snackbar"
+>
+  <View
+    style={
+      {
+        "backgroundColor": "#212121",
+        "borderRadius": 4,
+        "flexDirection": "column",
+        "gap": 8,
+        "paddingHorizontal": 16,
+        "paddingVertical": 14,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "center",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "flexShrink": 1,
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Hello there
+      </Text>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": undefined,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "flex-end",
+            "alignSelf": "flex-start",
+            "marginLeft": 4,
+            "opacity": 1,
+          }
+        }
+        testID="close-button"
+      >
+        <Icon
+          color="#72a1fd"
+          name="xmark"
+          size={18}
+          type="light"
+        />
+      </View>
+    </View>
+  </View>
+</View>
+`;
