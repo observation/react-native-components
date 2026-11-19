@@ -32,6 +32,7 @@ import Notification from './components/Notification'
 import NotificationPopup, { NotificationPopupStaticProps } from './components/NotificationPopup'
 import PageIndicator from './components/PageIndicator'
 import Panel from './components/Panel'
+import PercentageCircle from './components/PercentageCircle'
 import Popup from './components/Popup'
 import ProgressBarList from './components/ProgressBarList'
 import RaritySlider from './components/RaritySlider'
@@ -89,6 +90,7 @@ export {
   NotificationPopup,
   PageIndicator,
   Panel,
+  PercentageCircle,
   Popup,
   ProgressBar,
   ProgressBarList,
