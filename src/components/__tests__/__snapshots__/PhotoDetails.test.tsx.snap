@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
-exports[`PhotoDetails Rendering Normal 1`] = `
+exports[`PhotoDetails Rendering With all details 1`] = `
 <View
   style={
     {

@@ -115,7 +115,7 @@ const PhotoGallery = ({ photos, currentIndex, onIndexChange, onClose, renderFoot
                     onPress={() => onDelete(currentIndex)}
                     hitSlop={layout.hitSlop}
                     testID="delete-photo"
-                    icon={{ name: 'trash-alt', color: actionIconColor, size: 20 }}
+                    icon={{ name: 'trash-alt', color: actionIconColor, size: theme.icon.size.xl }}
                   />
                 )}
               </View>
@@ -125,7 +125,7 @@ const PhotoGallery = ({ photos, currentIndex, onIndexChange, onClose, renderFoot
                     onPress={() => onCrop(currentIndex)}
                     hitSlop={layout.hitSlop}
                     testID="crop-photo"
-                    icon={{ name: 'crop-alt', color: actionIconColor, size: 20 }}
+                    icon={{ name: 'crop-alt', color: actionIconColor, size: theme.icon.size.xl }}
                   />
                 )}
               </View>

@@ -20,18 +20,11 @@ type Size = {
 type AspectRatioPreset = 'original' | '4:3' | '3:2' | 'square'
 type Orientation = 'landscape' | 'portrait'
 
-type Props = {
+export type BaseProps = {
   /** Uri of the photo to crop */
   uri: string
   /** Size of the photo in pixels, with the EXIF orientation applied */
   resolution: Size
-  /**
-   * Width divided by height of the crop area, which the user can't change.
-   * Without it, the user can choose an aspect ratio preset and the orientation.
-   */
-  fixedAspectRatio?: number
-  /** The shape of the crop area, a circle needs a fixed aspect ratio of 1 */
-  mask?: 'rectangle' | 'circle'
   labels: {
     cancel: string
     reset: string
@@ -45,6 +38,25 @@ type Props = {
   /** Called with the region of the photo to crop to */
   onConfirm: (cropRegion: CropRegion) => void
 }
+
+export type RectangleProps = {
+  /**
+   * Width divided by height of the crop area, which the user can't change.
+   * Without it, the user can choose an aspect ratio preset and the orientation.
+   */
+  fixedAspectRatio?: number
+  /** The shape of the crop area */
+  mask?: 'rectangle'
+}
+
+export type CircleProps = {
+  /** A circle always has a fixed aspect ratio of 1 */
+  fixedAspectRatio: 1
+  /** The shape of the crop area */
+  mask: 'circle'
+}
+
+type Props = BaseProps & (RectangleProps | CircleProps)
 
 const PhotoCropper = ({
   uri,

@@ -14,13 +14,16 @@ describe('HtmlContent', () => {
         expect(toJSON()).toMatchSnapshot()
       })
 
-      test('Pressing an image calls renderersProps.img.onPress', () => {
+      test('Pressing an image passes its url, title and description to the press handler', () => {
+        // GIVEN
         const html = `<img src="https://waarneming.nl/image.jpeg" alt="Title | Description" />`
         const onPress = jest.fn()
         const { getByTestId } = render(<HtmlContent html={html} renderersProps={{ img: { onPress } }} />)
 
+        // WHEN
         fireEvent.press(getByTestId('photo'))
 
+        // THEN
         expect(onPress).toHaveBeenCalledWith({
           src: 'https://waarneming.nl/image.jpeg',
           title: 'Title',

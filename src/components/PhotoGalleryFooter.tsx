@@ -42,7 +42,6 @@ const createStyles = (theme: Theme) => {
     },
     title: {
       ...theme.font.largeBold,
-      lineHeight: 24,
       color: theme.color.text.system.staticWhite,
     },
     description: {

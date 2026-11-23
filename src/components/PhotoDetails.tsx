@@ -35,7 +35,7 @@ const PhotoDetails = ({ title, label, value, location, attribution }: Props) => 
 
       {(!!label || !!value) && (
         <View>
-          {!!label && <Text style={styles.label}>{label}</Text>}
+          {!!label && <Text style={theme.text.subLabel}>{label}</Text>}
           {!!value && <Text style={styles.value}>{value}</Text>}
         </View>
       )}
@@ -46,14 +46,14 @@ const PhotoDetails = ({ title, label, value, location, attribution }: Props) => 
             <IconText
               icon={<Icon name="map-marker-alt" style="solid" size={theme.icon.size.m} color={iconColor} />}
               text={location}
-              style={{ textStyle: styles.detail }}
+              style={{ textStyle: theme.text.light }}
             />
           )}
           {!!attribution && (
             <IconText
               icon={<Icon name="user" style="solid" size={theme.icon.size.m} color={iconColor} />}
               text={attribution}
-              style={{ textStyle: styles.detail }}
+              style={{ textStyle: theme.text.light }}
             />
           )}
         </View>
@@ -73,17 +73,9 @@ const createStyles = (theme: Theme) => {
       ...theme.font.largeBold,
       color: theme.color.text.system.staticWhite,
     },
-    label: {
-      ...theme.font.extraSmall,
-      color: theme.color.text.system.subtler,
-    },
     value: {
       ...theme.text.body,
       color: theme.color.text.system.staticWhite,
-    },
-    detail: {
-      ...theme.text.body,
-      color: theme.color.text.system.subtler,
     },
   })
   return styles

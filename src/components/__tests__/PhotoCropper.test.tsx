@@ -3,7 +3,7 @@ import { Platform, View } from 'react-native'
 
 import { act, fireEvent, render } from '@testing-library/react-native'
 
-import PhotoCropper from '../PhotoCropper'
+import PhotoCropper, { type BaseProps, type CircleProps, type RectangleProps } from '../PhotoCropper'
 
 const mockCropZoom = {
   crop: jest.fn(() => ({
@@ -17,7 +17,7 @@ const mockCropZoom = {
 
 let mockCropZoomProps: any
 jest.mock('react-native-zoom-toolkit', () => {
-  const MockCropZoom = React.forwardRef((props: any, ref) => {
+  const MockCropZoom = ({ ref, ...props }: any) => {
     useImperativeHandle(ref, () => mockCropZoom)
     mockCropZoomProps = props
     const { OverlayComponent, children } = props
@@ -27,7 +27,7 @@ jest.mock('react-native-zoom-toolkit', () => {
         {children}
       </View>
     )
-  })
+  }
   return { CropZoom: MockCropZoom }
 })
 
@@ -35,7 +35,7 @@ const labels = { cancel: 'Cancel', reset: 'Reset', confirm: 'Identify', original
 const onCancel = jest.fn()
 const onConfirm = jest.fn()
 
-const renderCropper = (props: Partial<React.ComponentProps<typeof PhotoCropper>> = {}) => {
+const renderCropper = (props: Partial<BaseProps> & (Partial<RectangleProps> | CircleProps) = {}) => {
   const result = render(
     <PhotoCropper
       uri="file:///path/to/photo.jpg"
@@ -70,7 +70,7 @@ describe('PhotoCropper', () => {
 
     test('Circle crop area on Android', () => {
       Platform.OS = 'android'
-      const { toJSON } = renderCropper({ mask: 'circle' })
+      const { toJSON } = renderCropper({ fixedAspectRatio: 1, mask: 'circle' })
       expect(toJSON()).toMatchSnapshot()
     })
 

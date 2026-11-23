@@ -14,7 +14,7 @@ UI components:
 - `CapitalizeText`
 - `Checkbox`
 - `Chip`
-- `ContentImage (+ ContentImagePressEvent)`
+- `ContentImage (+ PressedContentImage)`
 - `Date`
 - `DateFromToFilter`
 - `DatePicker`

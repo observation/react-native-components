@@ -10,7 +10,7 @@ import RenderHtml, {
   useRendererProps,
 } from '@native-html/render'
 
-import ContentImage, { ContentImagePressEvent } from './ContentImage'
+import ContentImage, { PressedContentImage } from './ContentImage'
 import Log from '../lib/Log'
 import { openUrl } from '../lib/Url'
 import { useTheme } from '../theme'
@@ -21,7 +21,7 @@ declare module '@native-html/render' {
      * Called when an image with an `alt` text is pressed, e.g. to show it in a photo gallery.
      * Without it, the image opens in a `Lightbox` (deprecated).
      */
-    onPress?: (image: ContentImagePressEvent) => void
+    onPress?: (image: PressedContentImage) => void
   }
 }
 

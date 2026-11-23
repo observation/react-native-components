@@ -1,8 +1,8 @@
 import RNPhotoManipulator, { FlipMode, RotationMode } from 'react-native-photo-manipulator'
 
+import Log from './Log'
 import type CropRegion from '../data/CropRegion'
 import type ImageFile from '../data/ImageFile'
-import Log from '../lib/Log'
 
 const getRotationMode = (rotation: number) => {
   Log.debug('cropImage:getRotationMode', rotation)

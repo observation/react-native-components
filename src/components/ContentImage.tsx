@@ -8,7 +8,7 @@ import { rounded } from '../styles'
 import { Theme, useStyles, useTheme } from '../theme'
 
 /** The image that was pressed, with the title and description from its `alt` text */
-type ContentImagePressEvent = {
+type PressedContentImage = {
   src: string
   title?: string
   description?: string
@@ -19,7 +19,7 @@ type Props = {
   /** Title and description, separated by a `|`. Without it, the image is shown inline. */
   alt?: string
   /** Called when the image is pressed. Without it, the image opens in a `Lightbox` (deprecated). */
-  onPress?: (image: ContentImagePressEvent) => void
+  onPress?: (image: PressedContentImage) => void
 }
 
 const ContentImage = ({ src, alt, onPress }: Props) => {
@@ -73,7 +73,7 @@ const ContentImage = ({ src, alt, onPress }: Props) => {
 }
 
 export default ContentImage
-export type { ContentImagePressEvent }
+export type { PressedContentImage }
 
 const createStyles = (theme: Theme) => {
   const styles = StyleSheet.create({

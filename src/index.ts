@@ -6,7 +6,7 @@ import BottomSheetWithSearchInput from './components/BottomSheetWithSearchInput'
 import CapitalizeText from './components/CapitalizeText'
 import Checkbox from './components/Checkbox'
 import Chip from './components/Chip'
-import ContentImage, { ContentImagePressEvent } from './components/ContentImage'
+import ContentImage, { PressedContentImage } from './components/ContentImage'
 import Date from './components/Date'
 import DateFromToFilter from './components/DateFromToFilter'
 import DatePicker from './components/DatePicker'
@@ -124,18 +124,18 @@ export {
 
 export type {
   BottomActionBarProps,
+  CropRegion,
   CustomRendererProps,
   HtmlContentProps,
   IconName,
+  ImageFile,
   LargeButtonProps,
   NotificationPopupStaticProps,
+  PressedContentImage,
   RenderersProps,
   SnackbarReporter,
   TBlock,
   TooltipProps,
-  ContentImagePressEvent,
-  ImageFile,
-  CropRegion,
 }
 export * from './components/Icon'
 export * from './components/BrandIcon'
