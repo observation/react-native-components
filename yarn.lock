@@ -2841,7 +2841,6 @@ __metadata:
     "@fortawesome/react-native-fontawesome": ^0.3.2
     "@gorhom/bottom-sheet": ^5.2.14
     "@native-html/render": ^1.0.4
-    "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing"
     "@react-native-community/blur": ^4.4.1
     "@react-native-community/cli": ^20.2.0
     "@react-native-community/cli-platform-android": ^20.2.0
@@ -2876,13 +2875,16 @@ __metadata:
     react: 19.3.0
     react-native: 0.88.1
     react-native-calendar-picker: ^8.0.5
+    react-native-fast-image: ^10.11.0
     react-native-gesture-handler: ^3.4.0
     react-native-logs: ^5.6.0
+    react-native-photo-manipulator: ^1.9.2
     react-native-reanimated: 4.7.1
     react-native-safe-area-context: ^5.11.0
     react-native-scalable-image: ^1.1.0
     react-native-svg: ^15.16.0
     react-native-worklets: 0.13.1
+    react-native-zoom-toolkit: ^5.1.0
     react-test-renderer: 19.3.0
     ts-jest: ^29.4.15
     typescript: 6.0.3
@@ -2892,23 +2894,17 @@ __metadata:
     "@react-navigation/native": ^7.0.0
     react: ^19.0.0
     react-native: ">=0.83.0"
+    react-native-fast-image: ">=10.11.0"
+    react-native-fs: ">=2.20.0"
     react-native-gesture-handler: ">=3.0.0"
+    react-native-photo-manipulator: ">=1.9.2"
     react-native-reanimated: ">=4.0.0"
     react-native-safe-area-context: ">=5.7.0"
     react-native-svg: ">=15.0.0"
     react-native-worklets: ">=0.8.0"
+    react-native-zoom-toolkit: ">=5.1.0"
   languageName: unknown
   linkType: soft
-
-"@observation.org/react-native-image-viewing@https://github.com/observation/react-native-image-viewing":
-  version: 0.2.2
-  resolution: "@observation.org/react-native-image-viewing@https://github.com/observation/react-native-image-viewing.git#commit=06772aee6d72f5538c540390db2eefa101374bc1"
-  peerDependencies:
-    react: ">=16.11.0"
-    react-native: ">=0.61.3"
-  checksum: 92adbb6bbde87519a298a0be4aae55633eed066887682618be582516897055ac4f7644f1ea1fbc9dd42975f04069dc7a52bcab525d99f06e30d2b28b0c47b250
-  languageName: node
-  linkType: hard
 
 "@oxc-resolver/binding-android-arm-eabi@npm:11.24.2":
   version: 11.24.2
@@ -5784,6 +5780,41 @@ __metadata:
   version: 1.1.4
   resolution: "color-name@npm:1.1.4"
   checksum: b0445859521eb4021cd0fb0cc1a75cecf67fceecae89b63f62b201cca8d345baf8b952c966862a9d9a2632987d4f6581f0ec8d957dfacece86f0a7919316f610
+  languageName: node
+  linkType: hard
+
+"color-parse@npm:^2.1.0":
+  version: 2.2.0
+  resolution: "color-parse@npm:2.2.0"
+  dependencies:
+    color-name: ^2.0.0
+  checksum: 89f3418bbaa2a256175399a2301ffd92c5a52d1beecbf4c160d1a60e6f85878e590882ffb8fcc16c63b1ae45ee52a8770cba23d31689e75e102764c4f141518e
+  languageName: node
+  linkType: hard
+
+"color-rgba@npm:^3.0.0":
+  version: 3.1.1
+  resolution: "color-rgba@npm:3.1.1"
+  dependencies:
+    color-parse: ^2.1.0
+    color-space: ^3.1.0
+  checksum: ffbd2f03567ab5406ca11530ab66b3c1450e8a84be5f81ef8c88df128f48f42f18f8651878b4a76b9e660574e11959de2ba9e028f11f5df607190373bf42b158
+  languageName: node
+  linkType: hard
+
+"color-space@npm:^3.1.0":
+  version: 3.6.0
+  resolution: "color-space@npm:3.6.0"
+  peerDependencies:
+    naga-wasm: ^30.2.0
+  peerDependenciesMeta:
+    naga-wasm:
+      optional: true
+  bin:
+    color-space: cli.js
+    color-space-mcp: mcp.js
+    colr: cli.js
+  checksum: 53429a4efac3b8440a8feef6a911d490586cac2aa0919a924a23c1737cccd6142d78c16103ae91584a3022e230fa37cc2dcaaccc7d921fe423d0e7c24c8c906b
   languageName: node
   linkType: hard
 
@@ -11715,6 +11746,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-native-fast-image@npm:^10.11.0":
+  version: 10.11.0
+  resolution: "react-native-fast-image@npm:10.11.0"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 383514f0795158daf4452002bb21a035348ad6c1e0303873f38525a19c3923f38bbfe56fc6a1f2e170daf66d26877d2ce83c1c45ce1ce6d7ad9d72d78b5e7ee6
+  languageName: node
+  linkType: hard
+
 "react-native-gesture-handler@npm:^3.4.0":
   version: 3.4.0
   resolution: "react-native-gesture-handler@npm:3.4.0"
@@ -11742,6 +11783,18 @@ __metadata:
   version: 5.6.0
   resolution: "react-native-logs@npm:5.6.0"
   checksum: 2bddd6c308e7ad495c65bb205be97bb905cab12c0628c5af4669565704839cb4f4614e4c137df6b6d290328e33d760a3e99b40ccc67532490089f6add7524b25
+  languageName: node
+  linkType: hard
+
+"react-native-photo-manipulator@npm:^1.9.2":
+  version: 1.9.2
+  resolution: "react-native-photo-manipulator@npm:1.9.2"
+  dependencies:
+    color-rgba: ^3.0.0
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 84a70fa324152e7b772b9cc41427a247cf8b29c5f9012c9b5ced30601b792b90330e0c5e373e588bdbb4ef2cafb7d12686d7a86bd92365e10b3ac7760b842ee0
   languageName: node
   linkType: hard
 
@@ -11819,6 +11872,16 @@ __metadata:
     react: "*"
     react-native: 0.86 - 0.88
   checksum: 31f8394766ba6a74deea2f90b1d1a50966efe3f19a140b4c34d4326687b626788b537c661066558e2a8e36259704fbb2df0ded89e37b4ed775b85a31a101d2e2
+  languageName: node
+  linkType: hard
+
+"react-native-zoom-toolkit@npm:^5.1.0":
+  version: 5.1.1
+  resolution: "react-native-zoom-toolkit@npm:5.1.1"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 7c3f24a3124d758947a205828b9cd0a2b7b2d6c54c053f617f3598a798fbd307b077d1bdea14cafd3a6032af5fb994298229d437a15c24bd13c8daaa126f18d7
   languageName: node
   linkType: hard
 

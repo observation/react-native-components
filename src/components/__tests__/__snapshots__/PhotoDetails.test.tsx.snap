@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PhotoDetails Rendering With all details 1`] = `
+<View
+  style={
+    {
+      "gap": 16,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#ffffff",
+        "fontFamily": "Ubuntu",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "lineHeight": 24,
+      }
+    }
+  >
+    Western House Martin
+  </Text>
+  <View>
+    <Text
+      style={
+        {
+          "color": "#939393",
+          "fontFamily": "Ubuntu",
+          "fontSize": 10,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 16,
+        }
+      }
+    >
+      Life stage
+    </Text>
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Adult
+    </Text>
+  </View>
+  <View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "justifyContent": "center",
+              "marginRight": 8,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Icon
+          color="#939393"
+          name="location-dot"
+          size={14}
+          type="solid"
+        />
+      </View>
+      <Text
+        style={
+          [
+            {
+              "flexShrink": 1,
+            },
+            {
+              "color": "#939393",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+          ]
+        }
+      >
+        Breskens - Telpost e.o. (ZL)
+      </Text>
+    </View>
+    <View
+      style={
+        [
+          {
+            "flexDirection": "row",
+          },
+          undefined,
+        ]
+      }
+    >
+      <View
+        style={
+          [
+            {
+              "justifyContent": "center",
+              "marginRight": 8,
+            },
+            undefined,
+          ]
+        }
+      >
+        <Icon
+          color="#939393"
+          name="user"
+          size={14}
+          type="solid"
+        />
+      </View>
+      <Text
+        style={
+          [
+            {
+              "flexShrink": 1,
+            },
+            {
+              "color": "#939393",
+              "fontFamily": "Ubuntu",
+              "fontSize": 14,
+              "fontStyle": "normal",
+              "fontWeight": "normal",
+              "lineHeight": 20,
+            },
+          ]
+        }
+      >
+        Corstiaan Beeke
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`PhotoDetails Rendering With only a title 1`] = `
+<View
+  style={
+    {
+      "gap": 16,
+    }
+  }
+>
+  <Text
+    style={
+      {
+        "color": "#ffffff",
+        "fontFamily": "Ubuntu",
+        "fontSize": 16,
+        "fontStyle": "normal",
+        "fontWeight": "bold",
+        "lineHeight": 24,
+      }
+    }
+  >
+    Western House Martin
+  </Text>
+</View>
+`;

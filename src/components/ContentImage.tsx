@@ -3,33 +3,39 @@ import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'rea
 
 import ScalableImage from 'react-native-scalable-image'
 
-import Lightbox from './Lightbox'
 import { rounded } from '../styles'
 import { Theme, useStyles, useTheme } from '../theme'
 
-type Props = {
+/** The image that was pressed, with the title and description from its `alt` text */
+type PressedContentImage = {
   src: string
-  alt?: string
+  title?: string
+  description?: string
 }
 
-const ContentImage = ({ src, alt }: Props) => {
+type Props = {
+  src: string
+  /** Title and description, separated by a `|`. Without it, the image is shown inline. */
+  alt?: string
+  /** Called when the image is pressed, e.g. to show it in a photo gallery. Without it, the image can't be pressed. */
+  onPress?: (image: PressedContentImage) => void
+}
+
+const ContentImage = ({ src, alt, onPress }: Props) => {
   const theme = useTheme()
   const styles = useStyles(createStyles)
-  const [photoIndex, setPhotoIndex] = React.useState<number>()
   if (!alt) {
     return <ScalableImage width={Dimensions.get('window').width - 2 * theme.margin.common} source={{ uri: src }} />
   }
   const [title, description] = alt.trim().split(/\s*\|\s*/)
   return (
     <View style={styles.outerContainer}>
-      <TouchableOpacity testID="photo" onPress={() => setPhotoIndex(0)} activeOpacity={0.5}>
-        <Lightbox
-          photos={[src]}
-          index={photoIndex}
-          title={title}
-          description={description}
-          onClose={() => setPhotoIndex(undefined)}
-        />
+      <TouchableOpacity
+        testID="photo"
+        onPress={() => onPress?.({ src, title, description })}
+        disabled={!onPress}
+        activeOpacity={0.5}
+      >
         <View style={styles.shadowContainer}>
           <View style={styles.innerContainer}>
             <View style={styles.imageContainer}>
@@ -57,6 +63,7 @@ const ContentImage = ({ src, alt }: Props) => {
 }
 
 export default ContentImage
+export type { PressedContentImage }
 
 const createStyles = (theme: Theme) => {
   const styles = StyleSheet.create({

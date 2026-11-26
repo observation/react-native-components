@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { describe, expect, test } from '@jest/globals'
-import { render } from '@testing-library/react-native'
+import { fireEvent, render } from '@testing-library/react-native'
 
 import HtmlContent from '../HtmlContent'
 
@@ -12,6 +12,23 @@ describe('HtmlContent', () => {
         const html = `<img src="https://waarneming.nl/image.jpeg" alt="A picture" />`
         const { toJSON } = render(<HtmlContent html={html} />)
         expect(toJSON()).toMatchSnapshot()
+      })
+
+      test('Pressing an image passes its url, title and description to the press handler', () => {
+        // GIVEN
+        const html = `<img src="https://waarneming.nl/image.jpeg" alt="Title | Description" />`
+        const onPress = jest.fn()
+        const { getByTestId } = render(<HtmlContent html={html} renderersProps={{ img: { onPress } }} />)
+
+        // WHEN
+        fireEvent.press(getByTestId('photo'))
+
+        // THEN
+        expect(onPress).toHaveBeenCalledWith({
+          src: 'https://waarneming.nl/image.jpeg',
+          title: 'Title',
+          description: 'Description',
+        })
       })
 
       test('Without url', () => {

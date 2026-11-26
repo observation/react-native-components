@@ -1,0 +1,1722 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PhotoCropper Rendering Circle crop area on Android 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#212121",
+        "flex": 1,
+      },
+      {
+        "paddingTop": 0,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      {
+        "flex": 1,
+        "overflow": "hidden",
+      }
+    }
+    testID="crop-canvas"
+  >
+    <View
+      testID="crop-zoom"
+    >
+      <RNSVGSvgViewAndroid
+        bbHeight={600}
+        bbWidth={400}
+        focusable={false}
+        height={600}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 600,
+              "width": 400,
+            },
+          ]
+        }
+        width={400}
+      >
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+        >
+          <RNSVGDefs>
+            <RNSVGMask
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              height="100%"
+              maskContentUnits={1}
+              maskType={0}
+              maskUnits={0}
+              name="mask"
+              width="100%"
+              x="0%"
+              y="0%"
+            >
+              <RNSVGRect
+                fill={
+                  {
+                    "payload": -1,
+                    "type": 0,
+                  }
+                }
+                height="100%"
+                propList={
+                  [
+                    "fill",
+                  ]
+                }
+                width="100%"
+                x={0}
+                y={0}
+              />
+              <RNSVGCircle
+                cx={200}
+                cy={300}
+                fill={
+                  {
+                    "payload": -16777216,
+                    "type": 0,
+                  }
+                }
+                propList={
+                  [
+                    "fill",
+                    "strokeWidth",
+                  ]
+                }
+                r={184}
+                strokeWidth={0.5}
+              />
+            </RNSVGMask>
+          </RNSVGDefs>
+          <RNSVGRect
+            fill={
+              {
+                "payload": -2147483648,
+                "type": 0,
+              }
+            }
+            height="100%"
+            mask="mask"
+            propList={
+              [
+                "fill",
+              ]
+            }
+            width="100%"
+            x={0}
+            y={0}
+          />
+          <RNSVGCircle
+            cx={200}
+            cy={300}
+            fill={
+              {
+                "payload": 0,
+                "type": 0,
+              }
+            }
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+              ]
+            }
+            r={184}
+            stroke={
+              {
+                "payload": -1,
+                "type": 0,
+              }
+            }
+            strokeWidth={0.5}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgViewAndroid>
+      <Image
+        resizeMethod="resize"
+        source={
+          {
+            "uri": "file:///path/to/photo.jpg",
+          }
+        }
+        style={
+          {
+            "flex": 1,
+          }
+        }
+      />
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF0D",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "minHeight": 48,
+          "paddingHorizontal": 16,
+          "paddingTop": 16,
+        },
+        {
+          "paddingBottom": 16,
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Cancel
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#939393",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Reset
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+      testID="rotate"
+    >
+      <View
+        style={
+          {
+            "height": 19,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Icon
+          color="#ffffff"
+          name="arrow-turn-right"
+          size={12}
+          type="light"
+        />
+        <View
+          style={
+            {
+              "marginLeft": 5,
+            }
+          }
+        >
+          <Icon
+            color="#ffffff"
+            name="square"
+            size={12}
+            type="solid"
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#72a1fd",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Identify
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`PhotoCropper Rendering Square crop area on iOS 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#212121",
+        "flex": 1,
+      },
+      {
+        "paddingTop": 0,
+      },
+    ]
+  }
+>
+  <View
+    onLayout={[Function]}
+    style={
+      {
+        "flex": 1,
+        "overflow": "hidden",
+      }
+    }
+    testID="crop-canvas"
+  >
+    <View
+      testID="crop-zoom"
+    >
+      <RNSVGSvgView
+        bbHeight={600}
+        bbWidth={400}
+        focusable={false}
+        height={600}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 600,
+              "width": 400,
+            },
+          ]
+        }
+        width={400}
+      >
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+        >
+          <RNSVGDefs>
+            <RNSVGMask
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              height="100%"
+              maskContentUnits={1}
+              maskType={0}
+              maskUnits={0}
+              name="mask"
+              width="100%"
+              x="0%"
+              y="0%"
+            >
+              <RNSVGRect
+                fill={
+                  {
+                    "payload": 4294967295,
+                    "type": 0,
+                  }
+                }
+                height="100%"
+                propList={
+                  [
+                    "fill",
+                  ]
+                }
+                width="100%"
+                x={0}
+                y={0}
+              />
+              <RNSVGRect
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+                height={368}
+                propList={
+                  [
+                    "fill",
+                    "strokeWidth",
+                  ]
+                }
+                strokeWidth={0.5}
+                width={368}
+                x={16}
+                y={116}
+              />
+            </RNSVGMask>
+          </RNSVGDefs>
+          <RNSVGRect
+            fill={
+              {
+                "payload": 2147483648,
+                "type": 0,
+              }
+            }
+            height="100%"
+            mask="mask"
+            propList={
+              [
+                "fill",
+              ]
+            }
+            width="100%"
+            x={0}
+            y={0}
+          />
+          <RNSVGRect
+            fill={
+              {
+                "payload": 0,
+                "type": 0,
+              }
+            }
+            height={368}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+              ]
+            }
+            stroke={
+              {
+                "payload": 4294967295,
+                "type": 0,
+              }
+            }
+            strokeWidth={0.5}
+            width={368}
+            x={16}
+            y={116}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+      <FastImageView
+        handledEvents={0}
+        loopCount={-1}
+        objectFit="cover"
+        objectPositionX={0.5}
+        objectPositionXOffset={0}
+        objectPositionY={0.5}
+        objectPositionYOffset={0}
+        placeholder={null}
+        source={
+          {
+            "uri": "file:///path/to/photo.jpg",
+          }
+        }
+        style={
+          [
+            {
+              "overflow": "hidden",
+            },
+            {
+              "flex": 1,
+            },
+          ]
+        }
+        transitionBetweenImages={false}
+        transitionDuration={0}
+        transitionSkipOnCacheHit="memory"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF0D",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "minHeight": 48,
+          "paddingHorizontal": 16,
+          "paddingTop": 16,
+        },
+        {
+          "paddingBottom": 16,
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Cancel
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#939393",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Reset
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+      testID="rotate"
+    >
+      <View
+        style={
+          {
+            "height": 19,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Icon
+          color="#ffffff"
+          name="arrow-turn-right"
+          size={12}
+          type="light"
+        />
+        <View
+          style={
+            {
+              "marginLeft": 5,
+            }
+          }
+        >
+          <Icon
+            color="#ffffff"
+            name="square"
+            size={12}
+            type="solid"
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#72a1fd",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Identify
+      </Text>
+    </View>
+  </View>
+</View>
+`;
+
+exports[`PhotoCropper Rendering Without a fixed aspect ratio, the presets are shown and the original aspect ratio is selected 1`] = `
+<View
+  style={
+    [
+      {
+        "backgroundColor": "#212121",
+        "flex": 1,
+      },
+      {
+        "paddingTop": 0,
+      },
+    ]
+  }
+>
+  <View
+    style={
+      {
+        "alignItems": "center",
+        "backgroundColor": "#FFFFFF0D",
+        "height": 48,
+        "paddingTop": 16,
+      }
+    }
+  >
+    <View
+      style={
+        {
+          "alignItems": "flex-end",
+          "flexDirection": "row",
+          "gap": 24,
+          "height": 21,
+          "width": 61,
+        }
+      }
+    >
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": true,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={false}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#666666",
+            "borderColor": "#939393",
+            "borderRadius": 2,
+            "borderWidth": 1,
+            "height": 16,
+            "justifyContent": "center",
+            "opacity": 1,
+            "width": 21,
+          }
+        }
+        testID="landscape-device"
+      >
+        <View
+          style={
+            {
+              "alignItems": "center",
+              "height": 12,
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Icon
+            color="#ffffff"
+            name="check"
+            size={10}
+            type="light"
+          />
+        </View>
+      </View>
+      <View
+        accessibilityState={
+          {
+            "busy": undefined,
+            "checked": undefined,
+            "disabled": false,
+            "expanded": undefined,
+            "selected": undefined,
+          }
+        }
+        accessibilityValue={
+          {
+            "max": undefined,
+            "min": undefined,
+            "now": undefined,
+            "text": undefined,
+          }
+        }
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        hitSlop={
+          {
+            "bottom": 8,
+            "left": 8,
+            "right": 8,
+            "top": 8,
+          }
+        }
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          {
+            "alignItems": "center",
+            "backgroundColor": "#666666",
+            "borderColor": "#939393",
+            "borderRadius": 2,
+            "borderWidth": 1,
+            "flexDirection": "column-reverse",
+            "height": 21,
+            "opacity": 1,
+            "width": 16,
+          }
+        }
+        testID="portrait-device"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      {
+        "backgroundColor": "#FFFFFF0D",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "paddingHorizontal": 16,
+        "paddingVertical": 14,
+      }
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Original
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#939393",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        4:3
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#939393",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        3:2
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#939393",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Square
+      </Text>
+    </View>
+  </View>
+  <View
+    onLayout={[Function]}
+    style={
+      {
+        "flex": 1,
+        "overflow": "hidden",
+      }
+    }
+    testID="crop-canvas"
+  >
+    <View
+      testID="crop-zoom"
+    >
+      <RNSVGSvgView
+        bbHeight={600}
+        bbWidth={400}
+        focusable={false}
+        height={600}
+        style={
+          [
+            {
+              "backgroundColor": "transparent",
+              "borderWidth": 0,
+            },
+            {
+              "flex": 0,
+              "height": 600,
+              "width": 400,
+            },
+          ]
+        }
+        width={400}
+      >
+        <RNSVGGroup
+          fill={
+            {
+              "payload": 4278190080,
+              "type": 0,
+            }
+          }
+        >
+          <RNSVGDefs>
+            <RNSVGMask
+              fill={
+                {
+                  "payload": 4278190080,
+                  "type": 0,
+                }
+              }
+              height="100%"
+              maskContentUnits={1}
+              maskType={0}
+              maskUnits={0}
+              name="mask"
+              width="100%"
+              x="0%"
+              y="0%"
+            >
+              <RNSVGRect
+                fill={
+                  {
+                    "payload": 4294967295,
+                    "type": 0,
+                  }
+                }
+                height="100%"
+                propList={
+                  [
+                    "fill",
+                  ]
+                }
+                width="100%"
+                x={0}
+                y={0}
+              />
+              <RNSVGRect
+                fill={
+                  {
+                    "payload": 4278190080,
+                    "type": 0,
+                  }
+                }
+                height={276}
+                propList={
+                  [
+                    "fill",
+                    "strokeWidth",
+                  ]
+                }
+                strokeWidth={0.5}
+                width={368}
+                x={16}
+                y={162}
+              />
+            </RNSVGMask>
+          </RNSVGDefs>
+          <RNSVGRect
+            fill={
+              {
+                "payload": 2147483648,
+                "type": 0,
+              }
+            }
+            height="100%"
+            mask="mask"
+            propList={
+              [
+                "fill",
+              ]
+            }
+            width="100%"
+            x={0}
+            y={0}
+          />
+          <RNSVGRect
+            fill={
+              {
+                "payload": 0,
+                "type": 0,
+              }
+            }
+            height={276}
+            propList={
+              [
+                "fill",
+                "stroke",
+                "strokeWidth",
+              ]
+            }
+            stroke={
+              {
+                "payload": 4294967295,
+                "type": 0,
+              }
+            }
+            strokeWidth={0.5}
+            width={368}
+            x={16}
+            y={162}
+          />
+        </RNSVGGroup>
+      </RNSVGSvgView>
+      <FastImageView
+        handledEvents={0}
+        loopCount={-1}
+        objectFit="cover"
+        objectPositionX={0.5}
+        objectPositionXOffset={0}
+        objectPositionY={0.5}
+        objectPositionYOffset={0}
+        placeholder={null}
+        source={
+          {
+            "uri": "file:///path/to/photo.jpg",
+          }
+        }
+        style={
+          [
+            {
+              "overflow": "hidden",
+            },
+            {
+              "flex": 1,
+            },
+          ]
+        }
+        transitionBetweenImages={false}
+        transitionDuration={0}
+        transitionSkipOnCacheHit="memory"
+      />
+    </View>
+  </View>
+  <View
+    style={
+      [
+        {
+          "alignItems": "center",
+          "backgroundColor": "#FFFFFF0D",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "minHeight": 48,
+          "paddingHorizontal": 16,
+          "paddingTop": 16,
+        },
+        {
+          "paddingBottom": 16,
+        },
+      ]
+    }
+  >
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#ffffff",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Cancel
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": true,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={false}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#939393",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Reset
+      </Text>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": false,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+      testID="rotate"
+    >
+      <View
+        style={
+          {
+            "height": 19,
+            "justifyContent": "space-between",
+          }
+        }
+      >
+        <Icon
+          color="#ffffff"
+          name="arrow-turn-right"
+          size={12}
+          type="light"
+        />
+        <View
+          style={
+            {
+              "marginLeft": 5,
+            }
+          }
+        >
+          <Icon
+            color="#ffffff"
+            name="square"
+            size={12}
+            type="solid"
+          />
+        </View>
+      </View>
+    </View>
+    <View
+      accessibilityState={
+        {
+          "busy": undefined,
+          "checked": undefined,
+          "disabled": undefined,
+          "expanded": undefined,
+          "selected": undefined,
+        }
+      }
+      accessibilityValue={
+        {
+          "max": undefined,
+          "min": undefined,
+          "now": undefined,
+          "text": undefined,
+        }
+      }
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      hitSlop={
+        {
+          "bottom": 8,
+          "left": 8,
+          "right": 8,
+          "top": 8,
+        }
+      }
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        {
+          "opacity": 1,
+        }
+      }
+    >
+      <Text
+        style={
+          {
+            "color": "#72a1fd",
+            "fontFamily": "Ubuntu",
+            "fontSize": 14,
+            "fontStyle": "normal",
+            "fontWeight": "normal",
+            "lineHeight": 20,
+          }
+        }
+      >
+        Identify
+      </Text>
+    </View>
+  </View>
+</View>
+`;

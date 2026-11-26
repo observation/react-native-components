@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
+
+exports[`PhotoGalleryFooter Rendering With title, description and content 1`] = `
+<View>
+  <View
+    style={
+      {
+        "marginVertical": 4,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontFamily": "Ubuntu",
+          "fontSize": 16,
+          "fontStyle": "normal",
+          "fontWeight": "bold",
+          "lineHeight": 24,
+        }
+      }
+    >
+      Blackbird
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "marginVertical": 4,
+      }
+    }
+  >
+    <Text
+      style={
+        {
+          "color": "#ffffff",
+          "fontFamily": "Ubuntu",
+          "fontSize": 14,
+          "fontStyle": "normal",
+          "fontWeight": "normal",
+          "lineHeight": 20,
+        }
+      }
+    >
+      Today
+    </Text>
+  </View>
+  <View
+    style={
+      {
+        "marginVertical": 4,
+      }
+    }
+  >
+    <Text>
+      Joe User
+    </Text>
+  </View>
+</View>
+`;
+
+exports[`PhotoGalleryFooter Rendering Without title, description and content 1`] = `<View />`;

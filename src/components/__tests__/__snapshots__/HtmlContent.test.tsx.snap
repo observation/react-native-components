@@ -34,7 +34,7 @@ exports[`HtmlContent Rendering Custom image renderer Normal render 1`] = `
           {
             "busy": undefined,
             "checked": undefined,
-            "disabled": undefined,
+            "disabled": true,
             "expanded": undefined,
             "selected": undefined,
           }
@@ -49,7 +49,7 @@ exports[`HtmlContent Rendering Custom image renderer Normal render 1`] = `
         }
         accessible={true}
         collapsable={false}
-        focusable={true}
+        focusable={false}
         onClick={[Function]}
         onResponderGrant={[Function]}
         onResponderMove={[Function]}
