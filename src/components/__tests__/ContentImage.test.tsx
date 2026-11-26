@@ -30,17 +30,16 @@ describe('ContentImage', () => {
   })
 
   describe('Interaction', () => {
-    test('Click the image to show the lightbox', async () => {
-      const { toJSON, getByTestId } = render(<ContentImage alt="Title" src="https://path.to/image.jpg" />)
-      await fireEvent(getByTestId('photo'), 'press')
+    test('Without onPress, the image cannot be pressed', () => {
+      const { getByTestId } = render(<ContentImage alt="Title" src="https://path.to/image.jpg" />)
 
-      expect(toJSON()).toMatchSnapshot()
+      expect(getByTestId('photo')).toBeDisabled()
     })
 
     test('Pressing the image passes its url, title and description to the press handler', async () => {
       // GIVEN
       const onPress = jest.fn()
-      const { getByTestId, queryByTestId } = render(
+      const { getByTestId } = render(
         <ContentImage alt="Title | Text" src="https://path.to/image.jpg" onPress={onPress} />,
       )
 
@@ -49,14 +48,6 @@ describe('ContentImage', () => {
 
       // THEN
       expect(onPress).toHaveBeenCalledWith({ src: 'https://path.to/image.jpg', title: 'Title', description: 'Text' })
-      expect(queryByTestId('close-lightbox')).toBeNull()
-    })
-
-    test('Close the lightbox', async () => {
-      const { toJSON, getByTestId } = render(<ContentImage alt="Title" src="https://path.to/image.jpg" />)
-      await fireEvent(getByTestId('photo'), 'press')
-      await fireEvent(getByTestId('close-lightbox'), 'press')
-      expect(toJSON()).toMatchSnapshot()
     })
   })
 })

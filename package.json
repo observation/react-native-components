@@ -23,7 +23,6 @@
     "@fortawesome/pro-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-native-fontawesome": "^0.3.2",
     "@native-html/render": "^1.0.4",
-    "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing",
     "accordion-collapse-react-native": "^1.1.1",
     "color": "^5.0.3",
     "date-fns": "^4.4.0",

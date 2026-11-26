@@ -3,7 +3,6 @@ import { Dimensions, Image, StyleSheet, Text, TouchableOpacity, View } from 'rea
 
 import ScalableImage from 'react-native-scalable-image'
 
-import Lightbox from './Lightbox'
 import { rounded } from '../styles'
 import { Theme, useStyles, useTheme } from '../theme'
 
@@ -18,14 +17,13 @@ type Props = {
   src: string
   /** Title and description, separated by a `|`. Without it, the image is shown inline. */
   alt?: string
-  /** Called when the image is pressed. Without it, the image opens in a `Lightbox` (deprecated). */
+  /** Called when the image is pressed, e.g. to show it in a photo gallery. Without it, the image can't be pressed. */
   onPress?: (image: PressedContentImage) => void
 }
 
 const ContentImage = ({ src, alt, onPress }: Props) => {
   const theme = useTheme()
   const styles = useStyles(createStyles)
-  const [photoIndex, setPhotoIndex] = React.useState<number>()
   if (!alt) {
     return <ScalableImage width={Dimensions.get('window').width - 2 * theme.margin.common} source={{ uri: src }} />
   }
@@ -34,18 +32,10 @@ const ContentImage = ({ src, alt, onPress }: Props) => {
     <View style={styles.outerContainer}>
       <TouchableOpacity
         testID="photo"
-        onPress={() => (onPress ? onPress({ src, title, description }) : setPhotoIndex(0))}
+        onPress={() => onPress?.({ src, title, description })}
+        disabled={!onPress}
         activeOpacity={0.5}
       >
-        {!onPress && (
-          <Lightbox
-            photos={[src]}
-            index={photoIndex}
-            title={title}
-            description={description}
-            onClose={() => setPhotoIndex(undefined)}
-          />
-        )}
         <View style={styles.shadowContainer}>
           <View style={styles.innerContainer}>
             <View style={styles.imageContainer}>

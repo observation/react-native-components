@@ -19,7 +19,7 @@ declare module '@native-html/render' {
   interface ImgElementConfig {
     /**
      * Called when an image with an `alt` text is pressed, e.g. to show it in a photo gallery.
-     * Without it, the image opens in a `Lightbox` (deprecated).
+     * Without it, the image can't be pressed.
      */
     onPress?: (image: PressedContentImage) => void
   }

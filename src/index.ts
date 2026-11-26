@@ -23,7 +23,6 @@ import InputField from './components/InputField'
 import InputPanel from './components/InputPanel'
 import ItemSeparator from './components/ItemSeparator'
 import LargeButton, { LargeButtonProps } from './components/LargeButton'
-import Lightbox from './components/Lightbox'
 import ListItem from './components/ListItem'
 import Location from './components/Location'
 import Message from './components/Message'
@@ -88,7 +87,6 @@ export {
   InputPanel,
   ItemSeparator,
   LargeButton,
-  Lightbox,
   ListItem,
   Location,
   Message,

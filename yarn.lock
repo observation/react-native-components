@@ -2841,7 +2841,6 @@ __metadata:
     "@fortawesome/react-native-fontawesome": ^0.3.2
     "@gorhom/bottom-sheet": ^5.2.14
     "@native-html/render": ^1.0.4
-    "@observation.org/react-native-image-viewing": "https://github.com/observation/react-native-image-viewing"
     "@react-native-community/blur": ^4.4.1
     "@react-native-community/cli": ^20.2.0
     "@react-native-community/cli-platform-android": ^20.2.0
@@ -2906,16 +2905,6 @@ __metadata:
     react-native-zoom-toolkit: ">=5.1.0"
   languageName: unknown
   linkType: soft
-
-"@observation.org/react-native-image-viewing@https://github.com/observation/react-native-image-viewing":
-  version: 0.2.2
-  resolution: "@observation.org/react-native-image-viewing@https://github.com/observation/react-native-image-viewing.git#commit=06772aee6d72f5538c540390db2eefa101374bc1"
-  peerDependencies:
-    react: ">=16.11.0"
-    react-native: ">=0.61.3"
-  checksum: 92adbb6bbde87519a298a0be4aae55633eed066887682618be582516897055ac4f7644f1ea1fbc9dd42975f04069dc7a52bcab525d99f06e30d2b28b0c47b250
-  languageName: node
-  linkType: hard
 
 "@oxc-resolver/binding-android-arm-eabi@npm:11.24.2":
   version: 11.24.2

@@ -34,7 +34,6 @@ UI components:
 - `InputPanel`
 - `ItemSeparator`
 - `LargeButton (+ LargeButtonProps)`
-- `Lightbox`: Deprecated, use `PhotoGallery`
 - `ListItem`
 - `Location`
 - `Message`
